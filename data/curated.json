@@ -1,0 +1,27 @@
+[
+  {
+    "lemma": "no ho sé",
+    "partOfSpeech": [
+      "expression"
+    ],
+    "chinese": [
+      "我不知道"
+    ],
+    "spanish": [
+      "no lo sé"
+    ],
+    "definitions": {
+      "ca": [
+        "Expressió usada per dir que no es coneix una resposta o una informació."
+      ]
+    },
+    "examples": [
+      {
+        "ca": "No ho sé; ho preguntaré demà.",
+        "es": "No lo sé; lo preguntaré mañana.",
+        "zh": "我不知道；明天我会去问。"
+      }
+    ]
+  }
+]
+

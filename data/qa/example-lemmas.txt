@@ -1,0 +1,23 @@
+# Curated high-frequency entries that must retain 2–4 useful examples through
+# the runtime merge path. Do not require examples for the entire bulk lexicon.
+pujar
+anar
+fer
+tenir
+ser
+haver
+voler
+poder
+dir
+tornar
+casa
+petit
+cantonada
+agafar
+escola
+carrer
+classe
+venir
+menjar
+beure
+

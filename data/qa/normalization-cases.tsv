@@ -1,0 +1,13 @@
+# input<TAB>normalized form<TAB>expectation
+PUJANT	pujant	exact-normalization
+conèixer	conèixer	unicode-nfc
+L’ESCOLA	l'escola	apostrophe
+ME’N	me'n	apostrophe-cluster
+TE’L	te'l	apostrophe-cluster
+L’HI	l'hi	apostrophe-cluster
+coŀlegi	col·legi	ela-geminada
+SI	si	accent-sensitive
+SÍ	sí	accent-sensitive
+mà	mà	accent-sensitive
+ma	ma	accent-sensitive
+

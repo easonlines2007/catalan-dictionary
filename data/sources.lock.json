@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "project-curated",
+      "name": "Catalan Dictionary PWA curated expressions",
+      "path": "data/curated.json",
+      "url": "https://github.com/easonlines2007/catalan-dictionary",
+      "sha256": "e7e1fc9532d97a260ae4cf9651b4a738dd2bcafbc98c542a8f1c53eafaf6e2a6",
+      "license": "CC0-1.0",
+      "attribution": "Catalan Dictionary PWA contributors",
+      "modifications": "Original reviewed seed entries are normalized and packed without machine translation.",
+      "role": [
+        "lemma",
+        "definition",
+        "translation",
+        "example"
+      ]
+    },
+    {
+      "id": "kaikki-enwiktionary-ca",
+      "name": "Kaikki Catalan extract of English Wiktionary",
+      "path": "work/sources/kaikki-catalan.jsonl",
+      "url": "https://kaikki.org/dictionary/Catalan/",
+      "sha256": "967622212929dcc07af4eb5e934ac552eb820b912cb5bfe760b825228a0a4666",
+      "license": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+      "attribution": "English Wiktionary contributors; extraction by Kaikki/Wiktextract",
+      "modifications": "Catalan-language records were normalized, lemma/form records separated, fields deduplicated, and data packed into offline shards.",
+      "role": [
+        "lemma",
+        "part-of-speech",
+        "english-gloss",
+        "forms",
+        "pronunciation"
+      ]
+    },
+    {
+      "id": "cawiktionary",
+      "name": "Catalan Wiktionary pages-articles dump",
+      "path": "work/sources/cawiktionary-pages-articles.xml.bz2",
+      "url": "https://dumps.wikimedia.org/cawiktionary/latest/",
+      "sha256": "2f08412fbbc0a21e9dda2738da8bb8a87c5707c337c0cbb2a0091719ec1579f4",
+      "license": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+      "attribution": "Catalan Wiktionary contributors",
+      "modifications": "Catalan sections were parsed; wiki markup was reduced to plain definitions and translation/form templates were normalized.",
+      "role": [
+        "lemma",
+        "part-of-speech",
+        "catalan-definition",
+        "translation",
+        "forms"
+      ]
+    },
+    {
+      "id": "apertium-cat",
+      "name": "Apertium Catalan monolingual dictionary",
+      "path": "work/sources/apertium-cat/apertium-cat.cat.metadix",
+      "url": "https://github.com/apertium/apertium-cat",
+      "revision": "17b7046f916367a31e0d7b8ad687bea5b6f71506",
+      "sha256": "9dac7ad16ee658531490ae5eed21a821ddccac1e3cd9edd004abe3656fe45259",
+      "license": "GPL-2.0-only",
+      "attribution": "Apertium contributors",
+      "modifications": "Monolingual paradigms were expanded into a compact surface-to-lemma index; proper-name paradigms were excluded.",
+      "correspondingSource": "/dictionary/sources/apertium-corresponding-source.tar.gz",
+      "role": [
+        "lemma",
+        "part-of-speech",
+        "morphology",
+        "frequency-corpus"
+      ]
+    },
+    {
+      "id": "apertium-spa-cat",
+      "name": "Apertium Spanish-Catalan bilingual dictionary",
+      "path": "work/sources/apertium-spa-cat/apertium-spa-cat.spa-cat.metadix",
+      "url": "https://github.com/apertium/apertium-spa-cat",
+      "revision": "7635fe703b25455efc38e3c22a35b0f9af2a8790",
+      "sha256": "eb2ea6bf3c8883305eb11671910436a1e66fe6df3764852845998392bc70fb86",
+      "license": "GPL-2.0-only",
+      "attribution": "Apertium contributors",
+      "modifications": "Spanish-Catalan transfer entries were inverted only where their direction permits and merged as attributed Spanish equivalents.",
+      "correspondingSource": "/dictionary/sources/apertium-corresponding-source.tar.gz",
+      "role": [
+        "spanish-translation"
+      ]
+    },
+    {
+      "id": "freedict-cat-spa",
+      "name": "FreeDict Catalan-Spanish dictionary",
+      "path": "work/sources/freedict-cat-spa/cat-spa.tei",
+      "url": "https://freedict.org/downloads/",
+      "revision": "2025.11.23",
+      "sha256": "b75818f2762964735ec7e4533dce705ec4d97afaff40593c0f7462fe7dfaf02f",
+      "archive": {
+        "path": "work/sources/freedict-cat-spa-2025.11.23.src.tar.xz",
+        "sha256": "ff03d6bdc14e639f39a80887a3872f547944dd34afc6ef8378bdcdf59c701fc3",
+        "sha512": "744919882088a01f093c36c89b41a5a2f2f05b0b32778e2076f2b0fcc267dc30d8e17ad01f4fd2320a93c91e9f5527285e3bdad99854f907da199802665b920f"
+      },
+      "license": "CC-BY-SA-3.0",
+      "attribution": "FreeDict/WikDict/DBnary/Wiktionary contributors; maintained by Karl Bartel",
+      "modifications": "TEI headwords, grammar, definitions, translations, and pronunciation were normalized and merged into packed entries.",
+      "role": [
+        "lemma",
+        "part-of-speech",
+        "gender",
+        "catalan-definition",
+        "spanish-translation",
+        "pronunciation"
+      ]
+    }
+  ]
+}

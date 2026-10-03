@@ -1,0 +1,29 @@
+{
+  "name": "Català — Diccionari de butxaca",
+  "short_name": "Català",
+  "description": "Catalan dictionary with Chinese and Spanish meanings, pronunciation and examples.",
+  "lang": "ca",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f5f2eb",
+  "theme_color": "#f5f2eb",
+  "categories": ["education", "reference", "utilities"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
