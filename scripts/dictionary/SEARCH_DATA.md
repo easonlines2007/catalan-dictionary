@@ -64,6 +64,34 @@ language and Catalan lemma; approximate spellings are explicitly labelled.
 This is lexical matching, not semantic or pinyin search. A failed exact lookup
 shows suggestions without silently replacing it with an approximate result.
 
+Chinese additionally uses bundled, checksummed OpenCC t2s and python-pinyin
+primary readings. Reproduce those tables with
+`python3 scripts/dictionary/build_chinese_search.py`; this needs only the
+vendored snapshots and Python's standard library. Conversion uses longest
+phrase matches, joins accidental Han-to-Han spaces and removes edge punctuation.
+Exact lookup tries the untouched key first, then this normalized Chinese key.
+It does not strip meaningful modifiers for exact lookup.
+
+Chinese suggestions coalesce simplified/traditional equivalents and show at
+most one hint per Catalan lemma, choosing the user's script when available.
+Short literal terms outrank long prose; length precedes frequency within a
+match tier. A trailing 的 can offer a labelled headword hint, while an exact
+adjective always wins. Same-reading spelling corrections require the same
+length, at least one unchanged Han character in the same position, and at most
+one changed character (two for five or more characters). Only primary tone-free
+readings are used, so polyphonic characters are intentionally conservative.
+Literal matches are not padded with unrelated fuzzy terms; if strong phonetic
+hints exist, weaker edit-only guesses are omitted. Latin-input pinyin search
+and general semantic paraphrasing are not implemented.
+
+`data/search/chinese-aliases.json` supplies a small set of source-compared
+everyday Chinese aliases. The builder verifies the base version and every
+evidence field against actual committed records, binds the file hash into the
+search version, and adds these aliases without removing original reverse keys
+or changing visible definitions. The targeted matisació correction removes an
+unrelated greeting fragment from its published machine output; it retains the
+original source identity and machine-assisted label.
+
 Full offline installation includes both full catalogues. Core-only offline
 mode derives suggestions from the existing core reverse indexes and entries,
 and never requests the extended catalogues. A failed online catalogue load

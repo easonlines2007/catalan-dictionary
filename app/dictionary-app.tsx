@@ -554,7 +554,7 @@ export function DictionaryApp() {
                     onClick={() => void runSearch(item.term, item.language)}>
                     <span lang={inputLanguage(item.term, item.language)}>{item.term}</span>
                     <span className="completion-lemma" lang="ca">→ {item.lemma}</span>
-                    <span className="completion-kind">{item.kind === "fuzzy" ? "近似拼写" : LANGUAGE_LABELS[item.language]}</span>
+                    <span className="completion-kind">{item.kind === "fuzzy" ? "近似拼写" : item.kind === "related" ? "相关词" : LANGUAGE_LABELS[item.language]}</span>
                   </button>
                 </li>
               ))}

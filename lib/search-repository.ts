@@ -2,6 +2,7 @@ import {
   getDictionaryMetadata, getDictionaryShard, putDictionaryShard, setDictionaryMetadata,
 } from "./storage.ts";
 import { normalizeSearchInput, normalizeSearchKey } from "./search-normalization.ts";
+import { chineseMatchingKey } from "./chinese-search.ts";
 import { matchSuggestions } from "./search-suggestions.ts";
 import type { SuggestionRow } from "./search-suggestions.ts";
 import type {
@@ -142,12 +143,16 @@ export class SearchRepository {
   async reverse(query: string, language: "es" | "zh", baseVersion: string, limit = 32): Promise<ReverseMatch[]> {
     const manifest = await this.manifest(baseVersion);
     const key = normalizeSearchKey(query, language);
-    const descriptor = await this.isOfflineLimited(manifest)
-      ? manifest.core[language]
-      : descriptorForKey(manifest.indexes[language], key);
-    if (!descriptor) return [];
-    const index = await this.load<ReverseIndex>(manifest, descriptor);
-    const postings = index.find(([term]) => term === key)?.[1] ?? [];
+    const limited = await this.isOfflineLimited(manifest);
+    const keys = language === "zh" ? [...new Set([key, chineseMatchingKey(key)])] : [key];
+    let postings: Posting[] = [];
+    for (const candidate of keys) {
+      const descriptor = limited ? manifest.core[language] : descriptorForKey(manifest.indexes[language], candidate);
+      if (!descriptor) continue;
+      const index = await this.load<ReverseIndex>(manifest, descriptor);
+      postings = index.find(([term]) => term === candidate)?.[1] ?? [];
+      if (postings.length) break;
+    }
     const exactQuery = normalizeSearchInput(query, language);
     // Preserve the index's frequency ordering within each spelling group.
     return postings.map(([normalizedLemma, matchedTerm, matchKind]) => ({

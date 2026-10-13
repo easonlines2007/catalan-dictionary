@@ -146,6 +146,28 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       assert.equal(exact.status, "found", "Fuzzy search must never replace an exact lookup");
     });
 
+    await t.test("Chinese relevance handles homophones, mixed scripts and everyday aliases", async () => {
+      for (const [query, lemma] of [["学小", "escola"], ["敢冒", "refredat"], ["苹国", "poma"], ["火车战", "estació"],
+        ["基礎设施", "infraestructura"], ["图形 用戶界面", "gui"], ["学校的", "escola"],
+        ["吃饭", "menjar"], ["早上好", "bon dia"], ["早安", "bon dia"], ["晚安", "bona nit"], ["火车站", "estació"]] as const) {
+        const suggestions = await suggestWords(query, "zh");
+        assert.equal(normalizeCatalanInput(suggestions[0]?.lemma ?? ""), lemma, `${query}: ${JSON.stringify(suggestions)}`);
+        const opened = await lookupWord(suggestions[0].term, "zh");
+        assert.equal(opened.status, "found");
+        if (opened.status === "found") assert.equal(opened.entry.normalizedLemma, lemma, query);
+      }
+      for (const query of ["基礎设施", "图形 用戶界面", "「学校？」"]) {
+        assert.equal((await lookupWord(query, "zh")).status, "found", query);
+      }
+      const typo = await lookupWord("学小", "zh");
+      assert.equal(typo.status, "not-found", "A homophone suggestion never silently replaces the query");
+      const greeting = await lookupWord("早上好", "zh");
+      if (greeting.status === "found") assert.ok(!greeting.candidates.some((item) => item.lemma === "matisació"));
+      const matisacio = await lookupWord("matisació", "ca");
+      assert.equal(matisacio.status, "found");
+      if (matisacio.status === "found") assert.ok(!primaryChinese(matisacio.entry).includes("早上好"));
+    });
+
     await t.test("Chinese last-range routing includes normal and supplementary characters", async () => {
       const repository = new SearchRepository();
       const manifest = await dictionaryRepository.manifest();
@@ -208,6 +230,8 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       assert.ok((await fresh.reverse("escuela", "es", base.dataVersion)).some((hit) => hit.normalizedLemma === "escola"));
       assert.ok((await fresh.suggest("escue", "es", base.dataVersion)).some((item) => item.term === "escuela"));
       assert.ok((await fresh.suggest("学校校", "zh", base.dataVersion)).some((item) => item.term === "学校"));
+      assert.equal((await fresh.suggest("学小", "zh", base.dataVersion))[0]?.lemma, "escola");
+      assert.ok((await fresh.reverse("「学 校？」", "zh", base.dataVersion)).some((hit) => hit.normalizedLemma === "escola"));
       for (const [query, mode, lemma] of [
         ["学校", "zh", "escola"], ["學校", "zh", "escola"], ["escuela", "es", "escola"],
         ["escola", "ca", "escola"], ["上升", "zh", "pujar"], ["pujant", "ca", "pujar"],
@@ -292,6 +316,32 @@ test("full suggestion catalogues are checksummed and derive every term from acce
       assert.ok(Number.isFinite(rank));
     }
   }
+});
+
+test("everyday Chinese aliases reject changed source evidence and stale base versions", () => {
+  const script = `
+import json,sys,tempfile
+from pathlib import Path
+sys.path.insert(0,sys.argv[1])
+import build_search as b
+data=json.loads(Path(sys.argv[2]).read_text())
+data['records']=[next(r for r in data['records'] if r['lemma']=='menjar')]
+records={'menjar':[('seed',{'zh':['吃']}),('lex',{'es':['comer']})]}
+with tempfile.TemporaryDirectory() as directory:
+ p=Path(directory)/'aliases.json'
+ p.write_text(json.dumps(data))
+ assert b.search_aliases(p,records,data['baseDataVersion'])=={'menjar':['吃饭']}
+ for mode in ('evidence','base'):
+  changed=json.loads(json.dumps(data))
+  if mode=='evidence': changed['records'][0]['evidence'][0]['text']='unrelated'
+  else: changed['baseDataVersion']='stale'
+  p.write_text(json.dumps(changed))
+  try: b.search_aliases(p,records,data['baseDataVersion'])
+  except ValueError: pass
+  else: raise AssertionError('Unbound alias was accepted: '+mode)
+`;
+  const result = spawnSync("python3", ["-c", script, resolve(root, "scripts/dictionary"), resolve(root, "data/search/chinese-aliases.json")], { encoding: "utf8" });
+  assert.equal(result.status, 0, result.stderr);
 });
 
 test("a transient base/search version mismatch can recover on the same repository", async () => {

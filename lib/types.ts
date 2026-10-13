@@ -146,7 +146,7 @@ export interface SearchSuggestion {
   term: string;
   lemma: string;
   language: "es" | "zh" | "ca";
-  kind: "exact" | "prefix" | "contains" | "fuzzy";
+  kind: "exact" | "prefix" | "contains" | "fuzzy" | "related";
 }
 
 export type LookupResponse = FoundLookup | MissedLookup;

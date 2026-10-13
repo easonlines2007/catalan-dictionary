@@ -377,7 +377,34 @@ def machine_overlays(path, records, entries, existing_overlays):
     return overlays, aliases, dict(counts)
 
 
-def build_indexes(records, entries, aliases, simplifier, traditionalizer):
+def search_aliases(path, records, base_version):
+    data = json.loads(path.read_text())
+    if data["baseDataVersion"] != base_version:
+        raise ValueError("Chinese search aliases: stale base version")
+    aliases = {}
+    for item in data["records"]:
+        lemma = item["lemma"]
+        if lemma not in records or lemma in aliases or not item["evidence"]:
+            raise ValueError(f"Chinese search aliases: invalid lemma/evidence {lemma}")
+        for evidence in item["evidence"]:
+            field = evidence["field"].split(".")
+            values = []
+            for layer, row in records[lemma]:
+                if layer == evidence["layer"]:
+                    value = row
+                    for key in field:
+                        value = value.get(key, {}) if isinstance(value, dict) else {}
+                    if isinstance(value, list):
+                        values.extend(value)
+            if evidence["text"] not in values:
+                raise ValueError(f"Chinese search alias evidence differs from source packs: {lemma}")
+        if any(not isinstance(term, str) or not HAN.search(term) or len(term) > 24 for term in item["terms"]):
+            raise ValueError(f"Chinese search aliases: invalid terms {lemma}")
+        aliases[lemma] = item["terms"]
+    return aliases
+
+
+def build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases=None):
     indexes = {"zh": collections.defaultdict(set), "es": collections.defaultdict(set)}
     exclusions = collections.Counter()
     def add(lang, lemma, text, kind):
@@ -416,6 +443,9 @@ def build_indexes(records, entries, aliases, simplifier, traditionalizer):
             for text in entries[lemma].get("zh", []) + entries[lemma].get("d", {}).get("zh", []):
                 for term in short_chinese_terms(text):
                     add("zh", lemma, term, "translation")
+    for lemma, terms in (extra_aliases or {}).items():
+        for term in terms:
+            add("zh", lemma, term, "alias")
     rows = {}
     for lang, terms in indexes.items():
         def posting_key(item):
@@ -543,11 +573,14 @@ def build(args):
         entries[lemma] = merge(entries[lemma], overlay)
     simplifier = ChineseConverter(args.root / "scripts/dictionary/vendor/opencc")
     traditionalizer = ChineseConverter(args.root / "scripts/dictionary/vendor/opencc", "s2t")
-    indexes, exclusions = build_indexes(records, entries, aliases, simplifier, traditionalizer)
+    alias_path = args.root / "data/search/chinese-aliases.json"
+    extra_aliases = search_aliases(alias_path, records, manifest["dataVersion"])
+    indexes, exclusions = build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases)
     signature = {"builderVersion": BUILDER_VERSION, "builderSha256": digest(Path(__file__).read_bytes()),
                  "baseManifestSha256": digest(source_bytes), "seedSha256": digest(seed_path.read_bytes()),
                  "batches": batches, "opencc": simplifier.sources, "wordnet": wordnet_signature,
                  "bulkChinese": bulk_signature,
+                 "chineseSearchAliasesSha256": digest(alias_path.read_bytes()),
                  "machineInputSha256": digest(args.machine_input.read_bytes()) if args.machine_input else None}
     version = digest(canonical(signature))[:16]
     core = {"entries": write_pack(public, version, "search-core", "core/entries",

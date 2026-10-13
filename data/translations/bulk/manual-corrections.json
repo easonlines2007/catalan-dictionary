@@ -12118,5 +12118,19 @@
     "evidence": [
       "https://agrovin.com/agrv/pdf/catalogos/Agrovin_Cataleg_Verema_2023.pdf"
     ]
+  },
+  {
+    "normalizedLemma": "matisació",
+    "sourceText": "matización",
+    "translationZh": "修饰；细微差别的调整",
+    "aliasesZh": [
+      "修饰",
+      "细微差别的调整"
+    ],
+    "reason": "Source-compared correction: Spanish matización concerns matizar, not a greeting. Remove the unrelated 早上好 fragment that contaminated Chinese reverse search. Chinese wording is project-authored; no source article wording is redistributed.",
+    "evidence": [
+      "https://dle.rae.es/matizaci%C3%B3n",
+      "https://dle.rae.es/matizar"
+    ]
   }
 ]

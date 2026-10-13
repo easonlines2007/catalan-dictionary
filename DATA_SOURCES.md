@@ -53,6 +53,15 @@ project-authored; source URLs and audit metadata accompany them in
   Search indexes retain original source IDs and licenses. See
   [`SEARCH_DATA.md`](scripts/dictionary/SEARCH_DATA.md) for reproducible generation
   from the committed packs and for excluded, unverified Spanish fields.
+- Chinese typo suggestions use the primary character readings from
+  **python-pinyin 0.55.0** (MIT), pinned to commit `df101577…` with its original
+  license and checksummed snapshot under `scripts/dictionary/vendor/pinyin/`.
+  The runtime uses tone-free readings only to rank bounded same-reading typo
+  suggestions. These do not add translations or assert pronunciation in context.
+  The MIT notice is served and cached at `/dictionary/search/pinyin-license.txt`.
+  A few project-authored everyday search aliases in `data/search/chinese-aliases.json`
+  are checked against exact existing lexical evidence; they do not replace source
+  definitions or change Chinese coverage counts.
 - **Multilingual Central Repository Catalan/Spanish** (CC BY 3.0) and
   **Chinese Open Wordnet** (Copyright 2013, 2014 Francis Bond and Shan Wang;
   redistributable under its original license), via a pinned Open Multilingual

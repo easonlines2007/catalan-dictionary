@@ -1,4 +1,4 @@
-const APP_SHELL_CACHE = "catala-pocket-shell-v7";
+const APP_SHELL_CACHE = "catala-pocket-shell-v8";
 const DICTIONARY_BOOTSTRAP_CACHE = "catala-pocket-dictionary-bootstrap-v4";
 const CORE_ASSETS = [
   "/manifest.webmanifest",
@@ -8,6 +8,7 @@ const CORE_ASSETS = [
   "/dictionary/manifest.json",
   "/dictionary/notices.json",
   "/dictionary/search/manifest.json",
+  "/dictionary/search/pinyin-license.txt",
 ];
 
 async function precacheAppShell() {
@@ -50,6 +51,7 @@ async function precacheDictionaryBootstrap() {
     search.core?.zh?.path,
     search.core?.es?.path,
     search.licensing?.openccLicense,
+    "/dictionary/search/pinyin-license.txt",
     ...(search.licensing?.wordnetLicenses || []),
   ].filter(Boolean);
   const keep = new Set([
