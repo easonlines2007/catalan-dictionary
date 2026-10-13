@@ -91,6 +91,11 @@ search version, and adds these aliases without removing original reverse keys
 or changing visible definitions. The targeted matisació correction removes an
 unrelated greeting fragment from its published machine output; it retains the
 original source identity and machine-assisted label.
+An explicitly preferred source-compared alias can put the precise phrase
+`estació de tren` before a rarer synonym for 火车站. Its optional posting priority
+survives hydration into lookup candidates; other meanings stay selectable.
+Exact Spanish spelling still precedes this optional priority, and Chinese
+script/spacing equivalents share the same normalized-exact status.
 
 Full offline installation includes both full catalogues. Core-only offline
 mode derives suggestions from the existing core reverse indexes and entries,
@@ -112,7 +117,7 @@ A reverse shard is a JSON array:
 ]
 ```
 
-The posting is `[normalizedCatalanLemma, matchedTerm, matchKind]`; `matchKind`
+The posting is `[normalizedCatalanLemma, matchedTerm, matchKind, priority?]`; `matchKind`
 is exactly `translation` or `alias`. Ranking uses matching exact spelling,
 match type, and the loaded entry's frequency rank. The browser routes by shard
 boundaries and never scans the full dictionary to discover translations.

@@ -9,7 +9,7 @@ import type {
   PackedDictionaryEntry, SearchManifest, SearchShardDescriptor, SearchSuggestion,
 } from "./types.ts";
 
-type Posting = [lemma: string, term: string, kind: "translation" | "alias"];
+type Posting = [lemma: string, term: string, kind: "translation" | "alias", priority?: number];
 type ReverseIndex = Array<[key: string, postings: Posting[]]>;
 export interface ReverseMatch {
   normalizedLemma: string;
@@ -17,6 +17,7 @@ export interface ReverseMatch {
   matchKind: "translation" | "alias";
   matchedLanguage: "es" | "zh";
   exact: boolean;
+  priority?: number;
 }
 
 function descriptorForKey<T extends { first: string; last: string }>(descriptors: T[], key: string): T | undefined {
@@ -154,11 +155,14 @@ export class SearchRepository {
       if (postings.length) break;
     }
     const exactQuery = normalizeSearchInput(query, language);
+    const chineseQuery = language === "zh" ? chineseMatchingKey(query) : undefined;
     // Preserve the index's frequency ordering within each spelling group.
-    return postings.map(([normalizedLemma, matchedTerm, matchKind]) => ({
+    return postings.map(([normalizedLemma, matchedTerm, matchKind, priority]) => ({
       normalizedLemma, matchedTerm, matchKind, matchedLanguage: language,
-      exact: normalizeSearchInput(matchedTerm, language) === exactQuery,
-    })).sort((a, b) => Number(b.exact) - Number(a.exact)).slice(0, limit);
+      priority,
+      exact: normalizeSearchInput(matchedTerm, language) === exactQuery
+        || (chineseQuery !== undefined && chineseMatchingKey(matchedTerm) === chineseQuery),
+    })).sort((a, b) => Number(b.exact) - Number(a.exact) || (b.priority ?? 0) - (a.priority ?? 0)).slice(0, limit);
   }
 
   async suggest(query: string, language: "es" | "zh", baseVersion: string, limit = 8, signal?: AbortSignal): Promise<SearchSuggestion[]> {

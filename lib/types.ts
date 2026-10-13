@@ -100,6 +100,7 @@ export interface LemmaResult {
   partOfSpeech?: string;
   morphology?: string;
   confidence?: number;
+  searchPriority?: number;
   entry?: DictionaryEntry;
   matchedLanguage?: MatchLanguage;
   matchedTerm?: string;

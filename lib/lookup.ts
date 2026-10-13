@@ -446,6 +446,7 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
       input: query, lemma: entry.lemma, entry, partOfSpeech: entry.partOfSpeech?.[0],
       matchedLanguage: language, matchedTerm: hit.matchedTerm, matchKind: hit.matchKind,
       confidence: hit.exact ? 1 : 0.95,
+      searchPriority: hit.priority ?? 0,
     } satisfies LemmaResult : undefined;
   }));
   const seen = new Set<string>();
@@ -454,6 +455,7 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
     seen.add(candidate.entry.normalizedLemma);
     return true;
   }).sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0)
+    || b.searchPriority - a.searchPriority
     || (a.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER) - (b.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER)
     || a.lemma.localeCompare(b.lemma, "ca"));
 }

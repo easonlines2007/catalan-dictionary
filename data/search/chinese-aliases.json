@@ -5,7 +5,8 @@
     {"lemma": "menjar", "terms": ["吃饭"], "evidence": [{"layer": "seed", "field": "zh", "text": "吃"}, {"layer": "lex", "field": "es", "text": "comer"}]},
     {"lemma": "bon dia", "terms": ["早上好", "早安"], "evidence": [{"layer": "wiktionary", "field": "d.en", "text": "good morning"}, {"layer": "lex", "field": "es", "text": "buenos días"}]},
     {"lemma": "bona nit", "terms": ["晚安"], "evidence": [{"layer": "wiktionary", "field": "d.en", "text": "good night"}, {"layer": "lex", "field": "es", "text": "buenas noches"}]},
-    {"lemma": "estació", "terms": ["车站", "火车站"], "evidence": [{"layer": "lex", "field": "es", "text": "estación"}, {"layer": "wiktionary", "field": "d.ca", "text": "Parada d'un vehicle de transport col·lectiu."}]},
+    {"lemma": "estació", "terms": ["车站"], "evidence": [{"layer": "lex", "field": "es", "text": "estación"}, {"layer": "wiktionary", "field": "d.ca", "text": "Parada d'un vehicle de transport col·lectiu."}]},
+    {"lemma": "estació de tren", "terms": ["火车站"], "preferred": true, "evidence": [{"layer": "lex", "field": "l", "text": "estació de tren"}]},
     {"lemma": "sopar", "terms": ["吃晚饭"], "evidence": [{"layer": "lex", "field": "es", "text": "cenar"}]}
   ]
 }

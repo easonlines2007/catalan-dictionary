@@ -384,6 +384,8 @@ def search_aliases(path, records, base_version):
     aliases = {}
     for item in data["records"]:
         lemma = item["lemma"]
+        if "preferred" in item and not isinstance(item["preferred"], bool):
+            raise ValueError(f"Chinese search aliases: invalid preference {lemma}")
         if lemma not in records or lemma in aliases or not item["evidence"]:
             raise ValueError(f"Chinese search aliases: invalid lemma/evidence {lemma}")
         for evidence in item["evidence"]:
@@ -396,6 +398,8 @@ def search_aliases(path, records, base_version):
                         value = value.get(key, {}) if isinstance(value, dict) else {}
                     if isinstance(value, list):
                         values.extend(value)
+                    elif evidence["field"] == "l" and isinstance(value, str):
+                        values.append(value)
             if evidence["text"] not in values:
                 raise ValueError(f"Chinese search alias evidence differs from source packs: {lemma}")
         if any(not isinstance(term, str) or not HAN.search(term) or len(term) > 24 for term in item["terms"]):
@@ -404,18 +408,20 @@ def search_aliases(path, records, base_version):
     return aliases
 
 
-def build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases=None):
+def build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases=None, preferred_aliases=None):
     indexes = {"zh": collections.defaultdict(set), "es": collections.defaultdict(set)}
     exclusions = collections.Counter()
     def add(lang, lemma, text, kind):
         key = spanish_key(text) if lang == "es" else chinese_key(text)
         if key:
-            indexes[lang][key].add((lemma, text, kind))
+            preferred = lang == "zh" and (lemma, chinese_key(simplifier(text))) in (preferred_aliases or set())
+            posting = (lemma, text, kind, 1) if preferred else (lemma, text, kind)
+            indexes[lang][key].add(posting)
             if lang == "zh":
                 simplified = chinese_key(simplifier(text))
-                indexes[lang][simplified].add((lemma, text, kind))
+                indexes[lang][simplified].add(posting)
                 traditional = chinese_key(traditionalizer(simplifier(text)))
-                indexes[lang][traditional].add((lemma, text, kind))
+                indexes[lang][traditional].add(posting)
     for lemma, layers in records.items():
         trusted = set()
         for layer, row in layers:
@@ -449,8 +455,8 @@ def build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_
     rows = {}
     for lang, terms in indexes.items():
         def posting_key(item):
-            lemma, term, kind = item
-            return (entries[lemma].get("r", 2**53 - 1), utf16_key(lemma), utf16_key(term), kind)
+            lemma, term, kind, *priority = item
+            return (-(priority[0] if priority else 0), entries[lemma].get("r", 2**53 - 1), utf16_key(lemma), utf16_key(term), kind)
         rows[lang] = [[key, [list(item) for item in sorted(values, key=posting_key)]]
                       for key, values in sorted(terms.items(), key=lambda pair: utf16_key(pair[0]))]
     return rows, dict(exclusions)
@@ -575,7 +581,10 @@ def build(args):
     traditionalizer = ChineseConverter(args.root / "scripts/dictionary/vendor/opencc", "s2t")
     alias_path = args.root / "data/search/chinese-aliases.json"
     extra_aliases = search_aliases(alias_path, records, manifest["dataVersion"])
-    indexes, exclusions = build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases)
+    preferred_aliases = {(item["lemma"], chinese_key(simplifier(term)))
+                         for item in json.loads(alias_path.read_text())["records"] if item.get("preferred") is True
+                         for term in item["terms"]}
+    indexes, exclusions = build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases, preferred_aliases)
     signature = {"builderVersion": BUILDER_VERSION, "builderSha256": digest(Path(__file__).read_bytes()),
                  "baseManifestSha256": digest(source_bytes), "seedSha256": digest(seed_path.read_bytes()),
                  "batches": batches, "opencc": simplifier.sources, "wordnet": wordnet_signature,
@@ -598,7 +607,7 @@ def build(args):
     for lang in ("zh", "es"):
         rows = []
         for key, postings in indexes[lang]:
-            lemma, term, _ = postings[0]
+            lemma, term, *_ = postings[0]
             rows.append([key, key if lang == "zh" else term,
                          entries[lemma]["l"], entries[lemma].get("r", 2**53 - 1)])
         suggestions[lang] = write_pack(public, version, "search-suggestions",
@@ -626,7 +635,7 @@ def build(args):
                         "rawBytes": sum(d["rawBytes"] for d in full),
                         "coreCompressedBytes": sum(d["bytes"] for d in core.values())},
               "coverage": coverage, "excludedSpanish": exclusions, "build": signature,
-              "formats": {"reverse": "[normalizedTerm, [[normalizedLemma, matchedTerm, translation|alias], ...]]",
+              "formats": {"reverse": "[normalizedTerm, [[normalizedLemma, matchedTerm, translation|alias, optionalSourceComparedPriority], ...]]",
                           "suggestions": "[normalizedTerm, displayTerm, CatalanLemma, frequencyRank][]; derived only from accepted reverse postings",
                           "entries": "PackedDictionaryEntry[]; zhMachine=true identifies machine-assisted translations; zhHeadword=true identifies headword-only term references",
                           "spanishKey": "NFC lowercase, punctuation/space normalization, accent fold except ñ",

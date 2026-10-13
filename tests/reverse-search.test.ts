@@ -147,9 +147,9 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
     });
 
     await t.test("Chinese relevance handles homophones, mixed scripts and everyday aliases", async () => {
-      for (const [query, lemma] of [["学小", "escola"], ["敢冒", "refredat"], ["苹国", "poma"], ["火车战", "estació"],
+      for (const [query, lemma] of [["学小", "escola"], ["敢冒", "refredat"], ["苹国", "poma"], ["火车战", "estació de tren"],
         ["基礎设施", "infraestructura"], ["图形 用戶界面", "gui"], ["学校的", "escola"],
-        ["吃饭", "menjar"], ["早上好", "bon dia"], ["早安", "bon dia"], ["晚安", "bona nit"], ["火车站", "estació"]] as const) {
+        ["吃饭", "menjar"], ["早上好", "bon dia"], ["早安", "bon dia"], ["晚安", "bona nit"], ["火车站", "estació de tren"]] as const) {
         const suggestions = await suggestWords(query, "zh");
         assert.equal(normalizeCatalanInput(suggestions[0]?.lemma ?? ""), lemma, `${query}: ${JSON.stringify(suggestions)}`);
         const opened = await lookupWord(suggestions[0].term, "zh");
@@ -159,6 +159,9 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       for (const query of ["基礎设施", "图形 用戶界面", "「学校？」"]) {
         assert.equal((await lookupWord(query, "zh")).status, "found", query);
       }
+      const station = await lookupWord("火車站", "zh");
+      assert.equal(station.status, "found");
+      if (station.status === "found") assert.equal(station.entry.normalizedLemma, "estació de tren");
       const typo = await lookupWord("学小", "zh");
       assert.equal(typo.status, "not-found", "A homophone suggestion never silently replaces the query");
       const greeting = await lookupWord("早上好", "zh");
