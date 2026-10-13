@@ -539,18 +539,19 @@ input:focus-visible {
 
 .resolution-line {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 7px;
   min-width: 0;
+  max-width: 100%;
   font-size: 14px;
   font-weight: 740;
 }
 
 .resolution-line > span:first-child,
 .resolution-line > span:last-child {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .resolution-arrow {
