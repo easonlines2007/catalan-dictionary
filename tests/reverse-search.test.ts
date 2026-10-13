@@ -171,6 +171,33 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       if (matisacio.status === "found") assert.ok(!primaryChinese(matisacio.entry).includes("早上好"));
     });
 
+    await t.test("source-compared everyday cases open the intended common Catalan word", async () => {
+      const cases = JSON.parse(await readFile(resolve(root, "data/search/everyday-cases.json"), "utf8")) as {
+        cases: Array<{ query: string; preferredLemma: string; sourceAliasLemma: string }>;
+      };
+      assert.ok(cases.cases.length >= 35);
+      for (const item of cases.cases) {
+        for (const mode of ["zh", "auto"] as const) {
+          const result = await lookupWord(item.query, mode);
+          assert.equal(result.status, "found", `${mode}: ${item.query}`);
+          if (result.status === "found") assert.equal(result.entry.normalizedLemma, item.preferredLemma, item.query);
+        }
+        const suggestions = await suggestWords(item.query, "zh");
+        assert.equal(normalizeCatalanInput(suggestions[0]?.lemma ?? ""), item.preferredLemma, item.query);
+      }
+    });
+
+    await t.test("prose examples and grammatical references do not impersonate Chinese translations", async () => {
+      const repository = new SearchRepository();
+      const base = await dictionaryRepository.manifest();
+      for (const [query, excluded] of [["你好", "la hi"], ["西班牙语", "interlingua"], ["火车", "linòleum"], ["超市", "supramunicipal"]] as const) {
+        const hits = await repository.reverse(query, "zh", base.dataVersion);
+        assert.ok(!hits.some((hit) => hit.normalizedLemma === excluded), `${query} leaked from ${excluded}`);
+      }
+      const wrong = await lookupWord("不可以", "zh");
+      if (wrong.status === "not-found") assert.ok(!wrong.relatedSuggestions?.some((item) => item.term === "可以"));
+    });
+
     await t.test("Chinese last-range routing includes normal and supplementary characters", async () => {
       const repository = new SearchRepository();
       const manifest = await dictionaryRepository.manifest();

@@ -81,6 +81,20 @@ test("real Chinese matches are not padded with unrelated fuzzy words regardless 
   }
 });
 
+test("Chinese spelling suggestions preserve negation and explicit quantities", async () => {
+  const rows: SuggestionRow[] = [["可以", "可以", "poder", 1], ["不可以", "不可以", "no poder", 10],
+    ["未知", "未知", "desconegut", 20], ["无糖", "无糖", "sense sucre", 30],
+    ["二月", "二月", "febrer", 40], ["三月", "三月", "març", 50],
+    ["12号", "12号", "dia 12", 60], ["13号", "13号", "dia 13", 70]];
+  assert.ok(!(await matchSuggestions(rows, "不可以以", "zh")).some((item) => item.lemma === "poder"));
+  assert.ok(!(await matchSuggestions(rows, "不可已", "zh")).some((item) => item.lemma === "poder"));
+  assert.ok(!(await matchSuggestions(rows, "二约", "zh")).some((item) => item.lemma === "març"));
+  assert.equal((await matchSuggestions(rows, "二约", "zh"))[0]?.lemma, "febrer");
+  assert.ok(!(await matchSuggestions(rows, "12好", "zh")).some((item) => item.lemma === "dia 13"));
+  assert.equal((await matchSuggestions(rows, "12好", "zh"))[0]?.lemma, "dia 12");
+  assert.equal((await matchSuggestions(rows, "无塘", "zh"))[0]?.lemma, "sense sucre");
+});
+
 test("short inputs, unrelated terms, result caps and cancelled work stay bounded", async () => {
   const rows: SuggestionRow[] = Array.from({ length: 20 }, (_, i) => [`casa ${i}`, `casa ${i}`, `casa ${i}`, i]);
   assert.deepEqual(await matchSuggestions(rows, "c", "es"), []);

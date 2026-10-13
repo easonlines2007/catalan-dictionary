@@ -2,11 +2,681 @@
   "baseDataVersion": "4b1a025bc29c18a5",
   "note": "Source-compared search aliases authored for everyday Chinese queries. These do not replace displayed definitions or assert human lexicographer review.",
   "records": [
-    {"lemma": "menjar", "terms": ["吃饭"], "evidence": [{"layer": "seed", "field": "zh", "text": "吃"}, {"layer": "lex", "field": "es", "text": "comer"}]},
-    {"lemma": "bon dia", "terms": ["早上好", "早安"], "evidence": [{"layer": "wiktionary", "field": "d.en", "text": "good morning"}, {"layer": "lex", "field": "es", "text": "buenos días"}]},
-    {"lemma": "bona nit", "terms": ["晚安"], "evidence": [{"layer": "wiktionary", "field": "d.en", "text": "good night"}, {"layer": "lex", "field": "es", "text": "buenas noches"}]},
-    {"lemma": "estació", "terms": ["车站"], "evidence": [{"layer": "lex", "field": "es", "text": "estación"}, {"layer": "wiktionary", "field": "d.ca", "text": "Parada d'un vehicle de transport col·lectiu."}]},
-    {"lemma": "estació de tren", "terms": ["火车站"], "preferred": true, "evidence": [{"layer": "lex", "field": "l", "text": "estació de tren"}]},
-    {"lemma": "sopar", "terms": ["吃晚饭"], "evidence": [{"layer": "lex", "field": "es", "text": "cenar"}]}
+    {
+      "lemma": "menjar",
+      "terms": [
+        "吃饭"
+      ],
+      "evidence": [
+        {
+          "layer": "seed",
+          "field": "zh",
+          "text": "吃"
+        },
+        {
+          "layer": "lex",
+          "field": "es",
+          "text": "comer"
+        }
+      ]
+    },
+    {
+      "lemma": "bon dia",
+      "terms": [
+        "早上好",
+        "早安"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "good morning"
+        },
+        {
+          "layer": "lex",
+          "field": "es",
+          "text": "buenos días"
+        }
+      ]
+    },
+    {
+      "lemma": "bona nit",
+      "terms": [
+        "晚安"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "good night"
+        },
+        {
+          "layer": "lex",
+          "field": "es",
+          "text": "buenas noches"
+        }
+      ]
+    },
+    {
+      "lemma": "estació",
+      "terms": [
+        "车站"
+      ],
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "es",
+          "text": "estación"
+        },
+        {
+          "layer": "wiktionary",
+          "field": "d.ca",
+          "text": "Parada d'un vehicle de transport col·lectiu."
+        }
+      ]
+    },
+    {
+      "lemma": "estació de tren",
+      "terms": [
+        "火车站"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "l",
+          "text": "estació de tren"
+        }
+      ]
+    },
+    {
+      "lemma": "sopar",
+      "terms": [
+        "吃晚饭"
+      ],
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "es",
+          "text": "cenar"
+        }
+      ]
+    },
+    {
+      "lemma": "hola",
+      "terms": [
+        "你好",
+        "您好",
+        "嗨"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hello, hi"
+        }
+      ]
+    },
+    {
+      "lemma": "perdó",
+      "terms": [
+        "对不起",
+        "抱歉"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sorry, pardon me (excuse me)"
+        }
+      ]
+    },
+    {
+      "lemma": "si us plau",
+      "terms": [
+        "请"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "please"
+        }
+      ]
+    },
+    {
+      "lemma": "sí",
+      "terms": [
+        "是的"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "es",
+          "text": "sí"
+        }
+      ]
+    },
+    {
+      "lemma": "autobús",
+      "terms": [
+        "公交车",
+        "公共汽车",
+        "巴士"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bus"
+        }
+      ]
+    },
+    {
+      "lemma": "avió",
+      "terms": [
+        "飞机"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "aeroplane, airplane, plane"
+        }
+      ]
+    },
+    {
+      "lemma": "hotel",
+      "terms": [
+        "酒店",
+        "旅馆",
+        "宾馆"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hotel"
+        }
+      ]
+    },
+    {
+      "lemma": "policia",
+      "terms": [
+        "警察"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "police"
+        }
+      ]
+    },
+    {
+      "lemma": "telèfon",
+      "terms": [
+        "电话"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "telephone"
+        }
+      ]
+    },
+    {
+      "lemma": "xarxa",
+      "terms": [
+        "网络"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "network (interconnected system)"
+        }
+      ]
+    },
+    {
+      "lemma": "llet",
+      "terms": [
+        "牛奶",
+        "奶"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "milk"
+        }
+      ]
+    },
+    {
+      "lemma": "verdura",
+      "terms": [
+        "蔬菜"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "vegetable"
+        }
+      ]
+    },
+    {
+      "lemma": "taronja",
+      "terms": [
+        "橙子"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "orange (fruit of an orange tree)"
+        }
+      ]
+    },
+    {
+      "lemma": "comprar",
+      "terms": [
+        "买东西",
+        "购买",
+        "买"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to buy"
+        }
+      ]
+    },
+    {
+      "lemma": "llegir",
+      "terms": [
+        "看书",
+        "读书",
+        "阅读"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to read"
+        }
+      ]
+    },
+    {
+      "lemma": "dormir",
+      "terms": [
+        "睡觉"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to sleep"
+        }
+      ]
+    },
+    {
+      "lemma": "córrer",
+      "terms": [
+        "跑步",
+        "跑"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to run"
+        }
+      ]
+    },
+    {
+      "lemma": "ahir",
+      "terms": [
+        "昨天",
+        "昨日"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "yesterday"
+        }
+      ]
+    },
+    {
+      "lemma": "ara",
+      "terms": [
+        "现在",
+        "此刻"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "now (at the present time)"
+        }
+      ]
+    },
+    {
+      "lemma": "matí",
+      "terms": [
+        "早上",
+        "上午"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "morning"
+        }
+      ]
+    },
+    {
+      "lemma": "migdia",
+      "terms": [
+        "中午"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "midday, noon"
+        }
+      ]
+    },
+    {
+      "lemma": "molt",
+      "terms": [
+        "多"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "much, many"
+        }
+      ]
+    },
+    {
+      "lemma": "poc",
+      "terms": [
+        "少"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "little, not much"
+        }
+      ]
+    },
+    {
+      "lemma": "ajudar",
+      "terms": [
+        "帮助",
+        "帮忙"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to help, aid"
+        }
+      ]
+    },
+    {
+      "lemma": "febre",
+      "terms": [
+        "发烧",
+        "发热"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "fever (high body temperature due to disease)"
+        }
+      ]
+    },
+    {
+      "lemma": "urgent",
+      "terms": [
+        "紧急",
+        "急迫"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "urgent"
+        }
+      ]
+    },
+    {
+      "lemma": "castellà",
+      "terms": [
+        "西班牙语",
+        "西语",
+        "卡斯蒂利亚语"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "Castilian (Spanish language)"
+        }
+      ]
+    },
+    {
+      "lemma": "català",
+      "terms": [
+        "加泰语",
+        "加泰罗尼亚语"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "Catalan (the language spoken by the Catalans)"
+        }
+      ]
+    },
+    {
+      "lemma": "endoll",
+      "terms": [
+        "插座",
+        "电源插座"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "socket"
+        }
+      ]
+    },
+    {
+      "lemma": "esmorzar",
+      "terms": [
+        "吃早餐",
+        "早餐",
+        "早饭"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "breakfast (morning meal)"
+        }
+      ]
+    },
+    {
+      "lemma": "parlar",
+      "terms": [
+        "说话",
+        "讲话"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to speak (to communicate with one's voice)"
+        }
+      ]
+    },
+    {
+      "lemma": "mirar",
+      "terms": [
+        "看"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to look, to look at, to watch"
+        }
+      ]
+    },
+    {
+      "lemma": "necessitar",
+      "terms": [
+        "需要"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to need"
+        }
+      ]
+    },
+    {
+      "lemma": "no ho sé",
+      "terms": [
+        "我不知道"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "curated",
+          "field": "es",
+          "text": "no lo sé"
+        }
+      ]
+    },
+    {
+      "lemma": "no ho entenc",
+      "terms": [
+        "我听不懂",
+        "我不明白"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "I don't understand"
+        }
+      ]
+    },
+    {
+      "lemma": "bona tarda",
+      "terms": [
+        "下午好"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "good afternoon"
+        }
+      ]
+    },
+    {
+      "lemma": "bon vespre",
+      "terms": [
+        "晚上好",
+        "傍晚好"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "good evening"
+        }
+      ]
+    },
+    {
+      "lemma": "dona",
+      "terms": [
+        "女人",
+        "妇女"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "woman"
+        }
+      ]
+    },
+    {
+      "lemma": "arròs",
+      "terms": [
+        "米饭",
+        "大米"
+      ],
+      "preferred": true,
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "rice"
+        }
+      ]
+    }
   ]
 }

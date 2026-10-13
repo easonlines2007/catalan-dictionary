@@ -192,13 +192,37 @@ class ChineseConverter:
         return "".join(result)
 
 
+def split_chinese_equivalents(text, separators):
+    pairs = {"（": "）", "(": ")", "[": "]", "【": "】", "「": "」", "『": "』", "《": "》", "“": "”", "‘": "’"}
+    stack, current = [], []
+    for char in text:
+        if char in pairs:
+            stack.append(pairs[char])
+        elif stack and char == stack[-1]:
+            stack.pop()
+        if char in separators and not stack:
+            yield "".join(current)
+            current = []
+        else:
+            current.append(char)
+    yield "".join(current)
+
+
 def short_chinese_terms(text):
-    # Explicit short equivalents only. No substring/character or prose token index.
-    for value in re.split(r"[；;、\n]", text):
+    # Assess the complete clause BEFORE splitting list punctuation. A long
+    # definition can enumerate examples (languages, vehicles, ingredients),
+    # which are not independently valid translations of its headword.
+    for value in split_chinese_equivalents(text, {"；", ";", "\n"}):
         value = re.sub(r"^[（(][^）)]{1,24}[）)]\s*", "", value.strip())
-        value = value.strip(" ,，。.；;、")
-        if value and len(value) <= 24 and HAN.search(value) and not re.search(r"[。！？!?：:]", value):
-            yield value
+        value = value.strip(" ,，。.；;、！!？?")
+        if not value or len(value) > 24 or not HAN.search(value) or re.search(r"[。！？!?：:]", value):
+            continue
+        context = re.search(r"一种|用于|用来|例如|包括|包含|主要|基于|由.+组成|指的是|如.+等", value)
+        terms = [value] if context else split_chinese_equivalents(value, {"、"})
+        for term in terms:
+            term = term.strip(" ,，。.；;、")
+            if term and HAN.search(term):
+                yield term
 
 
 def spanish_terms(text):

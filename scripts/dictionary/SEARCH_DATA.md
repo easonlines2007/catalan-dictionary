@@ -83,6 +83,8 @@ readings are used, so polyphonic characters are intentionally conservative.
 Literal matches are not padded with unrelated fuzzy terms; if strong phonetic
 hints exist, weaker edit-only guesses are omitted. Latin-input pinyin search
 and general semantic paraphrasing are not implemented.
+Spelling hints preserve a leading negation and explicit number or ordinal:
+不可以 is not corrected to 可以, and 二月 is not corrected to 三月.
 
 `data/search/chinese-aliases.json` supplies a small set of source-compared
 everyday Chinese aliases. The builder verifies the base version and every
@@ -96,6 +98,9 @@ An explicitly preferred source-compared alias can put the precise phrase
 survives hydration into lookup candidates; other meanings stay selectable.
 Exact Spanish spelling still precedes this optional priority, and Chinese
 script/spacing equivalents share the same normalized-exact status.
+The source-compared cases in `data/search/everyday-cases.json` verify lookup
+and first-suggestion behavior for common everyday queries. This regression set
+is not a corpus-wide accuracy score.
 
 Full offline installation includes both full catalogues. Core-only offline
 mode derives suggestions from the existing core reverse indexes and entries,
@@ -174,8 +179,12 @@ The reference data retains MCR's CC BY 3.0 and COW's copyright/license;
 license notices are served alongside the search data and cached for offline
 use. This derived product is not an official Princeton WordNet release.
 
-Existing short Chinese equivalents split at explicit semicolons/list separators;
-long prose is never split into arbitrary characters or substrings. Authored
+Existing short Chinese equivalents split at top-level semicolons and newlines.
+Bracketed lists stay together. Length and explanatory-clause checks run before
+splitting compact synonyms at 顿号, so a long definition's examples do not become
+exact equivalents (for example, interlingua mentioning 西班牙语).
+Literal grammatical descriptions have no reverse aliases. Long prose is never
+split into arbitrary characters or substrings. Authored
 seed Chinese semicolons and Spanish slashes follow the runtime's existing split.
 Original Chinese strings remain untouched. Original traditional spellings and
 simple and traditional aliases are indexed using longest-match conversion tables

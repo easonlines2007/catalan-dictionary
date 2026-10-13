@@ -12132,5 +12132,29 @@
       "https://dle.rae.es/matizaci%C3%B3n",
       "https://dle.rae.es/matizar"
     ]
+  },
+  {
+    "normalizedLemma": "alcaravia",
+    "sourceText": "comí de prat",
+    "translationZh": "葛缕子（植物，学名 Carum carvi）",
+    "aliasesZh": [
+      "葛缕子"
+    ],
+    "reason": "Source-compared botanical correction: DCVB identifies alcaravia as Carum carvi; the Chinese flora identifies this species as 葛缕子. Remove the unrelated eating phrase. Wording is project-authored, with only the factual name and identity retained.",
+    "evidence": [
+      "https://dcvb.iec.cat/results.asp?word=alcaravia",
+      "https://www.iplant.cn/z/frps/34450"
+    ]
+  },
+  {
+    "normalizedLemma": "supramunicipal",
+    "sourceText": "supramunicipal",
+    "translationZh": "市镇以上层级的；跨市镇的",
+    "aliasesZh": [
+      "市镇以上层级的",
+      "跨市镇的"
+    ],
+    "reason": "Source-compared correction of the trusted Spanish adjective supramunicipal: supra- + municipal refers to municipalities, not supermarkets.",
+    "evidence": []
   }
 ]

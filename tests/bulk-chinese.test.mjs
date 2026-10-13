@@ -18,6 +18,9 @@ test("grammatical Chinese preserves Catalan references and distinguishes alphabe
   assert.equal(grammaticalChinese({ ...job, kind: "translation_hint", sourceLanguage: "es", sourceText: "n" }), "拉丁字母 N（n）");
   assert.equal(grammaticalChinese({ ...job, kind: "translation_hint", sourceLanguage: "es", sourcePartOfSpeech: ["pronoun"], sourceText: "y" }), undefined);
   assert.equal(grammaticalChinese({ ...job, sourceText: "a van used to transport goods" }), undefined);
+  assert.equal(grammaticalChinese({ ...job, kind: "headword", sourceLanguage: "ca", sourcePartOfSpeech: ["pronoun"], sourceText: "la hi" }), "加泰语弱读代词组合「la hi」");
+  assert.equal(grammaticalChinese({ ...job, kind: "headword", sourceLanguage: "ca", sourcePartOfSpeech: ["pronoun"], sourceText: "m'hi" }), "加泰语弱读代词组合「m'hi」");
+  assert.equal(grammaticalChinese({ ...job, kind: "headword", sourceLanguage: "ca", sourcePartOfSpeech: ["pronoun"], sourceText: "algú altre" }), undefined);
 });
 
 test("published assets cover Chinese except explicitly source-bound gaps and retain quality distinctions", () => {
@@ -68,6 +71,28 @@ test("published assets cover Chinese except explicitly source-bound gaps and ret
   assert.equal(machine, search.coverage.machineChineseLemmas);
   assert.equal(headword, search.coverage.bulkChinese.headwordOnlyLemmas);
   assert.equal(wordnet, 10_789);
+});
+
+test("literal grammatical references retain source text and opt out of meaning search", () => {
+  const directory = join(root, "data/translations/bulk");
+  const manifest = JSON.parse(readFileSync(join(directory, "manifest.json")));
+  let count = 0, clitic = false;
+  for (const descriptor of manifest.files) {
+    const lines = gunzipSync(readFileSync(join(directory, descriptor.file))).toString().trim().split("\n");
+    for (const line of lines) {
+      const row = JSON.parse(line);
+      if (row.engine !== "literal grammatical template") continue;
+      count += 1;
+      assert.deepEqual(row.aliasesZh, []);
+      assert.equal(row.reviewStatus, "machine-translated");
+      if (row.normalizedLemma === "la hi") {
+        assert.equal(row.translationZh, "加泰语弱读代词组合「la hi」");
+        clitic = true;
+      }
+    }
+  }
+  assert.equal(count, manifest.literalGrammarSenses);
+  assert.ok(clitic);
 });
 
 test("bulk Chinese binds definition, verified hint and headword evidence to actual source packs", () => {

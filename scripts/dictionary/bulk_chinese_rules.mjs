@@ -1,5 +1,11 @@
 /** Literal grammatical descriptions preserve referenced Catalan spellings. */
 export function grammaticalChinese(job) {
+  if (job.kind === "headword" && job.sourceLanguage === "ca" && job.sourcePartOfSpeech.includes("pronoun")) {
+    const parts = job.sourceText.split(/[\s'’-]+/u).filter(Boolean);
+    if (parts.length >= 2 && parts.every((part) => /^(?:el|els|la|les|lo|los|ho|en|ne|hi|em|me|et|te|ens|mos|us|vos|es|se|li|m|t|s|l|n)$/u.test(part))) {
+      return `加泰语弱读代词组合「${job.sourceText}」`;
+    }
+  }
   if (job.kind !== "definition" && job.sourcePartOfSpeech.includes("noun") && /^\p{Script=Latin}$/u.test(job.sourceText)) {
     return `拉丁字母 ${job.sourceText.toUpperCase()}（${job.sourceText}）`;
   }

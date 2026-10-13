@@ -34,7 +34,7 @@ for (const job of jobs) {
     engine: correction ? "source-compared correction" : grammatical ? "literal grammatical template" : result.engine };
   if (!correction && !grammatical && result.translationInput) row.translationInput = result.translationInput;
   if (correction) { row.reviewNote = correction.reason; row.reviewSources = correction.evidence ?? []; row.aliasesZh = correction.aliasesZh ?? []; correctionCount++; }
-  if (grammatical && !correction) grammarCount++;
+  if (grammatical && !correction) { row.aliasesZh = []; grammarCount++; }
   rows.push(row);
 }
 rows.sort((a, b) => a.normalizedLemma < b.normalizedLemma ? -1 : a.normalizedLemma > b.normalizedLemma ? 1 : a.jobId.localeCompare(b.jobId, "en"));

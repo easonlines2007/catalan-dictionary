@@ -1,0 +1,201 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared everyday queries. This is a regression set, not a corpus-wide accuracy estimate.",
+  "cases": [
+    {
+      "query": "你好",
+      "preferredLemma": "hola",
+      "sourceAliasLemma": "hola"
+    },
+    {
+      "query": "对不起",
+      "preferredLemma": "perdó",
+      "sourceAliasLemma": "perdó"
+    },
+    {
+      "query": "请",
+      "preferredLemma": "si us plau",
+      "sourceAliasLemma": "si us plau"
+    },
+    {
+      "query": "是的",
+      "preferredLemma": "sí",
+      "sourceAliasLemma": "sí"
+    },
+    {
+      "query": "公交车",
+      "preferredLemma": "autobús",
+      "sourceAliasLemma": "autobús"
+    },
+    {
+      "query": "飞机",
+      "preferredLemma": "avió",
+      "sourceAliasLemma": "avió"
+    },
+    {
+      "query": "酒店",
+      "preferredLemma": "hotel",
+      "sourceAliasLemma": "hotel"
+    },
+    {
+      "query": "警察",
+      "preferredLemma": "policia",
+      "sourceAliasLemma": "policia"
+    },
+    {
+      "query": "电话",
+      "preferredLemma": "telèfon",
+      "sourceAliasLemma": "telèfon"
+    },
+    {
+      "query": "网络",
+      "preferredLemma": "xarxa",
+      "sourceAliasLemma": "xarxa"
+    },
+    {
+      "query": "牛奶",
+      "preferredLemma": "llet",
+      "sourceAliasLemma": "llet"
+    },
+    {
+      "query": "蔬菜",
+      "preferredLemma": "verdura",
+      "sourceAliasLemma": "verdura"
+    },
+    {
+      "query": "橙子",
+      "preferredLemma": "taronja",
+      "sourceAliasLemma": "taronja"
+    },
+    {
+      "query": "买东西",
+      "preferredLemma": "comprar",
+      "sourceAliasLemma": "comprar"
+    },
+    {
+      "query": "看书",
+      "preferredLemma": "llegir",
+      "sourceAliasLemma": "llegir"
+    },
+    {
+      "query": "睡觉",
+      "preferredLemma": "dormir",
+      "sourceAliasLemma": "dormir"
+    },
+    {
+      "query": "跑步",
+      "preferredLemma": "córrer",
+      "sourceAliasLemma": "córrer"
+    },
+    {
+      "query": "昨天",
+      "preferredLemma": "ahir",
+      "sourceAliasLemma": "ahir"
+    },
+    {
+      "query": "现在",
+      "preferredLemma": "ara",
+      "sourceAliasLemma": "ara"
+    },
+    {
+      "query": "早上",
+      "preferredLemma": "matí",
+      "sourceAliasLemma": "matí"
+    },
+    {
+      "query": "中午",
+      "preferredLemma": "migdia",
+      "sourceAliasLemma": "migdia"
+    },
+    {
+      "query": "多",
+      "preferredLemma": "molt",
+      "sourceAliasLemma": "molt"
+    },
+    {
+      "query": "少",
+      "preferredLemma": "poc",
+      "sourceAliasLemma": "poc"
+    },
+    {
+      "query": "帮助",
+      "preferredLemma": "ajudar",
+      "sourceAliasLemma": "ajudar"
+    },
+    {
+      "query": "发烧",
+      "preferredLemma": "febre",
+      "sourceAliasLemma": "febre"
+    },
+    {
+      "query": "紧急",
+      "preferredLemma": "urgent",
+      "sourceAliasLemma": "urgent"
+    },
+    {
+      "query": "西班牙语",
+      "preferredLemma": "castellà",
+      "sourceAliasLemma": "castellà"
+    },
+    {
+      "query": "加泰语",
+      "preferredLemma": "català",
+      "sourceAliasLemma": "català"
+    },
+    {
+      "query": "插座",
+      "preferredLemma": "endoll",
+      "sourceAliasLemma": "endoll"
+    },
+    {
+      "query": "吃早餐",
+      "preferredLemma": "esmorzar",
+      "sourceAliasLemma": "esmorzar"
+    },
+    {
+      "query": "说话",
+      "preferredLemma": "parlar",
+      "sourceAliasLemma": "parlar"
+    },
+    {
+      "query": "看",
+      "preferredLemma": "mirar",
+      "sourceAliasLemma": "mirar"
+    },
+    {
+      "query": "需要",
+      "preferredLemma": "necessitar",
+      "sourceAliasLemma": "necessitar"
+    },
+    {
+      "query": "我不知道",
+      "preferredLemma": "no ho sé",
+      "sourceAliasLemma": "no ho sé"
+    },
+    {
+      "query": "我听不懂",
+      "preferredLemma": "no ho entenc",
+      "sourceAliasLemma": "no ho entenc"
+    },
+    {
+      "query": "下午好",
+      "preferredLemma": "bona tarda",
+      "sourceAliasLemma": "bona tarda"
+    },
+    {
+      "query": "晚上好",
+      "preferredLemma": "bon vespre",
+      "sourceAliasLemma": "bon vespre"
+    },
+    {
+      "query": "女人",
+      "preferredLemma": "dona",
+      "sourceAliasLemma": "dona"
+    },
+    {
+      "query": "米饭",
+      "preferredLemma": "arròs",
+      "sourceAliasLemma": "arròs"
+    }
+  ]
+}

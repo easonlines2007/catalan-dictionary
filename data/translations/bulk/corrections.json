@@ -10597,6 +10597,19 @@
     ]
   },
   {
+    "jobId": "248dcb9ace5aee582ef4a0f4a9cc9264e4e176848233d89200a385b2189da0d5",
+    "sourceHash": "cd9ab71660e1ece938dab1f4f45626f16ce05e33ca06b5e74d3740390610b660",
+    "translationZh": "葛缕子（植物，学名 Carum carvi）",
+    "aliasesZh": [
+      "葛缕子"
+    ],
+    "reason": "Source-compared botanical correction: DCVB identifies alcaravia as Carum carvi; the Chinese flora identifies this species as 葛缕子. Remove the unrelated eating phrase. Wording is project-authored, with only the factual name and identity retained.",
+    "evidence": [
+      "https://dcvb.iec.cat/results.asp?word=alcaravia",
+      "https://www.iplant.cn/z/frps/34450"
+    ]
+  },
+  {
     "jobId": "24932c40bde4688687375638443588fe807b05200530f94ed834bc232db13414",
     "sourceHash": "dca60910df865c0f42bbe789e2f39c4bb155f5339901c2f530627ea2d8cfeb56",
     "translationZh": "参见「tossut」：頑固",
@@ -56493,6 +56506,17 @@
     "evidence": [
       "data/translations/bulk/sources/chinese-references.json#emblanquinar"
     ]
+  },
+  {
+    "jobId": "c77d3d8d1f2cd44f5cc0b34afe18b87278a67523b4232df38ad6e0a63310b44d",
+    "sourceHash": "144ed495bf123d2fdc39330adb14a4e81cd72c61188927870119bb0d9658ae96",
+    "translationZh": "市镇以上层级的；跨市镇的",
+    "aliasesZh": [
+      "市镇以上层级的",
+      "跨市镇的"
+    ],
+    "reason": "Source-compared correction of the trusted Spanish adjective supramunicipal: supra- + municipal refers to municipalities, not supermarkets.",
+    "evidence": []
   },
   {
     "jobId": "c77fe7ee28452582553d6325b899c0bd6144d8fe59b1365fc39cfe74dcc9b44d",

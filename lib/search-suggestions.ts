@@ -105,6 +105,8 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
   if (!key || limit <= 0 || chars.length > 64 || signal?.aborted) return [];
   const catalogue = await prepareChinese(rows);
   const traditional = simplifyChinese(query) !== query;
+  const negative = /^(?:不|没|无|未|非|别)/u.test(key);
+  const number = key.match(/^(?:第)?[0-9一二三四五六七八九十百千万亿两零〇]+/u)?.[0];
   // A trailing 的 can obscure a useful headword, but remains a labelled
   // suggestion: it must never replace an existing exact adjective translation.
   const unmodified = chars.length >= 3 && key.endsWith("的") ? key.slice(0, -1) : undefined;
@@ -130,6 +132,11 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
     else {
       if (literal || chars.length < 2 || Math.abs(length - chars.length) > (chars.length < 6 ? 1 : 2)
           || !chars.some((char) => candidate.includes(char))) continue;
+      // An edit may fix spelling, but must not quietly remove 不/无 or change
+      // a leading quantity/ordinal into another number.
+      if (negative !== /^(?:不|没|无|未|非|别)/u.test(candidate)) continue;
+      const candidateNumber = candidate.match(/^(?:第)?[0-9一二三四五六七八九十百千万亿两零〇]+/u)?.[0];
+      if (number !== candidateNumber) continue;
       const other = Array.from(candidate);
       const changed = chars.filter((char, position) => char !== other[position]);
       const phonetic = chars.length === length && changed.length > 0
