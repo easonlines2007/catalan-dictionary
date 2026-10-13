@@ -1,6 +1,7 @@
 import { DICTIONARY } from "./dictionary.ts";
+import { enrichChinese } from "./chinese-enrichment.ts";
+import { searchRepository } from "./search-repository.ts";
 import {
-  countDictionaryShards,
   deleteDictionaryShardsExcept,
   getDictionaryMetadata,
   getDictionaryShard,
@@ -14,6 +15,7 @@ import type {
   OfflineInstallProgress,
   PackedDictionaryEntry,
   PartOfSpeech,
+  SearchManifest,
   StoredDictionaryShard,
 } from "./types.ts";
 
@@ -86,12 +88,16 @@ function unpackEntry(record: PackedDictionaryEntry): DictionaryEntry {
     // while a newer version installs.
     plural: isVerb ? undefined : record.pl,
     chinese: record.zh,
+    chineseMachine: record.zhMachine,
+    chineseReference: record.zhReference,
+    chineseHeadword: record.zhHeadword,
     spanish: record.es,
     definitions: record.d,
     examples: record.ex,
     forms: record.f,
     pronunciation: record.ipa,
     source: record.s,
+    provenance: record.pv,
     frequencyRank: record.r,
   };
 }
@@ -134,12 +140,22 @@ function mergeEntry(
     gender: base.gender ?? overlay.gender,
     plural: mergeUnique(base.plural, overlay.plural),
     chinese: mergeUnique(base.chinese, overlay.chinese),
+    chineseMachine: base.chinese?.length || base.definitions?.zh?.length
+      ? base.chineseMachine
+      : overlay.chineseMachine,
+    chineseReference: base.chinese?.length || base.definitions?.zh?.length
+      ? base.chineseReference
+      : overlay.chineseReference,
+    chineseHeadword: base.chinese?.length || base.definitions?.zh?.length
+      ? base.chineseHeadword
+      : overlay.chineseHeadword,
     spanish: mergeUnique(base.spanish, overlay.spanish),
     definitions: mergeDefinitions(base.definitions, overlay.definitions),
     examples: mergeUnique(base.examples, overlay.examples)?.slice(0, 4),
     forms: mergeUnique(base.forms, overlay.forms)?.slice(0, 24),
     pronunciation: base.pronunciation ?? overlay.pronunciation,
     source: mergeUnique(base.source, overlay.source),
+    provenance: mergeUnique(base.provenance, overlay.provenance),
     frequencyRank: Math.min(
       base.frequencyRank ?? Number.MAX_SAFE_INTEGER,
       overlay.frequencyRank ?? Number.MAX_SAFE_INTEGER,
@@ -394,7 +410,11 @@ export class DictionaryRepository {
     }
     if (await this.compactCoreMode(manifest)) {
       const coreRecord = (await this.coreLexicon()).get(normalizedLemma);
-      return coreRecord ? mergeEntry(curated, unpackEntry(coreRecord)) : curated;
+      const enrichedCore = await searchRepository.coreEntry(normalizedLemma, manifest.dataVersion)
+        .catch(() => undefined);
+      const entry = mergeEntry(coreRecord ? mergeEntry(curated, unpackEntry(coreRecord)) : curated,
+        enrichedCore ? unpackEntry(enrichedCore) : undefined);
+      return entry ? enrichChinese(entry) : undefined;
     }
     const [base, freedict, wiktionary, curatedPack] = await Promise.all([
       this.entryFromLayer("lex", manifest.lex, normalizedLemma),
@@ -418,12 +438,35 @@ export class DictionaryRepository {
       curated,
       mergeEntry(curatedPack, mergeEntry(base, mergeEntry(freedict, wiktionary))),
     );
-    if (merged) return merged;
+    if (merged) {
+      const reviewed = enrichChinese(merged);
+      if (reviewed.chinese?.length || reviewed.definitions?.zh?.length) return reviewed;
+      const chinese = await searchRepository.chineseEntry(normalizedLemma, manifest.dataVersion)
+        .catch(() => undefined);
+      return mergeEntry(reviewed, chinese ? unpackEntry(chinese) : undefined);
+    }
 
     // Fresh offline installs have the compact core pack, not every extended
     // range shard. Decode it only after the small range lookup cannot run.
     const coreRecord = (await this.coreLexicon()).get(normalizedLemma);
-    return coreRecord ? unpackEntry(coreRecord) : undefined;
+    const enrichedCore = await searchRepository.coreEntry(normalizedLemma, manifest.dataVersion)
+      .catch(() => undefined);
+    const fallback = mergeEntry(coreRecord ? unpackEntry(coreRecord) : undefined,
+      enrichedCore ? unpackEntry(enrichedCore) : undefined);
+    return fallback ? enrichChinese(fallback) : undefined;
+  }
+
+  async searchManifest(): Promise<SearchManifest> {
+    return searchRepository.manifest((await this.manifest()).dataVersion);
+  }
+
+  /** Refresh old saved snapshots without fetching all of their lexical layers. */
+  async enrichEntryChinese(entry: DictionaryEntry): Promise<DictionaryEntry> {
+    const reviewed = enrichChinese(entry);
+    if (reviewed.chinese?.length || reviewed.definitions?.zh?.length) return reviewed;
+    const manifest = await this.manifest();
+    const overlay = await searchRepository.chineseEntry(entry.normalizedLemma, manifest.dataVersion);
+    return mergeEntry(reviewed, overlay ? unpackEntry(overlay) : undefined) ?? reviewed;
   }
 
   async morphology(
@@ -528,6 +571,7 @@ export class DictionaryRepository {
     await Promise.all([
       this.primeCompressed("core", lex),
       this.primeCompressed("core", morph),
+      searchRepository.ensureCoreOffline(manifest.dataVersion),
     ]);
     await setDictionaryMetadata(`coreReady:${manifest.dataVersion}`, true).catch(
       () => undefined,
@@ -574,15 +618,26 @@ export class DictionaryRepository {
   async installedOfflineProgress(): Promise<OfflineInstallProgress | undefined> {
     const manifest = await this.manifest();
     const descriptors = this.offlineDescriptors(manifest);
-    const completed = await countDictionaryShards(manifest.dataVersion).catch(() => 0);
-    if (completed < descriptors.length) return undefined;
+    const search = await this.searchManifest();
+    const keys = [
+      ...descriptors.map(([kind, descriptor]) => `${manifest.dataVersion}:${kind}:${descriptor.id}`),
+      ...search.offline.full.map((descriptor) => searchRepository.storageKey(search, descriptor)),
+    ];
+    // Counting by base version alone also counts old search versions and
+    // unrelated assets. Every required shard must actually be present.
+    const stored = await Promise.all(keys.map((key) => getDictionaryShard(key).catch(() => undefined)));
+    if (stored.some((record) => !record)) return undefined;
+    await Promise.all([
+      setDictionaryMetadata(`fullReady:${manifest.dataVersion}`, true),
+      setDictionaryMetadata(`searchFullReady:${search.dataVersion}`, true),
+    ]);
     const totalBytes = descriptors.reduce(
       (sum, [, descriptor]) => sum + descriptor.bytes,
       0,
-    );
+    ) + search.offline.full.reduce((sum, descriptor) => sum + descriptor.bytes, 0);
     return {
-      completed: descriptors.length,
-      total: descriptors.length,
+      completed: keys.length,
+      total: keys.length,
       downloadedBytes: totalBytes,
       totalBytes,
       ready: true,
@@ -594,7 +649,10 @@ export class DictionaryRepository {
   ): Promise<OfflineInstallProgress> {
     const manifest = await this.manifest();
     const descriptors = this.offlineDescriptors(manifest);
-    const totalBytes = descriptors.reduce((sum, [, descriptor]) => sum + descriptor.bytes, 0);
+    const search = await this.searchManifest();
+    const total = descriptors.length + search.offline.full.length;
+    const totalBytes = descriptors.reduce((sum, [, descriptor]) => sum + descriptor.bytes, 0)
+      + search.offline.full.reduce((sum, descriptor) => sum + descriptor.bytes, 0);
     let completed = 0;
     let downloadedBytes = 0;
 
@@ -606,19 +664,27 @@ export class DictionaryRepository {
       downloadedBytes += descriptor.bytes;
       const progress = {
         completed,
-        total: descriptors.length,
+        total,
         downloadedBytes,
         totalBytes,
-        ready: completed === descriptors.length,
+        ready: false,
       };
       onProgress?.(progress);
       // Yield so iPhone Safari can keep rendering progress and accepting input.
       await new Promise((resolve) => setTimeout(resolve, 0));
     }
 
+    for (const descriptor of search.offline.full) {
+      await searchRepository.prime(search, descriptor);
+      completed += 1;
+      downloadedBytes += descriptor.bytes;
+      onProgress?.({ completed, total, downloadedBytes, totalBytes, ready: false });
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    }
+
     const finalProgress = {
       completed,
-      total: descriptors.length,
+      total,
       downloadedBytes,
       totalBytes,
       ready: true,
@@ -626,6 +692,8 @@ export class DictionaryRepository {
     await setDictionaryMetadata(`fullReady:${manifest.dataVersion}`, true).catch(
       () => undefined,
     );
+    await setDictionaryMetadata(`searchFullReady:${search.dataVersion}`, true);
+    onProgress?.(finalProgress);
     return finalProgress;
   }
 }

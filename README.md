@@ -5,9 +5,14 @@ English · [中文](README.zh-CN.md) · [Español](README.es.md)
 I came to Barcelona to study, but my Catalan is pretty terrible—so I made a
 Catalan–Chinese–Spanish dictionary to help myself out. Feel free to use it!
 
-A mobile-friendly dictionary with word-form lookup, pronunciation, saved words
-and offline access. It covers about 97,000 Catalan entries; Chinese meanings
-are available for a small, reviewed subset.
+A mobile-friendly dictionary with Chinese, Spanish and Catalan search,
+word-form lookup, pronunciation, saved words and offline access. It covers
+about 97,000 Catalan entries. Chinese meanings and term references cover almost all entries;
+machine-assisted translations are labelled separately.
+
+This guide describes the current repository version. Changes appear on the
+public site after deployment. The screenshots below show an earlier version
+and illustrate the general layout.
 
 ## Open and search
 
@@ -18,20 +23,33 @@ No account, sign-in or software download is needed for online use.
 
 *The home screen: search at the top, Cerca and Desats at the bottom.*
 
-1. Type a **Catalan** word or word form in the search box.
-2. Press **Enter** or tap the **→** button. Try `pujant`: the app finds `pujar`.
-3. Read the available meanings, examples and word-form information.
-   If several matches appear under **Altres coincidències possibles**, tap one.
+1. Type a word or short phrase in **Chinese, Spanish or Catalan** in the same
+   search box. **自动** searches automatically; **中文 / Español / Català** restricts
+   the input language.
+2. Press **Enter** or tap **→**. `学校`, `學校`, `escuela` and `escola` can find
+   `escola`. Catalan word forms still work: `pujant` finds `pujar`.
+3. Read the available meanings, examples and word-form information. Reverse
+   matches show their language and matching term. When a word has several
+   meanings or the same spelling in Catalan and Spanish, inspect the alternative
+   Catalan candidates and choose the intended entry.
 
 <img src="docs/images/lookup.jpg" width="280" alt="Word-form lookup resolving pujant to pujar, with a pronunciation button">
 <img src="docs/images/lookup-details.jpg" width="280" alt="Scrolling down to read Catalan, Chinese and Spanish meanings and examples for pujar">
 
 *pujant → pujar. Scroll down for translations, examples and the save button.*
 
-The search works from Catalan to the available meanings. It does not provide
-reverse Chinese/Spanish search or translate whole sentences. Not every entry
-has all three languages, pronunciation notation or examples; some entries use
-Catalan definitions or English definitions when other meanings are unavailable.
+Chinese search accepts simplified and traditional forms. Reverse lookup uses
+the translations and search terms currently available, so a missing translation
+can also mean a missing reverse match. This is a dictionary, rather than a
+whole-sentence translator. Not every entry has all three languages, pronunciation
+notation or examples; some use Catalan or English definitions. **机器辅助** marks
+machine-assisted Chinese meanings; other missing meanings remain unfilled.
+**词库参考** marks source-aligned open bilingual dictionary equivalents, which
+may cover only some senses. Chinese meanings or term references now cover
+97,668 of 97,675 entries, including all 5,005 core entries. Bulk additions keep
+the machine-assisted label; headword-only results also show **译词参考**.
+Seven source-insufficient records remain explicitly documented, without filler.
+These counts measure presence, not human approval or exhaustive sense coverage.
 
 Keep accents when possible. For example, `coneixer` suggests `conèixer`;
 tap the suggestion to open it. Suggestions help with some spelling mistakes,
@@ -40,13 +58,16 @@ but a missing word may still need a different spelling or its dictionary form.
 ## Listen, save and revisit
 
 - Tap **🔊** to hear the word using your browser or system speech service.
+  The resulting Catalan entry is pronounced; Chinese and Spanish search input
+  is not read with the Catalan voice.
   A Catalan voice may need to be downloaded in your device's voice settings.
   Voice quality and offline playback depend on your device and chosen voice.
 - Tap **☆ Desa** on a result to save the word; the button becomes **★ Desat**.
 - Open **Desats** at the bottom to see saved words. Tap a word to look it up,
   or tap its star to remove it.
 - Tap **Cerca** to return to the home screen. **Recent** shows recent successful
-  searches; tap one to search again. **Esborra** clears history only.
+  searches; tap one to repeat its original language mode. **Esborra** clears
+  history only. Saved entries reopen directly in Catalan mode.
 
 <img src="docs/images/saved.jpg" width="320" alt="Desats screen showing saved Catalan words and their available translations">
 
@@ -60,15 +81,18 @@ complete offline download; opening a saved word performs another lookup.
 ## Prepare offline access
 
 Open the app **while connected** first and let setup finish. The essential
-vocabulary contains about 5,000 entries; the rest loads as you search online.
+vocabulary contains about 5,000 entries, including their available Chinese
+meanings and reverse-search data; the rest loads as you search online.
 For the whole dictionary:
 
-1. Return to **Cerca** and find **Desa tot per usar-lo sense connexió**.
-   On the current live version, if history hides this button, tap **Esborra**
-   first. This clears recent searches, but keeps saved words.
+1. Find **下载完整离线词库** (download the full offline dictionary) below the page
+   content. The download panel remains available with history, results and saved
+   words; clearing history is unnecessary.
 2. Tap the download button and keep the page open. The compressed dictionary
-   is about **15 MB**; allow extra browser storage for the app and its data.
-3. Wait until the button reads **Diccionari complet desat** before going offline.
+   and search data total about **27 MB**; the button shows the current size.
+   Allow extra browser storage for the app and its data.
+3. Wait until the button reads **完整词库已保存 · Diccionari complet desat** before
+   going offline.
 4. If the download stops, reconnect and tap it again to resume stored parts.
 
 <img src="docs/images/offline.jpg" width="320" alt="Offline setup screen showing the complete dictionary saved on the device">
@@ -79,6 +103,8 @@ Offline access needs the app and dictionary to have been prepared successfully
 in the same browser. Browser storage can be cleared or evicted, so check it
 before relying on it during travel. When dictionary data changes, reopen online
 and download the new version before using the full dictionary offline again.
+If an offline search cannot reach the required data, the app explains that the
+downloaded subset may be incomplete. Reconnect or finish the full download.
 
 ## Add it to your home screen
 

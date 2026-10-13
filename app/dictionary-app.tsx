@@ -4,6 +4,7 @@ import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { POPULAR_SEARCHES } from "@/lib/dictionary";
 import { dictionaryRepository } from "@/lib/dictionary-repository";
 import { lookupWord, normalizeCatalanInput } from "@/lib/lookup";
+import { normalizeSearchInput, searchCacheKey } from "@/lib/search-normalization";
 import { findCatalanVoice, speakCatalan } from "@/lib/speech";
 import {
   addHistory,
@@ -24,6 +25,8 @@ import type {
   LookupResponse,
   OfflineInstallProgress,
   SavedRecord,
+  SearchLanguage,
+  SearchManifest,
 } from "@/lib/types";
 import { primaryChinese, primarySpanish } from "@/lib/types";
 
@@ -46,6 +49,34 @@ const PART_OF_SPEECH: Record<string, string> = {
 };
 
 type View = "search" | "saved";
+
+const SEARCH_LANGUAGES: Array<{ value: SearchLanguage; label: string }> = [
+  { value: "auto", label: "自动" },
+  { value: "zh", label: "中文" },
+  { value: "es", label: "Español" },
+  { value: "ca", label: "Català" },
+];
+const LANGUAGE_LABELS = { zh: "中文", es: "Español", ca: "Català" };
+
+function inputLanguage(query: string, mode?: SearchLanguage): string | undefined {
+  if (mode === "zh" || /\p{Script=Han}/u.test(query)) return "zh-Hans";
+  return mode && mode !== "auto" ? mode : undefined;
+}
+
+function historyRecordForLookup(found: FoundLookup): HistoryRecord {
+  return {
+    query: found.searchedForm,
+    normalizedQuery: searchCacheKey(found.searchedForm, found.searchLanguage ?? "auto"),
+    searchLanguage: found.searchLanguage ?? "auto",
+    lemma: found.lemma,
+    meaning:
+      primaryChinese(found.entry) ||
+      primarySpanish(found.entry) ||
+      found.entry.definitions?.ca?.[0] ||
+      "",
+    timestamp: Date.now(),
+  };
+}
 
 function SpeakerButton({
   text,
@@ -72,36 +103,57 @@ function SpeakerButton({
 export function DictionaryApp() {
   const [view, setView] = useState<View>("search");
   const [query, setQuery] = useState("");
+  const [searchLanguage, setSearchLanguage] = useState<SearchLanguage>("auto");
   const [result, setResult] = useState<LookupResponse | null>(null);
   const [history, setHistory] = useState<HistoryRecord[]>([]);
   const [savedWords, setSavedWords] = useState<SavedRecord[]>([]);
   const [searching, setSearching] = useState(false);
   const [announcement, setAnnouncement] = useState("");
   const [manifest, setManifest] = useState<DictionaryManifest | null>(null);
+  const [searchManifest, setSearchManifest] = useState<SearchManifest | null>(null);
   const [coreReady, setCoreReady] = useState(false);
+  const [corePreparing, setCorePreparing] = useState(true);
   const [offlineProgress, setOfflineProgress] =
     useState<OfflineInstallProgress | null>(null);
   const [offlineInstalling, setOfflineInstalling] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const searchRequest = useRef(0);
 
   useEffect(() => {
+    let cancelled = false;
     void requestPersistentStorage();
     Promise.all([getHistory(), getSavedWords()])
-      .then(([storedHistory, storedSaved]) => {
+      .then(async ([storedHistory, storedSaved]) => {
+        if (cancelled) return;
         setHistory(storedHistory);
         setSavedWords(storedSaved);
+        const refreshed = new Map(await Promise.all(storedSaved.map(async (record) => [
+          record.lemma,
+          await dictionaryRepository.enrichEntryChinese(record.entry).catch(() => record.entry),
+        ] as const)));
+        if (cancelled) return;
+        // Keep removals and newer saves made while enrichment was loading.
+        setSavedWords((current) => current.map((record) => {
+          const entry = refreshed.get(record.lemma);
+          return entry && !primaryChinese(record.entry) && primaryChinese(entry)
+            ? { ...record, entry } : record;
+        }));
       })
       .catch(() => {
         // Search remains fully functional if private browsing blocks IndexedDB.
       });
+    return () => { cancelled = true; };
   }, []);
 
   useEffect(() => {
     let cancelled = false;
-    dictionaryRepository
-      .manifest()
-      .then((nextManifest) => {
+    Promise.all([
+      dictionaryRepository.manifest(),
+      dictionaryRepository.searchManifest().catch(() => null),
+    ])
+      .then(([nextManifest, nextSearchManifest]) => {
         if (!cancelled) setManifest(nextManifest);
+        if (!cancelled) setSearchManifest(nextSearchManifest);
         return dictionaryRepository.ensureCoreOffline();
       })
       .then(() => {
@@ -112,7 +164,10 @@ export function DictionaryApp() {
         if (!cancelled && progress) setOfflineProgress(progress);
       })
       .catch(() => {
-        // The human-reviewed emergency overlay remains usable without the pack.
+        // Authored seed entries remain usable without the downloaded pack.
+      })
+      .finally(() => {
+        if (!cancelled) setCorePreparing(false);
       });
     return () => {
       cancelled = true;
@@ -148,24 +203,14 @@ export function DictionaryApp() {
     [savedWords],
   );
 
-  const rememberLookup = async (found: FoundLookup) => {
-    const optimisticRecord: HistoryRecord = {
-      query: found.searchedForm,
-      normalizedQuery: found.normalizedQuery,
-      lemma: found.lemma,
-      meaning:
-        primaryChinese(found.entry) ||
-        primarySpanish(found.entry) ||
-        found.entry.definitions?.ca?.[0] ||
-        "",
-      timestamp: Date.now(),
-    };
+  const handleRememberLookup = async (found: FoundLookup) => {
+    const optimisticRecord = historyRecordForLookup(found);
 
     setHistory((current) =>
       [
         optimisticRecord,
         ...current.filter(
-          (record) => record.normalizedQuery !== found.normalizedQuery,
+          (record) => record.normalizedQuery !== optimisticRecord.normalizedQuery,
         ),
       ].slice(0, 20),
     );
@@ -173,28 +218,33 @@ export function DictionaryApp() {
     try {
       await Promise.all([
         addHistory(found),
-        cacheLookup(found, manifest?.dataVersion),
+        cacheLookup(found, manifest?.dataVersion, found.searchDataVersion ?? searchManifest?.dataVersion),
       ]);
     } catch {
       // Device-local persistence can fail without blocking the lookup itself.
     }
   };
 
-  const runSearch = async (rawQuery: string) => {
-    const normalized = normalizeCatalanInput(rawQuery);
+  const runSearch = async (rawQuery: string, modeOverride?: SearchLanguage) => {
+    const mode = modeOverride ?? searchLanguage;
+    const normalized = normalizeSearchInput(rawQuery, mode);
     if (!normalized) {
       inputRef.current?.focus();
       return;
     }
 
+    const request = ++searchRequest.current;
     setView("search");
+    setSearchLanguage(mode);
     setQuery(rawQuery.trim());
     setSearching(true);
     setAnnouncement("");
 
     let nextResult: LookupResponse | null = null;
     try {
-      const cached = await getCachedLookup(normalized);
+      const cached = manifest && searchManifest
+        ? await getCachedLookup(rawQuery, mode, searchManifest.dataVersion)
+        : undefined;
       if (
         cached &&
         (!manifest || cached.dataVersion === manifest.dataVersion)
@@ -212,7 +262,7 @@ export function DictionaryApp() {
     let lookupFailed = false;
     if (!nextResult) {
       try {
-        nextResult = await lookupWord(rawQuery);
+        nextResult = await lookupWord(rawQuery, mode);
       } catch {
         lookupFailed = true;
         nextResult = {
@@ -221,24 +271,43 @@ export function DictionaryApp() {
           normalizedQuery: normalized,
           resolutionSource: "none",
           suggestions: [],
+          searchLanguage: mode,
+          offlineLimited: typeof navigator !== "undefined" && !navigator.onLine,
         };
       }
     }
+    if (request !== searchRequest.current) return;
     setResult(nextResult);
     setSearching(false);
 
     if (lookupFailed) {
       setAnnouncement(
-        "Dictionary data is not available offline yet. Reconnect once to finish setup.",
+        "暂时无法读取词库，请联网后重试或完成离线下载。",
       );
     } else if (nextResult.status === "found") {
       setAnnouncement(`${rawQuery}: ${nextResult.lemma}`);
-      void rememberLookup(nextResult);
+      void handleRememberLookup(nextResult);
+    } else if (nextResult.offlineLimited) {
+      setAnnouncement("已下载的离线词库中没有匹配结果。联网或下载完整词库后再试。");
     } else if (nextResult.suggestions.length) {
       setAnnouncement(`No result. Did you mean ${nextResult.suggestions[0]}?`);
     } else {
       setAnnouncement(`No result for ${rawQuery}.`);
     }
+  };
+
+  const changeSearchLanguage = (mode: SearchLanguage) => {
+    if (mode === searchLanguage) return;
+    setSearchLanguage(mode);
+    if (query.trim() && result) {
+      void runSearch(query, mode);
+    } else {
+      // Invalidate a pending request when the user changes its language filter.
+      searchRequest.current += 1;
+      setSearching(false);
+      setResult(null);
+    }
+    inputRef.current?.focus();
   };
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -284,35 +353,46 @@ export function DictionaryApp() {
 
   const chooseCandidate = async (candidateLemma: string) => {
     if (!result || result.status !== "found") return;
+    const request = searchRequest.current;
     const candidate = result.candidates.find(
       (item) => item.lemma === candidateLemma,
     );
     const entry =
       candidate?.entry ??
       (await dictionaryRepository.getEntry(normalizeCatalanInput(candidateLemma)));
-    if (!candidate || !entry) return;
+    if (!candidate || !entry || request !== searchRequest.current) return;
 
-    setResult({
+    const nextResult: FoundLookup = {
       ...result,
       lemma: candidateLemma,
       entry,
       morphology: candidate.morphology,
       confidence: candidate.confidence ?? 0,
-    });
+      matchedLanguage: candidate.matchedLanguage,
+      matchedTerm: candidate.matchedTerm,
+      matchKind: candidate.matchKind,
+      resolutionSource: candidate.matchedLanguage && candidate.matchedLanguage !== "ca"
+        ? "translation"
+        : candidate.matchKind === "morphology" ? "morphology" : "exact",
+    };
+    setResult(nextResult);
+    void handleRememberLookup(nextResult);
   };
 
   const installFullDictionary = async () => {
     setOfflineInstalling(true);
     setAnnouncement("Downloading the complete offline dictionary.");
     try {
-      const [nextManifest, estimate] = await Promise.all([
+      const [nextManifest, nextSearchManifest, estimate] = await Promise.all([
         dictionaryRepository.manifest(),
+        dictionaryRepository.searchManifest(),
         getStorageEstimate(),
       ]);
-      const requiredBytes =
+      const requiredBytes = (
         nextManifest.sizes.compressedBytes ??
         nextManifest.sizes.gzipBytes ??
-        nextManifest.sizes.rawBytes;
+        nextManifest.sizes.rawBytes
+      ) + nextSearchManifest.sizes.compressedBytes;
       if (
         estimate?.quota !== undefined &&
         estimate.usage !== undefined &&
@@ -375,7 +455,7 @@ export function DictionaryApp() {
 
         <form className="search-form" role="search" onSubmit={handleSubmit}>
           <label className="sr-only" htmlFor="dictionary-search">
-            Cerca una paraula en català
+            输入中文、西班牙语或加泰语，查找 Català 单词
           </label>
           <div className="search-field">
             <span className="search-glyph" aria-hidden="true">
@@ -386,22 +466,38 @@ export function DictionaryApp() {
               id="dictionary-search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Cerca una paraula..."
+              placeholder="中文 / Español / Català"
               autoCapitalize="none"
               autoComplete="off"
               autoCorrect="off"
               enterKeyHint="search"
               spellCheck={false}
+              aria-describedby="search-help"
             />
             <button
               className="search-submit"
               type="submit"
-              aria-label="Cerca"
-              disabled={searching}
+              aria-label="查词"
+              aria-busy={searching}
             >
               <span aria-hidden="true">{searching ? "···" : "→"}</span>
             </button>
           </div>
+          <div className="search-languages" role="group" aria-label="输入语言">
+            {SEARCH_LANGUAGES.map(({ value, label }) => (
+              <button
+                key={value}
+                type="button"
+                aria-pressed={searchLanguage === value}
+                onClick={() => changeSearchLanguage(value)}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+          <p className="search-help" id="search-help" lang="zh-Hans">
+            输入任一种语言的单词或短语，找到对应的 Català 词条。
+          </p>
         </form>
       </header>
 
@@ -420,35 +516,41 @@ export function DictionaryApp() {
               <MissView
                 query={result.searchedForm}
                 suggestions={result.suggestions}
-                onSearch={(term) => void runSearch(term)}
+                searchLanguage={result.searchLanguage}
+                offlineLimited={result.offlineLimited}
+                onSearch={(term) => void runSearch(term, "ca")}
               />
             ) : (
               <StartView
                 history={history}
-                onSearch={(term) => void runSearch(term)}
+                onSearch={(term, mode) => void runSearch(term, mode)}
                 onClear={() => void eraseHistory()}
-                manifest={manifest}
-                coreReady={coreReady}
-                offlineProgress={offlineProgress}
-                offlineInstalling={offlineInstalling}
-                onInstallOffline={() => void installFullDictionary()}
               />
             )}
 
             {result && history.length > 0 ? (
               <RecentStrip
                 history={history.slice(0, 4)}
-                onSearch={(term) => void runSearch(term)}
+                onSearch={(term, mode) => void runSearch(term, mode)}
               />
             ) : null}
           </>
         ) : (
           <SavedView
             savedWords={savedWords}
-            onOpen={(lemma) => void runSearch(lemma)}
+            onOpen={(lemma) => void runSearch(lemma, "ca")}
             onRemove={(lemma) => void removeSavedFromList(lemma)}
           />
         )}
+        <OfflinePanel
+          manifest={manifest}
+          searchManifest={searchManifest}
+          coreReady={coreReady}
+          corePreparing={corePreparing}
+          offlineProgress={offlineProgress}
+          offlineInstalling={offlineInstalling}
+          onInstallOffline={() => void installFullDictionary()}
+        />
       </div>
 
       <p className="sr-only" aria-live="polite" aria-atomic="true">
@@ -461,6 +563,8 @@ export function DictionaryApp() {
             type="button"
             className={view === "search" ? "nav-item nav-item--active" : "nav-item"}
             onClick={() => {
+              searchRequest.current += 1;
+              setSearching(false);
               setView("search");
               setResult(null);
             }}
@@ -474,7 +578,11 @@ export function DictionaryApp() {
           <button
             type="button"
             className={view === "saved" ? "nav-item nav-item--active" : "nav-item"}
-            onClick={() => setView("saved")}
+            onClick={() => {
+              searchRequest.current += 1;
+              setSearching(false);
+              setView("saved");
+            }}
             aria-current={view === "saved" ? "page" : undefined}
           >
             <span className="nav-icon" aria-hidden="true">
@@ -497,20 +605,10 @@ function StartView({
   history,
   onSearch,
   onClear,
-  manifest,
-  coreReady,
-  offlineProgress,
-  offlineInstalling,
-  onInstallOffline,
 }: {
   history: HistoryRecord[];
-  onSearch: (term: string) => void;
+  onSearch: (term: string, mode?: SearchLanguage) => void;
   onClear: () => void;
-  manifest: DictionaryManifest | null;
-  coreReady: boolean;
-  offlineProgress: OfflineInstallProgress | null;
-  offlineInstalling: boolean;
-  onInstallOffline: () => void;
 }) {
   return (
     <section className="start-view" aria-labelledby="recent-heading">
@@ -525,13 +623,13 @@ function StartView({
           <ul className="word-list">
             {history.map((record) => (
               <li key={record.normalizedQuery}>
-                <button type="button" onClick={() => onSearch(record.query)}>
-                  <span className="history-query" lang="ca">
+                <button type="button" onClick={() => onSearch(record.query, record.searchLanguage ?? "auto")}>
+                  <span className="history-query" lang={inputLanguage(record.query, record.searchLanguage)}>
                     {record.query}
                   </span>
                   <span className="history-detail">
                     <span lang="ca">
-                      {record.normalizedQuery === record.lemma
+                      {normalizeCatalanInput(record.query) === normalizeCatalanInput(record.lemma)
                         ? record.lemma
                         : `${record.lemma} ·`}
                     </span>{" "}
@@ -548,56 +646,94 @@ function StartView({
       ) : (
         <>
           <div className="empty-intro">
-            <p className="eyebrow">Diccionari essencial</p>
-            <h2 id="recent-heading">Una paraula, la forma correcta.</h2>
-            <p>
-              Escriu una forma com <strong>pujant</strong> o <strong>vaig</strong>.
-              Trobarem el lema, el significat i exemples útils.
+            <p className="eyebrow">Diccionari · 三语查词</p>
+            <h2 id="recent-heading">从熟悉的语言，找到 Català。</h2>
+            <p lang="zh-Hans">
+              试试 <strong>学校</strong>、<strong lang="es">escuela</strong> 或
+              <strong lang="ca"> escola</strong>。
+              也支持 <strong lang="ca">pujant</strong> 等加泰语词形。
             </p>
           </div>
           <div className="try-block">
-            <p>Prova-ho</p>
+            <p>试着查一个词 · Prova-ho</p>
             <div className="quick-words">
+              <button type="button" lang="zh-Hans" onClick={() => onSearch("学校", "zh")}>
+                学校
+              </button>
+              <button type="button" lang="es" onClick={() => onSearch("escuela", "es")}>
+                escuela
+              </button>
               {POPULAR_SEARCHES.map((word) => (
-                <button key={word} type="button" onClick={() => onSearch(word)}>
+                <button key={word} type="button" lang="ca" onClick={() => onSearch(word, "ca")}>
                   {word}
                 </button>
               ))}
             </div>
           </div>
-          <div className="install-note">
-            <span className="install-note__mark" aria-hidden="true">
-              ✓
-            </span>
-            <div>
-              <strong>
-                {coreReady ? "El vocabulari essencial ja és local" : "Preparant el mode local…"}
-              </strong>
-              <p>
-                {manifest
-                  ? `${manifest.coreLemmaCount.toLocaleString("ca")} lemes freqüents disponibles d’entrada; la resta es carrega per fragments.`
-                  : "El diccionari es desa al dispositiu sense carregar-lo tot a la memòria."}
-              </p>
-              <button
-                className="offline-download"
-                type="button"
-                disabled={offlineInstalling || offlineProgress?.ready}
-                onClick={onInstallOffline}
-              >
-                {offlineProgress?.ready
-                  ? "Diccionari complet desat"
-                  : offlineInstalling && offlineProgress
-                    ? `Desant ${offlineProgress.completed}/${offlineProgress.total}…`
-                    : "Desa tot per usar-lo sense connexió"}
-              </button>
-              <p className="license-link">
-                iPhone: Safari → Compartir → Afegir a la pantalla d’inici. ·{" "}
-                <a href="/dictionary/notices.json">Fonts i llicències</a>
-              </p>
-            </div>
-          </div>
         </>
       )}
+    </section>
+  );
+}
+
+function OfflinePanel({
+  manifest,
+  searchManifest,
+  coreReady,
+  corePreparing,
+  offlineProgress,
+  offlineInstalling,
+  onInstallOffline,
+}: {
+  manifest: DictionaryManifest | null;
+  searchManifest: SearchManifest | null;
+  coreReady: boolean;
+  corePreparing: boolean;
+  offlineProgress: OfflineInstallProgress | null;
+  offlineInstalling: boolean;
+  onInstallOffline: () => void;
+}) {
+  const fullBytes = manifest && searchManifest
+    ? (manifest.sizes.compressedBytes ?? manifest.sizes.gzipBytes ?? manifest.sizes.rawBytes)
+      + searchManifest.sizes.compressedBytes
+    : undefined;
+  const percent = offlineProgress?.total
+    ? Math.round(offlineProgress.completed / offlineProgress.total * 100)
+    : undefined;
+
+  return (
+    <section className="install-note offline-panel" aria-label="离线词库" lang="zh-Hans">
+      <span className="install-note__mark" aria-hidden="true">
+        {offlineProgress?.ready || coreReady ? "✓" : "↓"}
+      </span>
+      <div>
+        <strong>
+          {offlineProgress?.ready
+            ? "完整词库已下载"
+            : coreReady ? "常用词库已可离线使用"
+              : corePreparing ? "正在准备常用词库…" : "联网后可准备常用词库"}
+        </strong>
+        <p>
+          {manifest ? `常用约 ${manifest.coreLemmaCount.toLocaleString("zh-CN")} 词自动保存。` : "常用词会自动保存在这台设备。"}
+          下载完整词库后，可离线查询更多加泰语词和中西语译词。部分中文标有机器辅助或译词参考。
+        </p>
+        <button
+          className="offline-download"
+          type="button"
+          disabled={offlineInstalling || offlineProgress?.ready}
+          onClick={onInstallOffline}
+        >
+          {offlineProgress?.ready
+            ? "完整词库已保存 · Diccionari complet desat"
+            : offlineInstalling
+              ? `正在下载${percent !== undefined ? ` ${percent}%` : ""}…`
+              : `下载完整离线词库${fullBytes ? ` · 约 ${(fullBytes / 1_000_000).toFixed(1)} MB` : ""}`}
+        </button>
+        <p className="license-link">
+          iPhone：Safari → 分享 → 添加到主屏幕。 ·{" "}
+          <a href="/dictionary/notices.json">来源与许可</a>
+        </p>
+      </div>
     </section>
   );
 }
@@ -615,7 +751,9 @@ function ResultView({
   onToggleSaved: () => void;
   onChooseCandidate: (lemma: string) => void;
 }) {
-  const isResolved = result.normalizedQuery !== result.lemma;
+  const isReverse = result.matchedLanguage === "zh" || result.matchedLanguage === "es";
+  const isResolved = result.normalizedQuery !== result.entry.normalizedLemma;
+  const originalIsCatalan = result.matchedLanguage === "ca";
   const alternatives = result.candidates.filter(
     (candidate) => candidate.lemma !== result.lemma,
   );
@@ -638,21 +776,27 @@ function ResultView({
 
   return (
     <section className="result-view" aria-label={`Result for ${result.searchedForm}`}>
-      {isResolved ? (
+      {isResolved || isReverse ? (
         <div className="resolution-card">
           <div className="resolution-line">
-            <span lang="ca">{result.searchedForm}</span>
-            <SpeakerButton
+            <span lang={inputLanguage(result.searchedForm, result.matchedLanguage)}>{result.searchedForm}</span>
+            {originalIsCatalan ? <SpeakerButton
               text={result.searchedForm}
               compact
               onSpeak={onSpeak}
-            />
+            /> : null}
             <span className="resolution-arrow" aria-hidden="true">
               →
             </span>
             <span lang="ca">{result.lemma}</span>
           </div>
-          {result.morphology ? <p>{result.morphology}</p> : null}
+          {isReverse ? (
+            <p>
+              {LANGUAGE_LABELS[result.matchedLanguage as "zh" | "es"]} → Català
+              {result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== result.normalizedQuery
+                ? ` · 匹配：${result.matchedTerm}` : ""}
+            </p>
+          ) : result.morphology ? <p>{result.morphology}</p> : null}
         </div>
       ) : null}
 
@@ -685,12 +829,31 @@ function ResultView({
 
         {chinese ? (
           <div className="translation translation--primary">
-            <p className="translation-label">中文</p>
+            <p className="translation-label">
+              中文
+              {result.entry.chineseReference ? (
+                <span className="translation-status" title="来自开放双语词库的对应词，部分词义可能尚未收录">
+                  词库参考
+                </span>
+              ) : null}
+              {result.entry.chineseMachine ? (
+                <span className="translation-status" title="机器辅助翻译，保留原始来源，尚未逐词人工审校">
+                  机器辅助
+                </span>
+              ) : null}
+              {result.entry.chineseHeadword ? (
+                <span className="translation-status" title="原词库仅有词头；这里提供译词参考，可能未涵盖所有词义">
+                  译词参考
+                </span>
+              ) : null}
+            </p>
             <p className="chinese-meaning" lang="zh-Hans">
               {chinese}
             </p>
           </div>
-        ) : null}
+        ) : (
+          <p className="translation-pending" lang="zh-Hans">原始词库的释义资料不足，暂无法确认这个词的中文含义。</p>
+        )}
 
         {spanish ? (
           <div className="translation">
@@ -701,7 +864,8 @@ function ResultView({
           </div>
         ) : null}
 
-        {!catalanDefinitions.length && !chinese && !spanish && englishDefinitions.length ? (
+        {!catalanDefinitions.length && englishDefinitions.length &&
+          (result.entry.chineseMachine || (!chinese && !spanish)) ? (
           <div className="translation">
             <p className="translation-label">English · Wiktionary</p>
             <ol className="definition-list" lang="en">
@@ -766,7 +930,7 @@ function ResultView({
       {alternatives.length > 0 ? (
         <section className="alternatives" aria-labelledby="matches-heading">
           <p className="eyebrow" id="matches-heading">
-            Altres coincidències possibles
+            其他 Català 候选 · Altres coincidències
           </p>
           {alternatives.map((candidate) => {
             const entry = candidate.entry;
@@ -778,9 +942,19 @@ function ResultView({
               >
                 <span>
                   <strong lang="ca">{candidate.lemma}</strong>
-                  <small>{candidate.morphology}</small>
+                  <small>
+                    {[
+                      candidate.matchedLanguage
+                        ? `${LANGUAGE_LABELS[candidate.matchedLanguage]}${candidate.matchedTerm ? ` · ${candidate.matchedTerm}` : ""}`
+                        : undefined,
+                      candidate.morphology,
+                      candidate.partOfSpeech
+                        ? PART_OF_SPEECH[candidate.partOfSpeech] ?? candidate.partOfSpeech
+                        : undefined,
+                    ].filter(Boolean).join(" · ")}
+                  </small>
                 </span>
-                <span lang="zh-Hans">
+                <span lang={entry && primaryChinese(entry) ? "zh-Hans" : "es"}>
                   {entry ? primaryChinese(entry) || primarySpanish(entry) : ""}
                 </span>
               </button>
@@ -795,10 +969,14 @@ function ResultView({
 function MissView({
   query,
   suggestions,
+  searchLanguage,
+  offlineLimited,
   onSearch,
 }: {
   query: string;
   suggestions: string[];
+  searchLanguage?: SearchLanguage;
+  offlineLimited?: boolean;
   onSearch: (term: string) => void;
 }) {
   return (
@@ -806,13 +984,18 @@ function MissView({
       <span className="miss-mark" aria-hidden="true">
         ?
       </span>
-      <p className="eyebrow">No hem trobat cap entrada</p>
-      <h2 id="not-found-heading" lang="ca">
+      <p className="eyebrow">没有找到匹配的 Català 词条</p>
+      <h2 id="not-found-heading" lang={inputLanguage(query, searchLanguage)}>
         {query}
       </h2>
+      {offlineLimited ? (
+        <p className="miss-help" lang="zh-Hans">
+          已下载的离线词库中没有匹配结果。联网或下载完整词库后再试。
+        </p>
+      ) : null}
       {suggestions.length > 0 ? (
         <div className="suggestions">
-          <p>Volies dir…</p>
+          <p>你要找的是不是…</p>
           {suggestions.map((suggestion) => (
             <button
               key={suggestion}
@@ -824,9 +1007,11 @@ function MissView({
             </button>
           ))}
         </div>
-      ) : (
-        <p className="miss-help">Revisa els accents o prova el lema de la paraula.</p>
-      )}
+      ) : !offlineLimited ? (
+        <p className="miss-help" lang="zh-Hans">
+          试试近义词、常用短语或单词原形，也可以切换输入语言。
+        </p>
+      ) : null}
     </section>
   );
 }
@@ -836,7 +1021,7 @@ function RecentStrip({
   onSearch,
 }: {
   history: HistoryRecord[];
-  onSearch: (term: string) => void;
+  onSearch: (term: string, mode?: SearchLanguage) => void;
 }) {
   return (
     <section className="recent-strip" aria-labelledby="recent-strip-heading">
@@ -846,8 +1031,8 @@ function RecentStrip({
           <button
             key={record.normalizedQuery}
             type="button"
-            onClick={() => onSearch(record.query)}
-            lang="ca"
+            onClick={() => onSearch(record.query, record.searchLanguage ?? "auto")}
+            lang={inputLanguage(record.query, record.searchLanguage)}
           >
             {record.query}
           </button>

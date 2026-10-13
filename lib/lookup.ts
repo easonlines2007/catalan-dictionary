@@ -1,9 +1,13 @@
 import { dictionaryRepository, isVerb } from "./dictionary-repository.ts";
 import { FORM_INDEX } from "./dictionary.ts";
+import { searchRepository } from "./search-repository.ts";
+import { normalizeSearchInput } from "./search-normalization.ts";
 import type {
   DictionaryEntry,
   LemmaResult,
   LookupResponse,
+  FoundLookup,
+  SearchLanguage,
 } from "./types.ts";
 
 export function normalizeCatalanInput(value: string): string {
@@ -298,7 +302,7 @@ function makeFound(
   };
 }
 
-export async function lookupWord(query: string): Promise<LookupResponse> {
+async function lookupCatalan(query: string): Promise<LookupResponse> {
   const searchedForm = query.trim().normalize("NFC");
   const normalizedQuery = normalizeCatalanInput(query);
 
@@ -418,6 +422,91 @@ export async function lookupWord(query: string): Promise<LookupResponse> {
     resolutionSource: "none",
     suggestions: [],
   };
+}
+
+function catalanMatch(result: FoundLookup, mode: SearchLanguage): FoundLookup {
+  const matchKind = result.resolutionSource === "morphology" || result.resolutionSource === "clitic"
+    ? "morphology" : "lemma";
+  return {
+    ...result, searchLanguage: mode, matchedLanguage: "ca", matchedTerm: result.searchedForm, matchKind,
+    candidates: result.candidates.map((candidate) => ({
+      ...candidate, matchedLanguage: "ca", matchedTerm: result.searchedForm,
+      matchKind: candidate.morphology ? "morphology" : "lemma",
+    })),
+  };
+}
+
+async function reverseCandidates(query: string, language: "es" | "zh"): Promise<LemmaResult[]> {
+  const manifest = await dictionaryRepository.manifest();
+  const hits = await searchRepository.reverse(query, language, manifest.dataVersion);
+  const hydrated = await Promise.all(hits.map(async (hit) => {
+    const entry = await dictionaryRepository.getEntry(hit.normalizedLemma);
+    return entry ? {
+      input: query, lemma: entry.lemma, entry, partOfSpeech: entry.partOfSpeech?.[0],
+      matchedLanguage: language, matchedTerm: hit.matchedTerm, matchKind: hit.matchKind,
+      confidence: hit.exact ? 1 : 0.95,
+    } satisfies LemmaResult : undefined;
+  }));
+  const seen = new Set<string>();
+  return hydrated.filter((candidate): candidate is NonNullable<typeof candidate> => {
+    if (!candidate || seen.has(candidate.entry.normalizedLemma)) return false;
+    seen.add(candidate.entry.normalizedLemma);
+    return true;
+  }).sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0)
+    || (a.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER) - (b.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER)
+    || a.lemma.localeCompare(b.lemma, "ca"));
+}
+
+/** All input languages resolve to the same canonical Catalan dictionary entry. */
+export async function lookupWord(query: string, mode: SearchLanguage = "auto"): Promise<LookupResponse> {
+  const searchedForm = query.trim().normalize("NFC");
+  const normalizedQuery = normalizeSearchInput(query, mode);
+  if (!normalizedQuery || !isSearchable(normalizedQuery)) {
+    return { status: "not-found", searchedForm, normalizedQuery, searchLanguage: mode,
+      resolutionSource: "none", suggestions: [] };
+  }
+  const language = mode === "auto" ? (/\p{Script=Han}/u.test(query) ? "zh" : "es") : mode;
+  if (mode === "ca") {
+    const result = await lookupCatalan(query);
+    return result.status === "found" ? catalanMatch(result, mode) : { ...result, searchLanguage: mode };
+  }
+  const [catalan, reverse] = await Promise.allSettled([
+    mode === "auto" && language !== "zh" ? lookupCatalan(query) : Promise.resolve(undefined),
+    reverseCandidates(query, language as "es" | "zh"),
+  ]);
+  const ca = catalan.status === "fulfilled" && catalan.value?.status === "found"
+    ? catalanMatch(catalan.value, mode) : undefined;
+  const candidates = reverse.status === "fulfilled" ? reverse.value : [];
+  const searchManifest = await dictionaryRepository.searchManifest().catch(() => undefined);
+  if (ca) {
+    // A Latin spelling may be valid in both languages. Keep the Catalan
+    // reading first while making Spanish alternatives available explicitly.
+    const seen = new Set([ca.entry.normalizedLemma]);
+    const combined = [...ca.candidates, ...candidates].filter((candidate) => {
+      const key = candidate.entry?.normalizedLemma;
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    return { ...ca, searchDataVersion: searchManifest?.dataVersion,
+      candidates: combined.length ? [{ input: query, lemma: ca.lemma, entry: ca.entry,
+        morphology: ca.morphology, confidence: ca.confidence, partOfSpeech: ca.entry.partOfSpeech?.[0],
+        matchedLanguage: "ca", matchedTerm: searchedForm, matchKind: ca.matchKind }, ...combined] : ca.candidates };
+  }
+  const first = candidates[0];
+  if (first?.entry) {
+    return { status: "found", searchedForm, normalizedQuery, searchLanguage: mode,
+      searchDataVersion: searchManifest?.dataVersion, lemma: first.lemma, entry: first.entry,
+      confidence: first.confidence ?? 1, resolutionSource: "translation", candidates,
+      matchedLanguage: first.matchedLanguage, matchedTerm: first.matchedTerm, matchKind: first.matchKind };
+  }
+  if (reverse.status === "rejected") throw reverse.reason;
+  if (catalan.status === "rejected") throw catalan.reason;
+  const offlineLimited = searchManifest ? await searchRepository.isOfflineLimited(searchManifest) : undefined;
+  const missed = catalan.status === "fulfilled" ? catalan.value : undefined;
+  return missed?.status === "not-found" ? { ...missed, searchLanguage: mode, offlineLimited }
+    : { status: "not-found", searchedForm, normalizedQuery, searchLanguage: mode, offlineLimited,
+      resolutionSource: "none", suggestions: [] };
 }
 
 function boundedEditDistance(left: string, right: string, maximum: number): number {

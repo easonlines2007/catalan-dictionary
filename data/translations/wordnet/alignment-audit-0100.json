@@ -1,0 +1,3598 @@
+{
+  "sampleSeed": 20261012,
+  "sampleSize": 100,
+  "samplingFrame": "10,990 missing-Chinese lemmas with provisional exact-POS and Spanish corroboration, before reviewed batches and exclusions",
+  "humanReviewed": false,
+  "records": [
+    {
+      "lemma": "llacor",
+      "es": [
+        "légamo"
+      ],
+      "senses": [
+        {
+          "id": "14956325-n",
+          "zh": [
+            "泥",
+            "泥土",
+            "泥浆",
+            "粘土"
+          ],
+          "es": [
+            "barro",
+            "cieno",
+            "fango",
+            "lodo",
+            "légamo"
+          ],
+          "en": [
+            "mud",
+            "clay"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "acidificació",
+      "es": [
+        "acidificación"
+      ],
+      "senses": [
+        {
+          "id": "13426238-n",
+          "zh": [
+            "使发酸",
+            "成酸性",
+            "酸化"
+          ],
+          "es": [
+            "acidificación"
+          ],
+          "en": [
+            "acidification"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "antagònic",
+      "es": [
+        "antagónico"
+      ],
+      "senses": [
+        {
+          "id": "01245138-a",
+          "zh": [
+            "厌恶+的",
+            "反感的"
+          ],
+          "es": [
+            "antagónico",
+            "antitético",
+            "contradictorio",
+            "contrario",
+            "opuesto"
+          ],
+          "en": [
+            "antagonistic",
+            "antipathetic",
+            "antipathetical"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "abellot",
+      "es": [
+        "abejón",
+        "zángano"
+      ],
+      "senses": [
+        {
+          "id": "02207179-n",
+          "zh": [
+            "雄蜂"
+          ],
+          "es": [
+            "zángano"
+          ],
+          "en": [
+            "drone"
+          ]
+        },
+        {
+          "id": "02209624-n",
+          "zh": [
+            "大黄蜂",
+            "熊蜂"
+          ],
+          "es": [
+            "abejarrón",
+            "abejorro",
+            "abejón",
+            "bombus",
+            "jorge"
+          ],
+          "en": [
+            "bumblebee",
+            "humblebee"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "ampliar",
+      "es": [
+        "ampliar"
+      ],
+      "senses": [
+        {
+          "id": "00240293-v",
+          "zh": [
+            "扩大",
+            "放大"
+          ],
+          "es": [
+            "agrandar",
+            "ampliar",
+            "aumentar",
+            "engrandecer"
+          ],
+          "en": [
+            "blow up",
+            "enlarge",
+            "magnify"
+          ]
+        },
+        {
+          "id": "00303661-v",
+          "zh": [
+            "加宽",
+            "变宽"
+          ],
+          "es": [
+            "alargar",
+            "ampliar",
+            "ampliarse",
+            "ensanchar",
+            "ensancharse",
+            "extender"
+          ],
+          "en": [
+            "widen"
+          ]
+        },
+        {
+          "id": "00540235-v",
+          "zh": [
+            "伸展",
+            "变宽",
+            "延伸",
+            "扩充",
+            "扩大"
+          ],
+          "es": [
+            "ampliar",
+            "ensanchar",
+            "extender"
+          ],
+          "en": [
+            "widen",
+            "broaden",
+            "extend"
+          ]
+        },
+        {
+          "id": "00839834-v",
+          "zh": [
+            "夸大",
+            "夸张",
+            "扩大"
+          ],
+          "es": [
+            "ampliar",
+            "exagerar",
+            "magnificar"
+          ],
+          "en": [
+            "overstate",
+            "exaggerate",
+            "overdraw",
+            "hyperbolize",
+            "hyperbolise",
+            "magnify",
+            "amplify"
+          ]
+        },
+        {
+          "id": "00955601-v",
+          "zh": [
+            "变得复杂",
+            "展开",
+            "扩充",
+            "详细地说明",
+            "详细说明",
+            "详细阐述",
+            "详述"
+          ],
+          "es": [
+            "ampliar",
+            "dilatarse",
+            "expandir",
+            "explicar",
+            "exponer",
+            "extenderse"
+          ],
+          "en": [
+            "elaborate",
+            "lucubrate",
+            "expatiate",
+            "exposit",
+            "enlarge",
+            "flesh out",
+            "expand",
+            "expound",
+            "dilate"
+          ]
+        },
+        {
+          "id": "02077148-v",
+          "zh": [
+            "展开",
+            "张开",
+            "扩张",
+            "膨胀"
+          ],
+          "es": [
+            "ampliar",
+            "expandir",
+            "extenderse"
+          ],
+          "en": [
+            "expand",
+            "spread out"
+          ]
+        },
+        {
+          "id": "02685951-v",
+          "zh": [
+            "延伸",
+            "达到"
+          ],
+          "es": [
+            "acudir",
+            "ampliar",
+            "dirigir",
+            "extenderse",
+            "ir",
+            "liderar",
+            "pasar",
+            "prolongar"
+          ],
+          "en": [
+            "run",
+            "go",
+            "pass",
+            "lead",
+            "extend"
+          ]
+        },
+        {
+          "id": "02687916-v",
+          "zh": [
+            "延伸",
+            "延续"
+          ],
+          "es": [
+            "ampliar",
+            "continuar",
+            "cubrir",
+            "extenderse",
+            "prolongar",
+            "seguir"
+          ],
+          "en": [
+            "cover",
+            "continue",
+            "extend"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "reposapeus",
+      "es": [
+        "reposapiés"
+      ],
+      "senses": [
+        {
+          "id": "03380724-n",
+          "zh": [
+            "搁脚板",
+            "脚凳",
+            "脚台"
+          ],
+          "es": [
+            "apoyapié",
+            "descansapié",
+            "escabel",
+            "estribo",
+            "puf",
+            "reposapiés",
+            "tuffet"
+          ],
+          "en": [
+            "footstool",
+            "footrest",
+            "ottoman",
+            "tuffet"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "prosseguir",
+      "es": [
+        "proseguir"
+      ],
+      "senses": [
+        {
+          "id": "00350104-v",
+          "zh": [
+            "再开始",
+            "再次启动",
+            "重新启动",
+            "重新开始"
+          ],
+          "es": [
+            "curriculum vitae",
+            "proseguir",
+            "reanudar",
+            "reiniciar",
+            "retomar"
+          ],
+          "en": [
+            "resume",
+            "restart",
+            "re-start"
+          ]
+        },
+        {
+          "id": "00781000-v",
+          "zh": [
+            "喋喋不休地诉说",
+            "持续",
+            "接着说",
+            "继续",
+            "继续讲下去",
+            "继续说"
+          ],
+          "es": [
+            "continuar",
+            "proseguir",
+            "seguir"
+          ],
+          "en": [
+            "continue",
+            "go on",
+            "carry on",
+            "proceed"
+          ]
+        },
+        {
+          "id": "01995549-v",
+          "zh": [
+            "前进",
+            "进行"
+          ],
+          "es": [
+            "avanzar",
+            "continuar",
+            "proceder",
+            "proseguir",
+            "seguir"
+          ],
+          "en": [
+            "proceed",
+            "go forward",
+            "continue"
+          ]
+        },
+        {
+          "id": "02375131-v",
+          "zh": [
+            "从事",
+            "从事于",
+            "实行",
+            "进行"
+          ],
+          "es": [
+            "perseguir",
+            "proseguir"
+          ],
+          "en": [
+            "prosecute",
+            "engage",
+            "pursue"
+          ]
+        },
+        {
+          "id": "02684924-v",
+          "zh": [
+            "保持",
+            "延续",
+            "持续",
+            "继续",
+            "进行下去"
+          ],
+          "es": [
+            "continuar",
+            "guardar",
+            "proseguir",
+            "seguir"
+          ],
+          "en": [
+            "continue",
+            "go on",
+            "proceed",
+            "go along",
+            "keep"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "època",
+      "es": [
+        "época"
+      ],
+      "senses": [
+        {
+          "id": "15248020-n",
+          "zh": [
+            "纪元"
+          ],
+          "es": [
+            "era",
+            "era geológica",
+            "período",
+            "época"
+          ],
+          "en": [
+            "era",
+            "geological era"
+          ]
+        },
+        {
+          "id": "15248269-n",
+          "zh": [
+            "时期",
+            "纪元"
+          ],
+          "es": [
+            "época"
+          ],
+          "en": [
+            "epoch"
+          ]
+        },
+        {
+          "id": "15248564-n",
+          "zh": [
+            "代",
+            "年代",
+            "时代",
+            "时期",
+            "纪元"
+          ],
+          "es": [
+            "era",
+            "período",
+            "época"
+          ],
+          "en": [
+            "era",
+            "epoch"
+          ]
+        },
+        {
+          "id": "15254028-n",
+          "zh": [
+            "历史时代",
+            "时代",
+            "时期"
+          ],
+          "es": [
+            "era",
+            "periodo histórico",
+            "período histórico",
+            "época"
+          ],
+          "en": [
+            "historic period",
+            "age"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "arpegi",
+      "es": [
+        "arpegio"
+      ],
+      "senses": [
+        {
+          "id": "06869610-n",
+          "zh": [
+            "和音急速弹奏",
+            "琶音"
+          ],
+          "es": [
+            "arpegio"
+          ],
+          "en": [
+            "arpeggio"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "dinamita",
+      "es": [
+        "dinamita"
+      ],
+      "senses": [
+        {
+          "id": "03260293-n",
+          "zh": [
+            "炸药",
+            "黄色炸药"
+          ],
+          "es": [
+            "dinamita"
+          ],
+          "en": [
+            "dynamite"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "isòsceles",
+      "es": [
+        "isósceles"
+      ],
+      "senses": [
+        {
+          "id": "02372951-a",
+          "zh": [
+            "三角形等腰+的",
+            "二等边+的",
+            "等腰的"
+          ],
+          "es": [
+            "isósceles"
+          ],
+          "en": [
+            "isosceles"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "ansiolític",
+      "es": [
+        "ansiolítico"
+      ],
+      "senses": [
+        {
+          "id": "03771443-n",
+          "zh": [
+            "弱安定剂",
+            "抗焦虑药"
+          ],
+          "es": [
+            "ansiolítico"
+          ],
+          "en": [
+            "minor tranquilizer",
+            "minor tranquillizer",
+            "minor tranquilliser",
+            "antianxiety drug",
+            "anxiolytic",
+            "anxiolytic drug"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "constància",
+      "es": [
+        "constancia"
+      ],
+      "senses": [
+        {
+          "id": "13403643-n",
+          "zh": [
+            "案卷"
+          ],
+          "es": [
+            "constancia",
+            "registro"
+          ],
+          "en": [
+            "record"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "dita",
+      "es": [
+        "dicho"
+      ],
+      "senses": [
+        {
+          "id": "07151380-n",
+          "zh": [
+            "措辞"
+          ],
+          "es": [
+            "dicho",
+            "expresión",
+            "locución",
+            "refrán"
+          ],
+          "en": [
+            "saying",
+            "expression",
+            "locution"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "regressar",
+      "es": [
+        "regresar"
+      ],
+      "senses": [
+        {
+          "id": "02004874-v",
+          "zh": [
+            "回",
+            "回到",
+            "回去",
+            "回来",
+            "归",
+            "返回"
+          ],
+          "es": [
+            "devolver",
+            "regresar",
+            "reincorporar",
+            "retornar",
+            "volver"
+          ],
+          "en": [
+            "return"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "renaixement",
+      "es": [
+        "renacimiento"
+      ],
+      "senses": [
+        {
+          "id": "15259812-n",
+          "zh": [
+            "文艺复兴",
+            "文艺复兴时期"
+          ],
+          "es": [
+            "renacimiento"
+          ],
+          "en": [
+            "Renaissance",
+            "Renascence"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "dolçaina",
+      "es": [
+        "dulzaina"
+      ],
+      "senses": [
+        {
+          "id": "03355468-n",
+          "zh": [
+            "六孔竖笛"
+          ],
+          "es": [
+            "dulzaina",
+            "flabiol",
+            "flageolet"
+          ],
+          "en": [
+            "flageolet",
+            "treble recorder",
+            "shepherd's pipe"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "asindètic",
+      "es": [
+        "asindético"
+      ],
+      "senses": [
+        {
+          "id": "02381189-a",
+          "zh": [
+            "接续词省略+的"
+          ],
+          "es": [
+            "asindético"
+          ],
+          "en": [
+            "asyndetic"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "suplent",
+      "es": [
+        "suplente"
+      ],
+      "senses": [
+        {
+          "id": "10005721-n",
+          "zh": [
+            "代理人"
+          ],
+          "es": [
+            "suplente",
+            "sustituto"
+          ],
+          "en": [
+            "deputy",
+            "surrogate"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "ratlladora",
+      "es": [
+        "rallador"
+      ],
+      "senses": [
+        {
+          "id": "03454885-n",
+          "zh": [
+            "擦子",
+            "擦菜板",
+            "磨碎机",
+            "礤床"
+          ],
+          "es": [
+            "rallador",
+            "rallo"
+          ],
+          "en": [
+            "grater"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "virar",
+      "es": [
+        "virar"
+      ],
+      "senses": [
+        {
+          "id": "02096167-v",
+          "zh": [
+            "旋转",
+            "转动"
+          ],
+          "es": [
+            "girar",
+            "revolverse",
+            "rotar",
+            "virar",
+            "voltear",
+            "volver",
+            "volverse"
+          ],
+          "en": [
+            "turn"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "fraternitat",
+      "es": [
+        "fraternidad"
+      ],
+      "senses": [
+        {
+          "id": "08227214-n",
+          "zh": [
+            "俱乐部",
+            "团体"
+          ],
+          "es": [
+            "asociación",
+            "club",
+            "clube",
+            "cofradía",
+            "colegio",
+            "fraternidad",
+            "gremio",
+            "liga",
+            "lodge",
+            "logia",
+            "sociedad"
+          ],
+          "en": [
+            "club",
+            "social club",
+            "society",
+            "guild",
+            "gild",
+            "lodge",
+            "order"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "miasma",
+      "es": [
+        "miasma"
+      ],
+      "senses": [
+        {
+          "id": "14518010-n",
+          "zh": [
+            "毒气",
+            "烟雾弥漫的空气",
+            "瘴气",
+            "臭气"
+          ],
+          "es": [
+            "miasma"
+          ],
+          "en": [
+            "miasma",
+            "miasm"
+          ]
+        },
+        {
+          "id": "14526032-n",
+          "zh": [
+            "瘴气",
+            "臭气"
+          ],
+          "es": [
+            "miasma"
+          ],
+          "en": [
+            "miasma",
+            "miasm"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "bràctea",
+      "es": [
+        "bráctea"
+      ],
+      "senses": [
+        {
+          "id": "13154841-n",
+          "zh": [
+            "苞",
+            "苞片"
+          ],
+          "es": [
+            "bractea",
+            "bráctea"
+          ],
+          "en": [
+            "bract"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "quefer",
+      "es": [
+        "quehacer"
+      ],
+      "senses": [
+        {
+          "id": "00719705-n",
+          "zh": [
+            "工作",
+            "零活"
+          ],
+          "es": [
+            "cometido",
+            "faena",
+            "labor",
+            "mandado",
+            "quehacer",
+            "tarea",
+            "trabajo"
+          ],
+          "en": [
+            "job",
+            "task",
+            "chore"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "capturar",
+      "es": [
+        "capturar"
+      ],
+      "senses": [
+        {
+          "id": "01212572-v",
+          "zh": [
+            "夺过",
+            "抓住",
+            "抓紧",
+            "抱紧",
+            "攫",
+            "攫取",
+            "猛抓",
+            "突然或有力地抓住",
+            "紧抓",
+            "紧握"
+          ],
+          "es": [
+            "aferrar",
+            "agarrar",
+            "apoderar",
+            "apresar",
+            "asir",
+            "capturar",
+            "coger",
+            "confiscar",
+            "embargar",
+            "incautar",
+            "prender",
+            "sobrecoger"
+          ],
+          "en": [
+            "seize",
+            "prehend",
+            "clutch"
+          ]
+        },
+        {
+          "id": "01215137-v",
+          "zh": [
+            "当场逮捕",
+            "抓住",
+            "抓获",
+            "拘押",
+            "拘捕",
+            "拘留",
+            "捉到",
+            "捕捉",
+            "捕获",
+            "擒获",
+            "逮住",
+            "逮捕"
+          ],
+          "es": [
+            "aprehender",
+            "apresar",
+            "arrestar",
+            "atrapar",
+            "capturar",
+            "clavar",
+            "coger",
+            "detener",
+            "pillar",
+            "prender"
+          ],
+          "en": [
+            "collar",
+            "nail",
+            "apprehend",
+            "arrest",
+            "pick up",
+            "nab",
+            "cop"
+          ]
+        },
+        {
+          "id": "01439190-v",
+          "zh": [
+            "抓住",
+            "控制住",
+            "握住"
+          ],
+          "es": [
+            "agarrar",
+            "atrapar",
+            "capturar",
+            "cazar",
+            "coger"
+          ],
+          "en": [
+            "catch",
+            "grab",
+            "take hold of"
+          ]
+        },
+        {
+          "id": "01480149-v",
+          "zh": [
+            "抓",
+            "抓住",
+            "捕",
+            "捕捉",
+            "捕获"
+          ],
+          "es": [
+            "capturar"
+          ],
+          "en": [
+            "capture",
+            "catch"
+          ]
+        },
+        {
+          "id": "01806505-v",
+          "zh": [
+            "使着迷",
+            "使迷人",
+            "使迷恋",
+            "着迷",
+            "迷住",
+            "迷惑"
+          ],
+          "es": [
+            "captar",
+            "capturar",
+            "cautivar",
+            "conquistar",
+            "deleitar",
+            "enamorar",
+            "encantar",
+            "fascinar"
+          ],
+          "en": [
+            "capture",
+            "enamour",
+            "trance",
+            "catch",
+            "becharm",
+            "enamor",
+            "captivate",
+            "beguile",
+            "charm",
+            "fascinate",
+            "bewitch",
+            "entrance",
+            "enchant"
+          ]
+        },
+        {
+          "id": "02150948-v",
+          "zh": [
+            "看",
+            "观看"
+          ],
+          "es": [
+            "capturar",
+            "mirar",
+            "ver"
+          ],
+          "en": [
+            "watch",
+            "view",
+            "see",
+            "catch",
+            "take in"
+          ]
+        },
+        {
+          "id": "02272549-v",
+          "zh": [
+            "占领",
+            "夺取"
+          ],
+          "es": [
+            "apoderar",
+            "apoderarse",
+            "captar",
+            "capturar",
+            "confiscar",
+            "conquistar",
+            "dominar",
+            "embargar",
+            "incautar",
+            "invadir",
+            "ocupar",
+            "tomar"
+          ],
+          "en": [
+            "appropriate",
+            "capture",
+            "seize",
+            "conquer"
+          ]
+        },
+        {
+          "id": "02273293-v",
+          "zh": [
+            "扣押",
+            "查封",
+            "查抄",
+            "没收"
+          ],
+          "es": [
+            "apoderar",
+            "capturar",
+            "confiscar",
+            "decomisar",
+            "embargar",
+            "incautar",
+            "incautarse",
+            "intervenir",
+            "secuestrar"
+          ],
+          "en": [
+            "impound",
+            "attach",
+            "sequester",
+            "confiscate",
+            "seize"
+          ]
+        },
+        {
+          "id": "02274482-v",
+          "zh": [
+            "占领",
+            "夺取",
+            "接手",
+            "接管",
+            "篡夺",
+            "霸占"
+          ],
+          "es": [
+            "anexar",
+            "apoderar",
+            "capturar",
+            "confiscar",
+            "embargar",
+            "incautar",
+            "usurpar"
+          ],
+          "en": [
+            "assume",
+            "usurp",
+            "seize",
+            "take over",
+            "arrogate"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "atraient",
+      "es": [
+        "atrayente"
+      ],
+      "senses": [
+        {
+          "id": "00167077-a",
+          "zh": [
+            "神赐能力+的",
+            "超凡魅力+的"
+          ],
+          "es": [
+            "atrayente",
+            "carismática",
+            "carismático"
+          ],
+          "en": [
+            "charismatic",
+            "magnetic"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "harmonitzar",
+      "es": [
+        "armonizar"
+      ],
+      "senses": [
+        {
+          "id": "02700104-v",
+          "zh": [
+            "一致",
+            "协调",
+            "和谐",
+            "相一致",
+            "符合"
+          ],
+          "es": [
+            "armonizar",
+            "concordar",
+            "encajar"
+          ],
+          "en": [
+            "harmonize",
+            "harmonise",
+            "consort",
+            "accord",
+            "concord",
+            "fit in",
+            "agree"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "esquitxar",
+      "es": [
+        "salpicar"
+      ],
+      "senses": [
+        {
+          "id": "01376245-v",
+          "zh": [
+            "分散",
+            "撒",
+            "散布",
+            "洒"
+          ],
+          "es": [
+            "dispersar",
+            "esparcir",
+            "rociar",
+            "salpicar"
+          ],
+          "en": [
+            "scatter",
+            "sprinkle",
+            "dot",
+            "dust",
+            "disperse"
+          ]
+        },
+        {
+          "id": "02757828-v",
+          "zh": [
+            "小雨",
+            "降小雨"
+          ],
+          "es": [
+            "chispear",
+            "escupir",
+            "lloviznar",
+            "rociar",
+            "salpicar"
+          ],
+          "en": [
+            "sprinkle",
+            "spit",
+            "spatter",
+            "patter",
+            "pitter-patter"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "sistòlic",
+      "es": [
+        "sistólico"
+      ],
+      "senses": [
+        {
+          "id": "03121996-a",
+          "zh": [
+            "心脏收缩+的"
+          ],
+          "es": [
+            "sistólico"
+          ],
+          "en": [
+            "systolic"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "rugbi",
+      "es": [
+        "rugby",
+        "rugby a quince"
+      ],
+      "senses": [
+        {
+          "id": "00470966-n",
+          "zh": [
+            "英式橄榄球"
+          ],
+          "es": [
+            "fútbol-rugby",
+            "rugbi",
+            "rugby"
+          ],
+          "en": [
+            "rugby",
+            "rugby football",
+            "rugger"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "vicari",
+      "es": [
+        "vicario"
+      ],
+      "senses": [
+        {
+          "id": "09983572-n",
+          "zh": [
+            "教区牧师",
+            "牧师"
+          ],
+          "es": [
+            "cura",
+            "ministro",
+            "pastor",
+            "párroco",
+            "rector",
+            "vicario"
+          ],
+          "en": [
+            "curate",
+            "minister of religion",
+            "minister",
+            "parson",
+            "pastor",
+            "rector"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "motocicleta",
+      "es": [
+        "motocicleta"
+      ],
+      "senses": [
+        {
+          "id": "03769722-n",
+          "zh": [
+            "小型摩托车",
+            "小型机车",
+            "微型摩托车",
+            "机动脚踏车"
+          ],
+          "es": [
+            "minimoto",
+            "moto",
+            "motocicleta"
+          ],
+          "en": [
+            "minibike",
+            "motorbike"
+          ]
+        },
+        {
+          "id": "03790512-n",
+          "zh": [
+            "摩托车"
+          ],
+          "es": [
+            "moto",
+            "motocicleta",
+            "motociclo"
+          ],
+          "en": [
+            "motorcycle",
+            "bike"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "tercet",
+      "es": [
+        "terceto"
+      ],
+      "senses": [
+        {
+          "id": "13744044-n",
+          "zh": [
+            "三"
+          ],
+          "es": [
+            "3",
+            "terceto",
+            "ternion",
+            "tres",
+            "trey",
+            "troika",
+            "trío"
+          ],
+          "en": [
+            "three",
+            "3",
+            "III",
+            "trio",
+            "threesome",
+            "tierce",
+            "leash",
+            "troika",
+            "triad",
+            "trine",
+            "trinity",
+            "ternary",
+            "ternion",
+            "triplet",
+            "tercet",
+            "terzetto",
+            "trey",
+            "deuce-ace"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "aprovisionar",
+      "es": [
+        "aprovisionar"
+      ],
+      "senses": [
+        {
+          "id": "02479323-v",
+          "zh": [
+            "分发",
+            "分配"
+          ],
+          "es": [
+            "abastar",
+            "abastecer",
+            "aprovisionar",
+            "dictar",
+            "facilitar",
+            "proveer",
+            "suministrar"
+          ],
+          "en": [
+            "issue",
+            "supply"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "expressionista",
+      "es": [
+        "expresionista"
+      ],
+      "senses": [
+        {
+          "id": "02835145-a",
+          "zh": [
+            "表现主义+的"
+          ],
+          "es": [
+            "expresionista"
+          ],
+          "en": [
+            "expressionist",
+            "expressionistic"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "balènids",
+      "es": [
+        "Balénidos"
+      ],
+      "senses": [
+        {
+          "id": "02063516-n",
+          "zh": [
+            "露脊鲸科"
+          ],
+          "es": [
+            "Balaenidae",
+            "balénidos",
+            "familia Balaenidae"
+          ],
+          "en": [
+            "Balaenidae",
+            "family Balaenidae"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "autoimmunitat",
+      "es": [
+        "autoinmunidad"
+      ],
+      "senses": [
+        {
+          "id": "14527977-n",
+          "zh": [
+            "自体免疫",
+            "自身免疫"
+          ],
+          "es": [
+            "autoinmunidad"
+          ],
+          "en": [
+            "autoimmunity"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "iritis",
+      "es": [
+        "iritis"
+      ],
+      "senses": [
+        {
+          "id": "14347993-n",
+          "zh": [
+            "虹彩炎",
+            "虹膜炎"
+          ],
+          "es": [
+            "iritis"
+          ],
+          "en": [
+            "iritis"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "nebular",
+      "es": [
+        "nebular"
+      ],
+      "senses": [
+        {
+          "id": "03089377-a",
+          "zh": [
+            "星云+的"
+          ],
+          "es": [
+            "nebular",
+            "nebuloso"
+          ],
+          "en": [
+            "nebular",
+            "nebulous"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "rebuda",
+      "es": [
+        "recibimiento"
+      ],
+      "senses": [
+        {
+          "id": "06630852-n",
+          "zh": [
+            "接待"
+          ],
+          "es": [
+            "acogida",
+            "recepción",
+            "recibimiento"
+          ],
+          "en": [
+            "reception",
+            "response"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "gravable",
+      "es": [
+        "gravable"
+      ],
+      "senses": [
+        {
+          "id": "02400218-a",
+          "zh": [
+            "应征税+的",
+            "有税+的"
+          ],
+          "es": [
+            "gravable",
+            "imponible"
+          ],
+          "en": [
+            "taxable",
+            "nonexempt"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "artiller",
+      "es": [
+        "artillero"
+      ],
+      "senses": [
+        {
+          "id": "09811852-n",
+          "zh": [
+            "炮兵",
+            "炮手"
+          ],
+          "es": [
+            "ametrallador",
+            "artillero",
+            "cañonero",
+            "servidor"
+          ],
+          "en": [
+            "artilleryman",
+            "cannoneer",
+            "gunner",
+            "machine gunner"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "extorsió",
+      "es": [
+        "extorsión"
+      ],
+      "senses": [
+        {
+          "id": "00784388-n",
+          "zh": [
+            "勒索",
+            "敲诈"
+          ],
+          "es": [
+            "chantaje",
+            "extorsión"
+          ],
+          "en": [
+            "extortion"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "tamís",
+      "es": [
+        "tamiz"
+      ],
+      "senses": [
+        {
+          "id": "04216634-n",
+          "zh": [
+            "筛",
+            "筛子"
+          ],
+          "es": [
+            "cedazo",
+            "colador",
+            "pantalla",
+            "tamiz",
+            "tamizado",
+            "zaranda"
+          ],
+          "en": [
+            "sieve",
+            "screen"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "alterable",
+      "es": [
+        "alterable"
+      ],
+      "senses": [
+        {
+          "id": "00348380-a",
+          "zh": [
+            "可变+的",
+            "可变更+的",
+            "可改+的",
+            "可改变+的"
+          ],
+          "es": [
+            "alterable",
+            "conmutable"
+          ],
+          "en": [
+            "alterable"
+          ]
+        },
+        {
+          "id": "00349295-a",
+          "zh": [
+            "可变+的",
+            "可变更+的",
+            "可改+的",
+            "可改动+的",
+            "可改变+的"
+          ],
+          "es": [
+            "alterable"
+          ],
+          "en": [
+            "alterable"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "acalorament",
+      "es": [
+        "acaloramiento"
+      ],
+      "senses": [
+        {
+          "id": "04628192-n",
+          "zh": [
+            "激动",
+            "激昂"
+          ],
+          "es": [
+            "acaloramiento",
+            "apasionamiento",
+            "ardor",
+            "exaltación",
+            "fervor",
+            "pasión",
+            "vehemencia"
+          ],
+          "en": [
+            "heat",
+            "warmth",
+            "passion"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "extorsionar",
+      "es": [
+        "extorsionar"
+      ],
+      "senses": [
+        {
+          "id": "02241107-v",
+          "zh": [
+            "勒索",
+            "敲诈"
+          ],
+          "es": [
+            "atormentar",
+            "exprimir",
+            "extorsionar"
+          ],
+          "en": [
+            "extort",
+            "squeeze",
+            "rack",
+            "gouge",
+            "wring"
+          ]
+        },
+        {
+          "id": "02241621-v",
+          "zh": [
+            "勒索",
+            "强要",
+            "逼取"
+          ],
+          "es": [
+            "extorsionar"
+          ],
+          "en": [
+            "extort"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "capfoguer",
+      "es": [
+        "morillo"
+      ],
+      "senses": [
+        {
+          "id": "02710044-n",
+          "zh": [
+            "柴架",
+            "薪架"
+          ],
+          "es": [
+            "morillo"
+          ],
+          "en": [
+            "andiron",
+            "firedog",
+            "dog",
+            "dog-iron"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "lipoma",
+      "es": [
+        "lipoma"
+      ],
+      "senses": [
+        {
+          "id": "14239322-n",
+          "zh": [
+            "脂肪瘤"
+          ],
+          "es": [
+            "lipoma"
+          ],
+          "en": [
+            "lipoma",
+            "adipose tumor"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "fòsfor",
+      "es": [
+        "fósforo"
+      ],
+      "senses": [
+        {
+          "id": "14649197-n",
+          "zh": [
+            "磷"
+          ],
+          "es": [
+            "P",
+            "fósforo",
+            "número atómico 15"
+          ],
+          "en": [
+            "phosphorus",
+            "P",
+            "atomic number 15"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "reverberació",
+      "es": [
+        "reverberación"
+      ],
+      "senses": [
+        {
+          "id": "05010801-n",
+          "zh": [
+            "反响",
+            "回响",
+            "回声",
+            "回音"
+          ],
+          "es": [
+            "eco",
+            "reverberación"
+          ],
+          "en": [
+            "echo",
+            "reverberation",
+            "sound reflection",
+            "replication"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "projectar",
+      "es": [
+        "proyectar"
+      ],
+      "senses": [
+        {
+          "id": "02138075-v",
+          "zh": [
+            "投射",
+            "投影"
+          ],
+          "es": [
+            "proyectar"
+          ],
+          "en": [
+            "project"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "colangitis",
+      "es": [
+        "colangitis"
+      ],
+      "senses": [
+        {
+          "id": "14340734-n",
+          "zh": [
+            "胆管炎",
+            "胆道炎"
+          ],
+          "es": [
+            "colangitis",
+            "colangitis aguda"
+          ],
+          "en": [
+            "cholangitis"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "lligadura",
+      "es": [
+        "ligadura",
+        "tocado"
+      ],
+      "senses": [
+        {
+          "id": "02755352-n",
+          "zh": [
+            "扣拴物",
+            "黏合剂"
+          ],
+          "es": [
+            "atadura",
+            "lazo",
+            "ligadura",
+            "unión"
+          ],
+          "en": [
+            "attachment",
+            "bond"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "nyu",
+      "es": [
+        "ñu"
+      ],
+      "senses": [
+        {
+          "id": "02421449-n",
+          "zh": [
+            "牛羚",
+            "角马"
+          ],
+          "es": [
+            "connochaetes",
+            "gnu",
+            "ñu"
+          ],
+          "en": [
+            "gnu",
+            "wildebeest"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "asimptomàtic",
+      "es": [
+        "asintomático"
+      ],
+      "senses": [
+        {
+          "id": "02540899-a",
+          "zh": [
+            "无临床症状+的",
+            "无症状+的"
+          ],
+          "es": [
+            "asintomática",
+            "asintomático"
+          ],
+          "en": [
+            "asymptomatic",
+            "symptomless"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "fabricar",
+      "es": [
+        "fabricar"
+      ],
+      "senses": [
+        {
+          "id": "01634424-v",
+          "zh": [
+            "伪造",
+            "制造",
+            "加工",
+            "捏造",
+            "编造",
+            "虚构"
+          ],
+          "es": [
+            "fabricar",
+            "inventar"
+          ],
+          "en": [
+            "fabricate",
+            "manufacture",
+            "cook up",
+            "make up",
+            "invent"
+          ]
+        },
+        {
+          "id": "01653442-v",
+          "zh": [
+            "制",
+            "制造",
+            "加工",
+            "生产"
+          ],
+          "es": [
+            "construir",
+            "edificar",
+            "fabricar",
+            "manufacturar"
+          ],
+          "en": [
+            "manufacture",
+            "fabricate",
+            "construct"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "pes",
+      "es": [
+        "peso",
+        "lastre"
+      ],
+      "senses": [
+        {
+          "id": "05026843-n",
+          "zh": [
+            "重力",
+            "重量"
+          ],
+          "es": [
+            "peso"
+          ],
+          "en": [
+            "weight"
+          ]
+        },
+        {
+          "id": "13715755-n",
+          "zh": [
+            "权重系统"
+          ],
+          "es": [
+            "peso"
+          ],
+          "en": [
+            "system of weights",
+            "weight"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "amfibologia",
+      "es": [
+        "anfibología"
+      ],
+      "senses": [
+        {
+          "id": "06604743-n",
+          "zh": [
+            "模棱两可的言词"
+          ],
+          "es": [
+            "anfibología"
+          ],
+          "en": [
+            "amphibology",
+            "amphiboly"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "laosià",
+      "es": [
+        "laosiano"
+      ],
+      "senses": [
+        {
+          "id": "03079627-a",
+          "zh": [
+            "老挝+的"
+          ],
+          "es": [
+            "laosiano"
+          ],
+          "en": [
+            "Laotian"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "predicament",
+      "es": [
+        "predicamento"
+      ],
+      "senses": [
+        {
+          "id": "14408646-n",
+          "zh": [
+            "危境",
+            "困境",
+            "困局",
+            "险境"
+          ],
+          "es": [
+            "aprieto",
+            "apuro",
+            "brete",
+            "dilema",
+            "predicamento"
+          ],
+          "en": [
+            "predicament",
+            "quandary",
+            "plight"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "enllaç",
+      "es": [
+        "enlace"
+      ],
+      "senses": [
+        {
+          "id": "00316989-n",
+          "zh": [
+            "联接",
+            "连接"
+          ],
+          "es": [
+            "conexión",
+            "correspondencia",
+            "enlace"
+          ],
+          "en": [
+            "connection",
+            "connexion"
+          ]
+        },
+        {
+          "id": "01036996-n",
+          "zh": [
+            "婚礼",
+            "结婚",
+            "结婚仪式"
+          ],
+          "es": [
+            "boda",
+            "casamiento",
+            "enlace",
+            "himeneo",
+            "matrimonio",
+            "nupcias"
+          ],
+          "en": [
+            "marriage",
+            "wedding",
+            "marriage ceremony"
+          ]
+        },
+        {
+          "id": "03673971-n",
+          "zh": [
+            "联合",
+            "连接物",
+            "连结",
+            "链环"
+          ],
+          "es": [
+            "enlace",
+            "linkup",
+            "nexo",
+            "nudo",
+            "tie-in",
+            "vínculo"
+          ],
+          "en": [
+            "link",
+            "linkup",
+            "tie",
+            "tie-in"
+          ]
+        },
+        {
+          "id": "09960117-n",
+          "zh": [
+            "中间人",
+            "经纪人",
+            "调解人"
+          ],
+          "es": [
+            "contacto",
+            "enlace",
+            "intermediario"
+          ],
+          "en": [
+            "contact",
+            "middleman"
+          ]
+        },
+        {
+          "id": "13870805-n",
+          "zh": [
+            "纽带",
+            "连接物"
+          ],
+          "es": [
+            "conexión",
+            "enlace"
+          ],
+          "en": [
+            "connection",
+            "connexion",
+            "link"
+          ]
+        },
+        {
+          "id": "13963970-n",
+          "zh": [
+            "婚姻",
+            "婚姻生活",
+            "已婚状态",
+            "结婚",
+            "结婚生活"
+          ],
+          "es": [
+            "connubio",
+            "enlace",
+            "matrimonio",
+            "unión"
+          ],
+          "en": [
+            "marriage",
+            "matrimony",
+            "union",
+            "spousal relationship",
+            "wedlock"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "assortiment",
+      "es": [
+        "surtido"
+      ],
+      "senses": [
+        {
+          "id": "08398773-n",
+          "zh": [
+            "杂录",
+            "杂烩",
+            "杂集",
+            "混杂"
+          ],
+          "es": [
+            "mezcla",
+            "miscelánea",
+            "surtido",
+            "variedad"
+          ],
+          "en": [
+            "assortment",
+            "mixture",
+            "mixed bag",
+            "miscellany",
+            "miscellanea",
+            "variety",
+            "salmagundi",
+            "smorgasbord",
+            "potpourri",
+            "motley"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "discórrer",
+      "es": [
+        "discurrir"
+      ],
+      "senses": [
+        {
+          "id": "00628491-v",
+          "zh": [
+            "思索",
+            "思考",
+            "想"
+          ],
+          "es": [
+            "creer",
+            "discurrir",
+            "meditar",
+            "pensar",
+            "reflexionar"
+          ],
+          "en": [
+            "think",
+            "cogitate",
+            "cerebrate"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "friccional",
+      "es": [
+        "friccional"
+      ],
+      "senses": [
+        {
+          "id": "02732059-a",
+          "zh": [
+            "由摩擦而生+的"
+          ],
+          "es": [
+            "friccional"
+          ],
+          "en": [
+            "frictional"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "daurat",
+      "es": [
+        "dorado"
+      ],
+      "senses": [
+        {
+          "id": "00369941-a",
+          "zh": [
+            "金+的",
+            "金光闪闪+的",
+            "金色+的",
+            "金黄色+的"
+          ],
+          "es": [
+            "dorado",
+            "oro",
+            "áureo"
+          ],
+          "en": [
+            "aureate",
+            "gilded",
+            "gilt",
+            "gold",
+            "golden"
+          ]
+        },
+        {
+          "id": "03437430-n",
+          "zh": [
+            "镀金",
+            "镀金涂层"
+          ],
+          "es": [
+            "dorado"
+          ],
+          "en": [
+            "gilt",
+            "gilding"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "apostasia",
+      "es": [
+        "apostasía"
+      ],
+      "senses": [
+        {
+          "id": "14413411-n",
+          "zh": [
+            "背叛",
+            "脱党"
+          ],
+          "es": [
+            "apostasía",
+            "renuncia"
+          ],
+          "en": [
+            "apostasy",
+            "renunciation",
+            "defection"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "blanca",
+      "es": [
+        "blanca",
+        "raya alba",
+        "raya blanca",
+        "raya bramante"
+      ],
+      "senses": [
+        {
+          "id": "13618508-n",
+          "zh": [
+            "液量单位"
+          ],
+          "es": [
+            "blanca"
+          ],
+          "en": [
+            "minim"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "imparcial",
+      "es": [
+        "imparcial"
+      ],
+      "senses": [
+        {
+          "id": "01723308-a",
+          "zh": [
+            "不偏不倚+的",
+            "公平+的",
+            "公正+的",
+            "正大光明+的"
+          ],
+          "es": [
+            "imparcial",
+            "neutral"
+          ],
+          "en": [
+            "impartial"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "melena",
+      "es": [
+        "melena"
+      ],
+      "senses": [
+        {
+          "id": "14855280-n",
+          "zh": [
+            "黑粪症"
+          ],
+          "es": [
+            "melena"
+          ],
+          "en": [
+            "melena",
+            "melaena"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "pronòstic",
+      "es": [
+        "pronóstico"
+      ],
+      "senses": [
+        {
+          "id": "06749881-n",
+          "zh": [
+            "趋势预测",
+            "预测"
+          ],
+          "es": [
+            "predicción",
+            "previsión",
+            "prognosis",
+            "pronóstico"
+          ],
+          "en": [
+            "prognosis",
+            "forecast"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "amigable",
+      "es": [
+        "amigable"
+      ],
+      "senses": [
+        {
+          "id": "01074650-a",
+          "zh": [
+            "亲切+的",
+            "友好+的"
+          ],
+          "es": [
+            "amigable",
+            "amistoso"
+          ],
+          "en": [
+            "friendly"
+          ]
+        },
+        {
+          "id": "01246579-a",
+          "zh": [
+            "友善+的"
+          ],
+          "es": [
+            "amigable",
+            "amistosa",
+            "amistoso"
+          ],
+          "en": [
+            "amicable"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "orgànic",
+      "es": [
+        "orgánico"
+      ],
+      "senses": [
+        {
+          "id": "01679459-a",
+          "zh": [
+            "有机+的",
+            "有机体+的"
+          ],
+          "es": [
+            "orgánico"
+          ],
+          "en": [
+            "organic"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "cromatograma",
+      "es": [
+        "cromatograma"
+      ],
+      "senses": [
+        {
+          "id": "03026741-n",
+          "zh": [
+            "色谱"
+          ],
+          "es": [
+            "cromatograma"
+          ],
+          "en": [
+            "chromatogram"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "heliport",
+      "es": [
+        "helipuerto"
+      ],
+      "senses": [
+        {
+          "id": "03512830-n",
+          "zh": [
+            "直升飞机场"
+          ],
+          "es": [
+            "helipuerto"
+          ],
+          "en": [
+            "heliport"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "llotós",
+      "es": [
+        "cenagoso",
+        "lodoso"
+      ],
+      "senses": [
+        {
+          "id": "00422620-a",
+          "zh": [
+            "污浊的",
+            "沾上泥污的",
+            "泥泞的",
+            "粪的",
+            "脏+的"
+          ],
+          "es": [
+            "barroso",
+            "fangoso",
+            "lodoso",
+            "turbio"
+          ],
+          "en": [
+            "mucky",
+            "muddy"
+          ]
+        },
+        {
+          "id": "02235826-a",
+          "zh": [
+            "似黏液+的",
+            "粘糊糊+的",
+            "黏滑+的"
+          ],
+          "es": [
+            "barroso",
+            "cenagoso",
+            "fangoso",
+            "limoso",
+            "lodoso"
+          ],
+          "en": [
+            "slimed",
+            "slimy"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "consanguinitat",
+      "es": [
+        "consanguinidad"
+      ],
+      "senses": [
+        {
+          "id": "13813591-n",
+          "zh": [
+            "同宗",
+            "同族",
+            "姻亲关系",
+            "血亲",
+            "血缘"
+          ],
+          "es": [
+            "cognación",
+            "consanguineidad",
+            "consanguinidad",
+            "parentesco sanguíneo"
+          ],
+          "en": [
+            "consanguinity",
+            "blood kinship",
+            "cognation"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "pancreàtic",
+      "es": [
+        "pancreático"
+      ],
+      "senses": [
+        {
+          "id": "02932561-a",
+          "zh": [
+            "胰腺+的"
+          ],
+          "es": [
+            "pancreático"
+          ],
+          "en": [
+            "pancreatic"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "paleontològic",
+      "es": [
+        "paleontológico"
+      ],
+      "senses": [
+        {
+          "id": "02772654-a",
+          "zh": [
+            "古生物学+的"
+          ],
+          "es": [
+            "paleontológico"
+          ],
+          "en": [
+            "paleontological",
+            "palaeontological"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "cítara",
+      "es": [
+        "cítara"
+      ],
+      "senses": [
+        {
+          "id": "03035832-n",
+          "zh": [
+            "七弦琴",
+            "西特琴"
+          ],
+          "es": [
+            "citole",
+            "cítara"
+          ],
+          "en": [
+            "cittern",
+            "cithern",
+            "cither",
+            "citole",
+            "gittern"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "subvertir",
+      "es": [
+        "subvertir"
+      ],
+      "senses": [
+        {
+          "id": "02543607-v",
+          "zh": [
+            "妨害",
+            "暗地里破坏",
+            "毁灭",
+            "破坏",
+            "阻碍"
+          ],
+          "es": [
+            "minar",
+            "sabotear",
+            "socavar",
+            "subvertir",
+            "trastornar"
+          ],
+          "en": [
+            "sabotage",
+            "undermine",
+            "countermine",
+            "counteract",
+            "subvert",
+            "weaken"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "atent",
+      "es": [
+        "atento"
+      ],
+      "senses": [
+        {
+          "id": "00639230-a",
+          "zh": [
+            "亲切+的",
+            "体贴+的",
+            "关心别人+的"
+          ],
+          "es": [
+            "amable",
+            "atento",
+            "considerado"
+          ],
+          "en": [
+            "thoughtful"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "interconnexió",
+      "es": [
+        "interconexionado",
+        "interconexión"
+      ],
+      "senses": [
+        {
+          "id": "14420240-n",
+          "zh": [
+            "互相连络"
+          ],
+          "es": [
+            "interconexión"
+          ],
+          "en": [
+            "interconnection",
+            "interconnectedness"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "autarquia",
+      "es": [
+        "autarquía"
+      ],
+      "senses": [
+        {
+          "id": "13993356-n",
+          "zh": [
+            "自给自足"
+          ],
+          "es": [
+            "autarquía"
+          ],
+          "en": [
+            "autarky",
+            "autarchy"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "sajolida",
+      "es": [
+        "ajedrea"
+      ],
+      "senses": [
+        {
+          "id": "12866968-n",
+          "zh": [
+            "风轮菜",
+            "香薄荷"
+          ],
+          "es": [
+            "ajedrea"
+          ],
+          "en": [
+            "savory"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "plusvàlua",
+      "es": [
+        "plusvalía"
+      ],
+      "senses": [
+        {
+          "id": "13311830-n",
+          "zh": [
+            "资本利得",
+            "资本利润",
+            "资本收益"
+          ],
+          "es": [
+            "plusvalía",
+            "plusvalía de capital"
+          ],
+          "en": [
+            "capital gain"
+          ]
+        },
+        {
+          "id": "13312190-n",
+          "zh": [
+            "资本利得税",
+            "资本增值税",
+            "资本收益税"
+          ],
+          "es": [
+            "impuesto de plusvalía",
+            "plusvalía"
+          ],
+          "en": [
+            "capital gains tax"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "avisar",
+      "es": [
+        "avisar"
+      ],
+      "senses": [
+        {
+          "id": "00870213-v",
+          "zh": [
+            "警告",
+            "警戒"
+          ],
+          "es": [
+            "advertir",
+            "alertar",
+            "avisar",
+            "notificar",
+            "prevenir"
+          ],
+          "en": [
+            "warn"
+          ]
+        },
+        {
+          "id": "00873682-v",
+          "zh": [
+            "使注意",
+            "通知"
+          ],
+          "es": [
+            "advertir",
+            "anunciar",
+            "apercibir",
+            "avisar",
+            "informar",
+            "noticiar",
+            "notificar",
+            "participar"
+          ],
+          "en": [
+            "advise",
+            "notify",
+            "give notice",
+            "send word",
+            "apprise",
+            "apprize"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "albatros",
+      "es": [
+        "albatros"
+      ],
+      "senses": [
+        {
+          "id": "02058221-n",
+          "zh": [
+            "信天翁"
+          ],
+          "es": [
+            "albatros",
+            "diomedeidae"
+          ],
+          "en": [
+            "albatross",
+            "mollymawk"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "fòrceps",
+      "es": [
+        "fórceps"
+      ],
+      "senses": [
+        {
+          "id": "03381231-n",
+          "zh": [
+            "钳子",
+            "镊子"
+          ],
+          "es": [
+            "fórceps"
+          ],
+          "en": [
+            "forceps"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "condicionador",
+      "es": [
+        "acondicionador"
+      ],
+      "senses": [
+        {
+          "id": "03088020-n",
+          "zh": [
+            "柔顺剂",
+            "润丝精"
+          ],
+          "es": [
+            "acondicionador"
+          ],
+          "en": [
+            "conditioner"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "divertit",
+      "es": [
+        "divertido"
+      ],
+      "senses": [
+        {
+          "id": "01265308-a",
+          "zh": [
+            "令人欢乐+的",
+            "可笑+的",
+            "好玩+的",
+            "好笑+的",
+            "引人发笑+的",
+            "有乐趣+的",
+            "有趣+的",
+            "滑稽+的",
+            "荒唐滑稽+的",
+            "诙谐+的",
+            "逗人发笑+的",
+            "逗人笑+的"
+          ],
+          "es": [
+            "alegre",
+            "chistoso",
+            "cómico",
+            "divertido",
+            "gracioso",
+            "ridículo",
+            "risible"
+          ],
+          "en": [
+            "amusing",
+            "comic",
+            "comical",
+            "funny",
+            "laughable",
+            "mirthful",
+            "risible"
+          ]
+        },
+        {
+          "id": "01344485-a",
+          "zh": [
+            "可笑+的",
+            "好玩+的",
+            "有趣+的"
+          ],
+          "es": [
+            "ameno",
+            "divertido",
+            "entretenido"
+          ],
+          "en": [
+            "amusing",
+            "amusive",
+            "diverting"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "cenyidor",
+      "es": [
+        "ceñidor"
+      ],
+      "senses": [
+        {
+          "id": "03438071-n",
+          "zh": [
+            "束带",
+            "腰带"
+          ],
+          "es": [
+            "ceñidor",
+            "cinto",
+            "cintura",
+            "cinturón",
+            "faja",
+            "pretina"
+          ],
+          "en": [
+            "girdle",
+            "cincture",
+            "sash",
+            "waistband",
+            "waistcloth"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "escaleta",
+      "es": [
+        "escalerilla",
+        "carrasquiña",
+        "ginebra"
+      ],
+      "senses": [
+        {
+          "id": "03079616-n",
+          "zh": [
+            "升降扶梯"
+          ],
+          "es": [
+            "escalerilla"
+          ],
+          "en": [
+            "companionway"
+          ]
+        }
+      ],
+      "reviewDisposition": "held-or-filtered",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "octagonal",
+      "es": [
+        "octagonal"
+      ],
+      "senses": [
+        {
+          "id": "02834862-a",
+          "zh": [
+            "八角形+的",
+            "八边形+的"
+          ],
+          "es": [
+            "octagonal",
+            "octogonal"
+          ],
+          "en": [
+            "octangular",
+            "octagonal"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "mutant",
+      "es": [
+        "mutante"
+      ],
+      "senses": [
+        {
+          "id": "02987454-a",
+          "zh": [
+            "变异+的",
+            "变异所引起+的",
+            "突变+的"
+          ],
+          "es": [
+            "mutante"
+          ],
+          "en": [
+            "mutant"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "enregistrar",
+      "es": [
+        "grabar",
+        "gravar"
+      ],
+      "senses": [
+        {
+          "id": "00998399-v",
+          "zh": [
+            "记录"
+          ],
+          "es": [
+            "grabar",
+            "registrar"
+          ],
+          "en": [
+            "record",
+            "tape"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "agregar",
+      "es": [
+        "agregar"
+      ],
+      "senses": [
+        {
+          "id": "00640828-v",
+          "zh": [
+            "加"
+          ],
+          "es": [
+            "adicionar",
+            "agregar",
+            "sumar"
+          ],
+          "en": [
+            "add",
+            "add together"
+          ]
+        },
+        {
+          "id": "00949288-v",
+          "zh": [
+            "共计为",
+            "加",
+            "加起来",
+            "合计",
+            "增加",
+            "总数",
+            "总计"
+          ],
+          "es": [
+            "agregar",
+            "sumar"
+          ],
+          "en": [
+            "total",
+            "tot",
+            "tot up",
+            "sum",
+            "sum up",
+            "summate",
+            "tote up",
+            "add",
+            "add together",
+            "tally",
+            "add up"
+          ]
+        },
+        {
+          "id": "01328513-v",
+          "zh": [
+            "附加"
+          ],
+          "es": [
+            "adjuntar",
+            "agregar",
+            "añadir"
+          ],
+          "en": [
+            "append",
+            "tag on",
+            "tack on",
+            "tack",
+            "hang on"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "coexistència",
+      "es": [
+        "coexistencia"
+      ],
+      "senses": [
+        {
+          "id": "13957268-n",
+          "zh": [
+            "两立",
+            "共存",
+            "并立"
+          ],
+          "es": [
+            "coexistencia",
+            "cohabitación",
+            "convivencia"
+          ],
+          "en": [
+            "coexistence"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    },
+    {
+      "lemma": "dimensió",
+      "es": [
+        "dimensión"
+      ],
+      "senses": [
+        {
+          "id": "05091194-n",
+          "zh": [
+            "大小",
+            "尺度",
+            "范围"
+          ],
+          "es": [
+            "dimensión",
+            "proporción"
+          ],
+          "en": [
+            "proportion",
+            "dimension"
+          ]
+        },
+        {
+          "id": "05093581-n",
+          "zh": [
+            "尺寸"
+          ],
+          "es": [
+            "dimension",
+            "dimensión",
+            "medida"
+          ],
+          "en": [
+            "dimension"
+          ]
+        }
+      ],
+      "reviewDisposition": "source-reference-only",
+      "note": "Compared Catalan/Spanish headwords and PWN English synonyms to Chinese equivalents; not a complete Catalan sense or corpus accuracy review."
+    }
+  ]
+}

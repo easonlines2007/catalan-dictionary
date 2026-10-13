@@ -1,0 +1,2299 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-reviewed-0005",
+  "recordCount": 100,
+  "records": [
+    {
+      "id": "959a45d44e6fcf58361e",
+      "lemma": "de",
+      "normalizedLemma": "de",
+      "inputHash": "e67894408a704ba66f00626b1d9f9739073659a5eda954ef0c89df12238561e7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e026"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "拉丁字母 D／d 的名称",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e027"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "的；从",
+          "aliasesZh": [
+            "的",
+            "从"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "b737ca7ee563ae80e457",
+      "lemma": "la",
+      "normalizedLemma": "la",
+      "inputHash": "7a2034d9673f31a1fe26c0b703377c74d3fd495b03355f4f54714c939ceb962a",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "唱名la（自然音阶的第六音）",
+          "aliasesZh": [
+            "唱名la"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "de7d1b721a1e0632b7cf",
+      "lemma": "i",
+      "normalizedLemma": "i",
+      "inputHash": "ba1415fd8da5e97b4a039a8deaa551e83026cb53309e0f4681464eee22151337",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "拉丁字母 I／i 的名称",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "conjunction",
+          "translationZh": "和；以及；连同；此外（用于连接同类词、短语或句子）",
+          "aliasesZh": [
+            "和",
+            "以及",
+            "连同"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "d65c3e892354b17a4c03",
+      "lemma": "el",
+      "normalizedLemma": "el",
+      "inputHash": "164714b67724d4c4e0bfec7d967d85718e7ebb62d1afb3aca3e8c1c820c7dc53",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "article",
+          "translationZh": "定冠词（用于特指）",
+          "aliasesZh": [
+            "定冠词"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "article",
+          "translationZh": "中性定冠词（用于把形容词转为抽象名词，表示所说的事物）",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "他（直接宾语）",
+          "aliasesZh": [
+            "他"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "ca978112ca1bbdcafac2",
+      "lemma": "a",
+      "normalizedLemma": "a",
+      "inputHash": "5064f1782af433b57b87067e9819fadd6977c5686a00f065c9ed26fd3892e60e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "在（表示某一时间或地点）",
+          "aliasesZh": [
+            "在"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "向；到（表示朝某处移动）",
+          "aliasesZh": [
+            "向",
+            "到"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e013"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "向；给（表示目标或间接宾语）",
+          "aliasesZh": [
+            "给",
+            "向"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c57b7501cd843672550c",
+      "lemma": "que",
+      "normalizedLemma": "que",
+      "inputHash": "8745596ef20a9e8ac6fb1a158d8933912b25274cf43fc28d854bcceccbd07cfc",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "conjunction",
+          "translationZh": "用于引导从句的连接词",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "指事物的关系代词，相当于 el qual 或 la qual",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "在解释性从句中指人的关系代词，相当于 qui",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "dbd3a49d0d906b4ed921",
+      "lemma": "en",
+      "normalizedLemma": "en",
+      "inputHash": "7bbaec41a016b0aacd24cbcd38e7cbf0d55b605a0d4c438073444d6a9196924b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e015"
+          ],
+          "partOfSpeech": "article",
+          "translationZh": "用于男性名字前、替代定冠词 el 的人名前冠词",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e016"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "在；在里面",
+          "aliasesZh": [
+            "在",
+            "在里面"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e017"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "当做某事时；一做某事就",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "7b5454f75089acf2693b",
+      "lemma": "les",
+      "normalizedLemma": "les",
+      "inputHash": "7404169d59d4981f42958792ca8ec0af679dce2db127500432ec8f02c9200c45",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "她们（直接宾语）",
+          "aliasesZh": [
+            "她们"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "be6e6bbb5ed98c40dd48",
+      "lemma": "els",
+      "normalizedLemma": "els",
+      "inputHash": "df71bcccc54fe13f01b4cfd226493394fc9c0af33458715b390d8c813d543dc7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "他们／它们（阳性，作直接或间接宾语）",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "198dea392afc21d070f8",
+      "lemma": "va",
+      "normalizedLemma": "va",
+      "inputHash": "2598c53aa777ce26ab581598d6aee4cd03a5c1cee849825b26ebe9a5b9fc94f0",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e017"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "空洞的；没有实质内容的",
+          "aliasesZh": [
+            "空洞",
+            "没有实质内容"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6494187cf8ccaffc87c5",
+      "lemma": "seu",
+      "normalizedLemma": "seu",
+      "inputHash": "bdb4fd14d061dca2e5d2bc29b83f2c4259b815bef60ba690c01ef6e7f5775436",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e017"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "您的；您们的（指vostè或vostès）",
+          "aliasesZh": [
+            "您",
+            "您们"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "144ea33e70199a55df86",
+      "lemma": "però",
+      "normalizedLemma": "però",
+      "inputHash": "8c9250411792b42019eae700ffc2c46bdb82a8ac310c179b0dc953349151042e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "异议；反对意见",
+          "aliasesZh": [
+            "异议",
+            "反对意见"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "04e400bfa26174f489b4",
+      "lemma": "primer",
+      "normalizedLemma": "primer",
+      "inputHash": "30dcb15ca53b988d2a62a1843a3712af973b8aca0db82cbd330b067929327786",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "质数的（仅能被1和自身整除）",
+          "aliasesZh": [
+            "质数"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c1299854f2b209632ab2",
+      "lemma": "dos",
+      "normalizedLemma": "dos",
+      "inputHash": "98b215f278f84ec715632f51b986572b87b9cb5a74191295d3b233e70b75cf47",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "numeral",
+          "translationZh": "二；两个",
+          "aliasesZh": [
+            "二",
+            "两个"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "3097e26b7f3cbdb92076",
+      "lemma": "fa",
+      "normalizedLemma": "fa",
+      "inputHash": "40694ef64e61a1bcc533a1f1d074bbf666b999761f39995a1455f9d6e3e489a8",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": null,
+          "translationZh": "……以前",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "b669c84fd0cb921ef541",
+      "lemma": "conjunt",
+      "normalizedLemma": "conjunt",
+      "inputHash": "8effa96f3bf232a443940aad95c48148ecf8c4a603d99b22d5bca9a98818515c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e013"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "结合的；联合的",
+          "aliasesZh": [
+            "结合",
+            "联合"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "12765295db4f1e7911dd",
+      "lemma": "natural",
+      "normalizedLemma": "natural",
+      "inputHash": "5e614440d05aa6e7bdbdc4af025728bf295060b6cc0e3a2e1b50cd9c10d8acdb",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e015"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "本性；性情（人的固有特征）",
+          "aliasesZh": [
+            "本性",
+            "性情"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "90c2d4e480abaa9ebc3a",
+      "lemma": "això",
+      "normalizedLemma": "això",
+      "inputHash": "872765456ed62fc753c07954cb9fbdf2abbc437485ab1c688a7996b519b3aeca",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "这；这个；这件事（指在空间、时间或话语中接近说话者或听话者的事物）",
+          "aliasesZh": [
+            "这",
+            "这个",
+            "这件事"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "9873fc4269216d4e5fe3",
+      "lemma": "banda",
+      "normalizedLemma": "banda",
+      "inputHash": "e9471ce77b7357df84f0dcab2756e7d748d3c6a3283e29b9841fe4f81117c523",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007",
+            "e016"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "侧；一侧；侧面",
+          "aliasesZh": [
+            "侧面",
+            "一侧"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008",
+            "e018"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "团伙；犯罪团伙",
+          "aliasesZh": [
+            "团伙",
+            "犯罪团伙"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e020"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "乐队（尤指以管乐器和打击乐器为主的乐队）",
+          "aliasesZh": [
+            "乐队",
+            "管乐队"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "9be28bbe03fa7c43e9a5",
+      "lemma": "cos",
+      "normalizedLemma": "cos",
+      "inputHash": "81498de451c34a5d5bf3a31b7596465166cf2efb1e3b655ae332d3761894f322",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "身体（人或动物的生理结构）",
+          "aliasesZh": [
+            "身体"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "760176194068f3029466",
+      "lemma": "qui",
+      "normalizedLemma": "qui",
+      "inputHash": "00892f979b82145d4031e1d430c25eedb6b85daf8b600fc7a8df7582aaf30834",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "谁",
+          "aliasesZh": [
+            "谁"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "bee8a455409f9f4d80f8",
+      "lemma": "històric",
+      "normalizedLemma": "històric",
+      "inputHash": "1c08601ae65afa6e5a9f556391642e7a5363c09f98306e693f128715428aa989",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "历史的",
+          "aliasesZh": [
+            "历史"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a94b413624c04134880d",
+      "lemma": "davant",
+      "normalizedLemma": "davant",
+      "inputHash": "d431f8619a92093828833bb3ed8a2970fdfcc89715352fad79e155337daf93c9",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "前面；前方",
+          "aliasesZh": [
+            "前面",
+            "前方"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "908e2636911e8764e34b",
+      "lemma": "municipal",
+      "normalizedLemma": "municipal",
+      "inputHash": "b1a236dc351fb65bbde6d17d7b5104ab427dc832ae21f10b91e7aab79dfb6dc2",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "市的；市政的",
+          "aliasesZh": [
+            "市",
+            "市政"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "fc4d6c9e874c1f120aa1",
+      "lemma": "superior",
+      "normalizedLemma": "superior",
+      "inputHash": "d899d7cc355e910dc3e1a9951a3ee21d8cd54a841b1881854115b43cce084b00",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "较高的；上级的",
+          "aliasesZh": [
+            "较高",
+            "上级"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "cc2585df74ecdb8b43e3",
+      "lemma": "club",
+      "normalizedLemma": "club",
+      "inputHash": "f2adfbe84acab1a287f7f3a94371e43d20859b1d4cac01b913b46fbf348ef9a6",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "俱乐部（为共同目的而组成的会员组织，尤指体育或娱乐组织）",
+          "aliasesZh": [
+            "俱乐部"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2bfbc118abcafe8c53ee",
+      "lemma": "solar",
+      "normalizedLemma": "solar",
+      "inputHash": "f4b9411103e9d4b40871536cebcf4c00e016ff98978566e93d62271a6dbdbccb",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "地块（通常小于一片田地的独立土地）",
+          "aliasesZh": [
+            "地块"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "54cf50521af7fc5c393d",
+      "lemma": "olímpic",
+      "normalizedLemma": "olímpic",
+      "inputHash": "215219f4f68b9ac7bccd0c719daf714cd9415a1e522fc107207d4c7d5a4ddf41",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "奥林匹克的",
+          "aliasesZh": [
+            "奥林匹克"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e5ae5827248ee1954d3b",
+      "lemma": "varietat",
+      "normalizedLemma": "varietat",
+      "inputHash": "a5fd3b6c178bc36ac7799fcfbcecb4b0287e618c1b92c168aae3bcbf44bbc968",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "多种不同的事物",
+          "aliasesZh": [
+            "多种不同的事物"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e4e6666ce284434fe57c",
+      "lemma": "definició",
+      "normalizedLemma": "definició",
+      "inputHash": "2a9616ed0e8016424a67f8b99581c848cc7e52c724f949eef6f6bd586c98daf5",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "定义",
+          "aliasesZh": [
+            "定义"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "ec08f1bb86d24aa1d7fc",
+      "lemma": "plana",
+      "normalizedLemma": "plana",
+      "inputHash": "0408549dcf0e55077c9e3fcde39f826d7d2787710f83d080b6253d89843d6457",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "平原（地势起伏较小的大片土地）",
+          "aliasesZh": [
+            "平原"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（纸张的）一面",
+          "aliasesZh": [
+            "一面"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "9aff44565fd495520ee6",
+      "lemma": "passar",
+      "normalizedLemma": "passar",
+      "inputHash": "f6b5e67057da5c672c48e6e8dcfbf35ac7da74a2d0b6b7f8c89d7cc493a2940f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e014"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "发生",
+          "aliasesZh": [
+            "发生"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e013"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "被当作；被理解为",
+          "aliasesZh": [
+            "被当作",
+            "被理解为"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "41a093100bbbb59e31dc",
+      "lemma": "factor",
+      "normalizedLemma": "factor",
+      "inputHash": "5195526939cadec30c93813c1db11b8ce400c7955c0076ff0d2db65e70c33c77",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "做事者；行动者",
+          "aliasesZh": [
+            "做事者",
+            "行动者"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e835d0bf51a4ea9360cc",
+      "lemma": "prop",
+      "normalizedLemma": "prop",
+      "inputHash": "8ee52a4e0be3ad00723677d9f8299f6f0177748f63eb0d5c0b8a237da6249442",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "在附近；邻近",
+          "aliasesZh": [
+            "在附近",
+            "邻近"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c46cf71604b2c0a7c4f5",
+      "lemma": "medieval",
+      "normalizedLemma": "medieval",
+      "inputHash": "7488fb40853108d0f34d0ad8fcaf9e2bba25cf7a8f63c77edc2778b2608e7f35",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "中世纪的",
+          "aliasesZh": [
+            "中世纪"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "3fcd9d6b45da76db4546",
+      "lemma": "físic",
+      "normalizedLemma": "físic",
+      "inputHash": "bf193ccf6b503ccbbf54bb51def26b2923ac30c4c827ee5d442eedc7cc893ea6",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "物理学家",
+          "aliasesZh": [
+            "物理学家"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "0dfae7252cd86d58ca4a",
+      "lemma": "pressió",
+      "normalizedLemma": "pressió",
+      "inputHash": "65e7a9d3fa014f074121f7df31f53093f3085b5bc2ddeb1b2bfe15b271606f71",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "压力",
+          "aliasesZh": [
+            "压力"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "4d327af41f96c23c6b13",
+      "lemma": "via",
+      "normalizedLemma": "via",
+      "inputHash": "deba93a7286340d967c3138d06a4480b55a9abc11c90a25038c800689f8fa80f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "道路；路径",
+          "aliasesZh": [
+            "道路",
+            "路径"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "00ff6f13379089e601ca",
+      "lemma": "posterior",
+      "normalizedLemma": "posterior",
+      "inputHash": "869eef139ddb632818dbc3b378935c5a0d011da0669b911a78aef9617815a35c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "后部的；位于物体后方的",
+          "aliasesZh": [
+            "后部",
+            "位于物体后方"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "385cfdbc00ec32031699",
+      "lemma": "unit",
+      "normalizedLemma": "unit",
+      "inputHash": "d867976a4b913643fbe29190fcc22a277d5627b0c54c22091350633c69912c22",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "联合的",
+          "aliasesZh": [
+            "联合"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "aa7ff82f4935b9e4ce81",
+      "lemma": "vent",
+      "normalizedLemma": "vent",
+      "inputHash": "6ad10c1f6ede0a0792f460fcb7e5fe365dbc168727a54662f94e374d83fcbf50",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "风（空气的流动）",
+          "aliasesZh": [
+            "风"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e23dfb0e0d292b9d37b2",
+      "lemma": "últim",
+      "normalizedLemma": "últim",
+      "inputHash": "835b217bf36f148aa39f9e48f07addcc4b18963beac00d7b6978f3116f72b6e6",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "最极端的；最上面的；最下面的",
+          "aliasesZh": [
+            "最极端",
+            "最上面",
+            "最下面"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f5d56c5054ca5aaf60bf",
+      "lemma": "carboni",
+      "normalizedLemma": "carboni",
+      "inputHash": "6d11e3713d73c3477a5c7617c312d26216e6e384770a34643ca2a6355e865e9d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "碳",
+          "aliasesZh": [
+            "碳"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "05cf63566886f38cfc17",
+      "lemma": "composició",
+      "normalizedLemma": "composició",
+      "inputHash": "f3dc40daecda463232060f943da8914962e685572cb06bf139a0c6db9b516e3f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "组成；构成",
+          "aliasesZh": [
+            "组成",
+            "构成"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "40b30b4e8f0d137056ac",
+      "lemma": "material",
+      "normalizedLemma": "material",
+      "inputHash": "7038d8fbf5b113099b6a75fe0e4e216ac2e4202e842eb3740ab136da801bd00c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "在工作或服务中使用的材料、物品或工具",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "ffd0df85c20621556a14",
+      "lemma": "esportiu",
+      "normalizedLemma": "esportiu",
+      "inputHash": "d5b696a1815d2b7505a52e9485bc4a7d10ff6b71b8b2269b5d7f13a501c2648c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "喜爱运动的",
+          "aliasesZh": [
+            "喜爱运动"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "074af2bf8e84854902ee",
+      "lemma": "mare",
+      "normalizedLemma": "mare",
+      "inputHash": "1153b087005389e0ae36429c9383ea94f90cb1637d313c86cfba7b2204d3fca5",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（动物的）子宫",
+          "aliasesZh": [
+            "子宫"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "7832540b23ae6270bce3",
+      "lemma": "doncs",
+      "normalizedLemma": "doncs",
+      "inputHash": "da0c37ad6aa92243f9387929d261b95f4a74b4a2a71c6068d8c3848f9bcea9f8",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "conjunction",
+          "translationZh": "好吧；那么",
+          "aliasesZh": [
+            "好吧",
+            "那么"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "conjunction",
+          "translationZh": "所以；因此",
+          "aliasesZh": [
+            "所以",
+            "因此"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "4d2971726bc45d4f7ce6",
+      "lemma": "artificial",
+      "normalizedLemma": "artificial",
+      "inputHash": "99e61332890a68a6dd0d6c8a72b2fa3c2233925bd6108013f396735471a497f4",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "人工的；人造的",
+          "aliasesZh": [
+            "人工",
+            "人造"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "ac9b65afe54ba62c3a36",
+      "lemma": "electrònic",
+      "normalizedLemma": "electrònic",
+      "inputHash": "757cc22a98fa2b80d50b165280f97cd6d613cf48b0cdab9f4c972fa498891532",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "电子的",
+          "aliasesZh": [
+            "电子"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "1f96b3ff73f01dbb41a8",
+      "lemma": "començament",
+      "normalizedLemma": "començament",
+      "inputHash": "600c866a6fcd6a8402a05507ed1b23bb8c70158a011006c3c4ff3ee1964f0a6a",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "开始；开端",
+          "aliasesZh": [
+            "开始",
+            "开端"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f1859cc07ccacd32dd6d",
+      "lemma": "musulmà",
+      "normalizedLemma": "musulmà",
+      "inputHash": "754a1a2b64f0af07d2aad6d8f4da4b7584f53d7cc3a6810a361059095766d89d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "穆斯林",
+          "aliasesZh": [
+            "穆斯林"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c07032346b1aed74bb2d",
+      "lemma": "establir",
+      "normalizedLemma": "establir",
+      "inputHash": "6c028a0752dfefc63d7cde1668831830992edee1f1512b12a866f8c77b61234b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "查明；确定",
+          "aliasesZh": [
+            "查明",
+            "确定"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "3768470049f15997d177",
+      "lemma": "demostrar",
+      "normalizedLemma": "demostrar",
+      "inputHash": "f37c21af867f2be3bc6be552cc82598b84e41cc1b1f4551ab95ba995a171be88",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "展示；证明",
+          "aliasesZh": [
+            "展示",
+            "证明"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "51997cc49513b006f1ca",
+      "lemma": "roca",
+      "normalizedLemma": "roca",
+      "inputHash": "d04251fefce2ba9329238be8aa801b86fe24d6993d4f5022619fefbe69271178",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "大块岩石（与较小的石块相对）",
+          "aliasesZh": [
+            "岩石",
+            "大石块"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "b7f569756fdf717e60f9",
+      "lemma": "domini",
+      "normalizedLemma": "domini",
+      "inputHash": "267c41470cb2be95cf82fc89403dcdefff0e9406a023d1c2eebe147c946811b1",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "领地；庄园土地",
+          "aliasesZh": [
+            "领地",
+            "庄园土地"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "0275fca08c216c77b2a1",
+      "lemma": "independent",
+      "normalizedLemma": "independent",
+      "inputHash": "222c39ddc8ccdf6a4cd995553c6cbee077a9cafcfa54ec785fa3fa65bec61614",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "独立的",
+          "aliasesZh": [
+            "独立"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "13021ba5fbfab4ec28db",
+      "lemma": "iniciar",
+      "normalizedLemma": "iniciar",
+      "inputHash": "2b7f5f0027e0a9c5a028a7d7f603c0bf4b53a69f0bb20fc8e6bdd56983a5d0b0",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "开始",
+          "aliasesZh": [
+            "开始"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "03895638be3ddf02f00e",
+      "lemma": "cardenal",
+      "normalizedLemma": "cardenal",
+      "inputHash": "a64663e285c4f2357c0b8f07668c0ead228cdebaf12ec32c7c962f3b769cc63d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "枢机主教（天主教会中的高级教职）",
+          "aliasesZh": [
+            "枢机主教",
+            "红衣主教"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6f1e71f9eeadbdec9af6",
+      "lemma": "conservar",
+      "normalizedLemma": "conservar",
+      "inputHash": "421571c1027945815d39810686ee00b0cb442c1d5fea26a7a94aa42251a702d2",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "被保存；得以保存",
+          "aliasesZh": [
+            "被保存",
+            "得以保存"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "b225c9ee17d9f5d96bd4",
+      "lemma": "sis",
+      "normalizedLemma": "sis",
+      "inputHash": "174454961f15b3a4d45ed54ac132179521998e22d657df86aa3bd0a0e3fb974b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "numeral",
+          "translationZh": "六",
+          "aliasesZh": [
+            "六"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f2ef3132080d70e51e31",
+      "lemma": "convertir",
+      "normalizedLemma": "convertir",
+      "inputHash": "a15a8fcdfc889290e51992956790253563483179fa3832e573571efc2092a960",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "转变；转换",
+          "aliasesZh": [
+            "转变",
+            "转换"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "af4c4b550dc6e08efd6a",
+      "lemma": "denominació",
+      "normalizedLemma": "denominació",
+      "inputHash": "a73daaa81a0532db8c8b6a57c2d6ed06a74ab0e1cb509f140e0b53002b8bf2f9",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "名称；命名；给事物取名的行为",
+          "aliasesZh": [
+            "名称",
+            "命名"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "35bb2a54b440efe8207f",
+      "lemma": "conreu",
+      "normalizedLemma": "conreu",
+      "inputHash": "a6fcd4102818719ccc4790fec543d414494181ec1ff24cb541e127c23ea6c0a5",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "种植或播种后经过照料、供收获或利用的作物",
+          "aliasesZh": [
+            "作物",
+            "栽培作物"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6ee0eb490ff832101cf8",
+      "lemma": "set",
+      "normalizedLemma": "set",
+      "inputHash": "c184fed3422b59a3a080118f01d2555ea87161c5a98d79278af0e36b33ac3c3d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e022"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "渴望；强烈的欲望",
+          "aliasesZh": [
+            "渴望",
+            "强烈的欲望"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "4697c20f8a70fcad6323",
+      "lemma": "marc",
+      "normalizedLemma": "marc",
+      "inputHash": "11a1415b344bca1f95fa3ad10bc8178c5fe96348f1ff6e2410b2b67a161ac2d5",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "框架；边框",
+          "aliasesZh": [
+            "框架",
+            "边框"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "框架；背景；环境",
+          "aliasesZh": [
+            "框架",
+            "背景",
+            "环境"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "439880f57cce8021b168",
+      "lemma": "situar",
+      "normalizedLemma": "situar",
+      "inputHash": "5a33e39e8e2a7a4d3b1b6355f0c09d2cb953768fbb247abb7df8ccc37088d46d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "位于；在（某处）",
+          "aliasesZh": [
+            "位于",
+            "在"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "放置；安置；把……放在某处",
+          "aliasesZh": [
+            "放置",
+            "安置"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2beb8a81cf792e81a4b4",
+      "lemma": "independència",
+      "normalizedLemma": "independència",
+      "inputHash": "6843624b65f808ff08f00874a9349cdee98b1380ccdd311f0b8bab56bd2b6a90",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "独立",
+          "aliasesZh": [
+            "独立"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "b76e107adf3aab8671d9",
+      "lemma": "negre",
+      "normalizedLemma": "negre",
+      "inputHash": "9751c15f0817366371b128fc8e89e469ba17a7b651686300334e8f0acb17b62f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e014"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "黑人的；与深色皮肤族群有关的",
+          "aliasesZh": [
+            "黑人"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a123a777ca1a5b437abf",
+      "lemma": "exterior",
+      "normalizedLemma": "exterior",
+      "inputHash": "891afad19592272b6abf4a3b18e0328e4f09f4f5c8b48fa2637f83497dc19824",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "外部的；外国的",
+          "aliasesZh": [
+            "外部",
+            "外国"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "beb532c759c6a68f35c0",
+      "lemma": "figura",
+      "normalizedLemma": "figura",
+      "inputHash": "54fd38dec9db46daa20879e6ecdec13954d82d3a0ade1c23cfbdae0f57d851dd",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "物体的可见形状",
+          "aliasesZh": [
+            "形状",
+            "外形"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "通过绘画表现的形象",
+          "aliasesZh": [
+            "图像",
+            "绘画形象"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "某一领域或环境中的杰出人物",
+          "aliasesZh": [
+            "杰出人物",
+            "重要人物"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "bd211d394e6c93726173",
+      "lemma": "mida",
+      "normalizedLemma": "mida",
+      "inputHash": "df3ac6dc5186eabf62b7866f6f3924c53207f94c2d04c57ab369819d6a4a1dc1",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "尺寸；某物的大小或线性度量",
+          "aliasesZh": [
+            "尺寸",
+            "大小"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "89deb1636cf307a43ea8",
+      "lemma": "alfabet",
+      "normalizedLemma": "alfabet",
+      "inputHash": "6e39455a5c14460deaef7a55643f6b6179ba1cd235971f9c059415059fc8cee1",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "识字的人",
+          "aliasesZh": [
+            "识字的人"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f09ec581d6c0e9494375",
+      "lemma": "marítim",
+      "normalizedLemma": "marítim",
+      "inputHash": "65f9bdc3dd125cb5c92ea8f7988d50d490895b7a7ac2b9aa7b8e6c700290cc18",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "海洋的；海上的",
+          "aliasesZh": [
+            "海洋",
+            "海上"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "31d18c0defdc3e0eadd4",
+      "lemma": "ambient",
+      "normalizedLemma": "ambient",
+      "inputHash": "da2b69df2a11a6181e40ab6f342bb771a8a90d8ede3516a01cc383c775492e9a",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "周围的；环境的",
+          "aliasesZh": [
+            "周围",
+            "环境"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "22c4e54a47b6410d9591",
+      "lemma": "arreu",
+      "normalizedLemma": "arreu",
+      "inputHash": "11155ddc0fa456c380ef2079af73d9e4ebe56e7b235efb31d7630e2e8922fcf7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "到处；各处",
+          "aliasesZh": [
+            "到处",
+            "各处"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "31f8b584e3463d21238d",
+      "lemma": "essencial",
+      "normalizedLemma": "essencial",
+      "inputHash": "55e4ecf0e984e69482aedaa3ac328d2e9a12231619c6c537fa9fb6a027b7dc6b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "极为重要的",
+          "aliasesZh": [
+            "极为重要"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f329eda86bdf6b7600ff",
+      "lemma": "mínim",
+      "normalizedLemma": "mínim",
+      "inputHash": "beba28f3d91c9ffbcbcafd78d7fc5256ccd0fc639432c317028560e71abe8d4f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "最小限度的；极少的",
+          "aliasesZh": [
+            "最小限度",
+            "极少"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "最小值；最低限度",
+          "aliasesZh": [
+            "最小值",
+            "最低限度"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "fd6e24653c547894b4d8",
+      "lemma": "catedral",
+      "normalizedLemma": "catedral",
+      "inputHash": "03f3ff459fd22a12cebd60b293a6ff705bee424c3365b8fa66ab8d46cb00e92c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "主教座堂",
+          "aliasesZh": [
+            "主教座堂"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "861a37ae2984023c87e9",
+      "lemma": "tendir",
+      "normalizedLemma": "tendir",
+      "inputHash": "549a0180bcc1999c4f12342fe2c67f20a50798c580513eee9e58bc319caa624e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "倾向于（与to连用）",
+          "aliasesZh": [
+            "倾向于"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "625fe74cad4600b5e8b7",
+      "lemma": "golf",
+      "normalizedLemma": "golf",
+      "inputHash": "69165c2a78b89e3dafe61f32efbd320a75f4a3e8bbefe621f341d77cc79fae4d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "高尔夫球",
+          "aliasesZh": [
+            "高尔夫球"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "42aee5004b633d215570",
+      "lemma": "passant",
+      "normalizedLemma": "passant",
+      "inputHash": "1764718ae60268c6a672b8a626bc7a749c18b195cda0f527dc930969b6152107",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "路人",
+          "aliasesZh": [
+            "路人"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "8b88c35eb7ba86b91d8c",
+      "lemma": "bola",
+      "normalizedLemma": "bola",
+      "inputHash": "29daeb32bb60191a664e892aedc0c35907e8f90cf9fb58282bac6d60a446b8c6",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "球",
+          "aliasesZh": [
+            "球"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "3b2fd4be2f83b1ed8928",
+      "lemma": "enllà",
+      "normalizedLemma": "enllà",
+      "inputHash": "cb2e621965261e8ab87e7e9fa28ecdefb0876f8003cc451c6b9f10ee76c0180c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "更远",
+          "aliasesZh": [
+            "更远"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "663ea1bfffe5038f3f0c",
+      "lemma": "to",
+      "normalizedLemma": "to",
+      "inputHash": "95e4b5da6a65f31fcf20f6c49e37804685d90777300781f62bc469c86a6a3be7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "音高；音调",
+          "aliasesZh": [
+            "音高",
+            "音调"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "961c77f236e48f3f11a5",
+      "lemma": "lèxic",
+      "normalizedLemma": "lèxic",
+      "inputHash": "7e0c91dd1fe85f7c47e93cb828aac784b20e2ddf157dae8ebf150f47e31f4b8d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "词汇；词汇表；词典",
+          "aliasesZh": [
+            "词汇",
+            "词汇表",
+            "词典"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "10f3ed5a602b717ecff4",
+      "lemma": "compost",
+      "normalizedLemma": "compost",
+      "inputHash": "d3a7b57a272aa6a639736b126e674d8939245a1d78d09e0bafd1f352e19b7ca3",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "复合的；由多个部分组成的",
+          "aliasesZh": [
+            "复合的",
+            "复合"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（化学）化合物；由多种化学元素组成的物质",
+          "aliasesZh": [
+            "化合物"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "堆肥；由有机物经过生物转化而成、用作肥料的物质",
+          "aliasesZh": [
+            "堆肥",
+            "有机堆肥"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "5095f7ed516ddbadff9d",
+      "lemma": "originar",
+      "normalizedLemma": "originar",
+      "inputHash": "c3a9769bc47e72da6b52ef8313743b0896133160489734b595461962c4c6c3b6",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "产生；起源于",
+          "aliasesZh": [
+            "产生",
+            "起源于"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "106785e48a471200ee02",
+      "lemma": "legió",
+      "normalizedLemma": "legió",
+      "inputHash": "ea5f26e5c62cbd18d9baa0c2f3972d4c7adfc8b4839cfc50cef5b23aa6ec154a",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "军团",
+          "aliasesZh": [
+            "军团"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "0c8e713b533c205e5c54",
+      "lemma": "celta",
+      "normalizedLemma": "celta",
+      "inputHash": "d8daae1295187be27b4c8df2ff62c42fbfcc650a95e56e0bbdbef03af8dd8861",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "凯尔特人的；与凯尔特人有关的",
+          "aliasesZh": [
+            "凯尔特人的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "凯尔特人",
+          "aliasesZh": [
+            "凯尔特人"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "凯尔特语",
+          "aliasesZh": [
+            "凯尔特语"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "862d1703462e2b5bc0e3",
+      "lemma": "proporcionar",
+      "normalizedLemma": "proporcionar",
+      "inputHash": "97750b28fb0fb75818f0b135decd94296308c586a9158e85fdea8765921bfa56",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "提供；供应",
+          "aliasesZh": [
+            "提供",
+            "供应"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "8a95c369011c1e27d044",
+      "lemma": "crítica",
+      "normalizedLemma": "crítica",
+      "inputHash": "b1a2227e83b1a3a7a6e7403b724eee6f36aa44f79d92a6570c51317d38fdafb7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "批评",
+          "aliasesZh": [
+            "批评"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f61f5c5e22749aeba2bd",
+      "lemma": "cara",
+      "normalizedLemma": "cara",
+      "inputHash": "3342697d84f0c58905e73f4f23514b41abe1bf6161dc84cacc3e2051b8bd145a",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "脸；面部（头部的前面）",
+          "aliasesZh": [
+            "脸",
+            "面部"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "72be9dd49e39937373ee",
+      "lemma": "llur",
+      "normalizedLemma": "llur",
+      "inputHash": "b1173c710e92f218bf519197c4f18e1e9b615243b80702e8808883aaeaae1ee7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "他们的",
+          "aliasesZh": [
+            "他们"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "4bd4f85cb10a2c14263d",
+      "lemma": "atacar",
+      "normalizedLemma": "atacar",
+      "inputHash": "f58401c8bf5c132b98eaf3b817228dcddb1e39693e4c99b3aa7f05f47b7568fa",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "装填；填满",
+          "aliasesZh": [
+            "装填",
+            "填满"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "daeb1e8b230e415fed9b",
+      "lemma": "pell",
+      "normalizedLemma": "pell",
+      "inputHash": "14aac6a471c6f78b50a6a2cc94cd653e8124ffa6291e0d4310950e38c19b95be",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "兽皮；毛皮",
+          "aliasesZh": [
+            "兽皮",
+            "毛皮"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2cfcd1c295921a663523",
+      "lemma": "entorn",
+      "normalizedLemma": "entorn",
+      "inputHash": "eca89fc8f3a9c63eb5693d51c881df1bd1051681b634a149e6c20f6823574f0b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "周围环境；所处的环境",
+          "aliasesZh": [
+            "周围环境",
+            "环境"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "0171bf396d789531a7ed",
+      "lemma": "hebreu",
+      "normalizedLemma": "hebreu",
+      "inputHash": "60df081394cb5e4e947ea00f2a4ec7e86a0eddefc8e69b22ebbc12865cb75eb3",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "希伯来语",
+          "aliasesZh": [
+            "希伯来语"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "8214934162fa617145cf",
+      "lemma": "disseny",
+      "normalizedLemma": "disseny",
+      "inputHash": "69f23e21808ef5bcefd87198a3d0276372b5ca29ec9c9a926053e3af4e71998f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "设计",
+          "aliasesZh": [
+            "设计"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "bf27e4cf1b95f9626b76",
+      "lemma": "únicament",
+      "normalizedLemma": "únicament",
+      "inputHash": "e1e09eb9e07762fa3dde312e9b45d37946af207ddcf4844d41af4d8ca709afe7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "仅；只",
+          "aliasesZh": [
+            "仅",
+            "只"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

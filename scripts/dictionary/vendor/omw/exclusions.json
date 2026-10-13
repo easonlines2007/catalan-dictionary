@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "note": "Targeted holds from source comparison, not an exhaustive quality guarantee. Upstream files are preserved unchanged.",
+  "senses": [
+    {
+      "lemma": "abellot",
+      "synset": "02209624-n",
+      "reason": "Possible drone/bumblebee mismatch; requires a Catalan sense definition."
+    },
+    {
+      "lemma": "ampliar",
+      "synset": "00839834-v",
+      "reason": "Exaggeration sense not established by the available Catalan evidence."
+    },
+    {
+      "lemma": "constància",
+      "synset": "13403643-n",
+      "reason": "案卷 is too specific for the available record/certificate evidence."
+    },
+    {
+      "lemma": "dita",
+      "synset": "07151380-n",
+      "reason": "措辞 does not establish the Catalan saying/proverb sense."
+    },
+    {
+      "lemma": "dolçaina",
+      "synset": "03355468-n",
+      "reason": "Flageolet/recorder is not a sufficiently established match for the dulzaina."
+    },
+    {
+      "lemma": "capturar",
+      "synset": "02150948-v",
+      "reason": "Viewing/watching sense is not established for capturar."
+    },
+    {
+      "lemma": "esquitxar",
+      "synset": "02757828-v",
+      "reason": "Rain sense needs Catalan definition corroboration."
+    },
+    {
+      "lemma": "tercet",
+      "synset": "13744044-n",
+      "reason": "Bare number 三 does not explain the poetic or musical grouping."
+    },
+    {
+      "lemma": "lligadura",
+      "synset": "02755352-n",
+      "reason": "Generic attachment/adhesive gloss does not establish the ligature sense."
+    },
+    {
+      "lemma": "predicament",
+      "synset": "14408646-n",
+      "reason": "English predicament is a false-friend risk; Catalan commonly denotes prestige/influence."
+    },
+    {
+      "lemma": "blanca",
+      "synset": "13618508-n",
+      "reason": "Liquid minim sense is not established for the Catalan headword."
+    },
+    {
+      "lemma": "plusvàlua",
+      "synset": "13312190-n",
+      "reason": "Capital gain and capital gains tax must not be conflated."
+    },
+    {
+      "lemma": "pintoresc",
+      "synset": "00407887-a",
+      "reason": "Figurative/vivid gloss needs sense review before use for picturesque."
+    },
+    {
+      "lemma": "arboç",
+      "synset": "12230347-n",
+      "reason": "Genus arbutus versus species strawberry tree is insufficiently precise."
+    },
+    {
+      "lemma": "furgó",
+      "synset": "02814533-n",
+      "reason": "Station wagon versus van requires Catalan sense review."
+    },
+    {
+      "lemma": "calendari gregorià",
+      "synset": "15209706-n",
+      "reason": "Calendar is not a calendar month."
+    }
+  ],
+  "terms": [
+    {
+      "synset": "13813591-n",
+      "term": "姻亲关系",
+      "reason": "Affinity is not consanguinity/blood kinship."
+    },
+    {
+      "synset": "00422620-a",
+      "term": "粪的",
+      "reason": "This is not a reliable equivalent for muddy/mucky."
+    },
+    {
+      "synset": "13715755-n",
+      "term": "权重系统",
+      "reason": "Statistical weights confused with a system of physical weights."
+    },
+    {
+      "synset": "03079616-n",
+      "term": "升降扶梯",
+      "reason": "Companionway is a ship stairway, not an escalator."
+    },
+    {
+      "synset": "02972925-a",
+      "term": "以",
+      "reason": "Bare abbreviation is too ambiguous as an adjective equivalent."
+    },
+    {
+      "synset": "02513742-v",
+      "term": "使产生歧视",
+      "reason": "Does not adequately establish the prejudice sense."
+    }
+  ]
+}

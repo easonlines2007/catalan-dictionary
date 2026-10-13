@@ -1,0 +1,1126 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-pilot-0004",
+  "recordCount": 25,
+  "records": [
+    {
+      "id": "e4b0aaf2010aa807351f",
+      "lemma": "anomenat",
+      "normalizedLemma": "anomenat",
+      "inputHash": "67b8de5a7676b5b572cb2b0aa6748dc218fec8af37d6a044ddf157420f99011e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "所谓的；被称作的",
+          "aliasesZh": [
+            "所谓的",
+            "被称作的"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "475768cced57f3a5d6a6",
+      "lemma": "nivell",
+      "normalizedLemma": "nivell",
+      "inputHash": "dded6a57795e3ec5fa85a3f3a092190c705a6ea95885524046dd80d9445ea24f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "高度；标高；高低等级中的一层",
+          "aliasesZh": [
+            "高度",
+            "标高"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（建筑）水平仪；检查平面是否水平的工具",
+          "aliasesZh": [
+            "水平仪"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "水平；程度；数量等级",
+          "aliasesZh": [
+            "水平",
+            "程度"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（电子游戏）关卡；通常由特定场景或任务构成的内容单元",
+          "aliasesZh": [
+            "游戏关卡",
+            "关卡"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（电子游戏）角色等级；量化角色经验的数值",
+          "aliasesZh": [
+            "角色等级"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "89f83379fa0b588d2b77",
+      "lemma": "província",
+      "normalizedLemma": "província",
+      "inputHash": "1787566577b4f443276ad1d15781cc8e712ba861eeb49280bba5542901818def",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "省；由若干市镇组成、用于国家行政管理的地域单位",
+          "aliasesZh": [
+            "省"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（古罗马）行省；罗马帝国征服的地区",
+          "aliasesZh": [
+            "罗马行省"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（宗教）会省；同一修会中由上级统一管理的若干修院",
+          "aliasesZh": [
+            "会省"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "5e13df1da6a6b546dea1",
+      "lemma": "generalment",
+      "normalizedLemma": "generalment",
+      "inputHash": "cba6b3782177659bbe0880a0370345b32579c9e9c649885fef5eb7af06b5128b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "一般地；通常；大体上",
+          "aliasesZh": [
+            "一般地",
+            "通常",
+            "大体上"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "744cb7e1c8e56f84f98d",
+      "lemma": "modern",
+      "normalizedLemma": "modern",
+      "inputHash": "0480264737631592bc3866a6e7d7a70dd633e4c24e21700c9c920da0d7282091",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e004",
+            "e006"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "现代的；当今或近来的",
+          "aliasesZh": [
+            "现代的",
+            "当今的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "时新的；时髦的；符合当前风格的",
+          "aliasesZh": [
+            "时新的",
+            "时髦的"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6a9b9e96e8e7693057a8",
+      "lemma": "activitat",
+      "normalizedLemma": "activitat",
+      "inputHash": "a5cdc7339adfa9b0630074dd2042841b51577d042051d1fb3f13a48b1f51b180",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "活动；需要有意识地投入体力或脑力的行动",
+          "aliasesZh": [
+            "活动"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（教材中的）学习活动；练习",
+          "aliasesZh": [
+            "学习活动",
+            "学习练习"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "作用；能够引起变化的事物所产生的活动",
+          "aliasesZh": [
+            "作用"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "57ce3eaba821df740118",
+      "lemma": "sector",
+      "normalizedLemma": "sector",
+      "inputHash": "5bbeba5e63a1373687c50ecc6764ce381bb20732b5c68e7a6db96740ee4462c7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（几何）扇形；由一段弧和两条直线围成的平面图形",
+          "aliasesZh": [
+            "扇形"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "社会群体或集体中具有特定区别的一部分",
+          "aliasesZh": [
+            "社会群体的一部分"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "经济部门；按活动性质划分的产业类别",
+          "aliasesZh": [
+            "经济部门",
+            "产业类别"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（计算机存储）扇区",
+          "aliasesZh": [
+            "扇区"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008",
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "部分；区域；某一地域或事物的分区",
+          "aliasesZh": [
+            "部分",
+            "区域",
+            "分区"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "分配网络中的分区",
+          "aliasesZh": [
+            "分配网络分区"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（铁路）由闭塞系统保护的一段线路；闭塞区段",
+          "aliasesZh": [
+            "闭塞区段"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c2e64159772434d8eab1",
+      "lemma": "fenomen",
+      "normalizedLemma": "fenomen",
+      "inputHash": "ef73c0bc0fa9b37462e4b19c78abaa2054b53e4ab6c7c3453ca9dfdd94b73205",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "自然现象；自然界中发生的事件",
+          "aliasesZh": [
+            "自然现象"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "非凡的人或事物",
+          "aliasesZh": [
+            "非凡人物",
+            "非凡事物"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "现象；呈现于感官和意识、可作为研究对象的事物",
+          "aliasesZh": [
+            "现象"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c67fb3c3e1d4621fc14a",
+      "lemma": "referència",
+      "normalizedLemma": "referència",
+      "inputHash": "ba57e50f5a5dc2790749b5279e7b5bedd3c6f97726ecf7f8e8a816801e04c16f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e007",
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "提及；指涉；参照",
+          "aliasesZh": [
+            "提及",
+            "指涉",
+            "参照"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "引文出处；为支持文中观点而引用其他文本或作者的标注",
+          "aliasesZh": [
+            "引文出处",
+            "文献引用"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（通常用复数）工作推荐材料；关于某人工作能力的证明，通常含前雇主的推荐",
+          "aliasesZh": [
+            "工作推荐材料",
+            "工作能力证明"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "参照对象；榜样；范本",
+          "aliasesZh": [
+            "参照对象",
+            "榜样",
+            "范本"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2ab4c019299a2242df20",
+      "lemma": "molècula",
+      "normalizedLemma": "molècula",
+      "inputHash": "27535848fd912b5ef4cbeadb4aefe82d248dcab37f1c2d8b1fec179f75c79041",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e004",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "分子；呈电中性的原子团",
+          "aliasesZh": [
+            "分子"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "非常微小的东西",
+          "aliasesZh": [
+            "微小事物"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "damaged_source",
+          "sourceRefs": [
+            "e002",
+            "e004"
+          ],
+          "noteZh": "原定义将原子团描述为由化学元素连接，连接方式表述不准确；仅译出分子与电中性原子团的明确部分，具体定义需修订。"
+        }
+      ]
+    },
+    {
+      "id": "3e23dc575b4e706e47d1",
+      "lemma": "e",
+      "normalizedLemma": "e",
+      "inputHash": "e2d49a4da7b96eea8f3a0fdab4b0bf560c2447b77b34f6b26d686341ecb43561",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "字母 e；加泰罗尼亚语字母表的第五个字母、第二个元音字母",
+          "aliasesZh": [
+            "字母e"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（数学）常数 e；自然对数的底数，是无理数，约为 2.71828182845904523536",
+          "aliasesZh": [
+            "自然对数的底数",
+            "自然常数e"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "43a321ee4de808da4587",
+      "lemma": "romana",
+      "normalizedLemma": "romana",
+      "inputHash": "e1387296b6a89db441fe722b30a78dda999fd73c5041ad5630f8cdccc474f0c9",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "杆秤；以不等长秤臂称量较大重量的秤",
+          "aliasesZh": [
+            "杆秤"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "5ff544556e97c784eb00",
+      "lemma": "època",
+      "normalizedLemma": "època",
+      "inputHash": "0b898a5f721d28e2b002a03f23568e87bff5dfd5a68facd8d551c869b7ff01ec",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "时代；时期；某一特定的历史阶段",
+          "aliasesZh": [
+            "时代",
+            "时期"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（计时）历元；某一时间尺度所选定的起始时刻",
+          "aliasesZh": [
+            "历元"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "某事件发生的时间",
+          "aliasesZh": [
+            "事件发生时间"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（地质）世；短于纪、长于期的地质时间单位",
+          "aliasesZh": [
+            "地质世"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6c02a8076b7815e1a23b",
+      "lemma": "coneixement",
+      "normalizedLemma": "coneixement",
+      "inputHash": "4f890d74a4646d5d83e7d1714a62d3e607a7d810b2175b6077d29fe979c05bd4",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "认识；理解；通过经验和学习获得的对事实、概念、原则、技能和态度的理解",
+          "aliasesZh": [
+            "认识",
+            "理解"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "知识；关于某一主题的系统化认知",
+          "aliasesZh": [
+            "知识"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "一项知识；一条知识",
+          "aliasesZh": [
+            "一项知识",
+            "一条知识"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "意识；知觉",
+          "aliasesZh": [
+            "意识",
+            "知觉"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（海运）提单",
+          "aliasesZh": [
+            "提单",
+            "海运提单"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "8f64fa44fe1b554981f2",
+      "lemma": "elecció",
+      "normalizedLemma": "elecció",
+      "inputHash": "0a8ab3a9a77b00ad1d6d93897abe63265ea9fb34a19df57c27b04be1b9d16c26",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "选举；从候选人中选出任职者",
+          "aliasesZh": [
+            "选举"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "选择；从多个选项中作出选择",
+          "aliasesZh": [
+            "选择"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "169ae0a5959576f51da9",
+      "lemma": "classificar",
+      "normalizedLemma": "classificar",
+      "inputHash": "ee2d2f744763c7ff2a5256aa6eb1f0a1e1dade8982af03d834dc74a3401c4fb7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e006",
+            "e009"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "分类；归类；分配到某种类别或组别",
+          "aliasesZh": [
+            "分类",
+            "归类"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e008"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（自反用法，比赛）取得某一名次",
+          "aliasesZh": [
+            "取得名次"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007",
+            "e010"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（比赛）晋级；取得进入下一轮的资格",
+          "aliasesZh": [
+            "晋级"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a8e70ad8f4ed8f93ee22",
+      "lemma": "tan",
+      "normalizedLemma": "tan",
+      "inputHash": "97d0a700151acd1e4bddd433a87847a6bc31e67e66e0dba3c250e67f87ded64c",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "（感叹）这么；那么；如此（表示程度高）",
+          "aliasesZh": [
+            "这么",
+            "那么",
+            "如此"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e007"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "（与 com 连用，表示比较）和某人或某物一样地",
+          "aliasesZh": [
+            "一样地"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "ambiguous_sense",
+          "sourceRefs": [
+            "e005"
+          ],
+          "noteZh": "关于与 que 连用的不定量用法，原定义缺少完整结构或例句，暂不据此编写具体中文语法释义。"
+        }
+      ]
+    },
+    {
+      "id": "66b4846f63b0aafd4de9",
+      "lemma": "econòmic",
+      "normalizedLemma": "econòmic",
+      "inputHash": "04bf9e795de019543dcb85e9645580e6d7a86a21d2915acf6d5da2c3c6593e32",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "经济的；与经济有关的",
+          "aliasesZh": [
+            "经济的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e007"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "省钱的；便宜的；花费少的",
+          "aliasesZh": [
+            "省钱的",
+            "便宜的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "节俭的；善于节省的",
+          "aliasesZh": [
+            "节俭的"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "1a346a277a1917628e2c",
+      "lemma": "fill",
+      "normalizedLemma": "fill",
+      "inputHash": "0220742a282a049b0d5869cb50aca24f819e8421abbf4285da19b62f36f67cb9",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "子女；后代（相对于父母而言的人或动物）",
+          "aliasesZh": [
+            "子女",
+            "后代"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "儿子",
+          "aliasesZh": [
+            "儿子"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "d20928a0fc39b297e86a",
+      "lemma": "mitologia",
+      "normalizedLemma": "mitologia",
+      "inputHash": "1d47c1b268c522d618c6ee82048249d964d9d96335c709a6c57fc8e2d6f0a7a5",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "被视为虚假的宗教，尤指古代宗教（含贬义）",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "被视为虚假的宗教中的神话总集（含贬义）",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "神话；特定地区、社会背景和时代的神话总集",
+          "aliasesZh": [
+            "神话",
+            "神话总集"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "神话学；结合时代、宗教和文化背景研究神话的学科",
+          "aliasesZh": [
+            "神话学"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "d50b24e39c286c9faaaa",
+      "lemma": "semblar",
+      "normalizedLemma": "semblar",
+      "inputHash": "692959d9aca749bb08bc37ac1ca9f0747262b2a61e7e1c73b9bb7e4763ff79f3",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004",
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "相像；类似；外观让人联想到另一事物",
+          "aliasesZh": [
+            "相像",
+            "类似"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e006"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "似乎；看来；给人某种初步印象",
+          "aliasesZh": [
+            "似乎",
+            "看来"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "36e876417d57429bcbe0",
+      "lemma": "societat",
+      "normalizedLemma": "societat",
+      "inputHash": "4497796957516f9c3e8492d9c34b2e27dc76a8485a9062d6301bc04be2f9c02f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005",
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "社会；以共同活动与相互关系联系起来的稳定人群",
+          "aliasesZh": [
+            "社会"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "群体；共同生活的生物的集合",
+          "aliasesZh": [
+            "生物群体"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007",
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "团体；社团；由多人组成的组织，如协会或公司",
+          "aliasesZh": [
+            "团体",
+            "社团"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "联合组织；由若干实体组成的组织，成员也可以是国家",
+          "aliasesZh": [
+            "联合组织"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2e0228f467b5516f61ea",
+      "lemma": "referir",
+      "normalizedLemma": "referir",
+      "inputHash": "511f4138c71b6bb7b66fb9d60f35b7b05e40665b9391ee1aa71880d4a0289fa1",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "叙述；讲述；以口头或书面方式提供已发生之事的信息",
+          "aliasesZh": [
+            "叙述",
+            "讲述"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "使与另一事物构成依赖或从属关系",
+          "aliasesZh": [
+            "确立从属关系"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "涉及；谈及某事",
+          "aliasesZh": [
+            "涉及",
+            "谈及"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "3683cb37f2f94e6646ac",
+      "lemma": "metall",
+      "normalizedLemma": "metall",
+      "inputHash": "d04d23f0bf2da2553dc5681a8ef45fc35d2bbd7e1e2426557e73617b1409071e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "金属；能形成阳离子和离子键的化学元素",
+          "aliasesZh": [
+            "金属"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "具有延展性、可锻性和光泽的金属材料块",
+          "aliasesZh": [
+            "金属材料块"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "铜合金",
+          "aliasesZh": [
+            "铜合金"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a3fbc01bbf11ca671a5b",
+      "lemma": "disposar",
+      "normalizedLemma": "disposar",
+      "inputHash": "b6a7c3ce1a37cda5181551fe069a73a5b4f0113a2b3d25ad170635297d95f56a",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005",
+            "e008"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "排列；布置；按一定顺序放置物品",
+          "aliasesZh": [
+            "排列",
+            "布置"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "安排；调度；掌控局面或人员团队并决定行动步骤",
+          "aliasesZh": [
+            "安排",
+            "调度"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e007",
+            "e012"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "拥有可用之物；有可供支配的资源",
+          "aliasesZh": [
+            "拥有可用资源",
+            "可供支配"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "准备；预备",
+          "aliasesZh": [
+            "准备",
+            "预备"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "提供；供应",
+          "aliasesZh": [
+            "提供",
+            "供应"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "利用；使用",
+          "aliasesZh": [
+            "利用",
+            "使用"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

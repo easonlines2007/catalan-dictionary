@@ -3,9 +3,12 @@ import type {
   FoundLookup,
   HistoryRecord,
   SavedRecord,
+  SearchLanguage,
   StoredDictionaryShard,
 } from "./types.ts";
 import { primaryChinese, primarySpanish } from "./types.ts";
+import { enrichChinese } from "./chinese-enrichment.ts";
+import { searchCacheKey } from "./search-normalization.ts";
 
 const DATABASE_NAME = "catala-pocket-dictionary";
 const DATABASE_VERSION = 2;
@@ -135,7 +138,8 @@ export async function getHistory(): Promise<HistoryRecord[]> {
 export async function addHistory(result: FoundLookup): Promise<HistoryRecord> {
   const record: HistoryRecord = {
     query: result.searchedForm,
-    normalizedQuery: result.normalizedQuery,
+    normalizedQuery: searchCacheKey(result.searchedForm, result.searchLanguage ?? "ca"),
+    searchLanguage: result.searchLanguage ?? "ca",
     lemma: result.lemma,
     meaning:
       primaryChinese(result.entry) ||
@@ -156,7 +160,9 @@ export async function getSavedWords(): Promise<SavedRecord[]> {
   const records = await withStore<SavedRecord[]>(SAVED_STORE, "readonly", (store) =>
     store.getAll(),
   );
-  return records.sort((a, b) => b.savedAt - a.savedAt);
+  return records
+    .map((record) => ({ ...record, entry: enrichChinese(record.entry) }))
+    .sort((a, b) => b.savedAt - a.savedAt);
 }
 
 export async function saveWord(
@@ -180,26 +186,44 @@ export async function removeSavedWord(lemma: string): Promise<void> {
 export async function cacheLookup(
   result: FoundLookup,
   dataVersion?: string,
+  searchDataVersion?: string,
 ): Promise<void> {
   const record: CacheRecord = {
-    query: result.normalizedQuery,
+    query: searchCacheKey(result.searchedForm, result.searchLanguage ?? "ca"),
     lemma: result.lemma,
     result,
     cachedAt: Date.now(),
     dataVersion,
+    searchDataVersion: searchDataVersion ?? result.searchDataVersion,
   };
   await withStore<IDBValidKey>(CACHE_STORE, "readwrite", (store) => store.put(record));
 }
 
-export async function getCachedLookup(query: string): Promise<CacheRecord | undefined> {
+export async function getCachedLookup(
+  query: string,
+  language: SearchLanguage = "auto",
+  searchDataVersion?: string,
+): Promise<CacheRecord | undefined> {
   const cached = await withStore<CacheRecord | undefined>(
     CACHE_STORE,
     "readonly",
-    (store) => store.get(query),
+    (store) => store.get(searchCacheKey(query, language)),
   );
   // Ignore v1 records after the canonical schema migration.
   if (cached && !cached.result.entry.normalizedLemma) return undefined;
-  return cached;
+  if (!cached) return undefined;
+  if (searchDataVersion && cached.searchDataVersion !== searchDataVersion) return undefined;
+  return {
+    ...cached,
+    result: {
+      ...cached.result,
+      entry: enrichChinese(cached.result.entry),
+      candidates: cached.result.candidates.map((candidate) => ({
+        ...candidate,
+        entry: candidate.entry ? enrichChinese(candidate.entry) : undefined,
+      })),
+    },
+  };
 }
 
 export async function getDictionaryShard(

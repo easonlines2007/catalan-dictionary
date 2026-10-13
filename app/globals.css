@@ -220,6 +220,38 @@ input:focus-visible {
   opacity: 0.72;
 }
 
+.search-languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.search-languages button {
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 99px;
+  background: transparent;
+  color: #5b6962;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.search-languages button[aria-pressed="true"] {
+  border-color: #c5d6cc;
+  background: var(--mint);
+  color: var(--mint-strong);
+}
+
+.search-help {
+  margin: 8px 2px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .content {
   padding-top: 31px;
 }
@@ -336,6 +368,14 @@ input:focus-visible {
   background: #eaf1ed;
 }
 
+.offline-panel {
+  margin-top: 26px;
+}
+
+.offline-panel > div {
+  min-width: 0;
+}
+
 .install-note__mark {
   display: grid;
   flex: 0 0 auto;
@@ -364,7 +404,8 @@ input:focus-visible {
 .offline-download {
   min-height: 38px;
   margin-top: 12px;
-  padding: 0 13px;
+  max-width: 100%;
+  padding: 9px 13px;
   border: 1px solid #aac3b7;
   border-radius: 11px;
   background: rgb(255 255 255 / 0.6);
@@ -475,12 +516,14 @@ input:focus-visible {
 }
 
 .resolution-card > p {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   margin: 0;
   color: #5a6d65;
   font-size: 10px;
   font-weight: 720;
   letter-spacing: 0.035em;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
 }
 
 .definition-card {
@@ -579,6 +622,27 @@ input:focus-visible {
   font-weight: 710;
   letter-spacing: -0.02em;
   line-height: 1.45;
+}
+
+.translation-status {
+  display: inline-block;
+  margin-left: 9px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: #f1ece1;
+  color: #776a51;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  vertical-align: middle;
+}
+
+.translation-pending {
+  margin: 0 22px 16px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .spanish-meaning {
@@ -753,6 +817,7 @@ input:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  min-width: 0;
 }
 
 .alternatives strong {
@@ -763,6 +828,12 @@ input:focus-visible {
 .alternatives button > span:last-child {
   color: var(--muted);
   font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.alternatives button > span:last-child {
+  max-width: 50%;
 }
 
 .recent-strip {

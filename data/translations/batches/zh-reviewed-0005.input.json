@@ -1,0 +1,3255 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-reviewed-0005",
+  "recordCount": 100,
+  "dictionaryVersion": "4b1a025bc29c18a5",
+  "sourceCommit": "f7a567af57fda450a8dd4e1977bc8c1698a3ac46",
+  "selection": "100 core lemmas: 94 unique lemmas from a fixed-seed audit of the first 1000 offline translation attempts, plus de/i/el/a/que/en by core-first priorityRank. Chinese corrections were written by Codex through direct source comparison, not imported from machine output. Up to three selected, source-backed senses per lemma; additional original Catalan evidence resolves ambiguous isolated English glosses. This is partial sense coverage and not human lexicographer approval.",
+  "records": [
+    {
+      "id": "959a45d44e6fcf58361e",
+      "lemma": "de",
+      "normalizedLemma": "de",
+      "partOfSpeech": [
+        "noun",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1,
+      "evidence": [
+        {
+          "id": "e026",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "The name of the Latin script letter D/d.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e027",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "of; from",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "e67894408a704ba66f00626b1d9f9739073659a5eda954ef0c89df12238561e7"
+    },
+    {
+      "id": "b737ca7ee563ae80e457",
+      "lemma": "la",
+      "normalizedLemma": "la",
+      "partOfSpeech": [
+        "article",
+        "noun",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 2,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "la (sixth note of a diatonic scale)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7a2034d9673f31a1fe26c0b703377c74d3fd495b03355f4f54714c939ceb962a"
+    },
+    {
+      "id": "de7d1b721a1e0632b7cf",
+      "lemma": "i",
+      "normalizedLemma": "i",
+      "partOfSpeech": [
+        "conjunction",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 3,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "The name of the Latin script letter I/i.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "conjunction",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "and; used to connect two similar words, phrases, sentences, etc.; as well as; together with; in addition to",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "conjunction",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "ba1415fd8da5e97b4a039a8deaa551e83026cb53309e0f4681464eee22151337"
+    },
+    {
+      "id": "d65c3e892354b17a4c03",
+      "lemma": "el",
+      "normalizedLemma": "el",
+      "partOfSpeech": [
+        "article",
+        "noun",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 4,
+      "evidence": [
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "the; definite article",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "neuter definite article used to make abstract nouns from adjectives; the; what, that which",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "him (direct object)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "164714b67724d4c4e0bfec7d967d85718e7ebb62d1afb3aca3e8c1c820c7dc53"
+    },
+    {
+      "id": "ca978112ca1bbdcafac2",
+      "lemma": "a",
+      "normalizedLemma": "a",
+      "partOfSpeech": [
+        "noun",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 5,
+      "evidence": [
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "in, at; indicating a particular time or place",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to; indicating movement towards a particular place",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to; indicating a target or indirect object",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "5064f1782af433b57b87067e9819fadd6977c5686a00f065c9ed26fd3892e60e"
+    },
+    {
+      "id": "c57b7501cd843672550c",
+      "lemma": "que",
+      "normalizedLemma": "que",
+      "partOfSpeech": [
+        "adverb",
+        "conjunction",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 6,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Nexe copulatiu d'unió, emprat per introduir una frase subordinada.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "conjunction",
+            "pronoun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Pronom relatiu d'objecte, equivalent a \"el qual\", \"la qual\".",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "conjunction",
+            "pronoun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Pronom relatiu de persona, equivalent a \"qui\" en oracions explicatives.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "conjunction",
+            "pronoun"
+          ],
+          "layer": "freedict"
+        }
+      ],
+      "inputHash": "8745596ef20a9e8ac6fb1a158d8933912b25274cf43fc28d854bcceccbd07cfc"
+    },
+    {
+      "id": "dbd3a49d0d906b4ed921",
+      "lemma": "en",
+      "normalizedLemma": "en",
+      "partOfSpeech": [
+        "article",
+        "noun",
+        "preposition",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 7,
+      "evidence": [
+        {
+          "id": "e015",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Personal article used before masculine given names instead of the definite article el.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "preposition",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e016",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "in",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "preposition",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e017",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "when, upon, on (doing something)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "preposition",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7bbaec41a016b0aacd24cbcd38e7cbf0d55b605a0d4c438073444d6a9196924b"
+    },
+    {
+      "id": "7b5454f75089acf2693b",
+      "lemma": "les",
+      "normalizedLemma": "les",
+      "partOfSpeech": [
+        "adjective",
+        "article",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 8,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "them (feminine, direct object)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "article",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7404169d59d4981f42958792ca8ec0af679dce2db127500432ec8f02c9200c45"
+    },
+    {
+      "id": "be6e6bbb5ed98c40dd48",
+      "lemma": "els",
+      "normalizedLemma": "els",
+      "partOfSpeech": [
+        "article",
+        "noun",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 10,
+      "evidence": [
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "them (masculine, direct or indirect object)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "article",
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "df71bcccc54fe13f01b4cfd226493394fc9c0af33458715b390d8c813d543dc7"
+    },
+    {
+      "id": "198dea392afc21d070f8",
+      "lemma": "va",
+      "normalizedLemma": "va",
+      "partOfSpeech": [
+        "adjective",
+        "interjection",
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 17,
+      "evidence": [
+        {
+          "id": "e017",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "vain (having no real substance)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "interjection",
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "2598c53aa777ce26ab581598d6aee4cd03a5c1cee849825b26ebe9a5b9fc94f0"
+    },
+    {
+      "id": "6494187cf8ccaffc87c5",
+      "lemma": "seu",
+      "normalizedLemma": "seu",
+      "partOfSpeech": [
+        "noun",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 27,
+      "evidence": [
+        {
+          "id": "e017",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "your, yours (alluding to vostè or vostès)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "bdb4fd14d061dca2e5d2bc29b83f2c4259b815bef60ba690c01ef6e7f5775436"
+    },
+    {
+      "id": "144ea33e70199a55df86",
+      "lemma": "però",
+      "normalizedLemma": "però",
+      "partOfSpeech": [
+        "adverb",
+        "conjunction",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 35,
+      "evidence": [
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "objection",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "conjunction",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "8c9250411792b42019eae700ffc2c46bdb82a8ac310c179b0dc953349151042e"
+    },
+    {
+      "id": "04e400bfa26174f489b4",
+      "lemma": "primer",
+      "normalizedLemma": "primer",
+      "partOfSpeech": [
+        "adjective",
+        "adverb",
+        "numeral"
+      ],
+      "existingChinese": [],
+      "priorityRank": 38,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "prime (having no divisor except itself and 1)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "numeral"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "30dcb15ca53b988d2a62a1843a3712af973b8aca0db82cbd330b067929327786"
+    },
+    {
+      "id": "c1299854f2b209632ab2",
+      "lemma": "dos",
+      "normalizedLemma": "dos",
+      "partOfSpeech": [
+        "noun",
+        "numeral"
+      ],
+      "existingChinese": [],
+      "priorityRank": 54,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "two",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "numeral"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "98b215f278f84ec715632f51b986572b87b9cb5a74191295d3b233e70b75cf47"
+    },
+    {
+      "id": "3097e26b7f3cbdb92076",
+      "lemma": "fa",
+      "normalizedLemma": "fa",
+      "partOfSpeech": [
+        "interjection",
+        "noun",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 71,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "ago",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection",
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "40694ef64e61a1bcc533a1f1d074bbf666b999761f39995a1455f9d6e3e489a8"
+    },
+    {
+      "id": "b669c84fd0cb921ef541",
+      "lemma": "conjunt",
+      "normalizedLemma": "conjunt",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 116,
+      "evidence": [
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "joined, joint",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "8effa96f3bf232a443940aad95c48148ecf8c4a603d99b22d5bca9a98818515c"
+    },
+    {
+      "id": "12765295db4f1e7911dd",
+      "lemma": "natural",
+      "normalizedLemma": "natural",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 120,
+      "evidence": [
+        {
+          "id": "e015",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "nature (innate characteristics of a person)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "5e614440d05aa6e7bdbdc4af025728bf295060b6cc0e3a2e1b50cd9c10d8acdb"
+    },
+    {
+      "id": "90c2d4e480abaa9ebc3a",
+      "lemma": "això",
+      "normalizedLemma": "això",
+      "partOfSpeech": [
+        "noun",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 128,
+      "evidence": [
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Aquesta cosa, indicant proximitat en l’espai, el temps o el discurs de la primera persona (locutor) o de la segona persona (interlocutor.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "872765456ed62fc753c07954cb9fbdf2abbc437485ab1c688a7996b519b3aeca"
+    },
+    {
+      "id": "9873fc4269216d4e5fe3",
+      "lemma": "banda",
+      "normalizedLemma": "banda",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 198,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Costat, lateral.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e016",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "side",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Agrupació delictiva.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e018",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "band, gang",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e020",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "band (especially one consisting mainly of wind and percussion instruments)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "e9471ce77b7357df84f0dcab2756e7d748d3c6a3283e29b9841fe4f81117c523"
+    },
+    {
+      "id": "9be28bbe03fa7c43e9a5",
+      "lemma": "cos",
+      "normalizedLemma": "cos",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 208,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "body (physical structure of a human or animal)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "81498de451c34a5d5bf3a31b7596465166cf2efb1e3b655ae332d3761894f322"
+    },
+    {
+      "id": "760176194068f3029466",
+      "lemma": "qui",
+      "normalizedLemma": "qui",
+      "partOfSpeech": [
+        "noun",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 240,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "who, whom",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "00892f979b82145d4031e1d430c25eedb6b85daf8b600fc7a8df7582aaf30834"
+    },
+    {
+      "id": "bee8a455409f9f4d80f8",
+      "lemma": "històric",
+      "normalizedLemma": "històric",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 278,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "historical",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "1c08601ae65afa6e5a9f556391642e7a5363c09f98306e693f128715428aa989"
+    },
+    {
+      "id": "a94b413624c04134880d",
+      "lemma": "davant",
+      "normalizedLemma": "davant",
+      "partOfSpeech": [
+        "adverb",
+        "noun",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 304,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "front",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "d431f8619a92093828833bb3ed8a2970fdfcc89715352fad79e155337daf93c9"
+    },
+    {
+      "id": "908e2636911e8764e34b",
+      "lemma": "municipal",
+      "normalizedLemma": "municipal",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 342,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "municipal",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "b1a236dc351fb65bbde6d17d7b5104ab427dc832ae21f10b91e7aab79dfb6dc2"
+    },
+    {
+      "id": "fc4d6c9e874c1f120aa1",
+      "lemma": "superior",
+      "normalizedLemma": "superior",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 355,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "superior",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "d899d7cc355e910dc3e1a9951a3ee21d8cd54a841b1881854115b43cce084b00"
+    },
+    {
+      "id": "cc2585df74ecdb8b43e3",
+      "lemma": "club",
+      "normalizedLemma": "club",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 408,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "club (an association of members joining together for some common purpose, especially sports or recreation)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f2adfbe84acab1a287f7f3a94371e43d20859b1d4cac01b913b46fbf348ef9a6"
+    },
+    {
+      "id": "2bfbc118abcafe8c53ee",
+      "lemma": "solar",
+      "normalizedLemma": "solar",
+      "partOfSpeech": [
+        "adjective",
+        "noun",
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 424,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "lot, plot (a distinct portion of land, usually smaller than a field)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun",
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f4b9411103e9d4b40871536cebcf4c00e016ff98978566e93d62271a6dbdbccb"
+    },
+    {
+      "id": "54cf50521af7fc5c393d",
+      "lemma": "olímpic",
+      "normalizedLemma": "olímpic",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 440,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Olympic",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "215219f4f68b9ac7bccd0c719daf714cd9415a1e522fc107207d4c7d5a4ddf41"
+    },
+    {
+      "id": "e5ae5827248ee1954d3b",
+      "lemma": "varietat",
+      "normalizedLemma": "varietat",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 452,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "variety (a number of different things)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a5fd3b6c178bc36ac7799fcfbcecb4b0287e618c1b92c168aae3bcbf44bbc968"
+    },
+    {
+      "id": "e4e6666ce284434fe57c",
+      "lemma": "definició",
+      "normalizedLemma": "definició",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 462,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "definition",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "2a9616ed0e8016424a67f8b99581c848cc7e52c724f949eef6f6bd586c98daf5"
+    },
+    {
+      "id": "ec08f1bb86d24aa1d7fc",
+      "lemma": "plana",
+      "normalizedLemma": "plana",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 463,
+      "evidence": [
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "plain (an expanse of land with relatively low relief)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "face; side (of a sheet of paper)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "0408549dcf0e55077c9e3fcde39f826d7d2787710f83d080b6253d89843d6457"
+    },
+    {
+      "id": "9aff44565fd495520ee6",
+      "lemma": "passar",
+      "normalizedLemma": "passar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 467,
+      "evidence": [
+        {
+          "id": "e014",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to happen, to occur",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to pass as, to be interpreted as",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f6b5e67057da5c672c48e6e8dcfbf35ac7da74a2d0b6b7f8c89d7cc493a2940f"
+    },
+    {
+      "id": "41a093100bbbb59e31dc",
+      "lemma": "factor",
+      "normalizedLemma": "factor",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 474,
+      "evidence": [
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "doer, agent (someone who does something)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "5195526939cadec30c93813c1db11b8ce400c7955c0076ff0d2db65e70c33c77"
+    },
+    {
+      "id": "e835d0bf51a4ea9360cc",
+      "lemma": "prop",
+      "normalizedLemma": "prop",
+      "partOfSpeech": [
+        "adverb",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 491,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "near, nearby",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "8ee52a4e0be3ad00723677d9f8299f6f0177748f63eb0d5c0b8a237da6249442"
+    },
+    {
+      "id": "c46cf71604b2c0a7c4f5",
+      "lemma": "medieval",
+      "normalizedLemma": "medieval",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 495,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "medieval",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7488fb40853108d0f34d0ad8fcaf9e2bba25cf7a8f63c77edc2778b2608e7f35"
+    },
+    {
+      "id": "3fcd9d6b45da76db4546",
+      "lemma": "físic",
+      "normalizedLemma": "físic",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 527,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "physicist",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "bf193ccf6b503ccbbf54bb51def26b2923ac30c4c827ee5d442eedc7cc893ea6"
+    },
+    {
+      "id": "0dfae7252cd86d58ca4a",
+      "lemma": "pressió",
+      "normalizedLemma": "pressió",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 535,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "pressure",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "65e7a9d3fa014f074121f7df31f53093f3085b5bc2ddeb1b2bfe15b271606f71"
+    },
+    {
+      "id": "4d327af41f96c23c6b13",
+      "lemma": "via",
+      "normalizedLemma": "via",
+      "partOfSpeech": [
+        "interjection",
+        "noun",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 537,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "way, path",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection",
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "deba93a7286340d967c3138d06a4480b55a9abc11c90a25038c800689f8fa80f"
+    },
+    {
+      "id": "00ff6f13379089e601ca",
+      "lemma": "posterior",
+      "normalizedLemma": "posterior",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 559,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "posterior (located behind, or towards the rear of an object)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "869eef139ddb632818dbc3b378935c5a0d011da0669b911a78aef9617815a35c"
+    },
+    {
+      "id": "385cfdbc00ec32031699",
+      "lemma": "unit",
+      "normalizedLemma": "unit",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 563,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "united",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "d867976a4b913643fbe29190fcc22a277d5627b0c54c22091350633c69912c22"
+    },
+    {
+      "id": "aa7ff82f4935b9e4ce81",
+      "lemma": "vent",
+      "normalizedLemma": "vent",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 575,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "wind (movement of air)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "6ad10c1f6ede0a0792f460fcb7e5fe365dbc168727a54662f94e374d83fcbf50"
+    },
+    {
+      "id": "e23dfb0e0d292b9d37b2",
+      "lemma": "últim",
+      "normalizedLemma": "últim",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 578,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "utmost; topmost; bottommost",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "835b217bf36f148aa39f9e48f07addcc4b18963beac00d7b6978f3116f72b6e6"
+    },
+    {
+      "id": "f5d56c5054ca5aaf60bf",
+      "lemma": "carboni",
+      "normalizedLemma": "carboni",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 589,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "carbon",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "6d11e3713d73c3477a5c7617c312d26216e6e384770a34643ca2a6355e865e9d"
+    },
+    {
+      "id": "05cf63566886f38cfc17",
+      "lemma": "composició",
+      "normalizedLemma": "composició",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 592,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "composition",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f3dc40daecda463232060f943da8914962e685572cb06bf139a0c6db9b516e3f"
+    },
+    {
+      "id": "40b30b4e8f0d137056ac",
+      "lemma": "material",
+      "normalizedLemma": "material",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 606,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "material, things or tools used in an operation, in a service.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7038d8fbf5b113099b6a75fe0e4e216ac2e4202e842eb3740ab136da801bd00c"
+    },
+    {
+      "id": "ffd0df85c20621556a14",
+      "lemma": "esportiu",
+      "normalizedLemma": "esportiu",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 610,
+      "evidence": [
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "sporty (fond of sports)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "d5b696a1815d2b7505a52e9485bc4a7d10ff6b71b8b2269b5d7f13a501c2648c"
+    },
+    {
+      "id": "074af2bf8e84854902ee",
+      "lemma": "mare",
+      "normalizedLemma": "mare",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 632,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "uterus (of an animal)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "1153b087005389e0ae36429c9383ea94f90cb1637d313c86cfba7b2204d3fca5"
+    },
+    {
+      "id": "7832540b23ae6270bce3",
+      "lemma": "doncs",
+      "normalizedLemma": "doncs",
+      "partOfSpeech": [
+        "adverb",
+        "conjunction",
+        "interjection"
+      ],
+      "existingChinese": [],
+      "priorityRank": 635,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "well; so",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "conjunction",
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "so, therefore",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "conjunction",
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "da0c37ad6aa92243f9387929d261b95f4a74b4a2a71c6068d8c3848f9bcea9f8"
+    },
+    {
+      "id": "4d2971726bc45d4f7ce6",
+      "lemma": "artificial",
+      "normalizedLemma": "artificial",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 639,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "artificial",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "99e61332890a68a6dd0d6c8a72b2fa3c2233925bd6108013f396735471a497f4"
+    },
+    {
+      "id": "ac9b65afe54ba62c3a36",
+      "lemma": "electrònic",
+      "normalizedLemma": "electrònic",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 640,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "electronic",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "757cc22a98fa2b80d50b165280f97cd6d613cf48b0cdab9f4c972fa498891532"
+    },
+    {
+      "id": "1f96b3ff73f01dbb41a8",
+      "lemma": "començament",
+      "normalizedLemma": "començament",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 641,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "start, outset, beginning",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "600c866a6fcd6a8402a05507ed1b23bb8c70158a011006c3c4ff3ee1964f0a6a"
+    },
+    {
+      "id": "f1859cc07ccacd32dd6d",
+      "lemma": "musulmà",
+      "normalizedLemma": "musulmà",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 650,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Muslim",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "754a1a2b64f0af07d2aad6d8f4da4b7584f53d7cc3a6810a361059095766d89d"
+    },
+    {
+      "id": "c07032346b1aed74bb2d",
+      "lemma": "establir",
+      "normalizedLemma": "establir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 652,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to ascertain",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "6c028a0752dfefc63d7cde1668831830992edee1f1512b12a866f8c77b61234b"
+    },
+    {
+      "id": "3768470049f15997d177",
+      "lemma": "demostrar",
+      "normalizedLemma": "demostrar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 656,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to show; to demonstrate",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f37c21af867f2be3bc6be552cc82598b84e41cc1b1f4551ab95ba995a171be88"
+    },
+    {
+      "id": "51997cc49513b006f1ca",
+      "lemma": "roca",
+      "normalizedLemma": "roca",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 659,
+      "evidence": [
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Objecte mineral gran, en contrast amb la pedra que es considera petita.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        }
+      ],
+      "inputHash": "d04251fefce2ba9329238be8aa801b86fe24d6993d4f5022619fefbe69271178"
+    },
+    {
+      "id": "b7f569756fdf717e60f9",
+      "lemma": "domini",
+      "normalizedLemma": "domini",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 663,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "demesne",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "267c41470cb2be95cf82fc89403dcdefff0e9406a023d1c2eebe147c946811b1"
+    },
+    {
+      "id": "0275fca08c216c77b2a1",
+      "lemma": "independent",
+      "normalizedLemma": "independent",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 668,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "independent",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "222c39ddc8ccdf6a4cd995553c6cbee077a9cafcfa54ec785fa3fa65bec61614"
+    },
+    {
+      "id": "13021ba5fbfab4ec28db",
+      "lemma": "iniciar",
+      "normalizedLemma": "iniciar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 676,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to start, begin",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "2b7f5f0027e0a9c5a028a7d7f603c0bf4b53a69f0bb20fc8e6bdd56983a5d0b0"
+    },
+    {
+      "id": "03895638be3ddf02f00e",
+      "lemma": "cardenal",
+      "normalizedLemma": "cardenal",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 712,
+      "evidence": [
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "En l'Església Catòlica, el càrrec superior a un bisbe.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "cardinal",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a64663e285c4f2357c0b8f07668c0ead228cdebaf12ec32c7c962f3b769cc63d"
+    },
+    {
+      "id": "6f1e71f9eeadbdec9af6",
+      "lemma": "conservar",
+      "normalizedLemma": "conservar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 715,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to be preserved",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "421571c1027945815d39810686ee00b0cb442c1d5fea26a7a94aa42251a702d2"
+    },
+    {
+      "id": "b225c9ee17d9f5d96bd4",
+      "lemma": "sis",
+      "normalizedLemma": "sis",
+      "partOfSpeech": [
+        "noun",
+        "numeral"
+      ],
+      "existingChinese": [],
+      "priorityRank": 735,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "six",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "numeral"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "174454961f15b3a4d45ed54ac132179521998e22d657df86aa3bd0a0e3fb974b"
+    },
+    {
+      "id": "f2ef3132080d70e51e31",
+      "lemma": "convertir",
+      "normalizedLemma": "convertir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 739,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to convert",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a15a8fcdfc889290e51992956790253563483179fa3832e573571efc2092a960"
+    },
+    {
+      "id": "af4c4b550dc6e08efd6a",
+      "lemma": "denominació",
+      "normalizedLemma": "denominació",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 767,
+      "evidence": [
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Acció i efecte de denominar.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Nom que es dona a una cosa.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a73daaa81a0532db8c8b6a57c2d6ed06a74ab0e1cb509f140e0b53002b8bf2f9"
+    },
+    {
+      "id": "35bb2a54b440efe8207f",
+      "lemma": "conreu",
+      "normalizedLemma": "conreu",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 775,
+      "evidence": [
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Allò que s'ha plantat o sembrat i que se li ha aplicat les cures necessàries per obtenir-ne el fruit o el seu aprofitament.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a6fcd4102818719ccc4790fec543d414494181ec1ff24cb541e127c23ea6c0a5"
+    },
+    {
+      "id": "6ee0eb490ff832101cf8",
+      "lemma": "set",
+      "normalizedLemma": "set",
+      "partOfSpeech": [
+        "noun",
+        "numeral"
+      ],
+      "existingChinese": [],
+      "priorityRank": 784,
+      "evidence": [
+        {
+          "id": "e022",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "hunger (strong desire)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "numeral"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "c184fed3422b59a3a080118f01d2555ea87161c5a98d79278af0e36b33ac3c3d"
+    },
+    {
+      "id": "4697c20f8a70fcad6323",
+      "lemma": "marc",
+      "normalizedLemma": "marc",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 799,
+      "evidence": [
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "frame",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "framework, setting",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "11a1415b344bca1f95fa3ad10bc8178c5fe96348f1ff6e2410b2b67a161ac2d5"
+    },
+    {
+      "id": "439880f57cce8021b168",
+      "lemma": "situar",
+      "normalizedLemma": "situar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 802,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to be (in a place)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to situate, place, put",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "5a33e39e8e2a7a4d3b1b6355f0c09d2cb953768fbb247abb7df8ccc37088d46d"
+    },
+    {
+      "id": "2beb8a81cf792e81a4b4",
+      "lemma": "independència",
+      "normalizedLemma": "independència",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 818,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "independence",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "6843624b65f808ff08f00874a9349cdee98b1380ccdd311f0b8bab56bd2b6a90"
+    },
+    {
+      "id": "b76e107adf3aab8671d9",
+      "lemma": "negre",
+      "normalizedLemma": "negre",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 825,
+      "evidence": [
+        {
+          "id": "e014",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "black, Black (of or relating to any of various ethnic groups having dark pigmentation of the skin)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "9751c15f0817366371b128fc8e89e469ba17a7b651686300334e8f0acb17b62f"
+    },
+    {
+      "id": "a123a777ca1a5b437abf",
+      "lemma": "exterior",
+      "normalizedLemma": "exterior",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 828,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "exterior, foreign",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "891afad19592272b6abf4a3b18e0328e4f09f4f5c8b48fa2637f83497dc19824"
+    },
+    {
+      "id": "beb532c759c6a68f35c0",
+      "lemma": "figura",
+      "normalizedLemma": "figura",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 837,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Forma visible d'un objecte.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Representació d'una forma a través del dibuix o la pintura.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Persona destacada dins d'un context.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "54fd38dec9db46daa20879e6ecdec13954d82d3a0ade1c23cfbdae0f57d851dd"
+    },
+    {
+      "id": "bd211d394e6c93726173",
+      "lemma": "mida",
+      "normalizedLemma": "mida",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 855,
+      "evidence": [
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Dimensió d'alguna cosa, mesura lineal.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        }
+      ],
+      "inputHash": "df3ac6dc5186eabf62b7866f6f3924c53207f94c2d04c57ab369819d6a4a1dc1"
+    },
+    {
+      "id": "89deb1636cf307a43ea8",
+      "lemma": "alfabet",
+      "normalizedLemma": "alfabet",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 864,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "literate person",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "6e39455a5c14460deaef7a55643f6b6179ba1cd235971f9c059415059fc8cee1"
+    },
+    {
+      "id": "f09ec581d6c0e9494375",
+      "lemma": "marítim",
+      "normalizedLemma": "marítim",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 890,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "maritime, sea",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "65f9bdc3dd125cb5c92ea8f7988d50d490895b7a7ac2b9aa7b8e6c700290cc18"
+    },
+    {
+      "id": "31d18c0defdc3e0eadd4",
+      "lemma": "ambient",
+      "normalizedLemma": "ambient",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 919,
+      "evidence": [
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "ambient",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "da2b69df2a11a6181e40ab6f342bb771a8a90d8ede3516a01cc383c775492e9a"
+    },
+    {
+      "id": "22c4e54a47b6410d9591",
+      "lemma": "arreu",
+      "normalizedLemma": "arreu",
+      "partOfSpeech": [
+        "adverb",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 935,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "everywhere",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "11155ddc0fa456c380ef2079af73d9e4ebe56e7b235efb31d7630e2e8922fcf7"
+    },
+    {
+      "id": "31f8b584e3463d21238d",
+      "lemma": "essencial",
+      "normalizedLemma": "essencial",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 947,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "essential (of great importance)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "55e4ecf0e984e69482aedaa3ac328d2e9a12231619c6c537fa9fb6a027b7dc6b"
+    },
+    {
+      "id": "f329eda86bdf6b7600ff",
+      "lemma": "mínim",
+      "normalizedLemma": "mínim",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 963,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "minimal",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "minimum",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "beba28f3d91c9ffbcbcafd78d7fc5256ccd0fc639432c317028560e71abe8d4f"
+    },
+    {
+      "id": "fd6e24653c547894b4d8",
+      "lemma": "catedral",
+      "normalizedLemma": "catedral",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 993,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "cathedral",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "03f3ff459fd22a12cebd60b293a6ff705bee424c3365b8fa66ab8d46cb00e92c"
+    },
+    {
+      "id": "861a37ae2984023c87e9",
+      "lemma": "tendir",
+      "normalizedLemma": "tendir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1014,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to tend [with a ‘to’], have a tendency toward",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "549a0180bcc1999c4f12342fe2c67f20a50798c580513eee9e58bc319caa624e"
+    },
+    {
+      "id": "625fe74cad4600b5e8b7",
+      "lemma": "golf",
+      "normalizedLemma": "golf",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1028,
+      "evidence": [
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "golf",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "69165c2a78b89e3dafe61f32efbd320a75f4a3e8bbefe621f341d77cc79fae4d"
+    },
+    {
+      "id": "42aee5004b633d215570",
+      "lemma": "passant",
+      "normalizedLemma": "passant",
+      "partOfSpeech": [
+        "adjective",
+        "noun",
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1053,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "passer-by",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun",
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "1764718ae60268c6a672b8a626bc7a749c18b195cda0f527dc930969b6152107"
+    },
+    {
+      "id": "8b88c35eb7ba86b91d8c",
+      "lemma": "bola",
+      "normalizedLemma": "bola",
+      "partOfSpeech": [
+        "interjection",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1056,
+      "evidence": [
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "ball",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "29daeb32bb60191a664e892aedc0c35907e8f90cf9fb58282bac6d60a446b8c6"
+    },
+    {
+      "id": "3b2fd4be2f83b1ed8928",
+      "lemma": "enllà",
+      "normalizedLemma": "enllà",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1060,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "further",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "cb2e621965261e8ab87e7e9fa28ecdefb0876f8003cc451c6b9f10ee76c0180c"
+    },
+    {
+      "id": "663ea1bfffe5038f3f0c",
+      "lemma": "to",
+      "normalizedLemma": "to",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1078,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "tone (specific pitch)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "95e4b5da6a65f31fcf20f6c49e37804685d90777300781f62bc469c86a6a3be7"
+    },
+    {
+      "id": "961c77f236e48f3f11a5",
+      "lemma": "lèxic",
+      "normalizedLemma": "lèxic",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1086,
+      "evidence": [
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "lexicon",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7e0c91dd1fe85f7c47e93cb828aac784b20e2ddf157dae8ebf150f47e31f4b8d"
+    },
+    {
+      "id": "10f3ed5a602b717ecff4",
+      "lemma": "compost",
+      "normalizedLemma": "compost",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1094,
+      "evidence": [
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Format per diversos elements, que té certa complexitat.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(química) Substància formada per diversos elements químics.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(agricultura) Producte obtingut per transformació biològica de substàncies orgàniques diverses, emprat per a adobar la terra.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        }
+      ],
+      "inputHash": "d3a7b57a272aa6a639736b126e674d8939245a1d78d09e0bafd1f352e19b7ca3"
+    },
+    {
+      "id": "5095f7ed516ddbadff9d",
+      "lemma": "originar",
+      "normalizedLemma": "originar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1097,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to originate",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "c3a9769bc47e72da6b52ef8313743b0896133160489734b595461962c4c6c3b6"
+    },
+    {
+      "id": "106785e48a471200ee02",
+      "lemma": "legió",
+      "normalizedLemma": "legió",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1106,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "legion",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "ea5f26e5c62cbd18d9baa0c2f3972d4c7adfc8b4839cfc50cef5b23aa6ec154a"
+    },
+    {
+      "id": "0c8e713b533c205e5c54",
+      "lemma": "celta",
+      "normalizedLemma": "celta",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1129,
+      "evidence": [
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Propi dels celtes.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Individu pertanyent a la cultura principal que habità Europa en l'antiguitat.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Celt",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Celtic (language)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "d8daae1295187be27b4c8df2ff62c42fbfcc650a95e56e0bbdbef03af8dd8861"
+    },
+    {
+      "id": "862d1703462e2b5bc0e3",
+      "lemma": "proporcionar",
+      "normalizedLemma": "proporcionar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1150,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to provide, supply",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "97750b28fb0fb75818f0b135decd94296308c586a9158e85fdea8765921bfa56"
+    },
+    {
+      "id": "8a95c369011c1e27d044",
+      "lemma": "crítica",
+      "normalizedLemma": "crítica",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1170,
+      "evidence": [
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "criticism",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "b1a2227e83b1a3a7a6e7403b724eee6f36aa44f79d92a6570c51317d38fdafb7"
+    },
+    {
+      "id": "f61f5c5e22749aeba2bd",
+      "lemma": "cara",
+      "normalizedLemma": "cara",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1222,
+      "evidence": [
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "face (front part of the head)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "3342697d84f0c58905e73f4f23514b41abe1bf6161dc84cacc3e2051b8bd145a"
+    },
+    {
+      "id": "72be9dd49e39937373ee",
+      "lemma": "llur",
+      "normalizedLemma": "llur",
+      "partOfSpeech": [
+        "adjective",
+        "determiner",
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1226,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "their",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "determiner",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "b1173c710e92f218bf519197c4f18e1e9b615243b80702e8808883aaeaae1ee7"
+    },
+    {
+      "id": "4bd4f85cb10a2c14263d",
+      "lemma": "atacar",
+      "normalizedLemma": "atacar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1230,
+      "evidence": [
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to pack, to fill",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f58401c8bf5c132b98eaf3b817228dcddb1e39693e4c99b3aa7f05f47b7568fa"
+    },
+    {
+      "id": "daeb1e8b230e415fed9b",
+      "lemma": "pell",
+      "normalizedLemma": "pell",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1263,
+      "evidence": [
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "pelt",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "14aac6a471c6f78b50a6a2cc94cd653e8124ffa6291e0d4310950e38c19b95be"
+    },
+    {
+      "id": "2cfcd1c295921a663523",
+      "lemma": "entorn",
+      "normalizedLemma": "entorn",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1272,
+      "evidence": [
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "ambient, medi",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "eca89fc8f3a9c63eb5693d51c881df1bd1051681b634a149e6c20f6823574f0b"
+    },
+    {
+      "id": "0171bf396d789531a7ed",
+      "lemma": "hebreu",
+      "normalizedLemma": "hebreu",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1274,
+      "evidence": [
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Hebrew language",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "60df081394cb5e4e947ea00f2a4ec7e86a0eddefc8e69b22ebbc12865cb75eb3"
+    },
+    {
+      "id": "8214934162fa617145cf",
+      "lemma": "disseny",
+      "normalizedLemma": "disseny",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1280,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "design",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "69f23e21808ef5bcefd87198a3d0276372b5ca29ec9c9a926053e3af4e71998f"
+    },
+    {
+      "id": "bf27e4cf1b95f9626b76",
+      "lemma": "únicament",
+      "normalizedLemma": "únicament",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1292,
+      "evidence": [
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "only",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "e1e09eb9e07762fa3dde312e9b45d37946af207ddcf4844d41af4d8ca709afe7"
+    }
+  ]
+}

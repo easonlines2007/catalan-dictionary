@@ -1,0 +1,2202 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-pilot-0001",
+  "dictionaryVersion": "4b1a025bc29c18a5",
+  "sourceCommit": "f7a567af57fda450a8dd4e1977bc8c1698a3ac46",
+  "recordCount": 25,
+  "selection": "25 missing-Chinese records from a 100-record pilot: one aggregated part of speech and at least one Catalan or English definition, ordered by existing priority rank. Field language labels and Spanish hints have not been independently verified.",
+  "records": [
+    {
+      "id": "697c4e5ad9654cfc2108",
+      "lemma": "del",
+      "normalizedLemma": "del",
+      "partOfSpeech": [
+        "contraction"
+      ],
+      "existingChinese": [],
+      "priorityRank": 9,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Contracció entre la preposició de i l'article el.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Contraction of the preposition de and the article el. of the",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "del",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "89e060ad20f94ddf930a424affd130ad5abd2df1a07074554b7ef1c197bde7e9"
+    },
+    {
+      "id": "9683a0544c16d1ab74d9",
+      "lemma": "amb",
+      "normalizedLemma": "amb",
+      "partOfSpeech": [
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 15,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "con",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Nexe que indica companyia o inclusió.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Introdueix el complement verbal d'instrument.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "con",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "with",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a5194ced0428c9da2623e4afd2a340be9858f4cb861f2edace1216e08bb8bbfe"
+    },
+    {
+      "id": "7b6d4867e37de56520ef",
+      "lemma": "una",
+      "normalizedLemma": "una",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 16,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Primera hora.",
+          "recordSourceIds": [
+            "cawiktionary"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "ad694964352b538a3a4bc722e70953345f34b2c2d73a7deee3426a86fa3216a0"
+    },
+    {
+      "id": "1eb2d1f7e7280c604c76",
+      "lemma": "al",
+      "normalizedLemma": "al",
+      "partOfSpeech": [
+        "contraction"
+      ],
+      "existingChinese": [],
+      "priorityRank": 19,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Contracció entre la preposició a i l'article el.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "contraction of a + el, literally “at the; to the”",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "al",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "a8c1143de64bb43c508e1e24a6ddd443668d248be205456961c8117bed9e2a49"
+    },
+    {
+      "id": "864b395ab33c52c0f240",
+      "lemma": "dels",
+      "normalizedLemma": "dels",
+      "partOfSpeech": [
+        "contraction"
+      ],
+      "existingChinese": [],
+      "priorityRank": 20,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Contracció entre la preposició de i l'article els.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "contraction of de + els, literally “of the, from the (masculine plural)”",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "23684081cb1a7df72537d80c8f1f81b08d9b746547a4850b90eb6235798dd8cc"
+    },
+    {
+      "id": "5d7d395a14ac4c268732",
+      "lemma": "entre",
+      "normalizedLemma": "entre",
+      "partOfSpeech": [
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 26,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "entre",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "entre",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "between",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "among",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "4f020e3748167ef617ad2839c9c31586422101b8f851b9cce570fa4df09fa8a0"
+    },
+    {
+      "id": "224d65ec7cd835ce5d70",
+      "lemma": "seva",
+      "normalizedLemma": "seva",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 28,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "a personal opinion",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "16682363bb6f5d303f86415a44eb0075d26d9b094f4030c8b1a149cb4763f188"
+    },
+    {
+      "id": "a0cb42734e410abe5921",
+      "lemma": "també",
+      "normalizedLemma": "també",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 31,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "también",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Adverbi d'afirmació que serveix per unir dos conceptes en forma de suma o addició.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "además",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "también",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "also, too",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "48e7c71b032b2694bf8dbc528a8ad6d557ba0d8be5fd3b276e582e2e61818d65"
+    },
+    {
+      "id": "56cb5f6a548d528e630c",
+      "lemma": "als",
+      "normalizedLemma": "als",
+      "partOfSpeech": [
+        "contraction"
+      ],
+      "existingChinese": [],
+      "priorityRank": 34,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Contracció entre la preposició a i l'article els.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to the, at the, toward the (masculine plural)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "a los",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "contraction"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f70c99f144e6a6822ef0bd2b1eb6aafc4dadb20eef273c02c970d3902c2afeff"
+    },
+    {
+      "id": "1395d89933ef30e80cb1",
+      "lemma": "pot",
+      "normalizedLemma": "pot",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 41,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "bote",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "bote",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Vas per a guardar-hi coses.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "jar, canister, vessel",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "jackpot",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "bote",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "pote",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "7144500f8a4f3217722ec46ae82175773a7fd498fbdee4add4844de0152f22fe"
+    },
+    {
+      "id": "f19022a1b2416178ddeb",
+      "lemma": "pel",
+      "normalizedLemma": "pel",
+      "partOfSpeech": [
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 44,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "contraction of per + el",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f5db8e004da920a8c539e58d26f13152cd500dcb5ebbc61fcf42a8f429113a84"
+    },
+    {
+      "id": "dee6d3c8562f6e4a4553",
+      "lemma": "on",
+      "normalizedLemma": "on",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 49,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "donde",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "dónde",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "donde",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "dónde",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Per preguntar o ubicar el lloc de què es parla.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "where",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "dónde",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "ab604225d0dc8d3f44ffede680f22b6a4f8957934eb82d85ad0d0775fb5e7b20"
+    },
+    {
+      "id": "c1d74a0c11ff102241ac",
+      "lemma": "nombre",
+      "normalizedLemma": "nombre",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 68,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "número",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "número",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Nom d'un conjunt de coses que serveix per expressar la quantitat.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "number; quantity",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "número",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "3a2b94773656c4f294024d9b512884e75192428c7906a8ea8756deecce63114c"
+    },
+    {
+      "id": "7c2ce3e07bb2988bcd0d",
+      "lemma": "era",
+      "normalizedLemma": "era",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 69,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "era",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(agricultura) Espai ample en una explotació agrícola de cereals destinat a apilar gavelles o a batre les espigues per separar el gra de la palla.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Període llarg amb esdeveniments que el diferencien d'altres períodes.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "era",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Espai ample en una explotació agrícola de cereals destinat a apilar gavelles o a batre les espigues per separar el gra de la palla.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Període llarg amb esdeveniments que el diferencien d'altres períodes.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "era (time period)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "small section of arable land destined for cultivation",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "era",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "654ee01e1edf35546ade830b724250d4d17874b7043c0e9d58981ba150892c3e"
+    },
+    {
+      "id": "4a7dae3e0aa8e41e69f0",
+      "lemma": "manera",
+      "normalizedLemma": "manera",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 73,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "manera",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "manera",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Conjunt de qualitats o de circumstàncies que intervenen en la realització d'una activitat.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Forma de captenir-se en societat.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "way; manner; method; style",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "manners, etiquette",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "manera",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "64950877bec03b61df0a41d826edf3516722db6bd5c10d53f525ed21847581f9"
+    },
+    {
+      "id": "cd36d1701c2eae5d220c",
+      "lemma": "tipus",
+      "normalizedLemma": "tipus",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 75,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "tipo",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Cadascuna de les peces que, en una impremta, representen a una lletra.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Model que exemplifica un conjunt de característiques comunes a diverses coses o persones.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Valor o preu establert per determinades operacions financeres.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "tipo",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Cadascuna de les peces que, en una impremta, representen a una lletra.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "El que està gravat en la matriu d'un segell.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Model que exemplifica un conjunt de característiques comunes a diverses coses o persones.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "mena",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Valor o preu establert per determinades operacions financeres.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Argument genèric que permet identificar una rondalla concreta.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "type, sort, kind",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "tipo",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "b07a6eb10ca8f324f73b07ee3b86801eab9d5a61a139c7517882b2a47f6e454b"
+    },
+    {
+      "id": "799343023be4ddd20cc4",
+      "lemma": "fou",
+      "normalizedLemma": "fou",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 80,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "a narrow cove",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "a narrow passage, a ravine",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "70983f4d08ab1a58b2ec2ce9aa1c17bbf0e5b8995844575e5fc294320b4b43bb"
+    },
+    {
+      "id": "e996d25f132d7adacd01",
+      "lemma": "dues",
+      "normalizedLemma": "dues",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 81,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Segona hora.",
+          "recordSourceIds": [
+            "cawiktionary"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "5bd8794ee1af1adb5d9242fa8221b07adc3fcef97880eeb8fc1f12714b7b4dd1"
+    },
+    {
+      "id": "1d9fcf9dcf7497e4e5af",
+      "lemma": "ciutat",
+      "normalizedLemma": "ciutat",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 87,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "ciudad",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "ciudad",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "urbe",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Municipi d'elevada població.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "city",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "ciudad",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "41a5f26d8ddcfc8a6fb46d24852594eff8f8526a661b9e92941a7e2281b95572"
+    },
+    {
+      "id": "3cf215b673123114da52",
+      "lemma": "comarca",
+      "normalizedLemma": "comarca",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 88,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "comarca",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "comarca",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Sistema d'administració política entre les diputacions i els municipis.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "district",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "comarca",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "ccd95bb6440b362900e074f80290e0af88c65f96cb5b962bc33bbda2c4a832af"
+    },
+    {
+      "id": "e5ecbd4a59de50b17862",
+      "lemma": "partir",
+      "normalizedLemma": "partir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 98,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "partir",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(transitiu) Trencar en dues parts, obrir al llarg.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(transitiu) Dividir en parts per a repartir.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(intransitiu) Anar-se'n, posar-se de camí, d'un lloc cap a un altre.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(intransitiu) Prendre com a base o punt de partida.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e006",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "partir",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Trencar en dues parts, obrir al llarg.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Dividir en parts per a repartir.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "partionar",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Anar-se'n, posar-se de camí, d'un lloc cap a un altre.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Prendre com a base o punt de partida.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to divide, to split",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to part, to split up",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e014",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to share",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e015",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "partir",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "001263d5c6d3b7632c913c25214299e9efb8f3522e3c39e1234544eca0da989c"
+    },
+    {
+      "id": "e86cafd6309c687c3ff5",
+      "lemma": "se",
+      "normalizedLemma": "se",
+      "partOfSpeech": [
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 99,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "himself, herself, itself (direct or indirect object)",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "oneself (direct or indirect object)",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "themselves (direct or indirect object)",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "each other (direct or indirect object)",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "edcc3e1a123bea2510cba70068d76256824750e9956f14ce9412950279589c30"
+    },
+    {
+      "id": "16e0a69f07cbe60e3fb7",
+      "lemma": "pels",
+      "normalizedLemma": "pels",
+      "partOfSpeech": [
+        "preposition"
+      ],
+      "existingChinese": [],
+      "priorityRank": 103,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "contraction of per + els",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "preposition"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "d59b8e0847aad7347c2505a8bc37b4cd077dfdd960318c2eb9a2440c25e86a2e"
+    },
+    {
+      "id": "0b530e452dc55238dc72",
+      "lemma": "produir",
+      "normalizedLemma": "produir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 106,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "producir",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "lex"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(dret) Al·legar, exhibir.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Treure de si amb activitat o acció vital alguna cosa.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Engendrar, criar, generar.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Fer, compondre, fabricar.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Redituar, causar guany alguna cosa.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Donar, originar, fer que s'esdevingui.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(pronominal) Explicar-se, fer-se entendre.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e009",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "producir",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e010",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "producirse",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Al·legar, exhibir.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Explicar-se, fer-se entendre.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Treure de si amb activitat o acció vital alguna cosa.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e014",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to produce",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e015",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "producir",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e016",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "producirse",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "5ef267995e57b3885ecd4b68e97b618a44db034d62038c33d257817147e045eb"
+    },
+    {
+      "id": "8daf86a0635209d1d7d9",
+      "lemma": "diversos",
+      "normalizedLemma": "diversos",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "existingChinese": [],
+      "priorityRank": 119,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(darrere del nom) De diferents tipus.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(davant del nom) Alguns, uns quants de diferents.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "diversos",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "varios",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "De diferents tipus.",
+          "recordSourceIds": [
+            "cawiktionary"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Alguns, uns quants de diferents.",
+          "recordSourceIds": [
+            "cawiktionary"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "diversos",
+          "recordSourceIds": [
+            "cawiktionary"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "languageVerified": false,
+          "text": "varios",
+          "recordSourceIds": [
+            "cawiktionary"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "99b48a5885f829b2eb816460df831c9cf42ddc3a0ba236a985e6aecb58d962d5"
+    }
+  ]
+}

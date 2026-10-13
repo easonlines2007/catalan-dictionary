@@ -40,6 +40,33 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: "/dictionary/search/manifest.json",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, must-revalidate",
+          },
+        ],
+      },
+      {
+        source: "/dictionary/search/opencc-license.txt",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, must-revalidate",
+          },
+        ],
+      },
+      {
+        source: "/dictionary/search/:version([a-f0-9]{16})/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
         source: "/dictionary/notices.json",
         headers: [
           {

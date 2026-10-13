@@ -1,0 +1,129 @@
+[
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "dc825991a7347566c0f879c2ec78bb218c5522318d13aa268fcdbe502d2968f4",
+    "kind": "translation_hint",
+    "layer": "lex",
+    "normalizedLemma": "ivaei",
+    "sourceHash": "964b7fe4665c5d5059d4b0ee4f0ff42f693d3d0cc5d61d847af3fe19f0dbb05d",
+    "sourceIds": [
+      "apertium-cat",
+      "apertium-spa-cat"
+    ],
+    "sourceLanguage": "es",
+    "sourcePartOfSpeech": [
+      "noun"
+    ],
+    "sourceText": "IVAEI",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  },
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "ddd48a7610b817d240e2d08c097758e3b1fecafdbba8cb21ee32bf5714d020aa",
+    "kind": "headword",
+    "layer": "merged-headword",
+    "normalizedLemma": "e)",
+    "sourceHash": "f2ce3712ed1a66bbcf07478c1c54fba95e3b243068d734bbd54aaf5c983c7e04",
+    "sourceIds": [
+      "apertium-cat"
+    ],
+    "sourceLanguage": "ca",
+    "sourcePartOfSpeech": [
+      "noun"
+    ],
+    "sourceText": "e)",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  },
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "6ca13c515185e017db78e13fa182d133cc8bbd5d41f9c7e9e70232fa1f4bf19a",
+    "kind": "headword",
+    "layer": "merged-headword",
+    "normalizedLemma": "e.",
+    "sourceHash": "4b237bf5b4c1ddd9abaa359dfdf4cbbd86f16b8571427e935f006e7c9291c48c",
+    "sourceIds": [
+      "apertium-cat"
+    ],
+    "sourceLanguage": "ca",
+    "sourcePartOfSpeech": [
+      "noun"
+    ],
+    "sourceText": "e.",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  },
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "ac00e470b3f15843d3261aeca48df0e4691c7b63dd44a4b0a6428e8f83a19571",
+    "kind": "headword",
+    "layer": "merged-headword",
+    "normalizedLemma": "grl",
+    "sourceHash": "86e672dd145ba7cdb722514f67320d8d38015d95f607cfa8135a6726db4cec8a",
+    "sourceIds": [
+      "apertium-cat"
+    ],
+    "sourceLanguage": "ca",
+    "sourcePartOfSpeech": [
+      "adjective"
+    ],
+    "sourceText": "grl",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  },
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "33306652c77e5a7b287b39704d39b6703e15b80cc28efee32053b2992740adfb",
+    "kind": "headword",
+    "layer": "merged-headword",
+    "normalizedLemma": "vé.",
+    "sourceHash": "a8882a39d3608dd18aa39201f3bd882617f6730fa7216e81647744dd07a2f4f3",
+    "sourceIds": [
+      "apertium-cat"
+    ],
+    "sourceLanguage": "ca",
+    "sourcePartOfSpeech": [
+      "noun"
+    ],
+    "sourceText": "vé.",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  },
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "3c0c6369627a849f0c8db30dd0fcfb8262376fad664d8fd7d02edf8859ffdbfa",
+    "kind": "headword",
+    "layer": "merged-headword",
+    "normalizedLemma": "carri",
+    "sourceHash": "a678e2369aa9ee9dfd18c2a2e1cc6ac74102a28b88ccb491304763669b060baa",
+    "sourceIds": [
+      "apertium-cat"
+    ],
+    "sourceLanguage": "ca",
+    "sourcePartOfSpeech": [
+      "adjective"
+    ],
+    "sourceText": "carri",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  },
+  {
+    "baseDataVersion": "4b1a025bc29c18a5",
+    "jobId": "eb268d10918a268ae13a68bc50104657263fb2aba69236eff2ee73e241966f41",
+    "kind": "headword",
+    "layer": "merged-headword",
+    "normalizedLemma": "anapat",
+    "sourceHash": "e4092dcf1f8b9ef4dc914a0b2e339d284737c4d11f92e84ef21d1a53002df9cb",
+    "sourceIds": [
+      "apertium-cat"
+    ],
+    "sourceLanguage": "ca",
+    "sourcePartOfSpeech": [
+      "adjective"
+    ],
+    "sourceText": "anapat",
+    "status": "source-insufficient",
+    "reason": "Pinned Apertium supplies only a lexical form or an unexpanded abbreviation. Exact-sense checks did not establish a reliable Chinese equivalent; no generic filler or unrelated homonym was imported."
+  }
+]

@@ -1,0 +1,167 @@
+import {
+  getDictionaryMetadata, getDictionaryShard, putDictionaryShard, setDictionaryMetadata,
+} from "./storage.ts";
+import { normalizeSearchInput, normalizeSearchKey } from "./search-normalization.ts";
+import type {
+  PackedDictionaryEntry, SearchManifest, SearchShardDescriptor,
+} from "./types.ts";
+
+type Posting = [lemma: string, term: string, kind: "translation" | "alias"];
+type ReverseIndex = Array<[key: string, postings: Posting[]]>;
+export interface ReverseMatch {
+  normalizedLemma: string;
+  matchedTerm: string;
+  matchKind: "translation" | "alias";
+  matchedLanguage: "es" | "zh";
+  exact: boolean;
+}
+
+function descriptorForKey<T extends { first: string; last: string }>(descriptors: T[], key: string): T | undefined {
+  // The builder uses UTF-16 ordinal ordering. Locale-aware ordering would
+  // select the wrong range for accents and Chinese characters.
+  return descriptors.find((descriptor) => descriptor.first <= key && descriptor.last >= key);
+}
+
+export class SearchRepository {
+  private manifestPromise?: Promise<SearchManifest>;
+  private memory = new Map<string, { value: unknown; bytes: number }>();
+  private memoryBytes = 0;
+  private inFlight = new Map<string, Promise<unknown>>();
+
+  async manifest(expectedBaseVersion?: string): Promise<SearchManifest> {
+    if (!this.manifestPromise) {
+      const request = fetch("/dictionary/search/manifest.json", { cache: "no-cache" })
+        .then(async (response) => {
+          if (!response.ok) throw new Error(`Search manifest: HTTP ${response.status}`);
+          const manifest = await response.json() as SearchManifest;
+          if (manifest.schemaVersion !== 1 || !manifest.baseDataVersion || !manifest.core?.entries) {
+            throw new Error("Unsupported search manifest");
+          }
+          if (expectedBaseVersion && manifest.baseDataVersion !== expectedBaseVersion) {
+            throw new Error("Search data and dictionary versions differ. Reconnect to update.");
+          }
+          await setDictionaryMetadata("activeSearchManifest", manifest).catch(() => undefined);
+          return manifest;
+        }).catch(async (error) => {
+          const stored = await getDictionaryMetadata<SearchManifest>("activeSearchManifest").catch(() => undefined);
+          if (stored?.schemaVersion === 1 &&
+              (!expectedBaseVersion || stored.baseDataVersion === expectedBaseVersion)) return stored;
+          throw error;
+        });
+      this.manifestPromise = request;
+      void request.catch(() => {
+        if (this.manifestPromise === request) this.manifestPromise = undefined;
+      });
+    }
+    const manifest = await this.manifestPromise;
+    if (expectedBaseVersion && manifest.baseDataVersion !== expectedBaseVersion) {
+      this.manifestPromise = undefined;
+      throw new Error("Search data and dictionary versions differ. Reconnect to update.");
+    }
+    return manifest;
+  }
+
+  storageKey(manifest: SearchManifest, descriptor: SearchShardDescriptor): string {
+    return `${manifest.baseDataVersion}:search:${manifest.dataVersion}:${descriptor.kind}:${descriptor.id}`;
+  }
+
+  private async compressed(manifest: SearchManifest, descriptor: SearchShardDescriptor, requireStorage = false): Promise<ArrayBuffer> {
+    const key = this.storageKey(manifest, descriptor);
+    const stored = await getDictionaryShard(key).catch(() => undefined);
+    if (stored) return stored.data;
+    const response = await fetch(descriptor.path, { cache: "force-cache" });
+    if (!response.ok) throw new Error(`Search shard: HTTP ${response.status}`);
+    const data = await response.arrayBuffer();
+    if (descriptor.sha256 && globalThis.crypto?.subtle) {
+      const hash = await crypto.subtle.digest("SHA-256", data);
+      const actual = Array.from(new Uint8Array(hash), (byte) => byte.toString(16).padStart(2, "0")).join("");
+      if (actual !== descriptor.sha256) throw new Error("Search shard checksum mismatch");
+    }
+    const storing = putDictionaryShard({
+      key, dataVersion: manifest.baseDataVersion, kind: descriptor.kind,
+      shardId: `${manifest.dataVersion}:${descriptor.id}`, data: data.slice(0),
+      bytes: data.byteLength, lastAccess: Date.now(),
+    });
+    if (requireStorage) await storing;
+    else await storing.catch(() => undefined);
+    return data;
+  }
+
+  private async load<T>(manifest: SearchManifest, descriptor: SearchShardDescriptor): Promise<T> {
+    const key = this.storageKey(manifest, descriptor);
+    const memory = this.memory.get(key);
+    if (memory) {
+      this.memory.delete(key);
+      this.memory.set(key, memory);
+      return memory.value as T;
+    }
+    const pending = this.inFlight.get(key);
+    if (pending) return pending as Promise<T>;
+    const request = (async () => {
+      const data = await this.compressed(manifest, descriptor);
+      const stream = new Blob([data]).stream().pipeThrough(new DecompressionStream("gzip"));
+      const text = await new Response(stream).text();
+      const value = JSON.parse(text) as T;
+      const bytes = text.length * 2;
+      this.memory.set(key, { value, bytes });
+      this.memoryBytes += bytes;
+      while (this.memoryBytes > 8 * 1024 * 1024 && this.memory.size > 1) {
+        const oldest = this.memory.entries().next().value!;
+        this.memory.delete(oldest[0]);
+        this.memoryBytes -= oldest[1].bytes;
+      }
+      return value;
+    })();
+    this.inFlight.set(key, request);
+    try { return await request; }
+    finally { this.inFlight.delete(key); }
+  }
+
+  async coreEntry(lemma: string, baseVersion: string): Promise<PackedDictionaryEntry | undefined> {
+    const manifest = await this.manifest(baseVersion);
+    const rows = await this.load<PackedDictionaryEntry[]>(manifest, manifest.core.entries);
+    return rows.find((row) => row.n === lemma);
+  }
+
+  async chineseEntry(lemma: string, baseVersion: string): Promise<PackedDictionaryEntry | undefined> {
+    const manifest = await this.manifest(baseVersion);
+    const descriptor = descriptorForKey(manifest.chinese, lemma);
+    if (!descriptor) return undefined;
+    return (await this.load<PackedDictionaryEntry[]>(manifest, descriptor)).find((row) => row.n === lemma);
+  }
+
+  async isOfflineLimited(manifest?: SearchManifest): Promise<boolean> {
+    if (typeof navigator === "undefined" || navigator.onLine !== false) return false;
+    const active = manifest ?? await this.manifest();
+    return !await getDictionaryMetadata<boolean>(`searchFullReady:${active.dataVersion}`).catch(() => false);
+  }
+
+  async reverse(query: string, language: "es" | "zh", baseVersion: string, limit = 32): Promise<ReverseMatch[]> {
+    const manifest = await this.manifest(baseVersion);
+    const key = normalizeSearchKey(query, language);
+    const descriptor = await this.isOfflineLimited(manifest)
+      ? manifest.core[language]
+      : descriptorForKey(manifest.indexes[language], key);
+    if (!descriptor) return [];
+    const index = await this.load<ReverseIndex>(manifest, descriptor);
+    const postings = index.find(([term]) => term === key)?.[1] ?? [];
+    const exactQuery = normalizeSearchInput(query, language);
+    // Preserve the index's frequency ordering within each spelling group.
+    return postings.map(([normalizedLemma, matchedTerm, matchKind]) => ({
+      normalizedLemma, matchedTerm, matchKind, matchedLanguage: language,
+      exact: normalizeSearchInput(matchedTerm, language) === exactQuery,
+    })).sort((a, b) => Number(b.exact) - Number(a.exact)).slice(0, limit);
+  }
+
+  async ensureCoreOffline(baseVersion: string): Promise<void> {
+    const manifest = await this.manifest(baseVersion);
+    await Promise.all(manifest.offline.core.map((descriptor) => this.prime(manifest, descriptor)));
+    await setDictionaryMetadata(`searchCoreReady:${manifest.dataVersion}`, true);
+  }
+
+  async prime(manifest: SearchManifest, descriptor: SearchShardDescriptor): Promise<void> {
+    await this.compressed(manifest, descriptor, true);
+  }
+}
+
+export const searchRepository = new SearchRepository();

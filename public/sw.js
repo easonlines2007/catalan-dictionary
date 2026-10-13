@@ -1,5 +1,5 @@
-const APP_SHELL_CACHE = "catala-pocket-shell-v3";
-const DICTIONARY_BOOTSTRAP_CACHE = "catala-pocket-dictionary-bootstrap-v1";
+const APP_SHELL_CACHE = "catala-pocket-shell-v6";
+const DICTIONARY_BOOTSTRAP_CACHE = "catala-pocket-dictionary-bootstrap-v4";
 const CORE_ASSETS = [
   "/manifest.webmanifest",
   "/icon-192.png",
@@ -7,6 +7,7 @@ const CORE_ASSETS = [
   "/apple-touch-icon.png",
   "/dictionary/manifest.json",
   "/dictionary/notices.json",
+  "/dictionary/search/manifest.json",
 ];
 
 async function precacheAppShell() {
@@ -28,25 +29,43 @@ async function precacheAppShell() {
 
 async function precacheDictionaryBootstrap() {
   const cache = await caches.open(DICTIONARY_BOOTSTRAP_CACHE);
-  const manifestResponse = await fetch("/dictionary/manifest.json", {
-    cache: "reload",
-  });
-  if (!manifestResponse.ok) throw new Error("Could not fetch dictionary manifest");
-  await cache.put("/dictionary/manifest.json", manifestResponse.clone());
-
-  const manifest = await manifestResponse.json();
+  const [manifestResponse, searchResponse] = await Promise.all([
+    fetch("/dictionary/manifest.json", { cache: "reload" }),
+    fetch("/dictionary/search/manifest.json", { cache: "reload" }),
+  ]);
+  if (!manifestResponse.ok || !searchResponse.ok) {
+    throw new Error("Could not fetch dictionary manifests");
+  }
+  const [manifest, search] = await Promise.all([
+    manifestResponse.clone().json(),
+    searchResponse.clone().json(),
+  ]);
+  if (search.schemaVersion !== 1 || search.baseDataVersion !== manifest.dataVersion) {
+    throw new Error("Dictionary search data does not match the base dictionary");
+  }
   const coreAssets = [
     manifest.coreDescriptors?.lex?.path || manifest.core?.lex?.path || manifest.core?.lex,
     manifest.coreDescriptors?.morph?.path || manifest.core?.morph?.path || manifest.core?.morph,
+    search.core?.entries?.path,
+    search.core?.zh?.path,
+    search.core?.es?.path,
+    search.licensing?.openccLicense,
+    ...(search.licensing?.wordnetLicenses || []),
   ].filter(Boolean);
   const keep = new Set([
     "/dictionary/manifest.json",
     "/dictionary/notices.json",
+    "/dictionary/search/manifest.json",
     ...coreAssets,
   ]);
   await Promise.all([
     cache.add("/dictionary/notices.json"),
     ...coreAssets.map((asset) => cache.add(asset)),
+  ]);
+  // Publish manifest snapshots only after all of their bootstrap assets exist.
+  await Promise.all([
+    cache.put("/dictionary/manifest.json", manifestResponse),
+    cache.put("/dictionary/search/manifest.json", searchResponse),
   ]);
   const existing = await cache.keys();
   await Promise.all(
@@ -70,7 +89,9 @@ self.addEventListener("activate", (event) => {
         keys
           .filter(
             (key) =>
-              key.startsWith("catala-pocket-shell-") && key !== APP_SHELL_CACHE,
+              (key.startsWith("catala-pocket-shell-") && key !== APP_SHELL_CACHE) ||
+              (key.startsWith("catala-pocket-dictionary-bootstrap-") &&
+                key !== DICTIONARY_BOOTSTRAP_CACHE),
           )
           .map((key) => caches.delete(key)),
       ),
@@ -105,6 +126,7 @@ self.addEventListener("fetch", (event) => {
 
   if (
     url.pathname === "/dictionary/manifest.json" ||
+    url.pathname === "/dictionary/search/manifest.json" ||
     url.pathname === "/dictionary/notices.json"
   ) {
     event.respondWith(

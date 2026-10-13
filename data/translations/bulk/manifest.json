@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "sourceId": "bulk-zh-ms-20261012",
+  "reviewStatus": "machine-translated",
+  "engine": "Microsoft Bing Translator",
+  "selectedSourceSenses": 95326,
+  "publishedSourceSenses": 95319,
+  "publishedLemmas": 83805,
+  "missingLemmas": 7,
+  "literalGrammarSenses": 1078,
+  "correctedSenses": 7065,
+  "jobsSha256": "878e53b4c631d3f61be93930f969b285afcea55723a0000064f05d2f2a881850",
+  "correctionsSha256": "2ef4677f31e76f49b1c769c9417234c697123ad261f71e30400b1c227b16c3f5",
+  "sources": [
+    {
+      "file": "sources/taxa.json",
+      "sha256": "e736c0696ae83710004ea5a44ec433d97f8e7be64254cc4c3a30d4ba4b0af454"
+    },
+    {
+      "file": "sources/chinese-references.json",
+      "sha256": "8efa9b00f305cf8f15e5e069e12ffc87674412bb355deb3b0eb675489cfcb696"
+    },
+    {
+      "file": "sources/fact-reference-audit.json",
+      "sha256": "57cddfbad7a8f39aee3b9aa427279cd21391982e7192c675f1dd1c10e07fa101"
+    },
+    {
+      "file": "sources/geographic-facts.json",
+      "sha256": "d522e6eed03c4ce4a8015d17f6f350de574c1001bdfe8793feedaa53f538815e"
+    },
+    {
+      "file": "sources/dcvb-fact-audit.json",
+      "sha256": "49c23fddd0cc41e87ec25ff32f01b9b9c3b7029ff788f263460162d4be46ead3"
+    },
+    {
+      "file": "sources/final-fact-audit.json",
+      "sha256": "b04ebf4bfae684d1243cbdbb61fa0183b59fecd60f5bd43a42c80c837f4f5444"
+    },
+    {
+      "file": "source-gaps.json",
+      "sha256": "28aecb930690b2a88a3c0f62c821873bd47d2da8a89618477d4401e4ad2a0b36"
+    },
+    {
+      "file": "manual-corrections.json",
+      "sha256": "f25f0fffdc12f36521be59e0fc509a9bbca38c7d9cbbf7745eca6b72d7e8e74e"
+    },
+    {
+      "file": "source-holds.json",
+      "sha256": "10d67605577f0a3f68a6e74cedaff8a4a593a989034dc39e027e109052c9e3f1"
+    }
+  ],
+  "scripts": {
+    "prepare_bulk_chinese.py": "861fdc239ad0f0a12df77d65cc161cd558e1394332692cdef5626c48e1124f05",
+    "translate_bulk_chinese.mjs": "e78eb77eb933c12d382d79512822c67a3b0c340b39ac48d04880498067f7386d",
+    "bulk_chinese_rules.mjs": "8d9607ef19d62ccbaef2353e1f4c4680bd9bc6a6372fdd372dcaa10ee18eef85",
+    "prepare_chinese_corrections.py": "8b074f558a2262c3e119df00fbf650a5aefbd6da57ce64d840fa3edf603ab503",
+    "prepare_chinese_retry.py": "a3884562ab8cc3a569208f69a961cd5fc7f5e038306aca50e46bd9dd113d7d79",
+    "fetch_taxon_chinese.py": "76e76320d431400e5937bc33ea5669f23fe59ad33c47346a70bcf32b22cafd70",
+    "publish_bulk_chinese.mjs": "56e9a803ba7ec44b90c809e6806699e62b72e62c143663a0294054fb213bafe3"
+  },
+  "files": [
+    {
+      "file": "bulk-0000.jsonl.gz",
+      "rows": 5000,
+      "bytes": 623394,
+      "sha256": "a1fc24e9ee37102feb7ad4fff7c30e3c08d0ce6358952956f32358e230baaf3e"
+    },
+    {
+      "file": "bulk-0001.jsonl.gz",
+      "rows": 5000,
+      "bytes": 628279,
+      "sha256": "57a7ae93f585058ee3ece7c27e08660f6e0a40cc486262499f40f69d853eba81"
+    },
+    {
+      "file": "bulk-0002.jsonl.gz",
+      "rows": 5000,
+      "bytes": 648599,
+      "sha256": "9b4fc97debf8b6ab2b85781e8df5a3c1462c5bbe8ac6c529276d852609a6e591"
+    },
+    {
+      "file": "bulk-0003.jsonl.gz",
+      "rows": 5000,
+      "bytes": 653146,
+      "sha256": "cc226877e331ce7aaa3aad03dcfd9e90c1c428e1ea0c9041dd98b38cd407dd07"
+    },
+    {
+      "file": "bulk-0004.jsonl.gz",
+      "rows": 5000,
+      "bytes": 635860,
+      "sha256": "09f3e70535d4f387f06fb189e7e1a25acf7264a8f3db1d9b7702f09bda4ba612"
+    },
+    {
+      "file": "bulk-0005.jsonl.gz",
+      "rows": 5000,
+      "bytes": 606961,
+      "sha256": "1e6820b5542499183255870a5a19ecd01e15067169d8ab769e56cabcc3a8885f"
+    },
+    {
+      "file": "bulk-0006.jsonl.gz",
+      "rows": 5000,
+      "bytes": 619674,
+      "sha256": "71df7336d9b9499e6c883e913d5ecf44b3c13b69eee03ffa2eee0ec0161d493d"
+    },
+    {
+      "file": "bulk-0007.jsonl.gz",
+      "rows": 5000,
+      "bytes": 630437,
+      "sha256": "449bd6bb2c1da972c6833f741b22f42e7de38ddb8af49e92600ad83aeb4b1519"
+    },
+    {
+      "file": "bulk-0008.jsonl.gz",
+      "rows": 5000,
+      "bytes": 619832,
+      "sha256": "da3c65be033a1f7de36b6100b17ce4d7761d033e075932a2bfea333ed68ac4b2"
+    },
+    {
+      "file": "bulk-0009.jsonl.gz",
+      "rows": 5000,
+      "bytes": 620497,
+      "sha256": "04e2f79976da359c52b32cc4a5508eba58173128958685abc227842594fb4a9d"
+    },
+    {
+      "file": "bulk-0010.jsonl.gz",
+      "rows": 5000,
+      "bytes": 625173,
+      "sha256": "48e81f492b8e82a035263bc727cdb9e6f51b0e54186af8d1ea2f7bd2b8b3c906"
+    },
+    {
+      "file": "bulk-0011.jsonl.gz",
+      "rows": 5000,
+      "bytes": 636106,
+      "sha256": "9db1efa6db4dec7f0e6dc105c3d600f647b2762e3f6e601a9b337ac60071c25a"
+    },
+    {
+      "file": "bulk-0012.jsonl.gz",
+      "rows": 5000,
+      "bytes": 614909,
+      "sha256": "975b5aaf1ac497ffaaf9a3106a7b01f988676d46752a9fb8a18e8c568a463dc7"
+    },
+    {
+      "file": "bulk-0013.jsonl.gz",
+      "rows": 5000,
+      "bytes": 636630,
+      "sha256": "b29b894811eb2924f559dbea15ee6ce4512e9c219ea413c781b4e8716e291bc9"
+    },
+    {
+      "file": "bulk-0014.jsonl.gz",
+      "rows": 5000,
+      "bytes": 624905,
+      "sha256": "0e6b8dd62bc972b24aeea1308aaf90ad536c5dab62caa5163571bc3b6d1611dc"
+    },
+    {
+      "file": "bulk-0015.jsonl.gz",
+      "rows": 5000,
+      "bytes": 622050,
+      "sha256": "2ea585a4ac5b5045a8d5e710b1e71877e4b17d4f5cc0e583663efacada578a6c"
+    },
+    {
+      "file": "bulk-0016.jsonl.gz",
+      "rows": 5000,
+      "bytes": 621068,
+      "sha256": "11fec1d6dcd1b86f24692fd2b7944878c9d5484975074b0df30574a5fb433239"
+    },
+    {
+      "file": "bulk-0017.jsonl.gz",
+      "rows": 5000,
+      "bytes": 651675,
+      "sha256": "e53000a11b2d835dd500c2318db44de4c483bb7b512d8a96022d5e9c9ad8a1b5"
+    },
+    {
+      "file": "bulk-0018.jsonl.gz",
+      "rows": 5000,
+      "bytes": 646055,
+      "sha256": "df5377fc05a09c38ab6779d8ceed28522e3110273ef94b406baba243fc2e33ed"
+    },
+    {
+      "file": "bulk-0019.jsonl.gz",
+      "rows": 319,
+      "bytes": 45280,
+      "sha256": "99fdbc2ec1a72f9082133b648c29907ad046572a74bd7bd7658f88098351b4f6"
+    }
+  ],
+  "note": "Machine-assisted coverage, not human lexicographer approval or complete sense coverage. Headword-only output is explicitly labelled as term reference."
+}

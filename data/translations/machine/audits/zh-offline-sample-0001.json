@@ -1,0 +1,3673 @@
+{
+  "schemaVersion": 1,
+  "auditId": "offline-opus-sample-0001",
+  "sample": {
+    "randomSeed": 20261011,
+    "population": "First 924 unflagged candidates from first 1000 English-priority evidence rows",
+    "sampleSize": 100,
+    "selection": "Python random.Random(seed).sample(population,100)"
+  },
+  "reviewer": "Codex model-assisted source comparison; not a human lexicographer",
+  "verdictCounts": {
+    "acceptable-with-polish": 67,
+    "incorrect": 29,
+    "insufficient-context": 4
+  },
+  "limitations": [
+    "This sample does not estimate full-corpus accuracy.",
+    "Acceptable-with-polish does not establish complete lemma sense coverage.",
+    "Isolated ambiguous source glosses require additional evidence before a corrected Chinese sense can be chosen."
+  ],
+  "records": [
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "independència",
+      "normalizedLemma": "independència",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 818,
+      "sourceHash": "fbb6337a2ba75d089e1ebff3ed2f65bf831b74393c9a4867115f047678b0d639",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "independence",
+      "translationZh": "独立",
+      "translationRoute": "en-zh",
+      "translationScore": -0.371701,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 1,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "独立",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "electrònic",
+      "normalizedLemma": "electrònic",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 640,
+      "sourceHash": "73e4c51456c25bab5458df719693e8dd7ca6b23e214ba2ef1142f7f29b33e995",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "electronic",
+      "translationZh": "电子",
+      "translationRoute": "en-zh",
+      "translationScore": -0.310591,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 2,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "电子的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e014",
+      "layer": "wiktionary",
+      "lemma": "negre",
+      "normalizedLemma": "negre",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 825,
+      "sourceHash": "55601e4b1768690b0dddd20546967de07f56af6dd0ba2db20dc8059234f52a45",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "black, Black (of or relating to any of various ethnic groups having dark pigmentation of the skin)",
+      "translationZh": "黑色、黑色(皮肤有暗色的任何种族群体或与其有关)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.792549,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 3,
+      "semanticAudit": "incorrect",
+      "auditNote": "Ethnic sense flattened into a colour label.",
+      "sourceComparedTranslationZh": "黑人的；与深色皮肤族群有关的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "mare",
+      "normalizedLemma": "mare",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 632,
+      "sourceHash": "aa685cdb99e4662c71abbfc733e5aaf1d7519390fb9ca2f7420bd23c0233f8ab",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "uterus (of an animal)",
+      "translationZh": "子宫(动物)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.387159,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 4,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "（动物的）子宫",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "posterior",
+      "normalizedLemma": "posterior",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 559,
+      "sourceHash": "fb326a37b872e8dce0013d5d5f6be56d2cb6fccd7cf83a5874d6960328ba135b",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "posterior (located behind, or towards the rear of an object)",
+      "translationZh": "后( 位于物体后方或后方)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.56654,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 5,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "后部的；位于物体后方的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "fa",
+      "normalizedLemma": "fa",
+      "partOfSpeech": [
+        "interjection",
+        "noun",
+        "preposition"
+      ],
+      "priorityRank": 71,
+      "sourceHash": "1d8e08fd632682840b4159dd52d36b0d1c55cf6cac21097076474e5b43608cb4",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "ago",
+      "translationZh": "刚才",
+      "translationRoute": "en-zh",
+      "translationScore": -0.982919,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 6,
+      "semanticAudit": "incorrect",
+      "auditNote": "ago is not restricted to the immediate past.",
+      "sourceComparedTranslationZh": "……以前",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "primer",
+      "normalizedLemma": "primer",
+      "partOfSpeech": [
+        "adjective",
+        "adverb",
+        "numeral"
+      ],
+      "priorityRank": 38,
+      "sourceHash": "38de0f2820e57c1a5e18f242626881c189ac7f7ed246104b0aaa3a6ce14334de",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "prime (having no divisor except itself and 1)",
+      "translationZh": "质( 除了自身和1 以外没有分光器)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.791013,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 7,
+      "semanticAudit": "incorrect",
+      "auditNote": "Mathematical divisor was translated as an optical splitter.",
+      "sourceComparedTranslationZh": "质数的（除自身和1以外没有其他正约数的）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "roca",
+      "normalizedLemma": "roca",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 659,
+      "sourceHash": "350a770c0ec9f353e1a5629895f374fdaa299876c3870c03feb60eb4a3769d94",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "rock",
+      "translationZh": "摇滚",
+      "translationRoute": "en-zh",
+      "translationScore": -0.4431,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 8,
+      "semanticAudit": "incorrect",
+      "auditNote": "Wrong English rock sense for the Catalan headword roca.",
+      "sourceComparedTranslationZh": "岩石",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "situar",
+      "normalizedLemma": "situar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 802,
+      "sourceHash": "7305642b5a8ad6d41f8442dd7c0590f2166a6f1cf487c9cf57581b03c7025708",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to be (in a place)",
+      "translationZh": "(在某处)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.899727,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 9,
+      "semanticAudit": "incorrect",
+      "auditNote": "Main predicate omitted.",
+      "sourceComparedTranslationZh": "位于；在（某处）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "però",
+      "normalizedLemma": "però",
+      "partOfSpeech": [
+        "adverb",
+        "conjunction",
+        "noun"
+      ],
+      "priorityRank": 35,
+      "sourceHash": "4194b692f5789e4b223671d25da3dd235692fd43dc7df93536bbc79edd70b8e0",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "objection",
+      "translationZh": "反对",
+      "translationRoute": "en-zh",
+      "translationScore": -0.097194,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 10,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "异议；反对意见",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e011",
+      "layer": "wiktionary",
+      "lemma": "bola",
+      "normalizedLemma": "bola",
+      "partOfSpeech": [
+        "interjection",
+        "noun"
+      ],
+      "priorityRank": 1056,
+      "sourceHash": "e9de08263f4ad49131d3dd1dc28694d26baa1e9c3033f39a4885d7690b06d5b3",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "ball",
+      "translationZh": "球头",
+      "translationRoute": "en-zh",
+      "translationScore": -0.990441,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 11,
+      "semanticAudit": "incorrect",
+      "auditNote": "Unjustified restriction to a ball-shaped head.",
+      "sourceComparedTranslationZh": "球",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "les",
+      "normalizedLemma": "les",
+      "partOfSpeech": [
+        "adjective",
+        "article",
+        "pronoun"
+      ],
+      "priorityRank": 8,
+      "sourceHash": "54c928b483869a472828bcc2e90eabd091473cc2ec512e36fa2d2c7ef3bc50c5",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "them (feminine, direct object)",
+      "translationZh": "(女性,直接对象)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.663565,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 12,
+      "semanticAudit": "incorrect",
+      "auditNote": "Main pronoun omitted and object translated without grammatical meaning.",
+      "sourceComparedTranslationZh": "她们（直接宾语）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "to",
+      "normalizedLemma": "to",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1078,
+      "sourceHash": "9646a198cb77a9819ae684d4a099e8963094cc2c21215b65e8c114716e1e48d4",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "tone (specific pitch)",
+      "translationZh": "音调( 特定音调)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.571448,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 13,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "音高；音调",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "hebreu",
+      "normalizedLemma": "hebreu",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 1274,
+      "sourceHash": "213f4a90acd43462ce8a17db40594450e1bb321f6f31916e1695032099ce57b5",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "Hebrew language",
+      "translationZh": "希伯来语",
+      "translationRoute": "en-zh",
+      "translationScore": -0.239068,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 14,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "希伯来语",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "proporcionar",
+      "normalizedLemma": "proporcionar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 1150,
+      "sourceHash": "d97b45db4bdb5c545fb9ae7767a952a20497b3af5c3673e5186225dbe8d4363c",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to provide, supply",
+      "translationZh": "提供,供应",
+      "translationRoute": "en-zh",
+      "translationScore": -0.927569,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 15,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "提供；供应",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "golf",
+      "normalizedLemma": "golf",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1028,
+      "sourceHash": "625fe74cad4600b5e8b76a9283333eb79052ae50d6af7f660feb4831d87af5d2",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "golf",
+      "translationZh": "高尔夫球",
+      "translationRoute": "en-zh",
+      "translationScore": -0.294296,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 16,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "高尔夫球",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "artificial",
+      "normalizedLemma": "artificial",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 639,
+      "sourceHash": "4d2971726bc45d4f7ce6aba6c56398a34efe6aca828190f181f0a7e184d2f71d",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "artificial",
+      "translationZh": "人工",
+      "translationRoute": "en-zh",
+      "translationScore": -0.637434,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 17,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "人工的；人造的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e011",
+      "layer": "wiktionary",
+      "lemma": "plana",
+      "normalizedLemma": "plana",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 463,
+      "sourceHash": "6f4287d3954b47e952d5b530811042abe708041d2d473ee77a4888321891ec1e",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "plain (an expanse of land with relatively low relief)",
+      "translationZh": "平原(一片宽阔的、救济相对较少的土地)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.633428,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 18,
+      "semanticAudit": "incorrect",
+      "auditNote": "Topographic relief mistranslated as assistance.",
+      "sourceComparedTranslationZh": "平原（地势起伏较小的大片土地）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "tendir",
+      "normalizedLemma": "tendir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 1014,
+      "sourceHash": "e25ca79f7375716a91eb6752065fcb3db24222cfd2d91ea58af32d0d97ced655",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to tend [with a ‘to’], have a tendency toward",
+      "translationZh": "倾向于[用`to ' ],有倾向",
+      "translationRoute": "en-zh",
+      "translationScore": -1.295978,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 19,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "倾向于（与to连用）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "arreu",
+      "normalizedLemma": "arreu",
+      "partOfSpeech": [
+        "adverb",
+        "noun"
+      ],
+      "priorityRank": 935,
+      "sourceHash": "11c209b437262b61e354ca822d4219f6a37070299ac2680b372dc18fa4ff6370",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "everywhere",
+      "translationZh": "到处都是",
+      "translationRoute": "en-zh",
+      "translationScore": -0.797969,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 20,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "到处；各处",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e015",
+      "layer": "wiktionary",
+      "lemma": "mida",
+      "normalizedLemma": "mida",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 855,
+      "sourceHash": "6c5a6990038d66c5ecddf6c983345ed18acc416e188ff1476e3cd7201699aaed",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "measurement",
+      "translationZh": "测量",
+      "translationRoute": "en-zh",
+      "translationScore": -0.577795,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 21,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "测量；度量",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "entorn",
+      "normalizedLemma": "entorn",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1272,
+      "sourceHash": "e4db4217a27336b45ca740f5c54b130dda62e863666a4a7c798a93840328fd78",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "surrounding",
+      "translationZh": "环绕",
+      "translationRoute": "en-zh",
+      "translationScore": -0.490504,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 22,
+      "semanticAudit": "incorrect",
+      "auditNote": "Noun surroundings translated as a verb.",
+      "sourceComparedTranslationZh": "周围；周边环境",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "històric",
+      "normalizedLemma": "històric",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 278,
+      "sourceHash": "f5dbf9fe930c4f499bc6573d86f0156f86ed10363bfee0a71efb3eacce58410f",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "historical",
+      "translationZh": "历史",
+      "translationRoute": "en-zh",
+      "translationScore": -0.450644,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 23,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "历史的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "marc",
+      "normalizedLemma": "marc",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 799,
+      "sourceHash": "9dff50df08c635815f4b19da10f756605a34a79a48d4ba48712782502975a70e",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "frame",
+      "translationZh": "边框",
+      "translationRoute": "en-zh",
+      "translationScore": -0.6666,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 24,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "框架；边框",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e017",
+      "layer": "wiktionary",
+      "lemma": "va",
+      "normalizedLemma": "va",
+      "partOfSpeech": [
+        "adjective",
+        "interjection",
+        "verb"
+      ],
+      "priorityRank": 17,
+      "sourceHash": "afb2322241f18c2deb472ce0f6675da20f22aee431ea4e9d21b039273068611e",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "vain (having no real substance)",
+      "translationZh": "虚无( 没有实质)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.836873,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 25,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "空洞的；没有实质内容的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "la",
+      "normalizedLemma": "la",
+      "partOfSpeech": [
+        "article",
+        "noun",
+        "pronoun"
+      ],
+      "priorityRank": 2,
+      "sourceHash": "397f1dc630fad63f987f0d874c1e967936cd3670a8a42499bed6b8375814a41c",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "la (sixth note of a diatonic scale)",
+      "translationZh": "la(第六个二音阶注)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.961333,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 26,
+      "semanticAudit": "incorrect",
+      "auditNote": "Musical note/diatonic scale mistranslated.",
+      "sourceComparedTranslationZh": "唱名la（自然音阶的第六音）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e013",
+      "layer": "wiktionary",
+      "lemma": "factor",
+      "normalizedLemma": "factor",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 474,
+      "sourceHash": "73f7a40ef5af14e85214ce9b243e86e52198bdf2f11661ef4aac7ed700647faf",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "doer, agent (someone who does something)",
+      "translationZh": "做,代理(某人做一些事情)",
+      "translationRoute": "en-zh",
+      "translationScore": -1.058279,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 27,
+      "semanticAudit": "incorrect",
+      "auditNote": "Agent noun translated as an action.",
+      "sourceComparedTranslationZh": "做事者；行动者",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "prop",
+      "normalizedLemma": "prop",
+      "partOfSpeech": [
+        "adverb",
+        "preposition"
+      ],
+      "priorityRank": 491,
+      "sourceHash": "a729ab794c4cab330ade316a6f2ec4b21e44a23f7ef56999d30d0313259f13bb",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "near, nearby",
+      "translationZh": "附近,附近 附近,附近 附近,附近,附近",
+      "translationRoute": "en-zh",
+      "translationScore": -1.055043,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 28,
+      "semanticAudit": "incorrect",
+      "auditNote": "Unnecessary repetition.",
+      "sourceComparedTranslationZh": "在附近；邻近",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "municipal",
+      "normalizedLemma": "municipal",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 342,
+      "sourceHash": "908e2636911e8764e34b51a303322f57531fa3e742ded0790825a121852ca8a5",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "municipal",
+      "translationZh": "市级",
+      "translationRoute": "en-zh",
+      "translationScore": -0.832589,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 29,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "市的；市政的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "solar",
+      "normalizedLemma": "solar",
+      "partOfSpeech": [
+        "adjective",
+        "noun",
+        "verb"
+      ],
+      "priorityRank": 424,
+      "sourceHash": "c3b6078c86a5df2f6e9b486948321e3765b9a04b9c9bb2a5e0d5490475790a37",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "lot, plot (a distinct portion of land, usually smaller than a field)",
+      "translationZh": "土地(土地的显著部分,通常小于农田)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.635514,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 30,
+      "semanticAudit": "incorrect",
+      "auditNote": "distinct means separate here, not conspicuous.",
+      "sourceComparedTranslationZh": "地块（通常小于一片田地的独立土地）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "iniciar",
+      "normalizedLemma": "iniciar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 676,
+      "sourceHash": "4ada3ba2250ff629cdece115837b3bdac425292535c45414b5af0f1e2bd802b4",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to start, begin",
+      "translationZh": "开始,开始",
+      "translationRoute": "en-zh",
+      "translationScore": -0.493572,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 31,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "开始",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e011",
+      "layer": "wiktionary",
+      "lemma": "atacar",
+      "normalizedLemma": "atacar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 1230,
+      "sourceHash": "93205b23c607fab4a20457ebdffa68eaef26b5924eca8786718f66ba0c208b2e",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to pack, to fill",
+      "translationZh": "包装,填充",
+      "translationRoute": "en-zh",
+      "translationScore": -0.977543,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 32,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "装填；填满",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "lèxic",
+      "normalizedLemma": "lèxic",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 1086,
+      "sourceHash": "239aec50c94b6ea398dadb908b531bbe124c08fbbe756ce60cd59c37cfd719f2",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "lexicon",
+      "translationZh": "词典",
+      "translationRoute": "en-zh",
+      "translationScore": -0.409383,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 33,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "词汇；词汇表；词典",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "conreu",
+      "normalizedLemma": "conreu",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 775,
+      "sourceHash": "d6f73bb3a88028d6bee0008f12a6f090fa7aba3814f7f5cc9f8ff3b398a9e80a",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "culture, crop",
+      "translationZh": "文化、作物",
+      "translationRoute": "en-zh",
+      "translationScore": -0.823311,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 34,
+      "semanticAudit": "incorrect",
+      "auditNote": "Agricultural culture mistranslated as cultural life.",
+      "sourceComparedTranslationZh": "耕种；作物",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "essencial",
+      "normalizedLemma": "essencial",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 947,
+      "sourceHash": "6ed52158ab1cbf22aeac3eafa0a497a44c07f6d996b7ba404550c04370ef83d9",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "essential (of great importance)",
+      "translationZh": "(非常重要的)",
+      "translationRoute": "en-zh",
+      "translationScore": -1.607562,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 35,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "非常重要的；必不可少的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "últim",
+      "normalizedLemma": "últim",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 578,
+      "sourceHash": "d2726f5785d78d82c706a16c456f064e947320f08433747fcff24939c86cbf44",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "utmost; topmost; bottommost",
+      "translationZh": "最大; 最上; 最下层",
+      "translationRoute": "en-zh",
+      "translationScore": -0.650784,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 36,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "最极端的；最上面的；最下面的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "els",
+      "normalizedLemma": "els",
+      "partOfSpeech": [
+        "article",
+        "noun",
+        "pronoun"
+      ],
+      "priorityRank": 10,
+      "sourceHash": "67abc24343095eaf2979b5d3e64919762ccb3972648d96637bc78e38e9ad1fb1",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "them (masculine, direct or indirect object)",
+      "translationZh": "它们(质谱、直接或间接对象)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.939327,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 37,
+      "semanticAudit": "incorrect",
+      "auditNote": "Masculine mistranslated as mass spectrometry.",
+      "sourceComparedTranslationZh": "他们／它们（阳性，作直接或间接宾语）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "davant",
+      "normalizedLemma": "davant",
+      "partOfSpeech": [
+        "adverb",
+        "noun",
+        "preposition"
+      ],
+      "priorityRank": 304,
+      "sourceHash": "2d8d693177ac44895fc02c009ec3f6af32e51eb00783c17000d7051d1662b93a",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "front",
+      "translationZh": "前面",
+      "translationRoute": "en-zh",
+      "translationScore": -1.275126,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 38,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "前面；前方",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "físic",
+      "normalizedLemma": "físic",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 527,
+      "sourceHash": "5224be6f5ff96308d7af0f434a23ccca0f40e3d587dd658a2d1afb113c6ae484",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "physicist",
+      "translationZh": "物理学家",
+      "translationRoute": "en-zh",
+      "translationScore": -0.158759,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 39,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "物理学家",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "sis",
+      "normalizedLemma": "sis",
+      "partOfSpeech": [
+        "noun",
+        "numeral"
+      ],
+      "priorityRank": 735,
+      "sourceHash": "44778d82365e4af681c40d5f0eef5cf6f5899d3f0ac335050a7ed6779cf3f674",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "six",
+      "translationZh": "6个",
+      "translationRoute": "en-zh",
+      "translationScore": -0.806341,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 40,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "六",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "enllà",
+      "normalizedLemma": "enllà",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "priorityRank": 1060,
+      "sourceHash": "a20d00f82196c319bac9a39efe2bb21ad3954f6e0d929ed97d23365ab9a78992",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "further",
+      "translationZh": "进一步",
+      "translationRoute": "en-zh",
+      "translationScore": -0.898382,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 41,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "更远",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "musulmà",
+      "normalizedLemma": "musulmà",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 650,
+      "sourceHash": "8992ef9d0ddc1dd512463e9d6526a9b0a4cd635e704a96e72131caef683adc60",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "Muslim",
+      "translationZh": "穆斯林教徒",
+      "translationRoute": "en-zh",
+      "translationScore": -0.59608,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 42,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "穆斯林",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "crítica",
+      "normalizedLemma": "crítica",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1170,
+      "sourceHash": "c35a9a90c0f99214f570105e50cd31cf77915e5dedc6b96797738cf10157f26a",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "criticism",
+      "translationZh": "批评",
+      "translationRoute": "en-zh",
+      "translationScore": -0.551161,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 43,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "批评",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "legió",
+      "normalizedLemma": "legió",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1106,
+      "sourceHash": "1614ceeec50a9336ebf690886caa747d6811c45d37086a3fa7b11c9e83926c6c",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "legion",
+      "translationZh": "军团",
+      "translationRoute": "en-zh",
+      "translationScore": -0.234509,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 44,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "军团",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "olímpic",
+      "normalizedLemma": "olímpic",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 440,
+      "sourceHash": "20de7ee0cf8caf0f2e16cefc2fcde03809643b21274dff0168d8843fd655a45c",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "Olympic",
+      "translationZh": "奥林匹克",
+      "translationRoute": "en-zh",
+      "translationScore": -0.358183,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 45,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "奥林匹克的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "composició",
+      "normalizedLemma": "composició",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 592,
+      "sourceHash": "730d725c8a59d3a7303def2bed041a577edb4255aabd4889ce12918311d952f0",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "composition",
+      "translationZh": "组成",
+      "translationRoute": "en-zh",
+      "translationScore": -0.469153,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 46,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "组成；构成",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e014",
+      "layer": "wiktionary",
+      "lemma": "passar",
+      "normalizedLemma": "passar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 467,
+      "sourceHash": "9778382d124022182837ee1b5c033733806e9afb29ff00d04867ad03606e32ce",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to happen, to occur",
+      "translationZh": "发生,发生",
+      "translationRoute": "en-zh",
+      "translationScore": -0.983568,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 47,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "发生",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "pell",
+      "normalizedLemma": "pell",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1263,
+      "sourceHash": "a820aa15a0ee81cf26fa0acc5b7866f346974b569414c70a5f3b3b494bf60013",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "pelt",
+      "translationZh": "皮层",
+      "translationRoute": "en-zh",
+      "translationScore": -0.857167,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 48,
+      "semanticAudit": "incorrect",
+      "auditNote": "Animal skin/pelt mistranslated as cortex.",
+      "sourceComparedTranslationZh": "兽皮；毛皮",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "demostrar",
+      "normalizedLemma": "demostrar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 656,
+      "sourceHash": "978a8d810e2dbc1f8bbd9783cb280b90d3b579baa5ffd729954b77c706906201",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to show; to demonstrate",
+      "translationZh": "要显示; 要显示",
+      "translationRoute": "en-zh",
+      "translationScore": -0.532275,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 49,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "展示；证明",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "figura",
+      "normalizedLemma": "figura",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 837,
+      "sourceHash": "97488fbab3282166738a47c2f619037228568494475d4ac107c46c02678cb728",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "charge",
+      "translationZh": "收费",
+      "translationRoute": "en-zh",
+      "translationScore": -0.226855,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 50,
+      "semanticAudit": "insufficient-context",
+      "auditNote": "Isolated charge has several unrelated senses; additional sense context is required.",
+      "sourceComparedTranslationZh": null,
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "cos",
+      "normalizedLemma": "cos",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 208,
+      "sourceHash": "d0d3a5da2caee316d6ab88c2301afdfb978813516d220f1c9151f27b7f19d6ec",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "body (physical structure of a human or animal)",
+      "translationZh": "身体(人或动物的物理结构)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.483222,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 51,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "身体（人或动物的生理结构）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "passant",
+      "normalizedLemma": "passant",
+      "partOfSpeech": [
+        "adjective",
+        "noun",
+        "preposition"
+      ],
+      "priorityRank": 1053,
+      "sourceHash": "3424e9e2c636e2853b281c0809d77be3fe3d2382876ddbd8ddce38daeff2ae55",
+      "sourceIds": [
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "passer-by",
+      "translationZh": "过路人",
+      "translationRoute": "en-zh",
+      "translationScore": -0.739937,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 52,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "路人",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "superior",
+      "normalizedLemma": "superior",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 355,
+      "sourceHash": "fc4d6c9e874c1f120aa1e3d2dac53dd7804d2d66abbd82ba41599c1a71925048",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "superior",
+      "translationZh": "高级",
+      "translationRoute": "en-zh",
+      "translationScore": -0.425537,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 53,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "较高的；上级的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "únicament",
+      "normalizedLemma": "únicament",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "priorityRank": 1292,
+      "sourceHash": "f905b19542ed08c9a9c26543cca32e5711d207dcffb81b4cdb44ce0b989431c9",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "only",
+      "translationZh": "仅限",
+      "translationRoute": "en-zh",
+      "translationScore": -0.793001,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 54,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "仅；只",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "denominació",
+      "normalizedLemma": "denominació",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 767,
+      "sourceHash": "9e433280b93123cb349cf2d5f2c6173824abd64cb620dc3e3fbac18cf1b67050",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "denomination",
+      "translationZh": "名称",
+      "translationRoute": "en-zh",
+      "translationScore": -0.640961,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 55,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "名称；命名",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e013",
+      "layer": "wiktionary",
+      "lemma": "conjunt",
+      "normalizedLemma": "conjunt",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 116,
+      "sourceHash": "a9aa685d9c747885f5c2f94cb2ad4006f15cc733088363b38832640a416a8c57",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "joined, joint",
+      "translationZh": "加入, 联合",
+      "translationRoute": "en-zh",
+      "translationScore": -0.814233,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 56,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "结合的；联合的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "marc",
+      "normalizedLemma": "marc",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 799,
+      "sourceHash": "caebf32fb3ff1836f45061748200655dba89e7afcd832aa049ab9f557ba5a805",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "framework, setting",
+      "translationZh": "框架,设置",
+      "translationRoute": "en-zh",
+      "translationScore": -0.399677,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 57,
+      "semanticAudit": "incorrect",
+      "auditNote": "setting interpreted as software configuration instead of contextual surroundings.",
+      "sourceComparedTranslationZh": "框架；背景；环境",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "doncs",
+      "normalizedLemma": "doncs",
+      "partOfSpeech": [
+        "adverb",
+        "conjunction",
+        "interjection"
+      ],
+      "priorityRank": 635,
+      "sourceHash": "59d0c7d0ea8116b3b636770385fd702f13f76e1fa6921f50fab99a2099e79f17",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "well; so",
+      "translationZh": "好吧,这样吧",
+      "translationRoute": "en-zh",
+      "translationScore": -1.35068,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 58,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "好吧；那么",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "doncs",
+      "normalizedLemma": "doncs",
+      "partOfSpeech": [
+        "adverb",
+        "conjunction",
+        "interjection"
+      ],
+      "priorityRank": 635,
+      "sourceHash": "f92a64bdcdb76357d3d16a254c5f35a4463cd531adfca82cab41f7abccebdee7",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "so, therefore",
+      "translationZh": "因此,",
+      "translationRoute": "en-zh",
+      "translationScore": -0.501949,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 59,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "所以；因此",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "domini",
+      "normalizedLemma": "domini",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 663,
+      "sourceHash": "b503e74f696f7956e403a46c3b2a612c528711e87228ca7fc25dd7ae0ada8f85",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "demesne",
+      "translationZh": "变形金刚",
+      "translationRoute": "en-zh",
+      "translationScore": -1.362894,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 60,
+      "semanticAudit": "incorrect",
+      "auditNote": "Unrelated Transformers output.",
+      "sourceComparedTranslationZh": "领地；庄园土地",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "vent",
+      "normalizedLemma": "vent",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 575,
+      "sourceHash": "8174b909da067e2172820a842aa11b949a459a142f3d33f54e1e1ca58976c1b6",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "wind (movement of air)",
+      "translationZh": "风(气动)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.432072,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 61,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "风（空气的流动）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "material",
+      "normalizedLemma": "material",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 606,
+      "sourceHash": "837d7a090b980c7fb036c7cfe6c9b6ab6328da6deb42e4a712e0afecfe67b2aa",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "material, things or tools used in an operation, in a service.",
+      "translationZh": "操作、服务中使用的材料、物品或工具。",
+      "translationRoute": "en-zh",
+      "translationScore": -0.637407,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 62,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "在工作或服务中使用的材料、物品或工具",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e022",
+      "layer": "wiktionary",
+      "lemma": "set",
+      "normalizedLemma": "set",
+      "partOfSpeech": [
+        "noun",
+        "numeral"
+      ],
+      "priorityRank": 784,
+      "sourceHash": "a34969608e2efc7981d023fca7976e890fe1ddecf52017f11efa3caf7731858f",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "hunger (strong desire)",
+      "translationZh": "饥饿(强烈欲望)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.316511,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 63,
+      "semanticAudit": "incorrect",
+      "auditNote": "Figurative hunger/desire translated as literal hunger.",
+      "sourceComparedTranslationZh": "渴望；强烈的欲望",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e013",
+      "layer": "wiktionary",
+      "lemma": "passar",
+      "normalizedLemma": "passar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 467,
+      "sourceHash": "e10c00b4ef8f229fa9706660cb78f82e33d5ff7ff44a72bb8ceab3eda4198df7",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to pass as, to be interpreted as",
+      "translationZh": "改为:",
+      "translationRoute": "en-zh",
+      "translationScore": -1.000041,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 64,
+      "semanticAudit": "incorrect",
+      "auditNote": "Core verbal meaning replaced with an unrelated instruction.",
+      "sourceComparedTranslationZh": "被当作；被理解为",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "llur",
+      "normalizedLemma": "llur",
+      "partOfSpeech": [
+        "adjective",
+        "determiner",
+        "pronoun"
+      ],
+      "priorityRank": 1226,
+      "sourceHash": "fd963e4fd45949aa80c5da01f86dc754da4b243fdb90033c854c52c7e4927c9b",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "their",
+      "translationZh": "他们的",
+      "translationRoute": "en-zh",
+      "translationScore": -1.641146,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 65,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "他们的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e013",
+      "layer": "wiktionary",
+      "lemma": "compost",
+      "normalizedLemma": "compost",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 1094,
+      "sourceHash": "ee0df97cece494b174c6844cfd00255723152d5555215073611b8ad673c4e749",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "compound",
+      "translationZh": "化合物",
+      "translationRoute": "en-zh",
+      "translationScore": -0.502871,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 66,
+      "semanticAudit": "insufficient-context",
+      "auditNote": "Compound can be an adjective or several different nouns; source gloss alone cannot establish the chemical sense.",
+      "sourceComparedTranslationZh": null,
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e013",
+      "layer": "wiktionary",
+      "lemma": "plana",
+      "normalizedLemma": "plana",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 463,
+      "sourceHash": "bca2b4b0f04b06386837df8161383550aa2cb8f06c73b1ccd1b9be907db7ff9e",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "face; side (of a sheet of paper)",
+      "translationZh": "面部; 侧面 (一张纸)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.62855,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 67,
+      "semanticAudit": "incorrect",
+      "auditNote": "Face of a sheet mistranslated as a human face.",
+      "sourceComparedTranslationZh": "（纸张的）一面",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "dos",
+      "normalizedLemma": "dos",
+      "partOfSpeech": [
+        "noun",
+        "numeral"
+      ],
+      "priorityRank": 54,
+      "sourceHash": "3fc4ccfe745870e2c0d99f71f30ff0656c8dedd41cc1d7d3d376b0dbe685e2f3",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "two",
+      "translationZh": "二号",
+      "translationRoute": "en-zh",
+      "translationScore": -1.324383,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 68,
+      "semanticAudit": "incorrect",
+      "auditNote": "Number two mistranslated as a number label.",
+      "sourceComparedTranslationZh": "二；两个",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "qui",
+      "normalizedLemma": "qui",
+      "partOfSpeech": [
+        "noun",
+        "pronoun"
+      ],
+      "priorityRank": 240,
+      "sourceHash": "3db79f0603947171d7ec2f14899cbcd7204154c0892b5e8478333375d7c856b6",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "who, whom",
+      "translationZh": "谁,谁",
+      "translationRoute": "en-zh",
+      "translationScore": -0.582506,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 69,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "谁",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "alfabet",
+      "normalizedLemma": "alfabet",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 864,
+      "sourceHash": "d2aa828c2f1d855c2682e627ee77d959fb13d5412e37aafbd1c5167b69e023b3",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "literate person",
+      "translationZh": "识字者",
+      "translationRoute": "en-zh",
+      "translationScore": -0.411019,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 70,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "识字的人",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "disseny",
+      "normalizedLemma": "disseny",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1280,
+      "sourceHash": "a77de8a6daa1129516b14c8ca1e233a51a8414b202eac7c8acfbb9b485046ad4",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "design",
+      "translationZh": "设计",
+      "translationRoute": "en-zh",
+      "translationScore": -0.154341,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 71,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "设计",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e017",
+      "layer": "wiktionary",
+      "lemma": "seu",
+      "normalizedLemma": "seu",
+      "partOfSpeech": [
+        "noun",
+        "pronoun"
+      ],
+      "priorityRank": 27,
+      "sourceHash": "d2cfbc80159b54907c7f851c2389c06585b0ccf7e2d39eb69cb5469c6bc12d6b",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "your, yours (alluding to vostè or vostès)",
+      "translationZh": "你的,你的( 向沃斯提或沃斯提)",
+      "translationRoute": "en-zh",
+      "translationScore": -1.129246,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 72,
+      "semanticAudit": "incorrect",
+      "auditNote": "Grammatical referents transliterated as names.",
+      "sourceComparedTranslationZh": "您的；您们的（指vostè或vostès）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "mínim",
+      "normalizedLemma": "mínim",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 963,
+      "sourceHash": "a703788f832056626d71b7db4d8055243ceafe416d1798cd634b9143c9074b54",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "minimal",
+      "translationZh": "最小值",
+      "translationRoute": "en-zh",
+      "translationScore": -0.866201,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 73,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "最小限度的；极少的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "exterior",
+      "normalizedLemma": "exterior",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 828,
+      "sourceHash": "6c33e1cf4cce912892085900dedd0715515423b8492aae93a73a7855726f6b53",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "exterior, foreign",
+      "translationZh": "外部, 国外",
+      "translationRoute": "en-zh",
+      "translationScore": -0.680912,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 74,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "外部的；外国的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "medieval",
+      "normalizedLemma": "medieval",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 495,
+      "sourceHash": "c46cf71604b2c0a7c4f53ef648438cca4d2cdef53e04f60b6856f462fa0e3551",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "medieval",
+      "translationZh": "中世纪",
+      "translationRoute": "en-zh",
+      "translationScore": -0.165303,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 75,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "中世纪的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "conservar",
+      "normalizedLemma": "conservar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 715,
+      "sourceHash": "19836f898151d7a8bc854047abb5626c53df4eb78b02b093a2ceb12b0179ad03",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to be preserved",
+      "translationZh": "将保留",
+      "translationRoute": "en-zh",
+      "translationScore": -0.882178,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 76,
+      "semanticAudit": "incorrect",
+      "auditNote": "Future meaning added instead of passive preservation.",
+      "sourceComparedTranslationZh": "被保存；得以保存",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "club",
+      "normalizedLemma": "club",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 408,
+      "sourceHash": "8a7ede05583363ca53528cd6e93e5161e2d1844f1bffe91edb8f1a631681b076",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "club (an association of members joining together for some common purpose, especially sports or recreation)",
+      "translationZh": "俱乐部(成员协会为某种共同目的联合起来,特别是体育或娱乐)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.614667,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 77,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "俱乐部（为共同目的而组成的会员组织，尤指体育或娱乐组织）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "establir",
+      "normalizedLemma": "establir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 652,
+      "sourceHash": "671e4fe64b0d991c0dc55ea0d3322845e9d938c35693f49ce2c8b9d198b6ec8e",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to ascertain",
+      "translationZh": "以确认",
+      "translationRoute": "en-zh",
+      "translationScore": -1.134081,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 78,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "查明；确定",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "carboni",
+      "normalizedLemma": "carboni",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 589,
+      "sourceHash": "28d79d50ff515a797803c4d5297b8feb12e0bbdb60fd38441aba6ffaf42a0b5f",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "carbon",
+      "translationZh": "碳矿",
+      "translationRoute": "en-zh",
+      "translationScore": -0.835179,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 79,
+      "semanticAudit": "incorrect",
+      "auditNote": "Carbon element narrowed to ore.",
+      "sourceComparedTranslationZh": "碳",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e001",
+      "layer": "wiktionary",
+      "lemma": "unit",
+      "normalizedLemma": "unit",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 563,
+      "sourceHash": "ca52e7d1c18961a8c5b3947a54e48fbf4ee70b66ea413cf7814f1c962631fd58",
+      "sourceIds": [
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "united",
+      "translationZh": "联合",
+      "translationRoute": "en-zh",
+      "translationScore": -0.562693,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 80,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "联合的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e006",
+      "layer": "wiktionary",
+      "lemma": "via",
+      "normalizedLemma": "via",
+      "partOfSpeech": [
+        "interjection",
+        "noun",
+        "preposition"
+      ],
+      "priorityRank": 537,
+      "sourceHash": "f21d04c8d97aa1811f9431353868f5e4abbca77acad75d83eeac33eb9943fae9",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "way, path",
+      "translationZh": "路径,路径",
+      "translationRoute": "en-zh",
+      "translationScore": -1.032683,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 81,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "道路；路径",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "marítim",
+      "normalizedLemma": "marítim",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 890,
+      "sourceHash": "bf760e18d0fbf6839f50df0f8abfb99467962ef71a6806042228d02584e490b1",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "maritime, sea",
+      "translationZh": "海运",
+      "translationRoute": "en-zh",
+      "translationScore": -0.863978,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 82,
+      "semanticAudit": "incorrect",
+      "auditNote": "Maritime narrowed to shipping commerce.",
+      "sourceComparedTranslationZh": "海洋的；海上的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "esportiu",
+      "normalizedLemma": "esportiu",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 610,
+      "sourceHash": "7b8990940ff95ddd5aef779acdfeaab4c26cff8ee7d4540ee77377f94b73f026",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "sporty (fond of sports)",
+      "translationZh": "运动(运动之泉)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.653764,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 83,
+      "semanticAudit": "incorrect",
+      "auditNote": "Unrelated phrase about a fountain.",
+      "sourceComparedTranslationZh": "喜爱运动的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e012",
+      "layer": "wiktionary",
+      "lemma": "cara",
+      "normalizedLemma": "cara",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 1222,
+      "sourceHash": "984e7ac269de95d85550710b5afff706831ff2c93714fb497d48cbace032c697",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "face (front part of the head)",
+      "translationZh": "脸部(头部前部)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.488727,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 84,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "脸；面部（头部的前面）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "definició",
+      "normalizedLemma": "definició",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 462,
+      "sourceHash": "4c4ed1afbfdaa1e4c3bf7bbb82d730cecb7e384da91eea4f3cc093fd545524d6",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "definition",
+      "translationZh": "定义",
+      "translationRoute": "en-zh",
+      "translationScore": -0.282375,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 85,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "定义",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "catedral",
+      "normalizedLemma": "catedral",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 993,
+      "sourceHash": "ca71d3ec52ddc8527345b6a03c331761bfb2eb024a3df57bf4867c0eb4b5155f",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "cathedral",
+      "translationZh": "大教堂( 教堂 )",
+      "translationRoute": "en-zh",
+      "translationScore": -0.900554,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 86,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "主教座堂",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "cardenal",
+      "normalizedLemma": "cardenal",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 712,
+      "sourceHash": "2a09783b1c474294d122b82b93b01c3701bc9e4d65b3ae60da211a4121152a43",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "cardinal",
+      "translationZh": "红衣",
+      "translationRoute": "en-zh",
+      "translationScore": -0.623122,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 87,
+      "semanticAudit": "incorrect",
+      "auditNote": "Incomplete translation of a person/title noun.",
+      "sourceComparedTranslationZh": "枢机主教",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "celta",
+      "normalizedLemma": "celta",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 1129,
+      "sourceHash": "f65a88ae0a98a6a7b91715f4fd6e06446a7ff7cd64b78017777fd9fbcab1b694",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "Celtic",
+      "translationZh": "凯尔特语",
+      "translationRoute": "en-zh",
+      "translationScore": -0.562576,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 88,
+      "semanticAudit": "insufficient-context",
+      "auditNote": "Celtic may refer to people, languages, or an adjective; the isolated gloss does not justify selecting only a language.",
+      "sourceComparedTranslationZh": null,
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "independent",
+      "normalizedLemma": "independent",
+      "partOfSpeech": [
+        "adjective"
+      ],
+      "priorityRank": 668,
+      "sourceHash": "0275fca08c216c77b2a122787b6491a6796ab293e4097e5d62162c0ed4910f08",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "independent",
+      "translationZh": "独立",
+      "translationRoute": "en-zh",
+      "translationScore": -0.157256,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 89,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "独立的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e007",
+      "layer": "wiktionary",
+      "lemma": "convertir",
+      "normalizedLemma": "convertir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 739,
+      "sourceHash": "21bc0ac2f00646485ce636154431ff17db044649be7f7231a21225080462b6dd",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to convert",
+      "translationZh": "转换",
+      "translationRoute": "en-zh",
+      "translationScore": -0.473401,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 90,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "转变；转换",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "ambient",
+      "normalizedLemma": "ambient",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 919,
+      "sourceHash": "31d18c0defdc3e0eadd46bb4c04e4ad798f4582fbde1216806bde3cbe250350c",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "ambient",
+      "translationZh": "环境",
+      "translationRoute": "en-zh",
+      "translationScore": -0.176277,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 91,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "周围的；环境的",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e005",
+      "layer": "wiktionary",
+      "lemma": "originar",
+      "normalizedLemma": "originar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 1097,
+      "sourceHash": "423d5ec8d437fd49d986d6446ef62b7172bf4257d2092222aa41e13b1464b485",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to originate",
+      "translationZh": "来源",
+      "translationRoute": "en-zh",
+      "translationScore": -1.068311,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 92,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "产生；起源于",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e008",
+      "layer": "wiktionary",
+      "lemma": "pressió",
+      "normalizedLemma": "pressió",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 535,
+      "sourceHash": "b667446e6eb2552fbe29d98e8f5c3bb7197cad4ab1ec72cf710c406956e71e55",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "pressure",
+      "translationZh": "压力",
+      "translationRoute": "en-zh",
+      "translationScore": -0.211133,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 93,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "压力",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e017",
+      "layer": "wiktionary",
+      "lemma": "banda",
+      "normalizedLemma": "banda",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 198,
+      "sourceHash": "36e110819a318dddc3f882edba27b19aa91231f82fb698ab63c214b63d1a6512",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "bend",
+      "translationZh": "弯曲",
+      "translationRoute": "en-zh",
+      "translationScore": -0.38192,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 94,
+      "semanticAudit": "insufficient-context",
+      "auditNote": "Bend may be ordinary curvature or a heraldic sense; lemma/sense context must be checked.",
+      "sourceComparedTranslationZh": null,
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e015",
+      "layer": "wiktionary",
+      "lemma": "natural",
+      "normalizedLemma": "natural",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 120,
+      "sourceHash": "0920b3e93f3442f7d6a83779ea55ed72360426ac9cc52647792c9a5b243933e1",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "nature (innate characteristics of a person)",
+      "translationZh": "性质(一个人的固有特征)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.586356,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 95,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "本性；性情（人的固有特征）",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e009",
+      "layer": "wiktionary",
+      "lemma": "mínim",
+      "normalizedLemma": "mínim",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "priorityRank": 963,
+      "sourceHash": "692e4e5decffcf5eac86471ba27ac56a861268d060e4a53a0c768617f4d3a56f",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "minimum",
+      "translationZh": "最小值",
+      "translationRoute": "en-zh",
+      "translationScore": -0.721934,
+      "qualityFlags": [
+        "short-ambiguous-source"
+      ],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 96,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "最小值；最低限度",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "començament",
+      "normalizedLemma": "començament",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 641,
+      "sourceHash": "0578373e0160008438f23d6d379e69ce17e99025cc1bee667d03c74a056b3752",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "start, outset, beginning",
+      "translationZh": "开始,开始,开始",
+      "translationRoute": "en-zh",
+      "translationScore": -0.257987,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 97,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "开始；开端",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "situar",
+      "normalizedLemma": "situar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "priorityRank": 802,
+      "sourceHash": "57e7ef378fcc21c2badd54482852cdf5e40cbdcc91eeba18290ced5853b6114a",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "to situate, place, put",
+      "translationZh": "位置,位置,位置,设置",
+      "translationRoute": "en-zh",
+      "translationScore": -1.028698,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 98,
+      "semanticAudit": "incorrect",
+      "auditNote": "Verb meaning obscured by repeated nominal location translations.",
+      "sourceComparedTranslationZh": "放置；安置；把……放在某处",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e004",
+      "layer": "wiktionary",
+      "lemma": "això",
+      "normalizedLemma": "això",
+      "partOfSpeech": [
+        "noun",
+        "pronoun"
+      ],
+      "priorityRank": 128,
+      "sourceHash": "63278e2b03e958b26a086d3d270c9afd5362e77cf8d66d8c88f7e06dabfc7f55",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "that, it",
+      "translationZh": "那个,它",
+      "translationRoute": "en-zh",
+      "translationScore": -1.315979,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 99,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "那个；它",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    },
+    {
+      "core": true,
+      "evidenceId": "e010",
+      "layer": "wiktionary",
+      "lemma": "varietat",
+      "normalizedLemma": "varietat",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "priorityRank": 452,
+      "sourceHash": "3d00714a19961a7e08661a5125f51557ce58de8740b1f51f372817080b54a328",
+      "sourceIds": [
+        "cawiktionary",
+        "kaikki-enwiktionary-ca"
+      ],
+      "sourceLanguage": "en",
+      "sourceText": "variety (a number of different things)",
+      "translationZh": "多样性(若干不同的东西)",
+      "translationRoute": "en-zh",
+      "translationScore": -0.681857,
+      "qualityFlags": [],
+      "reviewStatus": "machine-translated",
+      "engine": "CTranslate2 4.8.2; SentencePiece 0.2.1",
+      "modelHashes": {
+        "en-zh": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab",
+        "ca-en": "d1fd06e9f3d919440b05470b3268b8c9077f15519f2a375e19d78825020c8771"
+      },
+      "beamSize": 2,
+      "sampleIndex": 100,
+      "semanticAudit": "acceptable-with-polish",
+      "auditNote": "Core meaning is usable; proposed wording improves dictionary style or precision.",
+      "sourceComparedTranslationZh": "多种不同的事物",
+      "auditStatus": "codex-source-compared",
+      "productionApproved": false
+    }
+  ]
+}

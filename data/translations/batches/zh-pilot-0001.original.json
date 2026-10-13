@@ -1,0 +1,899 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-pilot-0001",
+  "recordCount": 25,
+  "records": [
+    {
+      "id": "697c4e5ad9654cfc2108",
+      "lemma": "del",
+      "normalizedLemma": "del",
+      "inputHash": "89e060ad20f94ddf930a424affd130ad5abd2df1a07074554b7ef1c197bde7e9",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "contraction",
+          "translationZh": "介词 de 与定冠词 el 的缩合形式",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "9683a0544c16d1ab74d9",
+      "lemma": "amb",
+      "normalizedLemma": "amb",
+      "inputHash": "a5194ced0428c9da2623e4afd2a340be9858f4cb861f2edace1216e08bb8bbfe",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e004",
+            "e005"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "（表示伴随、包含或附带）和，同，跟，带着",
+          "aliasesZh": [
+            "和",
+            "同",
+            "跟"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e003",
+            "e004",
+            "e005"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "（表示工具、手段或方式）用，以",
+          "aliasesZh": [
+            "用",
+            "以"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "7b6d4867e37de56520ef",
+      "lemma": "una",
+      "normalizedLemma": "una",
+      "inputHash": "ad694964352b538a3a4bc722e70953345f34b2c2d73a7deee3426a86fa3216a0",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（指钟点）一点，一时",
+          "aliasesZh": [
+            "一点",
+            "一点钟"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "1eb2d1f7e7280c604c76",
+      "lemma": "al",
+      "normalizedLemma": "al",
+      "inputHash": "a8c1143de64bb43c508e1e24a6ddd443668d248be205456961c8117bed9e2a49",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "contraction",
+          "translationZh": "介词 a 与定冠词 el 的缩合形式",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "864b395ab33c52c0f240",
+      "lemma": "dels",
+      "normalizedLemma": "dels",
+      "inputHash": "23684081cb1a7df72537d80c8f1f81b08d9b746547a4850b90eb6235798dd8cc",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002"
+          ],
+          "partOfSpeech": "contraction",
+          "translationZh": "介词 de 与阳性复数定冠词 els 的缩合形式",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "5d7d395a14ac4c268732",
+      "lemma": "entre",
+      "normalizedLemma": "entre",
+      "inputHash": "4f020e3748167ef617ad2839c9c31586422101b8f851b9cce570fa4df09fa8a0",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "在……之间（指两者之间）",
+          "aliasesZh": [
+            "在……之间"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e004"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "在……之中，在……当中（指三者或更多之间）",
+          "aliasesZh": [
+            "在……之中",
+            "在……当中"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "224d65ec7cd835ce5d70",
+      "lemma": "seva",
+      "normalizedLemma": "seva",
+      "inputHash": "16682363bb6f5d303f86415a44eb0075d26d9b094f4030c8b1a149cb4763f188",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "个人观点，个人见解，己见",
+          "aliasesZh": [
+            "个人观点",
+            "己见",
+            "个人见解"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a0cb42734e410abe5921",
+      "lemma": "també",
+      "normalizedLemma": "també",
+      "inputHash": "48e7c71b032b2694bf8dbc528a8ad6d557ba0d8be5fd3b276e582e2e61818d65",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e004",
+            "e005"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "也，同样，并且",
+          "aliasesZh": [
+            "也",
+            "同样"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "56cb5f6a548d528e630c",
+      "lemma": "als",
+      "normalizedLemma": "als",
+      "inputHash": "f70c99f144e6a6822ef0bd2b1eb6aafc4dadb20eef273c02c970d3902c2afeff",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "contraction",
+          "translationZh": "介词 a 与阳性复数定冠词 els 的缩合形式",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "1395d89933ef30e80cb1",
+      "lemma": "pot",
+      "normalizedLemma": "pot",
+      "inputHash": "7144500f8a4f3217722ec46ae82175773a7fd498fbdee4add4844de0152f22fe",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e004",
+            "e006",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "罐，罐子，筒，坛（存放物品的容器）",
+          "aliasesZh": [
+            "罐",
+            "罐子",
+            "坛子"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e005",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（赌博或彩票的）累积奖池，赌池，头奖",
+          "aliasesZh": [
+            "累积奖池",
+            "头奖",
+            "彩池"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f19022a1b2416178ddeb",
+      "lemma": "pel",
+      "normalizedLemma": "pel",
+      "inputHash": "f5db8e004da920a8c539e58d26f13152cd500dcb5ebbc61fcf42a8f429113a84",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "介词 per 与阳性单数定冠词 el 的缩合形式（相当于 per el）",
+          "aliasesZh": []
+        }
+      ],
+      "issues": [
+        {
+          "code": "form_only",
+          "sourceRefs": [
+            "e001"
+          ],
+          "noteZh": "原始定义仅提供词形缩合说明（per + el），缺乏具体词义释义"
+        }
+      ]
+    },
+    {
+      "id": "dee6d3c8562f6e4a4553",
+      "lemma": "on",
+      "normalizedLemma": "on",
+      "inputHash": "ab604225d0dc8d3f44ffede680f22b6a4f8957934eb82d85ad0d0775fb5e7b20",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e004",
+            "e005",
+            "e006",
+            "e007"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "（询问或指明地点）在哪里，何处，哪里",
+          "aliasesZh": [
+            "在哪里",
+            "哪里",
+            "何处"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c1d74a0c11ff102241ac",
+      "lemma": "nombre",
+      "normalizedLemma": "nombre",
+      "inputHash": "3a2b94773656c4f294024d9b512884e75192428c7906a8ea8756deecce63114c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e004",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "数，数目，数量",
+          "aliasesZh": [
+            "数",
+            "数目",
+            "数量"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "7c2ce3e07bb2988bcd0d",
+      "lemma": "era",
+      "normalizedLemma": "era",
+      "inputHash": "654ee01e1edf35546ade830b724250d4d17874b7043c0e9d58981ba150892c3e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e003",
+            "e004",
+            "e006",
+            "e007",
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "时代，纪元，时期",
+          "aliasesZh": [
+            "时代",
+            "纪元",
+            "时期"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e004",
+            "e005",
+            "e008",
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（农业）打谷场，脱粒场；晒场",
+          "aliasesZh": [
+            "打谷场",
+            "脱粒场",
+            "晒场"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "4a7dae3e0aa8e41e69f0",
+      "lemma": "manera",
+      "normalizedLemma": "manera",
+      "inputHash": "64950877bec03b61df0a41d826edf3516722db6bd5c10d53f525ed21847581f9",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e005",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "方式，方法，样子，形式",
+          "aliasesZh": [
+            "方式",
+            "方法",
+            "形式"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e004",
+            "e006",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "举止，礼貌，礼节，规矩",
+          "aliasesZh": [
+            "礼貌",
+            "举止",
+            "礼节"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "cd36d1701c2eae5d220c",
+      "lemma": "tipus",
+      "normalizedLemma": "tipus",
+      "inputHash": "b07a6eb10ca8f324f73b07ee3b86801eab9d5a61a139c7517882b2a47f6e454b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e003",
+            "e005",
+            "e008",
+            "e009",
+            "e012",
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "类型，种类，典型，范例",
+          "aliasesZh": [
+            "类型",
+            "种类",
+            "典型"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e005",
+            "e006",
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（印刷）活字，铅字，字模",
+          "aliasesZh": [
+            "活字",
+            "铅字",
+            "字模"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e004",
+            "e005",
+            "e010",
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（金融）利率，税率，比率",
+          "aliasesZh": [
+            "利率",
+            "税率",
+            "比率"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（印章）印纹，图章所刻图纹",
+          "aliasesZh": [
+            "印纹"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（民俗学）故事类型，母题型",
+          "aliasesZh": [
+            "故事类型"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "799343023be4ddd20cc4",
+      "lemma": "fou",
+      "normalizedLemma": "fou",
+      "inputHash": "70983f4d08ab1a58b2ec2ce9aa1c17bbf0e5b8995844575e5fc294320b4b43bb",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "峡谷，峡道，隘道（两山之间的狭窄通道）",
+          "aliasesZh": [
+            "峡谷",
+            "隘道"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "狭窄小海湾，水湾",
+          "aliasesZh": [
+            "小海湾",
+            "水湾"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e996d25f132d7adacd01",
+      "lemma": "dues",
+      "normalizedLemma": "dues",
+      "inputHash": "5bd8794ee1af1adb5d9242fa8221b07adc3fcef97880eeb8fc1f12714b7b4dd1",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（指钟点）两点，两点钟",
+          "aliasesZh": [
+            "两点",
+            "两点钟"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "1d9fcf9dcf7497e4e5af",
+      "lemma": "ciutat",
+      "normalizedLemma": "ciutat",
+      "inputHash": "41a5f26d8ddcfc8a6fb46d24852594eff8f8526a661b9e92941a7e2281b95572",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e004",
+            "e005",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "城市，都市",
+          "aliasesZh": [
+            "城市",
+            "都市"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "3cf215b673123114da52",
+      "lemma": "comarca",
+      "normalizedLemma": "comarca",
+      "inputHash": "ccd95bb6440b362900e074f80290e0af88c65f96cb5b962bc33bbda2c4a832af",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003",
+            "e004",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（西班牙及加泰罗尼亚的行政或自然区划）县，地区，区",
+          "aliasesZh": [
+            "地区",
+            "县",
+            "行政区"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e5ecbd4a59de50b17862",
+      "lemma": "partir",
+      "normalizedLemma": "partir",
+      "inputHash": "001263d5c6d3b7632c913c25214299e9efb8f3522e3c39e1234544eca0da989c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e006",
+            "e007",
+            "e012",
+            "e013",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（及物）劈开，掰开，切开，分开",
+          "aliasesZh": [
+            "劈开",
+            "切开",
+            "掰开"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e003",
+            "e006",
+            "e008",
+            "e009",
+            "e012",
+            "e014",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（及物）瓜分，分配，平分，均分",
+          "aliasesZh": [
+            "瓜分",
+            "平分",
+            "分配"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e004",
+            "e006",
+            "e010",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（不及物）动身，启程，出发，离开",
+          "aliasesZh": [
+            "动身",
+            "启程",
+            "出发"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e005",
+            "e006",
+            "e011",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（不及物）以……为起点，以……为出发点，从……出发",
+          "aliasesZh": [
+            "出发",
+            "始于"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e86cafd6309c687c3ff5",
+      "lemma": "se",
+      "normalizedLemma": "se",
+      "inputHash": "edcc3e1a123bea2510cba70068d76256824750e9956f14ce9412950279589c30",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "（反身代词，第三人称直接或间接宾语）自己，自身，他自己，她自己，它自己，他们自己",
+          "aliasesZh": [
+            "自己",
+            "自身"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "（相互代词，直接或间接宾语）相互，彼此",
+          "aliasesZh": [
+            "相互",
+            "彼此"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "16e0a69f07cbe60e3fb7",
+      "lemma": "pels",
+      "normalizedLemma": "pels",
+      "inputHash": "d59b8e0847aad7347c2505a8bc37b4cd077dfdd960318c2eb9a2440c25e86a2e",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "preposition",
+          "translationZh": "介词 per 与阳性复数定冠词 els 的缩合形式（相当于 per els）",
+          "aliasesZh": []
+        }
+      ],
+      "issues": [
+        {
+          "code": "form_only",
+          "sourceRefs": [
+            "e001"
+          ],
+          "noteZh": "原始定义仅提供词形缩合说明（per + els），缺乏具体词义释义"
+        }
+      ]
+    },
+    {
+      "id": "0b530e452dc55238dc72",
+      "lemma": "produir",
+      "normalizedLemma": "produir",
+      "inputHash": "5ef267995e57b3885ecd4b68e97b618a44db034d62038c33d257817147e045eb",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e005",
+            "e009",
+            "e014",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "生产，制造，制作",
+          "aliasesZh": [
+            "生产",
+            "制造",
+            "制作"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e003",
+            "e004",
+            "e009",
+            "e013",
+            "e014",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "生出，产生，孕育，繁衍",
+          "aliasesZh": [
+            "生出",
+            "产生",
+            "孕育"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e006",
+            "e009",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "带来收益，产生利息，生息",
+          "aliasesZh": [
+            "带来收益",
+            "生息"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e007",
+            "e009",
+            "e014",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "引起，导致，造成，产生",
+          "aliasesZh": [
+            "引起",
+            "导致",
+            "造成"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e001",
+            "e002",
+            "e009",
+            "e011",
+            "e015"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（法律）出示，提出（证据、文件）",
+          "aliasesZh": [
+            "出示",
+            "提出"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008",
+            "e010",
+            "e012",
+            "e016"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（代动词）表达，讲清自己的意思，使人理解自己",
+          "aliasesZh": [
+            "表达"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "8daf86a0635209d1d7d9",
+      "lemma": "diversos",
+      "normalizedLemma": "diversos",
+      "inputHash": "99b48a5885f829b2eb816460df831c9cf42ddc3a0ba236a985e6aecb58d962d5",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e003",
+            "e005",
+            "e007"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "（置于名词后）不同的，各色各样的，形形色色的",
+          "aliasesZh": [
+            "不同的",
+            "各式各样的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e002",
+            "e004",
+            "e006",
+            "e008"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "（置于名词前）若干的，几个不同的，好些",
+          "aliasesZh": [
+            "若干的",
+            "几个"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

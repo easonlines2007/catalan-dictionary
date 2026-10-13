@@ -1,0 +1,1161 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-pilot-0002",
+  "recordCount": 25,
+  "records": [
+    {
+      "id": "61886cb7d6fde88e1ce4",
+      "lemma": "s'ha",
+      "normalizedLemma": "s'ha",
+      "inputHash": "0e5dfa0749da5da615326593c1a066d9e52b19ce0808c8b4edc14c4da99c38a4",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "contraction",
+          "translationZh": "es 与 ha 的缩合形式",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "09c2e1ff05fc1a490fa4",
+      "lemma": "terra",
+      "normalizedLemma": "terra",
+      "inputHash": "fead446de9588d424f9c545f52c001b32b693efbd82ea982c0fcfb27d2704afb",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e010",
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "土；泥土；土壤（颗粒状的固体物质）",
+          "aliasesZh": [
+            "土",
+            "泥土",
+            "土壤"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "土地；地带；某种类型的地形",
+          "aliasesZh": [
+            "土地",
+            "地带",
+            "地形"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e013",
+            "e017"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "陆地（地球表面未被水覆盖的部分）",
+          "aliasesZh": [
+            "陆地"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006",
+            "e015"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "国家；尤指祖国",
+          "aliasesZh": [
+            "国家",
+            "祖国"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007",
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "地面；地板（建筑物内供行走的底部表面）",
+          "aliasesZh": [
+            "地面",
+            "地板"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e014"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（旧时船上发现陆地时的呼喊）陆地！",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "dcba6f41a26e905eb1c3",
+      "lemma": "servir",
+      "normalizedLemma": "servir",
+      "inputHash": "41ffe51f1d5720885a43d2fa0806c2133b19ac39d1ce5993fd96da7f152e6075",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e006",
+            "e013"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "有用；适合某种用途",
+          "aliasesZh": [
+            "有用",
+            "适用"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "为某人服务；履行对某人的职责",
+          "aliasesZh": [
+            "服务",
+            "效劳"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（在餐桌上）给人盛菜、倒饮料；侍餐",
+          "aliasesZh": [
+            "侍餐",
+            "上菜"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "亲自出力帮助某人，使其受益",
+          "aliasesZh": [
+            "帮助",
+            "出力相助"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "使用；利用",
+          "aliasesZh": [
+            "使用",
+            "利用"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e011"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（球类运动）发球；将球或冰球等投入比赛",
+          "aliasesZh": [
+            "发球"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "7a7598281e89cd985d8f",
+      "lemma": "municipi",
+      "normalizedLemma": "municipi",
+      "inputHash": "487ee8b23d67ee2aef7e49a29b3340d5f288b974ab467fc426bb56faf6484b43",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "市镇；市镇行政机构",
+          "aliasesZh": [
+            "市镇",
+            "市镇行政机构"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "1da7b7c52bdce0e75c34",
+      "lemma": "internacional",
+      "normalizedLemma": "internacional",
+      "inputHash": "ffbf623d19470c52cbdefd7e9f5d63bb9d139ce2d6e16387415ea7c25dc38ee3",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "国际的；两国或多国之间的",
+          "aliasesZh": [
+            "国际的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "超出一国范围的",
+          "aliasesZh": [
+            "超出一国范围"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": null,
+          "translationZh": "以实现社会主义革命为目标的组织",
+          "aliasesZh": []
+        }
+      ],
+      "issues": [
+        {
+          "code": "source_conflict",
+          "sourceRefs": [
+            "e005"
+          ],
+          "noteZh": "该定义描述组织，应属名词，但输入只提供 adjective；本义项词性置空，需核对源词性和具体所指。"
+        }
+      ]
+    },
+    {
+      "id": "e1cb6449695460d3141a",
+      "lemma": "període",
+      "normalizedLemma": "període",
+      "inputHash": "869c8e5440b839ac026e6b531dc1ceb876e348f0a9eae0730256b00e72328e56",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005",
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "时期；时代；一段时间",
+          "aliasesZh": [
+            "时期",
+            "时代"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "月经；经期",
+          "aliasesZh": [
+            "月经",
+            "经期"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（数学）循环节：有理数表示中不断重复的数字组",
+          "aliasesZh": [
+            "循环节"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（数学）周期：自变量加上此值后函数值保持不变",
+          "aliasesZh": [
+            "函数周期"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（周期信号的）周期；重复一次所需的时间",
+          "aliasesZh": [
+            "周期",
+            "信号周期"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（化学）周期表中的一行；周期",
+          "aliasesZh": [
+            "元素周期"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "ambiguous_sense",
+          "sourceRefs": [
+            "e011"
+          ],
+          "noteZh": "孤立定义 part 可指部分或分娩等，缺少语境；未据此生成义项。"
+        }
+      ]
+    },
+    {
+      "id": "e896b881c328b0297fca",
+      "lemma": "regió",
+      "normalizedLemma": "regió",
+      "inputHash": "29e81c7af141c052302f4f62bb07adad20b420d36a0ee5abc3709f607d47c7e7",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "地区；区域（具有共同地理、气候、文化、经济等特征的地域）",
+          "aliasesZh": [
+            "地区",
+            "区域"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "西班牙实行自治制度以前的主要地域划分",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "218d1229f0a8a2690ea2",
+      "lemma": "déu",
+      "normalizedLemma": "déu",
+      "inputHash": "7286b43b92646d55bc3c902dfe18fad1f9c33f3bace3e1c58dcc9b36e9c6fac8",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "神；具有超自然力量、影响人类生活的不朽至高神灵",
+          "aliasesZh": [
+            "神",
+            "神灵"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f0b07100004dd97ede47",
+      "lemma": "li",
+      "normalizedLemma": "li",
+      "inputHash": "714beb696c1aa5201073e750cc9e4c82408492c777a80309e6d244df155280af",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "（间接宾语，单数，不分性别）给他；给她；给它",
+          "aliasesZh": [
+            "给他",
+            "给她",
+            "给它"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "d30ea2087a10f59cb471",
+      "lemma": "segona",
+      "normalizedLemma": "segona",
+      "inputHash": "b876ac31be664c8be5d5b7956e66c4e27939cb1021192191b2e7ae06e123ed20",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（音乐）二度；自然音阶中相邻两音之间的音程",
+          "aliasesZh": [
+            "二度音程"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（音乐）伴奏",
+          "aliasesZh": [
+            "伴奏"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（车辆）二挡",
+          "aliasesZh": [
+            "二挡"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2ad8f591f6362fb4a07d",
+      "lemma": "troba",
+      "normalizedLemma": "troba",
+      "inputHash": "91e1bddb8caa6aebf2f587c0e20d9e216d23dfb8d400aa9bb2486f24e29acb06",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "发现；发现的事物",
+          "aliasesZh": [
+            "发现",
+            "发现物"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "af54fd41402b76893587",
+      "lemma": "realitzar",
+      "normalizedLemma": "realitzar",
+      "inputHash": "4de0aa81929098f11d75cd3fad10e465c41acd64bb3d0cae838499e7b8fac40c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e004",
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "实行；完成；将计划付诸实现",
+          "aliasesZh": [
+            "实行",
+            "完成",
+            "实现"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e009"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "得以实现；成为现实",
+          "aliasesZh": [
+            "成为现实"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006",
+            "e010"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "实现自我；达成目标而获得充实感",
+          "aliasesZh": [
+            "实现自我"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f4c82dcacdda9162f8cc",
+      "lemma": "república",
+      "normalizedLemma": "república",
+      "inputHash": "4df2876d8f36ff893b5b7bf50313fec4fd50237c6a2bec413a6dce5b0c141a90",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "共和国；共和政体（主权属于人民或其代表，国家元首经选举产生，不实行世袭或终身制）",
+          "aliasesZh": [
+            "共和国",
+            "共和政体"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "e6a6c517562ce7eeaa3a",
+      "lemma": "mitjana",
+      "normalizedLemma": "mitjana",
+      "inputHash": "e15c2a07761a90645ef26b1ae3c23b650f763d67825a125f26d02d62294597df",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e006",
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "算术平均数；各数量之和除以数量个数所得的商",
+          "aliasesZh": [
+            "算术平均数",
+            "平均数"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "杠杆式压榨机停用时，承托压梁重量的方截面横杆",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e007",
+            "e015"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "肋部与颈背之间的腰脊肉",
+          "aliasesZh": [
+            "腰脊肉"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "河中岛；河心岛",
+          "aliasesZh": [
+            "河中岛",
+            "河心岛"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010",
+            "e014"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "道路上分隔相反行驶方向的中央分隔带",
+          "aliasesZh": [
+            "中央分隔带",
+            "道路隔离带"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e011",
+            "e016"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "约三分之一升的一瓶啤酒；这一啤酒容量单位",
+          "aliasesZh": [
+            "三分之一升啤酒"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "ambiguous_sense",
+          "sourceRefs": [
+            "e013"
+          ],
+          "noteZh": "英语 mizzen 可指后桅或后帆，当前证据未明确所指；该义项留待核对。"
+        }
+      ]
+    },
+    {
+      "id": "f81cdf12c319b075aff9",
+      "lemma": "actualment",
+      "normalizedLemma": "actualment",
+      "inputHash": "228e25ae4cc84e136acf56ba2d53f94de8f6cb49cabb5ff5feaf60df8c034feb",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004",
+            "e005"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "目前；现在；当前",
+          "aliasesZh": [
+            "目前",
+            "现在",
+            "当前"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "60f68abce29510c38d10",
+      "lemma": "teoria",
+      "normalizedLemma": "teoria",
+      "inputHash": "770cda334bb51ba623048915265e33cccbfae8d087d8b4d3d63681660cc4287c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "理论；独立于实际应用的某学科或技艺的一般原理",
+          "aliasesZh": [
+            "理论",
+            "一般原理"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "学说；以原则为依据，系统概括和解释现象或问题的理论体系",
+          "aliasesZh": [
+            "学说",
+            "理论体系"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a4743f14161e76b102ca",
+      "lemma": "banda",
+      "normalizedLemma": "banda",
+      "inputHash": "fec4f73ecf29ee58debbd7ff4ad449635518d169a434c0a3928848a6eeb0acba",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007",
+            "e016"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "一侧；侧面",
+          "aliasesZh": [
+            "一侧",
+            "侧面"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008",
+            "e018"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "帮派；犯罪团伙",
+          "aliasesZh": [
+            "帮派",
+            "犯罪团伙"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009",
+            "e015"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "宽布带；绶带",
+          "aliasesZh": [
+            "宽布带",
+            "绶带"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e010"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "佩戴在身上的荣誉标志",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e002",
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（球类运动）由边线界定的场地侧边",
+          "aliasesZh": [
+            "场地侧边"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（网球、羽毛球）球网上沿的白色边带",
+          "aliasesZh": [
+            "球网白色边带"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（台球）台框内侧包覆台呢的斜面橡胶库边，共四段",
+          "aliasesZh": [
+            "台球库边"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e020"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "乐队；尤指以管乐和打击乐为主的乐队",
+          "aliasesZh": [
+            "乐队",
+            "管乐队"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "ambiguous_sense",
+          "sourceRefs": [
+            "e014",
+            "e017"
+          ],
+          "noteZh": "孤立定义 ala 和 bend 缺少领域及具体所指；未扩展为翼部或纹章斜带等义项。"
+        }
+      ]
+    },
+    {
+      "id": "401e5afb2ced5d50fb76",
+      "lemma": "catalana",
+      "normalizedLemma": "catalana",
+      "inputHash": "cb3668c5d350af4d5a4ffcc929d3c6cd32bcc1df6f1439533ba1d310d4a7153c",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "波龙酒壶；一种盛葡萄酒的玻璃壶",
+          "aliasesZh": [
+            "波龙酒壶"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "244aa67826ba359ac8c3",
+      "lemma": "temperatura",
+      "normalizedLemma": "temperatura",
+      "inputHash": "fc815c8ebc422e3112d0fece1989d376812723e26d3bc0b8bed69e641bd2fa6d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "温度；冷热程度",
+          "aliasesZh": [
+            "温度"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "发烧；发热",
+          "aliasesZh": [
+            "发烧",
+            "发热"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "2f773046360667f6b231",
+      "lemma": "cos",
+      "normalizedLemma": "cos",
+      "inputHash": "d6df2881b6254e51fbd7e60cca6d9986b791e56bee6598b666b5192380fbb43e",
+      "status": "needs_review",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005",
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "身体；生物的躯体",
+          "aliasesZh": [
+            "身体",
+            "躯体"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "物体；有形的东西",
+          "aliasesZh": [
+            "物体"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "机构；组织",
+          "aliasesZh": [
+            "机构",
+            "组织"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "核心；中心部分",
+          "aliasesZh": [
+            "核心",
+            "中心部分"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（印刷）字身高度；从最高字形顶端到最低字形底端的距离",
+          "aliasesZh": [
+            "字身高度"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e009"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "某些节庆中设有奖品的赛跑或游戏",
+          "aliasesZh": [
+            "节庆赛跑"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e011"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "传统的城镇宅地宽度单位，约合临街五米",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e013"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "尸体",
+          "aliasesZh": [
+            "尸体"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "ambiguous_sense",
+          "sourceRefs": [
+            "e010"
+          ],
+          "noteZh": "孤立定义 cors 无语境，不能可靠确定其所指；未据此生成义项。"
+        }
+      ]
+    },
+    {
+      "id": "0b323e15f32c251cdfb4",
+      "lemma": "mediterrani",
+      "normalizedLemma": "mediterrani",
+      "inputHash": "876d97c2ce2628ce5e2c086ef2e6643fe1db2dbfbed294d8e3e6b82b8f39e730",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "地中海的；地中海周边地区的",
+          "aliasesZh": [
+            "地中海的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "（海）完全被陆地包围的",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "f4a9000537ef72395a96",
+      "lemma": "nova",
+      "normalizedLemma": "nova",
+      "inputHash": "e88416a58ecc9fed460ed33ca5d4f33c8d8f4779fbf539b79cbbf4830f377a6e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001",
+            "e003"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "消息；新闻",
+          "aliasesZh": [
+            "消息",
+            "新闻"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "（天文学）新星；亮度突然增加又降低的恒星",
+          "aliasesZh": [
+            "新星"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "651a89542c9e9b597dec",
+      "lemma": "dividir",
+      "normalizedLemma": "dividir",
+      "inputHash": "33bd631e0f3abda4f2ddd2edfcf68073e822c8663dec3cd8337313d3efa618f1",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "分配；分成较小的份额",
+          "aliasesZh": [
+            "分配",
+            "分份"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e009"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "划分；将整体分成若干部分",
+          "aliasesZh": [
+            "划分",
+            "分割"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（数学）除；作除法运算",
+          "aliasesZh": [
+            "除",
+            "做除法"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "造成分歧；使不和",
+          "aliasesZh": [
+            "造成分歧",
+            "使不和"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "分隔；设置隔开事物的界限或隔断",
+          "aliasesZh": [
+            "分隔"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "分享；共同享用",
+          "aliasesZh": [
+            "分享"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "44b2ca26e46bd0f4c9b4",
+      "lemma": "incloure",
+      "normalizedLemma": "incloure",
+      "inputHash": "9b3ff7f054f524f51e493062b1c3e7464a34851de8a3bd4b0400a661fc56d64f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "纳入；把某物放入另一物中或加入某一组",
+          "aliasesZh": [
+            "纳入",
+            "加入"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e006"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "包括；包含",
+          "aliasesZh": [
+            "包括",
+            "包含"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "5c7974650786a492d461",
+      "lemma": "destacar",
+      "normalizedLemma": "destacar",
+      "inputHash": "ddbd522ad68e46d87cad8fc53d28079b4d58c79e738708bda28d6ed435805ba2",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e005",
+            "e009"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "突出；显眼；在群体中脱颖而出",
+          "aliasesZh": [
+            "突出",
+            "显眼",
+            "脱颖而出"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e007",
+            "e010"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "突出显示；强调；使形象更鲜明",
+          "aliasesZh": [
+            "突出显示",
+            "强调"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006",
+            "e008"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（军事）分遣；派出一部分军队前往某地",
+          "aliasesZh": [
+            "分遣",
+            "派兵"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

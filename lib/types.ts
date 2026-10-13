@@ -18,6 +18,10 @@ export type PartOfSpeech =
 
 export type GrammaticalGender = "masculine" | "feminine" | "common";
 
+export type SearchLanguage = "auto" | "ca" | "es" | "zh";
+export type MatchLanguage = Exclude<SearchLanguage, "auto">;
+export type MatchKind = "lemma" | "morphology" | "translation" | "alias";
+
 export interface DictionaryExample {
   ca: string;
   es?: string;
@@ -52,6 +56,12 @@ export interface DictionaryEntry {
   gender?: GrammaticalGender;
   plural?: string[];
   chinese?: string[];
+  /** Supplemental machine output is visibly labelled and never replaces authored Chinese. */
+  chineseMachine?: boolean;
+  /** Source-aligned Wordnet equivalents, distinct from source-compared translations. */
+  chineseReference?: boolean;
+  /** Only a source headword was available; the output is a term reference. */
+  chineseHeadword?: boolean;
   spanish?: string[];
   definitions?: DictionaryDefinitions;
   examples?: DictionaryExample[];
@@ -71,12 +81,16 @@ export interface PackedDictionaryEntry {
   g?: GrammaticalGender;
   pl?: string[];
   zh?: string[];
+  zhMachine?: boolean;
+  zhReference?: boolean;
+  zhHeadword?: boolean;
   es?: string[];
   d?: DictionaryDefinitions;
   ex?: DictionaryExample[];
   f?: string[];
   ipa?: string;
   s?: string[];
+  pv?: EntryProvenance[];
   r?: number;
 }
 
@@ -87,6 +101,9 @@ export interface LemmaResult {
   morphology?: string;
   confidence?: number;
   entry?: DictionaryEntry;
+  matchedLanguage?: MatchLanguage;
+  matchedTerm?: string;
+  matchKind?: MatchKind;
 }
 
 export type ResolutionSource =
@@ -94,6 +111,7 @@ export type ResolutionSource =
   | "normalized-exact"
   | "morphology"
   | "clitic"
+  | "translation"
   | "accent-fallback";
 
 export interface FoundLookup {
@@ -106,6 +124,11 @@ export interface FoundLookup {
   resolutionSource: ResolutionSource;
   entry: DictionaryEntry;
   candidates: LemmaResult[];
+  searchLanguage?: SearchLanguage;
+  searchDataVersion?: string;
+  matchedLanguage?: MatchLanguage;
+  matchedTerm?: string;
+  matchKind?: MatchKind;
 }
 
 export interface MissedLookup {
@@ -114,6 +137,8 @@ export interface MissedLookup {
   normalizedQuery: string;
   resolutionSource: "prefix" | "fuzzy" | "none";
   suggestions: string[];
+  searchLanguage?: SearchLanguage;
+  offlineLimited?: boolean;
 }
 
 export type LookupResponse = FoundLookup | MissedLookup;
@@ -124,6 +149,7 @@ export interface HistoryRecord {
   lemma: string;
   meaning: string;
   timestamp: number;
+  searchLanguage?: SearchLanguage;
 }
 
 export interface SavedRecord {
@@ -131,6 +157,7 @@ export interface SavedRecord {
   entry: DictionaryEntry;
   savedAt: number;
   dataVersion?: string;
+  searchDataVersion?: string;
 }
 
 export interface CacheRecord {
@@ -139,6 +166,7 @@ export interface CacheRecord {
   result: FoundLookup;
   cachedAt: number;
   dataVersion?: string;
+  searchDataVersion?: string;
 }
 
 export interface DictionaryShardDescriptor {
@@ -201,6 +229,26 @@ export interface DictionaryManifest {
   };
 }
 
+export type SearchShardKind = "search-core" | "search-zh" | "search-es" | "search-chinese";
+export interface SearchShardDescriptor extends DictionaryShardDescriptor {
+  kind: SearchShardKind;
+}
+export interface SearchManifest {
+  schemaVersion: 1;
+  dataVersion: string;
+  baseDataVersion: string;
+  core: {
+    entries: SearchShardDescriptor;
+    zh: SearchShardDescriptor;
+    es: SearchShardDescriptor;
+  };
+  indexes: { zh: SearchShardDescriptor[]; es: SearchShardDescriptor[] };
+  chinese: SearchShardDescriptor[];
+  offline: { core: SearchShardDescriptor[]; full: SearchShardDescriptor[] };
+  sizes: { compressedBytes: number; coreCompressedBytes: number; rawBytes: number };
+  coverage: { chineseLemmas: number; missingChineseLemmas: number; coreLemmaCount: number; [key: string]: unknown };
+}
+
 export interface StoredDictionaryShard {
   key: string;
   dataVersion: string;
@@ -215,7 +263,8 @@ export interface StoredDictionaryShard {
     | "wiktionaryMorph"
     | "freedictPrefix"
     | "wiktionaryPrefix"
-    | "curatedPrefix";
+    | "curatedPrefix"
+    | SearchShardKind;
   shardId: string;
   /** Gzip-compressed static asset bytes, kept compressed in IndexedDB. */
   data: ArrayBuffer;

@@ -1,0 +1,71 @@
+{
+  "name": "Open Multilingual Wordnet: MCR Catalan/Spanish and Chinese Open Wordnet",
+  "revision": "406bf83b3c507a3d1f26e88252d5d66893fd36bf",
+  "synsetScheme": "Princeton WordNet 3.0 offset-POS; satellite adjectives normalized to a upstream",
+  "files": [
+    {
+      "id": "cat",
+      "file": "cat.tab.gz",
+      "url": "https://raw.githubusercontent.com/omwn/omw-data/406bf83b3c507a3d1f26e88252d5d66893fd36bf/wns/mcr/wn-data-cat.tab",
+      "sha256": "3e063b249cad4876ab6da6e38fe24d023860c454fcf5c9815f22f29d4cedd751",
+      "sourceSha256": "3c83c0c5298ed700a56dff9e9ea85dad2032162825778fec2c3df99fbccd3060",
+      "bytes": 1015463,
+      "sourceBytes": 3958421
+    },
+    {
+      "id": "spa",
+      "file": "spa.tab.gz",
+      "url": "https://raw.githubusercontent.com/omwn/omw-data/406bf83b3c507a3d1f26e88252d5d66893fd36bf/wns/mcr/wn-data-spa.tab",
+      "sha256": "7d88c613c1243fc55225ee694787418928471b51e749a244327b7ed040d66bd9",
+      "sourceSha256": "0ec37ce94ee2acc63ad6b120e1051f9841d172778cc24adc0023fb8dccf0a7cd",
+      "bytes": 1477821,
+      "sourceBytes": 5995146
+    },
+    {
+      "id": "cmn",
+      "file": "cmn.tab.gz",
+      "url": "https://raw.githubusercontent.com/omwn/omw-data/406bf83b3c507a3d1f26e88252d5d66893fd36bf/wns/cow/wn-data-cmn.tab",
+      "sha256": "f6f33f9202fa07b562fa294cb8f0e7fa0305fddcc890205e1cd76caf94918d04",
+      "sourceSha256": "379fd2e41d3e1395f9f27cf23a39c6181849ffb4020c14a07ed2a4d4dd651122",
+      "bytes": 721106,
+      "sourceBytes": 2547318
+    },
+    {
+      "id": "mcr-license",
+      "file": "mcr-license.txt",
+      "url": "https://raw.githubusercontent.com/omwn/omw-data/406bf83b3c507a3d1f26e88252d5d66893fd36bf/wns/mcr/LICENSE",
+      "sha256": "ccbb7b96a812b37a88a9cb8dfda92dc251e61c5fca5225ff23f5fc3d33b32a70",
+      "sourceSha256": "ccbb7b96a812b37a88a9cb8dfda92dc251e61c5fca5225ff23f5fc3d33b32a70",
+      "bytes": 907,
+      "sourceBytes": 907
+    },
+    {
+      "id": "cow-license",
+      "file": "cow-license.txt",
+      "url": "https://raw.githubusercontent.com/omwn/omw-data/406bf83b3c507a3d1f26e88252d5d66893fd36bf/wns/cow/LICENSE",
+      "sha256": "81a3cb1f97e120581d67c71424f2de5dd96325d951f991e8a092147a2a4b2321",
+      "sourceSha256": "81a3cb1f97e120581d67c71424f2de5dd96325d951f991e8a092147a2a4b2321",
+      "bytes": 1441,
+      "sourceBytes": 1441
+    },
+    {
+      "id": "wordnet-license",
+      "file": "wordnet-license.txt",
+      "url": "https://raw.githubusercontent.com/omwn/omw-data/406bf83b3c507a3d1f26e88252d5d66893fd36bf/wns/eng/LICENSE",
+      "sha256": "879422521551f1933cdb75a56c89da11ffce2c800c9431052d7b66207b5c2c68",
+      "sourceSha256": "879422521551f1933cdb75a56c89da11ffce2c800c9431052d7b66207b5c2c68",
+      "bytes": 1934,
+      "sourceBytes": 1934
+    }
+  ],
+  "licenses": {
+    "mcr": "CC-BY-3.0",
+    "cow": "Chinese Open Wordnet license",
+    "synsetIdentifiers": "Princeton WordNet license"
+  },
+  "attribution": {
+    "mcr": "Multilingual Central Repository contributors; Gonzalez-Agirre, Laparra and Rigau",
+    "cow": "Copyright 2013, 2014 Francis Bond, Shan Wang"
+  },
+  "url": "https://github.com/omwn/omw-data"
+}
