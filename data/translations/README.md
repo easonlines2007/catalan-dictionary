@@ -4,12 +4,12 @@ The first Gemini handoff contains 25 existing lemmas and 49 revised senses.
 Further batches are generated and checked by Codex. These are model-assisted translations reviewed
 against the provided definitions by Codex, not a human lexicographer's approval.
 
-The six current batches contain 211 records. Of these, 201 records with 375
+The seven current batches contain 218 records. Of these, 208 records with 389
 selected senses are imported; 10 records remain `needs_review`. The original
-2,884 Chinese-covered lemmas plus these additions give 3,085 covered lemmas.
-A separate MCR/COW source-reference layer adds 10,785 lemmas (15,650 aligned
-senses), bringing Chinese presence to 13,870. The source-bound bulk layer adds
-83,798 previously uncovered lemmas (95,319 published source senses before
+2,884 Chinese-covered lemmas plus these additions give 3,092 covered lemmas.
+A separate MCR/COW source-reference layer adds 10,783 lemmas (15,648 aligned
+senses), bringing Chinese presence to 13,875. The source-bound bulk layer adds
+83,793 previously uncovered lemmas (95,319 published source senses before
 preserving the higher-priority translations), for
 97,668 of 97,675 total entries. All 5,005 compact core lemmas now have Chinese.
 Seven source-insufficient forms or abbreviations remain in `bulk/source-gaps.json`:
@@ -126,3 +126,9 @@ and become an ordinary paired batch. See
   `ahir`, `hola`, `urgent` and `castellà` receive concise usable meanings;
   time, greeting, milk and Castilian senses remain separate. Original Chinese
   is preserved. These are model-assisted source comparisons, not human approval.
+- A second everyday batch adds 7 lemmas and 13 selected senses, including the
+  strong personal pronouns and `llevar`'s pronominal get-out-of-bed use. The older
+  `mare` input/reviewed pair gains its source-bound mother sense while preserving
+  its previously reviewed animal-uterus sense. Bulk corrections preserve the
+  preposition and plural in `amb nosaltres` and `amb vosaltres`, and describe
+  the article pair `el/la` without misleading personal-pronoun aliases.

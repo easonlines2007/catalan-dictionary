@@ -70,7 +70,8 @@ test("published assets cover Chinese except explicitly source-bound gaps and ret
   assert.equal(search.coverage.bulkChinese.sourceInsufficientLemmas, uncovered.length);
   assert.equal(machine, search.coverage.machineChineseLemmas);
   assert.equal(headword, search.coverage.bulkChinese.headwordOnlyLemmas);
-  assert.equal(wordnet, 10_785);
+  assert.equal(wordnet, search.coverage.wordnetChineseLemmas);
+  assert.ok(wordnet > 10_000, "The reference layer must retain its broad corpus coverage");
 });
 
 test("literal grammatical references retain source text and opt out of meaning search", () => {

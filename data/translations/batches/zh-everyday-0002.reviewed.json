@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-everyday-0002",
+  "recordCount": 7,
+  "records": [
+    {
+      "id": "4a5a1d33f04e06c5ad25",
+      "lemma": "tu",
+      "normalizedLemma": "tu",
+      "inputHash": "7df050e651ed41ce68e2c6c941eced3aa4ffe3253cd7db51e0d86ebe69b6d889",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "你（第二人称单数，重读代词）",
+          "aliasesZh": [
+            "你"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "aadf0643d5d2b1382bdd",
+      "lemma": "ell",
+      "normalizedLemma": "ell",
+      "inputHash": "067a81cc3d700f55c37704b2a739508be27a55b69ef899c9dfe22a23a164cb3b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "他（第三人称阳性单数，重读代词）",
+          "aliasesZh": [
+            "他"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6a112b445b3dab49ec2f",
+      "lemma": "ella",
+      "normalizedLemma": "ella",
+      "inputHash": "137cfb55727a452ccbe427688067aaa25ee8a3d4e393a8ac0e11c71215fac20f",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "她（第三人称阴性单数，重读代词）",
+          "aliasesZh": [
+            "她"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "81800833698485039a74",
+      "lemma": "nosaltres",
+      "normalizedLemma": "nosaltres",
+      "inputHash": "99fdc997ee9e9a01f26a0dbe8e04e5a9cce42235d11b4a3daf6106fbbb995949",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "我们（第一人称复数）",
+          "aliasesZh": [
+            "我们"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "bf894fe4082e484ed794",
+      "lemma": "vosaltres",
+      "normalizedLemma": "vosaltres",
+      "inputHash": "f03592015eb53a17af4a05ee72b7fad84ef66c0fe7899d96a5fdddc04bf61cfe",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "pronoun",
+          "translationZh": "你们（第二人称复数）",
+          "aliasesZh": [
+            "你们"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "d0fbf9b89616f94900c1",
+      "lemma": "emmalaltir",
+      "normalizedLemma": "emmalaltir",
+      "inputHash": "18c1ea37c09730d1f74bd5d5b2de6f6a8213f212715096f053186012df3f4979",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e007",
+            "e003"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "生病；患病",
+          "aliasesZh": [
+            "生病",
+            "患病"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e008",
+            "e002"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "使生病；使患病",
+          "aliasesZh": []
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "6f9bc2dabe3859ac85e6",
+      "lemma": "llevar",
+      "normalizedLemma": "llevar",
+      "inputHash": "ea6f4bf7bda7ecd02a60cf044894ff9b4428de3d02df35c92a337cf68e796d99",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004",
+            "e024"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（自反，llevar-se）起床；起身离床",
+          "aliasesZh": [
+            "起床"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e020"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "移除；拿走",
+          "aliasesZh": [
+            "移除",
+            "拿走"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e021"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "抬起；扶起",
+          "aliasesZh": [
+            "抬起",
+            "扶起"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（植物）结果；结出果实",
+          "aliasesZh": [
+            "结出果实"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "（面团等）发酵膨胀",
+          "aliasesZh": []
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "verb",
+          "translationZh": "接生；助产",
+          "aliasesZh": [
+            "接生",
+            "助产"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

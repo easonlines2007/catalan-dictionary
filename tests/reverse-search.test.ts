@@ -74,6 +74,22 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       if (now.status === "found") assert.ok(!primaryChinese(now.entry).includes("星座"));
       const school = await lookupWord("学校", "zh");
       if (school.status === "found") assert.equal(primaryChinese(school.entry), "学校；學校");
+      const mother = await lookupWord("母亲", "zh");
+      assert.equal(mother.status, "found");
+      if (mother.status === "found") {
+        assert.equal(mother.lemma, "mare");
+        assert.ok(primaryChinese(mother.entry).startsWith("母亲；妈妈"));
+        assert.ok(mother.entry.chinese?.some((meaning) => meaning.includes("子宫")), "Keep the existing reviewed secondary sense");
+      }
+      const wake = await lookupWord("起床", "zh");
+      assert.equal(wake.status, "found");
+      if (wake.status === "found") assert.ok(primaryChinese(wake.entry).includes("llevar-se"));
+      for (const [query, badLemma] of [["你", "amb vosaltres"], ["我们", "amb nosaltres"], ["她", "el/la"]]) {
+        const repo = new SearchRepository();
+        const manifest = await dictionaryRepository.manifest();
+        const hits = await repo.reverse(query, "zh", manifest.dataVersion);
+        assert.ok(!hits.some((hit) => hit.normalizedLemma === badLemma), query);
+      }
     });
     await t.test("explicit Chinese questions search the full extracted term and retain visible context", async () => {
       for (const mode of ["auto", "zh"] as const) {

@@ -281,7 +281,9 @@
     {
       "lemma": "taronja",
       "terms": [
-        "橙子"
+        "橙子",
+        "柳橙",
+        "柳丁"
       ],
       "preferred": true,
       "evidence": [
@@ -677,6 +679,497 @@
           "text": "rice"
         }
       ]
+    },
+    {
+      "lemma": "jo",
+      "terms": [
+        "我"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "I"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tu",
+      "terms": [
+        "你"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "you (singular); thou"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ell",
+      "terms": [
+        "他"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "he"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ella",
+      "terms": [
+        "她"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "she"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "nosaltres",
+      "terms": [
+        "我们"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "we"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "vosaltres",
+      "terms": [
+        "你们"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "you (plural)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ells",
+      "terms": [
+        "他们"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "they (masculine or mixed group)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "elles",
+      "terms": [
+        "她们"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "they (feminine)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "parada d'autobús",
+      "terms": [
+        "公交站",
+        "公交车站",
+        "巴士站",
+        "公车站"
+      ],
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "l",
+          "text": "parada d'autobús"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ou",
+      "terms": [
+        "鸡蛋"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "egg"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tren",
+      "terms": [
+        "火车"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "train"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "lavabo",
+      "terms": [
+        "厕所",
+        "洗手间",
+        "卫生间"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bathroom"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "porc",
+      "terms": [
+        "猪肉"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pork"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "amic",
+      "terms": [
+        "朋友"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "friend"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "mare",
+      "terms": [
+        "母亲",
+        "妈妈"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "mother"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "botiga",
+      "terms": [
+        "商店"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "shop, store"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "infant",
+      "terms": [
+        "孩子",
+        "儿童"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "infant, child"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "emmalaltir",
+      "terms": [
+        "生病",
+        "患病"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to become ill"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "doldre",
+      "terms": [
+        "疼",
+        "疼痛"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to hurt"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "aprendre",
+      "terms": [
+        "学习"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to learn"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "llevar",
+      "terms": [
+        "起床"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to get up, to get out of bed"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "taxi",
+      "terms": [
+        "的士",
+        "计程车",
+        "出租车"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "taxi"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "bicicleta",
+      "terms": [
+        "单车",
+        "脚踏车",
+        "自行车"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bicycle"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "metro",
+      "terms": [
+        "捷运",
+        "地铁"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "metro (train)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "programari",
+      "terms": [
+        "软体",
+        "软件"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "software"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "disc dur",
+      "terms": [
+        "硬碟",
+        "硬盘"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hard disk"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ordinador",
+      "terms": [
+        "计算机",
+        "电脑"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "computer"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "telèfon mòbil",
+      "terms": [
+        "行动电话",
+        "手提电话",
+        "移动电话",
+        "手机"
+      ],
+      "evidence": [
+        {
+          "layer": "freedict",
+          "field": "es",
+          "text": "teléfono móvil"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "patata",
+      "terms": [
+        "马铃薯",
+        "土豆"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "potato"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tomàquet",
+      "terms": [
+        "西红柿",
+        "番茄"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tomato"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "formatge",
+      "terms": [
+        "芝士",
+        "起司",
+        "奶酪",
+        "乳酪"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cheese"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "iogurt",
+      "terms": [
+        "优格",
+        "酸乳",
+        "酸奶"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "yoghurt"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "gelat",
+      "terms": [
+        "雪糕",
+        "冰激凌",
+        "冰淇淋"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "ice cream"
+        }
+      ],
+      "preferred": true
     }
   ]
 }

@@ -4,7 +4,7 @@
   "recordCount": 100,
   "dictionaryVersion": "4b1a025bc29c18a5",
   "sourceCommit": "f7a567af57fda450a8dd4e1977bc8c1698a3ac46",
-  "selection": "100 core lemmas: 94 unique lemmas from a fixed-seed audit of the first 1000 offline translation attempts, plus de/i/el/a/que/en by core-first priorityRank. Chinese corrections were written by Codex through direct source comparison, not imported from machine output. Up to three selected, source-backed senses per lemma; additional original Catalan evidence resolves ambiguous isolated English glosses. This is partial sense coverage and not human lexicographer approval.",
+  "selection": "100 core lemmas: 94 unique lemmas from a fixed-seed audit of the first 1000 offline translation attempts, plus de/i/el/a/que/en by core-first priorityRank. Chinese corrections were written by Codex through direct source comparison, not imported from machine output. Up to three selected, source-backed senses per lemma; additional original Catalan evidence resolves ambiguous isolated English glosses. This is partial sense coverage and not human lexicographer approval. The mare record was subsequently expanded with its committed English mother definition; its original animal-uterus sense is preserved.",
   "records": [
     {
       "id": "959a45d44e6fcf58361e",
@@ -1593,9 +1593,23 @@
             "noun"
           ],
           "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "mother",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
         }
       ],
-      "inputHash": "1153b087005389e0ae36429c9383ea94f90cb1637d313c86cfba7b2204d3fca5"
+      "inputHash": "ee9c0f3a599914d33e0757abd016d397cf9dba93bde35a1ed93a09b22e8afc4e"
     },
     {
       "id": "7832540b23ae6270bce3",

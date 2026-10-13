@@ -3,11 +3,12 @@ import { chineseMatchingKey } from "./chinese-search.ts";
 /** Recognize explicit dictionary questions, without paraphrasing their content. */
 export function extractChineseSearchTerm(query: string): string | undefined {
   const input = chineseMatchingKey(query).replace(/^(?:请问|请教一下)[，,\s]*/u, "");
-  const language = "(?:加泰语|加泰罗尼亚语|加泰隆尼亚语|català|catala)";
+  const language = "\\s*(?:加泰语|加泰罗尼亚语|加泰隆尼亚语|català|catala)\\s*";
   const patterns = [
-    new RegExp(`^(.+?)(?:用|在)${language}(?:中)?(?:怎么说|如何说|怎么写|叫什么|是什么)(?:呢|呀|啊)?$`, "u"),
+    new RegExp(`^(.+?)(?:用|在|的)?${language}(?:中|里)?(?:怎么说|如何说|怎么写|叫什么|是什么)(?:呢|呀|啊)?$`, "u"),
     new RegExp(`^(.+?)的${language}(?:是什么|怎么说|怎么写)(?:呢|呀|啊)?$`, "u"),
     new RegExp(`^${language}(?:中)?(?:怎么说|如何说|怎么写)[：:\\s]*(.+?)$`, "u"),
+    new RegExp(`^(.+?)(?:翻译成|译成)${language}$`, "u"),
     /^(.+?)(?:怎么说|如何说|怎么写)(?:呢|呀|啊)?$/u,
   ];
   for (const pattern of patterns) {

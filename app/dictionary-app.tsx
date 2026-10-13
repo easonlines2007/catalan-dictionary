@@ -516,7 +516,12 @@ export function DictionaryApp() {
               onCompositionStart={() => setComposing(true)}
               onCompositionEnd={() => setComposing(false)}
               onKeyDown={(event) => {
-                if (event.nativeEvent.isComposing || composing) return;
+                if (event.nativeEvent.isComposing || composing || event.nativeEvent.keyCode === 229) {
+                  // Some IMEs close composition before their final Enter.
+                  // Preserve active composition; block only that late submit.
+                  if (event.key === "Enter" && !event.nativeEvent.isComposing && !composing) event.preventDefault();
+                  return;
+                }
                 if (event.key === "Escape") {
                   setSuggestionsOpen(false);
                   setActiveSuggestion(-1);

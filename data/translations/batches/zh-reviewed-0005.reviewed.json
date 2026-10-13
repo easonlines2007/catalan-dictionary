@@ -1075,9 +1075,20 @@
       "id": "074af2bf8e84854902ee",
       "lemma": "mare",
       "normalizedLemma": "mare",
-      "inputHash": "1153b087005389e0ae36429c9383ea94f90cb1637d313c86cfba7b2204d3fca5",
+      "inputHash": "ee9c0f3a599914d33e0757abd016d397cf9dba93bde35a1ed93a09b22e8afc4e",
       "status": "translated",
       "senses": [
+        {
+          "sourceRefs": [
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "母亲；妈妈",
+          "aliasesZh": [
+            "母亲",
+            "妈妈"
+          ]
+        },
         {
           "sourceRefs": [
             "e008"

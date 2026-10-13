@@ -53,8 +53,10 @@ The independent entry point is `/dictionary/search/manifest.json`:
 ## Partial matches and completions
 
 Typing is debounced by 180 ms; composition events defer suggestions until the
-Chinese IME commits. Stale work is cancelled and catalogues are reused. Matching
-yields between bounded chunks instead of blocking mobile input. Results rank
+Chinese IME commits. Stale work is cancelled and catalogues are reused. Input
+also guards legacy IME key code 229 when composition ends before the confirming
+Enter, as described in [MDN's IME keydown guidance](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event#keydown_events_with_ime).
+Matching yields between bounded chunks instead of blocking mobile input. Results rank
 exact keys, prefixes, internal substrings, then restricted Damerau–Levenshtein
 spelling distance (one edit below six characters, up to two for longer terms).
 Frequency and length break ties. One Chinese character or two Spanish letters

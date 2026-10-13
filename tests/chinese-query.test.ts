@@ -9,6 +9,9 @@ test("explicit dictionary questions retain their complete search term", () => {
     ["我不知道用加泰语怎么说", "我不知道"], ["不可以怎么说", "不可以"],
     ["二月用catala怎么说", "二月"], ["请用加泰语怎么说", "请"],
     ["学校怎么说呢", "学校"], ["加泰语怎么写电话", "电话"],
+    ["学校用 Català 怎么说", "学校"], ["学校在加泰语里怎么说", "学校"],
+    ["学校加泰语怎么说", "学校"], ["学校翻译成加泰语", "学校"],
+    ["学校的加泰语怎么说", "学校"],
   ]) assert.equal(extractChineseSearchTerm(query), expected, query);
 });
 

@@ -3480,6 +3480,16 @@
     ]
   },
   {
+    "jobId": "0c5857d9bfb45cc5f6fccf1267b2c7f4e3e67cc53f76ee95db5f943138bdf3ab",
+    "sourceHash": "c72e83eb4a2bc0a39739ae86807b6b14ecba7d0f99b17c714a56a0dfae35aa88",
+    "translationZh": "和你们一起",
+    "aliasesZh": [
+      "和你们一起"
+    ],
+    "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns.",
+    "evidence": []
+  },
+  {
     "jobId": "0c71084072992df7956ff15ef86fc9941b49a2a238369e0f567afedbb1fd4004",
     "sourceHash": "c192e31dfd7c0e0e8c94a9a397b5da6e86508b47347185bc3839b9e77af6ac3d",
     "translationZh": "参见「escórpora」：Scorpaena属的石鱼",
@@ -20694,6 +20704,14 @@
     "evidence": [
       "data/translations/bulk/sources/chinese-references.json#aviram"
     ]
+  },
+  {
+    "jobId": "48635f4062617c090959348ca93d7ee59c443e226fddab3393e0bf4f2d55ef96",
+    "sourceHash": "c2f57cb505594ab620646f140f1d72c5917204e04629aa201ca205ad57af061a",
+    "translationZh": "定冠词「el／la」（阳性／阴性单数）",
+    "aliasesZh": [],
+    "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns.",
+    "evidence": []
   },
   {
     "jobId": "4867335c9426f67400dfb07e1fe594c38daa49cd93b242135823126271548919",
@@ -38273,6 +38291,16 @@
     "evidence": [
       "data/translations/bulk/sources/chinese-references.json#fat"
     ]
+  },
+  {
+    "jobId": "8571725c072a903e779cde952ca5d36959c5966b73631df16a0095851d1f3c23",
+    "sourceHash": "b574f118dc26bdf8f161632fd66dc328a52d39ee2b836c9f11ca2cf4cb6c7c66",
+    "translationZh": "和我们一起",
+    "aliasesZh": [
+      "和我们一起"
+    ],
+    "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns.",
+    "evidence": []
   },
   {
     "jobId": "858649d7858300c5699e330361e1342a0a91429f59370902992bb5e39504b024",

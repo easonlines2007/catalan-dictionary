@@ -196,6 +196,176 @@
       "query": "米饭",
       "preferredLemma": "arròs",
       "sourceAliasLemma": "arròs"
+    },
+    {
+      "query": "我",
+      "preferredLemma": "jo",
+      "sourceAliasLemma": "jo"
+    },
+    {
+      "query": "你",
+      "preferredLemma": "tu",
+      "sourceAliasLemma": "tu"
+    },
+    {
+      "query": "他",
+      "preferredLemma": "ell",
+      "sourceAliasLemma": "ell"
+    },
+    {
+      "query": "她",
+      "preferredLemma": "ella",
+      "sourceAliasLemma": "ella"
+    },
+    {
+      "query": "我们",
+      "preferredLemma": "nosaltres",
+      "sourceAliasLemma": "nosaltres"
+    },
+    {
+      "query": "你们",
+      "preferredLemma": "vosaltres",
+      "sourceAliasLemma": "vosaltres"
+    },
+    {
+      "query": "他们",
+      "preferredLemma": "ells",
+      "sourceAliasLemma": "ells"
+    },
+    {
+      "query": "她们",
+      "preferredLemma": "elles",
+      "sourceAliasLemma": "elles"
+    },
+    {
+      "query": "公交站",
+      "preferredLemma": "parada d'autobús",
+      "sourceAliasLemma": "parada d'autobús"
+    },
+    {
+      "query": "鸡蛋",
+      "preferredLemma": "ou",
+      "sourceAliasLemma": "ou"
+    },
+    {
+      "query": "火车",
+      "preferredLemma": "tren",
+      "sourceAliasLemma": "tren"
+    },
+    {
+      "query": "厕所",
+      "preferredLemma": "lavabo",
+      "sourceAliasLemma": "lavabo"
+    },
+    {
+      "query": "猪肉",
+      "preferredLemma": "porc",
+      "sourceAliasLemma": "porc"
+    },
+    {
+      "query": "朋友",
+      "preferredLemma": "amic",
+      "sourceAliasLemma": "amic"
+    },
+    {
+      "query": "母亲",
+      "preferredLemma": "mare",
+      "sourceAliasLemma": "mare"
+    },
+    {
+      "query": "商店",
+      "preferredLemma": "botiga",
+      "sourceAliasLemma": "botiga"
+    },
+    {
+      "query": "孩子",
+      "preferredLemma": "infant",
+      "sourceAliasLemma": "infant"
+    },
+    {
+      "query": "生病",
+      "preferredLemma": "emmalaltir",
+      "sourceAliasLemma": "emmalaltir"
+    },
+    {
+      "query": "疼",
+      "preferredLemma": "doldre",
+      "sourceAliasLemma": "doldre"
+    },
+    {
+      "query": "学习",
+      "preferredLemma": "aprendre",
+      "sourceAliasLemma": "aprendre"
+    },
+    {
+      "query": "起床",
+      "preferredLemma": "llevar",
+      "sourceAliasLemma": "llevar"
+    },
+    {
+      "query": "的士",
+      "preferredLemma": "taxi",
+      "sourceAliasLemma": "taxi"
+    },
+    {
+      "query": "单车",
+      "preferredLemma": "bicicleta",
+      "sourceAliasLemma": "bicicleta"
+    },
+    {
+      "query": "捷运",
+      "preferredLemma": "metro",
+      "sourceAliasLemma": "metro"
+    },
+    {
+      "query": "软体",
+      "preferredLemma": "programari",
+      "sourceAliasLemma": "programari"
+    },
+    {
+      "query": "硬碟",
+      "preferredLemma": "disc dur",
+      "sourceAliasLemma": "disc dur"
+    },
+    {
+      "query": "计算机",
+      "preferredLemma": "ordinador",
+      "sourceAliasLemma": "ordinador"
+    },
+    {
+      "query": "行动电话",
+      "preferredLemma": "telèfon mòbil",
+      "sourceAliasLemma": "telèfon mòbil"
+    },
+    {
+      "query": "马铃薯",
+      "preferredLemma": "patata",
+      "sourceAliasLemma": "patata"
+    },
+    {
+      "query": "西红柿",
+      "preferredLemma": "tomàquet",
+      "sourceAliasLemma": "tomàquet"
+    },
+    {
+      "query": "芝士",
+      "preferredLemma": "formatge",
+      "sourceAliasLemma": "formatge"
+    },
+    {
+      "query": "优格",
+      "preferredLemma": "iogurt",
+      "sourceAliasLemma": "iogurt"
+    },
+    {
+      "query": "雪糕",
+      "preferredLemma": "gelat",
+      "sourceAliasLemma": "gelat"
+    },
+    {
+      "query": "柳橙",
+      "preferredLemma": "taronja",
+      "sourceAliasLemma": "taronja"
     }
   ]
 }

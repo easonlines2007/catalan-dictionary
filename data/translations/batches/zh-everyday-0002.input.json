@@ -1,0 +1,1006 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-everyday-0002",
+  "recordCount": 7,
+  "dictionaryVersion": "4b1a025bc29c18a5",
+  "sourceCommit": "04848f1afc32e18c8e70586d6b07e89090ab35e3",
+  "selection": "7 everyday lemmas without original Chinese. Codex compared selected senses against exact committed definitions, including pronoun number/gender and pronominal get-out-of-bed usage. Model-assisted review, not human approval or complete sense coverage.",
+  "records": [
+    {
+      "id": "4a5a1d33f04e06c5ad25",
+      "lemma": "tu",
+      "normalizedLemma": "tu",
+      "partOfSpeech": [
+        "pronoun",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 3397,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "tú",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "tú",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Pronom personal fort de la segona persona del singular.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "you (singular); thou",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "one (singular, impersonal)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ti",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "tú",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "7df050e651ed41ce68e2c6c941eced3aa4ffe3253cd7db51e0d86ebe69b6d889"
+    },
+    {
+      "id": "aadf0643d5d2b1382bdd",
+      "lemma": "ell",
+      "normalizedLemma": "ell",
+      "partOfSpeech": [
+        "pronoun",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 644,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "él",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "él",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Pronom personal tònic usat per a referir-se a la tercera persona del singular masculí.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "he",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "él",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "067a81cc3d700f55c37704b2a739508be27a55b69ef899c9dfe22a23a164cb3b"
+    },
+    {
+      "id": "6a112b445b3dab49ec2f",
+      "lemma": "ella",
+      "normalizedLemma": "ella",
+      "partOfSpeech": [
+        "pronoun",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 2198,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ella",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Pronom personal tònic usat per a referir-se a la tercera persona del singular femení.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "she",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ella",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun",
+            "pronoun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "137cfb55727a452ccbe427688067aaa25ee8a3d4e393a8ac0e11c71215fac20f"
+    },
+    {
+      "id": "81800833698485039a74",
+      "lemma": "nosaltres",
+      "normalizedLemma": "nosaltres",
+      "partOfSpeech": [
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 2967,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "nosotros",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "nosotras",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "nosotros",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "we",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "99fdc997ee9e9a01f26a0dbe8e04e5a9cce42235d11b4a3daf6106fbbb995949"
+    },
+    {
+      "id": "bf894fe4082e484ed794",
+      "lemma": "vosaltres",
+      "normalizedLemma": "vosaltres",
+      "partOfSpeech": [
+        "pronoun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 13262,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "vosotros",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ustedes",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "vosotros",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "you (plural)",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "pronoun"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "f03592015eb53a17af4a05ee72b7fad84ef66c0fe7899d96a5fdddc04bf61cfe"
+    },
+    {
+      "id": "d0fbf9b89616f94900c1",
+      "lemma": "emmalaltir",
+      "normalizedLemma": "emmalaltir",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 7259,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "enfermar",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Fer caure malalt.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Caure malalt.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "enfermar",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Fer caure malalt.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Caure malalt.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to become ill",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to make ill",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "enfermar",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "18c1ea37c09730d1f74bd5d5b2de6f6a8213f212715096f053186012df3f4979"
+    },
+    {
+      "id": "6f9bc2dabe3859ac85e6",
+      "lemma": "llevar",
+      "normalizedLemma": "llevar",
+      "partOfSpeech": [
+        "verb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 10993,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "detraer",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "quitar",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Separar alguna cosa del lloc on era o estava.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(pronominal) Eixir del llit.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Assistir la llevadora als parts.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Produir fruit.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Estufar-se el pa, una massa que fermenta.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e008",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "dar",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e009",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "levantar",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e010",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "partear",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e011",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "quitar",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e012",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "venirse",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Separar alguna cosa del lloc on era o estava.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e014",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Treure una cosa d'entre altres o del lloc on era o estava, suprimir-la.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e015",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Ajudar algú a eixir del llit.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e016",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Eixir del llit.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e017",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Assistir la llevadora als parts.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e018",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Produir fruit.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e019",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Estufar-se el pa, una massa que fermenta.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e020",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to remove, to take out",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e021",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to raise, to lift, to help get up",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e022",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to get up",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e023",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to rise",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e024",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "to get up, to get out of bed",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e025",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "dar",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e026",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "levantar",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e027",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "partear",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e028",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "quitar",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e029",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "sacar",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e030",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "venirse",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "verb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "ea6f4bf7bda7ecd02a60cf044894ff9b4428de3d02df35c92a337cf68e796d99"
+    }
+  ]
+}

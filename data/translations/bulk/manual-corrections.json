@@ -12156,5 +12156,30 @@
     ],
     "reason": "Source-compared correction of the trusted Spanish adjective supramunicipal: supra- + municipal refers to municipalities, not supermarkets.",
     "evidence": []
+  },
+  {
+    "normalizedLemma": "amb nosaltres",
+    "sourceText": "amb nosaltres",
+    "translationZh": "和我们一起",
+    "aliasesZh": [
+      "和我们一起"
+    ],
+    "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns."
+  },
+  {
+    "normalizedLemma": "amb vosaltres",
+    "sourceText": "amb vosaltres",
+    "translationZh": "和你们一起",
+    "aliasesZh": [
+      "和你们一起"
+    ],
+    "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns."
+  },
+  {
+    "normalizedLemma": "el/la",
+    "sourceText": "el/la",
+    "translationZh": "定冠词「el／la」（阳性／阴性单数）",
+    "aliasesZh": [],
+    "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns."
   }
 ]
