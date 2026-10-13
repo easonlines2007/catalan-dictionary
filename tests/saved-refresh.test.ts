@@ -36,6 +36,19 @@ test("snapshot refresh never resurrects removals or overwrites intervening re-sa
   assert.equal(await updateSavedSnapshot(newer, { ...newer.entry, normalizedLemma: "wrong" }, "base", "new"), undefined);
 });
 
+test("a partial offline entry cannot erase the saved Chinese meaning", async () => {
+  const old = await saveWord(result("offline-meaning", "已保存的释义"), "base");
+  const refreshed = await refreshSavedSnapshots([old], {
+    dataVersion: "base", searchDataVersion: "new", cancelled: () => false,
+    load: async () => ({ lemma: old.lemma, normalizedLemma: old.lemma }),
+    persist: updateSavedSnapshot,
+  });
+  assert.equal(refreshed.size, 0);
+  const stored = (await getSavedWords()).find((record) => record.lemma === old.lemma);
+  assert.deepEqual(stored?.entry.chinese, old.entry.chinese);
+  assert.equal(stored?.searchDataVersion, "old");
+});
+
 test("large saved collections bound requests, skip current records and retry failed packs", async () => {
   const records: SavedRecord[] = Array.from({ length: 12 }, (_, index) => ({
     lemma: `word${index}`, entry: { lemma: `word${index}`, normalizedLemma: `word${index}` },

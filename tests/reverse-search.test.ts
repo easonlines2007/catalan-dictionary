@@ -46,6 +46,25 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
   };
   Object.defineProperty(globalThis, "navigator", { configurable: true, value: { onLine: true } });
   try {
+    await t.test("source-compared everyday meanings replace mismatched references without overwriting original Chinese", async () => {
+      for (const [query, lemma, meaning] of [
+        ["现在", "ara", "现在"], ["昨天", "ahir", "昨天"], ["你好", "hola", "你好"],
+        ["西班牙语", "castellà", "西班牙语"], ["紧急", "urgent", "紧急"],
+      ]) {
+        const found = await lookupWord(query, "zh");
+        assert.equal(found.status, "found");
+        if (found.status !== "found") continue;
+        assert.equal(found.lemma, lemma);
+        assert.ok(primaryChinese(found.entry).includes(meaning));
+        assert.ok(found.entry.source?.includes("zh-everyday-0001"));
+        assert.ok(!found.entry.chineseReference);
+        assert.ok(!found.entry.chineseMachine);
+      }
+      const now = await lookupWord("ara", "ca");
+      if (now.status === "found") assert.ok(!primaryChinese(now.entry).includes("星座"));
+      const school = await lookupWord("学校", "zh");
+      if (school.status === "found") assert.equal(primaryChinese(school.entry), "学校；學校");
+    });
     await t.test("explicit Chinese questions search the full extracted term and retain visible context", async () => {
       for (const mode of ["auto", "zh"] as const) {
         const query = "请问，公交车用加泰语怎么说？";

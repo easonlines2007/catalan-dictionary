@@ -1,0 +1,1348 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-everyday-0001",
+  "recordCount": 11,
+  "dictionaryVersion": "4b1a025bc29c18a5",
+  "sourceCommit": "55dd9e6f7be59425e5bbcecb0e66980aad751b50",
+  "selection": "11 everyday lemmas lacking original Chinese. Codex compared selected senses against the exact committed source definitions; this is model-assisted source review, not human lexicographer approval or complete sense coverage. Existing reference/machine overlays do not count as original Chinese.",
+  "records": [
+    {
+      "id": "8117d0f2ef776bc349a3",
+      "lemma": "hola",
+      "normalizedLemma": "hola",
+      "partOfSpeech": [
+        "interjection",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 1758,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "hola",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "interjection",
+            "noun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(castellanisme) Expressió de salutació familiar.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "hola",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "hello, hi",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "211fdf20095c5686c9398d1d93769d7d14284568c6f795fe778950cc5187ea27"
+    },
+    {
+      "id": "0fe21a426287d9ffa520",
+      "lemma": "llet",
+      "normalizedLemma": "llet",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 4238,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "leche",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "leche",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Líquid provinent dels mamífers femella.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Líquid blanquinós que s'assembla a la llet dels mamífers.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "milk",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "leche",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "8bca7720b959bb594ac5e2da13f9a159a4d812ad7afc7c48be6de22c1ef8bf45"
+    },
+    {
+      "id": "01424b123e523f5f5aac",
+      "lemma": "ahir",
+      "normalizedLemma": "ahir",
+      "partOfSpeech": [
+        "adverb"
+      ],
+      "existingChinese": [],
+      "priorityRank": 16057,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ayer",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "En el dia antecedent i immediat al dia en què es parla, és a dir, al dia d'avui.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Poc temps fa, fa poc, poc ha.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ayer",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "En el dia antecedent i immediat al dia en què es parla, és a dir, al dia d'avui.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Poc temps fa, fa poc, poc ha.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "yesterday",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ayer",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "eb2c4d4173d5062e9f5429ab1c6fe55da03442983b5f5d071f2f6e716424220d"
+    },
+    {
+      "id": "ae1ab943808ccca8318a",
+      "lemma": "ara",
+      "normalizedLemma": "ara",
+      "partOfSpeech": [
+        "adverb",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 173,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ahora",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adverb"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ahora",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ara",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "En aquests moments.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Altar per a sacrificis i col·locar ofrenes, emprat sovint en les religions paganes.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "now (at the present time)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ahora",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e008",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "ara",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adverb",
+            "noun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "55de37464ea8c035331222a6d313671b9272261367c72879d1748a27845f354b"
+    },
+    {
+      "id": "4bbf74a7cee349d58be7",
+      "lemma": "migdia",
+      "normalizedLemma": "migdia",
+      "partOfSpeech": [
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 6927,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "mediodía",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Part del dia entre el matí i la tarda, convencionalment entre les 12 h i les 14 h o 15 h segons l'horari laboral o l'hora de dinar.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "mediodía",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Hora en què el sol està en el punt més alt, corresponent a les 12:00 hores.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Part del dia entre el matí i la tarda, convencionalment entre les 12 h i les 14 h o 15 h segons l'horari laboral o l'hora de dinar.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Punt de l'horitzó mirant el sol quan està en el punt més alt.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "midday, noon",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "south",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "mediodía",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "noun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "1cc497f68645dbb041513bf386e306dcd8ebc4c1b4f3c0d814eef592f74e5cba"
+    },
+    {
+      "id": "9b9339dc3758b4b4bb90",
+      "lemma": "poc",
+      "normalizedLemma": "poc",
+      "partOfSpeech": [
+        "adjective",
+        "adverb",
+        "determiner"
+      ],
+      "existingChinese": [],
+      "priorityRank": 202,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "poco",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "En quantitat escassa.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "De manera escassa.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "poco",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "En quantitat escassa.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "De manera escassa.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e007",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "little, not much",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e008",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "few, not many",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "a few, not a lot of",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "rarely, not often",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e011",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "poco",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "adverb",
+            "determiner"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "87043a5ff3fb039ee69a831ca25e557d1195cce82bdfa7ea924658ffb892aba3"
+    },
+    {
+      "id": "cbf02cbe6724741792bc",
+      "lemma": "urgent",
+      "normalizedLemma": "urgent",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 8464,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "urgente",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "urgente",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Que no comporta cap retard ni dilació.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "urgent",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "urgente",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "66359f511bbec8e3dc0f7e37ea1b1ad7456c5ffac97b9626bb926da088a34171"
+    },
+    {
+      "id": "db9edfb5ab2b4da5afd7",
+      "lemma": "castellà",
+      "normalizedLemma": "castellà",
+      "partOfSpeech": [
+        "adjective",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 290,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "castellano",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Propi de Castella.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Relatiu a la llengua originària de Castella.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Senyor d'un castell.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e005",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Natural de Castella.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e006",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "(masculí singular) Llengua pròpia de Castella.",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict"
+        },
+        {
+          "id": "e007",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "castellano",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e008",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "español",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e009",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Senyor d'un castell.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e010",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Propi de Castella.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e011",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Relatiu a la llengua originària de Castella.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e012",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Natural de Castella.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e013",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Llengua pròpia de Castella.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e014",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "castellanoparlant",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e015",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Castilian (Spanish language)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e016",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "Castilian (Spanish)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e017",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "castellan (governor or caretaker of a castle or keep)",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e018",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "judicial position in the Order of Malta",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e019",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "castellano",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "adjective",
+            "noun"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "1c13b1213752ddf5b2e38d9460452061a8b1db38d311de2050e359259fd80c70"
+    },
+    {
+      "id": "8d207f00ceeee3bb20b7",
+      "lemma": "no ho entenc",
+      "normalizedLemma": "no ho entenc",
+      "partOfSpeech": [
+        "expression"
+      ],
+      "existingChinese": [],
+      "priorityRank": 64816,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "I don't understand",
+          "recordSourceIds": [
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "expression"
+          ],
+          "layer": "wiktionary"
+        }
+      ],
+      "inputHash": "b6161648f83cc769e89ddd529d0fb26f8845ee60cc8016e2bfcb078f3da7d6c6"
+    },
+    {
+      "id": "a6fda04b230c993a855e",
+      "lemma": "bona tarda",
+      "normalizedLemma": "bona tarda",
+      "partOfSpeech": [
+        "interjection",
+        "noun"
+      ],
+      "existingChinese": [],
+      "priorityRank": 20999,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "buenas tardes",
+          "recordSourceIds": [
+            "apertium-cat",
+            "apertium-spa-cat"
+          ],
+          "recordPartOfSpeech": [
+            "interjection",
+            "noun"
+          ],
+          "layer": "lex",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "buenas tardes",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Fórmula de salutació de trobada o comiat usada durant la tarda.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "good afternoon",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "buenas tardes",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "a89622e847d199aef6adcfbc9039c1dfc370b2c34f10bff1d9b16a8b8ee06f8e"
+    },
+    {
+      "id": "c73b952327db6e558124",
+      "lemma": "bon vespre",
+      "normalizedLemma": "bon vespre",
+      "partOfSpeech": [
+        "interjection"
+      ],
+      "existingChinese": [],
+      "priorityRank": 20998,
+      "evidence": [
+        {
+          "id": "e001",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "buenas tardes",
+          "recordSourceIds": [
+            "freedict-cat-spa"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "freedict",
+          "languageVerified": true
+        },
+        {
+          "id": "e002",
+          "kind": "definition",
+          "declaredLanguage": "ca",
+          "text": "Fórmula de salutació de trobada usada durant el vespre.",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e003",
+          "kind": "definition",
+          "declaredLanguage": "en",
+          "text": "good evening",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary"
+        },
+        {
+          "id": "e004",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "buenas noches",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        },
+        {
+          "id": "e005",
+          "kind": "translation_hint",
+          "declaredLanguage": "es",
+          "text": "buenas tardes",
+          "recordSourceIds": [
+            "cawiktionary",
+            "kaikki-enwiktionary-ca"
+          ],
+          "recordPartOfSpeech": [
+            "interjection"
+          ],
+          "layer": "wiktionary",
+          "languageVerified": false
+        }
+      ],
+      "inputHash": "7fe125aca99e28f2d3b4f8b91c2e7cdcca4f9feaf8294818439f067c0fdc7252"
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "batchId": "zh-everyday-0001",
+  "recordCount": 11,
+  "records": [
+    {
+      "id": "8117d0f2ef776bc349a3",
+      "lemma": "hola",
+      "normalizedLemma": "hola",
+      "inputHash": "211fdf20095c5686c9398d1d93769d7d14284568c6f795fe778950cc5187ea27",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e004"
+          ],
+          "partOfSpeech": "interjection",
+          "translationZh": "（非正式问候）你好；嗨",
+          "aliasesZh": [
+            "你好",
+            "嗨"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "0fe21a426287d9ffa520",
+      "lemma": "llet",
+      "normalizedLemma": "llet",
+      "inputHash": "8bca7720b959bb594ac5e2da13f9a159a4d812ad7afc7c48be6de22c1ef8bf45",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "奶；乳汁（如牛奶，雌性哺乳动物分泌的液体）",
+          "aliasesZh": [
+            "奶",
+            "乳汁",
+            "牛奶"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "乳状液体（外观类似奶的白色液体）",
+          "aliasesZh": [
+            "乳状液体"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "01424b123e523f5f5aac",
+      "lemma": "ahir",
+      "normalizedLemma": "ahir",
+      "inputHash": "eb2c4d4173d5062e9f5429ab1c6fe55da03442983b5f5d071f2f6e716424220d",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e007"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "昨天；昨日",
+          "aliasesZh": [
+            "昨天",
+            "昨日"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "不久前；最近",
+          "aliasesZh": [
+            "不久前",
+            "最近"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "ae1ab943808ccca8318a",
+      "lemma": "ara",
+      "normalizedLemma": "ara",
+      "inputHash": "55de37464ea8c035331222a6d313671b9272261367c72879d1748a27845f354b",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004",
+            "e006"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "现在；此刻",
+          "aliasesZh": [
+            "现在",
+            "此刻"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "祭坛（用于祭祀或放置供品）",
+          "aliasesZh": [
+            "祭坛"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "4bbf74a7cee349d58be7",
+      "lemma": "migdia",
+      "normalizedLemma": "migdia",
+      "inputHash": "1cc497f68645dbb041513bf386e306dcd8ebc4c1b4f3c0d814eef592f74e5cba",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e004",
+            "e007"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "中午；正午",
+          "aliasesZh": [
+            "中午",
+            "正午"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e002"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "中午时段（上午与下午之间，通常约12时至14或15时）",
+          "aliasesZh": [
+            "中午时段"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e006",
+            "e008"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "南；南方",
+          "aliasesZh": [
+            "南",
+            "南方"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "9b9339dc3758b4b4bb90",
+      "lemma": "poc",
+      "normalizedLemma": "poc",
+      "inputHash": "87043a5ff3fb039ee69a831ca25e557d1195cce82bdfa7ea924658ffb892aba3",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e007",
+            "e008",
+            "e009"
+          ],
+          "partOfSpeech": "determiner",
+          "translationZh": "少；不多；少量",
+          "aliasesZh": [
+            "少",
+            "不多",
+            "少量"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e003",
+            "e010"
+          ],
+          "partOfSpeech": "adverb",
+          "translationZh": "很少；不常",
+          "aliasesZh": [
+            "很少",
+            "不常"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "cbf02cbe6724741792bc",
+      "lemma": "urgent",
+      "normalizedLemma": "urgent",
+      "inputHash": "66359f511bbec8e3dc0f7e37ea1b1ad7456c5ffac97b9626bb926da088a34171",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "紧急的；急迫的（不能延误的）",
+          "aliasesZh": [
+            "紧急",
+            "急迫"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "db9edfb5ab2b4da5afd7",
+      "lemma": "castellà",
+      "normalizedLemma": "castellà",
+      "inputHash": "1c13b1213752ddf5b2e38d9460452061a8b1db38d311de2050e359259fd80c70",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e006",
+            "e013",
+            "e015"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "西班牙语；卡斯蒂利亚语",
+          "aliasesZh": [
+            "西班牙语",
+            "卡斯蒂利亚语"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e002",
+            "e003",
+            "e010",
+            "e011",
+            "e016"
+          ],
+          "partOfSpeech": "adjective",
+          "translationZh": "卡斯蒂利亚的；与卡斯蒂利亚语有关的",
+          "aliasesZh": [
+            "卡斯蒂利亚的"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e005",
+            "e012"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "卡斯蒂利亚人",
+          "aliasesZh": [
+            "卡斯蒂利亚人"
+          ]
+        },
+        {
+          "sourceRefs": [
+            "e004",
+            "e009",
+            "e017"
+          ],
+          "partOfSpeech": "noun",
+          "translationZh": "城堡管理人；城堡领主",
+          "aliasesZh": [
+            "城堡管理人",
+            "城堡领主"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "8d207f00ceeee3bb20b7",
+      "lemma": "no ho entenc",
+      "normalizedLemma": "no ho entenc",
+      "inputHash": "b6161648f83cc769e89ddd529d0fb26f8845ee60cc8016e2bfcb078f3da7d6c6",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e001"
+          ],
+          "partOfSpeech": "expression",
+          "translationZh": "我不明白；我听不懂",
+          "aliasesZh": [
+            "我不明白",
+            "我听不懂"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "a6fda04b230c993a855e",
+      "lemma": "bona tarda",
+      "normalizedLemma": "bona tarda",
+      "inputHash": "a89622e847d199aef6adcfbc9039c1dfc370b2c34f10bff1d9b16a8b8ee06f8e",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e003",
+            "e004"
+          ],
+          "partOfSpeech": "interjection",
+          "translationZh": "下午好（下午见面或告别时的问候）",
+          "aliasesZh": [
+            "下午好"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "id": "c73b952327db6e558124",
+      "lemma": "bon vespre",
+      "normalizedLemma": "bon vespre",
+      "inputHash": "7fe125aca99e28f2d3b4f8b91c2e7cdcca4f9feaf8294818439f067c0fdc7252",
+      "status": "translated",
+      "senses": [
+        {
+          "sourceRefs": [
+            "e002",
+            "e003"
+          ],
+          "partOfSpeech": "interjection",
+          "translationZh": "晚上好；傍晚好（傍晚见面时的问候）",
+          "aliasesZh": [
+            "晚上好",
+            "傍晚好"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

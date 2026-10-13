@@ -343,12 +343,13 @@ export class DictionaryRepository {
     >,
     descriptors: DictionaryShardDescriptor[] | undefined,
     normalizedLemma: string,
+    requireComplete = false,
   ): Promise<DictionaryEntry | undefined> {
     if (!descriptors?.length) return undefined;
     const descriptor = descriptorForKey(descriptors, normalizedLemma);
     if (!descriptor) return undefined;
     const records = await this.loadJson<PackedLexiconShard>(kind, descriptor).catch(
-      () => undefined,
+      (error) => { if (requireComplete) throw error; return undefined; },
     );
     if (!records) return undefined;
     const record = records.find((item) => item.n === normalizedLemma);
@@ -399,39 +400,43 @@ export class DictionaryRepository {
     return this.coreMorphologyPromise;
   }
 
-  async getEntry(normalizedLemma: string): Promise<DictionaryEntry | undefined> {
+  async getEntry(normalizedLemma: string, options: { requireComplete?: boolean } = {}): Promise<DictionaryEntry | undefined> {
+    const requireComplete = options.requireComplete ?? false;
     const curated = DICTIONARY[normalizedLemma];
     let manifest: DictionaryManifest;
     try {
       manifest = await this.manifest();
     } catch (error) {
-      if (curated) return curated;
+      if (curated && !requireComplete) return curated;
       throw error;
     }
     if (await this.compactCoreMode(manifest)) {
       const coreRecord = (await this.coreLexicon()).get(normalizedLemma);
       const enrichedCore = await searchRepository.coreEntry(normalizedLemma, manifest.dataVersion)
-        .catch(() => undefined);
+        .catch((error) => { if (requireComplete) throw error; return undefined; });
       const entry = mergeEntry(coreRecord ? mergeEntry(curated, unpackEntry(coreRecord)) : curated,
         enrichedCore ? unpackEntry(enrichedCore) : undefined);
       return entry ? enrichChinese(entry) : undefined;
     }
     const [base, freedict, wiktionary, curatedPack] = await Promise.all([
-      this.entryFromLayer("lex", manifest.lex, normalizedLemma),
+      this.entryFromLayer("lex", manifest.lex, normalizedLemma, requireComplete),
       this.entryFromLayer(
         "freedict",
         manifest.enrichment?.freedict,
         normalizedLemma,
+        requireComplete,
       ),
       this.entryFromLayer(
         "wiktionary",
         manifest.enrichment?.wiktionary,
         normalizedLemma,
+        requireComplete,
       ),
       this.entryFromLayer(
         "curated",
         manifest.enrichment?.curated,
         normalizedLemma,
+        requireComplete,
       ),
     ]);
     const merged = mergeEntry(
@@ -442,7 +447,7 @@ export class DictionaryRepository {
       const reviewed = enrichChinese(merged);
       if (reviewed.chinese?.length || reviewed.definitions?.zh?.length) return reviewed;
       const chinese = await searchRepository.chineseEntry(normalizedLemma, manifest.dataVersion)
-        .catch(() => undefined);
+        .catch((error) => { if (requireComplete) throw error; return undefined; });
       return mergeEntry(reviewed, chinese ? unpackEntry(chinese) : undefined);
     }
 
@@ -450,7 +455,7 @@ export class DictionaryRepository {
     // range shard. Decode it only after the small range lookup cannot run.
     const coreRecord = (await this.coreLexicon()).get(normalizedLemma);
     const enrichedCore = await searchRepository.coreEntry(normalizedLemma, manifest.dataVersion)
-      .catch(() => undefined);
+      .catch((error) => { if (requireComplete) throw error; return undefined; });
     const fallback = mergeEntry(coreRecord ? unpackEntry(coreRecord) : undefined,
       enrichedCore ? unpackEntry(enrichedCore) : undefined);
     return fallback ? enrichChinese(fallback) : undefined;

@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { matchSuggestions } from "../lib/search-suggestions.ts";
 import type { SuggestionRow } from "../lib/search-suggestions.ts";
-import { chineseMatchingKey, sameChineseReading } from "../lib/chinese-search.ts";
+import { chineseMatchingKey, chineseWordReadings, sameChineseReading } from "../lib/chinese-search.ts";
 
 test("completions rank exact, prefix and internal terms ahead of spelling corrections", async () => {
   const rows: SuggestionRow[] = [
@@ -72,6 +72,21 @@ test("headword hints outrank prose and Chinese results do not repeat the same le
   assert.equal((await matchSuggestions(rows, "学", "zh")).filter((item) => item.lemma === "escola").length, 1);
   const exact = await matchSuggestions([...rows, ["学校的", "学校的", "escolar", 3000]], "学校的", "zh");
   assert.equal(exact[0].lemma, "escolar", "An existing exact adjective wins over a stripped modifier");
+});
+
+test("polyphonic spelling hints follow source phrase readings without expanding every possible sound", async () => {
+  const rows: SuggestionRow[] = [["银行", "银行", "banc", 100], ["音乐", "音乐", "música", 200],
+    ["行李", "行李", "equipatge", 300], ["重庆", "重庆", "Chongqing", 400],
+    ["银杏", "银杏", "ginkgo", 500]];
+  assert.deepEqual(chineseWordReadings("银行账户"), ["yin", "hang", "zhang", "hu"]);
+  assert.deepEqual(chineseWordReadings("音乐"), ["yin", "yue"]);
+  assert.deepEqual(chineseWordReadings("行李"), ["xing", "li"]);
+  for (const [query, lemma] of [["银航", "banc"], ["音悦", "música"], ["音樂", "música"], ["充庆", "Chongqing"]]) {
+    assert.equal((await matchSuggestions(rows, query, "zh"))[0]?.lemma, lemma, query);
+  }
+  const unrelated = await matchSuggestions(rows, "银形", "zh");
+  assert.equal(unrelated[0].lemma, "ginkgo");
+  assert.ok(!unrelated.some((item) => item.lemma === "banc"), "银行 must use háng rather than an arbitrary alternative reading");
 });
 
 test("real Chinese matches are not padded with unrelated fuzzy words regardless of row order", async () => {

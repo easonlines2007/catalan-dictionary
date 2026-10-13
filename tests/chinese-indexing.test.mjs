@@ -24,3 +24,36 @@ assert list(terms('注意：这是长句中的举例、说明。')) == []
   const result = spawnSync("python3", ["-c", script, resolve(root, "scripts/dictionary")], { encoding: "utf8" });
   assert.equal(result.status, 0, result.stderr);
 });
+
+test("Chinese runtime tables reproduce pinned sources and reject tampering", () => {
+  const script = `
+import sys,json,gzip,tempfile,pathlib,shutil,hashlib
+root=pathlib.Path(sys.argv[1]);sys.path.insert(0,str(root/'scripts/dictionary'))
+from build_chinese_search import build,toneless
+original=json.loads((root/'lib/chinese-search-data.json').read_text())
+with tempfile.TemporaryDirectory() as temporary:
+    target=pathlib.Path(temporary)
+    shutil.copytree(root/'scripts/dictionary/vendor',target/'scripts/dictionary/vendor')
+    (target/'lib').mkdir();(target/'public/dictionary/search').mkdir(parents=True)
+    result=build(target);assert result==original
+    phrases=json.loads(gzip.decompress((target/'scripts/dictionary/vendor/pinyin/phrases_dict.json.gz').read_bytes()))
+    by={}
+    for phrase,reading in result['phraseReadings'].items():by.setdefault(phrase[0],[]).append((phrase,reading))
+    for group in by.values():group.sort(key=lambda item:-len(item[0]))
+    for word,values in phrases.items():
+        if len(word)<2 or len(word)!=len(values) or not all(values):continue
+        actual=[];i=0
+        while i<len(word):
+            hit=next(((key,reading) for key,reading in by.get(word[i],[]) if word.startswith(key,i)),None)
+            if hit:actual+=hit[1];i+=len(hit[0])
+            else:actual.append(result['readings'].get(word[i],word[i]));i+=1
+        assert actual==[toneless(part[0]) for part in values],word
+    snapshot=target/'scripts/dictionary/vendor/pinyin/phrases_dict.json.gz'
+    snapshot.write_bytes(snapshot.read_bytes()+b'tampered')
+    try:build(target)
+    except ValueError as error:assert 'checksum mismatch' in str(error)
+    else:raise AssertionError('Tampered phrase snapshot accepted')
+`;
+  const result = spawnSync("python3", ["-c", script, root], { encoding: "utf8" });
+  assert.equal(result.status, 0, result.stderr);
+});

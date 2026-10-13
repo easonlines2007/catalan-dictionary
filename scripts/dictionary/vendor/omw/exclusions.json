@@ -81,6 +81,11 @@
       "lemma": "calendari gregorià",
       "synset": "15209706-n",
       "reason": "Calendar is not a calendar month."
+    },
+    {
+      "lemma": "ara",
+      "synset": "09202285-n",
+      "reason": "Committed Catalan definitions establish the adverb now and the sacrificial altar noun, but no Ara constellation sense or proper-noun POS. The bare Spanish ara match does not establish the astronomical sense."
     }
   ],
   "terms": [

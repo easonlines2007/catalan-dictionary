@@ -42,6 +42,7 @@ directory = root / 'scripts/dictionary/vendor/omw'
 actual, holds, signature = w.load_sources(directory)
 assert '瀑布' in actual['cmn']['09475292-n']
 assert ('plusvàlua', '13312190-n') in {(r['lemma'], r['synset']) for r in holds['senses']}
+assert ('ara', '09202285-n') in {(r['lemma'], r['synset']) for r in holds['senses']}
 assert signature['revision'] == '406bf83b3c507a3d1f26e88252d5d66893fd36bf'
 with tempfile.TemporaryDirectory() as temporary:
     destination = pathlib.Path(temporary)

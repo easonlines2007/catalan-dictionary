@@ -78,8 +78,9 @@ Short literal terms outrank long prose; length precedes frequency within a
 match tier. A trailing 的 can offer a labelled headword hint, while an exact
 adjective always wins. Same-reading spelling corrections require the same
 length, at least one unchanged Han character in the same position, and at most
-one changed character (two for five or more characters). Only primary tone-free
-readings are used, so polyphonic characters are intentionally conservative.
+one changed character (two for five or more characters). Longest source phrase
+readings handle polyphonic words such as 银行 and 音乐; otherwise one primary
+tone-free character reading is used. Alternative readings are not enumerated.
 Literal matches are not padded with unrelated fuzzy terms; if strong phonetic
 hints exist, weaker edit-only guesses are omitted. Latin-input pinyin search
 and general semantic paraphrasing are not implemented.

@@ -1,6 +1,6 @@
 import { normalizeSearchKey } from "./search-normalization.ts";
 import type { SearchSuggestion } from "./types.ts";
-import { chineseMatchingKey, sameChineseReading, simplifyChinese } from "./chinese-search.ts";
+import { chineseMatchingKey, chineseWordReadings, simplifyChinese } from "./chinese-search.ts";
 
 export type SuggestionRow = [key: string, term: string, lemma: string, rank: number];
 
@@ -71,7 +71,7 @@ export async function matchSuggestions(
   return signal?.aborted ? [] : best.map((item) => item.suggestion);
 }
 
-type ChineseRow = [key: string, term: string, lemma: string, rank: number, traditional?: string];
+type ChineseRow = [key: string, term: string, lemma: string, rank: number, traditional?: string, readings?: string[]];
 const chineseCatalogues = new WeakMap<SuggestionRow[], Promise<ChineseRow[]>>();
 
 async function prepareChinese(rows: SuggestionRow[]): Promise<ChineseRow[]> {
@@ -104,6 +104,7 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
   const chars = Array.from(key);
   if (!key || limit <= 0 || chars.length > 64 || signal?.aborted) return [];
   const catalogue = await prepareChinese(rows);
+  const reading = chineseWordReadings(key);
   const traditional = simplifyChinese(query) !== query;
   const negative = /^(?:不|没|无|未|非|别)/u.test(key);
   const number = key.match(/^(?:第)?[0-9一二三四五六七八九十百千万亿两零〇]+/u)?.[0];
@@ -139,10 +140,11 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
       if (number !== candidateNumber) continue;
       const other = Array.from(candidate);
       const changed = chars.filter((char, position) => char !== other[position]);
-      const phonetic = chars.length === length && changed.length > 0
+      const eligible = chars.length === length && changed.length > 0
         && changed.length <= (chars.length >= 5 ? 2 : 1)
-        && chars.some((char, position) => /\p{Script=Han}/u.test(char) && char === other[position])
-        && chars.every((char, position) => char === other[position] || sameChineseReading(char, other[position]));
+        && chars.some((char, position) => /\p{Script=Han}/u.test(char) && char === other[position]);
+      const candidateReading = eligible ? catalogue[i][5] ??= chineseWordReadings(candidate) : undefined;
+      const phonetic = !!candidateReading && reading.every((sound, position) => sound === candidateReading[position]);
       if (phonetic) { score = 3 + changed.length * 0.1; kind = "fuzzy"; }
       else {
         const maximum = chars.length < 6 ? 1 : 2;

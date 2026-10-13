@@ -4,12 +4,13 @@ The first Gemini handoff contains 25 existing lemmas and 49 revised senses.
 Further batches are generated and checked by Codex. These are model-assisted translations reviewed
 against the provided definitions by Codex, not a human lexicographer's approval.
 
-The five current batches contain 200 records. Of these, 190 records with 355
+The six current batches contain 211 records. Of these, 201 records with 375
 selected senses are imported; 10 records remain `needs_review`. The original
-2,884 Chinese-covered lemmas plus these additions give 3,074 covered lemmas.
-A separate MCR/COW source-reference layer adds 10,789 lemmas (15,654 aligned
-senses), bringing Chinese presence to 13,863. The source-bound bulk layer adds
-83,805 previously uncovered lemmas (95,319 selected source senses), for
+2,884 Chinese-covered lemmas plus these additions give 3,085 covered lemmas.
+A separate MCR/COW source-reference layer adds 10,785 lemmas (15,650 aligned
+senses), bringing Chinese presence to 13,870. The source-bound bulk layer adds
+83,798 previously uncovered lemmas (95,319 published source senses before
+preserving the higher-priority translations), for
 97,668 of 97,675 total entries. All 5,005 compact core lemmas now have Chinese.
 Seven source-insufficient forms or abbreviations remain in `bulk/source-gaps.json`:
 `anapat`, `carri`, `e)`, `e.`, `grl`, `ivaei`, `vé.`. They do not count as
@@ -119,3 +120,9 @@ results, not a claim about the entire corpus. Raw model output is not imported
 by the default build. Corrected translations must pass a separate source review
 and become an ordinary paired batch. See
 [`TRANSLATION_RUNTIME.md`](../../scripts/dictionary/TRANSLATION_RUNTIME.md).
+- The everyday batch compares 11 common lemmas and 20 selected senses with
+  their original definitions. `ara` now distinguishes 现在 from its 祭坛 noun
+  sense; the unsupported Ara constellation alignment is held separately.
+  `ahir`, `hola`, `urgent` and `castellà` receive concise usable meanings;
+  time, greeting, milk and Castilian senses remain separate. Original Chinese
+  is preserved. These are model-assisted source comparisons, not human approval.

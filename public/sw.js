@@ -1,4 +1,4 @@
-const APP_SHELL_CACHE = "catala-pocket-shell-v10";
+const APP_SHELL_CACHE = "catala-pocket-shell-v11";
 const DICTIONARY_BOOTSTRAP_CACHE = "catala-pocket-dictionary-bootstrap-v4";
 const CORE_ASSETS = [
   "/manifest.webmanifest",

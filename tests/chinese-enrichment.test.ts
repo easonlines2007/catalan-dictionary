@@ -111,6 +111,20 @@ test("new sharded translations refresh saved snapshots without changing authored
   }
 });
 
+test("saved refresh requires complete lexical layers while ordinary lookup can use a partial entry", async () => {
+  const previousFetch = globalThis.fetch;
+  const fetchAsset = localFetch();
+  globalThis.fetch = async (input) => {
+    if (String(input).includes("/wiktionary/")) return new Response(null, { status: 503 });
+    return fetchAsset(input);
+  };
+  try {
+    const partial = await new DictionaryRepository().getEntry("hola");
+    assert.equal(partial?.normalizedLemma, "hola");
+    await assert.rejects(new DictionaryRepository().getEntry("hola", { requireComplete: true }));
+  } finally { globalThis.fetch = previousFetch; }
+});
+
 test("authored Chinese and unrelated entries are preserved", () => {
   for (const existing of [
     { chinese: ["已有人工释义"] },

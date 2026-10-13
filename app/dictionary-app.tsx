@@ -156,7 +156,7 @@ export function DictionaryApp() {
         ]);
         const refreshed = await refreshSavedSnapshots(storedSaved, {
           dataVersion: base.dataVersion, searchDataVersion: search.dataVersion,
-          load: (lemma) => dictionaryRepository.getEntry(lemma),
+          load: (lemma) => dictionaryRepository.getEntry(lemma, { requireComplete: true }),
           persist: updateSavedSnapshot, cancelled: () => cancelled,
         });
         if (cancelled) return;

@@ -1,4 +1,5 @@
 import type { DictionaryEntry, SavedRecord } from "./types.ts";
+import { primaryChinese } from "./types.ts";
 
 type RefreshOptions = {
   dataVersion: string;
@@ -20,6 +21,9 @@ export async function refreshSavedSnapshots(records: SavedRecord[], options: Ref
       try {
         const entry = await options.load(previous.entry.normalizedLemma);
         if (!entry || options.cancelled()) continue;
+        // A repository may return a base record when an optional overlay
+        // fails offline. Do not erase a usable saved meaning or mark it fresh.
+        if (primaryChinese(previous.entry) && !primaryChinese(entry)) continue;
         const updated = await options.persist(previous, entry, options.dataVersion, options.searchDataVersion);
         if (updated) refreshed.set(previous.lemma, updated);
       } catch {

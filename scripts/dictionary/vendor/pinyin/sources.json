@@ -15,6 +15,12 @@
       "url": "https://raw.githubusercontent.com/mozillazg/python-pinyin/df101577145af2eb1abe5656e592e34e3bb56d23/LICENSE.txt",
       "sha256": "1e6c90014b4912815c296ee64bb6f6280af47e6d4c5d80e86232dfc5defe764c",
       "rawSha256": "1e6c90014b4912815c296ee64bb6f6280af47e6d4c5d80e86232dfc5defe764c"
+    },
+    {
+      "file": "phrases_dict.json.gz",
+      "url": "https://raw.githubusercontent.com/mozillazg/python-pinyin/df101577145af2eb1abe5656e592e34e3bb56d23/pypinyin/phrases_dict.json",
+      "sha256": "357b49e9aae88bec6b39bf8c44991fff1dcb852fbe2aa6490d4b155a8807e589",
+      "rawSha256": "a45ff140a6b631ca9c82127b280a2f414e0aba6bb2824a0e9d1e77fff359c665"
     }
   ]
 }
