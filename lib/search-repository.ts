@@ -11,6 +11,7 @@ import type {
 
 type Posting = [lemma: string, term: string, kind: "translation" | "alias", priority?: number];
 type ReverseIndex = Array<[key: string, postings: Posting[]]>;
+class MissingSearchShard extends Error {}
 export interface ReverseMatch {
   normalizedLemma: string;
   matchedTerm: string;
@@ -66,6 +67,22 @@ export class SearchRepository {
     return manifest;
   }
 
+  /** A tab can outlive a deployment. Refresh once when immutable packs retire. */
+  private async withManifest<T>(baseVersion: string, action: (manifest: SearchManifest) => Promise<T>): Promise<T> {
+    const manifest = await this.manifest(baseVersion);
+    const request = this.manifestPromise;
+    try { return await action(manifest); }
+    catch (error) {
+      if (!(error instanceof MissingSearchShard) || (typeof navigator !== "undefined" && navigator.onLine === false)) throw error;
+      // Concurrent misses share the refresh; an older request cannot discard
+      // the newer manifest that another lookup has already installed.
+      if (this.manifestPromise === request) this.manifestPromise = undefined;
+      const latest = await this.manifest(baseVersion);
+      if (latest.dataVersion === manifest.dataVersion) throw error;
+      return action(latest);
+    }
+  }
+
   storageKey(manifest: SearchManifest, descriptor: SearchShardDescriptor): string {
     return `${manifest.baseDataVersion}:search:${manifest.dataVersion}:${descriptor.kind}:${descriptor.id}`;
   }
@@ -75,6 +92,7 @@ export class SearchRepository {
     const stored = await getDictionaryShard(key).catch(() => undefined);
     if (stored) return stored.data;
     const response = await fetch(descriptor.path, { cache: "force-cache" });
+    if (response.status === 404 || response.status === 410) throw new MissingSearchShard(`Search shard retired: HTTP ${response.status}`);
     if (!response.ok) throw new Error(`Search shard: HTTP ${response.status}`);
     const data = await response.arrayBuffer();
     if (descriptor.sha256 && globalThis.crypto?.subtle) {
@@ -123,16 +141,18 @@ export class SearchRepository {
   }
 
   async coreEntry(lemma: string, baseVersion: string): Promise<PackedDictionaryEntry | undefined> {
-    const manifest = await this.manifest(baseVersion);
-    const rows = await this.load<PackedDictionaryEntry[]>(manifest, manifest.core.entries);
-    return rows.find((row) => row.n === lemma);
+    return this.withManifest(baseVersion, async (manifest) => {
+      const rows = await this.load<PackedDictionaryEntry[]>(manifest, manifest.core.entries);
+      return rows.find((row) => row.n === lemma);
+    });
   }
 
   async chineseEntry(lemma: string, baseVersion: string): Promise<PackedDictionaryEntry | undefined> {
-    const manifest = await this.manifest(baseVersion);
-    const descriptor = descriptorForKey(manifest.chinese, lemma);
-    if (!descriptor) return undefined;
-    return (await this.load<PackedDictionaryEntry[]>(manifest, descriptor)).find((row) => row.n === lemma);
+    return this.withManifest(baseVersion, async (manifest) => {
+      const descriptor = descriptorForKey(manifest.chinese, lemma);
+      if (!descriptor) return undefined;
+      return (await this.load<PackedDictionaryEntry[]>(manifest, descriptor)).find((row) => row.n === lemma);
+    });
   }
 
   async isOfflineLimited(manifest?: SearchManifest): Promise<boolean> {
@@ -142,73 +162,84 @@ export class SearchRepository {
   }
 
   async reverse(query: string, language: "es" | "zh", baseVersion: string, limit = 32): Promise<ReverseMatch[]> {
-    const manifest = await this.manifest(baseVersion);
-    const key = normalizeSearchKey(query, language);
-    const limited = await this.isOfflineLimited(manifest);
-    const keys = language === "zh" ? [...new Set([key, chineseMatchingKey(key)])] : [key];
-    let postings: Posting[] = [];
-    for (const candidate of keys) {
-      const descriptor = limited ? manifest.core[language] : descriptorForKey(manifest.indexes[language], candidate);
-      if (!descriptor) continue;
-      const index = await this.load<ReverseIndex>(manifest, descriptor);
-      postings = index.find(([term]) => term === candidate)?.[1] ?? [];
-      if (postings.length) break;
-    }
-    const exactQuery = normalizeSearchInput(query, language);
-    const chineseQuery = language === "zh" ? chineseMatchingKey(query) : undefined;
-    // Preserve the index's frequency ordering within each spelling group.
-    return postings.map(([normalizedLemma, matchedTerm, matchKind, priority]) => ({
-      normalizedLemma, matchedTerm, matchKind, matchedLanguage: language,
-      priority,
-      exact: normalizeSearchInput(matchedTerm, language) === exactQuery
-        || (chineseQuery !== undefined && chineseMatchingKey(matchedTerm) === chineseQuery),
-    })).sort((a, b) => Number(b.exact) - Number(a.exact) || (b.priority ?? 0) - (a.priority ?? 0)).slice(0, limit);
+    return this.withManifest(baseVersion, async (manifest) => {
+      const key = normalizeSearchKey(query, language);
+      const limited = await this.isOfflineLimited(manifest);
+      const keys = language === "zh" ? [...new Set([key, chineseMatchingKey(key)])] : [key];
+      let postings: Posting[] = [];
+      for (const candidate of keys) {
+        const descriptor = limited ? manifest.core[language] : descriptorForKey(manifest.indexes[language], candidate);
+        if (!descriptor) continue;
+        const index = await this.load<ReverseIndex>(manifest, descriptor);
+        postings = index.find(([term]) => term === candidate)?.[1] ?? [];
+        if (postings.length) break;
+      }
+      const exactQuery = normalizeSearchInput(query, language);
+      const chineseQuery = language === "zh" ? chineseMatchingKey(query) : undefined;
+      // Preserve the index's frequency ordering within each spelling group.
+      return postings.map(([normalizedLemma, matchedTerm, matchKind, priority]) => ({
+        normalizedLemma, matchedTerm, matchKind, matchedLanguage: language,
+        priority,
+        exact: normalizeSearchInput(matchedTerm, language) === exactQuery
+          || (chineseQuery !== undefined && chineseMatchingKey(matchedTerm) === chineseQuery),
+      })).sort((a, b) => Number(b.exact) - Number(a.exact) || (b.priority ?? 0) - (a.priority ?? 0)).slice(0, limit);
+    });
   }
 
   async suggest(query: string, language: "es" | "zh", baseVersion: string, limit = 8, signal?: AbortSignal): Promise<SearchSuggestion[]> {
     const key = normalizeSearchKey(query, language);
     if (!key || (language === "es" && key.length < 2) || Array.from(key).length > 64 || signal?.aborted) return [];
-    const manifest = await this.manifest(baseVersion);
-    const limited = await this.isOfflineLimited(manifest);
-    const descriptor = limited ? undefined : manifest.suggestions?.[language];
-    const cacheKey = `${manifest.dataVersion}:${language}:${descriptor ? "full" : "core"}`;
-    let catalogue = this.catalogues.get(cacheKey);
-    if (!catalogue) {
-      catalogue = descriptor
-        ? this.load<SuggestionRow[]>(manifest, descriptor)
-        : Promise.all([
-          this.load<ReverseIndex>(manifest, manifest.core[language]),
-          this.load<PackedDictionaryEntry[]>(manifest, manifest.core.entries),
-        ]).then(([index, entries]) => {
-          const byLemma = new Map(entries.map((entry) => [entry.n, entry]));
-          return index.map(([term, postings]): SuggestionRow => {
-            const [lemma, display] = postings[0];
-            const entry = byLemma.get(lemma);
-            return [term, language === "zh" ? term : display, entry?.l ?? lemma, entry?.r ?? Number.MAX_SAFE_INTEGER];
+    return this.withManifest(baseVersion, async (manifest) => {
+      const limited = await this.isOfflineLimited(manifest);
+      const descriptor = limited ? undefined : manifest.suggestions?.[language];
+      const cacheKey = `${manifest.dataVersion}:${language}:${descriptor ? "full" : "core"}`;
+      let catalogue = this.catalogues.get(cacheKey);
+      if (!catalogue) {
+        catalogue = descriptor
+          ? this.load<SuggestionRow[]>(manifest, descriptor)
+          : Promise.all([
+            this.load<ReverseIndex>(manifest, manifest.core[language]),
+            this.load<PackedDictionaryEntry[]>(manifest, manifest.core.entries),
+          ]).then(([index, entries]) => {
+            const byLemma = new Map(entries.map((entry) => [entry.n, entry]));
+            return index.map(([term, postings]): SuggestionRow => {
+              const [lemma, display] = postings[0];
+              const entry = byLemma.get(lemma);
+              return [term, language === "zh" ? term : display, entry?.l ?? lemma, entry?.r ?? Number.MAX_SAFE_INTEGER];
+            });
           });
-        });
-      this.catalogues.set(cacheKey, catalogue);
-      void catalogue.catch(() => this.catalogues.delete(cacheKey));
-    }
-    try {
-      return await matchSuggestions(await catalogue, query, language, limit, signal);
-    } catch (error) {
-      // A failed extended download can still offer the installed core terms.
-      if (!descriptor) throw error;
-      const rows = await this.load<ReverseIndex>(manifest, manifest.core[language]);
-      return matchSuggestions(rows.map(([term, postings]) => [term,
-        language === "zh" ? term : postings[0][1], postings[0][0], Number.MAX_SAFE_INTEGER]), query, language, limit, signal);
-    }
+        this.catalogues.set(cacheKey, catalogue);
+        void catalogue.catch(() => this.catalogues.delete(cacheKey));
+      }
+      try {
+        return await matchSuggestions(await catalogue, query, language, limit, signal);
+      } catch (error) {
+        if (error instanceof MissingSearchShard) throw error;
+        // A failed extended download can still offer the installed core terms.
+        if (!descriptor) throw error;
+        const rows = await this.load<ReverseIndex>(manifest, manifest.core[language]);
+        return matchSuggestions(rows.map(([term, postings]) => [term,
+          language === "zh" ? term : postings[0][1], postings[0][0], Number.MAX_SAFE_INTEGER]), query, language, limit, signal);
+      }
+    });
   }
 
   async ensureCoreOffline(baseVersion: string): Promise<void> {
-    const manifest = await this.manifest(baseVersion);
-    await Promise.all(manifest.offline.core.map((descriptor) => this.prime(manifest, descriptor)));
-    await setDictionaryMetadata(`searchCoreReady:${manifest.dataVersion}`, true);
+    return this.withManifest(baseVersion, async (manifest) => {
+      await Promise.all(manifest.offline.core.map((descriptor) => this.prime(manifest, descriptor)));
+      await setDictionaryMetadata(`searchCoreReady:${manifest.dataVersion}`, true);
+    });
   }
 
   async prime(manifest: SearchManifest, descriptor: SearchShardDescriptor): Promise<void> {
-    await this.compressed(manifest, descriptor, true);
+    try { await this.compressed(manifest, descriptor, true); }
+    catch (error) {
+      if (error instanceof MissingSearchShard) {
+        const active = this.manifestPromise;
+        if (active && await active.catch(() => undefined) === manifest && this.manifestPromise === active) this.manifestPromise = undefined;
+      }
+      throw error;
+    }
   }
 }
 

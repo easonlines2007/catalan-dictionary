@@ -309,6 +309,9 @@ export function DictionaryApp() {
     if (request !== searchRequest.current) return;
     setResult(nextResult);
     setSearching(false);
+    void dictionaryRepository.searchManifest().then((latest) => {
+      if (request === searchRequest.current) setSearchManifest((current) => current?.dataVersion === latest.dataVersion ? current : latest);
+    }).catch(() => undefined);
 
     if (lookupFailed) {
       setAnnouncement(

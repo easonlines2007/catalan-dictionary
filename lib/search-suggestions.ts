@@ -116,6 +116,7 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
   const compare = (a: Ranked, b: Ranked) => a.score - b.score || a.length - b.length
     || a.rank - b.rank || a.suggestion.term.localeCompare(b.suggestion.term, "zh");
   let literal = false;
+  let direct = false;
   for (let i = 0; i < catalogue.length; i += 1) {
     if (i % 8192 === 0) {
       if (i) await new Promise<void>((resolve) => setTimeout(resolve, 0));
@@ -126,12 +127,12 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
     const prose = (length > 8 && /[,，;；。:：]/u.test(candidate)) || length > Math.max(12, chars.length + 8);
     let score: number;
     let kind: SearchSuggestion["kind"];
-    if (candidate === key) { score = 0; kind = "exact"; literal = true; }
-    else if (candidate === unmodified) { score = 0.5; kind = "related"; literal = true; }
-    else if (candidate.startsWith(key)) { score = 1 + Number(prose) * 1.5; kind = "prefix"; literal ||= !prose; }
+    if (candidate === key) { score = 0; kind = "exact"; literal = true; direct = true; }
+    else if (candidate === unmodified) { score = 0.5; kind = "related"; literal = true; direct = true; }
+    else if (candidate.startsWith(key)) { score = 1 + Number(prose) * 1.5; kind = "prefix"; literal ||= !prose; direct ||= !prose; }
     else if (candidate.includes(key)) { score = 2 + Number(prose) * 1.5; kind = "contains"; literal ||= !prose; }
     else {
-      if (literal || chars.length < 2 || Math.abs(length - chars.length) > (chars.length < 6 ? 1 : 2)
+      if (direct || chars.length < 2 || Math.abs(length - chars.length) > (chars.length < 6 ? 1 : 2)
           || !chars.some((char) => candidate.includes(char))) continue;
       // An edit may fix spelling, but must not quietly remove 不/无 or change
       // a leading quantity/ordinal into another number.
@@ -145,8 +146,9 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
         && chars.some((char, position) => /\p{Script=Han}/u.test(char) && char === other[position]);
       const candidateReading = eligible ? catalogue[i][5] ??= chineseWordReadings(candidate) : undefined;
       const phonetic = !!candidateReading && reading.every((sound, position) => sound === candidateReading[position]);
-      if (phonetic) { score = 3 + changed.length * 0.1; kind = "fuzzy"; }
+      if (phonetic) { score = 1.75 + changed.length * 0.1; kind = "fuzzy"; }
       else {
+        if (literal) continue;
         const maximum = chars.length < 6 ? 1 : 2;
         const edits = distance(chars, other, maximum);
         if (edits > maximum) continue;
@@ -156,7 +158,7 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
     }
     if (literal) {
       for (let j = best.length - 1; j >= 0; j -= 1) {
-        if (best[j].suggestion.kind === "fuzzy") best.splice(j, 1);
+        if (best[j].suggestion.kind === "fuzzy" && (direct || best[j].score >= 4)) best.splice(j, 1);
       }
     }
     const term = traditional && traditionalTerm ? traditionalTerm : simplifiedTerm;
@@ -172,6 +174,6 @@ async function matchChineseSuggestions(rows: SuggestionRow[], query: string, lim
   }
   // Do not pad real Chinese matches with unrelated one-character corrections.
   const phonetic = best.some((item) => item.suggestion.kind === "fuzzy" && item.score < 4);
-  return signal?.aborted ? [] : best.filter((item) => (!literal || item.suggestion.kind !== "fuzzy")
+  return signal?.aborted ? [] : best.filter((item) => (!literal || item.suggestion.kind !== "fuzzy" || (!direct && item.score < 4))
     && (!phonetic || item.suggestion.kind !== "fuzzy" || item.score < 4)).map((item) => item.suggestion);
 }

@@ -46,6 +46,16 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
   };
   Object.defineProperty(globalThis, "navigator", { configurable: true, value: { onLine: true } });
   try {
+    await t.test("contextual Chinese spelling suggestions beat incidental substrings in the real catalogue", async () => {
+      for (const [query, lemma] of [["音悦", "música"], ["银航", "banc"]]) {
+        const hints = await suggestWords(query, "zh");
+        assert.equal(hints[0]?.lemma, lemma, query);
+        assert.equal(hints[0]?.kind, "fuzzy");
+        const missing = await lookupWord(query, "zh");
+        assert.equal(missing.status, "not-found");
+        if (missing.status === "not-found") assert.equal(missing.relatedSuggestions?.[0]?.lemma, lemma);
+      }
+    });
     await t.test("source-compared everyday meanings replace mismatched references without overwriting original Chinese", async () => {
       for (const [query, lemma, meaning] of [
         ["现在", "ara", "现在"], ["昨天", "ahir", "昨天"], ["你好", "hola", "你好"],

@@ -77,6 +77,7 @@ test("headword hints outrank prose and Chinese results do not repeat the same le
 test("polyphonic spelling hints follow source phrase readings without expanding every possible sound", async () => {
   const rows: SuggestionRow[] = [["银行", "银行", "banc", 100], ["音乐", "音乐", "música", 200],
     ["行李", "行李", "equipatge", 300], ["重庆", "重庆", "Chongqing", 400],
+    ["声音悦耳", "声音悦耳", "sonor", 1],
     ["银杏", "银杏", "ginkgo", 500]];
   assert.deepEqual(chineseWordReadings("银行账户"), ["yin", "hang", "zhang", "hu"]);
   assert.deepEqual(chineseWordReadings("音乐"), ["yin", "yue"]);

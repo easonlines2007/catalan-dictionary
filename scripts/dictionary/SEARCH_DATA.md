@@ -81,8 +81,10 @@ length, at least one unchanged Han character in the same position, and at most
 one changed character (two for five or more characters). Longest source phrase
 readings handle polyphonic words such as 银行 and 音乐; otherwise one primary
 tone-free character reading is used. Alternative readings are not enumerated.
-Literal matches are not padded with unrelated fuzzy terms; if strong phonetic
-hints exist, weaker edit-only guesses are omitted. Latin-input pinyin search
+Exact and compact prefix matches are not padded with unrelated fuzzy terms.
+A strong same-reading hint can precede an incidental internal substring, such
+as 音悦 → 音乐 ahead of 声音悦耳. If strong phonetic hints exist, weaker edit-only
+guesses are omitted. Latin-input pinyin search
 and general semantic paraphrasing are not implemented.
 Spelling hints preserve a leading negation and explicit number or ordinal:
 不可以 is not corrected to 可以, and 二月 is not corrected to 三月.
@@ -119,6 +121,11 @@ Every compressed asset has an immutable path under
 `/dictionary/search/<dataVersion>/`. Gzip output has a zero timestamp and no
 filename/platform header variation. No old version is deleted by the builder.
 The small mutable manifest is written only after all assets have been written.
+An open tab may outlive a release. If an immutable search pack returns 404 or
+410, the repository fetches the manifest again and retries once only when its
+search version changed and its base version still matches. Concurrent misses
+share the refresh. Offline misses, temporary server errors and checksum failures
+do not trigger a version switch. Failed downloads keep saved snapshots intact.
 
 A reverse shard is a JSON array:
 
