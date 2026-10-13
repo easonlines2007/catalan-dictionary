@@ -1,0 +1,11 @@
+.git
+.next
+node_modules
+work
+out
+dist
+outputs
+coverage
+.env*
+*.tsbuildinfo
+.DS_Store
