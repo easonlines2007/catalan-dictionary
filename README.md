@@ -89,7 +89,7 @@ For the whole dictionary:
    content. The download panel remains available with history, results and saved
    words; clearing history is unnecessary.
 2. Tap the download button and keep the page open. The compressed dictionary
-   and search data total about **27 MB**; the button shows the current size.
+   and search data total about **31 MB**; the button shows the current size.
    Allow extra browser storage for the app and its data.
 3. Wait until the button reads **完整词库已保存 · Diccionari complet desat** before
    going offline.

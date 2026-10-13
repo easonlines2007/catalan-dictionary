@@ -5,7 +5,9 @@ import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { gunzipSync } from "node:zlib";
-import { lookupWord } from "../lib/lookup.ts";
+import { createHash } from "node:crypto";
+import { lookupWord, normalizeCatalanInput, suggestWords } from "../lib/lookup.ts";
+import type { SuggestionRow } from "../lib/search-suggestions.ts";
 import { dictionaryRepository } from "../lib/dictionary-repository.ts";
 import { SearchRepository } from "../lib/search-repository.ts";
 import { normalizeSearchKey, searchCacheKey } from "../lib/search-normalization.ts";
@@ -123,6 +125,27 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       assert.deepEqual(withoutEnye, []);
     });
 
+    await t.test("full catalogues offer Spanish and Chinese completions with working lookup targets", async () => {
+      for (const [query, language, term, lemma] of [
+        ["escue", "es", "escuela", "escola"], ["esceula", "es", "escuela", "escola"],
+        ["学校校", "zh", "学校", "escola"], ["图形用户", "zh", "图形用户界面", "gui"],
+        ["基礎設", "zh", "基礎設施", "infraestructura"],
+      ] as const) {
+        const suggestions = await suggestWords(query, language);
+        const match = suggestions.find((item) => item.term === term);
+        assert.ok(match, `${query}: ${JSON.stringify(suggestions)}`);
+        assert.equal(match.language, language);
+        const result = await lookupWord(match.term, match.language);
+        assert.equal(result.status, "found");
+        if (result.status === "found") assert.ok(result.candidates.some((candidate) => candidate.entry?.normalizedLemma === lemma));
+      }
+      const miss = await lookupWord("esceula", "es");
+      assert.equal(miss.status, "not-found");
+      if (miss.status === "not-found") assert.ok(miss.relatedSuggestions?.some((item) => item.term === "escuela" && item.language === "es"));
+      const exact = await lookupWord("escuela", "es");
+      assert.equal(exact.status, "found", "Fuzzy search must never replace an exact lookup");
+    });
+
     await t.test("Chinese last-range routing includes normal and supplementary characters", async () => {
       const repository = new SearchRepository();
       const manifest = await dictionaryRepository.manifest();
@@ -143,6 +166,17 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
           previous = descriptor.last;
         }
       }
+    });
+
+    await t.test("a failed full catalogue download still offers common core translations", async () => {
+      const currentFetch = globalThis.fetch;
+      globalThis.fetch = async (input, init) => String(input).includes("/suggestions/")
+        ? new Response(null, { status: 503 }) : currentFetch(input, init);
+      try {
+        const fresh = new SearchRepository();
+        const base = await dictionaryRepository.manifest();
+        assert.ok((await fresh.suggest("escue", "es", base.dataVersion)).some((item) => item.term === "escuela"));
+      } finally { globalThis.fetch = currentFetch; }
     });
 
     await t.test("Wordnet equivalents resolve to Catalan with source and synset provenance", async () => {
@@ -172,6 +206,8 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       assert.ok(coreSchool?.d?.ca?.length || coreSchool?.d?.en?.length);
       assert.ok((await fresh.reverse("学校", "zh", base.dataVersion)).some((hit) => hit.normalizedLemma === "escola"));
       assert.ok((await fresh.reverse("escuela", "es", base.dataVersion)).some((hit) => hit.normalizedLemma === "escola"));
+      assert.ok((await fresh.suggest("escue", "es", base.dataVersion)).some((item) => item.term === "escuela"));
+      assert.ok((await fresh.suggest("学校校", "zh", base.dataVersion)).some((item) => item.term === "学校"));
       for (const [query, mode, lemma] of [
         ["学校", "zh", "escola"], ["學校", "zh", "escola"], ["escuela", "es", "escola"],
         ["escola", "ca", "escola"], ["上升", "zh", "pujar"], ["pujant", "ca", "pujar"],
@@ -230,10 +266,31 @@ test("search download lists bind core and all full assets to the same immutable 
   assert.deepEqual(core, new Set([manifest.core.entries.path, manifest.core.zh.path, manifest.core.es.path]));
   const full = new Set(manifest.offline.full.map((descriptor) => descriptor.path));
   assert.equal(full.size, manifest.offline.full.length);
-  for (const descriptor of [...manifest.offline.core, ...manifest.indexes.zh, ...manifest.indexes.es, ...manifest.chinese]) {
+  assert.ok(manifest.suggestions);
+  for (const descriptor of [...manifest.offline.core, ...manifest.indexes.zh, ...manifest.indexes.es, ...manifest.chinese, ...Object.values(manifest.suggestions)]) {
     assert.ok(full.has(descriptor.path));
     assert.ok(descriptor.path.startsWith(`/dictionary/search/${manifest.dataVersion}/`));
     assert.match(descriptor.sha256 ?? "", /^[a-f0-9]{64}$/);
+  }
+});
+
+test("full suggestion catalogues are checksummed and derive every term from accepted reverse postings", async () => {
+  const manifest = JSON.parse(await readFile(resolve(publicRoot, "dictionary/search/manifest.json"), "utf8")) as SearchManifest;
+  for (const language of ["es", "zh"] as const) {
+    const descriptor = manifest.suggestions![language];
+    const compressed = await readFile(resolve(publicRoot, descriptor.path.slice(1)));
+    assert.equal(createHash("sha256").update(compressed).digest("hex"), descriptor.sha256);
+    const catalogue = JSON.parse(gunzipSync(compressed).toString()) as SuggestionRow[];
+    const postings = (await Promise.all(manifest.indexes[language].map(async (shard) =>
+      JSON.parse(gunzipSync(await readFile(resolve(publicRoot, shard.path.slice(1)))).toString()) as Array<[string, Array<[string, string, string]>]>
+    ))).flat();
+    assert.deepEqual(catalogue.map((row) => row[0]), postings.map((row) => row[0]));
+    for (let i = 0; i < catalogue.length; i += 1) {
+      const [key, term, lemma, rank] = catalogue[i];
+      assert.equal(normalizeCatalanInput(lemma), postings[i][1][0][0]);
+      assert.equal(term, language === "zh" ? key : postings[i][1][0][1]);
+      assert.ok(Number.isFinite(rank));
+    }
   }
 });
 

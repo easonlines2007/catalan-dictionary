@@ -559,8 +559,19 @@ def build(args):
         core[lang] = write_pack(public, version, f"search-{lang}", f"core/{lang}", core_index, lambda row: row[0])
     index_descriptors = {lang: write_shards(public, version, f"search-{lang}", f"indexes/{lang}",
                                           indexes[lang], lambda row: row[0]) for lang in ("zh", "es")}
+    # A compact term catalogue avoids fetching/scanning every posting shard
+    # while typing. The first posting is already ordered by lemma frequency.
+    suggestions = {}
+    for lang in ("zh", "es"):
+        rows = []
+        for key, postings in indexes[lang]:
+            lemma, term, _ = postings[0]
+            rows.append([key, key if lang == "zh" else term,
+                         entries[lemma]["l"], entries[lemma].get("r", 2**53 - 1)])
+        suggestions[lang] = write_pack(public, version, "search-suggestions",
+                                       f"suggestions/{lang}", rows, lambda row: row[0])
     chinese = write_shards(public, version, "search-chinese", "chinese", [overlays[n] for n in sorted(overlays, key=utf16_key)], lambda row: row["n"])
-    full = list(core.values()) + index_descriptors["zh"] + index_descriptors["es"] + chinese
+    full = list(core.values()) + index_descriptors["zh"] + index_descriptors["es"] + chinese + list(suggestions.values())
     queue_counts = write_queue(args.queue_dir, records, entries, core_lemmas, {**machine, **bulk})
     coverage = {"lemmaCount": len(entries), "coreLemmaCount": len(core_lemmas),
                 "originalChineseLemmas": existing_count, "reviewedChineseLemmas": len(reviewed),
@@ -576,13 +587,14 @@ def build(args):
                 "queue": queue_counts, "machineImport": machine_stats,
                 "note": "Presence counts do not establish translation quality or complete sense coverage."}
     output = {"schemaVersion": 1, "dataVersion": version, "baseDataVersion": manifest["dataVersion"],
-              "core": core, "indexes": index_descriptors, "chinese": chinese,
+              "core": core, "indexes": index_descriptors, "chinese": chinese, "suggestions": suggestions,
               "offline": {"core": list(core.values()), "full": full},
               "sizes": {"compressedBytes": sum(d["bytes"] for d in full),
                         "rawBytes": sum(d["rawBytes"] for d in full),
                         "coreCompressedBytes": sum(d["bytes"] for d in core.values())},
               "coverage": coverage, "excludedSpanish": exclusions, "build": signature,
               "formats": {"reverse": "[normalizedTerm, [[normalizedLemma, matchedTerm, translation|alias], ...]]",
+                          "suggestions": "[normalizedTerm, displayTerm, CatalanLemma, frequencyRank][]; derived only from accepted reverse postings",
                           "entries": "PackedDictionaryEntry[]; zhMachine=true identifies machine-assisted translations; zhHeadword=true identifies headword-only term references",
                           "spanishKey": "NFC lowercase, punctuation/space normalization, accent fold except ñ",
                           "chineseKey": "NFKC lowercase and space normalization; original, OpenCC t2s and s2t aliases"},

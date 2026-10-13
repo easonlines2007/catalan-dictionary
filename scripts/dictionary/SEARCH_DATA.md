@@ -31,6 +31,13 @@ The independent entry point is `/dictionary/search/manifest.json`:
   so offline users do not lose their meanings after downloading only morphology.
 - `core.zh` and `core.es` describe the corresponding core reverse indexes.
 - `indexes.zh` and `indexes.es` are full sorted reverse index shard descriptors.
+- `suggestions.zh` and `suggestions.es` are compact, lazy-loaded full term
+  catalogues: `[normalizedTerm, displayTerm, CatalanLemma, frequencyRank][]`.
+  They are derived only from accepted reverse postings, with the most frequent
+  posting supplying the lemma preview. Clicking still performs the normal
+  language-specific lookup, retaining all alternative meanings. Chinese uses
+  each indexed simplified/traditional key as its display term; Spanish retains
+  the original accented spelling.
 - `chinese` is a sorted list of Chinese overlay descriptors routed by normalized
   Catalan lemma. These overlays fill missing Chinese; upstream or authored
   Chinese takes precedence.
@@ -40,8 +47,28 @@ The independent entry point is `/dictionary/search/manifest.json`:
   without a global vocabulary. Full search installation includes the three core assets, all
   reverse index shards, and all Chinese shards. The original dictionary's
   offline pack list is installed separately.
-- Descriptor kinds are `search-core`, `search-zh`, `search-es`, and
-  `search-chinese`.
+- Descriptor kinds are `search-core`, `search-zh`, `search-es`,
+  `search-chinese`, and `search-suggestions`.
+
+## Partial matches and completions
+
+Typing is debounced by 180 ms; composition events defer suggestions until the
+Chinese IME commits. Stale work is cancelled and catalogues are reused. Matching
+yields between bounded chunks instead of blocking mobile input. Results rank
+exact keys, prefixes, internal substrings, then restricted Damerau–Levenshtein
+spelling distance (one edit below six characters, up to two for longer terms).
+Frequency and length break ties. One Chinese character or two Spanish letters
+enable partial matches; spelling corrections require at least two Chinese
+characters or three Spanish letters. Up to eight results show the term,
+language and Catalan lemma; approximate spellings are explicitly labelled.
+This is lexical matching, not semantic or pinyin search. A failed exact lookup
+shows suggestions without silently replacing it with an approximate result.
+
+Full offline installation includes both full catalogues. Core-only offline
+mode derives suggestions from the existing core reverse indexes and entries,
+and never requests the extended catalogues. A failed online catalogue load
+can fall back to those same core terms. Missing catalogue descriptors in an
+older cached manifest are also compatible with this fallback.
 
 Every compressed asset has an immutable path under
 `/dictionary/search/<dataVersion>/`. Gzip output has a zero timestamp and no

@@ -8,6 +8,7 @@ import type {
   LookupResponse,
   FoundLookup,
   SearchLanguage,
+  SearchSuggestion,
 } from "./types.ts";
 
 export function normalizeCatalanInput(value: string): string {
@@ -504,9 +505,46 @@ export async function lookupWord(query: string, mode: SearchLanguage = "auto"): 
   if (catalan.status === "rejected") throw catalan.reason;
   const offlineLimited = searchManifest ? await searchRepository.isOfflineLimited(searchManifest) : undefined;
   const missed = catalan.status === "fulfilled" ? catalan.value : undefined;
+  const reverseSuggestions = await suggestWords(query, mode).catch(() => []);
+  const catalanSuggestions: SearchSuggestion[] = missed?.status === "not-found"
+    ? missed.suggestions.map((term) => ({ term, lemma: term, language: "ca",
+      kind: missed.resolutionSource === "prefix" ? "prefix" : "fuzzy" })) : [];
+  const seenSuggestions = new Set<string>();
+  const relatedSuggestions = [...catalanSuggestions, ...reverseSuggestions].filter((item) => {
+    const key = `${item.language}:${item.term}`;
+    if (seenSuggestions.has(key)) return false;
+    seenSuggestions.add(key);
+    return true;
+  }).slice(0, 8);
+  if (relatedSuggestions.length) {
+    return { status: "not-found", searchedForm, normalizedQuery, searchLanguage: mode, offlineLimited,
+      resolutionSource: missed?.status === "not-found" && catalanSuggestions.length ? missed.resolutionSource
+        : relatedSuggestions.some((item) => item.kind !== "fuzzy") ? "prefix" : "fuzzy",
+      suggestions: relatedSuggestions.map((item) => item.term), relatedSuggestions };
+  }
   return missed?.status === "not-found" ? { ...missed, searchLanguage: mode, offlineLimited }
     : { status: "not-found", searchedForm, normalizedQuery, searchLanguage: mode, offlineLimited,
       resolutionSource: "none", suggestions: [] };
+}
+
+/** Input completions retain their language, so clicks never search a Spanish
+ * or Chinese spelling as if it were a Catalan lemma. */
+export async function suggestWords(query: string, mode: SearchLanguage = "auto", limit = 8, signal?: AbortSignal): Promise<SearchSuggestion[]> {
+  const input = normalizeSearchInput(query, mode);
+  if (!input || !isSearchable(input) || Array.from(input).length > 64 || signal?.aborted) return [];
+  const language = mode === "auto" ? (/\p{Script=Han}/u.test(input) ? "zh" : "es") : mode;
+  if (language === "ca") {
+    return (await fuzzySuggestions(input, limit)).map((term) => ({ term, lemma: term, language: "ca",
+      kind: normalizeCatalanInput(term).startsWith(input) ? "prefix" : "fuzzy" }));
+  }
+  const base = await dictionaryRepository.manifest();
+  const reverse = await searchRepository.suggest(input, language, base.dataVersion, limit, signal);
+  if (mode !== "auto" || language === "zh" || signal?.aborted || reverse.length >= limit) return reverse;
+  const catalan = (await fuzzySuggestions(input, limit - reverse.length)).map((term) => ({
+    term, lemma: term, language: "ca" as const,
+    kind: normalizeCatalanInput(term).startsWith(input) ? "prefix" as const : "fuzzy" as const,
+  }));
+  return [...reverse, ...catalan].slice(0, limit);
 }
 
 function boundedEditDistance(left: string, right: string, maximum: number): number {

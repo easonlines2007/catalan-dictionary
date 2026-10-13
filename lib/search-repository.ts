@@ -2,8 +2,10 @@ import {
   getDictionaryMetadata, getDictionaryShard, putDictionaryShard, setDictionaryMetadata,
 } from "./storage.ts";
 import { normalizeSearchInput, normalizeSearchKey } from "./search-normalization.ts";
+import { matchSuggestions } from "./search-suggestions.ts";
+import type { SuggestionRow } from "./search-suggestions.ts";
 import type {
-  PackedDictionaryEntry, SearchManifest, SearchShardDescriptor,
+  PackedDictionaryEntry, SearchManifest, SearchShardDescriptor, SearchSuggestion,
 } from "./types.ts";
 
 type Posting = [lemma: string, term: string, kind: "translation" | "alias"];
@@ -27,6 +29,7 @@ export class SearchRepository {
   private memory = new Map<string, { value: unknown; bytes: number }>();
   private memoryBytes = 0;
   private inFlight = new Map<string, Promise<unknown>>();
+  private catalogues = new Map<string, Promise<SuggestionRow[]>>();
 
   async manifest(expectedBaseVersion?: string): Promise<SearchManifest> {
     if (!this.manifestPromise) {
@@ -151,6 +154,42 @@ export class SearchRepository {
       normalizedLemma, matchedTerm, matchKind, matchedLanguage: language,
       exact: normalizeSearchInput(matchedTerm, language) === exactQuery,
     })).sort((a, b) => Number(b.exact) - Number(a.exact)).slice(0, limit);
+  }
+
+  async suggest(query: string, language: "es" | "zh", baseVersion: string, limit = 8, signal?: AbortSignal): Promise<SearchSuggestion[]> {
+    const key = normalizeSearchKey(query, language);
+    if (!key || (language === "es" && key.length < 2) || Array.from(key).length > 64 || signal?.aborted) return [];
+    const manifest = await this.manifest(baseVersion);
+    const limited = await this.isOfflineLimited(manifest);
+    const descriptor = limited ? undefined : manifest.suggestions?.[language];
+    const cacheKey = `${manifest.dataVersion}:${language}:${descriptor ? "full" : "core"}`;
+    let catalogue = this.catalogues.get(cacheKey);
+    if (!catalogue) {
+      catalogue = descriptor
+        ? this.load<SuggestionRow[]>(manifest, descriptor)
+        : Promise.all([
+          this.load<ReverseIndex>(manifest, manifest.core[language]),
+          this.load<PackedDictionaryEntry[]>(manifest, manifest.core.entries),
+        ]).then(([index, entries]) => {
+          const byLemma = new Map(entries.map((entry) => [entry.n, entry]));
+          return index.map(([term, postings]): SuggestionRow => {
+            const [lemma, display] = postings[0];
+            const entry = byLemma.get(lemma);
+            return [term, language === "zh" ? term : display, entry?.l ?? lemma, entry?.r ?? Number.MAX_SAFE_INTEGER];
+          });
+        });
+      this.catalogues.set(cacheKey, catalogue);
+      void catalogue.catch(() => this.catalogues.delete(cacheKey));
+    }
+    try {
+      return await matchSuggestions(await catalogue, query, language, limit, signal);
+    } catch (error) {
+      // A failed extended download can still offer the installed core terms.
+      if (!descriptor) throw error;
+      const rows = await this.load<ReverseIndex>(manifest, manifest.core[language]);
+      return matchSuggestions(rows.map(([term, postings]) => [term,
+        language === "zh" ? term : postings[0][1], postings[0][0], Number.MAX_SAFE_INTEGER]), query, language, limit, signal);
+    }
   }
 
   async ensureCoreOffline(baseVersion: string): Promise<void> {

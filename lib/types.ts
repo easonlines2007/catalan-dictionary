@@ -137,8 +137,16 @@ export interface MissedLookup {
   normalizedQuery: string;
   resolutionSource: "prefix" | "fuzzy" | "none";
   suggestions: string[];
+  relatedSuggestions?: SearchSuggestion[];
   searchLanguage?: SearchLanguage;
   offlineLimited?: boolean;
+}
+
+export interface SearchSuggestion {
+  term: string;
+  lemma: string;
+  language: "es" | "zh" | "ca";
+  kind: "exact" | "prefix" | "contains" | "fuzzy";
 }
 
 export type LookupResponse = FoundLookup | MissedLookup;
@@ -229,7 +237,7 @@ export interface DictionaryManifest {
   };
 }
 
-export type SearchShardKind = "search-core" | "search-zh" | "search-es" | "search-chinese";
+export type SearchShardKind = "search-core" | "search-zh" | "search-es" | "search-chinese" | "search-suggestions";
 export interface SearchShardDescriptor extends DictionaryShardDescriptor {
   kind: SearchShardKind;
 }
@@ -243,6 +251,7 @@ export interface SearchManifest {
     es: SearchShardDescriptor;
   };
   indexes: { zh: SearchShardDescriptor[]; es: SearchShardDescriptor[] };
+  suggestions?: { zh: SearchShardDescriptor; es: SearchShardDescriptor };
   chinese: SearchShardDescriptor[];
   offline: { core: SearchShardDescriptor[]; full: SearchShardDescriptor[] };
   sizes: { compressedBytes: number; coreCompressedBytes: number; rawBytes: number };

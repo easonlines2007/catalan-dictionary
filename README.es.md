@@ -92,7 +92,7 @@ conexión. Para descargar el diccionario completo:
    debajo del contenido. El panel está disponible también con historial,
    resultados y favoritos; no hace falta borrar el historial.
 2. Toca el botón y deja la página abierta. El diccionario comprimido ocupa unos
-   **27 MB**, incluidos los datos de búsqueda; el botón indica el tamaño actual.
+   **31 MB**, incluidos los datos de búsqueda; el botón indica el tamaño actual.
    Reserva espacio adicional para la aplicación y sus datos.
 3. Espera a que aparezca **完整词库已保存 · Diccionari complet desat** antes de
    desconectarte.

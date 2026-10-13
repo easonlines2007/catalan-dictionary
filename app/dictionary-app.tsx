@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { POPULAR_SEARCHES } from "@/lib/dictionary";
 import { dictionaryRepository } from "@/lib/dictionary-repository";
-import { lookupWord, normalizeCatalanInput } from "@/lib/lookup";
+import { lookupWord, normalizeCatalanInput, suggestWords } from "@/lib/lookup";
 import { normalizeSearchInput, searchCacheKey } from "@/lib/search-normalization";
 import { findCatalanVoice, speakCatalan } from "@/lib/speech";
 import {
@@ -27,6 +27,7 @@ import type {
   SavedRecord,
   SearchLanguage,
   SearchManifest,
+  SearchSuggestion,
 } from "@/lib/types";
 import { primaryChinese, primarySpanish } from "@/lib/types";
 
@@ -104,6 +105,10 @@ export function DictionaryApp() {
   const [view, setView] = useState<View>("search");
   const [query, setQuery] = useState("");
   const [searchLanguage, setSearchLanguage] = useState<SearchLanguage>("auto");
+  const [composing, setComposing] = useState(false);
+  const [suggestionsOpen, setSuggestionsOpen] = useState(false);
+  const [suggestionResult, setSuggestionResult] = useState<{ key: string; items: SearchSuggestion[] } | null>(null);
+  const [activeSuggestion, setActiveSuggestion] = useState(-1);
   const [result, setResult] = useState<LookupResponse | null>(null);
   const [history, setHistory] = useState<HistoryRecord[]>([]);
   const [savedWords, setSavedWords] = useState<SavedRecord[]>([]);
@@ -118,6 +123,23 @@ export function DictionaryApp() {
   const [offlineInstalling, setOfflineInstalling] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const searchRequest = useRef(0);
+  const suggestionKey = searchCacheKey(query, searchLanguage);
+  const suggestions = suggestionsOpen && !composing && suggestionResult?.key === suggestionKey
+    ? suggestionResult.items : [];
+
+  useEffect(() => {
+    if (!suggestionsOpen || composing || !query.trim() || view !== "search") return;
+    const controller = new AbortController();
+    const timer = setTimeout(() => {
+      void suggestWords(query, searchLanguage, 8, controller.signal)
+        .then((items) => {
+          if (!controller.signal.aborted) setSuggestionResult({ key: suggestionKey, items });
+        }).catch(() => {
+          // Completions are optional; the normal lookup still reports failures.
+        });
+    }, 180);
+    return () => { clearTimeout(timer); controller.abort(); };
+  }, [query, searchLanguage, suggestionsOpen, composing, suggestionKey, view]);
 
   useEffect(() => {
     let cancelled = false;
@@ -234,6 +256,8 @@ export function DictionaryApp() {
     }
 
     const request = ++searchRequest.current;
+    setSuggestionsOpen(false);
+    setActiveSuggestion(-1);
     setView("search");
     setSearchLanguage(mode);
     setQuery(rawQuery.trim());
@@ -299,6 +323,7 @@ export function DictionaryApp() {
   const changeSearchLanguage = (mode: SearchLanguage) => {
     if (mode === searchLanguage) return;
     setSearchLanguage(mode);
+    setActiveSuggestion(-1);
     if (query.trim() && result) {
       void runSearch(query, mode);
     } else {
@@ -312,6 +337,7 @@ export function DictionaryApp() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (composing) return;
     void runSearch(query);
   };
 
@@ -465,7 +491,37 @@ export function DictionaryApp() {
               ref={inputRef}
               id="dictionary-search"
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setSuggestionsOpen(true);
+                setActiveSuggestion(-1);
+                searchRequest.current += 1;
+                setSearching(false);
+              }}
+              onFocus={() => setSuggestionsOpen(true)}
+              onBlur={(event) => {
+                if (event.relatedTarget instanceof HTMLElement && event.relatedTarget.closest("#search-completions")) return;
+                setSuggestionsOpen(false);
+                setActiveSuggestion(-1);
+              }}
+              onCompositionStart={() => setComposing(true)}
+              onCompositionEnd={() => setComposing(false)}
+              onKeyDown={(event) => {
+                if (event.nativeEvent.isComposing || composing) return;
+                if (event.key === "Escape") {
+                  setSuggestionsOpen(false);
+                  setActiveSuggestion(-1);
+                } else if (suggestions.length && (event.key === "ArrowDown" || event.key === "ArrowUp")) {
+                  event.preventDefault();
+                  setActiveSuggestion((current) => event.key === "ArrowDown"
+                    ? (current + 1) % suggestions.length
+                    : (current <= 0 ? suggestions.length - 1 : current - 1));
+                } else if (event.key === "Enter" && activeSuggestion >= 0 && suggestions[activeSuggestion]) {
+                  event.preventDefault();
+                  const item = suggestions[activeSuggestion];
+                  void runSearch(item.term, item.language);
+                }
+              }}
               placeholder="中文 / Español / Català"
               autoCapitalize="none"
               autoComplete="off"
@@ -473,6 +529,11 @@ export function DictionaryApp() {
               enterKeyHint="search"
               spellCheck={false}
               aria-describedby="search-help"
+              role="combobox"
+              aria-autocomplete="list"
+              aria-expanded={suggestions.length > 0}
+              aria-controls={suggestions.length ? "search-completions" : undefined}
+              aria-activedescendant={suggestions[activeSuggestion] ? `search-completion-${activeSuggestion}` : undefined}
             />
             <button
               className="search-submit"
@@ -483,6 +544,22 @@ export function DictionaryApp() {
               <span aria-hidden="true">{searching ? "···" : "→"}</span>
             </button>
           </div>
+          {suggestions.length > 0 ? (
+            <ul className="search-completions" id="search-completions" role="listbox" aria-label="联想词">
+              {suggestions.map((item, index) => (
+                <li key={`${item.language}:${item.term}`} id={`search-completion-${index}`}
+                  role="option" aria-selected={index === activeSuggestion}>
+                  <button type="button" tabIndex={-1}
+                    onMouseDown={(event) => event.preventDefault()}
+                    onClick={() => void runSearch(item.term, item.language)}>
+                    <span lang={inputLanguage(item.term, item.language)}>{item.term}</span>
+                    <span className="completion-lemma" lang="ca">→ {item.lemma}</span>
+                    <span className="completion-kind">{item.kind === "fuzzy" ? "近似拼写" : LANGUAGE_LABELS[item.language]}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : null}
           <div className="search-languages" role="group" aria-label="输入语言">
             {SEARCH_LANGUAGES.map(({ value, label }) => (
               <button
@@ -496,7 +573,7 @@ export function DictionaryApp() {
             ))}
           </div>
           <p className="search-help" id="search-help" lang="zh-Hans">
-            输入任一种语言的单词或短语，找到对应的 Català 词条。
+            输入单词或部分译词，选择联想词或按回车查词。
           </p>
         </form>
       </header>
@@ -516,9 +593,10 @@ export function DictionaryApp() {
               <MissView
                 query={result.searchedForm}
                 suggestions={result.suggestions}
+                relatedSuggestions={result.relatedSuggestions}
                 searchLanguage={result.searchLanguage}
                 offlineLimited={result.offlineLimited}
-                onSearch={(term) => void runSearch(term, "ca")}
+                onSearch={(term, mode) => void runSearch(term, mode ?? "ca")}
               />
             ) : (
               <StartView
@@ -969,15 +1047,17 @@ function ResultView({
 function MissView({
   query,
   suggestions,
+  relatedSuggestions,
   searchLanguage,
   offlineLimited,
   onSearch,
 }: {
   query: string;
   suggestions: string[];
+  relatedSuggestions?: SearchSuggestion[];
   searchLanguage?: SearchLanguage;
   offlineLimited?: boolean;
-  onSearch: (term: string) => void;
+  onSearch: (term: string, mode?: SearchLanguage) => void;
 }) {
   return (
     <section className="miss-view" aria-labelledby="not-found-heading">
@@ -996,7 +1076,13 @@ function MissView({
       {suggestions.length > 0 ? (
         <div className="suggestions">
           <p>你要找的是不是…</p>
-          {suggestions.map((suggestion) => (
+          {relatedSuggestions?.length ? relatedSuggestions.map((item) => (
+            <button key={`${item.language}:${item.term}`} type="button"
+              onClick={() => onSearch(item.term, item.language)}
+              lang={inputLanguage(item.term, item.language)}>
+              {item.term} <span aria-hidden="true">→</span> <span lang="ca">{item.lemma}</span>
+            </button>
+          )) : suggestions.map((suggestion) => (
             <button
               key={suggestion}
               type="button"

@@ -227,6 +227,48 @@ input:focus-visible {
   margin-top: 12px;
 }
 
+.search-completions {
+  margin: 8px 0 0;
+  padding: 5px;
+  list-style: none;
+  border: 1px solid #d8d8d0;
+  border-radius: 16px;
+  background: var(--card);
+  box-shadow: 0 10px 30px rgb(31 42 39 / 0.055);
+}
+
+.search-completions button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.search-completions li[aria-selected="true"] button,
+.search-completions button:hover {
+  background: #e9f0ec;
+}
+
+.completion-lemma {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: #556b62;
+  font-size: 13px;
+}
+
+.completion-kind {
+  flex-shrink: 0;
+  color: #747d76;
+  font-size: 11px;
+}
+
 .search-languages button {
   min-height: 40px;
   padding: 0 14px;
