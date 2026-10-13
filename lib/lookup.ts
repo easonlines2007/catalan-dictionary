@@ -2,6 +2,7 @@ import { dictionaryRepository, isVerb } from "./dictionary-repository.ts";
 import { FORM_INDEX } from "./dictionary.ts";
 import { searchRepository } from "./search-repository.ts";
 import { normalizeSearchInput } from "./search-normalization.ts";
+import { extractChineseSearchTerm } from "./chinese-query.ts";
 import type {
   DictionaryEntry,
   LemmaResult,
@@ -462,6 +463,16 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
 
 /** All input languages resolve to the same canonical Catalan dictionary entry. */
 export async function lookupWord(query: string, mode: SearchLanguage = "auto"): Promise<LookupResponse> {
+  const literal = await lookupLiteral(query, mode);
+  if (literal.status === "found" || (mode !== "zh" && mode !== "auto")) return literal;
+  const extractedQuery = extractChineseSearchTerm(query);
+  if (!extractedQuery) return literal;
+  const extracted = await lookupLiteral(extractedQuery, "zh");
+  return { ...extracted, searchedForm: literal.searchedForm,
+    normalizedQuery: literal.normalizedQuery, searchLanguage: mode, extractedQuery };
+}
+
+async function lookupLiteral(query: string, mode: SearchLanguage): Promise<LookupResponse> {
   const searchedForm = query.trim().normalize("NFC");
   const normalizedQuery = normalizeSearchInput(query, mode);
   if (!normalizedQuery || !isSearchable(normalizedQuery)) {
@@ -540,7 +551,11 @@ export async function suggestWords(query: string, mode: SearchLanguage = "auto",
       kind: normalizeCatalanInput(term).startsWith(input) ? "prefix" : "fuzzy" }));
   }
   const base = await dictionaryRepository.manifest();
-  const reverse = await searchRepository.suggest(input, language, base.dataVersion, limit, signal);
+  let reverse = await searchRepository.suggest(input, language, base.dataVersion, limit, signal);
+  const extractedQuery = language === "zh" ? extractChineseSearchTerm(input) : undefined;
+  if (extractedQuery && !reverse.some((item) => item.kind === "exact") && !signal?.aborted) {
+    reverse = await searchRepository.suggest(extractedQuery, "zh", base.dataVersion, limit, signal);
+  }
   if (mode !== "auto" || language === "zh" || signal?.aborted || reverse.length >= limit) return reverse;
   const catalan = (await fuzzySuggestions(input, limit - reverse.length)).map((term) => ({
     term, lemma: term, language: "ca" as const,

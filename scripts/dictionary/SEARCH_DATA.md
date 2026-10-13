@@ -101,6 +101,12 @@ script/spacing equivalents share the same normalized-exact status.
 The source-compared cases in `data/search/everyday-cases.json` verify lookup
 and first-suggestion behavior for common everyday queries. This regression set
 is not a corpus-wide accuracy score.
+Explicit Chinese dictionary questions such as 学校用加泰语怎么说 are recognized
+only after literal lookup misses. Their complete search term is retained,
+including negation and quantities, and displayed as 检索词. Only narrow anchored
+question patterns are recognized; other-language requests, nested questions,
+long clauses and general sentences are not translated. Suggestions use the same
+extraction; a missing extracted term still needs a user-selected spelling hint.
 
 Full offline installation includes both full catalogues. Core-only offline
 mode derives suggestions from the existing core reverse indexes and entries,

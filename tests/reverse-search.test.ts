@@ -46,6 +46,23 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
   };
   Object.defineProperty(globalThis, "navigator", { configurable: true, value: { onLine: true } });
   try {
+    await t.test("explicit Chinese questions search the full extracted term and retain visible context", async () => {
+      for (const mode of ["auto", "zh"] as const) {
+        const query = "请问，公交车用加泰语怎么说？";
+        const result = await lookupWord(query, mode);
+        assert.equal(result.status, "found");
+        if (result.status === "found") assert.equal(result.lemma, "autobús");
+        assert.equal(result.searchedForm, query);
+        assert.equal(result.extractedQuery, "公交车");
+        assert.equal(result.searchLanguage, mode);
+        assert.equal((await suggestWords(query, mode))[0]?.lemma, "autobús");
+      }
+      const negative = await lookupWord("不可以用加泰语怎么说", "zh");
+      assert.equal(negative.status, "not-found");
+      assert.equal(negative.extractedQuery, "不可以");
+      assert.equal((await lookupWord("学校用西班牙语怎么说", "zh")).extractedQuery, undefined);
+      assert.equal((await lookupWord("学校怎么说", "ca")).extractedQuery, undefined);
+    });
     await t.test("new Chinese meanings and named references resolve to their source lemmas", async () => {
       for (const [query, lemma] of [["石龙子", "lludrió"], ["狐鼬", "taira"], ["图形用户界面", "gui"]] as const) {
         const result = await lookupWord(query, "zh");

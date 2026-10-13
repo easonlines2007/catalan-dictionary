@@ -1,5 +1,6 @@
 import type {
   CacheRecord,
+  DictionaryEntry,
   FoundLookup,
   HistoryRecord,
   SavedRecord,
@@ -173,7 +174,9 @@ export async function saveWord(
     lemma: result.lemma,
     entry: result.entry,
     savedAt: Date.now(),
+    revision: crypto.randomUUID(),
     dataVersion,
+    searchDataVersion: result.searchDataVersion,
   };
   await withStore<IDBValidKey>(SAVED_STORE, "readwrite", (store) => store.put(record));
   return record;
@@ -181,6 +184,30 @@ export async function saveWord(
 
 export async function removeSavedWord(lemma: string): Promise<void> {
   await withStore<undefined>(SAVED_STORE, "readwrite", (store) => store.delete(lemma));
+}
+
+/** Atomically refresh a snapshot, preserving removals and intervening re-saves. */
+export async function updateSavedSnapshot(
+  previous: SavedRecord, entry: DictionaryEntry, dataVersion: string, searchDataVersion: string,
+): Promise<SavedRecord | undefined> {
+  if (entry.normalizedLemma !== previous.entry.normalizedLemma) return;
+  const database = await openDatabase();
+  return new Promise((resolve, reject) => {
+    const transaction = database.transaction(SAVED_STORE, "readwrite");
+    const store = transaction.objectStore(SAVED_STORE);
+    let updated: SavedRecord | undefined;
+    transaction.oncomplete = () => resolve(updated);
+    transaction.onabort = () => reject(transaction.error ?? new Error("Saved refresh aborted"));
+    transaction.onerror = () => reject(transaction.error);
+    const request = store.get(previous.lemma);
+    request.onsuccess = () => {
+      const current = request.result as SavedRecord | undefined;
+      if (!current || current.savedAt !== previous.savedAt || current.revision !== previous.revision
+          || current.dataVersion !== previous.dataVersion || current.searchDataVersion !== previous.searchDataVersion) return;
+      updated = { ...current, entry, dataVersion, searchDataVersion };
+      store.put(updated);
+    };
+  });
 }
 
 export async function cacheLookup(

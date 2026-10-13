@@ -6,6 +6,7 @@ import { dictionaryRepository } from "@/lib/dictionary-repository";
 import { lookupWord, normalizeCatalanInput, suggestWords } from "@/lib/lookup";
 import { normalizeSearchInput, searchCacheKey } from "@/lib/search-normalization";
 import { findCatalanVoice, speakCatalan } from "@/lib/speech";
+import { refreshSavedSnapshots } from "@/lib/saved-refresh";
 import {
   addHistory,
   cacheLookup,
@@ -17,6 +18,7 @@ import {
   removeSavedWord,
   requestPersistentStorage,
   saveWord,
+  updateSavedSnapshot,
 } from "@/lib/storage";
 import type {
   FoundLookup,
@@ -149,16 +151,20 @@ export function DictionaryApp() {
         if (cancelled) return;
         setHistory(storedHistory);
         setSavedWords(storedSaved);
-        const refreshed = new Map(await Promise.all(storedSaved.map(async (record) => [
-          record.lemma,
-          await dictionaryRepository.enrichEntryChinese(record.entry).catch(() => record.entry),
-        ] as const)));
+        const [base, search] = await Promise.all([
+          dictionaryRepository.manifest(), dictionaryRepository.searchManifest(),
+        ]);
+        const refreshed = await refreshSavedSnapshots(storedSaved, {
+          dataVersion: base.dataVersion, searchDataVersion: search.dataVersion,
+          load: (lemma) => dictionaryRepository.getEntry(lemma),
+          persist: updateSavedSnapshot, cancelled: () => cancelled,
+        });
         if (cancelled) return;
         // Keep removals and newer saves made while enrichment was loading.
         setSavedWords((current) => current.map((record) => {
-          const entry = refreshed.get(record.lemma);
-          return entry && !primaryChinese(record.entry) && primaryChinese(entry)
-            ? { ...record, entry } : record;
+          const updated = refreshed.get(record.lemma);
+          return updated && updated.savedAt === record.savedAt && updated.revision === record.revision
+            ? updated : record;
         }));
       })
       .catch(() => {
@@ -592,6 +598,7 @@ export function DictionaryApp() {
             ) : result?.status === "not-found" ? (
               <MissView
                 query={result.searchedForm}
+                extractedQuery={result.extractedQuery}
                 suggestions={result.suggestions}
                 relatedSuggestions={result.relatedSuggestions}
                 searchLanguage={result.searchLanguage}
@@ -871,7 +878,8 @@ function ResultView({
           {isReverse ? (
             <p>
               {LANGUAGE_LABELS[result.matchedLanguage as "zh" | "es"]} → Català
-              {result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== result.normalizedQuery
+              {result.extractedQuery ? ` · 检索词：${result.extractedQuery}` : ""}
+              {result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== (result.extractedQuery ?? result.normalizedQuery)
                 ? ` · 匹配：${result.matchedTerm}` : ""}
             </p>
           ) : result.morphology ? <p>{result.morphology}</p> : null}
@@ -1046,6 +1054,7 @@ function ResultView({
 
 function MissView({
   query,
+  extractedQuery,
   suggestions,
   relatedSuggestions,
   searchLanguage,
@@ -1053,6 +1062,7 @@ function MissView({
   onSearch,
 }: {
   query: string;
+  extractedQuery?: string;
   suggestions: string[];
   relatedSuggestions?: SearchSuggestion[];
   searchLanguage?: SearchLanguage;
@@ -1068,6 +1078,7 @@ function MissView({
       <h2 id="not-found-heading" lang={inputLanguage(query, searchLanguage)}>
         {query}
       </h2>
+      {extractedQuery ? <p className="miss-help">检索词：{extractedQuery}</p> : null}
       {offlineLimited ? (
         <p className="miss-help" lang="zh-Hans">
           已下载的离线词库中没有匹配结果。联网或下载完整词库后再试。

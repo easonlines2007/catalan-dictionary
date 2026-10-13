@@ -119,6 +119,7 @@ export interface FoundLookup {
   status: "found";
   searchedForm: string;
   normalizedQuery: string;
+  extractedQuery?: string;
   lemma: string;
   morphology?: string;
   confidence: number;
@@ -136,6 +137,7 @@ export interface MissedLookup {
   status: "not-found";
   searchedForm: string;
   normalizedQuery: string;
+  extractedQuery?: string;
   resolutionSource: "prefix" | "fuzzy" | "none";
   suggestions: string[];
   relatedSuggestions?: SearchSuggestion[];
@@ -165,6 +167,7 @@ export interface SavedRecord {
   lemma: string;
   entry: DictionaryEntry;
   savedAt: number;
+  revision?: string;
   dataVersion?: string;
   searchDataVersion?: string;
 }
