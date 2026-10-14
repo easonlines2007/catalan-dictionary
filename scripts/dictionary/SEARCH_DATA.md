@@ -116,6 +116,18 @@ including negation and quantities, and displayed as 检索词. Only narrow ancho
 question patterns are recognized; other-language requests, nested questions,
 long clauses and general sentences are not translated. Suggestions use the same
 extraction; a missing extracted term still needs a user-selected spelling hint.
+Explicit meaning requests such as 表示价格不高的词 or 形容有点难过的加泰语单词
+also retain the complete payload. Their anchored word-request frames are
+recognized separately from ordinary prose, with the same negation, number,
+other-target-language and nested-request checks. They query the accepted
+lexical and concept layers rather than translating the description as a sentence.
+If connectivity is reported but requests fail, installed core reverse hits
+remain usable, and the concept layer can resolve independently of an unavailable
+literal shard. A core miss or a concept with no locally available entry cannot
+establish absence from the full dictionary; those cases retain the data error.
+Recognized questions can still resolve their complete installed payload when
+the question's full spelling needs an unavailable shard. Retired 404/410 packs
+continue to use the existing version-refresh path.
 
 Full offline installation includes both full catalogues. Core-only offline
 mode derives suggestions from the existing core reverse indexes and entries,

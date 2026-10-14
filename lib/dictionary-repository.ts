@@ -443,6 +443,12 @@ export class DictionaryRepository {
       curated,
       mergeEntry(curatedPack, mergeEntry(base, mergeEntry(freedict, wiktionary))),
     );
+    if (merged && !base && !freedict && !wiktionary && !curatedPack) {
+      // Range downloads can fail while the installed enriched core is intact.
+      // Merge it before returning a small curated fallback without definitions.
+      const installed = await searchRepository.coreEntry(normalizedLemma, manifest.dataVersion).catch(() => undefined);
+      if (installed) return enrichChinese(mergeEntry(merged, unpackEntry(installed))!);
+    }
     if (merged) {
       const reviewed = enrichChinese(merged);
       if (reviewed.chinese?.length || reviewed.definitions?.zh?.length) return reviewed;

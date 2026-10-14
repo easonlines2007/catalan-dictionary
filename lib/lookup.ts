@@ -440,11 +440,15 @@ function catalanMatch(result: FoundLookup, mode: SearchLanguage): FoundLookup {
 
 async function reverseCandidates(query: string, language: "es" | "zh"): Promise<LemmaResult[]> {
   const manifest = await dictionaryRepository.manifest();
-  let hits = await searchRepository.reverse(query, language, manifest.dataVersion);
+  let hits: Awaited<ReturnType<typeof searchRepository.reverse>> = [];
+  let reverseFailure: unknown;
+  try { hits = await searchRepository.reverse(query, language, manifest.dataVersion); }
+  catch (error) { reverseFailure = error; }
   if (language === "zh") {
     try { hits = [...hits, ...await searchRepository.semantic(query, manifest.dataVersion)]; }
     catch (error) { if (!hits.length) throw error; }
   }
+  if (!hits.length && reverseFailure) throw reverseFailure;
   const hydrated = await Promise.all(hits.map(async (hit) => {
     const entry = await dictionaryRepository.getEntry(hit.normalizedLemma);
     return entry ? {
@@ -456,7 +460,7 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
     } satisfies LemmaResult : undefined;
   }));
   const seen = new Set<string>();
-  return hydrated.filter((candidate): candidate is NonNullable<typeof candidate> => {
+  const resolved = hydrated.filter((candidate): candidate is NonNullable<typeof candidate> => {
     if (!candidate || seen.has(candidate.entry.normalizedLemma)) return false;
     seen.add(candidate.entry.normalizedLemma);
     return true;
@@ -464,17 +468,29 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
     || b.searchPriority - a.searchPriority
     || (a.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER) - (b.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER)
     || a.lemma.localeCompare(b.lemma, "ca"));
+  if (hits.length && !resolved.length) throw reverseFailure ?? new Error("Matched dictionary entry is unavailable. Reconnect or install the full dictionary.");
+  return resolved;
 }
 
 /** All input languages resolve to the same canonical Catalan dictionary entry. */
 export async function lookupWord(query: string, mode: SearchLanguage = "auto"): Promise<LookupResponse> {
-  const literal = await lookupLiteral(query, mode);
-  if (literal.status === "found" || (mode !== "zh" && mode !== "auto")) return literal;
-  const extractedQuery = extractChineseSearchTerm(query);
-  if (!extractedQuery) return literal;
+  const extractedQuery = mode === "zh" || mode === "auto" ? extractChineseSearchTerm(query) : undefined;
+  let literal: LookupResponse;
+  try { literal = await lookupLiteral(query, mode); }
+  catch (error) {
+    if (!extractedQuery) throw error;
+    // A question's full spelling can need an uncached shard even though its
+    // complete payload is already available in the installed dictionary.
+    return lookupExtracted(query, mode, extractedQuery);
+  }
+  if (literal.status === "found" || !extractedQuery) return literal;
+  return lookupExtracted(query, mode, extractedQuery);
+}
+
+async function lookupExtracted(query: string, mode: SearchLanguage, extractedQuery: string): Promise<LookupResponse> {
   const extracted = await lookupLiteral(extractedQuery, "zh");
-  return { ...extracted, searchedForm: literal.searchedForm,
-    normalizedQuery: literal.normalizedQuery, searchLanguage: mode, extractedQuery };
+  return { ...extracted, searchedForm: query.trim().normalize("NFC"),
+    normalizedQuery: normalizeSearchInput(query, mode), searchLanguage: mode, extractedQuery };
 }
 
 async function lookupLiteral(query: string, mode: SearchLanguage): Promise<LookupResponse> {

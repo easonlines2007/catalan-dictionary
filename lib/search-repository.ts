@@ -174,7 +174,17 @@ export class SearchRepository {
       for (const candidate of keys) {
         const descriptor = limited ? manifest.core[language] : descriptorForKey(manifest.indexes[language], candidate);
         if (!descriptor) continue;
-        const index = await this.load<ReverseIndex>(manifest, descriptor);
+        let index: ReverseIndex;
+        try { index = await this.load<ReverseIndex>(manifest, descriptor); }
+        catch (error) {
+          if (limited || error instanceof MissingSearchShard) throw error;
+          const core = await this.load<ReverseIndex>(manifest, manifest.core[language]);
+          // A cached core hit remains usable when connectivity is reported
+          // but the server is unreachable. A core miss cannot prove that the
+          // unavailable full dictionary has no such word.
+          if (!core.some(([term]) => keys.includes(term))) throw error;
+          index = core;
+        }
         postings = index.find(([term]) => term === candidate)?.[1] ?? [];
         if (postings.length) break;
       }
