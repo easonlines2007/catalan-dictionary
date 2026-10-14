@@ -4663,6 +4663,16 @@
     ]
   },
   {
+    "jobId": "1041da49f539bd5a557d7ec1b2f3237fff45205704cdfb1e8e7d4c59e793c570",
+    "sourceHash": "8689fa6e751f463eae71d56313429b531b69bef37a8365e72e906d37abc89624",
+    "translationZh": "Gavarda（西班牙地名）的；Gavarda 人",
+    "aliasesZh": [],
+    "reason": "Source-compared correction: the exact GDLC adjective/demonym gavardí refers to Gavarda in Ribera Alta. The old headword machine output 好吃懒做 was unrelated. Original Chinese wording; retain the machine-assisted/headword-reference status.",
+    "evidence": [
+      "https://www.diccionari.cat/GDLC/gavardi"
+    ]
+  },
+  {
     "jobId": "104b0d22540073b1618a35872923bd12c1712c10d50cec8f16243288876da4e7",
     "sourceHash": "5c42ad0400e838bac0d7288f9dc37581ce51d4e41da39b87254313cefa95efa5",
     "translationZh": "参见「herèticament」：以异端的方式。",
@@ -50326,6 +50336,19 @@
     ]
   },
   {
+    "jobId": "b23223c2c62345e44ebfe6035c5740f5b3b432909fe476485fb70d2e76a1e33b",
+    "sourceHash": "c4291591fcdd02a83ad604b6661195b1e5d23480ea58e45731ca72f1cb48ba48",
+    "translationZh": "（羊等）咩咩叫的；发出咩叫声的",
+    "aliasesZh": [
+      "咩咩叫的"
+    ],
+    "reason": "Source-compared correction: the committed definition Que bela. and the exact DIEC/GDLC adjective describe bleating. The old machine output 真漂亮 was unrelated to that animal-sound meaning. Original Chinese wording.",
+    "evidence": [
+      "https://dlc.iec.cat/Results?DecEntradaText=belador&AccentSen=True&AllInfoMorf=False&OperEntrada=0",
+      "https://www.diccionari.cat/GDLC/belador"
+    ]
+  },
+  {
     "jobId": "b23536cf729eb8b2ed7a7a83ebc5b4cd2fb5ba375640dc4dc4b42162b788f477",
     "sourceHash": "e42479b2b86da0c77364ddb7eaf120a908b3102defec7a5d48004895f64c2c77",
     "translationZh": "瑞银集团",
@@ -57283,6 +57306,19 @@
     "reason": "Exact Catalan synonym definition with compatible POS; Chinese is explicitly shown as the referenced entry's meaning, not a claim to disambiguate all target senses.",
     "evidence": [
       "data/translations/bulk/sources/chinese-references.json#anguila"
+    ]
+  },
+  {
+    "jobId": "ca3c0d8ba4d646e757ac85495c559711ed82360ec9e2fcfff34f7ed042964520",
+    "sourceHash": "172bda1f48a451618236247871ac4603b7f9cd11570ffddaec86de3764f50bf6",
+    "translationZh": "无耻的；不知羞耻的",
+    "aliasesZh": [
+      "无耻",
+      "不知羞耻"
+    ],
+    "reason": "Source-compared correction: DCVB gives the exact Catalan headword inverecund as desvergonyit. The old headword machine output 非常害羞的 reversed its meaning and contaminated shy-adjective lookup. Original Chinese wording; retain the machine-assisted/headword-reference status.",
+    "evidence": [
+      "https://dcvb.iec.cat/results.asp?word=inverecund"
     ]
   },
   {

@@ -3009,6 +3009,768 @@
         }
       ],
       "preferred": true
+    },
+    {
+      "lemma": "indiferent",
+      "terms": [
+        "冷漠"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "indifferent"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "entusiasta",
+      "terms": [
+        "热情"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "enthusiastic"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "buit",
+      "terms": [
+        "空的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "empty"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "lliure",
+      "terms": [
+        "自由的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "free, liberated (not restrained)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "disponible",
+      "terms": [
+        "可用"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "available"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "adequat",
+      "terms": [
+        "合适"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "appropriate, suitable"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "correcte",
+      "terms": [
+        "正确"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "correct"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "bo",
+      "terms": [
+        "好的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "good"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "atenció",
+      "terms": [
+        "注意力"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "attention"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "preocupar",
+      "terms": [
+        "担忧"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to be worried"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "prudent",
+      "terms": [
+        "谨慎"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "prudent"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pressa",
+      "terms": [
+        "匆忙"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hurry, haste"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "fort",
+      "terms": [
+        "强壮"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "strong (forceful, powerful)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sòlid",
+      "terms": [
+        "坚固"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "robust, unyielding"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sa",
+      "terms": [
+        "健康"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "healthy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "saludable",
+      "terms": [
+        "有益健康"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.ca",
+          "text": "Que és bo per a la salut."
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "picant",
+      "terms": [
+        "辣"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "spicy, piquant"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tebi",
+      "terms": [
+        "微温"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "lukewarm, tepid"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "fresc",
+      "terms": [
+        "新鲜"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "fresh"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "nou",
+      "terms": [
+        "新的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "new"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "antic",
+      "terms": [
+        "古老"
+      ],
+      "evidence": [
+        {
+          "layer": "freedict",
+          "field": "d.ca",
+          "text": "De molts anys i valuós per aquest motiu."
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "vell",
+      "terms": [
+        "陈旧"
+      ],
+      "evidence": [
+        {
+          "layer": "freedict",
+          "field": "d.ca",
+          "text": "Referit a objectes, antic o espatllat."
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "estret",
+      "terms": [
+        "狭窄"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "narrow"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ample",
+      "terms": [
+        "宽阔"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "wide"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "lleuger",
+      "terms": [
+        "轻"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "light (not heavy, not having much weight)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pesat",
+      "terms": [
+        "重"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "heavy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "aviat",
+      "terms": [
+        "不久"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "soon"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tard",
+      "terms": [
+        "晚"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "late"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "llarg",
+      "terms": [
+        "长"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "long"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "curt",
+      "terms": [
+        "短"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "short"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "profund",
+      "terms": [
+        "深"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "deep"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "superficial",
+      "terms": [
+        "表面的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "superficial"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "dolç",
+      "terms": [
+        "甜"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sweet"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "salat",
+      "terms": [
+        "咸"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "salty"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "agre",
+      "terms": [
+        "酸"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sour"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "amarg",
+      "terms": [
+        "苦"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bitter (acrid taste)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "segur",
+      "terms": [
+        "安全",
+        "确定"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "safe"
+        },
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sure, certain"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "perillós",
+      "terms": [
+        "危险"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "dangerous, perilous"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sincer",
+      "terms": [
+        "真诚"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sincere"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "honest",
+      "terms": [
+        "诚实"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "upright, decent, honorable"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "fidel",
+      "terms": [
+        "忠诚"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "faithful"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "humil",
+      "terms": [
+        "谦虚"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "humble"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "responsable",
+      "terms": [
+        "负责"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "responsible"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pacient",
+      "terms": [
+        "耐心"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "patient"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "impacient",
+      "terms": [
+        "不耐烦"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "impatient (lacking patience)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "covard",
+      "terms": [
+        "胆小"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cowardly"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "mandrós",
+      "terms": [
+        "懒惰"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "lazy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "treballador",
+      "terms": [
+        "勤劳"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hardworking"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "curiós",
+      "terms": [
+        "好奇"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "curious (inquisitive)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sorprès",
+      "terms": [
+        "惊讶"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.ca",
+          "text": "Impressionat o estranyat davant d'un fet inesperat"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "enfeinat",
+      "terms": [
+        "忙碌"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "busy, occupied"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "divertit",
+      "terms": [
+        "有趣"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "fun, amusing"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "innocent",
+      "terms": [
+        "无辜"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.ca",
+          "text": "No culpable d'un delicte o crim."
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "culpable",
+      "terms": [
+        "有罪"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "guilty; culpable"
+        }
+      ],
+      "preferred": true
     }
   ]
 }

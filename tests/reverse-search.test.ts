@@ -96,6 +96,27 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
         }
       }
     });
+    await t.test("corrected machine senses cannot impersonate shy, pretty or lazy meanings", async () => {
+      for (const [query, expected, excluded] of [
+        ["非常害羞的", "tímid", "inverecund"], ["真漂亮", "bonic", "belador"], ["好吃懒做", "mandrós", "gavardí"],
+      ]) {
+        const found = await lookupWord(query, "zh");
+        assert.equal(found.status, "found", query);
+        if (found.status === "found") {
+          assert.equal(found.entry.normalizedLemma, expected, query);
+          assert.ok(found.candidates.every((candidate) => candidate.entry?.normalizedLemma !== excluded), query);
+        }
+      }
+      for (const [lemma, meaning] of [["inverecund", "无耻"], ["belador", "咩咩叫"], ["gavardí", "Gavarda"]]) {
+        const found = await lookupWord(lemma, "ca");
+        assert.equal(found.status, "found", lemma);
+        if (found.status === "found") {
+          assert.ok(primaryChinese(found.entry).includes(meaning), lemma);
+          assert.equal(found.entry.chineseMachine, true, "A source-compared correction retains its published layer label");
+          if (lemma !== "belador") assert.equal(found.entry.chineseHeadword, true);
+        }
+      }
+    });
     await t.test("contextual Chinese spelling suggestions beat incidental substrings in the real catalogue", async () => {
       for (const [query, lemma] of [["音悦", "música"], ["银航", "banc"]]) {
         const hints = await suggestWords(query, "zh");

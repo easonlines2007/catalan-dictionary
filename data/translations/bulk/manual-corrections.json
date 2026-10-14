@@ -12181,5 +12181,41 @@
     "translationZh": "定冠词「el／la」（阳性／阴性单数）",
     "aliasesZh": [],
     "reason": "Source-compared correction: preserve the preposition and plural person in amb + pronoun; distinguish the determiner pair el/la from personal pronouns."
+  },
+  {
+    "normalizedLemma": "belador",
+    "sourceText": "Que bela.",
+    "translationZh": "（羊等）咩咩叫的；发出咩叫声的",
+    "aliasesZh": [
+      "咩咩叫的"
+    ],
+    "reason": "Source-compared correction: the committed definition Que bela. and the exact DIEC/GDLC adjective describe bleating. The old machine output 真漂亮 was unrelated to that animal-sound meaning. Original Chinese wording.",
+    "evidence": [
+      "https://dlc.iec.cat/Results?DecEntradaText=belador&AccentSen=True&AllInfoMorf=False&OperEntrada=0",
+      "https://www.diccionari.cat/GDLC/belador"
+    ]
+  },
+  {
+    "normalizedLemma": "gavardí",
+    "sourceText": "gavardí",
+    "translationZh": "Gavarda（西班牙地名）的；Gavarda 人",
+    "aliasesZh": [],
+    "reason": "Source-compared correction: the exact GDLC adjective/demonym gavardí refers to Gavarda in Ribera Alta. The old headword machine output 好吃懒做 was unrelated. Original Chinese wording; retain the machine-assisted/headword-reference status.",
+    "evidence": [
+      "https://www.diccionari.cat/GDLC/gavardi"
+    ]
+  },
+  {
+    "normalizedLemma": "inverecund",
+    "sourceText": "inverecund",
+    "translationZh": "无耻的；不知羞耻的",
+    "aliasesZh": [
+      "无耻",
+      "不知羞耻"
+    ],
+    "reason": "Source-compared correction: DCVB gives the exact Catalan headword inverecund as desvergonyit. The old headword machine output 非常害羞的 reversed its meaning and contaminated shy-adjective lookup. Original Chinese wording; retain the machine-assisted/headword-reference status.",
+    "evidence": [
+      "https://dcvb.iec.cat/results.asp?word=inverecund"
+    ]
   }
 ]
