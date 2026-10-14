@@ -678,7 +678,7 @@ def build(args):
               "coverage": coverage, "excludedSpanish": exclusions, "build": signature,
               "formats": {"reverse": "[normalizedTerm, [[normalizedLemma, matchedTerm, translation|alias, optionalSourceComparedPriority], ...]]",
                           "suggestions": "[normalizedTerm, displayTerm, CatalanLemma, frequencyRank][]; derived only from accepted reverse postings",
-                          "semantic": "[normalizedExpression, expression, normalizedCatalanLemma, ChineseSenseLabel, frequencyRank, sourceConceptId][]; source-compared paraphrases, not sentence translations",
+                          "semantic": "[normalizedExpression, expression, normalizedCatalanLemma, ChineseSenseLabel, frequencyRank, sourceConceptId, optionalSourceSensePartOfSpeech][]; source-compared paraphrases, not sentence translations",
                           "entries": "PackedDictionaryEntry[]; zhMachine=true identifies machine-assisted translations; zhHeadword=true identifies headword-only term references",
                           "spanishKey": "NFC lowercase, punctuation/space normalization, accent fold except ñ",
                           "chineseKey": "NFKC lowercase and space normalization; original, OpenCC t2s and s2t aliases"},

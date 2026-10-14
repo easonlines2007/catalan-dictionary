@@ -1121,6 +1121,26 @@
       "label": "开心"
     },
     {
+      "query": "开心",
+      "expectedLemma": "feliç",
+      "label": "开心"
+    },
+    {
+      "query": "高兴",
+      "expectedLemma": "feliç",
+      "label": "开心"
+    },
+    {
+      "query": "快乐",
+      "expectedLemma": "feliç",
+      "label": "开心"
+    },
+    {
+      "query": "幸福",
+      "expectedLemma": "feliç",
+      "label": "开心"
+    },
+    {
       "query": "心情不好",
       "expectedLemma": "trist",
       "label": "难过"
@@ -2146,6 +2166,26 @@
       "label": "难过"
     },
     {
+      "query": "难过",
+      "expectedLemma": "trist",
+      "label": "难过"
+    },
+    {
+      "query": "伤心",
+      "expectedLemma": "trist",
+      "label": "难过"
+    },
+    {
+      "query": "悲伤",
+      "expectedLemma": "trist",
+      "label": "难过"
+    },
+    {
+      "query": "哀伤",
+      "expectedLemma": "trist",
+      "label": "难过"
+    },
+    {
       "query": "心情平静",
       "expectedLemma": "tranquil",
       "label": "平静"
@@ -2821,6 +2861,11 @@
       "label": "平静"
     },
     {
+      "query": "平静",
+      "expectedLemma": "tranquil",
+      "label": "平静"
+    },
+    {
       "query": "心里紧张",
       "expectedLemma": "nerviós",
       "label": "紧张"
@@ -3162,6 +3207,11 @@
     },
     {
       "query": "我特别紧张",
+      "expectedLemma": "nerviós",
+      "label": "紧张"
+    },
+    {
+      "query": "紧张",
       "expectedLemma": "nerviós",
       "label": "紧张"
     },
@@ -3842,6 +3892,11 @@
     },
     {
       "query": "我特别焦急",
+      "expectedLemma": "ansiós",
+      "label": "焦虑"
+    },
+    {
+      "query": "焦虑",
       "expectedLemma": "ansiós",
       "label": "焦虑"
     },
@@ -4856,6 +4911,26 @@
       "label": "疲倦"
     },
     {
+      "query": "疲倦",
+      "expectedLemma": "cansat",
+      "label": "疲倦"
+    },
+    {
+      "query": "累",
+      "expectedLemma": "cansat",
+      "label": "疲倦"
+    },
+    {
+      "query": "疲劳",
+      "expectedLemma": "cansat",
+      "label": "疲倦"
+    },
+    {
+      "query": "疲惫",
+      "expectedLemma": "cansat",
+      "label": "疲倦"
+    },
+    {
       "query": "有点害羞",
       "expectedLemma": "tímid",
       "label": "腼腆"
@@ -5297,6 +5372,11 @@
     },
     {
       "query": "我特别害羞",
+      "expectedLemma": "tímid",
+      "label": "腼腆"
+    },
+    {
+      "query": "腼腆",
       "expectedLemma": "tímid",
       "label": "腼腆"
     },
@@ -5976,6 +6056,11 @@
       "label": "舒适"
     },
     {
+      "query": "舒适",
+      "expectedLemma": "còmode",
+      "label": "舒适"
+    },
+    {
       "query": "坐着不舒服",
       "expectedLemma": "incòmode",
       "label": "不舒适"
@@ -6651,6 +6736,11 @@
       "label": "不舒适"
     },
     {
+      "query": "不舒适",
+      "expectedLemma": "incòmode",
+      "label": "不舒适"
+    },
+    {
       "query": "价格低",
       "expectedLemma": "barat",
       "label": "便宜"
@@ -6787,6 +6877,11 @@
     },
     {
       "query": "真的特别便宜",
+      "expectedLemma": "barat",
+      "label": "便宜"
+    },
+    {
+      "query": "便宜",
       "expectedLemma": "barat",
       "label": "便宜"
     },
@@ -7021,6 +7116,11 @@
       "label": "昂贵"
     },
     {
+      "query": "昂贵",
+      "expectedLemma": "car",
+      "label": "昂贵"
+    },
+    {
       "query": "不用付钱",
       "expectedLemma": "gratuït",
       "label": "免费"
@@ -7052,6 +7152,11 @@
     },
     {
       "query": "无需付费",
+      "expectedLemma": "gratuït",
+      "label": "免费"
+    },
+    {
+      "query": "免费",
       "expectedLemma": "gratuït",
       "label": "免费"
     },
@@ -7282,6 +7387,11 @@
     },
     {
       "query": "真的特别迅速",
+      "expectedLemma": "ràpid",
+      "label": "迅速"
+    },
+    {
+      "query": "迅速",
       "expectedLemma": "ràpid",
       "label": "迅速"
     },
@@ -7521,6 +7631,11 @@
       "label": "缓慢"
     },
     {
+      "query": "缓慢",
+      "expectedLemma": "lent",
+      "label": "缓慢"
+    },
+    {
       "query": "距离近",
       "expectedLemma": "proper",
       "label": "邻近"
@@ -7546,6 +7661,11 @@
       "label": "邻近"
     },
     {
+      "query": "邻近",
+      "expectedLemma": "proper",
+      "label": "邻近"
+    },
+    {
       "query": "距离远",
       "expectedLemma": "lluny",
       "label": "遥远"
@@ -7557,6 +7677,11 @@
     },
     {
       "query": "离得远",
+      "expectedLemma": "lluny",
+      "label": "遥远"
+    },
+    {
+      "query": "遥远",
       "expectedLemma": "lluny",
       "label": "遥远"
     },
@@ -7681,6 +7806,21 @@
       "label": "干净"
     },
     {
+      "query": "干净",
+      "expectedLemma": "net",
+      "label": "干净"
+    },
+    {
+      "query": "清洁",
+      "expectedLemma": "net",
+      "label": "干净"
+    },
+    {
+      "query": "洁净",
+      "expectedLemma": "net",
+      "label": "干净"
+    },
+    {
       "query": "不干净",
       "expectedLemma": "brut",
       "label": "脏"
@@ -7797,6 +7937,11 @@
     },
     {
       "query": "真的特别脏",
+      "expectedLemma": "brut",
+      "label": "脏"
+    },
+    {
+      "query": "脏",
       "expectedLemma": "brut",
       "label": "脏"
     },
@@ -8026,6 +8171,11 @@
       "label": "漂亮"
     },
     {
+      "query": "漂亮",
+      "expectedLemma": "bonic",
+      "label": "漂亮"
+    },
+    {
       "query": "长得难看",
       "expectedLemma": "lleig",
       "label": "丑陋"
@@ -8247,6 +8397,11 @@
     },
     {
       "query": "真的特别难看",
+      "expectedLemma": "lleig",
+      "label": "丑陋"
+    },
+    {
+      "query": "丑陋",
       "expectedLemma": "lleig",
       "label": "丑陋"
     },
@@ -8481,6 +8636,11 @@
       "label": "困难"
     },
     {
+      "query": "困难",
+      "expectedLemma": "difícil",
+      "label": "困难"
+    },
+    {
       "query": "很容易",
       "expectedLemma": "fàcil",
       "label": "容易"
@@ -8711,6 +8871,11 @@
       "label": "容易"
     },
     {
+      "query": "容易",
+      "expectedLemma": "fàcil",
+      "label": "容易"
+    },
+    {
       "query": "歇一会儿",
       "expectedLemma": "descansar",
       "label": "休息"
@@ -8727,6 +8892,11 @@
     },
     {
       "query": "歇会儿",
+      "expectedLemma": "descansar",
+      "label": "休息"
+    },
+    {
+      "query": "休息",
       "expectedLemma": "descansar",
       "label": "休息"
     },
@@ -8756,6 +8926,11 @@
       "label": "忘记"
     },
     {
+      "query": "忘记",
+      "expectedLemma": "oblidar",
+      "label": "忘记"
+    },
+    {
       "query": "还记得",
       "expectedLemma": "recordar",
       "label": "记得"
@@ -8777,6 +8952,11 @@
     },
     {
       "query": "回想起来",
+      "expectedLemma": "recordar",
+      "label": "记得"
+    },
+    {
+      "query": "记得",
       "expectedLemma": "recordar",
       "label": "记得"
     },
@@ -8821,6 +9001,11 @@
       "label": "理解"
     },
     {
+      "query": "理解",
+      "expectedLemma": "entendre",
+      "label": "理解"
+    },
+    {
       "query": "提前订好",
       "expectedLemma": "reservar",
       "label": "预订"
@@ -8851,6 +9036,11 @@
       "label": "预订"
     },
     {
+      "query": "预订",
+      "expectedLemma": "reservar",
+      "label": "预订"
+    },
+    {
       "query": "把东西修好",
       "expectedLemma": "reparar",
       "label": "修理"
@@ -8876,6 +9066,11 @@
       "label": "修理"
     },
     {
+      "query": "修理",
+      "expectedLemma": "reparar",
+      "label": "修理"
+    },
+    {
       "query": "借给别人",
       "expectedLemma": "prestar",
       "label": "借出"
@@ -8892,6 +9087,11 @@
     },
     {
       "query": "让别人借用",
+      "expectedLemma": "prestar",
+      "label": "借出"
+    },
+    {
+      "query": "借出",
       "expectedLemma": "prestar",
       "label": "借出"
     },
@@ -8916,6 +9116,11 @@
       "label": "借入"
     },
     {
+      "query": "借入",
+      "expectedLemma": "manllevar",
+      "label": "借入"
+    },
+    {
       "query": "把钱付给别人",
       "expectedLemma": "pagar",
       "label": "付款"
@@ -8936,6 +9141,11 @@
       "label": "付款"
     },
     {
+      "query": "付款",
+      "expectedLemma": "pagar",
+      "label": "付款"
+    },
+    {
       "query": "收取费用",
       "expectedLemma": "cobrar",
       "label": "收款"
@@ -8947,6 +9157,11 @@
     },
     {
       "query": "收取钱款",
+      "expectedLemma": "cobrar",
+      "label": "收款"
+    },
+    {
+      "query": "收款",
       "expectedLemma": "cobrar",
       "label": "收款"
     },
@@ -8971,6 +9186,11 @@
       "label": "图书馆"
     },
     {
+      "query": "图书馆",
+      "expectedLemma": "biblioteca",
+      "label": "图书馆"
+    },
+    {
       "query": "卖药的地方",
       "expectedLemma": "farmàcia",
       "label": "药店"
@@ -8991,6 +9211,11 @@
       "label": "药店"
     },
     {
+      "query": "药店",
+      "expectedLemma": "farmàcia",
+      "label": "药店"
+    },
+    {
       "query": "吃饭的店",
       "expectedLemma": "restaurant",
       "label": "餐馆"
@@ -9007,6 +9232,11 @@
     },
     {
       "query": "提供饭菜的店",
+      "expectedLemma": "restaurant",
+      "label": "餐馆"
+    },
+    {
+      "query": "餐馆",
       "expectedLemma": "restaurant",
       "label": "餐馆"
     },
@@ -9036,6 +9266,11 @@
       "label": "面包店"
     },
     {
+      "query": "面包店",
+      "expectedLemma": "fleca",
+      "label": "面包店"
+    },
+    {
       "query": "学开车的学校",
       "expectedLemma": "autoescola",
       "label": "驾校"
@@ -9052,6 +9287,11 @@
     },
     {
       "query": "学习驾驶的地方",
+      "expectedLemma": "autoescola",
+      "label": "驾校"
+    },
+    {
+      "query": "驾校",
       "expectedLemma": "autoescola",
       "label": "驾校"
     },
@@ -9076,6 +9316,11 @@
       "label": "卧室"
     },
     {
+      "query": "卧室",
+      "expectedLemma": "dormitori",
+      "label": "卧室"
+    },
+    {
       "query": "看病的地方",
       "expectedLemma": "hospital",
       "label": "医院"
@@ -9092,6 +9337,11 @@
     },
     {
       "query": "给人治病的地方",
+      "expectedLemma": "hospital",
+      "label": "医院"
+    },
+    {
+      "query": "医院",
       "expectedLemma": "hospital",
       "label": "医院"
     },
@@ -9121,6 +9371,11 @@
       "label": "火车站"
     },
     {
+      "query": "火车站",
+      "expectedLemma": "estació de tren",
+      "label": "火车站"
+    },
+    {
       "query": "等公交车的地方",
       "expectedLemma": "parada d'autobús",
       "label": "公交站"
@@ -9142,6 +9397,11 @@
     },
     {
       "query": "巴士停靠的站",
+      "expectedLemma": "parada d'autobús",
+      "label": "公交站"
+    },
+    {
+      "query": "公交站",
       "expectedLemma": "parada d'autobús",
       "label": "公交站"
     },
@@ -9171,6 +9431,11 @@
       "label": "吃饭"
     },
     {
+      "query": "吃饭",
+      "expectedLemma": "menjar",
+      "label": "吃饭"
+    },
+    {
       "query": "饮用",
       "expectedLemma": "beure",
       "label": "喝"
@@ -9187,6 +9452,11 @@
     },
     {
       "query": "喝水",
+      "expectedLemma": "beure",
+      "label": "喝"
+    },
+    {
+      "query": "喝",
       "expectedLemma": "beure",
       "label": "喝"
     },
@@ -9216,6 +9486,11 @@
       "label": "睡觉"
     },
     {
+      "query": "睡觉",
+      "expectedLemma": "dormir",
+      "label": "睡觉"
+    },
+    {
       "query": "睡醒",
       "expectedLemma": "despertar",
       "label": "醒来"
@@ -9237,6 +9512,11 @@
     },
     {
       "query": "从睡梦中醒来",
+      "expectedLemma": "despertar",
+      "label": "醒来"
+    },
+    {
+      "query": "醒来",
       "expectedLemma": "despertar",
       "label": "醒来"
     },
@@ -9266,6 +9546,11 @@
       "label": "走路"
     },
     {
+      "query": "走路",
+      "expectedLemma": "caminar",
+      "label": "走路"
+    },
+    {
       "query": "奔跑",
       "expectedLemma": "córrer",
       "label": "跑"
@@ -9282,6 +9567,11 @@
     },
     {
       "query": "快速奔跑",
+      "expectedLemma": "córrer",
+      "label": "跑"
+    },
+    {
+      "query": "跑",
       "expectedLemma": "córrer",
       "label": "跑"
     },
@@ -9306,6 +9596,11 @@
       "label": "说话"
     },
     {
+      "query": "说话",
+      "expectedLemma": "parlar",
+      "label": "说话"
+    },
+    {
       "query": "聆听",
       "expectedLemma": "escoltar",
       "label": "听"
@@ -9322,6 +9617,11 @@
     },
     {
       "query": "仔细听",
+      "expectedLemma": "escoltar",
+      "label": "听"
+    },
+    {
+      "query": "听",
       "expectedLemma": "escoltar",
       "label": "听"
     },
@@ -9346,6 +9646,11 @@
       "label": "看"
     },
     {
+      "query": "看",
+      "expectedLemma": "mirar",
+      "label": "看"
+    },
+    {
       "query": "找到了",
       "expectedLemma": "trobar",
       "label": "找到"
@@ -9366,6 +9671,11 @@
       "label": "找到"
     },
     {
+      "query": "找到",
+      "expectedLemma": "trobar",
+      "label": "找到"
+    },
+    {
       "query": "找东西",
       "expectedLemma": "cercar",
       "label": "寻找"
@@ -9382,6 +9692,11 @@
     },
     {
       "query": "寻找东西",
+      "expectedLemma": "cercar",
+      "label": "寻找"
+    },
+    {
+      "query": "寻找",
       "expectedLemma": "cercar",
       "label": "寻找"
     },
@@ -9411,6 +9726,11 @@
       "label": "帮助"
     },
     {
+      "query": "帮助",
+      "expectedLemma": "ajudar",
+      "label": "帮助"
+    },
+    {
       "query": "着手",
       "expectedLemma": "començar",
       "label": "开始"
@@ -9432,6 +9752,11 @@
     },
     {
       "query": "启动",
+      "expectedLemma": "començar",
+      "label": "开始"
+    },
+    {
+      "query": "开始",
       "expectedLemma": "començar",
       "label": "开始"
     },
@@ -9461,6 +9786,11 @@
       "label": "完成"
     },
     {
+      "query": "完成",
+      "expectedLemma": "acabar",
+      "label": "完成"
+    },
+    {
       "query": "等候",
       "expectedLemma": "esperar",
       "label": "等待"
@@ -9486,6 +9816,11 @@
       "label": "等待"
     },
     {
+      "query": "等待",
+      "expectedLemma": "esperar",
+      "label": "等待"
+    },
+    {
       "query": "抵达",
       "expectedLemma": "arribar",
       "label": "到达"
@@ -9502,6 +9837,11 @@
     },
     {
       "query": "到达目的地",
+      "expectedLemma": "arribar",
+      "label": "到达"
+    },
+    {
+      "query": "到达",
       "expectedLemma": "arribar",
       "label": "到达"
     },
@@ -9526,6 +9866,11 @@
       "label": "出去"
     },
     {
+      "query": "出去",
+      "expectedLemma": "sortir",
+      "label": "出去"
+    },
+    {
       "query": "进去",
       "expectedLemma": "entrar",
       "label": "进入"
@@ -9542,6 +9887,11 @@
     },
     {
       "query": "走进里面",
+      "expectedLemma": "entrar",
+      "label": "进入"
+    },
+    {
+      "query": "进入",
       "expectedLemma": "entrar",
       "label": "进入"
     },
@@ -9566,6 +9916,11 @@
       "label": "打开"
     },
     {
+      "query": "打开",
+      "expectedLemma": "obrir",
+      "label": "打开"
+    },
+    {
       "query": "关上",
       "expectedLemma": "tancar",
       "label": "关闭"
@@ -9582,6 +9937,11 @@
     },
     {
       "query": "关起来",
+      "expectedLemma": "tancar",
+      "label": "关闭"
+    },
+    {
+      "query": "关闭",
       "expectedLemma": "tancar",
       "label": "关闭"
     },
@@ -9606,6 +9966,11 @@
       "label": "旅行"
     },
     {
+      "query": "旅行",
+      "expectedLemma": "viatjar",
+      "label": "旅行"
+    },
+    {
       "query": "读书学习",
       "expectedLemma": "estudiar",
       "label": "研读"
@@ -9622,6 +9987,11 @@
     },
     {
       "query": "学习功课",
+      "expectedLemma": "estudiar",
+      "label": "研读"
+    },
+    {
+      "query": "研读",
       "expectedLemma": "estudiar",
       "label": "研读"
     },
@@ -9646,6 +10016,11 @@
       "label": "学会"
     },
     {
+      "query": "学会",
+      "expectedLemma": "aprendre",
+      "label": "学会"
+    },
+    {
       "query": "教别人",
       "expectedLemma": "ensenyar",
       "label": "教导"
@@ -9666,6 +10041,11 @@
       "label": "教导"
     },
     {
+      "query": "教导",
+      "expectedLemma": "ensenyar",
+      "label": "教导"
+    },
+    {
       "query": "干活",
       "expectedLemma": "treballar",
       "label": "工作"
@@ -9682,6 +10062,11 @@
     },
     {
       "query": "干事情",
+      "expectedLemma": "treballar",
+      "label": "工作"
+    },
+    {
+      "query": "工作",
       "expectedLemma": "treballar",
       "label": "工作"
     },
@@ -9711,6 +10096,11 @@
       "label": "做饭"
     },
     {
+      "query": "做饭",
+      "expectedLemma": "cuinar",
+      "label": "做饭"
+    },
+    {
       "query": "洗干净",
       "expectedLemma": "rentar",
       "label": "清洗"
@@ -9727,6 +10117,11 @@
     },
     {
       "query": "洗一洗",
+      "expectedLemma": "rentar",
+      "label": "清洗"
+    },
+    {
+      "query": "清洗",
       "expectedLemma": "rentar",
       "label": "清洗"
     },
@@ -9751,6 +10146,11 @@
       "label": "购买"
     },
     {
+      "query": "购买",
+      "expectedLemma": "comprar",
+      "label": "购买"
+    },
+    {
       "query": "卖东西",
       "expectedLemma": "vendre",
       "label": "出售"
@@ -9767,6 +10167,11 @@
     },
     {
       "query": "出售商品",
+      "expectedLemma": "vendre",
+      "label": "出售"
+    },
+    {
+      "query": "出售",
       "expectedLemma": "vendre",
       "label": "出售"
     },
@@ -9796,6 +10201,11 @@
       "label": "挑选"
     },
     {
+      "query": "挑选",
+      "expectedLemma": "escollir",
+      "label": "挑选"
+    },
+    {
       "query": "做决定",
       "expectedLemma": "decidir",
       "label": "决定"
@@ -9812,6 +10222,11 @@
     },
     {
       "query": "拿定主意",
+      "expectedLemma": "decidir",
+      "label": "决定"
+    },
+    {
+      "query": "决定",
       "expectedLemma": "decidir",
       "label": "决定"
     },
@@ -9836,6 +10251,11 @@
       "label": "需要"
     },
     {
+      "query": "需要",
+      "expectedLemma": "necessitar",
+      "label": "需要"
+    },
+    {
       "query": "想得到",
       "expectedLemma": "voler",
       "label": "想要"
@@ -9852,6 +10272,11 @@
     },
     {
       "query": "愿意要",
+      "expectedLemma": "voler",
+      "label": "想要"
+    },
+    {
+      "query": "想要",
       "expectedLemma": "voler",
       "label": "想要"
     },
@@ -9876,6 +10301,11 @@
       "label": "爱"
     },
     {
+      "query": "爱",
+      "expectedLemma": "estimar",
+      "label": "爱"
+    },
+    {
       "query": "喜爱",
       "expectedLemma": "agradar",
       "label": "喜欢"
@@ -9892,6 +10322,11 @@
     },
     {
       "query": "讨人喜欢",
+      "expectedLemma": "agradar",
+      "label": "喜欢"
+    },
+    {
+      "query": "喜欢",
       "expectedLemma": "agradar",
       "label": "喜欢"
     },
@@ -9916,6 +10351,11 @@
       "label": "下雨"
     },
     {
+      "query": "下雨",
+      "expectedLemma": "ploure",
+      "label": "下雨"
+    },
+    {
       "query": "降雪",
       "expectedLemma": "nevar",
       "label": "下雪"
@@ -9932,6 +10372,11 @@
     },
     {
       "query": "雪从天上飘落",
+      "expectedLemma": "nevar",
+      "label": "下雪"
+    },
+    {
+      "query": "下雪",
       "expectedLemma": "nevar",
       "label": "下雪"
     },
@@ -10166,6 +10611,11 @@
       "label": "寒冷"
     },
     {
+      "query": "寒冷",
+      "expectedLemma": "fred",
+      "label": "寒冷"
+    },
+    {
       "query": "温度高",
       "expectedLemma": "calent",
       "label": "热"
@@ -10296,6 +10746,11 @@
       "label": "热"
     },
     {
+      "query": "热",
+      "expectedLemma": "calent",
+      "label": "热"
+    },
+    {
       "query": "给人看病的人",
       "expectedLemma": "metge",
       "label": "医生"
@@ -10312,6 +10767,11 @@
     },
     {
       "query": "治病的人",
+      "expectedLemma": "metge",
+      "label": "医生"
+    },
+    {
+      "query": "医生",
       "expectedLemma": "metge",
       "label": "医生"
     },
@@ -10336,6 +10796,11 @@
       "label": "教师"
     },
     {
+      "query": "教师",
+      "expectedLemma": "professor",
+      "label": "教师"
+    },
+    {
       "query": "友人",
       "expectedLemma": "amic",
       "label": "朋友"
@@ -10352,6 +10817,11 @@
     },
     {
       "query": "和自己交好的人",
+      "expectedLemma": "amic",
+      "label": "朋友"
+    },
+    {
+      "query": "朋友",
       "expectedLemma": "amic",
       "label": "朋友"
     },
@@ -10376,6 +10846,11 @@
       "label": "父亲"
     },
     {
+      "query": "父亲",
+      "expectedLemma": "pare",
+      "label": "父亲"
+    },
+    {
       "query": "妈妈",
       "expectedLemma": "mare",
       "label": "母亲"
@@ -10392,6 +10867,11 @@
     },
     {
       "query": "家里的妈妈",
+      "expectedLemma": "mare",
+      "label": "母亲"
+    },
+    {
+      "query": "母亲",
       "expectedLemma": "mare",
       "label": "母亲"
     },
@@ -10416,6 +10896,11 @@
       "label": "厨房"
     },
     {
+      "query": "厨房",
+      "expectedLemma": "cuina",
+      "label": "厨房"
+    },
+    {
       "query": "洗澡的房间",
       "expectedLemma": "bany",
       "label": "浴室"
@@ -10432,6 +10917,11 @@
     },
     {
       "query": "用来洗澡的屋子",
+      "expectedLemma": "bany",
+      "label": "浴室"
+    },
+    {
+      "query": "浴室",
       "expectedLemma": "bany",
       "label": "浴室"
     },
@@ -10456,6 +10946,11 @@
       "label": "学校"
     },
     {
+      "query": "学校",
+      "expectedLemma": "escola",
+      "label": "学校"
+    },
+    {
       "query": "坐飞机的地方",
       "expectedLemma": "aeroport",
       "label": "机场"
@@ -10472,6 +10967,11 @@
     },
     {
       "query": "飞机起飞降落的场所",
+      "expectedLemma": "aeroport",
+      "label": "机场"
+    },
+    {
+      "query": "机场",
       "expectedLemma": "aeroport",
       "label": "机场"
     },
@@ -10496,6 +10996,11 @@
       "label": "旅馆"
     },
     {
+      "query": "旅馆",
+      "expectedLemma": "hotel",
+      "label": "旅馆"
+    },
+    {
       "query": "卖东西的店",
       "expectedLemma": "botiga",
       "label": "商店"
@@ -10512,6 +11017,11 @@
     },
     {
       "query": "售卖商品的店",
+      "expectedLemma": "botiga",
+      "label": "商店"
+    },
+    {
+      "query": "商店",
       "expectedLemma": "botiga",
       "label": "商店"
     },
@@ -10536,6 +11046,11 @@
       "label": "鞋子"
     },
     {
+      "query": "鞋子",
+      "expectedLemma": "sabata",
+      "label": "鞋子"
+    },
+    {
       "query": "身上穿的东西",
       "expectedLemma": "roba",
       "label": "衣服"
@@ -10552,6 +11067,11 @@
     },
     {
       "query": "身上穿的衣裳",
+      "expectedLemma": "roba",
+      "label": "衣服"
+    },
+    {
+      "query": "衣服",
       "expectedLemma": "roba",
       "label": "衣服"
     },
@@ -10576,6 +11096,11 @@
       "label": "书本"
     },
     {
+      "query": "书本",
+      "expectedLemma": "llibre",
+      "label": "书本"
+    },
+    {
       "query": "原子笔",
       "expectedLemma": "bolígraf",
       "label": "圆珠笔"
@@ -10592,6 +11117,11 @@
     },
     {
       "query": "油墨圆珠笔",
+      "expectedLemma": "bolígraf",
+      "label": "圆珠笔"
+    },
+    {
+      "query": "圆珠笔",
       "expectedLemma": "bolígraf",
       "label": "圆珠笔"
     },
@@ -10631,6 +11161,11 @@
       "label": "无声"
     },
     {
+      "query": "无声",
+      "expectedLemma": "silenciós",
+      "label": "无声"
+    },
+    {
       "query": "冷淡",
       "expectedLemma": "indiferent",
       "label": "冷漠"
@@ -10662,6 +11197,11 @@
     },
     {
       "query": "态度冷漠",
+      "expectedLemma": "indiferent",
+      "label": "冷漠"
+    },
+    {
+      "query": "冷漠",
       "expectedLemma": "indiferent",
       "label": "冷漠"
     },
@@ -11146,6 +11686,11 @@
       "label": "热情"
     },
     {
+      "query": "热情",
+      "expectedLemma": "entusiasta",
+      "label": "热情"
+    },
+    {
       "query": "空空的",
       "expectedLemma": "buit",
       "label": "空的"
@@ -11172,6 +11717,11 @@
     },
     {
       "query": "空荡荡",
+      "expectedLemma": "buit",
+      "label": "空的"
+    },
+    {
+      "query": "空的",
       "expectedLemma": "buit",
       "label": "空的"
     },
@@ -11206,6 +11756,16 @@
       "label": "自由的"
     },
     {
+      "query": "自由的",
+      "expectedLemma": "lliure",
+      "label": "自由的"
+    },
+    {
+      "query": "自由",
+      "expectedLemma": "lliure",
+      "label": "自由的"
+    },
+    {
       "query": "可以使用",
       "expectedLemma": "disponible",
       "label": "可用"
@@ -11232,6 +11792,11 @@
     },
     {
       "query": "有空可以帮忙",
+      "expectedLemma": "disponible",
+      "label": "可用"
+    },
+    {
+      "query": "可用",
       "expectedLemma": "disponible",
       "label": "可用"
     },
@@ -11271,6 +11836,11 @@
       "label": "节省"
     },
     {
+      "query": "节省",
+      "expectedLemma": "estalviar",
+      "label": "节省"
+    },
+    {
       "query": "思念",
       "expectedLemma": "enyorar",
       "label": "想念"
@@ -11302,6 +11872,11 @@
     },
     {
       "query": "思念亲人",
+      "expectedLemma": "enyorar",
+      "label": "想念"
+    },
+    {
+      "query": "想念",
       "expectedLemma": "enyorar",
       "label": "想念"
     },
@@ -11341,6 +11916,11 @@
       "label": "思考"
     },
     {
+      "query": "思考",
+      "expectedLemma": "pensar",
+      "label": "思考"
+    },
+    {
       "query": "知晓",
       "expectedLemma": "saber",
       "label": "知道"
@@ -11371,6 +11951,11 @@
       "label": "知道"
     },
     {
+      "query": "知道",
+      "expectedLemma": "saber",
+      "label": "知道"
+    },
+    {
       "query": "熟识",
       "expectedLemma": "conèixer",
       "label": "认识"
@@ -11392,6 +11977,11 @@
     },
     {
       "query": "与某人相识",
+      "expectedLemma": "conèixer",
+      "label": "认识"
+    },
+    {
+      "query": "认识",
       "expectedLemma": "conèixer",
       "label": "认识"
     },
@@ -11431,6 +12021,11 @@
       "label": "合适"
     },
     {
+      "query": "合适",
+      "expectedLemma": "adequat",
+      "label": "合适"
+    },
+    {
       "query": "对的",
       "expectedLemma": "correcte",
       "label": "正确"
@@ -11466,6 +12061,11 @@
       "label": "正确"
     },
     {
+      "query": "正确",
+      "expectedLemma": "correcte",
+      "label": "正确"
+    },
+    {
       "query": "品质好",
       "expectedLemma": "bo",
       "label": "好的"
@@ -11496,6 +12096,11 @@
       "label": "好的"
     },
     {
+      "query": "好的",
+      "expectedLemma": "bo",
+      "label": "好的"
+    },
+    {
       "query": "专注",
       "expectedLemma": "atenció",
       "label": "注意力"
@@ -11517,6 +12122,11 @@
     },
     {
       "query": "认真留意",
+      "expectedLemma": "atenció",
+      "label": "注意力"
+    },
+    {
+      "query": "注意力",
       "expectedLemma": "atenció",
       "label": "注意力"
     },
@@ -11551,6 +12161,11 @@
       "label": "担忧"
     },
     {
+      "query": "担忧",
+      "expectedLemma": "preocupar",
+      "label": "担忧"
+    },
+    {
       "query": "慎重",
       "expectedLemma": "prudent",
       "label": "谨慎"
@@ -11572,6 +12187,11 @@
     },
     {
       "query": "谨慎行事",
+      "expectedLemma": "prudent",
+      "label": "谨慎"
+    },
+    {
+      "query": "谨慎",
       "expectedLemma": "prudent",
       "label": "谨慎"
     },
@@ -11606,6 +12226,11 @@
       "label": "匆忙"
     },
     {
+      "query": "匆忙",
+      "expectedLemma": "pressa",
+      "label": "匆忙"
+    },
+    {
       "query": "力气大",
       "expectedLemma": "fort",
       "label": "强壮"
@@ -11632,6 +12257,16 @@
     },
     {
       "query": "很有力气",
+      "expectedLemma": "fort",
+      "label": "强壮"
+    },
+    {
+      "query": "强壮",
+      "expectedLemma": "fort",
+      "label": "强壮"
+    },
+    {
+      "query": "有力",
       "expectedLemma": "fort",
       "label": "强壮"
     },
@@ -11766,6 +12401,11 @@
       "label": "坚固"
     },
     {
+      "query": "坚固",
+      "expectedLemma": "sòlid",
+      "label": "坚固"
+    },
+    {
       "query": "身体健康",
       "expectedLemma": "sa",
       "label": "健康"
@@ -11791,6 +12431,11 @@
       "label": "健康"
     },
     {
+      "query": "健康",
+      "expectedLemma": "sa",
+      "label": "健康"
+    },
+    {
       "query": "对健康有益",
       "expectedLemma": "saludable",
       "label": "有益健康"
@@ -11812,6 +12457,11 @@
     },
     {
       "query": "有利于健康",
+      "expectedLemma": "saludable",
+      "label": "有益健康"
+    },
+    {
+      "query": "有益健康",
       "expectedLemma": "saludable",
       "label": "有益健康"
     },
@@ -11896,6 +12546,11 @@
       "label": "辣"
     },
     {
+      "query": "辣",
+      "expectedLemma": "picant",
+      "label": "辣"
+    },
+    {
       "query": "温温的",
       "expectedLemma": "tebi",
       "label": "微温"
@@ -11926,6 +12581,11 @@
       "label": "微温"
     },
     {
+      "query": "微温",
+      "expectedLemma": "tebi",
+      "label": "微温"
+    },
+    {
       "query": "刚采摘的",
       "expectedLemma": "fresc",
       "label": "新鲜"
@@ -11947,6 +12607,11 @@
     },
     {
       "query": "刚做好的新鲜食物",
+      "expectedLemma": "fresc",
+      "label": "新鲜"
+    },
+    {
+      "query": "新鲜",
       "expectedLemma": "fresc",
       "label": "新鲜"
     },
@@ -11981,6 +12646,11 @@
       "label": "新的"
     },
     {
+      "query": "新的",
+      "expectedLemma": "nou",
+      "label": "新的"
+    },
+    {
       "query": "年代久远",
       "expectedLemma": "antic",
       "label": "古老"
@@ -12002,6 +12672,11 @@
     },
     {
       "query": "年头久远",
+      "expectedLemma": "antic",
+      "label": "古老"
+    },
+    {
+      "query": "古老",
       "expectedLemma": "antic",
       "label": "古老"
     },
@@ -12032,6 +12707,11 @@
     },
     {
       "query": "物品陈旧",
+      "expectedLemma": "vell",
+      "label": "陈旧"
+    },
+    {
+      "query": "陈旧",
       "expectedLemma": "vell",
       "label": "陈旧"
     },
@@ -12161,6 +12841,11 @@
       "label": "狭窄"
     },
     {
+      "query": "狭窄",
+      "expectedLemma": "estret",
+      "label": "狭窄"
+    },
+    {
       "query": "宽敞",
       "expectedLemma": "ample",
       "label": "宽阔"
@@ -12286,6 +12971,11 @@
       "label": "宽阔"
     },
     {
+      "query": "宽阔",
+      "expectedLemma": "ample",
+      "label": "宽阔"
+    },
+    {
       "query": "个头大",
       "expectedLemma": "gran",
       "label": "大的"
@@ -12362,6 +13052,11 @@
     },
     {
       "query": "真的特别大",
+      "expectedLemma": "gran",
+      "label": "大的"
+    },
+    {
+      "query": "大的",
       "expectedLemma": "gran",
       "label": "大的"
     },
@@ -12446,6 +13141,11 @@
       "label": "小的"
     },
     {
+      "query": "小的",
+      "expectedLemma": "petit",
+      "label": "小的"
+    },
+    {
       "query": "重量小",
       "expectedLemma": "lleuger",
       "label": "轻"
@@ -12522,6 +13222,11 @@
     },
     {
       "query": "真的特别轻",
+      "expectedLemma": "lleuger",
+      "label": "轻"
+    },
+    {
+      "query": "轻",
       "expectedLemma": "lleuger",
       "label": "轻"
     },
@@ -12606,6 +13311,11 @@
       "label": "重"
     },
     {
+      "query": "重",
+      "expectedLemma": "pesat",
+      "label": "重"
+    },
+    {
       "query": "过一会儿",
       "expectedLemma": "aviat",
       "label": "不久"
@@ -12636,6 +13346,11 @@
       "label": "不久"
     },
     {
+      "query": "不久",
+      "expectedLemma": "aviat",
+      "label": "不久"
+    },
+    {
       "query": "时间晚",
       "expectedLemma": "tard",
       "label": "晚"
@@ -12662,6 +13377,11 @@
     },
     {
       "query": "晚了一点",
+      "expectedLemma": "tard",
+      "label": "晚"
+    },
+    {
+      "query": "晚",
       "expectedLemma": "tard",
       "label": "晚"
     },
@@ -12741,6 +13461,11 @@
       "label": "长"
     },
     {
+      "query": "长",
+      "expectedLemma": "llarg",
+      "label": "长"
+    },
+    {
       "query": "长度小",
       "expectedLemma": "curt",
       "label": "短"
@@ -12812,6 +13537,11 @@
     },
     {
       "query": "真的特别短",
+      "expectedLemma": "curt",
+      "label": "短"
+    },
+    {
+      "query": "短",
       "expectedLemma": "curt",
       "label": "短"
     },
@@ -12891,6 +13621,11 @@
       "label": "深"
     },
     {
+      "query": "深",
+      "expectedLemma": "profund",
+      "label": "深"
+    },
+    {
       "query": "浅层的",
       "expectedLemma": "superficial",
       "label": "表面的"
@@ -12912,6 +13647,11 @@
     },
     {
       "query": "肤浅的",
+      "expectedLemma": "superficial",
+      "label": "表面的"
+    },
+    {
+      "query": "表面的",
       "expectedLemma": "superficial",
       "label": "表面的"
     },
@@ -12996,6 +13736,11 @@
       "label": "甜"
     },
     {
+      "query": "甜",
+      "expectedLemma": "dolç",
+      "label": "甜"
+    },
+    {
       "query": "咸味",
       "expectedLemma": "salat",
       "label": "咸"
@@ -13072,6 +13817,11 @@
     },
     {
       "query": "真的特别咸",
+      "expectedLemma": "salat",
+      "label": "咸"
+    },
+    {
+      "query": "咸",
       "expectedLemma": "salat",
       "label": "咸"
     },
@@ -13156,6 +13906,11 @@
       "label": "酸"
     },
     {
+      "query": "酸",
+      "expectedLemma": "agre",
+      "label": "酸"
+    },
+    {
       "query": "苦味",
       "expectedLemma": "amarg",
       "label": "苦"
@@ -13236,6 +13991,11 @@
       "label": "苦"
     },
     {
+      "query": "苦",
+      "expectedLemma": "amarg",
+      "label": "苦"
+    },
+    {
       "query": "没有危险",
       "expectedLemma": "segur",
       "label": "安全"
@@ -13311,6 +14071,11 @@
       "label": "安全"
     },
     {
+      "query": "安全",
+      "expectedLemma": "segur",
+      "label": "安全"
+    },
+    {
       "query": "有把握",
       "expectedLemma": "segur",
       "label": "确定"
@@ -13337,6 +14102,11 @@
     },
     {
       "query": "十分确定",
+      "expectedLemma": "segur",
+      "label": "确定"
+    },
+    {
+      "query": "确定",
       "expectedLemma": "segur",
       "label": "确定"
     },
@@ -13417,6 +14187,11 @@
     },
     {
       "query": "真的特别危险",
+      "expectedLemma": "perillós",
+      "label": "危险"
+    },
+    {
+      "query": "危险",
       "expectedLemma": "perillós",
       "label": "危险"
     },
@@ -13896,6 +14671,11 @@
       "label": "真诚"
     },
     {
+      "query": "真诚",
+      "expectedLemma": "sincer",
+      "label": "真诚"
+    },
+    {
       "query": "正直",
       "expectedLemma": "honest",
       "label": "诚实"
@@ -13926,6 +14706,11 @@
       "label": "诚实"
     },
     {
+      "query": "诚实",
+      "expectedLemma": "honest",
+      "label": "诚实"
+    },
+    {
       "query": "忠心",
       "expectedLemma": "fidel",
       "label": "忠诚"
@@ -13947,6 +14732,11 @@
     },
     {
       "query": "值得信赖的忠诚",
+      "expectedLemma": "fidel",
+      "label": "忠诚"
+    },
+    {
+      "query": "忠诚",
       "expectedLemma": "fidel",
       "label": "忠诚"
     },
@@ -14426,6 +15216,11 @@
       "label": "谦虚"
     },
     {
+      "query": "谦虚",
+      "expectedLemma": "humil",
+      "label": "谦虚"
+    },
+    {
       "query": "负责任",
       "expectedLemma": "responsable",
       "label": "负责"
@@ -14451,6 +15246,11 @@
       "label": "负责"
     },
     {
+      "query": "负责",
+      "expectedLemma": "responsable",
+      "label": "负责"
+    },
+    {
       "query": "有耐心",
       "expectedLemma": "pacient",
       "label": "耐心"
@@ -14472,6 +15272,11 @@
     },
     {
       "query": "有耐性",
+      "expectedLemma": "pacient",
+      "label": "耐心"
+    },
+    {
+      "query": "耐心",
       "expectedLemma": "pacient",
       "label": "耐心"
     },
@@ -14731,6 +15536,11 @@
       "label": "不耐烦"
     },
     {
+      "query": "不耐烦",
+      "expectedLemma": "impacient",
+      "label": "不耐烦"
+    },
+    {
       "query": "怯懦",
       "expectedLemma": "covard",
       "label": "胆小"
@@ -14757,6 +15567,11 @@
     },
     {
       "query": "胆小怕事",
+      "expectedLemma": "covard",
+      "label": "胆小"
+    },
+    {
+      "query": "胆小",
       "expectedLemma": "covard",
       "label": "胆小"
     },
@@ -14791,6 +15606,11 @@
       "label": "懒惰"
     },
     {
+      "query": "懒惰",
+      "expectedLemma": "mandrós",
+      "label": "懒惰"
+    },
+    {
       "query": "勤奋",
       "expectedLemma": "treballador",
       "label": "勤劳"
@@ -14821,6 +15641,11 @@
       "label": "勤劳"
     },
     {
+      "query": "勤劳",
+      "expectedLemma": "treballador",
+      "label": "勤劳"
+    },
+    {
       "query": "想知道原因",
       "expectedLemma": "curiós",
       "label": "好奇"
@@ -14842,6 +15667,11 @@
     },
     {
       "query": "好奇心强",
+      "expectedLemma": "curiós",
+      "label": "好奇"
+    },
+    {
+      "query": "好奇",
       "expectedLemma": "curiós",
       "label": "好奇"
     },
@@ -15326,6 +16156,11 @@
       "label": "惊讶"
     },
     {
+      "query": "惊讶",
+      "expectedLemma": "sorprès",
+      "label": "惊讶"
+    },
+    {
       "query": "忙着干活",
       "expectedLemma": "enfeinat",
       "label": "忙碌"
@@ -15581,6 +16416,11 @@
       "label": "忙碌"
     },
     {
+      "query": "忙碌",
+      "expectedLemma": "enfeinat",
+      "label": "忙碌"
+    },
+    {
       "query": "好玩",
       "expectedLemma": "divertit",
       "label": "有趣"
@@ -15706,6 +16546,11 @@
       "label": "有趣"
     },
     {
+      "query": "有趣",
+      "expectedLemma": "divertit",
+      "label": "有趣"
+    },
+    {
       "query": "没有犯罪",
       "expectedLemma": "innocent",
       "label": "无辜"
@@ -15722,6 +16567,11 @@
     },
     {
       "query": "是无辜的",
+      "expectedLemma": "innocent",
+      "label": "无辜"
+    },
+    {
+      "query": "无辜",
       "expectedLemma": "innocent",
       "label": "无辜"
     },
@@ -15744,6 +16594,441 @@
       "query": "应承担罪责",
       "expectedLemma": "culpable",
       "label": "有罪"
+    },
+    {
+      "query": "有罪",
+      "expectedLemma": "culpable",
+      "label": "有罪"
+    },
+    {
+      "query": "高兴",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "开心",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "快乐",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "喜悦",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "心情好",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "心情愉快",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "高兴·名词",
+      "expectedLemma": "alegria",
+      "label": "高兴·名词"
+    },
+    {
+      "query": "幸福",
+      "expectedLemma": "felicitat",
+      "label": "幸福·名词"
+    },
+    {
+      "query": "幸福感",
+      "expectedLemma": "felicitat",
+      "label": "幸福·名词"
+    },
+    {
+      "query": "开心",
+      "expectedLemma": "felicitat",
+      "label": "幸福·名词"
+    },
+    {
+      "query": "快乐",
+      "expectedLemma": "felicitat",
+      "label": "幸福·名词"
+    },
+    {
+      "query": "幸福·名词",
+      "expectedLemma": "felicitat",
+      "label": "幸福·名词"
+    },
+    {
+      "query": "难过",
+      "expectedLemma": "tristesa",
+      "label": "悲伤·名词"
+    },
+    {
+      "query": "伤心",
+      "expectedLemma": "tristesa",
+      "label": "悲伤·名词"
+    },
+    {
+      "query": "悲伤",
+      "expectedLemma": "tristesa",
+      "label": "悲伤·名词"
+    },
+    {
+      "query": "心情低落",
+      "expectedLemma": "tristesa",
+      "label": "悲伤·名词"
+    },
+    {
+      "query": "忧伤",
+      "expectedLemma": "tristesa",
+      "label": "悲伤·名词"
+    },
+    {
+      "query": "悲伤·名词",
+      "expectedLemma": "tristesa",
+      "label": "悲伤·名词"
+    },
+    {
+      "query": "害怕",
+      "expectedLemma": "por",
+      "label": "害怕·名词"
+    },
+    {
+      "query": "恐惧",
+      "expectedLemma": "por",
+      "label": "害怕·名词"
+    },
+    {
+      "query": "畏惧",
+      "expectedLemma": "por",
+      "label": "害怕·名词"
+    },
+    {
+      "query": "心里害怕",
+      "expectedLemma": "por",
+      "label": "害怕·名词"
+    },
+    {
+      "query": "害怕·名词",
+      "expectedLemma": "por",
+      "label": "害怕·名词"
+    },
+    {
+      "query": "生气",
+      "expectedLemma": "enuig",
+      "label": "生气·名词"
+    },
+    {
+      "query": "恼火",
+      "expectedLemma": "enuig",
+      "label": "生气·名词"
+    },
+    {
+      "query": "恼怒",
+      "expectedLemma": "enuig",
+      "label": "生气·名词"
+    },
+    {
+      "query": "觉得恼火",
+      "expectedLemma": "enuig",
+      "label": "生气·名词"
+    },
+    {
+      "query": "生气·名词",
+      "expectedLemma": "enuig",
+      "label": "生气·名词"
+    },
+    {
+      "query": "愤怒",
+      "expectedLemma": "ira",
+      "label": "愤怒·名词"
+    },
+    {
+      "query": "怒火",
+      "expectedLemma": "ira",
+      "label": "愤怒·名词"
+    },
+    {
+      "query": "愤怒·名词",
+      "expectedLemma": "ira",
+      "label": "愤怒·名词"
+    },
+    {
+      "query": "担心",
+      "expectedLemma": "preocupació",
+      "label": "担心·名词"
+    },
+    {
+      "query": "担忧",
+      "expectedLemma": "preocupació",
+      "label": "担心·名词"
+    },
+    {
+      "query": "忧虑",
+      "expectedLemma": "preocupació",
+      "label": "担心·名词"
+    },
+    {
+      "query": "为事情担忧",
+      "expectedLemma": "preocupació",
+      "label": "担心·名词"
+    },
+    {
+      "query": "担心·名词",
+      "expectedLemma": "preocupació",
+      "label": "担心·名词"
+    },
+    {
+      "query": "学习",
+      "expectedLemma": "aprenentatge",
+      "label": "学习·名词"
+    },
+    {
+      "query": "学新东西",
+      "expectedLemma": "aprenentatge",
+      "label": "学习·名词"
+    },
+    {
+      "query": "掌握知识",
+      "expectedLemma": "aprenentatge",
+      "label": "学习·名词"
+    },
+    {
+      "query": "学习知识",
+      "expectedLemma": "aprenentatge",
+      "label": "学习·名词"
+    },
+    {
+      "query": "学习·名词",
+      "expectedLemma": "aprenentatge",
+      "label": "学习·名词"
+    },
+    {
+      "query": "疲劳",
+      "expectedLemma": "cansament",
+      "label": "疲劳·名词"
+    },
+    {
+      "query": "疲倦",
+      "expectedLemma": "cansament",
+      "label": "疲劳·名词"
+    },
+    {
+      "query": "疲惫",
+      "expectedLemma": "cansament",
+      "label": "疲劳·名词"
+    },
+    {
+      "query": "感到疲劳",
+      "expectedLemma": "cansament",
+      "label": "疲劳·名词"
+    },
+    {
+      "query": "很累",
+      "expectedLemma": "cansament",
+      "label": "疲劳·名词"
+    },
+    {
+      "query": "疲劳·名词",
+      "expectedLemma": "cansament",
+      "label": "疲劳·名词"
+    },
+    {
+      "query": "平静",
+      "expectedLemma": "tranquil·litat",
+      "label": "平静·名词"
+    },
+    {
+      "query": "宁静",
+      "expectedLemma": "tranquil·litat",
+      "label": "平静·名词"
+    },
+    {
+      "query": "安宁",
+      "expectedLemma": "tranquil·litat",
+      "label": "平静·名词"
+    },
+    {
+      "query": "心情平静",
+      "expectedLemma": "tranquil·litat",
+      "label": "平静·名词"
+    },
+    {
+      "query": "平静·名词",
+      "expectedLemma": "tranquil·litat",
+      "label": "平静·名词"
+    },
+    {
+      "query": "强壮",
+      "expectedLemma": "força",
+      "label": "力量·名词"
+    },
+    {
+      "query": "有力",
+      "expectedLemma": "força",
+      "label": "力量·名词"
+    },
+    {
+      "query": "有力量",
+      "expectedLemma": "força",
+      "label": "力量·名词"
+    },
+    {
+      "query": "力气大",
+      "expectedLemma": "força",
+      "label": "力量·名词"
+    },
+    {
+      "query": "力量·名词",
+      "expectedLemma": "força",
+      "label": "力量·名词"
+    },
+    {
+      "query": "自由",
+      "expectedLemma": "llibertat",
+      "label": "自由·名词"
+    },
+    {
+      "query": "自由自在",
+      "expectedLemma": "llibertat",
+      "label": "自由·名词"
+    },
+    {
+      "query": "不受束缚",
+      "expectedLemma": "llibertat",
+      "label": "自由·名词"
+    },
+    {
+      "query": "不受限制",
+      "expectedLemma": "llibertat",
+      "label": "自由·名词"
+    },
+    {
+      "query": "自由·名词",
+      "expectedLemma": "llibertat",
+      "label": "自由·名词"
+    },
+    {
+      "query": "干净",
+      "expectedLemma": "netedat",
+      "label": "干净·名词"
+    },
+    {
+      "query": "清洁",
+      "expectedLemma": "netedat",
+      "label": "干净·名词"
+    },
+    {
+      "query": "洁净",
+      "expectedLemma": "netedat",
+      "label": "干净·名词"
+    },
+    {
+      "query": "干干净净",
+      "expectedLemma": "netedat",
+      "label": "干净·名词"
+    },
+    {
+      "query": "干净·名词",
+      "expectedLemma": "netedat",
+      "label": "干净·名词"
+    },
+    {
+      "query": "危险",
+      "expectedLemma": "perill",
+      "label": "危险·名词"
+    },
+    {
+      "query": "有危险",
+      "expectedLemma": "perill",
+      "label": "危险·名词"
+    },
+    {
+      "query": "存在危险",
+      "expectedLemma": "perill",
+      "label": "危险·名词"
+    },
+    {
+      "query": "危险性高",
+      "expectedLemma": "perill",
+      "label": "危险·名词"
+    },
+    {
+      "query": "危险·名词",
+      "expectedLemma": "perill",
+      "label": "危险·名词"
+    },
+    {
+      "query": "热",
+      "expectedLemma": "calor",
+      "label": "热·名词"
+    },
+    {
+      "query": "炎热",
+      "expectedLemma": "calor",
+      "label": "热·名词"
+    },
+    {
+      "query": "天气热",
+      "expectedLemma": "calor",
+      "label": "热·名词"
+    },
+    {
+      "query": "热度",
+      "expectedLemma": "calor",
+      "label": "热·名词"
+    },
+    {
+      "query": "热·名词",
+      "expectedLemma": "calor",
+      "label": "热·名词"
+    },
+    {
+      "query": "耐心",
+      "expectedLemma": "paciència",
+      "label": "耐心·名词"
+    },
+    {
+      "query": "有耐心",
+      "expectedLemma": "paciència",
+      "label": "耐心·名词"
+    },
+    {
+      "query": "耐性",
+      "expectedLemma": "paciència",
+      "label": "耐心·名词"
+    },
+    {
+      "query": "耐心·名词",
+      "expectedLemma": "paciència",
+      "label": "耐心·名词"
+    },
+    {
+      "query": "遥远",
+      "expectedLemma": "llunyà",
+      "label": "遥远·形容词"
+    },
+    {
+      "query": "远处",
+      "expectedLemma": "llunyà",
+      "label": "遥远·形容词"
+    },
+    {
+      "query": "距离远",
+      "expectedLemma": "llunyà",
+      "label": "遥远·形容词"
+    },
+    {
+      "query": "离得远",
+      "expectedLemma": "llunyà",
+      "label": "遥远·形容词"
+    },
+    {
+      "query": "遥远·形容词",
+      "expectedLemma": "llunyà",
+      "label": "遥远·形容词"
     }
   ],
   "contrasts": [

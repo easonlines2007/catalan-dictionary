@@ -21,7 +21,7 @@ export type GrammaticalGender = "masculine" | "feminine" | "common";
 export type SearchLanguage = "auto" | "ca" | "es" | "zh";
 export type MatchLanguage = Exclude<SearchLanguage, "auto">;
 export type MatchKind = "lemma" | "morphology" | "translation" | "alias" | "semantic";
-export interface SemanticMatch { conceptId: string; expression: string; }
+export interface SemanticMatch { conceptId: string; expression: string; partOfSpeech?: PartOfSpeech; }
 
 export interface DictionaryExample {
   ca: string;
@@ -135,6 +135,7 @@ export interface FoundLookup {
   matchedTerm?: string;
   matchKind?: MatchKind;
   semanticMatch?: SemanticMatch;
+  preferredPartOfSpeech?: PartOfSpeech;
 }
 
 export interface MissedLookup {

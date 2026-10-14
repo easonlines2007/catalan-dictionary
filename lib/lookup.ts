@@ -2,7 +2,7 @@ import { dictionaryRepository, isVerb } from "./dictionary-repository.ts";
 import { FORM_INDEX } from "./dictionary.ts";
 import { searchRepository } from "./search-repository.ts";
 import { normalizeSearchInput } from "./search-normalization.ts";
-import { extractChineseSearchTerm } from "./chinese-query.ts";
+import { extractChineseSearchIntent } from "./chinese-query.ts";
 import type {
   DictionaryEntry,
   LemmaResult,
@@ -10,6 +10,7 @@ import type {
   FoundLookup,
   SearchLanguage,
   SearchSuggestion,
+  PartOfSpeech,
 } from "./types.ts";
 
 export function normalizeCatalanInput(value: string): string {
@@ -452,19 +453,23 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
   const hydrated = await Promise.all(hits.map(async (hit) => {
     const entry = await dictionaryRepository.getEntry(hit.normalizedLemma);
     return entry ? {
-      input: query, lemma: entry.lemma, entry, partOfSpeech: entry.partOfSpeech?.[0],
+      input: query, lemma: entry.lemma, entry, partOfSpeech: hit.semanticMatch?.partOfSpeech ?? entry.partOfSpeech?.[0],
       matchedLanguage: language, matchedTerm: hit.matchedTerm, matchKind: hit.matchKind,
       confidence: hit.matchKind === "semantic" ? 0.87 : hit.exact ? 1 : 0.95,
       semanticMatch: hit.semanticMatch,
       searchPriority: hit.priority ?? 0,
     } satisfies LemmaResult : undefined;
   }));
-  const seen = new Set<string>();
-  const resolved = hydrated.filter((candidate): candidate is NonNullable<typeof candidate> => {
-    if (!candidate || seen.has(candidate.entry.normalizedLemma)) return false;
-    seen.add(candidate.entry.normalizedLemma);
-    return true;
-  }).sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0)
+  const byLemma = new Map<string, NonNullable<(typeof hydrated)[number]>>();
+  for (const candidate of hydrated) {
+    if (!candidate) continue;
+    const previous = byLemma.get(candidate.entry.normalizedLemma);
+    if (!previous) byLemma.set(candidate.entry.normalizedLemma, candidate);
+    else if (candidate.semanticMatch) byLemma.set(candidate.entry.normalizedLemma,
+      { ...previous, semanticMatch: candidate.semanticMatch,
+        partOfSpeech: candidate.semanticMatch.partOfSpeech ?? previous.partOfSpeech });
+  }
+  const resolved = [...byLemma.values()].sort((a, b) => (b.confidence ?? 0) - (a.confidence ?? 0)
     || b.searchPriority - a.searchPriority
     || (a.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER) - (b.entry.frequencyRank ?? Number.MAX_SAFE_INTEGER)
     || a.lemma.localeCompare(b.lemma, "ca"));
@@ -474,21 +479,52 @@ async function reverseCandidates(query: string, language: "es" | "zh"): Promise<
 
 /** All input languages resolve to the same canonical Catalan dictionary entry. */
 export async function lookupWord(query: string, mode: SearchLanguage = "auto"): Promise<LookupResponse> {
-  const extractedQuery = mode === "zh" || mode === "auto" ? extractChineseSearchTerm(query) : undefined;
+  const intent = mode === "zh" || mode === "auto" ? extractChineseSearchIntent(query) : undefined;
+  const extractedQuery = intent?.term;
   let literal: LookupResponse;
   try { literal = await lookupLiteral(query, mode); }
   catch (error) {
     if (!extractedQuery) throw error;
     // A question's full spelling can need an uncached shard even though its
     // complete payload is already available in the installed dictionary.
-    return lookupExtracted(query, mode, extractedQuery);
+    return lookupExtracted(query, mode, extractedQuery, intent?.preferredPartOfSpeech);
   }
   if (literal.status === "found" || !extractedQuery) return literal;
-  return lookupExtracted(query, mode, extractedQuery);
+  return lookupExtracted(query, mode, extractedQuery, intent?.preferredPartOfSpeech);
 }
 
-async function lookupExtracted(query: string, mode: SearchLanguage, extractedQuery: string): Promise<LookupResponse> {
-  const extracted = await lookupLiteral(extractedQuery, "zh");
+/** Select only a candidate already bound to this lookup's dictionary evidence. */
+export function selectLookupCandidate(result: FoundLookup, candidate: LemmaResult): FoundLookup {
+  if (!candidate.entry || !result.candidates.includes(candidate)) return result;
+  return { ...result, lemma: candidate.lemma, entry: candidate.entry,
+    confidence: candidate.confidence ?? result.confidence, morphology: candidate.morphology,
+    matchedLanguage: candidate.matchedLanguage, matchedTerm: candidate.matchedTerm,
+    matchKind: candidate.matchKind, semanticMatch: candidate.semanticMatch,
+    resolutionSource: candidate.matchedLanguage && candidate.matchedLanguage !== "ca"
+      ? candidate.matchKind === "semantic" ? "semantic" : "translation"
+      : candidate.matchKind === "morphology" ? "morphology" : "exact" };
+}
+
+function preferWordClass(result: FoundLookup, preference: PartOfSpeech): FoundLookup {
+  const score = (candidate: LemmaResult) => matchesWordClass(candidate, preference)
+    ? candidate.semanticMatch?.partOfSpeech === preference ? 2 : 1 : 0;
+  const candidates = [...result.candidates].sort((a, b) => score(b) - score(a));
+  const marked = { ...result, candidates, preferredPartOfSpeech: preference };
+  const first = candidates[0];
+  return first && matchesWordClass(first, preference) ? selectLookupCandidate(marked, first) : marked;
+}
+
+export function matchesWordClass(candidate: Pick<LemmaResult, "entry" | "semanticMatch">, preference: PartOfSpeech): boolean {
+  if (candidate.semanticMatch?.partOfSpeech) return candidate.semanticMatch.partOfSpeech === preference;
+  const classes = candidate.entry?.partOfSpeech ?? [];
+  // Older packs and unannotated meanings must not borrow the word class of
+  // another sense of a polysemous lemma.
+  return classes.length === 1 && classes[0] === preference;
+}
+
+async function lookupExtracted(query: string, mode: SearchLanguage, extractedQuery: string, preference?: PartOfSpeech): Promise<LookupResponse> {
+  let extracted = await lookupLiteral(extractedQuery, "zh");
+  if (extracted.status === "found" && preference) extracted = preferWordClass(extracted, preference);
   return { ...extracted, searchedForm: query.trim().normalize("NFC"),
     normalizedQuery: normalizeSearchInput(query, mode), searchLanguage: mode, extractedQuery };
 }
@@ -566,15 +602,27 @@ async function lookupLiteral(query: string, mode: SearchLanguage): Promise<Looku
  * or Chinese spelling as if it were a Catalan lemma. */
 export async function suggestWords(query: string, mode: SearchLanguage = "auto", limit = 8, signal?: AbortSignal): Promise<SearchSuggestion[]> {
   const input = normalizeSearchInput(query, mode);
-  if (!input || !isSearchable(input) || Array.from(input).length > 64 || signal?.aborted) return [];
+  if (!input || !isSearchable(input) || Array.from(input).length > 64 || signal?.aborted || limit <= 0) return [];
   const language = mode === "auto" ? (/\p{Script=Han}/u.test(input) ? "zh" : "es") : mode;
   if (language === "ca") {
     return (await fuzzySuggestions(input, limit)).map((term) => ({ term, lemma: term, language: "ca",
       kind: normalizeCatalanInput(term).startsWith(input) ? "prefix" : "fuzzy" }));
   }
   const base = await dictionaryRepository.manifest();
+  const intent = language === "zh" ? extractChineseSearchIntent(input) : undefined;
+  if (intent?.preferredPartOfSpeech) {
+    const found = await lookupLiteral(intent.term, "zh");
+    if (found.status !== "found" || signal?.aborted) return [];
+    const preferred = preferWordClass(found, intent.preferredPartOfSpeech);
+    if (!matchesWordClass(preferred, intent.preferredPartOfSpeech)) return [];
+    // Semantic labels are source-bound canonical aliases. For a literal
+    // candidate, keep the full request so selecting it applies the same class
+    // preference instead of reopening a different part-of-speech homonym.
+    return [{ term: preferred.matchKind === "semantic" && preferred.matchedTerm ? preferred.matchedTerm : input,
+      lemma: preferred.lemma, language: "zh", kind: preferred.matchKind === "semantic" ? "semantic" : "related" }];
+  }
   let reverse = await searchRepository.suggest(input, language, base.dataVersion, limit, signal);
-  const extractedQuery = language === "zh" ? extractChineseSearchTerm(input) : undefined;
+  const extractedQuery = intent?.term;
   if (extractedQuery && !reverse.some((item) => item.kind === "exact") && !signal?.aborted) {
     reverse = await searchRepository.suggest(extractedQuery, "zh", base.dataVersion, limit, signal);
   }

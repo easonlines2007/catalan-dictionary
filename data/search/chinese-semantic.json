@@ -231,7 +231,11 @@
         "我有点快乐",
         "我比较快乐",
         "我非常快乐",
-        "我特别快乐"
+        "我特别快乐",
+        "开心",
+        "高兴",
+        "快乐",
+        "幸福"
       ],
       "evidence": [
         {
@@ -239,7 +243,8 @@
           "field": "d.en",
           "text": "happy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "sad",
@@ -450,7 +455,11 @@
         "我有点悲伤",
         "我比较悲伤",
         "我非常悲伤",
-        "我特别悲伤"
+        "我特别悲伤",
+        "难过",
+        "伤心",
+        "悲伤",
+        "哀伤"
       ],
       "evidence": [
         {
@@ -458,7 +467,8 @@
           "field": "d.en",
           "text": "sad, unhappy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "calm",
@@ -599,7 +609,8 @@
         "我有点镇定",
         "我比较镇定",
         "我非常镇定",
-        "我特别镇定"
+        "我特别镇定",
+        "平静"
       ],
       "evidence": [
         {
@@ -607,7 +618,8 @@
           "field": "d.en",
           "text": "tranquil, calm (free from emotional disturbance)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "nervous",
@@ -682,7 +694,8 @@
         "我有点紧张",
         "我比较紧张",
         "我非常紧张",
-        "我特别紧张"
+        "我特别紧张",
+        "紧张"
       ],
       "evidence": [
         {
@@ -690,7 +703,8 @@
           "field": "d.en",
           "text": "nervous"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "anxious",
@@ -832,7 +846,8 @@
         "我有点焦急",
         "我比较焦急",
         "我非常焦急",
-        "我特别焦急"
+        "我特别焦急",
+        "焦虑"
       ],
       "evidence": [
         {
@@ -840,7 +855,8 @@
           "field": "d.en",
           "text": "anxious"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "tired",
@@ -1048,7 +1064,11 @@
         "我有点疲惫",
         "我比较疲惫",
         "我非常疲惫",
-        "我特别疲惫"
+        "我特别疲惫",
+        "疲倦",
+        "累",
+        "疲劳",
+        "疲惫"
       ],
       "evidence": [
         {
@@ -1056,7 +1076,8 @@
           "field": "d.en",
           "text": "tired; fatigued"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "shy",
@@ -1151,7 +1172,8 @@
         "我有点害羞",
         "我比较害羞",
         "我非常害羞",
-        "我特别害羞"
+        "我特别害羞",
+        "腼腆"
       ],
       "evidence": [
         {
@@ -1159,7 +1181,8 @@
           "field": "d.en",
           "text": "timid; shy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "comfortable",
@@ -1300,7 +1323,8 @@
         "我有点舒适",
         "我比较舒适",
         "我非常舒适",
-        "我特别舒适"
+        "我特别舒适",
+        "舒适"
       ],
       "evidence": [
         {
@@ -1308,7 +1332,8 @@
           "field": "d.en",
           "text": "easy; comfortable"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "uncomfortable",
@@ -1449,7 +1474,8 @@
         "我有点不自在",
         "我比较不自在",
         "我非常不自在",
-        "我特别不自在"
+        "我特别不自在",
+        "不舒适"
       ],
       "evidence": [
         {
@@ -1457,7 +1483,8 @@
           "field": "d.en",
           "text": "uncomfortable"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "cheap",
@@ -1491,7 +1518,8 @@
         "真便宜",
         "真的很便宜",
         "真的非常便宜",
-        "真的特别便宜"
+        "真的特别便宜",
+        "便宜"
       ],
       "evidence": [
         {
@@ -1499,7 +1527,8 @@
           "field": "d.en",
           "text": "cheap, of low cost"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "expensive",
@@ -1551,7 +1580,8 @@
         "真昂贵",
         "真的很昂贵",
         "真的非常昂贵",
-        "真的特别昂贵"
+        "真的特别昂贵",
+        "昂贵"
       ],
       "evidence": [
         {
@@ -1559,7 +1589,8 @@
           "field": "d.en",
           "text": "expensive"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "free",
@@ -1572,7 +1603,8 @@
         "不用花钱",
         "免收费",
         "不需要付费",
-        "无需付费"
+        "无需付费",
+        "免费"
       ],
       "evidence": [
         {
@@ -1580,7 +1612,8 @@
           "field": "d.en",
           "text": "free (obtainable without any payment)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "quick",
@@ -1632,7 +1665,8 @@
         "真迅速",
         "真的很迅速",
         "真的非常迅速",
-        "真的特别迅速"
+        "真的特别迅速",
+        "迅速"
       ],
       "evidence": [
         {
@@ -1640,7 +1674,8 @@
           "field": "d.en",
           "text": "rapid; quick; fast; speedy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "slow",
@@ -1693,7 +1728,8 @@
         "真缓慢",
         "真的很缓慢",
         "真的非常缓慢",
-        "真的特别缓慢"
+        "真的特别缓慢",
+        "缓慢"
       ],
       "evidence": [
         {
@@ -1701,7 +1737,8 @@
           "field": "d.en",
           "text": "slow"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "near",
@@ -1712,7 +1749,8 @@
         "离得近",
         "距离很近",
         "就在附近",
-        "附近的"
+        "附近的",
+        "邻近"
       ],
       "evidence": [
         {
@@ -1720,7 +1758,8 @@
           "field": "d.en",
           "text": "near, close"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "far",
@@ -1729,7 +1768,8 @@
       "expressions": [
         "距离远",
         "距离很远",
-        "离得远"
+        "离得远",
+        "遥远"
       ],
       "evidence": [
         {
@@ -1737,7 +1777,8 @@
           "field": "d.en",
           "text": "far"
         }
-      ]
+      ],
+      "partOfSpeech": "adverb"
     },
     {
       "id": "clean",
@@ -1767,7 +1808,10 @@
         "真干净",
         "真的很干净",
         "真的非常干净",
-        "真的特别干净"
+        "真的特别干净",
+        "干净",
+        "清洁",
+        "洁净"
       ],
       "evidence": [
         {
@@ -1775,7 +1819,8 @@
           "field": "d.en",
           "text": "clean"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "dirty",
@@ -1805,7 +1850,8 @@
         "真脏",
         "真的很脏",
         "真的非常脏",
-        "真的特别脏"
+        "真的特别脏",
+        "脏"
       ],
       "evidence": [
         {
@@ -1813,7 +1859,8 @@
           "field": "d.en",
           "text": "dirty"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "pretty",
@@ -1864,7 +1911,8 @@
         "真好看",
         "真的很好看",
         "真的非常好看",
-        "真的特别好看"
+        "真的特别好看",
+        "漂亮"
       ],
       "evidence": [
         {
@@ -1872,7 +1920,8 @@
           "field": "d.en",
           "text": "pretty"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "ugly",
@@ -1923,7 +1972,8 @@
         "真难看",
         "真的很难看",
         "真的非常难看",
-        "真的特别难看"
+        "真的特别难看",
+        "丑陋"
       ],
       "evidence": [
         {
@@ -1931,7 +1981,8 @@
           "field": "d.en",
           "text": "ugly"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "difficult",
@@ -1983,7 +2034,8 @@
         "真困难",
         "真的很困难",
         "真的非常困难",
-        "真的特别困难"
+        "真的特别困难",
+        "困难"
       ],
       "evidence": [
         {
@@ -1991,7 +2043,8 @@
           "field": "d.en",
           "text": "difficult"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "easy",
@@ -2043,7 +2096,8 @@
         "真容易",
         "真的很容易",
         "真的非常容易",
-        "真的特别容易"
+        "真的特别容易",
+        "容易"
       ],
       "evidence": [
         {
@@ -2051,7 +2105,8 @@
           "field": "d.en",
           "text": "easy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "rest",
@@ -2061,7 +2116,8 @@
         "歇一会儿",
         "休息一下",
         "歇一歇",
-        "歇会儿"
+        "歇会儿",
+        "休息"
       ],
       "evidence": [
         {
@@ -2069,7 +2125,8 @@
           "field": "d.en",
           "text": "to rest"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "forget",
@@ -2080,7 +2137,8 @@
         "记不起来",
         "忘了",
         "忘掉了",
-        "没有记住"
+        "没有记住",
+        "忘记"
       ],
       "evidence": [
         {
@@ -2088,7 +2146,8 @@
           "field": "d.en",
           "text": "to forget"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "remember",
@@ -2099,7 +2158,8 @@
         "记在心里",
         "想起来了",
         "记住了",
-        "回想起来"
+        "回想起来",
+        "记得"
       ],
       "evidence": [
         {
@@ -2107,7 +2167,8 @@
           "field": "d.en",
           "text": "to remember, to recollect, to recall (someone or something)"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "understand",
@@ -2121,7 +2182,8 @@
         "理解意思",
         "看懂意思",
         "听明白",
-        "明白意思"
+        "明白意思",
+        "理解"
       ],
       "evidence": [
         {
@@ -2129,7 +2191,8 @@
           "field": "d.en",
           "text": "to understand"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "reserve",
@@ -2141,7 +2204,8 @@
         "预订房间",
         "预订座位",
         "提前预约",
-        "预约位置"
+        "预约位置",
+        "预订"
       ],
       "evidence": [
         {
@@ -2149,7 +2213,8 @@
           "field": "d.en",
           "text": "to reserve, to book"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "repair",
@@ -2160,7 +2225,8 @@
         "修好东西",
         "修补东西",
         "修一修",
-        "修理一下"
+        "修理一下",
+        "修理"
       ],
       "evidence": [
         {
@@ -2168,7 +2234,8 @@
           "field": "d.en",
           "text": "to repair, mend"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "lend",
@@ -2178,7 +2245,8 @@
         "借给别人",
         "借东西给别人",
         "借钱给别人",
-        "让别人借用"
+        "让别人借用",
+        "借出"
       ],
       "evidence": [
         {
@@ -2186,7 +2254,8 @@
           "field": "d.en",
           "text": "to loan; to lend"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "borrow",
@@ -2196,7 +2265,8 @@
         "向别人借东西",
         "从别人那里借",
         "借东西来用",
-        "向人借钱"
+        "向人借钱",
+        "借入"
       ],
       "evidence": [
         {
@@ -2204,7 +2274,8 @@
           "field": "d.en",
           "text": "to borrow"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "pay",
@@ -2214,7 +2285,8 @@
         "把钱付给别人",
         "付账",
         "付钱给商家",
-        "支付费用"
+        "支付费用",
+        "付款"
       ],
       "evidence": [
         {
@@ -2222,7 +2294,8 @@
           "field": "d.en",
           "text": "to pay (for/off)"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "receive-payment",
@@ -2231,7 +2304,8 @@
       "expressions": [
         "收取费用",
         "收到账款",
-        "收取钱款"
+        "收取钱款",
+        "收款"
       ],
       "evidence": [
         {
@@ -2239,7 +2313,8 @@
           "field": "d.en",
           "text": "to collect, receive (payment)"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "library",
@@ -2249,7 +2324,8 @@
         "借书的地方",
         "可以借书的地方",
         "借阅图书的地方",
-        "看书借书的地方"
+        "看书借书的地方",
+        "图书馆"
       ],
       "evidence": [
         {
@@ -2257,7 +2333,8 @@
           "field": "d.en",
           "text": "library"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "pharmacy",
@@ -2267,7 +2344,8 @@
         "卖药的地方",
         "买药的店",
         "售卖药品的店",
-        "买药的地方"
+        "买药的地方",
+        "药店"
       ],
       "evidence": [
         {
@@ -2275,7 +2353,8 @@
           "field": "d.en",
           "text": "pharmacy, drugstore"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "restaurant",
@@ -2285,7 +2364,8 @@
         "吃饭的店",
         "吃饭的馆子",
         "可以点菜吃饭的地方",
-        "提供饭菜的店"
+        "提供饭菜的店",
+        "餐馆"
       ],
       "evidence": [
         {
@@ -2293,7 +2373,8 @@
           "field": "d.en",
           "text": "restaurant"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "bakery",
@@ -2304,7 +2385,8 @@
         "买面包的店",
         "卖面包的地方",
         "烤面包卖的店",
-        "做面包卖的店"
+        "做面包卖的店",
+        "面包店"
       ],
       "evidence": [
         {
@@ -2312,7 +2394,8 @@
           "field": "d.en",
           "text": "a place where bread is sold, a bakery"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "driving-school",
@@ -2322,7 +2405,8 @@
         "学开车的学校",
         "学驾驶的学校",
         "教开车的地方",
-        "学习驾驶的地方"
+        "学习驾驶的地方",
+        "驾校"
       ],
       "evidence": [
         {
@@ -2330,7 +2414,8 @@
           "field": "d.en",
           "text": "driving school"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "bedroom",
@@ -2340,7 +2425,8 @@
         "家里睡觉的房间",
         "睡觉的房间",
         "放床睡觉的房间",
-        "用来睡觉的屋子"
+        "用来睡觉的屋子",
+        "卧室"
       ],
       "evidence": [
         {
@@ -2348,7 +2434,8 @@
           "field": "d.en",
           "text": "bedroom (room in a house where a bed is kept for sleeping)"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "hospital",
@@ -2358,7 +2445,8 @@
         "看病的地方",
         "看病的医院",
         "治疗病人的地方",
-        "给人治病的地方"
+        "给人治病的地方",
+        "医院"
       ],
       "evidence": [
         {
@@ -2366,7 +2454,8 @@
           "field": "d.en",
           "text": "hospital"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "train-station",
@@ -2377,7 +2466,8 @@
         "乘火车的车站",
         "搭火车的车站",
         "火车停靠的车站",
-        "火车出发的车站"
+        "火车出发的车站",
+        "火车站"
       ],
       "evidence": [
         {
@@ -2385,7 +2475,8 @@
           "field": "l",
           "text": "estació de tren"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "bus-stop",
@@ -2396,7 +2487,8 @@
         "坐公交车的站",
         "搭公交车的站",
         "公交车停靠的站",
-        "巴士停靠的站"
+        "巴士停靠的站",
+        "公交站"
       ],
       "evidence": [
         {
@@ -2404,7 +2496,8 @@
           "field": "l",
           "text": "parada d'autobús"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "eat",
@@ -2415,7 +2508,8 @@
         "用餐",
         "填饱肚子",
         "吃点东西",
-        "吃东西"
+        "吃东西",
+        "吃饭"
       ],
       "evidence": [
         {
@@ -2423,7 +2517,8 @@
           "field": "d.en",
           "text": "to eat something solid"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "drink",
@@ -2433,7 +2528,8 @@
         "饮用",
         "喝点东西",
         "喝饮料",
-        "喝水"
+        "喝水",
+        "喝"
       ],
       "evidence": [
         {
@@ -2441,7 +2537,8 @@
           "field": "d.en",
           "text": "to drink"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "sleep",
@@ -2452,7 +2549,8 @@
         "睡一觉",
         "睡着",
         "睡会儿",
-        "躺下睡觉"
+        "躺下睡觉",
+        "睡觉"
       ],
       "evidence": [
         {
@@ -2460,7 +2558,8 @@
           "field": "d.en",
           "text": "to sleep"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "wake",
@@ -2471,7 +2570,8 @@
         "醒过来",
         "叫醒",
         "唤醒",
-        "从睡梦中醒来"
+        "从睡梦中醒来",
+        "醒来"
       ],
       "evidence": [
         {
@@ -2479,7 +2579,8 @@
           "field": "d.en",
           "text": "to wake, awaken, wake up"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "walk",
@@ -2490,7 +2591,8 @@
         "徒步",
         "用脚走",
         "走着去",
-        "走一走"
+        "走一走",
+        "走路"
       ],
       "evidence": [
         {
@@ -2498,7 +2600,8 @@
           "field": "d.en",
           "text": "to walk"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "run",
@@ -2508,7 +2611,8 @@
         "奔跑",
         "跑步",
         "跑起来",
-        "快速奔跑"
+        "快速奔跑",
+        "跑"
       ],
       "evidence": [
         {
@@ -2516,7 +2620,8 @@
           "field": "d.en",
           "text": "to run"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "speak",
@@ -2526,7 +2631,8 @@
         "讲话",
         "开口说话",
         "用语言交流",
-        "说几句话"
+        "说几句话",
+        "说话"
       ],
       "evidence": [
         {
@@ -2534,7 +2640,8 @@
           "field": "d.en",
           "text": "to speak (to communicate with one's voice)"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "listen",
@@ -2544,7 +2651,8 @@
         "聆听",
         "认真听",
         "用耳朵听",
-        "仔细听"
+        "仔细听",
+        "听"
       ],
       "evidence": [
         {
@@ -2552,7 +2660,8 @@
           "field": "d.en",
           "text": "to listen to, to pay attention to"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "look",
@@ -2562,7 +2671,8 @@
         "观看",
         "看一看",
         "用眼睛看",
-        "看东西"
+        "看东西",
+        "看"
       ],
       "evidence": [
         {
@@ -2570,7 +2680,8 @@
           "field": "d.en",
           "text": "to look, to look at, to watch"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "find",
@@ -2580,7 +2691,8 @@
         "找到了",
         "寻得",
         "发现所在",
-        "把东西找出来"
+        "把东西找出来",
+        "找到"
       ],
       "evidence": [
         {
@@ -2588,7 +2700,8 @@
           "field": "d.en",
           "text": "to find"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "search",
@@ -2598,7 +2711,8 @@
         "找东西",
         "搜寻",
         "寻觅",
-        "寻找东西"
+        "寻找东西",
+        "寻找"
       ],
       "evidence": [
         {
@@ -2606,7 +2720,8 @@
           "field": "d.en",
           "text": "to look for; to search"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "help",
@@ -2617,7 +2732,8 @@
         "协助",
         "帮一把",
         "给人帮忙",
-        "提供帮助"
+        "提供帮助",
+        "帮助"
       ],
       "evidence": [
         {
@@ -2625,7 +2741,8 @@
           "field": "d.en",
           "text": "to help, aid"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "begin",
@@ -2636,7 +2753,8 @@
         "开始做",
         "开始进行",
         "做起",
-        "启动"
+        "启动",
+        "开始"
       ],
       "evidence": [
         {
@@ -2644,7 +2762,8 @@
           "field": "d.en",
           "text": "to begin, to start something"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "finish",
@@ -2655,7 +2774,8 @@
         "完成了",
         "做完了",
         "办完",
-        "结束工作"
+        "结束工作",
+        "完成"
       ],
       "evidence": [
         {
@@ -2663,7 +2783,8 @@
           "field": "d.en",
           "text": "to finish, complete"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "wait",
@@ -2674,7 +2795,8 @@
         "等一等",
         "等一下",
         "等待别人",
-        "等人"
+        "等人",
+        "等待"
       ],
       "evidence": [
         {
@@ -2682,7 +2804,8 @@
           "field": "d.en",
           "text": "to wait, wait for, await"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "arrive",
@@ -2692,7 +2815,8 @@
         "抵达",
         "到了",
         "来到目的地",
-        "到达目的地"
+        "到达目的地",
+        "到达"
       ],
       "evidence": [
         {
@@ -2700,7 +2824,8 @@
           "field": "d.en",
           "text": "to arrive"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "go-out",
@@ -2710,7 +2835,8 @@
         "外出",
         "走出去",
         "从里面出来",
-        "出门"
+        "出门",
+        "出去"
       ],
       "evidence": [
         {
@@ -2718,7 +2844,8 @@
           "field": "d.en",
           "text": "to go out, to leave"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "enter",
@@ -2728,7 +2855,8 @@
         "进去",
         "进来",
         "走进去",
-        "走进里面"
+        "走进里面",
+        "进入"
       ],
       "evidence": [
         {
@@ -2736,7 +2864,8 @@
           "field": "d.en",
           "text": "to enter"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "open",
@@ -2746,7 +2875,8 @@
         "开启",
         "开门",
         "打开门",
-        "把门打开"
+        "把门打开",
+        "打开"
       ],
       "evidence": [
         {
@@ -2754,7 +2884,8 @@
           "field": "d.en",
           "text": "to open"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "close",
@@ -2764,7 +2895,8 @@
         "关上",
         "关门",
         "把门关上",
-        "关起来"
+        "关起来",
+        "关闭"
       ],
       "evidence": [
         {
@@ -2772,7 +2904,8 @@
           "field": "d.en",
           "text": "to close"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "travel",
@@ -2782,7 +2915,8 @@
         "出游",
         "旅游",
         "去旅行",
-        "外出旅游"
+        "外出旅游",
+        "旅行"
       ],
       "evidence": [
         {
@@ -2790,7 +2924,8 @@
           "field": "d.en",
           "text": "to travel; to voyage"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "study",
@@ -2800,7 +2935,8 @@
         "读书学习",
         "做学问",
         "用功读书",
-        "学习功课"
+        "学习功课",
+        "研读"
       ],
       "evidence": [
         {
@@ -2808,7 +2944,8 @@
           "field": "d.en",
           "text": "to study"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "learn",
@@ -2818,7 +2955,8 @@
         "学到",
         "学会东西",
         "掌握知识",
-        "学新东西"
+        "学新东西",
+        "学会"
       ],
       "evidence": [
         {
@@ -2826,7 +2964,8 @@
           "field": "d.en",
           "text": "to learn"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "teach",
@@ -2836,7 +2975,8 @@
         "教别人",
         "传授知识",
         "教授知识",
-        "教人学习"
+        "教人学习",
+        "教导"
       ],
       "evidence": [
         {
@@ -2844,7 +2984,8 @@
           "field": "d.en",
           "text": "to teach"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "work",
@@ -2854,7 +2995,8 @@
         "干活",
         "劳动",
         "做工作",
-        "干事情"
+        "干事情",
+        "工作"
       ],
       "evidence": [
         {
@@ -2862,7 +3004,8 @@
           "field": "d.en",
           "text": "to apply oneself diligently to a task"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "cook",
@@ -2873,7 +3016,8 @@
         "煮饭",
         "烧饭",
         "做菜",
-        "烧菜"
+        "烧菜",
+        "做饭"
       ],
       "evidence": [
         {
@@ -2881,7 +3025,8 @@
           "field": "d.en",
           "text": "to cook"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "wash",
@@ -2891,7 +3036,8 @@
         "洗干净",
         "洗东西",
         "把东西洗干净",
-        "洗一洗"
+        "洗一洗",
+        "清洗"
       ],
       "evidence": [
         {
@@ -2899,7 +3045,8 @@
           "field": "d.en",
           "text": "to wash"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "buy",
@@ -2909,7 +3056,8 @@
         "买东西",
         "花钱购买",
         "买下来",
-        "买入商品"
+        "买入商品",
+        "购买"
       ],
       "evidence": [
         {
@@ -2917,7 +3065,8 @@
           "field": "d.en",
           "text": "to buy"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "sell",
@@ -2927,7 +3076,8 @@
         "卖东西",
         "卖出去",
         "卖给别人",
-        "出售商品"
+        "出售商品",
+        "出售"
       ],
       "evidence": [
         {
@@ -2935,7 +3085,8 @@
           "field": "d.en",
           "text": "to sell"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "choose",
@@ -2946,7 +3097,8 @@
         "选一个",
         "选出来",
         "挑一个",
-        "从中选择"
+        "从中选择",
+        "挑选"
       ],
       "evidence": [
         {
@@ -2954,7 +3106,8 @@
           "field": "d.en",
           "text": "to choose"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "decide",
@@ -2964,7 +3117,8 @@
         "做决定",
         "作出决定",
         "决定下来",
-        "拿定主意"
+        "拿定主意",
+        "决定"
       ],
       "evidence": [
         {
@@ -2972,7 +3126,8 @@
           "field": "d.en",
           "text": "to decide, to settle"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "need",
@@ -2982,7 +3137,8 @@
         "有需要",
         "必须要有",
         "需要用到",
-        "有必要用到"
+        "有必要用到",
+        "需要"
       ],
       "evidence": [
         {
@@ -2990,7 +3146,8 @@
           "field": "d.en",
           "text": "to need"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "want",
@@ -3000,7 +3157,8 @@
         "想得到",
         "想要得到",
         "有意愿",
-        "愿意要"
+        "愿意要",
+        "想要"
       ],
       "evidence": [
         {
@@ -3008,7 +3166,8 @@
           "field": "d.en",
           "text": "to want"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "love",
@@ -3018,7 +3177,8 @@
         "爱护",
         "爱着",
         "心里爱着",
-        "对人有爱意"
+        "对人有爱意",
+        "爱"
       ],
       "evidence": [
         {
@@ -3026,7 +3186,8 @@
           "field": "d.en",
           "text": "to love"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "like",
@@ -3036,7 +3197,8 @@
         "喜爱",
         "觉得喜欢",
         "让人喜欢",
-        "讨人喜欢"
+        "讨人喜欢",
+        "喜欢"
       ],
       "evidence": [
         {
@@ -3044,7 +3206,8 @@
           "field": "d.en",
           "text": "to like"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "rain",
@@ -3054,7 +3217,8 @@
         "降雨",
         "下起雨来",
         "天在下雨",
-        "雨从天上落下"
+        "雨从天上落下",
+        "下雨"
       ],
       "evidence": [
         {
@@ -3062,7 +3226,8 @@
           "field": "d.en",
           "text": "to rain"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "snow",
@@ -3072,7 +3237,8 @@
         "降雪",
         "下起雪来",
         "天在下雪",
-        "雪从天上飘落"
+        "雪从天上飘落",
+        "下雪"
       ],
       "evidence": [
         {
@@ -3080,7 +3246,8 @@
           "field": "d.en",
           "text": "to snow"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "cold-weather",
@@ -3132,7 +3299,8 @@
         "真寒冷",
         "真的很寒冷",
         "真的非常寒冷",
-        "真的特别寒冷"
+        "真的特别寒冷",
+        "寒冷"
       ],
       "evidence": [
         {
@@ -3140,7 +3308,8 @@
           "field": "d.en",
           "text": "cold, cool"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "hot-temperature",
@@ -3172,7 +3341,8 @@
         "真热",
         "真的很热",
         "真的非常热",
-        "真的特别热"
+        "真的特别热",
+        "热"
       ],
       "evidence": [
         {
@@ -3180,7 +3350,8 @@
           "field": "d.en",
           "text": "hot, warm"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "doctor",
@@ -3190,7 +3361,8 @@
         "给人看病的人",
         "看病的医生",
         "诊治病人的人",
-        "治病的人"
+        "治病的人",
+        "医生"
       ],
       "evidence": [
         {
@@ -3198,7 +3370,8 @@
           "field": "d.en",
           "text": "doctor, physician"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "teacher",
@@ -3208,7 +3381,8 @@
         "教书的人",
         "教学生的人",
         "给学生上课的人",
-        "学校里教书的人"
+        "学校里教书的人",
+        "教师"
       ],
       "evidence": [
         {
@@ -3216,7 +3390,8 @@
           "field": "d.en",
           "text": "teacher"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "friend",
@@ -3226,7 +3401,8 @@
         "友人",
         "好朋友",
         "朋友伙伴",
-        "和自己交好的人"
+        "和自己交好的人",
+        "朋友"
       ],
       "evidence": [
         {
@@ -3234,7 +3410,8 @@
           "field": "d.en",
           "text": "friend"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "father",
@@ -3244,7 +3421,8 @@
         "爸爸",
         "老爸",
         "自己的爸爸",
-        "家里的爸爸"
+        "家里的爸爸",
+        "父亲"
       ],
       "evidence": [
         {
@@ -3252,7 +3430,8 @@
           "field": "d.en",
           "text": "father"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "mother",
@@ -3262,7 +3441,8 @@
         "妈妈",
         "老妈",
         "自己的妈妈",
-        "家里的妈妈"
+        "家里的妈妈",
+        "母亲"
       ],
       "evidence": [
         {
@@ -3270,7 +3450,8 @@
           "field": "d.en",
           "text": "mother"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "kitchen",
@@ -3280,7 +3461,8 @@
         "做饭的地方",
         "家里做饭的房间",
         "烧饭的房间",
-        "用来烹饪的房间"
+        "用来烹饪的房间",
+        "厨房"
       ],
       "evidence": [
         {
@@ -3288,7 +3470,8 @@
           "field": "d.en",
           "text": "kitchen"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "bathroom",
@@ -3298,7 +3481,8 @@
         "洗澡的房间",
         "家里洗澡的地方",
         "洗浴的房间",
-        "用来洗澡的屋子"
+        "用来洗澡的屋子",
+        "浴室"
       ],
       "evidence": [
         {
@@ -3306,7 +3490,8 @@
           "field": "d.en",
           "text": "bathroom"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "school",
@@ -3316,7 +3501,8 @@
         "上学的地方",
         "学生上课的地方",
         "孩子读书的地方",
-        "教书育人的地方"
+        "教书育人的地方",
+        "学校"
       ],
       "evidence": [
         {
@@ -3324,7 +3510,8 @@
           "field": "d.en",
           "text": "school"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "airport",
@@ -3334,7 +3521,8 @@
         "坐飞机的地方",
         "飞机起降的地方",
         "乘飞机的地方",
-        "飞机起飞降落的场所"
+        "飞机起飞降落的场所",
+        "机场"
       ],
       "evidence": [
         {
@@ -3342,7 +3530,8 @@
           "field": "d.en",
           "text": "airport, aerodrome, airdrome, airfield"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "hotel",
@@ -3352,7 +3541,8 @@
         "旅行住的店",
         "外出住宿的地方",
         "供旅客住宿的地方",
-        "游客住宿的地方"
+        "游客住宿的地方",
+        "旅馆"
       ],
       "evidence": [
         {
@@ -3360,7 +3550,8 @@
           "field": "d.en",
           "text": "hotel"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "shop",
@@ -3370,7 +3561,8 @@
         "卖东西的店",
         "买东西的店",
         "出售货物的地方",
-        "售卖商品的店"
+        "售卖商品的店",
+        "商店"
       ],
       "evidence": [
         {
@@ -3378,7 +3570,8 @@
           "field": "d.en",
           "text": "shop, store"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "shoe",
@@ -3388,7 +3581,8 @@
         "脚上穿的东西",
         "穿在脚上的鞋",
         "保护脚的鞋",
-        "走路穿的鞋"
+        "走路穿的鞋",
+        "鞋子"
       ],
       "evidence": [
         {
@@ -3396,7 +3590,8 @@
           "field": "d.en",
           "text": "shoe"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "clothes",
@@ -3406,7 +3601,8 @@
         "身上穿的东西",
         "穿在身上的衣物",
         "穿着的衣物",
-        "身上穿的衣裳"
+        "身上穿的衣裳",
+        "衣服"
       ],
       "evidence": [
         {
@@ -3414,7 +3610,8 @@
           "field": "d.en",
           "text": "clothes"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "book",
@@ -3424,7 +3621,8 @@
         "书籍",
         "一本书",
         "用来阅读的书",
-        "装订成册的读物"
+        "装订成册的读物",
+        "书本"
       ],
       "evidence": [
         {
@@ -3432,7 +3630,8 @@
           "field": "d.en",
           "text": "book"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "pen",
@@ -3442,7 +3641,8 @@
         "原子笔",
         "用来写字的圆珠笔",
         "写字用的圆珠笔",
-        "油墨圆珠笔"
+        "油墨圆珠笔",
+        "圆珠笔"
       ],
       "evidence": [
         {
@@ -3450,7 +3650,8 @@
           "field": "d.en",
           "text": "pen; biro"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "quiet-sound",
@@ -3463,7 +3664,8 @@
         "一点声音也没有",
         "这里很安静",
         "周围很安静",
-        "保持安静"
+        "保持安静",
+        "无声"
       ],
       "evidence": [
         {
@@ -3471,7 +3673,8 @@
           "field": "d.en",
           "text": "silent"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "indifferent",
@@ -3484,7 +3687,8 @@
         "满不在乎",
         "对人冷淡",
         "对事情不关心",
-        "态度冷漠"
+        "态度冷漠",
+        "冷漠"
       ],
       "evidence": [
         {
@@ -3492,7 +3696,8 @@
           "field": "d.en",
           "text": "indifferent"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "enthusiastic",
@@ -3594,7 +3799,8 @@
         "我有点热心",
         "我比较热心",
         "我非常热心",
-        "我特别热心"
+        "我特别热心",
+        "热情"
       ],
       "evidence": [
         {
@@ -3602,7 +3808,8 @@
           "field": "d.en",
           "text": "enthusiastic"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "empty-space",
@@ -3614,7 +3821,8 @@
         "里面什么也没有",
         "空无一物",
         "空着的",
-        "空荡荡"
+        "空荡荡",
+        "空的"
       ],
       "evidence": [
         {
@@ -3622,7 +3830,8 @@
           "field": "d.en",
           "text": "empty"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "freedom",
@@ -3634,7 +3843,9 @@
         "不受束缚",
         "没有束缚",
         "自由行动",
-        "不被拘束"
+        "不被拘束",
+        "自由的",
+        "自由"
       ],
       "evidence": [
         {
@@ -3642,7 +3853,8 @@
           "field": "d.en",
           "text": "free, liberated (not restrained)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "available",
@@ -3654,7 +3866,8 @@
         "现在能用",
         "可以提供",
         "可供使用",
-        "有空可以帮忙"
+        "有空可以帮忙",
+        "可用"
       ],
       "evidence": [
         {
@@ -3662,7 +3875,8 @@
           "field": "d.en",
           "text": "available"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "save-resource",
@@ -3675,7 +3889,8 @@
         "省下钱",
         "节约资源",
         "避免浪费",
-        "少花钱"
+        "少花钱",
+        "节省"
       ],
       "evidence": [
         {
@@ -3683,7 +3898,8 @@
           "field": "d.en",
           "text": "to save (to conserve or prevent the wasting of)"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "miss-person",
@@ -3696,7 +3912,8 @@
         "想念一个人",
         "想念家乡",
         "怀念故乡",
-        "思念亲人"
+        "思念亲人",
+        "想念"
       ],
       "evidence": [
         {
@@ -3704,7 +3921,8 @@
           "field": "d.en",
           "text": "to long for, yearn for"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "think",
@@ -3717,7 +3935,8 @@
         "用脑子想",
         "思考问题",
         "考虑问题",
-        "想一想"
+        "想一想",
+        "思考"
       ],
       "evidence": [
         {
@@ -3725,7 +3944,8 @@
           "field": "d.en",
           "text": "to think"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "know-fact",
@@ -3737,7 +3957,8 @@
         "知道这件事",
         "知道事实",
         "了解事实",
-        "知悉情况"
+        "知悉情况",
+        "知道"
       ],
       "evidence": [
         {
@@ -3745,7 +3966,8 @@
           "field": "d.en",
           "text": "to know (a fact), to have knowledge"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "know-person",
@@ -3756,7 +3978,8 @@
         "认识一个人",
         "认识这个人",
         "了解这个地方",
-        "与某人相识"
+        "与某人相识",
+        "认识"
       ],
       "evidence": [
         {
@@ -3764,7 +3987,8 @@
           "field": "d.en",
           "text": "to know (a person, a place, etc.)"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "suitable",
@@ -3777,7 +4001,8 @@
         "适合需要",
         "正好合适",
         "合乎需要",
-        "比较适合"
+        "比较适合",
+        "合适"
       ],
       "evidence": [
         {
@@ -3785,7 +4010,8 @@
           "field": "d.en",
           "text": "appropriate, suitable"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "correct",
@@ -3798,7 +4024,8 @@
         "准确无误",
         "回答正确",
         "答案正确",
-        "是正确的"
+        "是正确的",
+        "正确"
       ],
       "evidence": [
         {
@@ -3806,7 +4033,8 @@
           "field": "d.en",
           "text": "correct"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "good-quality",
@@ -3818,7 +4046,8 @@
         "是好的",
         "好东西",
         "很不错",
-        "好品质"
+        "好品质",
+        "好的"
       ],
       "evidence": [
         {
@@ -3826,7 +4055,8 @@
           "field": "d.en",
           "text": "good"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "attention",
@@ -3837,7 +4067,8 @@
         "留意",
         "集中注意力",
         "用心关注",
-        "认真留意"
+        "认真留意",
+        "注意力"
       ],
       "evidence": [
         {
@@ -3845,7 +4076,8 @@
           "field": "d.en",
           "text": "attention"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "worry",
@@ -3857,7 +4089,8 @@
         "心里担心",
         "为事情担忧",
         "感到担忧",
-        "担心会出事"
+        "担心会出事",
+        "担忧"
       ],
       "evidence": [
         {
@@ -3865,7 +4098,8 @@
           "field": "d.en",
           "text": "to be worried"
         }
-      ]
+      ],
+      "partOfSpeech": "verb"
     },
     {
       "id": "prudent",
@@ -3876,7 +4110,8 @@
         "小心行事",
         "做事谨慎",
         "考虑周全",
-        "谨慎行事"
+        "谨慎行事",
+        "谨慎"
       ],
       "evidence": [
         {
@@ -3884,7 +4119,8 @@
           "field": "d.en",
           "text": "prudent"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "hurry",
@@ -3896,7 +4132,8 @@
         "赶时间",
         "急着做事",
         "有急事赶时间",
-        "匆匆忙忙"
+        "匆匆忙忙",
+        "匆忙"
       ],
       "evidence": [
         {
@@ -3904,7 +4141,8 @@
           "field": "d.en",
           "text": "hurry, haste"
         }
-      ]
+      ],
+      "partOfSpeech": "noun"
     },
     {
       "id": "strong-body",
@@ -3916,7 +4154,9 @@
         "身强力壮",
         "有力量",
         "力量大",
-        "很有力气"
+        "很有力气",
+        "强壮",
+        "有力"
       ],
       "evidence": [
         {
@@ -3924,7 +4164,8 @@
           "field": "d.en",
           "text": "strong (forceful, powerful)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "solid-durable",
@@ -3956,7 +4197,8 @@
         "真坚固",
         "真的很坚固",
         "真的非常坚固",
-        "真的特别坚固"
+        "真的特别坚固",
+        "坚固"
       ],
       "evidence": [
         {
@@ -3964,7 +4206,8 @@
           "field": "d.en",
           "text": "robust, unyielding"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "healthy-body",
@@ -3975,7 +4218,8 @@
         "身体好",
         "没有生病",
         "体魄健康",
-        "身体健壮"
+        "身体健壮",
+        "健康"
       ],
       "evidence": [
         {
@@ -3983,7 +4227,8 @@
           "field": "d.en",
           "text": "healthy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "healthy-benefit",
@@ -3994,7 +4239,8 @@
         "对身体好",
         "有益于身体",
         "有利健康",
-        "有利于健康"
+        "有利于健康",
+        "有益健康"
       ],
       "evidence": [
         {
@@ -4002,7 +4248,8 @@
           "field": "d.ca",
           "text": "Que és bo per a la salut."
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "spicy",
@@ -4024,7 +4271,8 @@
         "真辣",
         "真的很辣",
         "真的非常辣",
-        "真的特别辣"
+        "真的特别辣",
+        "辣"
       ],
       "evidence": [
         {
@@ -4032,7 +4280,8 @@
           "field": "d.en",
           "text": "spicy, piquant"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "lukewarm",
@@ -4044,7 +4293,8 @@
         "温热",
         "温温热热",
         "稍微有点热",
-        "温度不高不低"
+        "温度不高不低",
+        "微温"
       ],
       "evidence": [
         {
@@ -4052,7 +4302,8 @@
           "field": "d.en",
           "text": "lukewarm, tepid"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "fresh-food",
@@ -4063,7 +4314,8 @@
         "很新鲜",
         "食物新鲜",
         "新鲜的食物",
-        "刚做好的新鲜食物"
+        "刚做好的新鲜食物",
+        "新鲜"
       ],
       "evidence": [
         {
@@ -4071,7 +4323,8 @@
           "field": "d.en",
           "text": "fresh"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "new",
@@ -4083,7 +4336,8 @@
         "从没用过的",
         "新买的",
         "刚出现的",
-        "新造的"
+        "新造的",
+        "新的"
       ],
       "evidence": [
         {
@@ -4091,7 +4345,8 @@
           "field": "d.en",
           "text": "new"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "ancient",
@@ -4102,7 +4357,8 @@
         "很古老",
         "古时候的",
         "历史悠久",
-        "年头久远"
+        "年头久远",
+        "古老"
       ],
       "evidence": [
         {
@@ -4110,7 +4366,8 @@
           "field": "d.ca",
           "text": "De molts anys i valuós per aquest motiu."
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "old-object",
@@ -4122,7 +4379,8 @@
         "旧旧的",
         "已经用旧",
         "年久失修",
-        "物品陈旧"
+        "物品陈旧",
+        "陈旧"
       ],
       "evidence": [
         {
@@ -4130,7 +4388,8 @@
           "field": "d.ca",
           "text": "Referit a objectes, antic o espatllat."
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "narrow",
@@ -4161,7 +4420,8 @@
         "真狭窄",
         "真的很狭窄",
         "真的非常狭窄",
-        "真的特别狭窄"
+        "真的特别狭窄",
+        "狭窄"
       ],
       "evidence": [
         {
@@ -4169,7 +4429,8 @@
           "field": "d.en",
           "text": "narrow"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "wide",
@@ -4200,7 +4461,8 @@
         "真宽敞",
         "真的很宽敞",
         "真的非常宽敞",
-        "真的特别宽敞"
+        "真的特别宽敞",
+        "宽阔"
       ],
       "evidence": [
         {
@@ -4208,7 +4470,8 @@
           "field": "d.en",
           "text": "wide"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "large-size",
@@ -4230,7 +4493,8 @@
         "真大",
         "真的很大",
         "真的非常大",
-        "真的特别大"
+        "真的特别大",
+        "大的"
       ],
       "evidence": [
         {
@@ -4238,7 +4502,8 @@
           "field": "d.en",
           "text": "big, large"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "small-size",
@@ -4260,7 +4525,8 @@
         "真小",
         "真的很小",
         "真的非常小",
-        "真的特别小"
+        "真的特别小",
+        "小的"
       ],
       "evidence": [
         {
@@ -4268,7 +4534,8 @@
           "field": "d.en",
           "text": "small, little"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "light-weight",
@@ -4290,7 +4557,8 @@
         "真轻",
         "真的很轻",
         "真的非常轻",
-        "真的特别轻"
+        "真的特别轻",
+        "轻"
       ],
       "evidence": [
         {
@@ -4298,7 +4566,8 @@
           "field": "d.en",
           "text": "light (not heavy, not having much weight)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "heavy-weight",
@@ -4320,7 +4589,8 @@
         "真重",
         "真的很重",
         "真的非常重",
-        "真的特别重"
+        "真的特别重",
+        "重"
       ],
       "evidence": [
         {
@@ -4328,7 +4598,8 @@
           "field": "d.en",
           "text": "heavy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "soon-time",
@@ -4340,7 +4611,8 @@
         "不久以后",
         "很快就到",
         "再过一会",
-        "马上就会"
+        "马上就会",
+        "不久"
       ],
       "evidence": [
         {
@@ -4348,7 +4620,8 @@
           "field": "d.en",
           "text": "soon"
         }
-      ]
+      ],
+      "partOfSpeech": "adverb"
     },
     {
       "id": "late-time",
@@ -4360,7 +4633,8 @@
         "到得晚",
         "很晚",
         "迟了",
-        "晚了一点"
+        "晚了一点",
+        "晚"
       ],
       "evidence": [
         {
@@ -4368,7 +4642,8 @@
           "field": "d.en",
           "text": "late"
         }
-      ]
+      ],
+      "partOfSpeech": "adverb"
     },
     {
       "id": "long-length",
@@ -4389,7 +4664,8 @@
         "真长",
         "真的很长",
         "真的非常长",
-        "真的特别长"
+        "真的特别长",
+        "长"
       ],
       "evidence": [
         {
@@ -4397,7 +4673,8 @@
           "field": "d.en",
           "text": "long"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "short-length",
@@ -4418,7 +4695,8 @@
         "真短",
         "真的很短",
         "真的非常短",
-        "真的特别短"
+        "真的特别短",
+        "短"
       ],
       "evidence": [
         {
@@ -4426,7 +4704,8 @@
           "field": "d.en",
           "text": "short"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "deep",
@@ -4447,7 +4726,8 @@
         "真深",
         "真的很深",
         "真的非常深",
-        "真的特别深"
+        "真的特别深",
+        "深"
       ],
       "evidence": [
         {
@@ -4455,7 +4735,8 @@
           "field": "d.en",
           "text": "deep"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "shallow",
@@ -4466,7 +4747,8 @@
         "只在表面",
         "表层的",
         "停留在表面",
-        "肤浅的"
+        "肤浅的",
+        "表面的"
       ],
       "evidence": [
         {
@@ -4474,7 +4756,8 @@
           "field": "d.en",
           "text": "superficial"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "sweet-taste",
@@ -4496,7 +4779,8 @@
         "真甜",
         "真的很甜",
         "真的非常甜",
-        "真的特别甜"
+        "真的特别甜",
+        "甜"
       ],
       "evidence": [
         {
@@ -4504,7 +4788,8 @@
           "field": "d.en",
           "text": "sweet"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "salty-taste",
@@ -4526,7 +4811,8 @@
         "真咸",
         "真的很咸",
         "真的非常咸",
-        "真的特别咸"
+        "真的特别咸",
+        "咸"
       ],
       "evidence": [
         {
@@ -4534,7 +4820,8 @@
           "field": "d.en",
           "text": "salty"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "sour-taste",
@@ -4556,7 +4843,8 @@
         "真酸",
         "真的很酸",
         "真的非常酸",
-        "真的特别酸"
+        "真的特别酸",
+        "酸"
       ],
       "evidence": [
         {
@@ -4564,7 +4852,8 @@
           "field": "d.en",
           "text": "sour"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "bitter-taste",
@@ -4586,7 +4875,8 @@
         "真苦",
         "真的很苦",
         "真的非常苦",
-        "真的特别苦"
+        "真的特别苦",
+        "苦"
       ],
       "evidence": [
         {
@@ -4594,7 +4884,8 @@
           "field": "d.en",
           "text": "bitter (acrid taste)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "safe",
@@ -4615,7 +4906,8 @@
         "真安全",
         "真的很安全",
         "真的非常安全",
-        "真的特别安全"
+        "真的特别安全",
+        "安全"
       ],
       "evidence": [
         {
@@ -4623,7 +4915,8 @@
           "field": "d.en",
           "text": "safe"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "certain",
@@ -4635,7 +4928,8 @@
         "确定无疑",
         "确信",
         "很有把握",
-        "十分确定"
+        "十分确定",
+        "确定"
       ],
       "evidence": [
         {
@@ -4643,7 +4937,8 @@
           "field": "d.en",
           "text": "sure, certain"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "dangerous",
@@ -4665,7 +4960,8 @@
         "真危险",
         "真的很危险",
         "真的非常危险",
-        "真的特别危险"
+        "真的特别危险",
+        "危险"
       ],
       "evidence": [
         {
@@ -4673,7 +4969,8 @@
           "field": "d.en",
           "text": "dangerous, perilous"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "sincere",
@@ -4774,7 +5071,8 @@
         "我有点诚恳",
         "我比较诚恳",
         "我非常诚恳",
-        "我特别诚恳"
+        "我特别诚恳",
+        "真诚"
       ],
       "evidence": [
         {
@@ -4782,7 +5080,8 @@
           "field": "d.en",
           "text": "sincere"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "honest",
@@ -4794,7 +5093,8 @@
         "不说谎",
         "做人正直",
         "诚实可靠",
-        "诚实守信"
+        "诚实守信",
+        "诚实"
       ],
       "evidence": [
         {
@@ -4802,7 +5102,8 @@
           "field": "d.en",
           "text": "upright, decent, honorable"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "faithful",
@@ -4813,7 +5114,8 @@
         "忠实",
         "忠心耿耿",
         "对人忠诚",
-        "值得信赖的忠诚"
+        "值得信赖的忠诚",
+        "忠诚"
       ],
       "evidence": [
         {
@@ -4821,7 +5123,8 @@
           "field": "d.en",
           "text": "faithful"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "humble",
@@ -4922,7 +5225,8 @@
         "我有点谦逊",
         "我比较谦逊",
         "我非常谦逊",
-        "我特别谦逊"
+        "我特别谦逊",
+        "谦虚"
       ],
       "evidence": [
         {
@@ -4930,7 +5234,8 @@
           "field": "d.en",
           "text": "humble"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "responsible",
@@ -4941,7 +5246,8 @@
         "有责任心",
         "做事负责",
         "勇于承担责任",
-        "认真负责"
+        "认真负责",
+        "负责"
       ],
       "evidence": [
         {
@@ -4949,7 +5255,8 @@
           "field": "d.en",
           "text": "responsible"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "patient",
@@ -4960,7 +5267,8 @@
         "耐心等待",
         "能耐心等",
         "不急躁",
-        "有耐性"
+        "有耐性",
+        "耐心"
       ],
       "evidence": [
         {
@@ -4968,7 +5276,8 @@
           "field": "d.en",
           "text": "patient"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "impatient",
@@ -5025,7 +5334,8 @@
         "我有点不耐烦",
         "我比较不耐烦",
         "我非常不耐烦",
-        "我特别不耐烦"
+        "我特别不耐烦",
+        "不耐烦"
       ],
       "evidence": [
         {
@@ -5033,7 +5343,8 @@
           "field": "d.en",
           "text": "impatient (lacking patience)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "cowardly",
@@ -5045,7 +5356,8 @@
         "没有胆量",
         "不敢面对",
         "怕事",
-        "胆小怕事"
+        "胆小怕事",
+        "胆小"
       ],
       "evidence": [
         {
@@ -5053,7 +5365,8 @@
           "field": "d.en",
           "text": "cowardly"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "lazy",
@@ -5065,7 +5378,8 @@
         "不爱干活",
         "懒洋洋",
         "好吃懒做",
-        "偷懒"
+        "偷懒",
+        "懒惰"
       ],
       "evidence": [
         {
@@ -5073,7 +5387,8 @@
           "field": "d.en",
           "text": "lazy"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "hardworking",
@@ -5085,7 +5400,8 @@
         "努力工作",
         "勤勤恳恳",
         "做事勤奋",
-        "勤勉"
+        "勤勉",
+        "勤劳"
       ],
       "evidence": [
         {
@@ -5093,7 +5409,8 @@
           "field": "d.en",
           "text": "hardworking"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "curious",
@@ -5104,7 +5421,8 @@
         "想一探究竟",
         "充满好奇",
         "对事情好奇",
-        "好奇心强"
+        "好奇心强",
+        "好奇"
       ],
       "evidence": [
         {
@@ -5112,7 +5430,8 @@
           "field": "d.en",
           "text": "curious (inquisitive)"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "surprised",
@@ -5214,7 +5533,8 @@
         "我有点吃惊",
         "我比较吃惊",
         "我非常吃惊",
-        "我特别吃惊"
+        "我特别吃惊",
+        "惊讶"
       ],
       "evidence": [
         {
@@ -5222,7 +5542,8 @@
           "field": "d.ca",
           "text": "Impressionat o estranyat davant d'un fet inesperat"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "busy",
@@ -5279,7 +5600,8 @@
         "我有点忙碌",
         "我比较忙碌",
         "我非常忙碌",
-        "我特别忙碌"
+        "我特别忙碌",
+        "忙碌"
       ],
       "evidence": [
         {
@@ -5287,7 +5609,8 @@
           "field": "d.en",
           "text": "busy, occupied"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "amusing",
@@ -5318,7 +5641,8 @@
         "真好玩",
         "真的很好玩",
         "真的非常好玩",
-        "真的特别好玩"
+        "真的特别好玩",
+        "有趣"
       ],
       "evidence": [
         {
@@ -5326,7 +5650,8 @@
           "field": "d.en",
           "text": "fun, amusing"
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "innocent",
@@ -5336,7 +5661,8 @@
         "没有犯罪",
         "没有犯错的无辜",
         "没有罪责",
-        "是无辜的"
+        "是无辜的",
+        "无辜"
       ],
       "evidence": [
         {
@@ -5344,7 +5670,8 @@
           "field": "d.ca",
           "text": "No culpable d'un delicte o crim."
         }
-      ]
+      ],
+      "partOfSpeech": "adjective"
     },
     {
       "id": "guilty",
@@ -5354,13 +5681,356 @@
         "犯了罪",
         "有罪责",
         "要为过错负责",
-        "应承担罪责"
+        "应承担罪责",
+        "有罪"
       ],
       "evidence": [
         {
           "layer": "wiktionary",
           "field": "d.en",
           "text": "guilty; culpable"
+        }
+      ],
+      "partOfSpeech": "adjective"
+    },
+    {
+      "id": "noun-joy",
+      "lemma": "alegria",
+      "label": "高兴·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "高兴",
+        "开心",
+        "快乐",
+        "喜悦",
+        "心情好",
+        "心情愉快",
+        "高兴·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "joy, happiness"
+        }
+      ]
+    },
+    {
+      "id": "noun-happiness",
+      "lemma": "felicitat",
+      "label": "幸福·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "幸福",
+        "幸福感",
+        "开心",
+        "快乐",
+        "幸福·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "happiness"
+        }
+      ]
+    },
+    {
+      "id": "noun-sadness",
+      "lemma": "tristesa",
+      "label": "悲伤·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "难过",
+        "伤心",
+        "悲伤",
+        "心情低落",
+        "忧伤",
+        "悲伤·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sadness"
+        }
+      ]
+    },
+    {
+      "id": "noun-fear",
+      "lemma": "por",
+      "label": "害怕·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "害怕",
+        "恐惧",
+        "畏惧",
+        "心里害怕",
+        "害怕·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "fear"
+        }
+      ]
+    },
+    {
+      "id": "noun-anger",
+      "lemma": "enuig",
+      "label": "生气·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "生气",
+        "恼火",
+        "恼怒",
+        "觉得恼火",
+        "生气·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "anger"
+        }
+      ]
+    },
+    {
+      "id": "noun-rage",
+      "lemma": "ira",
+      "label": "愤怒·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "愤怒",
+        "怒火",
+        "愤怒·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "rage, wrath"
+        }
+      ]
+    },
+    {
+      "id": "noun-worry",
+      "lemma": "preocupació",
+      "label": "担心·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "担心",
+        "担忧",
+        "忧虑",
+        "为事情担忧",
+        "担心·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "worry, preoccupation"
+        }
+      ]
+    },
+    {
+      "id": "noun-learning",
+      "lemma": "aprenentatge",
+      "label": "学习·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "学习",
+        "学新东西",
+        "掌握知识",
+        "学习知识",
+        "学习·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "learning"
+        }
+      ]
+    },
+    {
+      "id": "noun-tiredness",
+      "lemma": "cansament",
+      "label": "疲劳·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "疲劳",
+        "疲倦",
+        "疲惫",
+        "感到疲劳",
+        "很累",
+        "疲劳·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tiredness"
+        }
+      ]
+    },
+    {
+      "id": "noun-tranquillity",
+      "lemma": "tranquil·litat",
+      "label": "平静·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "平静",
+        "宁静",
+        "安宁",
+        "心情平静",
+        "平静·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tranquillity; tranquilness"
+        }
+      ]
+    },
+    {
+      "id": "noun-strength",
+      "lemma": "força",
+      "label": "力量·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "强壮",
+        "有力",
+        "有力量",
+        "力气大",
+        "力量·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "force"
+        }
+      ]
+    },
+    {
+      "id": "noun-freedom",
+      "lemma": "llibertat",
+      "label": "自由·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "自由",
+        "自由自在",
+        "不受束缚",
+        "不受限制",
+        "自由·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "freedom, liberty"
+        }
+      ]
+    },
+    {
+      "id": "noun-cleanliness",
+      "lemma": "netedat",
+      "label": "干净·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "干净",
+        "清洁",
+        "洁净",
+        "干干净净",
+        "干净·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cleanliness (the property of being cleanly)"
+        }
+      ]
+    },
+    {
+      "id": "noun-danger",
+      "lemma": "perill",
+      "label": "危险·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "危险",
+        "有危险",
+        "存在危险",
+        "危险性高",
+        "危险·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "danger"
+        }
+      ]
+    },
+    {
+      "id": "noun-heat",
+      "lemma": "calor",
+      "label": "热·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "热",
+        "炎热",
+        "天气热",
+        "热度",
+        "热·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "heat"
+        }
+      ]
+    },
+    {
+      "id": "noun-patience",
+      "lemma": "paciència",
+      "label": "耐心·名词",
+      "partOfSpeech": "noun",
+      "expressions": [
+        "耐心",
+        "有耐心",
+        "耐性",
+        "耐心·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "patience"
+        }
+      ]
+    },
+    {
+      "id": "distant-adjective",
+      "lemma": "llunyà",
+      "label": "遥远·形容词",
+      "partOfSpeech": "adjective",
+      "expressions": [
+        "遥远",
+        "远处",
+        "距离远",
+        "离得远",
+        "遥远·形容词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "remote, distant"
         }
       ]
     }

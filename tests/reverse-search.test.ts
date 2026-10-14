@@ -538,7 +538,7 @@ test("semantic downloads preserve every source-bound expression and restrict the
     assert.equal(createHash("sha256").update(bytes).digest("hex"), descriptor.sha256);
     const rows = JSON.parse(gunzipSync(bytes).toString()) as unknown[][];
     packs.push(rows);
-    assert.ok(rows.every((row) => row.length === 6 && typeof row[5] === "string"));
+    assert.ok(rows.every((row) => (row.length === 6 || row.length === 7) && typeof row[5] === "string"));
   }
   const coreEntries = JSON.parse(gunzipSync(await readFile(resolve(publicRoot, manifest.core.entries.path.slice(1)))).toString()) as Array<{ n: string }>;
   const coreLemmas = new Set(coreEntries.map((entry) => entry.n));

@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { POPULAR_SEARCHES } from "@/lib/dictionary";
 import { dictionaryRepository } from "@/lib/dictionary-repository";
-import { lookupWord, normalizeCatalanInput, suggestWords } from "@/lib/lookup";
+import { lookupWord, matchesWordClass, normalizeCatalanInput, suggestWords } from "@/lib/lookup";
 import { normalizeSearchInput, searchCacheKey } from "@/lib/search-normalization";
 import { findCatalanVoice, speakCatalan } from "@/lib/speech";
 import { refreshSavedSnapshots } from "@/lib/saved-refresh";
@@ -898,10 +898,14 @@ function ResultView({
             <p>
               {LANGUAGE_LABELS[result.matchedLanguage as "zh" | "es"]} → Català
               {result.extractedQuery ? ` · 检索词：${result.extractedQuery}` : ""}
+              {result.preferredPartOfSpeech ? ` · 优先词性：${PART_OF_SPEECH[result.preferredPartOfSpeech]}` : ""}
               {result.matchKind === "semantic" ? ` · 近义表达：${result.matchedTerm}` : result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== (result.extractedQuery ?? result.normalizedQuery)
                 ? ` · 匹配：${result.matchedTerm}` : ""}
             </p>
           ) : result.morphology ? <p>{result.morphology}</p> : null}
+          {result.preferredPartOfSpeech && !matchesWordClass(result, result.preferredPartOfSpeech) ? (
+            <p>当前候选未匹配所选词性，可参考其他相近词义。</p>
+          ) : null}
         </div>
       ) : null}
 

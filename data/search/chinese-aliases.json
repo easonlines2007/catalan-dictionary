@@ -3771,6 +3771,244 @@
         }
       ],
       "preferred": true
+    },
+    {
+      "lemma": "alegria",
+      "terms": [
+        "高兴·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "joy, happiness"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "felicitat",
+      "terms": [
+        "幸福·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "happiness"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tristesa",
+      "terms": [
+        "悲伤·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sadness"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "por",
+      "terms": [
+        "害怕·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "fear"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "enuig",
+      "terms": [
+        "生气·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "anger"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ira",
+      "terms": [
+        "愤怒·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "rage, wrath"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "preocupació",
+      "terms": [
+        "担心·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "worry, preoccupation"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "aprenentatge",
+      "terms": [
+        "学习·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "learning"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cansament",
+      "terms": [
+        "疲劳·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tiredness"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tranquil·litat",
+      "terms": [
+        "平静·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tranquillity; tranquilness"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "força",
+      "terms": [
+        "力量·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "force"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "llibertat",
+      "terms": [
+        "自由·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "freedom, liberty"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "netedat",
+      "terms": [
+        "干净·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cleanliness (the property of being cleanly)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "perill",
+      "terms": [
+        "危险·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "danger"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "calor",
+      "terms": [
+        "热·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "heat"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "paciència",
+      "terms": [
+        "耐心·名词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "patience"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "llunyà",
+      "terms": [
+        "遥远·形容词"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "remote, distant"
+        }
+      ],
+      "preferred": true
     }
   ]
 }

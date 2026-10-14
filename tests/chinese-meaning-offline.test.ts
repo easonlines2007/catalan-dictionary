@@ -23,20 +23,26 @@ test("installed core meanings remain usable when the browser reports online but 
   Object.defineProperty(globalThis, "navigator", { configurable: true, value: { onLine: true } });
   try {
     await dictionaryRepository.ensureCoreOffline();
+    await dictionaryRepository.getEntry("alegria"); // One range can be cached while other layers are unavailable.
     for (const mode of ["network", "server"] as const) {
       failure = mode;
       for (const [query, language, expected] of [
         ["学校", "zh", "escola"], ["學校", "zh", "escola"], ["escuela", "es", "escola"],
         ["体积小", "zh", "petit"], ["表示体积小的词", "auto", "petit"],
         ["形容不用付钱的词", "zh", "gratuït"],
+        ["表示强壮的名词", "auto", "força"],
       ] as const) {
         const found = await lookupWord(query, language);
         assert.equal(found.status, "found", `${mode}: ${query}`);
         if (found.status === "found") {
           assert.equal(found.entry.normalizedLemma, expected, query);
-          if (expected === "petit" || expected === "escola")
+          if (expected === "petit" || expected === "escola" || expected === "força")
             assert.ok(found.entry.definitions?.ca?.length || found.entry.definitions?.en?.length,
               "Installed complete core definitions must survive a failed range download");
+          if (expected === "força") {
+            assert.ok(found.entry.chinese?.length, "A cached Spanish-only layer cannot hide installed Chinese");
+            assert.equal(found.semanticMatch?.partOfSpeech, "noun");
+          }
         }
       }
       await assert.rejects(lookupWord("完全不知道的东西", "zh"), /fetch|503/,

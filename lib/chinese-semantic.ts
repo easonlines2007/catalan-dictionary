@@ -1,6 +1,7 @@
 import { chineseMatchingKey } from "./chinese-search.ts";
+import type { PartOfSpeech } from "./types.ts";
 
-export type ChineseSemanticRow = [key: string, expression: string, lemma: string, label: string, rank: number, concept: string];
+export type ChineseSemanticRow = [key: string, expression: string, lemma: string, label: string, rank: number, concept: string, partOfSpeech?: PartOfSpeech];
 
 /** Meaning expressions are source-compared data, never spelling-distance hits. */
 export function semanticRows(rows: ChineseSemanticRow[], query: string, limit = 32): ChineseSemanticRow[] {

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { extractChineseSearchTerm } from "../lib/chinese-query.ts";
+import { extractChineseSearchIntent, extractChineseSearchTerm } from "../lib/chinese-query.ts";
 
 test("explicit dictionary questions retain their complete search term", () => {
   for (const [query, expected] of [
@@ -13,6 +13,18 @@ test("explicit dictionary questions retain their complete search term", () => {
     ["学校加泰语怎么说", "学校"], ["学校翻译成加泰语", "学校"],
     ["学校的加泰语怎么说", "学校"],
   ]) assert.equal(extractChineseSearchTerm(query), expected, query);
+});
+
+test("meaning requests distinguish explicit word classes and descriptive adjective preference", () => {
+  for (const [query, term, preferredPartOfSpeech] of [
+    ["表示高兴的名词", "高兴", "noun"], ["表示高兴的形容词", "高兴", "adjective"],
+    ["表示选择的动词", "选择", "verb"], ["意思是很快的副词", "很快", "adverb"],
+    ["形容心情低落的词", "心情低落", "adjective"], ["加泰语里形容心情低落的词", "心情低落", "adjective"],
+    ["形容热的名词", "热", "noun"],
+    ["高兴的名词", "高兴", "noun"], ["不开心的形容词", "不开心", "adjective"],
+  ]) assert.deepEqual(extractChineseSearchIntent(query), { term, preferredPartOfSpeech }, query);
+  assert.deepEqual(extractChineseSearchIntent("表示高兴的词"), { term: "高兴" });
+  assert.deepEqual(extractChineseSearchIntent("形容用加泰语怎么说"), { term: "形容" });
 });
 
 test("ordinary phrases, other target languages and nested questions stay untouched", () => {

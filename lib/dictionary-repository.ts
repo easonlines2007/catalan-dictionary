@@ -443,14 +443,12 @@ export class DictionaryRepository {
       curated,
       mergeEntry(curatedPack, mergeEntry(base, mergeEntry(freedict, wiktionary))),
     );
-    if (merged && !base && !freedict && !wiktionary && !curatedPack) {
-      // Range downloads can fail while the installed enriched core is intact.
-      // Merge it before returning a small curated fallback without definitions.
-      const installed = await searchRepository.coreEntry(normalizedLemma, manifest.dataVersion).catch(() => undefined);
-      if (installed) return enrichChinese(mergeEntry(merged, unpackEntry(installed))!);
-    }
     if (merged) {
-      const reviewed = enrichChinese(merged);
+      // A cached layer can be available while the other range downloads fail.
+      // Prefer the installed complete core over that incomplete merge, without
+      // starting a core download just to enrich an otherwise usable entry.
+      const installed = await searchRepository.installedCoreEntry(normalizedLemma, manifest.dataVersion).catch(() => undefined);
+      const reviewed = enrichChinese(installed ? mergeEntry(merged, unpackEntry(installed))! : merged);
       if (reviewed.chinese?.length || reviewed.definitions?.zh?.length) return reviewed;
       const chinese = await searchRepository.chineseEntry(normalizedLemma, manifest.dataVersion)
         .catch((error) => { if (requireComplete) throw error; return undefined; });

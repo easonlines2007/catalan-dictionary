@@ -128,6 +128,9 @@ establish absence from the full dictionary; those cases retain the data error.
 Recognized questions can still resolve their complete installed payload when
 the question's full spelling needs an unavailable shard. Retired 404/410 packs
 continue to use the existing version-refresh path.
+Already installed complete core entries also supplement partial range caches,
+preserving available Chinese and full definitions when only one language layer
+can be read. This optional enrichment does not initiate a core installation.
 
 Full offline installation includes both full catalogues. Core-only offline
 mode derives suggestions from the existing core reverse indexes and entries,
@@ -246,7 +249,7 @@ and results show `近义表达`; they guide word discovery rather than assert a
 word-for-word translation of an entire description.
 
 The immutable `semantic/zh.json.gz` and core-only `core/semantic.json.gz`
-contain `[normalizedExpression, expression, lemma, label, rank, conceptId]`
+contain `[normalizedExpression, expression, lemma, label, rank, conceptId, optionalSourceSensePartOfSpeech]`
 rows sorted by UTF-16 keys. Both descriptors are checksummed and included in
 their respective offline download lists. The optional manifest `semantic`
 field keeps older installed packs readable. Runtime matching preserves full
@@ -254,6 +257,18 @@ expressions, including negation and direction, rather than deleting modifiers
 or traversing synonym chains. Unknown descriptions are not inferred.
 `data/search/chinese-semantic-cases.json` verifies real assets, canonical
 suggestion targets, contrasting meanings and deliberately unmatched phrases.
+
+The optional word class is bound to the evidence-bearing source record, not
+borrowed from another sense of the same lemma. Explicit noun/verb/adjective/adverb
+requests and descriptive 形容… requests prefer candidates supported for that
+class. A concept annotation also accompanies a literal hit of the same lemma
+and query, so a lemma's unrelated noun sense cannot impersonate its matched
+adjectival meaning. Unannotated multi-class lemmas are not class evidence.
+Qualified aliases such as 高兴·名词 remain ordinary source-compared search
+labels and do not replace displayed translations. Completion selection either
+uses that canonical label or retains the full request, preserving its class
+preference. Six-field packs remain readable. Conflicting classes for the same
+expression/lemma are rejected during the build rather than silently deduplicated.
 
 ## Translation queue
 

@@ -151,6 +151,16 @@ export class SearchRepository {
     });
   }
 
+  async installedCoreEntry(lemma: string, baseVersion: string): Promise<PackedDictionaryEntry | undefined> {
+    const manifest = this.manifestPromise ? await this.manifestPromise.catch(() => undefined)
+      : await getDictionaryMetadata<SearchManifest>("activeSearchManifest").catch(() => undefined);
+    if (!manifest || manifest.schemaVersion !== 1 || !manifest.core?.entries || manifest.baseDataVersion !== baseVersion) return undefined;
+    const descriptor = manifest.core.entries;
+    const key = this.storageKey(manifest, descriptor);
+    if (!this.memory.has(key) && !await getDictionaryShard(key).catch(() => undefined)) return undefined;
+    return (await this.load<PackedDictionaryEntry[]>(manifest, descriptor)).find((row) => row.n === lemma);
+  }
+
   async chineseEntry(lemma: string, baseVersion: string): Promise<PackedDictionaryEntry | undefined> {
     return this.withManifest(baseVersion, async (manifest) => {
       const descriptor = descriptorForKey(manifest.chinese, lemma);
@@ -212,9 +222,9 @@ export class SearchRepository {
         if (limited || error instanceof MissingSearchShard) throw error;
         rows = await this.load<ChineseSemanticRow[]>(manifest, manifest.semantic.core);
       }
-      return semanticRows(rows, query, limit).map(([, expression, normalizedLemma, matchedTerm, , conceptId]) => ({
+      return semanticRows(rows, query, limit).map(([, expression, normalizedLemma, matchedTerm, , conceptId, partOfSpeech]) => ({
         normalizedLemma, matchedTerm, matchKind: "semantic", matchedLanguage: "zh", exact: false,
-        semanticMatch: { conceptId, expression },
+        semanticMatch: { conceptId, expression, ...(partOfSpeech ? { partOfSpeech } : {}) },
       }));
     });
   }
