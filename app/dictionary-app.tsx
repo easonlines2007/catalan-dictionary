@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import { POPULAR_SEARCHES } from "@/lib/dictionary";
 import { dictionaryRepository } from "@/lib/dictionary-repository";
-import { lookupWord, matchesWordClass, normalizeCatalanInput, suggestWords } from "@/lib/lookup";
+import { lookupWord, matchesWordClass, normalizeCatalanInput, selectLookupCandidate, suggestWords } from "@/lib/lookup";
 import { normalizeSearchInput, searchCacheKey } from "@/lib/search-normalization";
 import { findCatalanVoice, speakCatalan } from "@/lib/speech";
 import { refreshSavedSnapshots } from "@/lib/saved-refresh";
@@ -253,7 +253,7 @@ export function DictionaryApp() {
     }
   };
 
-  const runSearch = async (rawQuery: string, modeOverride?: SearchLanguage) => {
+  const runSearch = async (rawQuery: string, modeOverride?: SearchLanguage, selectedLemma?: string) => {
     const mode = modeOverride ?? searchLanguage;
     const normalized = normalizeSearchInput(rawQuery, mode);
     if (!normalized) {
@@ -305,6 +305,11 @@ export function DictionaryApp() {
           offlineLimited: typeof navigator !== "undefined" && !navigator.onLine,
         };
       }
+    }
+    if (selectedLemma && nextResult.status === "found") {
+      const target = normalizeCatalanInput(selectedLemma);
+      const candidate = nextResult.candidates.find((item) => item.entry?.normalizedLemma === target);
+      if (candidate) nextResult = selectLookupCandidate(nextResult, candidate);
     }
     if (request !== searchRequest.current) return;
     setResult(nextResult);
@@ -544,7 +549,7 @@ export function DictionaryApp() {
                 } else if (event.key === "Enter" && activeSuggestion >= 0 && suggestions[activeSuggestion]) {
                   event.preventDefault();
                   const item = suggestions[activeSuggestion];
-                  void runSearch(item.term, item.language);
+                  void runSearch(item.term, item.language, item.lemma);
                 }
               }}
               placeholder="中文 / Español / Català"
@@ -576,7 +581,7 @@ export function DictionaryApp() {
                   role="option" aria-selected={index === activeSuggestion}>
                   <button type="button" tabIndex={-1}
                     onMouseDown={(event) => event.preventDefault()}
-                    onClick={() => void runSearch(item.term, item.language)}>
+                    onClick={() => void runSearch(item.term, item.language, item.lemma)}>
                     <span lang={inputLanguage(item.term, item.language)}>{item.term}</span>
                     <span className="completion-lemma" lang="ca">→ {item.lemma}</span>
                     <span className="completion-kind">{item.kind === "semantic" ? "近义表达" : item.kind === "fuzzy" ? "近似拼写" : item.kind === "related" ? "相关词" : LANGUAGE_LABELS[item.language]}</span>
@@ -622,7 +627,7 @@ export function DictionaryApp() {
                 relatedSuggestions={result.relatedSuggestions}
                 searchLanguage={result.searchLanguage}
                 offlineLimited={result.offlineLimited}
-                onSearch={(term, mode) => void runSearch(term, mode ?? "ca")}
+                onSearch={(term, mode, lemma) => void runSearch(term, mode ?? "ca", lemma)}
               />
             ) : (
               <StartView
@@ -1090,7 +1095,7 @@ function MissView({
   relatedSuggestions?: SearchSuggestion[];
   searchLanguage?: SearchLanguage;
   offlineLimited?: boolean;
-  onSearch: (term: string, mode?: SearchLanguage) => void;
+  onSearch: (term: string, mode?: SearchLanguage, selectedLemma?: string) => void;
 }) {
   return (
     <section className="miss-view" aria-labelledby="not-found-heading">
@@ -1112,7 +1117,7 @@ function MissView({
           <p>你要找的是不是…</p>
           {relatedSuggestions?.length ? relatedSuggestions.map((item) => (
             <button key={`${item.language}:${item.term}`} type="button"
-              onClick={() => onSearch(item.term, item.language)}
+              onClick={() => onSearch(item.term, item.language, item.lemma)}
               lang={inputLanguage(item.term, item.language)}>
               {item.term} <span aria-hidden="true">→</span> <span lang="ca">{item.lemma}</span>
               {item.kind === "semantic" ? <span>近义表达</span> : null}

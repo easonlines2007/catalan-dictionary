@@ -72,6 +72,11 @@ test("Chinese meanings select the requested word class and completion clicks kee
       assert.equal(selected.semanticMatch?.partOfSpeech, "adjective");
       assert.equal(selected.searchedForm, found.searchedForm);
       assert.equal(selectLookupCandidate(found, { ...alternate }), found, "Unbound candidates cannot replace the result");
+      const cached = JSON.parse(JSON.stringify(selected));
+      const desired = cached.candidates.find((candidate: { lemma: string }) => candidate.lemma === "alegria");
+      const restored = selectLookupCandidate(cached, desired);
+      assert.equal(restored.entry.normalizedLemma, "alegria", "An explicit suggestion restores its displayed word over a cached alternate");
+      assert.equal(matchesWordClass(restored, "noun"), true);
     }
     const unavailable = await lookupWord("表示学校的副词", "zh");
     assert.equal(unavailable.status, "found");
