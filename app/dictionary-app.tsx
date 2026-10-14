@@ -406,8 +406,9 @@ export function DictionaryApp() {
       matchedLanguage: candidate.matchedLanguage,
       matchedTerm: candidate.matchedTerm,
       matchKind: candidate.matchKind,
+      semanticMatch: candidate.semanticMatch,
       resolutionSource: candidate.matchedLanguage && candidate.matchedLanguage !== "ca"
-        ? "translation"
+        ? candidate.matchKind === "semantic" ? "semantic" : "translation"
         : candidate.matchKind === "morphology" ? "morphology" : "exact",
     };
     setResult(nextResult);
@@ -508,6 +509,16 @@ export function DictionaryApp() {
                 setSearching(false);
               }}
               onFocus={() => setSuggestionsOpen(true)}
+              onClick={(event) => {
+                event.currentTarget.select();
+                setSearchLanguage("auto");
+                setSuggestionsOpen(true);
+                setActiveSuggestion(-1);
+                if (searchLanguage !== "auto") {
+                  searchRequest.current += 1;
+                  setSearching(false);
+                }
+              }}
               onBlur={(event) => {
                 if (event.relatedTarget instanceof HTMLElement && event.relatedTarget.closest("#search-completions")) return;
                 setSuggestionsOpen(false);
@@ -568,7 +579,7 @@ export function DictionaryApp() {
                     onClick={() => void runSearch(item.term, item.language)}>
                     <span lang={inputLanguage(item.term, item.language)}>{item.term}</span>
                     <span className="completion-lemma" lang="ca">→ {item.lemma}</span>
-                    <span className="completion-kind">{item.kind === "fuzzy" ? "近似拼写" : item.kind === "related" ? "相关词" : LANGUAGE_LABELS[item.language]}</span>
+                    <span className="completion-kind">{item.kind === "semantic" ? "近义表达" : item.kind === "fuzzy" ? "近似拼写" : item.kind === "related" ? "相关词" : LANGUAGE_LABELS[item.language]}</span>
                   </button>
                 </li>
               ))}
@@ -887,7 +898,7 @@ function ResultView({
             <p>
               {LANGUAGE_LABELS[result.matchedLanguage as "zh" | "es"]} → Català
               {result.extractedQuery ? ` · 检索词：${result.extractedQuery}` : ""}
-              {result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== (result.extractedQuery ?? result.normalizedQuery)
+              {result.matchKind === "semantic" ? ` · 近义表达：${result.matchedTerm}` : result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== (result.extractedQuery ?? result.normalizedQuery)
                 ? ` · 匹配：${result.matchedTerm}` : ""}
             </p>
           ) : result.morphology ? <p>{result.morphology}</p> : null}
@@ -1039,7 +1050,7 @@ function ResultView({
                   <small>
                     {[
                       candidate.matchedLanguage
-                        ? `${LANGUAGE_LABELS[candidate.matchedLanguage]}${candidate.matchedTerm ? ` · ${candidate.matchedTerm}` : ""}`
+                        ? `${candidate.matchKind === "semantic" ? "近义表达" : LANGUAGE_LABELS[candidate.matchedLanguage]}${candidate.matchedTerm ? ` · ${candidate.matchedTerm}` : ""}`
                         : undefined,
                       candidate.morphology,
                       candidate.partOfSpeech
@@ -1100,6 +1111,7 @@ function MissView({
               onClick={() => onSearch(item.term, item.language)}
               lang={inputLanguage(item.term, item.language)}>
               {item.term} <span aria-hidden="true">→</span> <span lang="ca">{item.lemma}</span>
+              {item.kind === "semantic" ? <span>近义表达</span> : null}
             </button>
           )) : suggestions.map((suggestion) => (
             <button

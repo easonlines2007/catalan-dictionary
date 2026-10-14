@@ -46,6 +46,56 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
   };
   Object.defineProperty(globalThis, "navigator", { configurable: true, value: { onLine: true } });
   try {
+    await t.test("source-compared descriptive Chinese inputs find their concepts and retain negative meanings", async () => {
+      const fixture = JSON.parse(await readFile(resolve(root, "data/search/chinese-semantic-cases.json"), "utf8"));
+      assert.ok(fixture.cases.length >= 200);
+      for (const { query, expectedLemma } of fixture.cases) {
+        for (const mode of ["zh", "auto"] as const) {
+          const found = await lookupWord(query, mode);
+          assert.equal(found.status, "found", `${mode}: ${query}`);
+          if (found.status === "found") assert.ok(found.candidates.some((candidate) => candidate.entry?.normalizedLemma === expectedLemma), `${mode}: ${query}`);
+        }
+        assert.ok((await suggestWords(query, "zh")).some((item) => item.lemma === expectedLemma), `completion: ${query}`);
+      }
+      const repository = new SearchRepository();
+      const base = await dictionaryRepository.manifest();
+      for (const { query, excludedLemma } of fixture.contrasts) {
+        const hits = await repository.semantic(query, base.dataVersion);
+        assert.ok(hits.length, query);
+        assert.ok(hits.every((hit) => hit.normalizedLemma !== excludedLemma), query);
+        const found = await lookupWord(query, "auto");
+        assert.equal(found.status, "found", query);
+        if (found.status === "found") assert.notEqual(found.entry.normalizedLemma, excludedLemma, query);
+      }
+      for (const query of fixture.unmatched) assert.deepEqual(await repository.semantic(query, base.dataVersion), [], query);
+      const question = await lookupWord("价格不高用加泰语怎么说", "auto");
+      assert.equal(question.status, "found");
+      if (question.status === "found") {
+        assert.equal(question.lemma, "barat");
+        assert.equal(question.resolutionSource, "semantic");
+        assert.equal(question.semanticMatch?.expression, "价格不高");
+      }
+    });
+    await t.test("source-compared Chinese synonyms resolve by meaning and preserve directional contrasts", async () => {
+      const fixture = JSON.parse(await readFile(resolve(root, "data/search/chinese-synonym-cases.json"), "utf8"));
+      assert.ok(fixture.cases.length >= 250);
+      for (const { query, expectedLemma } of fixture.cases) {
+        for (const mode of ["zh", "auto"] as const) {
+          const found = await lookupWord(query, mode);
+          assert.equal(found.status, "found", `${mode}: ${query}`);
+          if (found.status === "found") assert.equal(found.entry.normalizedLemma, expectedLemma, `${mode}: ${query}`);
+        }
+        assert.equal((await suggestWords(query, "zh"))[0]?.lemma, expectedLemma, `completion: ${query}`);
+      }
+      for (const { query, expectedLemma, excludedLemma } of fixture.contrasts) {
+        const found = await lookupWord(query, "zh");
+        assert.equal(found.status, "found", query);
+        if (found.status === "found") {
+          assert.equal(found.entry.normalizedLemma, expectedLemma, query);
+          assert.notEqual(found.entry.normalizedLemma, excludedLemma, query);
+        }
+      }
+    });
     await t.test("contextual Chinese spelling suggestions beat incidental substrings in the real catalogue", async () => {
       for (const [query, lemma] of [["音悦", "música"], ["银航", "banc"]]) {
         const hints = await suggestWords(query, "zh");
@@ -323,6 +373,8 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       assert.ok((await fresh.suggest("escue", "es", base.dataVersion)).some((item) => item.term === "escuela"));
       assert.ok((await fresh.suggest("学校校", "zh", base.dataVersion)).some((item) => item.term === "学校"));
       assert.equal((await fresh.suggest("学小", "zh", base.dataVersion))[0]?.lemma, "escola");
+      assert.equal((await fresh.semantic("不用付钱", base.dataVersion))[0]?.normalizedLemma, "gratuït");
+      assert.deepEqual(await fresh.semantic("价格不高", base.dataVersion), [], "A non-core concept must stay outside the core download");
       assert.ok((await fresh.reverse("「学 校？」", "zh", base.dataVersion)).some((hit) => hit.normalizedLemma === "escola"));
       for (const [query, mode, lemma] of [
         ["学校", "zh", "escola"], ["學校", "zh", "escola"], ["escuela", "es", "escola"],
@@ -379,11 +431,12 @@ test("Python build keys and TypeScript query keys apply the same normalization",
 test("search download lists bind core and all full assets to the same immutable version", async () => {
   const manifest = JSON.parse(await readFile(resolve(publicRoot, "dictionary/search/manifest.json"), "utf8")) as SearchManifest;
   const core = new Set(manifest.offline.core.map((descriptor) => descriptor.path));
-  assert.deepEqual(core, new Set([manifest.core.entries.path, manifest.core.zh.path, manifest.core.es.path]));
+  assert.ok(manifest.semantic);
+  assert.deepEqual(core, new Set([manifest.core.entries.path, manifest.core.zh.path, manifest.core.es.path, manifest.semantic.core.path]));
   const full = new Set(manifest.offline.full.map((descriptor) => descriptor.path));
   assert.equal(full.size, manifest.offline.full.length);
   assert.ok(manifest.suggestions);
-  for (const descriptor of [...manifest.offline.core, ...manifest.indexes.zh, ...manifest.indexes.es, ...manifest.chinese, ...Object.values(manifest.suggestions)]) {
+  for (const descriptor of [...manifest.offline.core, ...manifest.indexes.zh, ...manifest.indexes.es, ...manifest.chinese, ...Object.values(manifest.suggestions), ...Object.values(manifest.semantic)]) {
     assert.ok(full.has(descriptor.path));
     assert.ok(descriptor.path.startsWith(`/dictionary/search/${manifest.dataVersion}/`));
     assert.match(descriptor.sha256 ?? "", /^[a-f0-9]{64}$/);
@@ -418,7 +471,7 @@ sys.path.insert(0,sys.argv[1])
 import build_search as b
 data=json.loads(Path(sys.argv[2]).read_text())
 data['records']=[next(r for r in data['records'] if r['lemma']=='menjar')]
-records={'menjar':[('seed',{'zh':['吃']}),('lex',{'es':['comer']})]}
+records={'menjar':[('seed',{'zh':['吃']}),('lex',{'es':['comer']}),('wiktionary',{'d':{'en':['to eat something solid']}})]}
 with tempfile.TemporaryDirectory() as directory:
  p=Path(directory)/'aliases.json'
  p.write_text(json.dumps(data))
@@ -452,5 +505,29 @@ test("a transient base/search version mismatch can recover on the same repositor
     assert.equal(requests, 2);
   } finally {
     globalThis.fetch = previousFetch;
+  }
+});
+
+test("semantic downloads preserve every source-bound expression and restrict the core to installed lemmas", async () => {
+  const manifest = JSON.parse(await readFile(resolve(publicRoot, "dictionary/search/manifest.json"), "utf8")) as SearchManifest;
+  assert.ok(manifest.semantic);
+  const packs: unknown[][][] = [];
+  for (const descriptor of [manifest.semantic.zh, manifest.semantic.core]) {
+    const bytes = await readFile(resolve(publicRoot, descriptor.path.slice(1)));
+    assert.equal(createHash("sha256").update(bytes).digest("hex"), descriptor.sha256);
+    const rows = JSON.parse(gunzipSync(bytes).toString()) as unknown[][];
+    packs.push(rows);
+    assert.ok(rows.every((row) => row.length === 6 && typeof row[5] === "string"));
+  }
+  const coreEntries = JSON.parse(gunzipSync(await readFile(resolve(publicRoot, manifest.core.entries.path.slice(1)))).toString()) as Array<{ n: string }>;
+  const coreLemmas = new Set(coreEntries.map((entry) => entry.n));
+  const fullRows = new Set(packs[0].map((row) => JSON.stringify(row)));
+  for (const row of packs[1]) {
+    assert.ok(coreLemmas.has(row[2] as string));
+    assert.ok(fullRows.has(JSON.stringify(row)));
+  }
+  const fixture = JSON.parse(await readFile(resolve(root, "data/search/chinese-semantic-cases.json"), "utf8"));
+  for (const { query, expectedLemma, label } of fixture.cases) {
+    assert.ok(packs[0].some((row) => row[1] === query && row[2] === expectedLemma && row[3] === label), query);
   }
 });

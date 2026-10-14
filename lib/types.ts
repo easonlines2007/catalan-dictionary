@@ -20,7 +20,8 @@ export type GrammaticalGender = "masculine" | "feminine" | "common";
 
 export type SearchLanguage = "auto" | "ca" | "es" | "zh";
 export type MatchLanguage = Exclude<SearchLanguage, "auto">;
-export type MatchKind = "lemma" | "morphology" | "translation" | "alias";
+export type MatchKind = "lemma" | "morphology" | "translation" | "alias" | "semantic";
+export interface SemanticMatch { conceptId: string; expression: string; }
 
 export interface DictionaryExample {
   ca: string;
@@ -105,6 +106,7 @@ export interface LemmaResult {
   matchedLanguage?: MatchLanguage;
   matchedTerm?: string;
   matchKind?: MatchKind;
+  semanticMatch?: SemanticMatch;
 }
 
 export type ResolutionSource =
@@ -113,6 +115,7 @@ export type ResolutionSource =
   | "morphology"
   | "clitic"
   | "translation"
+  | "semantic"
   | "accent-fallback";
 
 export interface FoundLookup {
@@ -131,6 +134,7 @@ export interface FoundLookup {
   matchedLanguage?: MatchLanguage;
   matchedTerm?: string;
   matchKind?: MatchKind;
+  semanticMatch?: SemanticMatch;
 }
 
 export interface MissedLookup {
@@ -149,7 +153,7 @@ export interface SearchSuggestion {
   term: string;
   lemma: string;
   language: "es" | "zh" | "ca";
-  kind: "exact" | "prefix" | "contains" | "fuzzy" | "related";
+  kind: "exact" | "prefix" | "contains" | "fuzzy" | "related" | "semantic";
 }
 
 export type LookupResponse = FoundLookup | MissedLookup;
@@ -241,7 +245,7 @@ export interface DictionaryManifest {
   };
 }
 
-export type SearchShardKind = "search-core" | "search-zh" | "search-es" | "search-chinese" | "search-suggestions";
+export type SearchShardKind = "search-core" | "search-zh" | "search-es" | "search-chinese" | "search-suggestions" | "search-semantic";
 export interface SearchShardDescriptor extends DictionaryShardDescriptor {
   kind: SearchShardKind;
 }
@@ -256,6 +260,7 @@ export interface SearchManifest {
   };
   indexes: { zh: SearchShardDescriptor[]; es: SearchShardDescriptor[] };
   suggestions?: { zh: SearchShardDescriptor; es: SearchShardDescriptor };
+  semantic?: { zh: SearchShardDescriptor; core: SearchShardDescriptor };
   chinese: SearchShardDescriptor[];
   offline: { core: SearchShardDescriptor[]; full: SearchShardDescriptor[] };
   sizes: { compressedBytes: number; coreCompressedBytes: number; rawBytes: number };

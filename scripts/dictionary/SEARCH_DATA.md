@@ -87,7 +87,7 @@ Exact and compact prefix matches are not padded with unrelated fuzzy terms.
 A strong same-reading hint can precede an incidental internal substring, such
 as 音悦 → 音乐 ahead of 声音悦耳. If strong phonetic hints exist, weaker edit-only
 guesses are omitted. Latin-input pinyin search
-and general semantic paraphrasing are not implemented.
+is not implemented. Meaning-based paraphrases use the separate concept layer below.
 Spelling hints preserve a leading negation and explicit number or ordinal:
 不可以 is not corrected to 可以, and 二月 is not corrected to 三月.
 
@@ -106,6 +106,10 @@ script/spacing equivalents share the same normalized-exact status.
 The source-compared cases in `data/search/everyday-cases.json` verify lookup
 and first-suggestion behavior for common everyday queries. This regression set
 is not a corpus-wide accuracy score.
+`data/search/chinese-synonym-cases.json` adds source-compared everyday synonyms
+and directional contrasts (borrowing/lending, paying/collecting). Original
+traditional keys share their canonical simplified postings, including preferred
+source-compared meanings, so variant forms preview the same canonical word.
 Explicit Chinese dictionary questions such as 学校用加泰语怎么说 are recognized
 only after literal lookup misses. Their complete search term is retained,
 including negation and quantities, and displayed as 检索词. Only narrow anchored
@@ -218,6 +222,26 @@ The [s2t configuration](https://github.com/BYVoid/OpenCC/blob/ver.1.1.9/data/con
 documents the reverse direction's source tables.
 All original dictionary licenses continue to apply to merged data and derived
 translations; Chinese translations are not relabelled as original CC0 work.
+
+## Chinese concept paraphrases
+
+`data/search/chinese-semantic.json` binds explicit Chinese descriptions to a
+Catalan lemma and a canonical Chinese label. Every concept cites exact source
+evidence from the committed packs, and the builder checks that searching its
+label selects that lemma. This validates source binding, not translation quality.
+Original translations and exact matches retain priority. Semantic suggestions
+and results show `近义表达`; they guide word discovery rather than assert a
+word-for-word translation of an entire description.
+
+The immutable `semantic/zh.json.gz` and core-only `core/semantic.json.gz`
+contain `[normalizedExpression, expression, lemma, label, rank, conceptId]`
+rows sorted by UTF-16 keys. Both descriptors are checksummed and included in
+their respective offline download lists. The optional manifest `semantic`
+field keeps older installed packs readable. Runtime matching preserves full
+expressions, including negation and direction, rather than deleting modifiers
+or traversing synonym chains. Unknown descriptions are not inferred.
+`data/search/chinese-semantic-cases.json` verifies real assets, canonical
+suggestion targets, contrasting meanings and deliberately unmatched phrases.
 
 ## Translation queue
 

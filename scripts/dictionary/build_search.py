@@ -22,6 +22,7 @@ import unicodedata
 from validate_translation import validate_batch
 from wordnet import align as align_wordnet, load_sources as load_wordnet_sources
 from bulk_chinese import load_bulk
+from semantic_search import build_semantic
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -476,6 +477,13 @@ def build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_
     for lemma, terms in (extra_aliases or {}).items():
         for term in terms:
             add("zh", lemma, term, "alias")
+    # An original traditional spelling can differ from OpenCC's chosen s2t
+    # alias. Share the canonical postings so every script previews the same
+    # source-compared meaning; keep all lexical alternatives selectable.
+    for key in list(indexes["zh"]):
+        canonical_key = chinese_key(simplifier(key))
+        if canonical_key != key:
+            indexes["zh"][key].update(indexes["zh"].get(canonical_key, ()))
     rows = {}
     for lang, terms in indexes.items():
         def posting_key(item):
@@ -609,11 +617,15 @@ def build(args):
                          for item in json.loads(alias_path.read_text())["records"] if item.get("preferred") is True
                          for term in item["terms"]}
     indexes, exclusions = build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases, preferred_aliases)
+    semantic_rows, semantic_stats, semantic_signature = build_semantic(
+        args.root / "data/search/chinese-semantic.json", records, entries,
+        manifest["dataVersion"], simplifier, chinese_key, utf16_key, indexes)
     signature = {"builderVersion": BUILDER_VERSION, "builderSha256": digest(Path(__file__).read_bytes()),
                  "baseManifestSha256": digest(source_bytes), "seedSha256": digest(seed_path.read_bytes()),
                  "batches": batches, "opencc": simplifier.sources, "wordnet": wordnet_signature,
                  "bulkChinese": bulk_signature,
                  "chineseSearchAliasesSha256": digest(alias_path.read_bytes()),
+                 "chineseSemantics": semantic_signature,
                  "machineInputSha256": digest(args.machine_input.read_bytes()) if args.machine_input else None}
     version = digest(canonical(signature))[:16]
     core = {"entries": write_pack(public, version, "search-core", "core/entries",
@@ -637,7 +649,11 @@ def build(args):
         suggestions[lang] = write_pack(public, version, "search-suggestions",
                                        f"suggestions/{lang}", rows, lambda row: row[0])
     chinese = write_shards(public, version, "search-chinese", "chinese", [overlays[n] for n in sorted(overlays, key=utf16_key)], lambda row: row["n"])
-    full = list(core.values()) + index_descriptors["zh"] + index_descriptors["es"] + chinese + list(suggestions.values())
+    core_semantic_rows = [row for row in semantic_rows if row[2] in core_lemmas]
+    semantic = {"zh": write_pack(public, version, "search-semantic", "semantic/zh", semantic_rows, lambda row: row[0]),
+                "core": write_pack(public, version, "search-semantic", "core/semantic", core_semantic_rows, lambda row: row[0])}
+    offline_core = list(core.values()) + [semantic["core"]]
+    full = offline_core + index_descriptors["zh"] + index_descriptors["es"] + chinese + list(suggestions.values()) + [semantic["zh"]]
     queue_counts = write_queue(args.queue_dir, records, entries, core_lemmas, {**machine, **bulk})
     coverage = {"lemmaCount": len(entries), "coreLemmaCount": len(core_lemmas),
                 "originalChineseLemmas": existing_count, "reviewedChineseLemmas": len(reviewed),
@@ -650,17 +666,19 @@ def build(args):
                 "reverseSpanishLemmas": len({p[0] for _, ps in indexes["es"] for p in ps}),
                 "reverseChineseLemmas": len({p[0] for _, ps in indexes["zh"] for p in ps}),
                 "indexTerms": {lang: len(rows) for lang, rows in indexes.items()},
+                "chineseSemantic": {**semantic_stats, "coreExpressions": len(core_semantic_rows)},
                 "queue": queue_counts, "machineImport": machine_stats,
                 "note": "Presence counts do not establish translation quality or complete sense coverage."}
     output = {"schemaVersion": 1, "dataVersion": version, "baseDataVersion": manifest["dataVersion"],
-              "core": core, "indexes": index_descriptors, "chinese": chinese, "suggestions": suggestions,
-              "offline": {"core": list(core.values()), "full": full},
+              "core": core, "indexes": index_descriptors, "chinese": chinese, "suggestions": suggestions, "semantic": semantic,
+              "offline": {"core": offline_core, "full": full},
               "sizes": {"compressedBytes": sum(d["bytes"] for d in full),
                         "rawBytes": sum(d["rawBytes"] for d in full),
-                        "coreCompressedBytes": sum(d["bytes"] for d in core.values())},
+                        "coreCompressedBytes": sum(d["bytes"] for d in offline_core)},
               "coverage": coverage, "excludedSpanish": exclusions, "build": signature,
               "formats": {"reverse": "[normalizedTerm, [[normalizedLemma, matchedTerm, translation|alias, optionalSourceComparedPriority], ...]]",
                           "suggestions": "[normalizedTerm, displayTerm, CatalanLemma, frequencyRank][]; derived only from accepted reverse postings",
+                          "semantic": "[normalizedExpression, expression, normalizedCatalanLemma, ChineseSenseLabel, frequencyRank, sourceConceptId][]; source-compared paraphrases, not sentence translations",
                           "entries": "PackedDictionaryEntry[]; zhMachine=true identifies machine-assisted translations; zhHeadword=true identifies headword-only term references",
                           "spanishKey": "NFC lowercase, punctuation/space normalization, accent fold except ñ",
                           "chineseKey": "NFKC lowercase and space normalization; original, OpenCC t2s and s2t aliases"},

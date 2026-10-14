@@ -1,0 +1,2403 @@
+{
+  "schemaVersion": 1,
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared concept paraphrases. They guide dictionary word discovery and do not claim sentence translation, unrestricted semantic understanding or human lexicographer review.",
+  "records": [
+    {
+      "id": "happy",
+      "lemma": "feliç",
+      "label": "开心",
+      "expressions": [
+        "心情好",
+        "心情很好",
+        "心情愉快",
+        "感觉高兴",
+        "觉得快乐",
+        "很开心",
+        "非常开心",
+        "特别开心",
+        "挺开心",
+        "很快乐",
+        "心里高兴",
+        "开开心心",
+        "十分开心",
+        "蛮开心",
+        "相当开心",
+        "有点开心",
+        "有些开心",
+        "比较开心",
+        "稍微开心",
+        "感觉开心",
+        "感觉很开心",
+        "感到开心",
+        "感到很开心",
+        "觉得开心",
+        "觉得很开心",
+        "我觉得开心",
+        "我觉得很开心",
+        "我感到开心",
+        "我感到很开心",
+        "非常快乐",
+        "十分快乐",
+        "特别快乐",
+        "挺快乐",
+        "蛮快乐",
+        "相当快乐",
+        "有点快乐",
+        "有些快乐",
+        "比较快乐",
+        "稍微快乐",
+        "感觉快乐",
+        "感觉很快乐",
+        "感到快乐",
+        "感到很快乐",
+        "觉得很快乐",
+        "我觉得快乐",
+        "我觉得很快乐",
+        "我感到快乐",
+        "我感到很快乐",
+        "很高兴",
+        "非常高兴",
+        "十分高兴",
+        "特别高兴",
+        "挺高兴",
+        "蛮高兴",
+        "相当高兴",
+        "有点高兴",
+        "有些高兴",
+        "比较高兴",
+        "稍微高兴",
+        "感觉很高兴",
+        "感到高兴",
+        "感到很高兴",
+        "觉得高兴",
+        "觉得很高兴",
+        "我觉得高兴",
+        "我觉得很高兴",
+        "我感到高兴",
+        "我感到很高兴",
+        "很愉快",
+        "非常愉快",
+        "十分愉快",
+        "特别愉快",
+        "挺愉快",
+        "蛮愉快",
+        "相当愉快",
+        "有点愉快",
+        "有些愉快",
+        "比较愉快",
+        "稍微愉快",
+        "感觉愉快",
+        "感觉很愉快",
+        "感到愉快",
+        "感到很愉快",
+        "觉得愉快",
+        "觉得很愉快",
+        "我觉得愉快",
+        "我觉得很愉快",
+        "我感到愉快",
+        "我感到很愉快"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "happy"
+        }
+      ]
+    },
+    {
+      "id": "sad",
+      "lemma": "trist",
+      "label": "难过",
+      "expressions": [
+        "心情不好",
+        "心情低落",
+        "情绪低落",
+        "很伤心",
+        "非常难过",
+        "有点难过",
+        "不太开心",
+        "不开心",
+        "很不开心",
+        "高兴不起来",
+        "很难过",
+        "十分难过",
+        "特别难过",
+        "挺难过",
+        "蛮难过",
+        "相当难过",
+        "有些难过",
+        "比较难过",
+        "稍微难过",
+        "感觉难过",
+        "感觉很难过",
+        "感到难过",
+        "感到很难过",
+        "觉得难过",
+        "觉得很难过",
+        "我觉得难过",
+        "我觉得很难过",
+        "我感到难过",
+        "我感到很难过",
+        "非常伤心",
+        "十分伤心",
+        "特别伤心",
+        "挺伤心",
+        "蛮伤心",
+        "相当伤心",
+        "有点伤心",
+        "有些伤心",
+        "比较伤心",
+        "稍微伤心",
+        "感觉伤心",
+        "感觉很伤心",
+        "感到伤心",
+        "感到很伤心",
+        "觉得伤心",
+        "觉得很伤心",
+        "我觉得伤心",
+        "我觉得很伤心",
+        "我感到伤心",
+        "我感到很伤心",
+        "很悲伤",
+        "非常悲伤",
+        "十分悲伤",
+        "特别悲伤",
+        "挺悲伤",
+        "蛮悲伤",
+        "相当悲伤",
+        "有点悲伤",
+        "有些悲伤",
+        "比较悲伤",
+        "稍微悲伤",
+        "感觉悲伤",
+        "感觉很悲伤",
+        "感到悲伤",
+        "感到很悲伤",
+        "觉得悲伤",
+        "觉得很悲伤",
+        "我觉得悲伤",
+        "我觉得很悲伤",
+        "我感到悲伤",
+        "我感到很悲伤"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sad, unhappy"
+        }
+      ]
+    },
+    {
+      "id": "calm",
+      "lemma": "tranquil",
+      "label": "平静",
+      "expressions": [
+        "心情平静",
+        "情绪平稳",
+        "不慌张",
+        "感到平静",
+        "很平静",
+        "非常平静",
+        "十分平静",
+        "特别平静",
+        "挺平静",
+        "蛮平静",
+        "相当平静",
+        "有点平静",
+        "有些平静",
+        "比较平静",
+        "稍微平静",
+        "感觉平静",
+        "感觉很平静",
+        "感到很平静",
+        "觉得平静",
+        "觉得很平静",
+        "我觉得平静",
+        "我觉得很平静",
+        "我感到平静",
+        "我感到很平静",
+        "很镇定",
+        "非常镇定",
+        "十分镇定",
+        "特别镇定",
+        "挺镇定",
+        "蛮镇定",
+        "相当镇定",
+        "有点镇定",
+        "有些镇定",
+        "比较镇定",
+        "稍微镇定",
+        "感觉镇定",
+        "感觉很镇定",
+        "感到镇定",
+        "感到很镇定",
+        "觉得镇定",
+        "觉得很镇定",
+        "我觉得镇定",
+        "我觉得很镇定",
+        "我感到镇定",
+        "我感到很镇定"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tranquil, calm (free from emotional disturbance)"
+        }
+      ]
+    },
+    {
+      "id": "nervous",
+      "lemma": "nerviós",
+      "label": "紧张",
+      "expressions": [
+        "心里紧张",
+        "很紧张",
+        "神经绷得很紧",
+        "紧张不安",
+        "非常紧张",
+        "十分紧张",
+        "特别紧张",
+        "挺紧张",
+        "蛮紧张",
+        "相当紧张",
+        "有点紧张",
+        "有些紧张",
+        "比较紧张",
+        "稍微紧张",
+        "感觉紧张",
+        "感觉很紧张",
+        "感到紧张",
+        "感到很紧张",
+        "觉得紧张",
+        "觉得很紧张",
+        "我觉得紧张",
+        "我觉得很紧张",
+        "我感到紧张",
+        "我感到很紧张"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "nervous"
+        }
+      ]
+    },
+    {
+      "id": "anxious",
+      "lemma": "ansiós",
+      "label": "焦虑",
+      "expressions": [
+        "感到焦虑",
+        "心里焦急",
+        "焦虑不安",
+        "忧心忡忡",
+        "心中忧虑",
+        "很焦虑",
+        "非常焦虑",
+        "十分焦虑",
+        "特别焦虑",
+        "挺焦虑",
+        "蛮焦虑",
+        "相当焦虑",
+        "有点焦虑",
+        "有些焦虑",
+        "比较焦虑",
+        "稍微焦虑",
+        "感觉焦虑",
+        "感觉很焦虑",
+        "感到很焦虑",
+        "觉得焦虑",
+        "觉得很焦虑",
+        "我觉得焦虑",
+        "我觉得很焦虑",
+        "我感到焦虑",
+        "我感到很焦虑",
+        "很焦急",
+        "非常焦急",
+        "十分焦急",
+        "特别焦急",
+        "挺焦急",
+        "蛮焦急",
+        "相当焦急",
+        "有点焦急",
+        "有些焦急",
+        "比较焦急",
+        "稍微焦急",
+        "感觉焦急",
+        "感觉很焦急",
+        "感到焦急",
+        "感到很焦急",
+        "觉得焦急",
+        "觉得很焦急",
+        "我觉得焦急",
+        "我觉得很焦急",
+        "我感到焦急",
+        "我感到很焦急"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "anxious"
+        }
+      ]
+    },
+    {
+      "id": "tired",
+      "lemma": "cansat",
+      "label": "疲倦",
+      "expressions": [
+        "很累",
+        "觉得累",
+        "感到疲劳",
+        "累得不行",
+        "身体疲惫",
+        "累了",
+        "非常累",
+        "十分累",
+        "特别累",
+        "挺累",
+        "蛮累",
+        "相当累",
+        "有点累",
+        "有些累",
+        "比较累",
+        "稍微累",
+        "感觉累",
+        "感觉很累",
+        "感到累",
+        "感到很累",
+        "觉得很累",
+        "我觉得累",
+        "我觉得很累",
+        "我感到累",
+        "我感到很累",
+        "很疲倦",
+        "非常疲倦",
+        "十分疲倦",
+        "特别疲倦",
+        "挺疲倦",
+        "蛮疲倦",
+        "相当疲倦",
+        "有点疲倦",
+        "有些疲倦",
+        "比较疲倦",
+        "稍微疲倦",
+        "感觉疲倦",
+        "感觉很疲倦",
+        "感到疲倦",
+        "感到很疲倦",
+        "觉得疲倦",
+        "觉得很疲倦",
+        "我觉得疲倦",
+        "我觉得很疲倦",
+        "我感到疲倦",
+        "我感到很疲倦",
+        "很疲惫",
+        "非常疲惫",
+        "十分疲惫",
+        "特别疲惫",
+        "挺疲惫",
+        "蛮疲惫",
+        "相当疲惫",
+        "有点疲惫",
+        "有些疲惫",
+        "比较疲惫",
+        "稍微疲惫",
+        "感觉疲惫",
+        "感觉很疲惫",
+        "感到疲惫",
+        "感到很疲惫",
+        "觉得疲惫",
+        "觉得很疲惫",
+        "我觉得疲惫",
+        "我觉得很疲惫",
+        "我感到疲惫",
+        "我感到很疲惫"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tired; fatigued"
+        }
+      ]
+    },
+    {
+      "id": "shy",
+      "lemma": "tímid",
+      "label": "腼腆",
+      "expressions": [
+        "有点害羞",
+        "感到害羞",
+        "害羞不敢说话",
+        "容易害羞",
+        "很害羞",
+        "非常害羞",
+        "十分害羞",
+        "特别害羞",
+        "挺害羞",
+        "蛮害羞",
+        "相当害羞",
+        "有些害羞",
+        "比较害羞",
+        "稍微害羞",
+        "感觉害羞",
+        "感觉很害羞",
+        "感到很害羞",
+        "觉得害羞",
+        "觉得很害羞",
+        "我觉得害羞",
+        "我觉得很害羞",
+        "我感到害羞",
+        "我感到很害羞",
+        "很腼腆",
+        "非常腼腆",
+        "十分腼腆",
+        "特别腼腆",
+        "挺腼腆",
+        "蛮腼腆",
+        "相当腼腆",
+        "有点腼腆",
+        "有些腼腆",
+        "比较腼腆",
+        "稍微腼腆",
+        "感觉腼腆",
+        "感觉很腼腆",
+        "感到腼腆",
+        "感到很腼腆",
+        "觉得腼腆",
+        "觉得很腼腆",
+        "我觉得腼腆",
+        "我觉得很腼腆",
+        "我感到腼腆",
+        "我感到很腼腆"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "timid; shy"
+        }
+      ]
+    },
+    {
+      "id": "comfortable",
+      "lemma": "còmode",
+      "label": "舒适",
+      "expressions": [
+        "坐着舒服",
+        "住着舒服",
+        "穿着舒服",
+        "感觉舒适",
+        "很舒服",
+        "非常舒服",
+        "十分舒服",
+        "特别舒服",
+        "挺舒服",
+        "蛮舒服",
+        "相当舒服",
+        "有点舒服",
+        "有些舒服",
+        "比较舒服",
+        "稍微舒服",
+        "感觉舒服",
+        "感觉很舒服",
+        "感到舒服",
+        "感到很舒服",
+        "觉得舒服",
+        "觉得很舒服",
+        "我觉得舒服",
+        "我觉得很舒服",
+        "我感到舒服",
+        "我感到很舒服",
+        "很舒适",
+        "非常舒适",
+        "十分舒适",
+        "特别舒适",
+        "挺舒适",
+        "蛮舒适",
+        "相当舒适",
+        "有点舒适",
+        "有些舒适",
+        "比较舒适",
+        "稍微舒适",
+        "感觉很舒适",
+        "感到舒适",
+        "感到很舒适",
+        "觉得舒适",
+        "觉得很舒适",
+        "我觉得舒适",
+        "我觉得很舒适",
+        "我感到舒适",
+        "我感到很舒适"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "easy; comfortable"
+        }
+      ]
+    },
+    {
+      "id": "uncomfortable",
+      "lemma": "incòmode",
+      "label": "不舒适",
+      "expressions": [
+        "坐着不舒服",
+        "穿着不舒服",
+        "觉得不自在",
+        "感觉不舒适",
+        "很不舒服",
+        "非常不舒服",
+        "十分不舒服",
+        "特别不舒服",
+        "挺不舒服",
+        "蛮不舒服",
+        "相当不舒服",
+        "有点不舒服",
+        "有些不舒服",
+        "比较不舒服",
+        "稍微不舒服",
+        "感觉不舒服",
+        "感觉很不舒服",
+        "感到不舒服",
+        "感到很不舒服",
+        "觉得不舒服",
+        "觉得很不舒服",
+        "我觉得不舒服",
+        "我觉得很不舒服",
+        "我感到不舒服",
+        "我感到很不舒服",
+        "很不自在",
+        "非常不自在",
+        "十分不自在",
+        "特别不自在",
+        "挺不自在",
+        "蛮不自在",
+        "相当不自在",
+        "有点不自在",
+        "有些不自在",
+        "比较不自在",
+        "稍微不自在",
+        "感觉不自在",
+        "感觉很不自在",
+        "感到不自在",
+        "感到很不自在",
+        "觉得很不自在",
+        "我觉得不自在",
+        "我觉得很不自在",
+        "我感到不自在",
+        "我感到很不自在"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "uncomfortable"
+        }
+      ]
+    },
+    {
+      "id": "cheap",
+      "lemma": "barat",
+      "label": "便宜",
+      "expressions": [
+        "价格低",
+        "价钱低",
+        "价格不高",
+        "不贵",
+        "价格实惠",
+        "花钱不多",
+        "很便宜",
+        "比较便宜",
+        "价钱很低",
+        "非常便宜",
+        "十分便宜",
+        "特别便宜",
+        "挺便宜",
+        "蛮便宜",
+        "相当便宜",
+        "有点便宜",
+        "有些便宜",
+        "稍微便宜"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cheap, of low cost"
+        }
+      ]
+    },
+    {
+      "id": "expensive",
+      "lemma": "car",
+      "label": "昂贵",
+      "expressions": [
+        "价格高",
+        "价格很高",
+        "价钱高",
+        "很贵",
+        "贵得很",
+        "价格昂贵",
+        "非常贵",
+        "十分贵",
+        "特别贵",
+        "挺贵",
+        "蛮贵",
+        "相当贵",
+        "有点贵",
+        "有些贵",
+        "比较贵",
+        "稍微贵",
+        "很昂贵",
+        "非常昂贵",
+        "十分昂贵",
+        "特别昂贵",
+        "挺昂贵",
+        "蛮昂贵",
+        "相当昂贵",
+        "有点昂贵",
+        "有些昂贵",
+        "比较昂贵",
+        "稍微昂贵"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "expensive"
+        }
+      ]
+    },
+    {
+      "id": "free",
+      "lemma": "gratuït",
+      "label": "免费",
+      "expressions": [
+        "不用付钱",
+        "不收费",
+        "不要钱",
+        "不用花钱",
+        "免收费",
+        "不需要付费",
+        "无需付费"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "free (obtainable without any payment)"
+        }
+      ]
+    },
+    {
+      "id": "quick",
+      "lemma": "ràpid",
+      "label": "迅速",
+      "expressions": [
+        "速度快",
+        "速度很快",
+        "动作很快",
+        "很迅速",
+        "行动迅速",
+        "很快",
+        "非常快",
+        "十分快",
+        "特别快",
+        "挺快",
+        "蛮快",
+        "相当快",
+        "有点快",
+        "有些快",
+        "比较快",
+        "稍微快",
+        "非常迅速",
+        "十分迅速",
+        "特别迅速",
+        "挺迅速",
+        "蛮迅速",
+        "相当迅速",
+        "有点迅速",
+        "有些迅速",
+        "比较迅速",
+        "稍微迅速"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "rapid; quick; fast; speedy"
+        }
+      ]
+    },
+    {
+      "id": "slow",
+      "lemma": "lent",
+      "label": "缓慢",
+      "expressions": [
+        "速度慢",
+        "速度很慢",
+        "动作很慢",
+        "缓慢行进",
+        "行动缓慢",
+        "很慢",
+        "非常慢",
+        "十分慢",
+        "特别慢",
+        "挺慢",
+        "蛮慢",
+        "相当慢",
+        "有点慢",
+        "有些慢",
+        "比较慢",
+        "稍微慢",
+        "很缓慢",
+        "非常缓慢",
+        "十分缓慢",
+        "特别缓慢",
+        "挺缓慢",
+        "蛮缓慢",
+        "相当缓慢",
+        "有点缓慢",
+        "有些缓慢",
+        "比较缓慢",
+        "稍微缓慢"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "id": "near",
+      "lemma": "proper",
+      "label": "邻近",
+      "expressions": [
+        "距离近",
+        "离得近",
+        "距离很近",
+        "就在附近",
+        "附近的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "near, close"
+        }
+      ]
+    },
+    {
+      "id": "far",
+      "lemma": "lluny",
+      "label": "遥远",
+      "expressions": [
+        "距离远",
+        "距离很远",
+        "离得远"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "far"
+        }
+      ]
+    },
+    {
+      "id": "clean",
+      "lemma": "net",
+      "label": "干净",
+      "expressions": [
+        "很干净",
+        "没有污垢",
+        "不脏",
+        "干干净净",
+        "非常干净",
+        "十分干净",
+        "特别干净",
+        "挺干净",
+        "蛮干净",
+        "相当干净",
+        "有点干净",
+        "有些干净",
+        "比较干净",
+        "稍微干净"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "clean"
+        }
+      ]
+    },
+    {
+      "id": "dirty",
+      "lemma": "brut",
+      "label": "脏",
+      "expressions": [
+        "不干净",
+        "有污垢",
+        "脏兮兮",
+        "很脏",
+        "非常脏",
+        "十分脏",
+        "特别脏",
+        "挺脏",
+        "蛮脏",
+        "相当脏",
+        "有点脏",
+        "有些脏",
+        "比较脏",
+        "稍微脏"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "dirty"
+        }
+      ]
+    },
+    {
+      "id": "pretty",
+      "lemma": "bonic",
+      "label": "漂亮",
+      "expressions": [
+        "长得好看",
+        "外表好看",
+        "看起来漂亮",
+        "非常漂亮",
+        "很好看",
+        "很漂亮",
+        "十分漂亮",
+        "特别漂亮",
+        "挺漂亮",
+        "蛮漂亮",
+        "相当漂亮",
+        "有点漂亮",
+        "有些漂亮",
+        "比较漂亮",
+        "稍微漂亮",
+        "非常好看",
+        "十分好看",
+        "特别好看",
+        "挺好看",
+        "蛮好看",
+        "相当好看",
+        "有点好看",
+        "有些好看",
+        "比较好看",
+        "稍微好看"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pretty"
+        }
+      ]
+    },
+    {
+      "id": "ugly",
+      "lemma": "lleig",
+      "label": "丑陋",
+      "expressions": [
+        "长得难看",
+        "外表难看",
+        "看起来丑",
+        "很丑",
+        "很难看",
+        "非常难看",
+        "十分难看",
+        "特别难看",
+        "挺难看",
+        "蛮难看",
+        "相当难看",
+        "有点难看",
+        "有些难看",
+        "比较难看",
+        "稍微难看",
+        "非常丑",
+        "十分丑",
+        "特别丑",
+        "挺丑",
+        "蛮丑",
+        "相当丑",
+        "有点丑",
+        "有些丑",
+        "比较丑",
+        "稍微丑"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "ugly"
+        }
+      ]
+    },
+    {
+      "id": "difficult",
+      "lemma": "difícil",
+      "label": "困难",
+      "expressions": [
+        "很难",
+        "不容易",
+        "有难度",
+        "难度大",
+        "比较难",
+        "难做",
+        "非常难",
+        "十分难",
+        "特别难",
+        "挺难",
+        "蛮难",
+        "相当难",
+        "有点难",
+        "有些难",
+        "稍微难",
+        "很困难",
+        "非常困难",
+        "十分困难",
+        "特别困难",
+        "挺困难",
+        "蛮困难",
+        "相当困难",
+        "有点困难",
+        "有些困难",
+        "比较困难",
+        "稍微困难"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "difficult"
+        }
+      ]
+    },
+    {
+      "id": "easy",
+      "lemma": "fàcil",
+      "label": "容易",
+      "expressions": [
+        "很容易",
+        "不难",
+        "难度低",
+        "难度不大",
+        "容易做",
+        "很简单",
+        "非常简单",
+        "十分简单",
+        "特别简单",
+        "挺简单",
+        "蛮简单",
+        "相当简单",
+        "有点简单",
+        "有些简单",
+        "比较简单",
+        "稍微简单",
+        "非常容易",
+        "十分容易",
+        "特别容易",
+        "挺容易",
+        "蛮容易",
+        "相当容易",
+        "有点容易",
+        "有些容易",
+        "比较容易",
+        "稍微容易"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "easy"
+        }
+      ]
+    },
+    {
+      "id": "rest",
+      "lemma": "descansar",
+      "label": "休息",
+      "expressions": [
+        "歇一会儿",
+        "休息一下",
+        "歇一歇",
+        "歇会儿"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to rest"
+        }
+      ]
+    },
+    {
+      "id": "forget",
+      "lemma": "oblidar",
+      "label": "忘记",
+      "expressions": [
+        "想不起来",
+        "记不起来",
+        "忘了",
+        "忘掉了",
+        "没有记住"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to forget"
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "lemma": "recordar",
+      "label": "记得",
+      "expressions": [
+        "还记得",
+        "记在心里",
+        "想起来了",
+        "记住了",
+        "回想起来"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to remember, to recollect, to recall (someone or something)"
+        }
+      ]
+    },
+    {
+      "id": "understand",
+      "lemma": "entendre",
+      "label": "理解",
+      "expressions": [
+        "懂了",
+        "明白了",
+        "弄明白",
+        "弄清楚意思",
+        "理解意思",
+        "看懂意思",
+        "听明白",
+        "明白意思"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to understand"
+        }
+      ]
+    },
+    {
+      "id": "reserve",
+      "lemma": "reservar",
+      "label": "预订",
+      "expressions": [
+        "提前订好",
+        "提前预订",
+        "预订房间",
+        "预订座位",
+        "提前预约",
+        "预约位置"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to reserve, to book"
+        }
+      ]
+    },
+    {
+      "id": "repair",
+      "lemma": "reparar",
+      "label": "修理",
+      "expressions": [
+        "把东西修好",
+        "修好东西",
+        "修补东西",
+        "修一修",
+        "修理一下"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to repair, mend"
+        }
+      ]
+    },
+    {
+      "id": "lend",
+      "lemma": "prestar",
+      "label": "借出",
+      "expressions": [
+        "借给别人",
+        "借东西给别人",
+        "借钱给别人",
+        "让别人借用"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to loan; to lend"
+        }
+      ]
+    },
+    {
+      "id": "borrow",
+      "lemma": "manllevar",
+      "label": "借入",
+      "expressions": [
+        "向别人借东西",
+        "从别人那里借",
+        "借东西来用",
+        "向人借钱"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to borrow"
+        }
+      ]
+    },
+    {
+      "id": "pay",
+      "lemma": "pagar",
+      "label": "付款",
+      "expressions": [
+        "把钱付给别人",
+        "付账",
+        "付钱给商家",
+        "支付费用"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to pay (for/off)"
+        }
+      ]
+    },
+    {
+      "id": "receive-payment",
+      "lemma": "cobrar",
+      "label": "收款",
+      "expressions": [
+        "收取费用",
+        "收到账款",
+        "收取钱款"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to collect, receive (payment)"
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "lemma": "biblioteca",
+      "label": "图书馆",
+      "expressions": [
+        "借书的地方",
+        "可以借书的地方",
+        "借阅图书的地方",
+        "看书借书的地方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "library"
+        }
+      ]
+    },
+    {
+      "id": "pharmacy",
+      "lemma": "farmàcia",
+      "label": "药店",
+      "expressions": [
+        "卖药的地方",
+        "买药的店",
+        "售卖药品的店",
+        "买药的地方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pharmacy, drugstore"
+        }
+      ]
+    },
+    {
+      "id": "restaurant",
+      "lemma": "restaurant",
+      "label": "餐馆",
+      "expressions": [
+        "吃饭的店",
+        "吃饭的馆子",
+        "可以点菜吃饭的地方",
+        "提供饭菜的店"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "restaurant"
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "lemma": "fleca",
+      "label": "面包店",
+      "expressions": [
+        "卖面包的店",
+        "买面包的店",
+        "卖面包的地方",
+        "烤面包卖的店",
+        "做面包卖的店"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "a place where bread is sold, a bakery"
+        }
+      ]
+    },
+    {
+      "id": "driving-school",
+      "lemma": "autoescola",
+      "label": "驾校",
+      "expressions": [
+        "学开车的学校",
+        "学驾驶的学校",
+        "教开车的地方",
+        "学习驾驶的地方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "driving school"
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "lemma": "dormitori",
+      "label": "卧室",
+      "expressions": [
+        "家里睡觉的房间",
+        "睡觉的房间",
+        "放床睡觉的房间",
+        "用来睡觉的屋子"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bedroom (room in a house where a bed is kept for sleeping)"
+        }
+      ]
+    },
+    {
+      "id": "hospital",
+      "lemma": "hospital",
+      "label": "医院",
+      "expressions": [
+        "看病的地方",
+        "看病的医院",
+        "治疗病人的地方",
+        "给人治病的地方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hospital"
+        }
+      ]
+    },
+    {
+      "id": "train-station",
+      "lemma": "estació de tren",
+      "label": "火车站",
+      "expressions": [
+        "坐火车的车站",
+        "乘火车的车站",
+        "搭火车的车站",
+        "火车停靠的车站",
+        "火车出发的车站"
+      ],
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "l",
+          "text": "estació de tren"
+        }
+      ]
+    },
+    {
+      "id": "bus-stop",
+      "lemma": "parada d'autobús",
+      "label": "公交站",
+      "expressions": [
+        "等公交车的地方",
+        "坐公交车的站",
+        "搭公交车的站",
+        "公交车停靠的站",
+        "巴士停靠的站"
+      ],
+      "evidence": [
+        {
+          "layer": "lex",
+          "field": "l",
+          "text": "parada d'autobús"
+        }
+      ]
+    },
+    {
+      "id": "eat",
+      "lemma": "menjar",
+      "label": "吃饭",
+      "expressions": [
+        "进食",
+        "用餐",
+        "填饱肚子",
+        "吃点东西",
+        "吃东西"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to eat something solid"
+        }
+      ]
+    },
+    {
+      "id": "drink",
+      "lemma": "beure",
+      "label": "喝",
+      "expressions": [
+        "饮用",
+        "喝点东西",
+        "喝饮料",
+        "喝水"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to drink"
+        }
+      ]
+    },
+    {
+      "id": "sleep",
+      "lemma": "dormir",
+      "label": "睡觉",
+      "expressions": [
+        "睡眠",
+        "睡一觉",
+        "睡着",
+        "睡会儿",
+        "躺下睡觉"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to sleep"
+        }
+      ]
+    },
+    {
+      "id": "wake",
+      "lemma": "despertar",
+      "label": "醒来",
+      "expressions": [
+        "睡醒",
+        "醒过来",
+        "叫醒",
+        "唤醒",
+        "从睡梦中醒来"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to wake, awaken, wake up"
+        }
+      ]
+    },
+    {
+      "id": "walk",
+      "lemma": "caminar",
+      "label": "走路",
+      "expressions": [
+        "步行",
+        "徒步",
+        "用脚走",
+        "走着去",
+        "走一走"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to walk"
+        }
+      ]
+    },
+    {
+      "id": "run",
+      "lemma": "córrer",
+      "label": "跑",
+      "expressions": [
+        "奔跑",
+        "跑步",
+        "跑起来",
+        "快速奔跑"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to run"
+        }
+      ]
+    },
+    {
+      "id": "speak",
+      "lemma": "parlar",
+      "label": "说话",
+      "expressions": [
+        "讲话",
+        "开口说话",
+        "用语言交流",
+        "说几句话"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to speak (to communicate with one's voice)"
+        }
+      ]
+    },
+    {
+      "id": "listen",
+      "lemma": "escoltar",
+      "label": "听",
+      "expressions": [
+        "聆听",
+        "认真听",
+        "用耳朵听",
+        "仔细听"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to listen to, to pay attention to"
+        }
+      ]
+    },
+    {
+      "id": "look",
+      "lemma": "mirar",
+      "label": "看",
+      "expressions": [
+        "观看",
+        "看一看",
+        "用眼睛看",
+        "看东西"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to look, to look at, to watch"
+        }
+      ]
+    },
+    {
+      "id": "find",
+      "lemma": "trobar",
+      "label": "找到",
+      "expressions": [
+        "找到了",
+        "寻得",
+        "发现所在",
+        "把东西找出来"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to find"
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "lemma": "cercar",
+      "label": "寻找",
+      "expressions": [
+        "找东西",
+        "搜寻",
+        "寻觅",
+        "寻找东西"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to look for; to search"
+        }
+      ]
+    },
+    {
+      "id": "help",
+      "lemma": "ajudar",
+      "label": "帮助",
+      "expressions": [
+        "帮忙",
+        "协助",
+        "帮一把",
+        "给人帮忙",
+        "提供帮助"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to help, aid"
+        }
+      ]
+    },
+    {
+      "id": "begin",
+      "lemma": "començar",
+      "label": "开始",
+      "expressions": [
+        "着手",
+        "开始做",
+        "开始进行",
+        "做起",
+        "启动"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to begin, to start something"
+        }
+      ]
+    },
+    {
+      "id": "finish",
+      "lemma": "acabar",
+      "label": "完成",
+      "expressions": [
+        "做完",
+        "完成了",
+        "做完了",
+        "办完",
+        "结束工作"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to finish, complete"
+        }
+      ]
+    },
+    {
+      "id": "wait",
+      "lemma": "esperar",
+      "label": "等待",
+      "expressions": [
+        "等候",
+        "等一等",
+        "等一下",
+        "等待别人",
+        "等人"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to wait, wait for, await"
+        }
+      ]
+    },
+    {
+      "id": "arrive",
+      "lemma": "arribar",
+      "label": "到达",
+      "expressions": [
+        "抵达",
+        "到了",
+        "来到目的地",
+        "到达目的地"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to arrive"
+        }
+      ]
+    },
+    {
+      "id": "go-out",
+      "lemma": "sortir",
+      "label": "出去",
+      "expressions": [
+        "外出",
+        "走出去",
+        "从里面出来",
+        "出门"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to go out, to leave"
+        }
+      ]
+    },
+    {
+      "id": "enter",
+      "lemma": "entrar",
+      "label": "进入",
+      "expressions": [
+        "进去",
+        "进来",
+        "走进去",
+        "走进里面"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to enter"
+        }
+      ]
+    },
+    {
+      "id": "open",
+      "lemma": "obrir",
+      "label": "打开",
+      "expressions": [
+        "开启",
+        "开门",
+        "打开门",
+        "把门打开"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to open"
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "lemma": "tancar",
+      "label": "关闭",
+      "expressions": [
+        "关上",
+        "关门",
+        "把门关上",
+        "关起来"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to close"
+        }
+      ]
+    },
+    {
+      "id": "travel",
+      "lemma": "viatjar",
+      "label": "旅行",
+      "expressions": [
+        "出游",
+        "旅游",
+        "去旅行",
+        "外出旅游"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to travel; to voyage"
+        }
+      ]
+    },
+    {
+      "id": "study",
+      "lemma": "estudiar",
+      "label": "研读",
+      "expressions": [
+        "读书学习",
+        "做学问",
+        "用功读书",
+        "学习功课"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to study"
+        }
+      ]
+    },
+    {
+      "id": "learn",
+      "lemma": "aprendre",
+      "label": "学会",
+      "expressions": [
+        "学到",
+        "学会东西",
+        "掌握知识",
+        "学新东西"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to learn"
+        }
+      ]
+    },
+    {
+      "id": "teach",
+      "lemma": "ensenyar",
+      "label": "教导",
+      "expressions": [
+        "教别人",
+        "传授知识",
+        "教授知识",
+        "教人学习"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to teach"
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "lemma": "treballar",
+      "label": "工作",
+      "expressions": [
+        "干活",
+        "劳动",
+        "做工作",
+        "干事情"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to apply oneself diligently to a task"
+        }
+      ]
+    },
+    {
+      "id": "cook",
+      "lemma": "cuinar",
+      "label": "做饭",
+      "expressions": [
+        "烹饪",
+        "煮饭",
+        "烧饭",
+        "做菜",
+        "烧菜"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to cook"
+        }
+      ]
+    },
+    {
+      "id": "wash",
+      "lemma": "rentar",
+      "label": "清洗",
+      "expressions": [
+        "洗干净",
+        "洗东西",
+        "把东西洗干净",
+        "洗一洗"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to wash"
+        }
+      ]
+    },
+    {
+      "id": "buy",
+      "lemma": "comprar",
+      "label": "购买",
+      "expressions": [
+        "买东西",
+        "花钱购买",
+        "买下来",
+        "买入商品"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to buy"
+        }
+      ]
+    },
+    {
+      "id": "sell",
+      "lemma": "vendre",
+      "label": "出售",
+      "expressions": [
+        "卖东西",
+        "卖出去",
+        "卖给别人",
+        "出售商品"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to sell"
+        }
+      ]
+    },
+    {
+      "id": "choose",
+      "lemma": "escollir",
+      "label": "挑选",
+      "expressions": [
+        "选择",
+        "选一个",
+        "选出来",
+        "挑一个",
+        "从中选择"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to choose"
+        }
+      ]
+    },
+    {
+      "id": "decide",
+      "lemma": "decidir",
+      "label": "决定",
+      "expressions": [
+        "做决定",
+        "作出决定",
+        "决定下来",
+        "拿定主意"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to decide, to settle"
+        }
+      ]
+    },
+    {
+      "id": "need",
+      "lemma": "necessitar",
+      "label": "需要",
+      "expressions": [
+        "有需要",
+        "必须要有",
+        "需要用到",
+        "有必要用到"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to need"
+        }
+      ]
+    },
+    {
+      "id": "want",
+      "lemma": "voler",
+      "label": "想要",
+      "expressions": [
+        "想得到",
+        "想要得到",
+        "有意愿",
+        "愿意要"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to want"
+        }
+      ]
+    },
+    {
+      "id": "love",
+      "lemma": "estimar",
+      "label": "爱",
+      "expressions": [
+        "爱护",
+        "爱着",
+        "心里爱着",
+        "对人有爱意"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to love"
+        }
+      ]
+    },
+    {
+      "id": "like",
+      "lemma": "agradar",
+      "label": "喜欢",
+      "expressions": [
+        "喜爱",
+        "觉得喜欢",
+        "让人喜欢",
+        "讨人喜欢"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to like"
+        }
+      ]
+    },
+    {
+      "id": "rain",
+      "lemma": "ploure",
+      "label": "下雨",
+      "expressions": [
+        "降雨",
+        "下起雨来",
+        "天在下雨",
+        "雨从天上落下"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to rain"
+        }
+      ]
+    },
+    {
+      "id": "snow",
+      "lemma": "nevar",
+      "label": "下雪",
+      "expressions": [
+        "降雪",
+        "下起雪来",
+        "天在下雪",
+        "雪从天上飘落"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to snow"
+        }
+      ]
+    },
+    {
+      "id": "cold-weather",
+      "lemma": "fred",
+      "label": "寒冷",
+      "expressions": [
+        "天气冷",
+        "气温低",
+        "感觉冷",
+        "天气寒冷",
+        "冷得很",
+        "很冷",
+        "非常冷",
+        "十分冷",
+        "特别冷",
+        "挺冷",
+        "蛮冷",
+        "相当冷",
+        "有点冷",
+        "有些冷",
+        "比较冷",
+        "稍微冷",
+        "很寒冷",
+        "非常寒冷",
+        "十分寒冷",
+        "特别寒冷",
+        "挺寒冷",
+        "蛮寒冷",
+        "相当寒冷",
+        "有点寒冷",
+        "有些寒冷",
+        "比较寒冷",
+        "稍微寒冷"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cold, cool"
+        }
+      ]
+    },
+    {
+      "id": "hot-temperature",
+      "lemma": "calent",
+      "label": "热",
+      "expressions": [
+        "温度高",
+        "摸起来热",
+        "热乎乎",
+        "热热的",
+        "有热度",
+        "很热",
+        "非常热",
+        "十分热",
+        "特别热",
+        "挺热",
+        "蛮热",
+        "相当热",
+        "有点热",
+        "有些热",
+        "比较热",
+        "稍微热"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hot, warm"
+        }
+      ]
+    },
+    {
+      "id": "doctor",
+      "lemma": "metge",
+      "label": "医生",
+      "expressions": [
+        "给人看病的人",
+        "看病的医生",
+        "诊治病人的人",
+        "治病的人"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "doctor, physician"
+        }
+      ]
+    },
+    {
+      "id": "teacher",
+      "lemma": "professor",
+      "label": "教师",
+      "expressions": [
+        "教书的人",
+        "教学生的人",
+        "给学生上课的人",
+        "学校里教书的人"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "teacher"
+        }
+      ]
+    },
+    {
+      "id": "friend",
+      "lemma": "amic",
+      "label": "朋友",
+      "expressions": [
+        "友人",
+        "好朋友",
+        "朋友伙伴",
+        "和自己交好的人"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "friend"
+        }
+      ]
+    },
+    {
+      "id": "father",
+      "lemma": "pare",
+      "label": "父亲",
+      "expressions": [
+        "爸爸",
+        "老爸",
+        "自己的爸爸",
+        "家里的爸爸"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "father"
+        }
+      ]
+    },
+    {
+      "id": "mother",
+      "lemma": "mare",
+      "label": "母亲",
+      "expressions": [
+        "妈妈",
+        "老妈",
+        "自己的妈妈",
+        "家里的妈妈"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "mother"
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "lemma": "cuina",
+      "label": "厨房",
+      "expressions": [
+        "做饭的地方",
+        "家里做饭的房间",
+        "烧饭的房间",
+        "用来烹饪的房间"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "kitchen"
+        }
+      ]
+    },
+    {
+      "id": "bathroom",
+      "lemma": "bany",
+      "label": "浴室",
+      "expressions": [
+        "洗澡的房间",
+        "家里洗澡的地方",
+        "洗浴的房间",
+        "用来洗澡的屋子"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bathroom"
+        }
+      ]
+    },
+    {
+      "id": "school",
+      "lemma": "escola",
+      "label": "学校",
+      "expressions": [
+        "上学的地方",
+        "学生上课的地方",
+        "孩子读书的地方",
+        "教书育人的地方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "school"
+        }
+      ]
+    },
+    {
+      "id": "airport",
+      "lemma": "aeroport",
+      "label": "机场",
+      "expressions": [
+        "坐飞机的地方",
+        "飞机起降的地方",
+        "乘飞机的地方",
+        "飞机起飞降落的场所"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "airport, aerodrome, airdrome, airfield"
+        }
+      ]
+    },
+    {
+      "id": "hotel",
+      "lemma": "hotel",
+      "label": "旅馆",
+      "expressions": [
+        "旅行住的店",
+        "外出住宿的地方",
+        "供旅客住宿的地方",
+        "游客住宿的地方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hotel"
+        }
+      ]
+    },
+    {
+      "id": "shop",
+      "lemma": "botiga",
+      "label": "商店",
+      "expressions": [
+        "卖东西的店",
+        "买东西的店",
+        "出售货物的地方",
+        "售卖商品的店"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "shop, store"
+        }
+      ]
+    },
+    {
+      "id": "shoe",
+      "lemma": "sabata",
+      "label": "鞋子",
+      "expressions": [
+        "脚上穿的东西",
+        "穿在脚上的鞋",
+        "保护脚的鞋",
+        "走路穿的鞋"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "shoe"
+        }
+      ]
+    },
+    {
+      "id": "clothes",
+      "lemma": "roba",
+      "label": "衣服",
+      "expressions": [
+        "身上穿的东西",
+        "穿在身上的衣物",
+        "穿着的衣物",
+        "身上穿的衣裳"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "clothes"
+        }
+      ]
+    },
+    {
+      "id": "book",
+      "lemma": "llibre",
+      "label": "书本",
+      "expressions": [
+        "书籍",
+        "一本书",
+        "用来阅读的书",
+        "装订成册的读物"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "book"
+        }
+      ]
+    },
+    {
+      "id": "pen",
+      "lemma": "bolígraf",
+      "label": "圆珠笔",
+      "expressions": [
+        "原子笔",
+        "用来写字的圆珠笔",
+        "写字用的圆珠笔",
+        "油墨圆珠笔"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pen; biro"
+        }
+      ]
+    }
+  ]
+}

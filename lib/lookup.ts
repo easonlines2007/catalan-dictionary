@@ -440,13 +440,18 @@ function catalanMatch(result: FoundLookup, mode: SearchLanguage): FoundLookup {
 
 async function reverseCandidates(query: string, language: "es" | "zh"): Promise<LemmaResult[]> {
   const manifest = await dictionaryRepository.manifest();
-  const hits = await searchRepository.reverse(query, language, manifest.dataVersion);
+  let hits = await searchRepository.reverse(query, language, manifest.dataVersion);
+  if (language === "zh") {
+    try { hits = [...hits, ...await searchRepository.semantic(query, manifest.dataVersion)]; }
+    catch (error) { if (!hits.length) throw error; }
+  }
   const hydrated = await Promise.all(hits.map(async (hit) => {
     const entry = await dictionaryRepository.getEntry(hit.normalizedLemma);
     return entry ? {
       input: query, lemma: entry.lemma, entry, partOfSpeech: entry.partOfSpeech?.[0],
       matchedLanguage: language, matchedTerm: hit.matchedTerm, matchKind: hit.matchKind,
-      confidence: hit.exact ? 1 : 0.95,
+      confidence: hit.matchKind === "semantic" ? 0.87 : hit.exact ? 1 : 0.95,
+      semanticMatch: hit.semanticMatch,
       searchPriority: hit.priority ?? 0,
     } satisfies LemmaResult : undefined;
   }));
@@ -511,8 +516,9 @@ async function lookupLiteral(query: string, mode: SearchLanguage): Promise<Looku
   if (first?.entry) {
     return { status: "found", searchedForm, normalizedQuery, searchLanguage: mode,
       searchDataVersion: searchManifest?.dataVersion, lemma: first.lemma, entry: first.entry,
-      confidence: first.confidence ?? 1, resolutionSource: "translation", candidates,
-      matchedLanguage: first.matchedLanguage, matchedTerm: first.matchedTerm, matchKind: first.matchKind };
+      confidence: first.confidence ?? 1, resolutionSource: first.matchKind === "semantic" ? "semantic" : "translation", candidates,
+      matchedLanguage: first.matchedLanguage, matchedTerm: first.matchedTerm, matchKind: first.matchKind,
+      semanticMatch: first.semanticMatch };
   }
   if (reverse.status === "rejected") throw reverse.reason;
   if (catalan.status === "rejected") throw catalan.reason;
@@ -555,6 +561,17 @@ export async function suggestWords(query: string, mode: SearchLanguage = "auto",
   const extractedQuery = language === "zh" ? extractChineseSearchTerm(input) : undefined;
   if (extractedQuery && !reverse.some((item) => item.kind === "exact") && !signal?.aborted) {
     reverse = await searchRepository.suggest(extractedQuery, "zh", base.dataVersion, limit, signal);
+  }
+  if (language === "zh" && !signal?.aborted) {
+    const hits = await searchRepository.semantic(extractedQuery ?? input, base.dataVersion, limit).catch(() => []);
+    if (hits.length && !signal?.aborted) {
+      const meanings: SearchSuggestion[] = hits.map((hit) => ({ term: hit.matchedTerm,
+        lemma: hit.normalizedLemma, language: "zh", kind: "semantic" }));
+      const seen = new Set<string>();
+      reverse = [...reverse.filter((item) => item.kind === "exact"), ...meanings,
+        ...reverse.filter((item) => item.kind !== "exact" && item.kind !== "fuzzy")]
+        .filter((item) => { if (seen.has(item.lemma)) return false; seen.add(item.lemma); return true; }).slice(0, limit);
+    }
   }
   if (mode !== "auto" || language === "zh" || signal?.aborted || reverse.length >= limit) return reverse;
   const catalan = (await fuzzySuggestions(input, limit - reverse.length)).map((term) => ({

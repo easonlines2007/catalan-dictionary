@@ -25,17 +25,19 @@ test("long-lived tabs recover concurrent lookups, Chinese overlays and suggestio
   try {
     const repository = new SearchRepository();
     await repository.manifest(manifest.baseDataVersion);
-    const [reverse, core, chinese, suggestions] = await Promise.all([
+    const [reverse, core, chinese, suggestions, semantic] = await Promise.all([
       repository.reverse("学校", "zh", manifest.baseDataVersion),
       repository.coreEntry("escola", manifest.baseDataVersion),
       repository.chineseEntry("ara", manifest.baseDataVersion),
       repository.suggest("音悦", "zh", manifest.baseDataVersion),
+      repository.semantic("价格不高", manifest.baseDataVersion),
       repository.ensureCoreOffline(manifest.baseDataVersion),
     ]);
     assert.equal(reverse[0]?.normalizedLemma, "escola");
     assert.equal(core?.n, "escola");
     assert.ok(chinese?.zh?.some((text) => text.includes("现在")));
     assert.equal(suggestions[0]?.lemma, "música");
+    assert.equal(semantic[0]?.normalizedLemma, "barat");
     assert.equal(manifests, 2, "Concurrent failures must share a single manifest refresh");
     assert.equal(await getDictionaryMetadata(`searchCoreReady:${manifest.dataVersion}`), true);
     assert.equal(await getDictionaryMetadata(`searchCoreReady:${retired.dataVersion}`), undefined);

@@ -4,9 +4,12 @@ import {
 import { normalizeSearchInput, normalizeSearchKey } from "./search-normalization.ts";
 import { chineseMatchingKey } from "./chinese-search.ts";
 import { matchSuggestions } from "./search-suggestions.ts";
+import { semanticRows } from "./chinese-semantic.ts";
+import type { ChineseSemanticRow } from "./chinese-semantic.ts";
 import type { SuggestionRow } from "./search-suggestions.ts";
 import type {
   PackedDictionaryEntry, SearchManifest, SearchShardDescriptor, SearchSuggestion,
+  SemanticMatch,
 } from "./types.ts";
 
 type Posting = [lemma: string, term: string, kind: "translation" | "alias", priority?: number];
@@ -15,10 +18,11 @@ class MissingSearchShard extends Error {}
 export interface ReverseMatch {
   normalizedLemma: string;
   matchedTerm: string;
-  matchKind: "translation" | "alias";
+  matchKind: "translation" | "alias" | "semantic";
   matchedLanguage: "es" | "zh";
   exact: boolean;
   priority?: number;
+  semanticMatch?: SemanticMatch;
 }
 
 function descriptorForKey<T extends { first: string; last: string }>(descriptors: T[], key: string): T | undefined {
@@ -183,6 +187,25 @@ export class SearchRepository {
         exact: normalizeSearchInput(matchedTerm, language) === exactQuery
           || (chineseQuery !== undefined && chineseMatchingKey(matchedTerm) === chineseQuery),
       })).sort((a, b) => Number(b.exact) - Number(a.exact) || (b.priority ?? 0) - (a.priority ?? 0)).slice(0, limit);
+    });
+  }
+
+  async semantic(query: string, baseVersion: string, limit = 32): Promise<ReverseMatch[]> {
+    if (!query.trim() || Array.from(query).length > 64 || limit <= 0) return [];
+    return this.withManifest(baseVersion, async (manifest) => {
+      if (!manifest.semantic) return [];
+      const limited = await this.isOfflineLimited(manifest);
+      const descriptor = limited ? manifest.semantic.core : manifest.semantic.zh;
+      let rows: ChineseSemanticRow[];
+      try { rows = await this.load<ChineseSemanticRow[]>(manifest, descriptor); }
+      catch (error) {
+        if (limited || error instanceof MissingSearchShard) throw error;
+        rows = await this.load<ChineseSemanticRow[]>(manifest, manifest.semantic.core);
+      }
+      return semanticRows(rows, query, limit).map(([, expression, normalizedLemma, matchedTerm, , conceptId]) => ({
+        normalizedLemma, matchedTerm, matchKind: "semantic", matchedLanguage: "zh", exact: false,
+        semanticMatch: { conceptId, expression },
+      }));
     });
   }
 

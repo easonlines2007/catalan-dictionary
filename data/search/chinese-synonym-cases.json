@@ -1,0 +1,1094 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared everyday synonym regressions; selected lexical senses, not corpus-wide semantic accuracy.",
+  "cases": [
+    {
+      "query": "开心",
+      "expectedLemma": "feliç"
+    },
+    {
+      "query": "快乐",
+      "expectedLemma": "feliç"
+    },
+    {
+      "query": "幸福",
+      "expectedLemma": "feliç"
+    },
+    {
+      "query": "愉快",
+      "expectedLemma": "feliç"
+    },
+    {
+      "query": "高兴",
+      "expectedLemma": "feliç"
+    },
+    {
+      "query": "欢快",
+      "expectedLemma": "alegre"
+    },
+    {
+      "query": "欢喜",
+      "expectedLemma": "alegre"
+    },
+    {
+      "query": "喜气洋洋",
+      "expectedLemma": "alegre"
+    },
+    {
+      "query": "伤心",
+      "expectedLemma": "trist"
+    },
+    {
+      "query": "难过",
+      "expectedLemma": "trist"
+    },
+    {
+      "query": "悲伤",
+      "expectedLemma": "trist"
+    },
+    {
+      "query": "伤感",
+      "expectedLemma": "trist"
+    },
+    {
+      "query": "悲哀",
+      "expectedLemma": "trist"
+    },
+    {
+      "query": "满意",
+      "expectedLemma": "content"
+    },
+    {
+      "query": "满足",
+      "expectedLemma": "content"
+    },
+    {
+      "query": "称心",
+      "expectedLemma": "content"
+    },
+    {
+      "query": "恼火",
+      "expectedLemma": "enfadat"
+    },
+    {
+      "query": "生气",
+      "expectedLemma": "enfadat"
+    },
+    {
+      "query": "恼怒",
+      "expectedLemma": "enfadat"
+    },
+    {
+      "query": "疲倦",
+      "expectedLemma": "cansat"
+    },
+    {
+      "query": "疲劳",
+      "expectedLemma": "cansat"
+    },
+    {
+      "query": "劳累",
+      "expectedLemma": "cansat"
+    },
+    {
+      "query": "疲惫",
+      "expectedLemma": "cansat"
+    },
+    {
+      "query": "平静",
+      "expectedLemma": "tranquil"
+    },
+    {
+      "query": "镇定",
+      "expectedLemma": "tranquil"
+    },
+    {
+      "query": "安稳",
+      "expectedLemma": "tranquil"
+    },
+    {
+      "query": "紧张",
+      "expectedLemma": "nerviós"
+    },
+    {
+      "query": "神经紧绷",
+      "expectedLemma": "nerviós"
+    },
+    {
+      "query": "焦虑",
+      "expectedLemma": "ansiós"
+    },
+    {
+      "query": "焦急",
+      "expectedLemma": "ansiós"
+    },
+    {
+      "query": "忧虑",
+      "expectedLemma": "ansiós"
+    },
+    {
+      "query": "觉得无聊",
+      "expectedLemma": "avorrit"
+    },
+    {
+      "query": "感到无聊",
+      "expectedLemma": "avorrit"
+    },
+    {
+      "query": "腼腆",
+      "expectedLemma": "tímid"
+    },
+    {
+      "query": "羞怯",
+      "expectedLemma": "tímid"
+    },
+    {
+      "query": "害羞",
+      "expectedLemma": "tímid"
+    },
+    {
+      "query": "羞愧",
+      "expectedLemma": "avergonyit"
+    },
+    {
+      "query": "难为情",
+      "expectedLemma": "avergonyit"
+    },
+    {
+      "query": "惭愧",
+      "expectedLemma": "avergonyit"
+    },
+    {
+      "query": "尴尬",
+      "expectedLemma": "avergonyit"
+    },
+    {
+      "query": "自豪",
+      "expectedLemma": "orgullós"
+    },
+    {
+      "query": "骄傲",
+      "expectedLemma": "orgullós"
+    },
+    {
+      "query": "心满意足",
+      "expectedLemma": "satisfet"
+    },
+    {
+      "query": "感到满足",
+      "expectedLemma": "satisfet"
+    },
+    {
+      "query": "绝望",
+      "expectedLemma": "desesperat"
+    },
+    {
+      "query": "感到绝望",
+      "expectedLemma": "desesperat"
+    },
+    {
+      "query": "英勇",
+      "expectedLemma": "valent"
+    },
+    {
+      "query": "勇敢",
+      "expectedLemma": "valent"
+    },
+    {
+      "query": "有胆量",
+      "expectedLemma": "valent"
+    },
+    {
+      "query": "友善",
+      "expectedLemma": "amable"
+    },
+    {
+      "query": "友好",
+      "expectedLemma": "amable"
+    },
+    {
+      "query": "亲切",
+      "expectedLemma": "amable"
+    },
+    {
+      "query": "和善",
+      "expectedLemma": "amable"
+    },
+    {
+      "query": "自私",
+      "expectedLemma": "egoista"
+    },
+    {
+      "query": "自私自利",
+      "expectedLemma": "egoista"
+    },
+    {
+      "query": "大方",
+      "expectedLemma": "generós"
+    },
+    {
+      "query": "慷慨",
+      "expectedLemma": "generós"
+    },
+    {
+      "query": "慷慨大方",
+      "expectedLemma": "generós"
+    },
+    {
+      "query": "聪慧",
+      "expectedLemma": "intel·ligent"
+    },
+    {
+      "query": "聪明",
+      "expectedLemma": "intel·ligent"
+    },
+    {
+      "query": "聪颖",
+      "expectedLemma": "intel·ligent"
+    },
+    {
+      "query": "愚笨",
+      "expectedLemma": "estúpid"
+    },
+    {
+      "query": "愚蠢",
+      "expectedLemma": "estúpid"
+    },
+    {
+      "query": "笨",
+      "expectedLemma": "estúpid"
+    },
+    {
+      "query": "困难",
+      "expectedLemma": "difícil"
+    },
+    {
+      "query": "艰难",
+      "expectedLemma": "difícil"
+    },
+    {
+      "query": "难",
+      "expectedLemma": "difícil"
+    },
+    {
+      "query": "简单",
+      "expectedLemma": "fàcil"
+    },
+    {
+      "query": "容易",
+      "expectedLemma": "fàcil"
+    },
+    {
+      "query": "轻而易举",
+      "expectedLemma": "fàcil"
+    },
+    {
+      "query": "便宜",
+      "expectedLemma": "barat"
+    },
+    {
+      "query": "低价",
+      "expectedLemma": "barat"
+    },
+    {
+      "query": "价廉",
+      "expectedLemma": "barat"
+    },
+    {
+      "query": "昂贵",
+      "expectedLemma": "car"
+    },
+    {
+      "query": "贵",
+      "expectedLemma": "car"
+    },
+    {
+      "query": "免费",
+      "expectedLemma": "gratuït"
+    },
+    {
+      "query": "无偿",
+      "expectedLemma": "gratuït"
+    },
+    {
+      "query": "迅速",
+      "expectedLemma": "ràpid"
+    },
+    {
+      "query": "快速",
+      "expectedLemma": "ràpid"
+    },
+    {
+      "query": "快捷",
+      "expectedLemma": "ràpid"
+    },
+    {
+      "query": "缓慢",
+      "expectedLemma": "lent"
+    },
+    {
+      "query": "慢",
+      "expectedLemma": "lent"
+    },
+    {
+      "query": "邻近",
+      "expectedLemma": "proper"
+    },
+    {
+      "query": "靠近的",
+      "expectedLemma": "proper"
+    },
+    {
+      "query": "近的",
+      "expectedLemma": "proper"
+    },
+    {
+      "query": "遥远",
+      "expectedLemma": "lluny"
+    },
+    {
+      "query": "远处",
+      "expectedLemma": "lluny"
+    },
+    {
+      "query": "远",
+      "expectedLemma": "lluny"
+    },
+    {
+      "query": "吵闹",
+      "expectedLemma": "sorollós"
+    },
+    {
+      "query": "喧闹",
+      "expectedLemma": "sorollós"
+    },
+    {
+      "query": "嘈杂",
+      "expectedLemma": "sorollós"
+    },
+    {
+      "query": "无声",
+      "expectedLemma": "silenciós"
+    },
+    {
+      "query": "寂静",
+      "expectedLemma": "silenciós"
+    },
+    {
+      "query": "静悄悄",
+      "expectedLemma": "silenciós"
+    },
+    {
+      "query": "安静无声",
+      "expectedLemma": "silenciós"
+    },
+    {
+      "query": "富裕",
+      "expectedLemma": "ric"
+    },
+    {
+      "query": "富有",
+      "expectedLemma": "ric"
+    },
+    {
+      "query": "富足",
+      "expectedLemma": "ric"
+    },
+    {
+      "query": "贫困",
+      "expectedLemma": "pobre"
+    },
+    {
+      "query": "穷困",
+      "expectedLemma": "pobre"
+    },
+    {
+      "query": "贫穷",
+      "expectedLemma": "pobre"
+    },
+    {
+      "query": "口渴",
+      "expectedLemma": "assedegat"
+    },
+    {
+      "query": "渴",
+      "expectedLemma": "assedegat"
+    },
+    {
+      "query": "寒冷",
+      "expectedLemma": "fred"
+    },
+    {
+      "query": "冷",
+      "expectedLemma": "fred"
+    },
+    {
+      "query": "温热",
+      "expectedLemma": "calent"
+    },
+    {
+      "query": "热",
+      "expectedLemma": "calent"
+    },
+    {
+      "query": "暖热",
+      "expectedLemma": "calent"
+    },
+    {
+      "query": "洁净",
+      "expectedLemma": "net"
+    },
+    {
+      "query": "干净",
+      "expectedLemma": "net"
+    },
+    {
+      "query": "清洁",
+      "expectedLemma": "net"
+    },
+    {
+      "query": "肮脏",
+      "expectedLemma": "brut"
+    },
+    {
+      "query": "脏",
+      "expectedLemma": "brut"
+    },
+    {
+      "query": "污秽",
+      "expectedLemma": "brut"
+    },
+    {
+      "query": "好看",
+      "expectedLemma": "bonic"
+    },
+    {
+      "query": "漂亮",
+      "expectedLemma": "bonic"
+    },
+    {
+      "query": "美丽",
+      "expectedLemma": "bonic"
+    },
+    {
+      "query": "丑陋",
+      "expectedLemma": "lleig"
+    },
+    {
+      "query": "难看",
+      "expectedLemma": "lleig"
+    },
+    {
+      "query": "丑",
+      "expectedLemma": "lleig"
+    },
+    {
+      "query": "巨大",
+      "expectedLemma": "gran"
+    },
+    {
+      "query": "大型",
+      "expectedLemma": "gran"
+    },
+    {
+      "query": "大的",
+      "expectedLemma": "gran"
+    },
+    {
+      "query": "小型",
+      "expectedLemma": "petit"
+    },
+    {
+      "query": "小巧",
+      "expectedLemma": "petit"
+    },
+    {
+      "query": "小的",
+      "expectedLemma": "petit"
+    },
+    {
+      "query": "舒适",
+      "expectedLemma": "còmode"
+    },
+    {
+      "query": "舒服",
+      "expectedLemma": "còmode"
+    },
+    {
+      "query": "舒坦",
+      "expectedLemma": "còmode"
+    },
+    {
+      "query": "不舒适",
+      "expectedLemma": "incòmode"
+    },
+    {
+      "query": "不自在",
+      "expectedLemma": "incòmode"
+    },
+    {
+      "query": "别扭",
+      "expectedLemma": "incòmode"
+    },
+    {
+      "query": "研读",
+      "expectedLemma": "estudiar"
+    },
+    {
+      "query": "用功",
+      "expectedLemma": "estudiar"
+    },
+    {
+      "query": "学习功课",
+      "expectedLemma": "estudiar"
+    },
+    {
+      "query": "理解",
+      "expectedLemma": "entendre"
+    },
+    {
+      "query": "懂得",
+      "expectedLemma": "entendre"
+    },
+    {
+      "query": "弄懂",
+      "expectedLemma": "entendre"
+    },
+    {
+      "query": "听懂",
+      "expectedLemma": "entendre"
+    },
+    {
+      "query": "领会",
+      "expectedLemma": "comprendre"
+    },
+    {
+      "query": "领悟",
+      "expectedLemma": "comprendre"
+    },
+    {
+      "query": "理解透彻",
+      "expectedLemma": "comprendre"
+    },
+    {
+      "query": "知晓",
+      "expectedLemma": "saber"
+    },
+    {
+      "query": "晓得",
+      "expectedLemma": "saber"
+    },
+    {
+      "query": "知道",
+      "expectedLemma": "saber"
+    },
+    {
+      "query": "认识",
+      "expectedLemma": "conèixer"
+    },
+    {
+      "query": "熟识",
+      "expectedLemma": "conèixer"
+    },
+    {
+      "query": "记住",
+      "expectedLemma": "recordar"
+    },
+    {
+      "query": "回想",
+      "expectedLemma": "recordar"
+    },
+    {
+      "query": "想起",
+      "expectedLemma": "recordar"
+    },
+    {
+      "query": "记得",
+      "expectedLemma": "recordar"
+    },
+    {
+      "query": "忘却",
+      "expectedLemma": "oblidar"
+    },
+    {
+      "query": "忘掉",
+      "expectedLemma": "oblidar"
+    },
+    {
+      "query": "遗忘",
+      "expectedLemma": "oblidar"
+    },
+    {
+      "query": "忘记",
+      "expectedLemma": "oblidar"
+    },
+    {
+      "query": "想念",
+      "expectedLemma": "enyorar"
+    },
+    {
+      "query": "思念",
+      "expectedLemma": "enyorar"
+    },
+    {
+      "query": "怀念",
+      "expectedLemma": "enyorar"
+    },
+    {
+      "query": "喜欢",
+      "expectedLemma": "agradar"
+    },
+    {
+      "query": "喜爱",
+      "expectedLemma": "agradar"
+    },
+    {
+      "query": "中意",
+      "expectedLemma": "agradar"
+    },
+    {
+      "query": "爱",
+      "expectedLemma": "estimar"
+    },
+    {
+      "query": "热爱",
+      "expectedLemma": "estimar"
+    },
+    {
+      "query": "爱慕",
+      "expectedLemma": "estimar"
+    },
+    {
+      "query": "相信",
+      "expectedLemma": "creure"
+    },
+    {
+      "query": "信以为真",
+      "expectedLemma": "creure"
+    },
+    {
+      "query": "等待",
+      "expectedLemma": "esperar"
+    },
+    {
+      "query": "等候",
+      "expectedLemma": "esperar"
+    },
+    {
+      "query": "等",
+      "expectedLemma": "esperar"
+    },
+    {
+      "query": "预订",
+      "expectedLemma": "reservar"
+    },
+    {
+      "query": "预定",
+      "expectedLemma": "reservar"
+    },
+    {
+      "query": "预约",
+      "expectedLemma": "reservar"
+    },
+    {
+      "query": "取消",
+      "expectedLemma": "cancel·lar"
+    },
+    {
+      "query": "撤销",
+      "expectedLemma": "cancel·lar"
+    },
+    {
+      "query": "改变",
+      "expectedLemma": "canviar"
+    },
+    {
+      "query": "变更",
+      "expectedLemma": "canviar"
+    },
+    {
+      "query": "更改",
+      "expectedLemma": "canviar"
+    },
+    {
+      "query": "替换",
+      "expectedLemma": "substituir"
+    },
+    {
+      "query": "替代",
+      "expectedLemma": "substituir"
+    },
+    {
+      "query": "取代",
+      "expectedLemma": "substituir"
+    },
+    {
+      "query": "修理",
+      "expectedLemma": "reparar"
+    },
+    {
+      "query": "修补",
+      "expectedLemma": "reparar"
+    },
+    {
+      "query": "维修",
+      "expectedLemma": "reparar"
+    },
+    {
+      "query": "损坏",
+      "expectedLemma": "espatllar"
+    },
+    {
+      "query": "弄坏",
+      "expectedLemma": "espatllar"
+    },
+    {
+      "query": "搞坏",
+      "expectedLemma": "espatllar"
+    },
+    {
+      "query": "询问",
+      "expectedLemma": "preguntar"
+    },
+    {
+      "query": "发问",
+      "expectedLemma": "preguntar"
+    },
+    {
+      "query": "打听",
+      "expectedLemma": "preguntar"
+    },
+    {
+      "query": "问",
+      "expectedLemma": "preguntar"
+    },
+    {
+      "query": "答复",
+      "expectedLemma": "respondre"
+    },
+    {
+      "query": "回复",
+      "expectedLemma": "respondre"
+    },
+    {
+      "query": "回应",
+      "expectedLemma": "respondre"
+    },
+    {
+      "query": "回答",
+      "expectedLemma": "respondre"
+    },
+    {
+      "query": "决定",
+      "expectedLemma": "decidir"
+    },
+    {
+      "query": "下决心",
+      "expectedLemma": "decidir"
+    },
+    {
+      "query": "作决定",
+      "expectedLemma": "decidir"
+    },
+    {
+      "query": "筹划",
+      "expectedLemma": "planejar"
+    },
+    {
+      "query": "策划",
+      "expectedLemma": "planejar"
+    },
+    {
+      "query": "规划",
+      "expectedLemma": "planejar"
+    },
+    {
+      "query": "思考",
+      "expectedLemma": "pensar"
+    },
+    {
+      "query": "思索",
+      "expectedLemma": "pensar"
+    },
+    {
+      "query": "想",
+      "expectedLemma": "pensar"
+    },
+    {
+      "query": "交谈",
+      "expectedLemma": "parlar"
+    },
+    {
+      "query": "聊天",
+      "expectedLemma": "parlar"
+    },
+    {
+      "query": "说话",
+      "expectedLemma": "parlar"
+    },
+    {
+      "query": "讨论",
+      "expectedLemma": "discutir"
+    },
+    {
+      "query": "探讨",
+      "expectedLemma": "discutir"
+    },
+    {
+      "query": "辩论",
+      "expectedLemma": "discutir"
+    },
+    {
+      "query": "吵架",
+      "expectedLemma": "barallar"
+    },
+    {
+      "query": "争吵",
+      "expectedLemma": "barallar"
+    },
+    {
+      "query": "拌嘴",
+      "expectedLemma": "barallar"
+    },
+    {
+      "query": "偷窃",
+      "expectedLemma": "robar"
+    },
+    {
+      "query": "偷盗",
+      "expectedLemma": "robar"
+    },
+    {
+      "query": "偷",
+      "expectedLemma": "robar"
+    },
+    {
+      "query": "借给",
+      "expectedLemma": "prestar"
+    },
+    {
+      "query": "借出",
+      "expectedLemma": "prestar"
+    },
+    {
+      "query": "出借",
+      "expectedLemma": "prestar"
+    },
+    {
+      "query": "借入",
+      "expectedLemma": "manllevar"
+    },
+    {
+      "query": "借来",
+      "expectedLemma": "manllevar"
+    },
+    {
+      "query": "向别人借",
+      "expectedLemma": "manllevar"
+    },
+    {
+      "query": "节省",
+      "expectedLemma": "estalviar"
+    },
+    {
+      "query": "节约",
+      "expectedLemma": "estalviar"
+    },
+    {
+      "query": "节俭",
+      "expectedLemma": "estalviar"
+    },
+    {
+      "query": "休息",
+      "expectedLemma": "descansar"
+    },
+    {
+      "query": "歇息",
+      "expectedLemma": "descansar"
+    },
+    {
+      "query": "歇一歇",
+      "expectedLemma": "descansar"
+    },
+    {
+      "query": "睡觉",
+      "expectedLemma": "dormir"
+    },
+    {
+      "query": "睡眠",
+      "expectedLemma": "dormir"
+    },
+    {
+      "query": "睡",
+      "expectedLemma": "dormir"
+    },
+    {
+      "query": "烹饪",
+      "expectedLemma": "cuinar"
+    },
+    {
+      "query": "下厨",
+      "expectedLemma": "cuinar"
+    },
+    {
+      "query": "做饭",
+      "expectedLemma": "cuinar"
+    },
+    {
+      "query": "做菜",
+      "expectedLemma": "cuinar"
+    },
+    {
+      "query": "购入",
+      "expectedLemma": "comprar"
+    },
+    {
+      "query": "买入",
+      "expectedLemma": "comprar"
+    },
+    {
+      "query": "购买",
+      "expectedLemma": "comprar"
+    },
+    {
+      "query": "买",
+      "expectedLemma": "comprar"
+    },
+    {
+      "query": "出售",
+      "expectedLemma": "vendre"
+    },
+    {
+      "query": "售卖",
+      "expectedLemma": "vendre"
+    },
+    {
+      "query": "卖出",
+      "expectedLemma": "vendre"
+    },
+    {
+      "query": "卖",
+      "expectedLemma": "vendre"
+    },
+    {
+      "query": "付款",
+      "expectedLemma": "pagar"
+    },
+    {
+      "query": "付钱",
+      "expectedLemma": "pagar"
+    },
+    {
+      "query": "支付",
+      "expectedLemma": "pagar"
+    },
+    {
+      "query": "收款",
+      "expectedLemma": "cobrar"
+    },
+    {
+      "query": "收钱",
+      "expectedLemma": "cobrar"
+    },
+    {
+      "query": "工作岗位",
+      "expectedLemma": "feina"
+    },
+    {
+      "query": "职位",
+      "expectedLemma": "feina"
+    },
+    {
+      "query": "差事",
+      "expectedLemma": "feina"
+    },
+    {
+      "query": "餐馆",
+      "expectedLemma": "restaurant"
+    },
+    {
+      "query": "饭馆",
+      "expectedLemma": "restaurant"
+    },
+    {
+      "query": "饭店",
+      "expectedLemma": "restaurant"
+    },
+    {
+      "query": "餐厅",
+      "expectedLemma": "restaurant"
+    },
+    {
+      "query": "药房",
+      "expectedLemma": "farmàcia"
+    },
+    {
+      "query": "药店",
+      "expectedLemma": "farmàcia"
+    },
+    {
+      "query": "图书馆",
+      "expectedLemma": "biblioteca"
+    },
+    {
+      "query": "面包店",
+      "expectedLemma": "fleca"
+    },
+    {
+      "query": "面包铺",
+      "expectedLemma": "fleca"
+    },
+    {
+      "query": "驾校",
+      "expectedLemma": "autoescola"
+    },
+    {
+      "query": "驾驶学校",
+      "expectedLemma": "autoescola"
+    },
+    {
+      "query": "卧室",
+      "expectedLemma": "dormitori"
+    },
+    {
+      "query": "寝室",
+      "expectedLemma": "dormitori"
+    },
+    {
+      "query": "睡房",
+      "expectedLemma": "dormitori"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "借给",
+      "expectedLemma": "prestar",
+      "excludedLemma": "manllevar"
+    },
+    {
+      "query": "借入",
+      "expectedLemma": "manllevar",
+      "excludedLemma": "prestar"
+    },
+    {
+      "query": "付款",
+      "expectedLemma": "pagar",
+      "excludedLemma": "cobrar"
+    },
+    {
+      "query": "收款",
+      "expectedLemma": "cobrar",
+      "excludedLemma": "pagar"
+    },
+    {
+      "query": "购买",
+      "expectedLemma": "comprar",
+      "excludedLemma": "vendre"
+    },
+    {
+      "query": "出售",
+      "expectedLemma": "vendre",
+      "excludedLemma": "comprar"
+    }
+  ]
+}

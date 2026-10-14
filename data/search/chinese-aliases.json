@@ -17,8 +17,14 @@
           "layer": "lex",
           "field": "es",
           "text": "comer"
+        },
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to eat something solid"
         }
-      ]
+      ],
+      "preferred": true
     },
     {
       "lemma": "bon dia",
@@ -299,7 +305,9 @@
       "terms": [
         "买东西",
         "购买",
-        "买"
+        "买",
+        "购入",
+        "买入"
       ],
       "preferred": true,
       "evidence": [
@@ -329,7 +337,9 @@
     {
       "lemma": "dormir",
       "terms": [
-        "睡觉"
+        "睡觉",
+        "睡眠",
+        "睡"
       ],
       "preferred": true,
       "evidence": [
@@ -553,7 +563,9 @@
       "lemma": "parlar",
       "terms": [
         "说话",
-        "讲话"
+        "讲话",
+        "交谈",
+        "聊天"
       ],
       "preferred": true,
       "evidence": [
@@ -561,6 +573,11 @@
           "layer": "wiktionary",
           "field": "d.en",
           "text": "to speak (to communicate with one's voice)"
+        },
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to talk"
         }
       ]
     },
@@ -958,7 +975,8 @@
     {
       "lemma": "aprendre",
       "terms": [
-        "学习"
+        "学习",
+        "学会"
       ],
       "evidence": [
         {
@@ -1167,6 +1185,1827 @@
           "layer": "wiktionary",
           "field": "d.en",
           "text": "ice cream"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "feliç",
+      "terms": [
+        "开心",
+        "快乐",
+        "幸福",
+        "愉快",
+        "高兴"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "happy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "alegre",
+      "terms": [
+        "欢快",
+        "欢喜",
+        "喜气洋洋"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "joyful"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "trist",
+      "terms": [
+        "伤心",
+        "难过",
+        "悲伤",
+        "伤感",
+        "悲哀"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "sad, unhappy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "content",
+      "terms": [
+        "满意",
+        "满足",
+        "称心"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "content, satisfied, pleased"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "enfadat",
+      "terms": [
+        "恼火",
+        "生气",
+        "恼怒"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "annoyed"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cansat",
+      "terms": [
+        "疲倦",
+        "疲劳",
+        "劳累",
+        "疲惫"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tired; fatigued"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tranquil",
+      "terms": [
+        "平静",
+        "镇定",
+        "安稳"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "tranquil, calm (free from emotional disturbance)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "nerviós",
+      "terms": [
+        "紧张",
+        "神经紧绷"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "nervous"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ansiós",
+      "terms": [
+        "焦虑",
+        "焦急",
+        "忧虑"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "anxious"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "avorrit",
+      "terms": [
+        "觉得无聊",
+        "感到无聊"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bored"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tímid",
+      "terms": [
+        "腼腆",
+        "羞怯",
+        "害羞"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "timid; shy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "avergonyit",
+      "terms": [
+        "羞愧",
+        "难为情",
+        "惭愧",
+        "尴尬"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "embarrassed, ashamed"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "orgullós",
+      "terms": [
+        "自豪",
+        "骄傲"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "proud"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "satisfet",
+      "terms": [
+        "心满意足",
+        "感到满足"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "satisfied"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "desesperat",
+      "terms": [
+        "绝望",
+        "感到绝望"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "desperate, hopeless"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "valent",
+      "terms": [
+        "英勇",
+        "勇敢",
+        "有胆量"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "valiant, brave, courageous"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "amable",
+      "terms": [
+        "友善",
+        "友好",
+        "亲切",
+        "和善"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "kind, nice, friendly"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "egoista",
+      "terms": [
+        "自私",
+        "自私自利"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "selfish"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "generós",
+      "terms": [
+        "大方",
+        "慷慨",
+        "慷慨大方"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "generous"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "intel·ligent",
+      "terms": [
+        "聪慧",
+        "聪明",
+        "聪颖"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "intelligent"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "estúpid",
+      "terms": [
+        "愚笨",
+        "愚蠢",
+        "笨"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "stupid"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "difícil",
+      "terms": [
+        "困难",
+        "艰难",
+        "难"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "difficult"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "fàcil",
+      "terms": [
+        "简单",
+        "容易",
+        "轻而易举"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "easy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "barat",
+      "terms": [
+        "便宜",
+        "低价",
+        "价廉"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cheap, of low cost"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "car",
+      "terms": [
+        "昂贵",
+        "贵"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "expensive"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "gratuït",
+      "terms": [
+        "免费",
+        "无偿"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "free (obtainable without any payment)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ràpid",
+      "terms": [
+        "迅速",
+        "快速",
+        "快捷"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "rapid; quick; fast; speedy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "lent",
+      "terms": [
+        "缓慢",
+        "慢"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "slow"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "proper",
+      "terms": [
+        "邻近",
+        "靠近的",
+        "近的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "near, close"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "lluny",
+      "terms": [
+        "遥远",
+        "远处",
+        "远"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "far"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sorollós",
+      "terms": [
+        "吵闹",
+        "喧闹",
+        "嘈杂"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "noisy"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "silenciós",
+      "terms": [
+        "无声",
+        "寂静",
+        "静悄悄",
+        "安静无声"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "silent"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ric",
+      "terms": [
+        "富裕",
+        "富有",
+        "富足"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "rich (abundant in some way)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pobre",
+      "terms": [
+        "贫困",
+        "穷困",
+        "贫穷"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "poor (lacking resources)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "assedegat",
+      "terms": [
+        "口渴",
+        "渴"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "thirsty, parched"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "fred",
+      "terms": [
+        "寒冷",
+        "冷"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "cold, cool"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "calent",
+      "terms": [
+        "温热",
+        "热",
+        "暖热"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "hot, warm"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "net",
+      "terms": [
+        "洁净",
+        "干净",
+        "清洁"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "clean"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "brut",
+      "terms": [
+        "肮脏",
+        "脏",
+        "污秽"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "dirty"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "bonic",
+      "terms": [
+        "好看",
+        "漂亮",
+        "美丽"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pretty"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "lleig",
+      "terms": [
+        "丑陋",
+        "难看",
+        "丑"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "ugly"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "gran",
+      "terms": [
+        "巨大",
+        "大型",
+        "大的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "big, large"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "petit",
+      "terms": [
+        "小型",
+        "小巧",
+        "小的"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "small, little"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "còmode",
+      "terms": [
+        "舒适",
+        "舒服",
+        "舒坦"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "easy; comfortable"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "incòmode",
+      "terms": [
+        "不舒适",
+        "不自在",
+        "别扭"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "uncomfortable"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "estudiar",
+      "terms": [
+        "研读",
+        "用功",
+        "学习功课",
+        "研读"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to study"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "entendre",
+      "terms": [
+        "理解",
+        "懂得",
+        "弄懂",
+        "听懂"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to understand"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "comprendre",
+      "terms": [
+        "领会",
+        "领悟",
+        "理解透彻"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to comprehend, to understand, to grasp"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "saber",
+      "terms": [
+        "知晓",
+        "晓得",
+        "知道"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to know (a fact), to have knowledge"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "conèixer",
+      "terms": [
+        "认识",
+        "熟识"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to know (a person, a place, etc.)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "recordar",
+      "terms": [
+        "记住",
+        "回想",
+        "想起",
+        "记得"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to remember, to recollect, to recall (someone or something)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "oblidar",
+      "terms": [
+        "忘却",
+        "忘掉",
+        "遗忘",
+        "忘记"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to forget"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "enyorar",
+      "terms": [
+        "想念",
+        "思念",
+        "怀念"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to long for, yearn for"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "agradar",
+      "terms": [
+        "喜欢",
+        "喜爱",
+        "中意"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to like"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "estimar",
+      "terms": [
+        "爱",
+        "热爱",
+        "爱慕"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to love"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "creure",
+      "terms": [
+        "相信",
+        "信以为真"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to believe"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "esperar",
+      "terms": [
+        "等待",
+        "等候",
+        "等"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to wait, wait for, await"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "reservar",
+      "terms": [
+        "预订",
+        "预定",
+        "预约"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to reserve, to book"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cancel·lar",
+      "terms": [
+        "取消",
+        "撤销"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to cancel"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "canviar",
+      "terms": [
+        "改变",
+        "变更",
+        "更改"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to change"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "substituir",
+      "terms": [
+        "替换",
+        "替代",
+        "取代"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to substitute"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "reparar",
+      "terms": [
+        "修理",
+        "修补",
+        "维修"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to repair, mend"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "espatllar",
+      "terms": [
+        "损坏",
+        "弄坏",
+        "搞坏"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to spoil; break"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "preguntar",
+      "terms": [
+        "询问",
+        "发问",
+        "打听",
+        "问"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to ask"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "respondre",
+      "terms": [
+        "答复",
+        "回复",
+        "回应",
+        "回答"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to reply; to respond"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "decidir",
+      "terms": [
+        "决定",
+        "下决心",
+        "作决定"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to decide, to settle"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "planejar",
+      "terms": [
+        "筹划",
+        "策划",
+        "规划"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to plan"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pensar",
+      "terms": [
+        "思考",
+        "思索",
+        "想"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to think"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "discutir",
+      "terms": [
+        "讨论",
+        "探讨",
+        "辩论"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to discuss, to debate"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "barallar",
+      "terms": [
+        "吵架",
+        "争吵",
+        "拌嘴"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to fight, to argue"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "robar",
+      "terms": [
+        "偷窃",
+        "偷盗",
+        "偷"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to rob, steal"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "prestar",
+      "terms": [
+        "借给",
+        "借出",
+        "出借"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to loan; to lend"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "manllevar",
+      "terms": [
+        "借入",
+        "借来",
+        "向别人借"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to borrow"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "estalviar",
+      "terms": [
+        "节省",
+        "节约",
+        "节俭"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to save (to conserve or prevent the wasting of)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "descansar",
+      "terms": [
+        "休息",
+        "歇息",
+        "歇一歇"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to rest"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cuinar",
+      "terms": [
+        "烹饪",
+        "下厨",
+        "做饭",
+        "做菜"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to cook"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "vendre",
+      "terms": [
+        "出售",
+        "售卖",
+        "卖出",
+        "卖"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to sell"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pagar",
+      "terms": [
+        "付款",
+        "付钱",
+        "支付"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to pay (for/off)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cobrar",
+      "terms": [
+        "收款",
+        "收钱"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to collect, receive (payment)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "feina",
+      "terms": [
+        "工作岗位",
+        "职位",
+        "差事"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "work, job"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "restaurant",
+      "terms": [
+        "餐馆",
+        "饭馆",
+        "饭店",
+        "餐厅"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "restaurant"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "farmàcia",
+      "terms": [
+        "药房",
+        "药店"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pharmacy, drugstore"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "biblioteca",
+      "terms": [
+        "图书馆"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "library"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "fleca",
+      "terms": [
+        "面包店",
+        "面包铺"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "a place where bread is sold, a bakery"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "autoescola",
+      "terms": [
+        "驾校",
+        "驾驶学校"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "driving school"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "dormitori",
+      "terms": [
+        "卧室",
+        "寝室",
+        "睡房"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bedroom (room in a house where a bed is kept for sleeping)"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "beure",
+      "terms": [
+        "喝"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to drink"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "despertar",
+      "terms": [
+        "醒来"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to wake, awaken, wake up"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "caminar",
+      "terms": [
+        "走路"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to walk"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "escoltar",
+      "terms": [
+        "听"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to listen to, to pay attention to"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "trobar",
+      "terms": [
+        "找到"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to find"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cercar",
+      "terms": [
+        "寻找"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to look for; to search"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "començar",
+      "terms": [
+        "开始"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to begin, to start something"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "acabar",
+      "terms": [
+        "完成"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to finish, complete"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "arribar",
+      "terms": [
+        "到达"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to arrive"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sortir",
+      "terms": [
+        "出去"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to go out, to leave"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "entrar",
+      "terms": [
+        "进入"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to enter"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "obrir",
+      "terms": [
+        "打开"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to open"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "tancar",
+      "terms": [
+        "关闭"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to close"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "viatjar",
+      "terms": [
+        "旅行"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to travel; to voyage"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ensenyar",
+      "terms": [
+        "教导"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to teach"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "treballar",
+      "terms": [
+        "工作"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to apply oneself diligently to a task"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "rentar",
+      "terms": [
+        "清洗"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to wash"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "escollir",
+      "terms": [
+        "挑选"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to choose"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "voler",
+      "terms": [
+        "想要"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to want"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "ploure",
+      "terms": [
+        "下雨"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to rain"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "nevar",
+      "terms": [
+        "下雪"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "to snow"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "metge",
+      "terms": [
+        "医生"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "doctor, physician"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "professor",
+      "terms": [
+        "教师"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "teacher"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "pare",
+      "terms": [
+        "父亲"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "father"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "cuina",
+      "terms": [
+        "厨房"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "kitchen"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "bany",
+      "terms": [
+        "浴室"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "bathroom"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "escola",
+      "terms": [
+        "学校"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "school"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "aeroport",
+      "terms": [
+        "机场"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "airport, aerodrome, airdrome, airfield"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "sabata",
+      "terms": [
+        "鞋子"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "shoe"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "roba",
+      "terms": [
+        "衣服"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "clothes"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "llibre",
+      "terms": [
+        "书本"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "book"
+        }
+      ],
+      "preferred": true
+    },
+    {
+      "lemma": "bolígraf",
+      "terms": [
+        "圆珠笔"
+      ],
+      "evidence": [
+        {
+          "layer": "wiktionary",
+          "field": "d.en",
+          "text": "pen; biro"
         }
       ],
       "preferred": true
