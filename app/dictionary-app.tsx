@@ -261,6 +261,7 @@ export function DictionaryApp() {
       return;
     }
 
+    inputRef.current?.blur();
     const request = ++searchRequest.current;
     setSuggestionsOpen(false);
     setActiveSuggestion(-1);
