@@ -1,0 +1,178 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared priority preservation and precision corrections. Care workers are not indexed as nurses; a skeleton is distinct from an individual bone.",
+  "cases": [
+    {
+      "query": "众多",
+      "expectedLemma": "nombrós",
+      "expectedPrimary": "nombrós"
+    },
+    {
+      "query": "首先",
+      "expectedLemma": "primerament",
+      "expectedPrimary": "primerament"
+    },
+    {
+      "query": "真的",
+      "expectedLemma": "real",
+      "expectedPrimary": "real"
+    },
+    {
+      "query": "最后",
+      "expectedLemma": "final",
+      "expectedPrimary": "final"
+    },
+    {
+      "query": "获胜",
+      "expectedLemma": "guanyar",
+      "expectedPrimary": "guanyar"
+    },
+    {
+      "query": "东西",
+      "expectedLemma": "cosa",
+      "expectedPrimary": "cosa"
+    },
+    {
+      "query": "概念",
+      "expectedLemma": "concepte",
+      "expectedPrimary": "concepte"
+    },
+    {
+      "query": "可能",
+      "expectedLemma": "possible",
+      "expectedPrimary": "possible"
+    },
+    {
+      "query": "缺点",
+      "expectedLemma": "defecte",
+      "expectedPrimary": "defecte"
+    },
+    {
+      "query": "相似",
+      "expectedLemma": "similitud",
+      "expectedPrimary": "similitud"
+    },
+    {
+      "query": "欺骗",
+      "expectedLemma": "enganyar",
+      "expectedPrimary": "enganyar"
+    },
+    {
+      "query": "欺诈",
+      "expectedLemma": "engany",
+      "expectedPrimary": "engany"
+    },
+    {
+      "query": "发展",
+      "expectedLemma": "desenvolupar",
+      "expectedPrimary": "desenvolupar"
+    },
+    {
+      "query": "增长",
+      "expectedLemma": "augmentar",
+      "expectedPrimary": "augmentar"
+    },
+    {
+      "query": "服务",
+      "expectedLemma": "servir",
+      "expectedPrimary": "servir"
+    },
+    {
+      "query": "说",
+      "expectedLemma": "dir",
+      "expectedPrimary": "dir"
+    },
+    {
+      "query": "护理员",
+      "expectedLemma": "cuidador",
+      "expectedPrimary": "cuidador"
+    },
+    {
+      "query": "护工",
+      "expectedLemma": "cuidador",
+      "expectedPrimary": "cuidador"
+    },
+    {
+      "query": "照护者",
+      "expectedLemma": "cuidador",
+      "expectedPrimary": "cuidador"
+    },
+    {
+      "query": "护士",
+      "expectedLemma": "infermer",
+      "expectedPrimary": "infermer"
+    },
+    {
+      "query": "骨骼",
+      "expectedLemma": "esquelet",
+      "expectedPrimary": "esquelet"
+    },
+    {
+      "query": "骨架",
+      "expectedLemma": "esquelet",
+      "expectedPrimary": "esquelet"
+    },
+    {
+      "query": "骸骨",
+      "expectedLemma": "ossada",
+      "expectedPrimary": "ossada"
+    },
+    {
+      "query": "山顶",
+      "expectedLemma": "cim",
+      "expectedPrimary": "cim"
+    },
+    {
+      "query": "峰顶",
+      "expectedLemma": "cim",
+      "expectedPrimary": "cim"
+    },
+    {
+      "query": "顶峰",
+      "expectedLemma": "cim",
+      "expectedPrimary": "cim"
+    },
+    {
+      "query": "山峰",
+      "expectedLemma": "pic",
+      "expectedPrimary": "pic"
+    },
+    {
+      "query": "米",
+      "expectedLemma": "arròs",
+      "expectedPrimary": "arròs"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "护理员",
+      "excludedLemma": "infermer"
+    },
+    {
+      "query": "护工",
+      "excludedLemma": "infermer"
+    },
+    {
+      "query": "骨骼",
+      "excludedLemma": "os"
+    },
+    {
+      "query": "骨架",
+      "excludedLemma": "os"
+    },
+    {
+      "query": "山峰",
+      "excludedLemma": "muntanya"
+    },
+    {
+      "query": "米",
+      "excludedLemma": "m"
+    }
+  ],
+  "unmatched": [
+    "不是护士",
+    "没有骨骼",
+    "假护工",
+    "三座山峰"
+  ]
+}

@@ -90,7 +90,7 @@ async function prepareChinese(rows: SuggestionRow[]): Promise<ChineseRow[]> {
           previous[3] = Math.min(previous[3], rank);
           if (term === key) previous[1] = term;
           if (traditional) previous[4] = traditional;
-        } else grouped.set(identity, [key, term, lemma, rank, traditional]);
+        } else grouped.set(identity, [key, simplifyChinese(term), lemma, rank, traditional]);
       }
       return [...grouped.values()];
     })();

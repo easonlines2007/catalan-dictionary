@@ -27,7 +27,7 @@ The independent entry point is `/dictionary/search/manifest.json`:
   are bound by the separate bulk manifest. See [BULK_CHINESE.md](BULK_CHINESE.md).
 - `core.entries` describes `PackedDictionaryEntry[]` merged from all lexical
   layers, reviewed Chinese, and the authored seed. It contains all original
-  5,000 core lemmas plus any seed-only lemmas. Definitions are retained in core
+  5,000 core lemmas, seed-only lemmas, and explicitly selected source-checked common phrases and pronouns. Definitions are retained in core
   so offline users do not lose their meanings after downloading only morphology.
 - `core.zh` and `core.es` describe the corresponding core reverse indexes.
 - `indexes.zh` and `indexes.es` are full sorted reverse index shard descriptors.
@@ -91,13 +91,19 @@ is not implemented. Meaning-based paraphrases use the separate concept layer bel
 Spelling hints preserve a leading negation and explicit number or ordinal:
 不可以 is not corrected to 可以, and 二月 is not corrected to 三月.
 
-`data/search/chinese-aliases.json` supplies a small set of source-compared
+`data/search/chinese-aliases.json` supplies source-compared
 everyday Chinese aliases. The builder verifies the base version and every
 evidence field against actual committed records, binds the file hash into the
 search version, and adds these aliases without removing original reverse keys
 or changing visible definitions. The targeted matisació correction removes an
 unrelated greeting fragment from its published machine output; it retains the
 original source identity and machine-assisted label.
+An optional `preferredTerms` list promotes only selected exact aliases of a lemma.
+It must be a unique subset of `terms` and cannot coexist with `preferred: true`.
+Legacy `preferred: true` still promotes every alias of that record. This allows a
+new noun sense (回答 → resposta) to remain available while preserving the existing
+preferred verb (回答 → respondre). Script normalization carries the same priority
+to equivalent simplified/traditional keys.
 An explicitly preferred source-compared alias can put the precise phrase
 `estació de tren` before a rarer synonym for 火车站. Its optional posting priority
 survives hydration into lookup candidates; other meanings stay selectable.
@@ -110,12 +116,49 @@ is not a corpus-wide accuracy score.
 and directional contrasts (borrowing/lending, paying/collecting). Original
 traditional keys share their canonical simplified postings, including preferred
 source-compared meanings, so variant forms preview the same canonical word.
+`data/search/chinese-single-word-cases.json` covers 277 additional correctly spelled
+single-word aliases tied to 153 existing source-backed senses. These are indexed
+as exact aliases in the full and applicable core indexes and suggestion catalogues;
+no fuzzy edits, substring substitution or transitive synonym expansion is involved.
+169 cases also resolve from installed core assets before full-index caches are warm.
+Ambiguous queries retain their existing candidate senses. Highly polysemous words
+such as 信, 省 and 教授 retain their established primary result.
+The everyday noun, everyday verb, relevance, precision, adjective, boundary,
+time-position, time-adverb, adverb and pronoun-question fixtures add 2,191
+word-sense cases covering regional vocabulary, abstract nouns, nature, numbers
+and preservation of existing common senses. Together with the single-word
+fixture, 2,468 cases exercise online Chinese/automatic lookup and exact hints;
+1,746 core cases also run offline before extended index caches are warmed.
+The precision audit distinguishes caregivers from nurses, skeletons from bones
+and peaks from mountains. The same input may retain multiple valid senses. The adjective and time-position
+fixtures also distinguish states from actions (干燥/弄干, 湿润/润湿), temporal
+from spatial relations (以前/前面, 之后/后面), and opposite directions.
+Temporal adverbs distinguish 刚刚 from 只是, 同时 from togetherness, and
+每年/每月/每周/每天 from adjective alternatives. Occasional frequency (偶尔)
+and accidental occurrence (偶然/无意中) retain separate preferred senses.
+Mixed comma/list clauses are retained intact, including clauses beginning with a
+comma: the objects in “使符合，遵守，符合某法律、原则、规范、习俗” are not
+independent translations. Commas inside brackets do not block a top-level
+translation list, and semicolon-separated equivalents still split normally.
+Coordinated modifiers sharing a trailing qualification are also retained whole:
+逐渐、快速且令人警觉的增加 does not supply a standalone 逐渐 alias, and
+狼、狗及类似动物发出的哀鸣 does not name each animal as a translation of a sound.
+Nested parenthetical notes are masked for this clause check, so ordinary
+lists such as 柔软、温和的（形容状态） still split normally.
+Twenty real-data contrasts require unrelated example/object or mistranslated entries to be absent
+from all candidates, not merely demoted below the preferred result.
+See `data/search/SINGLE_WORD_EVALUATION.md` for the selected-sample comparison and
+its limitations; its target-first metric is not corpus-wide translation accuracy.
 Explicit Chinese dictionary questions such as 学校用加泰语怎么说 are recognized
 only after literal lookup misses. Their complete search term is retained,
 including negation and quantities, and displayed as 检索词. Only narrow anchored
 question patterns are recognized; other-language requests, nested questions,
 long clauses and general sentences are not translated. Suggestions use the same
 extraction; a missing extracted term still needs a user-selected spelling hint.
+Explicit lookup prompts (`帮我查一下学校`), language shorthand (`学校的加泰语`,
+`加泰语：学校`), and `加泰文`/`Catalan` speaking requests use that same literal-first
+path. Prompt-only inputs do not invent a payload. Full negation, quantities,
+word-class preferences, and offline data-error behavior remain intact.
 Explicit meaning requests such as 表示价格不高的词 or 形容有点难过的加泰语单词
 also retain the complete payload. Their anchored word-request frames are
 recognized separately from ordinary prose, with the same negation, number,
@@ -221,7 +264,14 @@ exact equivalents (for example, interlingua mentioning 西班牙语).
 Literal grammatical descriptions have no reverse aliases. Long prose is never
 split into arbitrary characters or substrings. Authored
 seed Chinese semicolons and Spanish slashes follow the runtime's existing split.
-Original Chinese strings remain untouched. Original traditional spellings and
+Original Chinese strings remain untouched. The UI formats meanings and examples
+with the same pinned longest-match t2s converter, coalescing duplicate simplified
+meanings at top-level semicolons while preserving bracketed context. Saved
+snapshots and old history are formatted when displayed; their original text,
+source IDs, synsets, and machine/reference labels are not migrated or relabelled.
+Simplified suggestion input also receives a simplified preview when an older
+catalogue supplies only traditional rows; traditional input keeps its preview.
+Original traditional spellings and
 simple and traditional aliases are indexed using longest-match conversion tables
 derived from pinned OpenCC 1.1.9 `TSCharacters.txt`, `TSPhrases.txt`,
 `STCharacters.txt` and `STPhrases.txt`. Traditional aliases are produced from
@@ -328,3 +378,5 @@ silently imported. A published machine input must be retained under
 `data/translations/machine/` with its model/source metadata, rather than existing
 only in ignored `work/`. The initial local Argos experiment produced material
 sense errors; its raw candidates remain quarantined pending individual review.
+
+An optional boolean `core` flag on a source-checked alias record includes the complete merged entry in core search assets. The current 22 additions cover basic pronouns and common time/question phrases missed by the original frequency list. The flag is validated, version-bound with the alias data, and retains source and machine/reference labels. It does not modify the original base morphology packs.

@@ -7,6 +7,8 @@ import { lookupWord, matchesWordClass, normalizeCatalanInput, selectLookupCandid
 import { normalizeSearchInput, searchCacheKey } from "@/lib/search-normalization";
 import { findCatalanVoice, speakCatalan } from "@/lib/speech";
 import { refreshSavedSnapshots } from "@/lib/saved-refresh";
+import { formatChineseMeanings } from "@/lib/chinese-display";
+import { chineseMatchingKey, simplifyChinese } from "@/lib/chinese-search";
 import {
   addHistory,
   cacheLookup,
@@ -743,7 +745,7 @@ function StartView({
                         ? record.lemma
                         : `${record.lemma} ·`}
                     </span>{" "}
-                    <span lang="zh-Hans">{record.meaning}</span>
+                    <span lang="zh-Hans">{formatChineseMeanings([record.meaning])}</span>
                   </span>
                   <span className="row-arrow" aria-hidden="true">
                     →
@@ -883,6 +885,12 @@ function ResultView({
   const catalanDefinitions = result.entry.definitions?.ca ?? [];
   const englishDefinitions = result.entry.definitions?.en ?? [];
   const examples = result.entry.examples ?? [];
+  const matchedTerm = result.matchedLanguage === "zh"
+    ? simplifyChinese(result.matchedTerm ?? "") : result.matchedTerm;
+  const matchingQuery = result.extractedQuery ?? result.normalizedQuery;
+  const showMatchedTerm = matchedTerm && (result.matchedLanguage === "zh"
+    ? chineseMatchingKey(matchedTerm) !== chineseMatchingKey(matchingQuery)
+    : normalizeCatalanInput(matchedTerm) !== matchingQuery);
 
   return (
     <section className="result-view" aria-label={`Result for ${result.searchedForm}`}>
@@ -905,8 +913,8 @@ function ResultView({
               {LANGUAGE_LABELS[result.matchedLanguage as "zh" | "es"]} → Català
               {result.extractedQuery ? ` · 检索词：${result.extractedQuery}` : ""}
               {result.preferredPartOfSpeech ? ` · 优先词性：${PART_OF_SPEECH[result.preferredPartOfSpeech]}` : ""}
-              {result.matchKind === "semantic" ? ` · 近义表达：${result.matchedTerm}` : result.matchedTerm && normalizeCatalanInput(result.matchedTerm) !== (result.extractedQuery ?? result.normalizedQuery)
-                ? ` · 匹配：${result.matchedTerm}` : ""}
+              {result.matchKind === "semantic" ? ` · 近义表达：${matchedTerm}` : showMatchedTerm
+                ? ` · 匹配：${matchedTerm}` : ""}
             </p>
           ) : result.morphology ? <p>{result.morphology}</p> : null}
           {result.preferredPartOfSpeech && !matchesWordClass(result, result.preferredPartOfSpeech) ? (
@@ -998,7 +1006,7 @@ function ResultView({
               {examples.slice(0, 4).map((example) => (
                 <li key={example.ca}>
                   <p lang="ca">{example.ca}</p>
-                  {example.zh ? <p lang="zh-Hans">{example.zh}</p> : null}
+                  {example.zh ? <p lang="zh-Hans">{simplifyChinese(example.zh)}</p> : null}
                   {example.es ? <p lang="es">{example.es}</p> : null}
                   {!example.zh && !example.es && example.en ? (
                     <p lang="en">{example.en}</p>
@@ -1049,6 +1057,8 @@ function ResultView({
           </p>
           {alternatives.map((candidate) => {
             const entry = candidate.entry;
+            const matchedTerm = candidate.matchedLanguage === "zh"
+              ? simplifyChinese(candidate.matchedTerm ?? "") : candidate.matchedTerm;
             return (
               <button
                 key={candidate.lemma}
@@ -1060,7 +1070,7 @@ function ResultView({
                   <small>
                     {[
                       candidate.matchedLanguage
-                        ? `${candidate.matchKind === "semantic" ? "近义表达" : LANGUAGE_LABELS[candidate.matchedLanguage]}${candidate.matchedTerm ? ` · ${candidate.matchedTerm}` : ""}`
+                        ? `${candidate.matchKind === "semantic" ? "近义表达" : LANGUAGE_LABELS[candidate.matchedLanguage]}${matchedTerm ? ` · ${matchedTerm}` : ""}`
                         : undefined,
                       candidate.morphology,
                       candidate.partOfSpeech

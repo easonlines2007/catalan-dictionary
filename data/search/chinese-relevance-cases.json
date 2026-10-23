@@ -1,0 +1,1499 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared abstract, nature and number vocabulary. An expected primary is specified only for selected common senses or preservation of an existing preferred sense; other cases require a matching candidate without overriding polysemy.",
+  "cases": [
+    {
+      "query": "许多",
+      "expectedLemma": "molt",
+      "expectedPrimary": "molt"
+    },
+    {
+      "query": "很多",
+      "expectedLemma": "molt",
+      "expectedPrimary": "molt"
+    },
+    {
+      "query": "众多",
+      "expectedLemma": "molt",
+      "expectedPrimary": "nombrós"
+    },
+    {
+      "query": "六",
+      "expectedLemma": "sis",
+      "expectedPrimary": "sis"
+    },
+    {
+      "query": "八",
+      "expectedLemma": "vuit",
+      "expectedPrimary": "vuit"
+    },
+    {
+      "query": "九",
+      "expectedLemma": "nou",
+      "expectedPrimary": "nou"
+    },
+    {
+      "query": "十",
+      "expectedLemma": "deu",
+      "expectedPrimary": "deu"
+    },
+    {
+      "query": "十一",
+      "expectedLemma": "onze",
+      "expectedPrimary": "onze"
+    },
+    {
+      "query": "十二",
+      "expectedLemma": "dotze",
+      "expectedPrimary": "dotze"
+    },
+    {
+      "query": "百",
+      "expectedLemma": "cent",
+      "expectedPrimary": "cent"
+    },
+    {
+      "query": "一百",
+      "expectedLemma": "cent",
+      "expectedPrimary": "cent"
+    },
+    {
+      "query": "千",
+      "expectedLemma": "mil",
+      "expectedPrimary": "mil"
+    },
+    {
+      "query": "一千",
+      "expectedLemma": "mil",
+      "expectedPrimary": "mil"
+    },
+    {
+      "query": "零",
+      "expectedLemma": "zero",
+      "expectedPrimary": "zero"
+    },
+    {
+      "query": "第一",
+      "expectedLemma": "primer",
+      "expectedPrimary": "primer"
+    },
+    {
+      "query": "首先",
+      "expectedLemma": "primer",
+      "expectedPrimary": "primerament"
+    },
+    {
+      "query": "最后的",
+      "expectedLemma": "últim",
+      "expectedPrimary": "últim"
+    },
+    {
+      "query": "末位的",
+      "expectedLemma": "últim",
+      "expectedPrimary": "últim"
+    },
+    {
+      "query": "某人",
+      "expectedLemma": "algú",
+      "expectedPrimary": "algú"
+    },
+    {
+      "query": "没人",
+      "expectedLemma": "ningú",
+      "expectedPrimary": "ningú"
+    },
+    {
+      "query": "无人",
+      "expectedLemma": "ningú",
+      "expectedPrimary": "ningú"
+    },
+    {
+      "query": "全部",
+      "expectedLemma": "tot",
+      "expectedPrimary": "tot"
+    },
+    {
+      "query": "全都",
+      "expectedLemma": "tot",
+      "expectedPrimary": "tot"
+    },
+    {
+      "query": "一切",
+      "expectedLemma": "tot",
+      "expectedPrimary": "tot"
+    },
+    {
+      "query": "绝对地",
+      "expectedLemma": "absolutament",
+      "expectedPrimary": "absolutament"
+    },
+    {
+      "query": "完全地",
+      "expectedLemma": "absolutament",
+      "expectedPrimary": "absolutament"
+    },
+    {
+      "query": "确实",
+      "expectedLemma": "realment",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "真的",
+      "expectedLemma": "realment",
+      "expectedPrimary": "real"
+    },
+    {
+      "query": "真正地",
+      "expectedLemma": "realment",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "尤其",
+      "expectedLemma": "especialment",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "终于",
+      "expectedLemma": "finalment",
+      "expectedPrimary": "finalment"
+    },
+    {
+      "query": "最终",
+      "expectedLemma": "finalment",
+      "expectedPrimary": "finalment"
+    },
+    {
+      "query": "最后",
+      "expectedLemma": "finalment",
+      "expectedPrimary": "final"
+    },
+    {
+      "query": "立刻",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "立即",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "马上",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "即刻",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "通常",
+      "expectedLemma": "normalment",
+      "expectedPrimary": "normalment"
+    },
+    {
+      "query": "习惯性地",
+      "expectedLemma": "habitualment",
+      "expectedPrimary": "habitualment"
+    },
+    {
+      "query": "经常",
+      "expectedLemma": "sovint",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "常常",
+      "expectedLemma": "sovint",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "时常",
+      "expectedLemma": "sovint",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "总是",
+      "expectedLemma": "sempre",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "一直",
+      "expectedLemma": "sempre",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "始终",
+      "expectedLemma": "sempre",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "从不",
+      "expectedLemma": "mai",
+      "expectedPrimary": "mai"
+    },
+    {
+      "query": "从来不",
+      "expectedLemma": "mai",
+      "expectedPrimary": "mai"
+    },
+    {
+      "query": "也",
+      "expectedLemma": "també"
+    },
+    {
+      "query": "亦",
+      "expectedLemma": "també"
+    },
+    {
+      "query": "仍然",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "依然",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "仍旧",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "仅仅",
+      "expectedLemma": "només",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "仅",
+      "expectedLemma": "només"
+    },
+    {
+      "query": "只",
+      "expectedLemma": "només"
+    },
+    {
+      "query": "几乎",
+      "expectedLemma": "gairebé",
+      "expectedPrimary": "gairebé"
+    },
+    {
+      "query": "差不多",
+      "expectedLemma": "gairebé",
+      "expectedPrimary": "gairebé"
+    },
+    {
+      "query": "至少",
+      "expectedLemma": "almenys",
+      "expectedPrimary": "almenys"
+    },
+    {
+      "query": "起码",
+      "expectedLemma": "almenys",
+      "expectedPrimary": "almenys"
+    },
+    {
+      "query": "也许",
+      "expectedLemma": "potser",
+      "expectedPrimary": "potser"
+    },
+    {
+      "query": "或许",
+      "expectedLemma": "potser",
+      "expectedPrimary": "potser"
+    },
+    {
+      "query": "海洋",
+      "expectedLemma": "oceà",
+      "expectedPrimary": "oceà"
+    },
+    {
+      "query": "大洋",
+      "expectedLemma": "oceà",
+      "expectedPrimary": "oceà"
+    },
+    {
+      "query": "太空",
+      "expectedLemma": "espai",
+      "expectedPrimary": "espai"
+    },
+    {
+      "query": "外太空",
+      "expectedLemma": "espai",
+      "expectedPrimary": "espai"
+    },
+    {
+      "query": "宇宙空间",
+      "expectedLemma": "espai",
+      "expectedPrimary": "espai"
+    },
+    {
+      "query": "讲",
+      "expectedLemma": "parlar",
+      "expectedPrimary": "parlar"
+    },
+    {
+      "query": "说",
+      "expectedLemma": "parlar",
+      "expectedPrimary": "dir"
+    },
+    {
+      "query": "习惯",
+      "expectedLemma": "costum",
+      "expectedPrimary": "costum"
+    },
+    {
+      "query": "习性",
+      "expectedLemma": "costum",
+      "expectedPrimary": "costum"
+    },
+    {
+      "query": "习俗",
+      "expectedLemma": "costum",
+      "expectedPrimary": "costum"
+    },
+    {
+      "query": "风俗",
+      "expectedLemma": "costum",
+      "expectedPrimary": "costum"
+    },
+    {
+      "query": "设计",
+      "expectedLemma": "disseny",
+      "expectedPrimary": "disseny"
+    },
+    {
+      "query": "蓝图",
+      "expectedLemma": "disseny",
+      "expectedPrimary": "disseny"
+    },
+    {
+      "query": "转移",
+      "expectedLemma": "traslladar",
+      "expectedPrimary": "traslladar"
+    },
+    {
+      "query": "调动",
+      "expectedLemma": "traslladar",
+      "expectedPrimary": "traslladar"
+    },
+    {
+      "query": "搬家",
+      "expectedLemma": "traslladar",
+      "expectedPrimary": "traslladar"
+    },
+    {
+      "query": "迁居",
+      "expectedLemma": "traslladar",
+      "expectedPrimary": "traslladar"
+    },
+    {
+      "query": "诗歌",
+      "expectedLemma": "poesia",
+      "expectedPrimary": "poesia"
+    },
+    {
+      "query": "保卫",
+      "expectedLemma": "defensar",
+      "expectedPrimary": "defensar"
+    },
+    {
+      "query": "防卫",
+      "expectedLemma": "defensar",
+      "expectedPrimary": "defensar"
+    },
+    {
+      "query": "捍卫",
+      "expectedLemma": "defensar",
+      "expectedPrimary": "defensar"
+    },
+    {
+      "query": "胜利",
+      "expectedLemma": "victòria",
+      "expectedPrimary": "victòria"
+    },
+    {
+      "query": "获胜",
+      "expectedLemma": "victòria",
+      "expectedPrimary": "guanyar"
+    },
+    {
+      "query": "执行",
+      "expectedLemma": "executar",
+      "expectedPrimary": "executar"
+    },
+    {
+      "query": "森林",
+      "expectedLemma": "bosc",
+      "expectedPrimary": "bosc"
+    },
+    {
+      "query": "树林",
+      "expectedLemma": "bosc",
+      "expectedPrimary": "bosc"
+    },
+    {
+      "query": "林地",
+      "expectedLemma": "bosc",
+      "expectedPrimary": "bosc"
+    },
+    {
+      "query": "细节",
+      "expectedLemma": "detall",
+      "expectedPrimary": "detall"
+    },
+    {
+      "query": "详情",
+      "expectedLemma": "detall",
+      "expectedPrimary": "detall"
+    },
+    {
+      "query": "重力",
+      "expectedLemma": "gravetat",
+      "expectedPrimary": "gravetat"
+    },
+    {
+      "query": "公尺",
+      "expectedLemma": "metre",
+      "expectedPrimary": "metre"
+    },
+    {
+      "query": "米",
+      "expectedLemma": "metre"
+    },
+    {
+      "query": "氧",
+      "expectedLemma": "oxigen",
+      "expectedPrimary": "oxigen"
+    },
+    {
+      "query": "氧气",
+      "expectedLemma": "oxigen",
+      "expectedPrimary": "oxigen"
+    },
+    {
+      "query": "支持",
+      "expectedLemma": "suport",
+      "expectedPrimary": "suport"
+    },
+    {
+      "query": "支援",
+      "expectedLemma": "suport",
+      "expectedPrimary": "suport"
+    },
+    {
+      "query": "参加",
+      "expectedLemma": "participar",
+      "expectedPrimary": "participar"
+    },
+    {
+      "query": "参与",
+      "expectedLemma": "participar",
+      "expectedPrimary": "participar"
+    },
+    {
+      "query": "物体",
+      "expectedLemma": "objecte",
+      "expectedPrimary": "objecte"
+    },
+    {
+      "query": "东西",
+      "expectedLemma": "objecte",
+      "expectedPrimary": "cosa"
+    },
+    {
+      "query": "对象",
+      "expectedLemma": "objecte"
+    },
+    {
+      "query": "目标",
+      "expectedLemma": "objectiu",
+      "expectedPrimary": "objectiu"
+    },
+    {
+      "query": "目的",
+      "expectedLemma": "objectiu",
+      "expectedPrimary": "objectiu"
+    },
+    {
+      "query": "意图",
+      "expectedLemma": "propòsit",
+      "expectedPrimary": "propòsit"
+    },
+    {
+      "query": "意向",
+      "expectedLemma": "propòsit",
+      "expectedPrimary": "propòsit"
+    },
+    {
+      "query": "理由",
+      "expectedLemma": "raó",
+      "expectedPrimary": "raó"
+    },
+    {
+      "query": "原因",
+      "expectedLemma": "causa",
+      "expectedPrimary": "causa"
+    },
+    {
+      "query": "起因",
+      "expectedLemma": "causa",
+      "expectedPrimary": "causa"
+    },
+    {
+      "query": "结果",
+      "expectedLemma": "resultat",
+      "expectedPrimary": "resultat"
+    },
+    {
+      "query": "成果",
+      "expectedLemma": "resultat",
+      "expectedPrimary": "resultat"
+    },
+    {
+      "query": "后果",
+      "expectedLemma": "conseqüència",
+      "expectedPrimary": "conseqüència"
+    },
+    {
+      "query": "解决办法",
+      "expectedLemma": "solució",
+      "expectedPrimary": "solució"
+    },
+    {
+      "query": "解决方案",
+      "expectedLemma": "solució",
+      "expectedPrimary": "solució"
+    },
+    {
+      "query": "难题",
+      "expectedLemma": "problema",
+      "expectedPrimary": "problema"
+    },
+    {
+      "query": "难处",
+      "expectedLemma": "problema",
+      "expectedPrimary": "problema"
+    },
+    {
+      "query": "想法",
+      "expectedLemma": "idea",
+      "expectedPrimary": "idea"
+    },
+    {
+      "query": "观念",
+      "expectedLemma": "idea",
+      "expectedPrimary": "idea"
+    },
+    {
+      "query": "概念",
+      "expectedLemma": "idea",
+      "expectedPrimary": "concepte"
+    },
+    {
+      "query": "意见",
+      "expectedLemma": "opinió",
+      "expectedPrimary": "opinió"
+    },
+    {
+      "query": "看法",
+      "expectedLemma": "opinió",
+      "expectedPrimary": "opinió"
+    },
+    {
+      "query": "见解",
+      "expectedLemma": "opinió",
+      "expectedPrimary": "opinió"
+    },
+    {
+      "query": "情况",
+      "expectedLemma": "situació",
+      "expectedPrimary": "situació"
+    },
+    {
+      "query": "局面",
+      "expectedLemma": "situació",
+      "expectedPrimary": "situació"
+    },
+    {
+      "query": "状况",
+      "expectedLemma": "situació",
+      "expectedPrimary": "situació"
+    },
+    {
+      "query": "条件",
+      "expectedLemma": "condició",
+      "expectedPrimary": "condició"
+    },
+    {
+      "query": "要求",
+      "expectedLemma": "condició",
+      "expectedPrimary": "demanar"
+    },
+    {
+      "query": "情形",
+      "expectedLemma": "circumstància",
+      "expectedPrimary": "circumstància"
+    },
+    {
+      "query": "境况",
+      "expectedLemma": "circumstància",
+      "expectedPrimary": "circumstància"
+    },
+    {
+      "query": "可能性",
+      "expectedLemma": "possibilitat",
+      "expectedPrimary": "possibilitat"
+    },
+    {
+      "query": "可能",
+      "expectedLemma": "possibilitat",
+      "expectedPrimary": "possible"
+    },
+    {
+      "query": "机会",
+      "expectedLemma": "oportunitat",
+      "expectedPrimary": "oportunitat"
+    },
+    {
+      "query": "机遇",
+      "expectedLemma": "oportunitat",
+      "expectedPrimary": "oportunitat"
+    },
+    {
+      "query": "良机",
+      "expectedLemma": "oportunitat",
+      "expectedPrimary": "oportunitat"
+    },
+    {
+      "query": "优势",
+      "expectedLemma": "avantatge",
+      "expectedPrimary": "avantatge"
+    },
+    {
+      "query": "长处",
+      "expectedLemma": "avantatge",
+      "expectedPrimary": "avantatge"
+    },
+    {
+      "query": "优点",
+      "expectedLemma": "avantatge",
+      "expectedPrimary": "avantatge"
+    },
+    {
+      "query": "缺点",
+      "expectedLemma": "inconvenient",
+      "expectedPrimary": "defecte"
+    },
+    {
+      "query": "弊端",
+      "expectedLemma": "inconvenient",
+      "expectedPrimary": "inconvenient"
+    },
+    {
+      "query": "劣势",
+      "expectedLemma": "desavantatge",
+      "expectedPrimary": "desavantatge"
+    },
+    {
+      "query": "好处",
+      "expectedLemma": "benefici",
+      "expectedPrimary": "benefici"
+    },
+    {
+      "query": "益处",
+      "expectedLemma": "benefici",
+      "expectedPrimary": "benefici"
+    },
+    {
+      "query": "利润",
+      "expectedLemma": "benefici",
+      "expectedPrimary": "benefici"
+    },
+    {
+      "query": "盈利",
+      "expectedLemma": "benefici",
+      "expectedPrimary": "benefici"
+    },
+    {
+      "query": "收益",
+      "expectedLemma": "benefici",
+      "expectedPrimary": "benefici"
+    },
+    {
+      "query": "危害",
+      "expectedLemma": "perjudici",
+      "expectedPrimary": "perjudici"
+    },
+    {
+      "query": "损害",
+      "expectedLemma": "perjudici",
+      "expectedPrimary": "perjudici"
+    },
+    {
+      "query": "效果",
+      "expectedLemma": "efecte",
+      "expectedPrimary": "efecte"
+    },
+    {
+      "query": "效应",
+      "expectedLemma": "efecte",
+      "expectedPrimary": "efecte"
+    },
+    {
+      "query": "影响",
+      "expectedLemma": "influència",
+      "expectedPrimary": "influència"
+    },
+    {
+      "query": "影响力",
+      "expectedLemma": "influència",
+      "expectedPrimary": "influència"
+    },
+    {
+      "query": "差别",
+      "expectedLemma": "diferència",
+      "expectedPrimary": "diferència"
+    },
+    {
+      "query": "差异",
+      "expectedLemma": "diferència",
+      "expectedPrimary": "diferència"
+    },
+    {
+      "query": "不同点",
+      "expectedLemma": "diferència",
+      "expectedPrimary": "diferència"
+    },
+    {
+      "query": "相似",
+      "expectedLemma": "semblança",
+      "expectedPrimary": "similitud"
+    },
+    {
+      "query": "相似性",
+      "expectedLemma": "semblança",
+      "expectedPrimary": "semblança"
+    },
+    {
+      "query": "关系",
+      "expectedLemma": "relació",
+      "expectedPrimary": "relació"
+    },
+    {
+      "query": "联系",
+      "expectedLemma": "relació",
+      "expectedPrimary": "relació"
+    },
+    {
+      "query": "例子",
+      "expectedLemma": "exemple",
+      "expectedPrimary": "exemple"
+    },
+    {
+      "query": "实例",
+      "expectedLemma": "exemple",
+      "expectedPrimary": "exemple"
+    },
+    {
+      "query": "示例",
+      "expectedLemma": "exemple",
+      "expectedPrimary": "exemple"
+    },
+    {
+      "query": "缘由",
+      "expectedLemma": "motiu",
+      "expectedPrimary": "motiu"
+    },
+    {
+      "query": "动机",
+      "expectedLemma": "motiu",
+      "expectedPrimary": "motiu"
+    },
+    {
+      "query": "顺序",
+      "expectedLemma": "ordre",
+      "expectedPrimary": "ordre"
+    },
+    {
+      "query": "次序",
+      "expectedLemma": "ordre",
+      "expectedPrimary": "ordre"
+    },
+    {
+      "query": "命令",
+      "expectedLemma": "ordre",
+      "expectedPrimary": "ordre"
+    },
+    {
+      "query": "指令",
+      "expectedLemma": "ordre",
+      "expectedPrimary": "ordre"
+    },
+    {
+      "query": "信息",
+      "expectedLemma": "informació"
+    },
+    {
+      "query": "资讯",
+      "expectedLemma": "informació",
+      "expectedPrimary": "informació"
+    },
+    {
+      "query": "资料",
+      "expectedLemma": "informació",
+      "expectedPrimary": "informació"
+    },
+    {
+      "query": "数据",
+      "expectedLemma": "dada",
+      "expectedPrimary": "dada"
+    },
+    {
+      "query": "新闻",
+      "expectedLemma": "notícia",
+      "expectedPrimary": "notícia"
+    },
+    {
+      "query": "消息",
+      "expectedLemma": "notícia"
+    },
+    {
+      "query": "知识",
+      "expectedLemma": "coneixement",
+      "expectedPrimary": "coneixement"
+    },
+    {
+      "query": "学识",
+      "expectedLemma": "coneixement",
+      "expectedPrimary": "coneixement"
+    },
+    {
+      "query": "经验",
+      "expectedLemma": "experiència",
+      "expectedPrimary": "experiència"
+    },
+    {
+      "query": "经历",
+      "expectedLemma": "experiència",
+      "expectedPrimary": "experiència"
+    },
+    {
+      "query": "技能",
+      "expectedLemma": "habilitat",
+      "expectedPrimary": "habilitat"
+    },
+    {
+      "query": "本领",
+      "expectedLemma": "habilitat",
+      "expectedPrimary": "habilitat"
+    },
+    {
+      "query": "技艺",
+      "expectedLemma": "habilitat",
+      "expectedPrimary": "habilitat"
+    },
+    {
+      "query": "容量",
+      "expectedLemma": "capacitat",
+      "expectedPrimary": "capacitat"
+    },
+    {
+      "query": "能力",
+      "expectedLemma": "capacitat",
+      "expectedPrimary": "capacitat"
+    },
+    {
+      "query": "本事",
+      "expectedLemma": "capacitat",
+      "expectedPrimary": "capacitat"
+    },
+    {
+      "query": "努力",
+      "expectedLemma": "esforç",
+      "expectedPrimary": "esforç"
+    },
+    {
+      "query": "成功",
+      "expectedLemma": "èxit",
+      "expectedPrimary": "èxit"
+    },
+    {
+      "query": "失败",
+      "expectedLemma": "fracàs",
+      "expectedPrimary": "fracàs"
+    },
+    {
+      "query": "失利",
+      "expectedLemma": "fracàs",
+      "expectedPrimary": "fracàs"
+    },
+    {
+      "query": "承诺",
+      "expectedLemma": "compromís",
+      "expectedPrimary": "prometre"
+    },
+    {
+      "query": "妥协",
+      "expectedLemma": "compromís",
+      "expectedPrimary": "compromís"
+    },
+    {
+      "query": "折衷",
+      "expectedLemma": "compromís",
+      "expectedPrimary": "compromís"
+    },
+    {
+      "query": "责任",
+      "expectedLemma": "responsabilitat",
+      "expectedPrimary": "responsabilitat"
+    },
+    {
+      "query": "职责",
+      "expectedLemma": "responsabilitat",
+      "expectedPrimary": "responsabilitat"
+    },
+    {
+      "query": "义务",
+      "expectedLemma": "obligació",
+      "expectedPrimary": "obligació"
+    },
+    {
+      "query": "本分",
+      "expectedLemma": "obligació",
+      "expectedPrimary": "obligació"
+    },
+    {
+      "query": "需求",
+      "expectedLemma": "necessitat",
+      "expectedPrimary": "necessitat"
+    },
+    {
+      "query": "必要性",
+      "expectedLemma": "necessitat",
+      "expectedPrimary": "necessitat"
+    },
+    {
+      "query": "愿望",
+      "expectedLemma": "desig",
+      "expectedPrimary": "desig"
+    },
+    {
+      "query": "心愿",
+      "expectedLemma": "desig",
+      "expectedPrimary": "desig"
+    },
+    {
+      "query": "欲望",
+      "expectedLemma": "desig",
+      "expectedPrimary": "desig"
+    },
+    {
+      "query": "希望",
+      "expectedLemma": "esperança",
+      "expectedPrimary": "esperar"
+    },
+    {
+      "query": "信心",
+      "expectedLemma": "confiança",
+      "expectedPrimary": "confiança"
+    },
+    {
+      "query": "信任",
+      "expectedLemma": "confiança",
+      "expectedPrimary": "confiança"
+    },
+    {
+      "query": "信赖",
+      "expectedLemma": "confiança",
+      "expectedPrimary": "confiança"
+    },
+    {
+      "query": "尊重",
+      "expectedLemma": "respecte",
+      "expectedPrimary": "respecte"
+    },
+    {
+      "query": "敬意",
+      "expectedLemma": "respecte",
+      "expectedPrimary": "respecte"
+    },
+    {
+      "query": "疑惑",
+      "expectedLemma": "dubte",
+      "expectedPrimary": "dubte"
+    },
+    {
+      "query": "疑虑",
+      "expectedLemma": "dubte",
+      "expectedPrimary": "dubte"
+    },
+    {
+      "query": "错误",
+      "expectedLemma": "error",
+      "expectedPrimary": "error"
+    },
+    {
+      "query": "差错",
+      "expectedLemma": "error",
+      "expectedPrimary": "error"
+    },
+    {
+      "query": "失误",
+      "expectedLemma": "error",
+      "expectedPrimary": "error"
+    },
+    {
+      "query": "欺骗",
+      "expectedLemma": "engany",
+      "expectedPrimary": "enganyar"
+    },
+    {
+      "query": "欺诈",
+      "expectedLemma": "engany",
+      "expectedPrimary": "engany"
+    },
+    {
+      "query": "真相",
+      "expectedLemma": "veritat",
+      "expectedPrimary": "veritat"
+    },
+    {
+      "query": "真理",
+      "expectedLemma": "veritat",
+      "expectedPrimary": "veritat"
+    },
+    {
+      "query": "实情",
+      "expectedLemma": "veritat",
+      "expectedPrimary": "veritat"
+    },
+    {
+      "query": "谎言",
+      "expectedLemma": "mentida",
+      "expectedPrimary": "mentida"
+    },
+    {
+      "query": "谎话",
+      "expectedLemma": "mentida",
+      "expectedPrimary": "mentida"
+    },
+    {
+      "query": "撒谎",
+      "expectedLemma": "mentir",
+      "expectedPrimary": "mentir"
+    },
+    {
+      "query": "说谎",
+      "expectedLemma": "mentir",
+      "expectedPrimary": "mentir"
+    },
+    {
+      "query": "现实",
+      "expectedLemma": "realitat",
+      "expectedPrimary": "realitat"
+    },
+    {
+      "query": "变化",
+      "expectedLemma": "canvi",
+      "expectedPrimary": "canvi"
+    },
+    {
+      "query": "改变",
+      "expectedLemma": "canvi",
+      "expectedPrimary": "canviar"
+    },
+    {
+      "query": "成长",
+      "expectedLemma": "creixement",
+      "expectedPrimary": "créixer"
+    },
+    {
+      "query": "增长",
+      "expectedLemma": "creixement",
+      "expectedPrimary": "augmentar"
+    },
+    {
+      "query": "发展",
+      "expectedLemma": "desenvolupament",
+      "expectedPrimary": "desenvolupar"
+    },
+    {
+      "query": "发育",
+      "expectedLemma": "desenvolupament",
+      "expectedPrimary": "desenvolupament"
+    },
+    {
+      "query": "进步",
+      "expectedLemma": "progrés",
+      "expectedPrimary": "progrés"
+    },
+    {
+      "query": "进展",
+      "expectedLemma": "progrés",
+      "expectedPrimary": "progrés"
+    },
+    {
+      "query": "改进",
+      "expectedLemma": "millora",
+      "expectedPrimary": "millorar"
+    },
+    {
+      "query": "改善",
+      "expectedLemma": "millora",
+      "expectedPrimary": "millorar"
+    },
+    {
+      "query": "过程",
+      "expectedLemma": "procés",
+      "expectedPrimary": "procés"
+    },
+    {
+      "query": "进程",
+      "expectedLemma": "procés",
+      "expectedPrimary": "procés"
+    },
+    {
+      "query": "项目",
+      "expectedLemma": "projecte",
+      "expectedPrimary": "projecte"
+    },
+    {
+      "query": "系统",
+      "expectedLemma": "sistema",
+      "expectedPrimary": "sistema"
+    },
+    {
+      "query": "体系",
+      "expectedLemma": "sistema",
+      "expectedPrimary": "sistema"
+    },
+    {
+      "query": "服务",
+      "expectedLemma": "servei",
+      "expectedPrimary": "servir"
+    },
+    {
+      "query": "活动",
+      "expectedLemma": "activitat",
+      "expectedPrimary": "activitat"
+    },
+    {
+      "query": "事件",
+      "expectedLemma": "esdeveniment",
+      "expectedPrimary": "esdeveniment"
+    },
+    {
+      "query": "事实",
+      "expectedLemma": "fet",
+      "expectedPrimary": "fet"
+    },
+    {
+      "query": "事情",
+      "expectedLemma": "assumpte",
+      "expectedPrimary": "assumpte"
+    },
+    {
+      "query": "事宜",
+      "expectedLemma": "assumpte",
+      "expectedPrimary": "assumpte"
+    },
+    {
+      "query": "事务",
+      "expectedLemma": "assumpte",
+      "expectedPrimary": "assumpte"
+    },
+    {
+      "query": "话题",
+      "expectedLemma": "tema",
+      "expectedPrimary": "tema"
+    },
+    {
+      "query": "主题",
+      "expectedLemma": "tema",
+      "expectedPrimary": "tema"
+    },
+    {
+      "query": "疑问",
+      "expectedLemma": "qüestió",
+      "expectedPrimary": "qüestió"
+    },
+    {
+      "query": "山",
+      "expectedLemma": "muntanya"
+    },
+    {
+      "query": "山岳",
+      "expectedLemma": "muntanya",
+      "expectedPrimary": "muntanya"
+    },
+    {
+      "query": "湖",
+      "expectedLemma": "llac"
+    },
+    {
+      "query": "湖泊",
+      "expectedLemma": "llac",
+      "expectedPrimary": "llac"
+    },
+    {
+      "query": "海",
+      "expectedLemma": "mar"
+    },
+    {
+      "query": "大海",
+      "expectedLemma": "mar",
+      "expectedPrimary": "mar"
+    },
+    {
+      "query": "河",
+      "expectedLemma": "riu"
+    },
+    {
+      "query": "河流",
+      "expectedLemma": "riu",
+      "expectedPrimary": "riu"
+    },
+    {
+      "query": "江河",
+      "expectedLemma": "riu",
+      "expectedPrimary": "riu"
+    },
+    {
+      "query": "树",
+      "expectedLemma": "arbre"
+    },
+    {
+      "query": "树木",
+      "expectedLemma": "arbre",
+      "expectedPrimary": "arbre"
+    },
+    {
+      "query": "树根",
+      "expectedLemma": "arrel",
+      "expectedPrimary": "arrel"
+    },
+    {
+      "query": "根",
+      "expectedLemma": "arrel"
+    },
+    {
+      "query": "石头",
+      "expectedLemma": "pedra",
+      "expectedPrimary": "pedra"
+    },
+    {
+      "query": "石块",
+      "expectedLemma": "pedra",
+      "expectedPrimary": "pedra"
+    },
+    {
+      "query": "石",
+      "expectedLemma": "pedra"
+    },
+    {
+      "query": "沙",
+      "expectedLemma": "sorra"
+    },
+    {
+      "query": "沙子",
+      "expectedLemma": "sorra",
+      "expectedPrimary": "sorra"
+    },
+    {
+      "query": "云",
+      "expectedLemma": "núvol"
+    },
+    {
+      "query": "云朵",
+      "expectedLemma": "núvol",
+      "expectedPrimary": "núvol"
+    },
+    {
+      "query": "云彩",
+      "expectedLemma": "núvol",
+      "expectedPrimary": "núvol"
+    },
+    {
+      "query": "风",
+      "expectedLemma": "vent"
+    },
+    {
+      "query": "太阳",
+      "expectedLemma": "sol",
+      "expectedPrimary": "sol"
+    },
+    {
+      "query": "日头",
+      "expectedLemma": "sol",
+      "expectedPrimary": "sol"
+    },
+    {
+      "query": "天空",
+      "expectedLemma": "cel",
+      "expectedPrimary": "cel"
+    },
+    {
+      "query": "世界",
+      "expectedLemma": "món",
+      "expectedPrimary": "món"
+    },
+    {
+      "query": "名字",
+      "expectedLemma": "nom",
+      "expectedPrimary": "nom"
+    },
+    {
+      "query": "名称",
+      "expectedLemma": "nom",
+      "expectedPrimary": "nom"
+    },
+    {
+      "query": "姓名",
+      "expectedLemma": "nom",
+      "expectedPrimary": "nom"
+    },
+    {
+      "query": "姓",
+      "expectedLemma": "cognom"
+    },
+    {
+      "query": "姓氏",
+      "expectedLemma": "cognom",
+      "expectedPrimary": "cognom"
+    },
+    {
+      "query": "年龄",
+      "expectedLemma": "edat",
+      "expectedPrimary": "edat"
+    },
+    {
+      "query": "年纪",
+      "expectedLemma": "edat",
+      "expectedPrimary": "edat"
+    },
+    {
+      "query": "生日",
+      "expectedLemma": "aniversari",
+      "expectedPrimary": "aniversari"
+    },
+    {
+      "query": "婚礼",
+      "expectedLemma": "casament",
+      "expectedPrimary": "casament"
+    },
+    {
+      "query": "死亡",
+      "expectedLemma": "mort",
+      "expectedPrimary": "morir"
+    },
+    {
+      "query": "生命",
+      "expectedLemma": "vida",
+      "expectedPrimary": "vida"
+    },
+    {
+      "query": "人生",
+      "expectedLemma": "vida",
+      "expectedPrimary": "vida"
+    },
+    {
+      "query": "路",
+      "expectedLemma": "camí",
+      "expectedPrimary": "camí"
+    },
+    {
+      "query": "米",
+      "expectedLemma": "arròs"
+    },
+    {
+      "query": "年",
+      "expectedLemma": "any",
+      "expectedPrimary": "any"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "六",
+      "excludedLemma": "vi"
+    },
+    {
+      "query": "八",
+      "excludedLemma": "viii"
+    },
+    {
+      "query": "九",
+      "excludedLemma": "ix"
+    },
+    {
+      "query": "十",
+      "excludedLemma": "x"
+    },
+    {
+      "query": "十一",
+      "excludedLemma": "xi"
+    },
+    {
+      "query": "十二",
+      "excludedLemma": "xii"
+    },
+    {
+      "query": "百",
+      "excludedLemma": "c"
+    },
+    {
+      "query": "千",
+      "excludedLemma": "m"
+    },
+    {
+      "query": "氧",
+      "excludedLemma": "o"
+    },
+    {
+      "query": "年",
+      "excludedLemma": "l'any"
+    },
+    {
+      "query": "胜利",
+      "excludedLemma": "fracàs"
+    },
+    {
+      "query": "失败",
+      "excludedLemma": "victòria"
+    },
+    {
+      "query": "希望",
+      "excludedLemma": "desesperació"
+    },
+    {
+      "query": "谎话",
+      "excludedLemma": "veritat"
+    },
+    {
+      "query": "撒谎",
+      "excludedLemma": "veritat"
+    },
+    {
+      "query": "真相",
+      "excludedLemma": "mentida"
+    },
+    {
+      "query": "山岳",
+      "excludedLemma": "riu"
+    },
+    {
+      "query": "大海",
+      "excludedLemma": "llac"
+    }
+  ],
+  "unmatched": [
+    "非重力",
+    "不获胜",
+    "没有机会",
+    "假消息来源",
+    "七个湖泊",
+    "三种条件",
+    "从不获胜"
+  ]
+}

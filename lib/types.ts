@@ -1,3 +1,5 @@
+import { formatChineseMeanings } from "./chinese-display.ts";
+
 export type PartOfSpeech =
   | "verb"
   | "noun"
@@ -300,7 +302,7 @@ export interface OfflineInstallProgress {
 }
 
 export function primaryChinese(entry: DictionaryEntry): string {
-  return entry.chinese?.join("；") || entry.definitions?.zh?.join("；") || "";
+  return formatChineseMeanings(entry.chinese) || formatChineseMeanings(entry.definitions?.zh);
 }
 
 export function primarySpanish(entry: DictionaryEntry): string {

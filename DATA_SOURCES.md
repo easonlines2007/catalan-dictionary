@@ -59,7 +59,7 @@ project-authored; source URLs and audit metadata accompany them in
   The runtime uses tone-free readings only to rank bounded same-reading typo
   suggestions. These do not add translations or assert pronunciation in context.
   The MIT notice is served and cached at `/dictionary/search/pinyin-license.txt`.
-  A few project-authored everyday search aliases in `data/search/chinese-aliases.json`
+  Source-compared project-authored everyday search aliases in `data/search/chinese-aliases.json`
   are checked against exact existing lexical evidence; they do not replace source
   definitions or change Chinese coverage counts.
 - **Multilingual Central Repository Catalan/Spanish** (CC BY 3.0) and

@@ -1,0 +1,2861 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared everyday nouns and their regional/common synonyms. An expected primary is specified only for selected common senses or preservation of an existing preferred sense; other cases require a matching candidate without overriding polysemy.",
+  "cases": [
+    {
+      "query": "房屋",
+      "expectedLemma": "casa",
+      "expectedPrimary": "casa"
+    },
+    {
+      "query": "房子",
+      "expectedLemma": "casa",
+      "expectedPrimary": "casa"
+    },
+    {
+      "query": "住宅",
+      "expectedLemma": "casa",
+      "expectedPrimary": "casa"
+    },
+    {
+      "query": "屋宅",
+      "expectedLemma": "casa",
+      "expectedPrimary": "casa"
+    },
+    {
+      "query": "公寓",
+      "expectedLemma": "pis",
+      "expectedPrimary": "pis"
+    },
+    {
+      "query": "单元房",
+      "expectedLemma": "pis",
+      "expectedPrimary": "pis"
+    },
+    {
+      "query": "房间",
+      "expectedLemma": "habitació",
+      "expectedPrimary": "habitació"
+    },
+    {
+      "query": "居室",
+      "expectedLemma": "habitació",
+      "expectedPrimary": "habitació"
+    },
+    {
+      "query": "客厅",
+      "expectedLemma": "sala",
+      "expectedPrimary": "sala"
+    },
+    {
+      "query": "起居室",
+      "expectedLemma": "sala",
+      "expectedPrimary": "sala"
+    },
+    {
+      "query": "饭厅",
+      "expectedLemma": "menjador",
+      "expectedPrimary": "menjador"
+    },
+    {
+      "query": "餐室",
+      "expectedLemma": "menjador",
+      "expectedPrimary": "menjador"
+    },
+    {
+      "query": "浴缸",
+      "expectedLemma": "bany",
+      "expectedPrimary": "bany"
+    },
+    {
+      "query": "浴盆",
+      "expectedLemma": "bany",
+      "expectedPrimary": "bany"
+    },
+    {
+      "query": "走廊",
+      "expectedLemma": "passadís",
+      "expectedPrimary": "passadís"
+    },
+    {
+      "query": "过道",
+      "expectedLemma": "passadís",
+      "expectedPrimary": "passadís"
+    },
+    {
+      "query": "通道",
+      "expectedLemma": "passadís",
+      "expectedPrimary": "passadís"
+    },
+    {
+      "query": "阳台",
+      "expectedLemma": "balcó",
+      "expectedPrimary": "balcó"
+    },
+    {
+      "query": "露台",
+      "expectedLemma": "terrassa",
+      "expectedPrimary": "terrassa"
+    },
+    {
+      "query": "花园",
+      "expectedLemma": "jardí",
+      "expectedPrimary": "jardí"
+    },
+    {
+      "query": "庭园",
+      "expectedLemma": "jardí",
+      "expectedPrimary": "jardí"
+    },
+    {
+      "query": "门",
+      "expectedLemma": "porta"
+    },
+    {
+      "query": "房门",
+      "expectedLemma": "porta",
+      "expectedPrimary": "porta"
+    },
+    {
+      "query": "窗",
+      "expectedLemma": "finestra"
+    },
+    {
+      "query": "窗户",
+      "expectedLemma": "finestra",
+      "expectedPrimary": "finestra"
+    },
+    {
+      "query": "窗子",
+      "expectedLemma": "finestra",
+      "expectedPrimary": "finestra"
+    },
+    {
+      "query": "墙",
+      "expectedLemma": "paret"
+    },
+    {
+      "query": "墙壁",
+      "expectedLemma": "paret",
+      "expectedPrimary": "paret"
+    },
+    {
+      "query": "墙面",
+      "expectedLemma": "paret",
+      "expectedPrimary": "paret"
+    },
+    {
+      "query": "天花板",
+      "expectedLemma": "sostre",
+      "expectedPrimary": "sostre"
+    },
+    {
+      "query": "顶棚",
+      "expectedLemma": "sostre",
+      "expectedPrimary": "sostre"
+    },
+    {
+      "query": "地面",
+      "expectedLemma": "terra",
+      "expectedPrimary": "terra"
+    },
+    {
+      "query": "地表",
+      "expectedLemma": "terra",
+      "expectedPrimary": "terra"
+    },
+    {
+      "query": "屋顶",
+      "expectedLemma": "teulada",
+      "expectedPrimary": "teulada"
+    },
+    {
+      "query": "房顶",
+      "expectedLemma": "teulada",
+      "expectedPrimary": "teulada"
+    },
+    {
+      "query": "楼梯",
+      "expectedLemma": "escala",
+      "expectedPrimary": "escala"
+    },
+    {
+      "query": "梯子",
+      "expectedLemma": "escala",
+      "expectedPrimary": "escala"
+    },
+    {
+      "query": "电梯",
+      "expectedLemma": "ascensor",
+      "expectedPrimary": "ascensor"
+    },
+    {
+      "query": "升降梯",
+      "expectedLemma": "ascensor",
+      "expectedPrimary": "ascensor"
+    },
+    {
+      "query": "床",
+      "expectedLemma": "llit"
+    },
+    {
+      "query": "床铺",
+      "expectedLemma": "llit",
+      "expectedPrimary": "llit"
+    },
+    {
+      "query": "枕头",
+      "expectedLemma": "coixí",
+      "expectedPrimary": "coixí"
+    },
+    {
+      "query": "枕",
+      "expectedLemma": "coixí"
+    },
+    {
+      "query": "垫子",
+      "expectedLemma": "coixí",
+      "expectedPrimary": "coixí"
+    },
+    {
+      "query": "靠垫",
+      "expectedLemma": "coixí",
+      "expectedPrimary": "coixí"
+    },
+    {
+      "query": "床单",
+      "expectedLemma": "llençol",
+      "expectedPrimary": "llençol"
+    },
+    {
+      "query": "被单",
+      "expectedLemma": "llençol",
+      "expectedPrimary": "llençol"
+    },
+    {
+      "query": "毯子",
+      "expectedLemma": "manta",
+      "expectedPrimary": "manta"
+    },
+    {
+      "query": "毛毯",
+      "expectedLemma": "manta",
+      "expectedPrimary": "manta"
+    },
+    {
+      "query": "毯",
+      "expectedLemma": "manta"
+    },
+    {
+      "query": "衣柜",
+      "expectedLemma": "armari",
+      "expectedPrimary": "armari"
+    },
+    {
+      "query": "衣橱",
+      "expectedLemma": "armari",
+      "expectedPrimary": "armari"
+    },
+    {
+      "query": "壁橱",
+      "expectedLemma": "armari",
+      "expectedPrimary": "armari"
+    },
+    {
+      "query": "桌子",
+      "expectedLemma": "taula",
+      "expectedPrimary": "taula"
+    },
+    {
+      "query": "桌",
+      "expectedLemma": "taula"
+    },
+    {
+      "query": "椅子",
+      "expectedLemma": "cadira",
+      "expectedPrimary": "cadira"
+    },
+    {
+      "query": "座椅",
+      "expectedLemma": "cadira",
+      "expectedPrimary": "cadira"
+    },
+    {
+      "query": "沙发",
+      "expectedLemma": "sofà",
+      "expectedPrimary": "sofà"
+    },
+    {
+      "query": "冰箱",
+      "expectedLemma": "nevera",
+      "expectedPrimary": "nevera"
+    },
+    {
+      "query": "电冰箱",
+      "expectedLemma": "nevera",
+      "expectedPrimary": "nevera"
+    },
+    {
+      "query": "洗衣机",
+      "expectedLemma": "rentadora",
+      "expectedPrimary": "rentadora"
+    },
+    {
+      "query": "烤箱",
+      "expectedLemma": "forn",
+      "expectedPrimary": "forn"
+    },
+    {
+      "query": "烘箱",
+      "expectedLemma": "forn",
+      "expectedPrimary": "forn"
+    },
+    {
+      "query": "微波炉",
+      "expectedLemma": "microones",
+      "expectedPrimary": "microones"
+    },
+    {
+      "query": "盘子",
+      "expectedLemma": "plat",
+      "expectedPrimary": "plat"
+    },
+    {
+      "query": "碟子",
+      "expectedLemma": "plat",
+      "expectedPrimary": "plat"
+    },
+    {
+      "query": "餐盘",
+      "expectedLemma": "plat",
+      "expectedPrimary": "plat"
+    },
+    {
+      "query": "碗",
+      "expectedLemma": "bol"
+    },
+    {
+      "query": "饭碗",
+      "expectedLemma": "bol",
+      "expectedPrimary": "bol"
+    },
+    {
+      "query": "玻璃杯",
+      "expectedLemma": "got",
+      "expectedPrimary": "got"
+    },
+    {
+      "query": "杯子",
+      "expectedLemma": "tassa",
+      "expectedPrimary": "tassa"
+    },
+    {
+      "query": "茶杯",
+      "expectedLemma": "tassa",
+      "expectedPrimary": "tassa"
+    },
+    {
+      "query": "马克杯",
+      "expectedLemma": "tassa",
+      "expectedPrimary": "tassa"
+    },
+    {
+      "query": "勺子",
+      "expectedLemma": "cullera",
+      "expectedPrimary": "cullera"
+    },
+    {
+      "query": "汤匙",
+      "expectedLemma": "cullera",
+      "expectedPrimary": "cullera"
+    },
+    {
+      "query": "调羹",
+      "expectedLemma": "cullera",
+      "expectedPrimary": "cullera"
+    },
+    {
+      "query": "汤勺",
+      "expectedLemma": "cullera",
+      "expectedPrimary": "cullera"
+    },
+    {
+      "query": "叉子",
+      "expectedLemma": "forquilla",
+      "expectedPrimary": "forquilla"
+    },
+    {
+      "query": "餐叉",
+      "expectedLemma": "forquilla",
+      "expectedPrimary": "forquilla"
+    },
+    {
+      "query": "刀",
+      "expectedLemma": "ganivet"
+    },
+    {
+      "query": "刀子",
+      "expectedLemma": "ganivet",
+      "expectedPrimary": "ganivet"
+    },
+    {
+      "query": "餐刀",
+      "expectedLemma": "ganivet",
+      "expectedPrimary": "ganivet"
+    },
+    {
+      "query": "平底锅",
+      "expectedLemma": "paella",
+      "expectedPrimary": "paella"
+    },
+    {
+      "query": "煎锅",
+      "expectedLemma": "paella",
+      "expectedPrimary": "paella"
+    },
+    {
+      "query": "锅",
+      "expectedLemma": "olla"
+    },
+    {
+      "query": "煮锅",
+      "expectedLemma": "olla",
+      "expectedPrimary": "olla"
+    },
+    {
+      "query": "水龙头",
+      "expectedLemma": "aixeta",
+      "expectedPrimary": "aixeta"
+    },
+    {
+      "query": "龙头",
+      "expectedLemma": "aixeta"
+    },
+    {
+      "query": "淋浴",
+      "expectedLemma": "dutxa",
+      "expectedPrimary": "dutxa"
+    },
+    {
+      "query": "冲澡",
+      "expectedLemma": "dutxa",
+      "expectedPrimary": "dutxa"
+    },
+    {
+      "query": "镜子",
+      "expectedLemma": "mirall",
+      "expectedPrimary": "mirall"
+    },
+    {
+      "query": "镜",
+      "expectedLemma": "mirall"
+    },
+    {
+      "query": "毛巾",
+      "expectedLemma": "tovallola",
+      "expectedPrimary": "tovallola"
+    },
+    {
+      "query": "肥皂",
+      "expectedLemma": "sabó",
+      "expectedPrimary": "sabó"
+    },
+    {
+      "query": "香皂",
+      "expectedLemma": "sabó",
+      "expectedPrimary": "sabó"
+    },
+    {
+      "query": "皂",
+      "expectedLemma": "sabó"
+    },
+    {
+      "query": "洗发水",
+      "expectedLemma": "xampú",
+      "expectedPrimary": "xampú"
+    },
+    {
+      "query": "洗发液",
+      "expectedLemma": "xampú",
+      "expectedPrimary": "xampú"
+    },
+    {
+      "query": "洗发精",
+      "expectedLemma": "xampú",
+      "expectedPrimary": "xampú"
+    },
+    {
+      "query": "刷子",
+      "expectedLemma": "raspall",
+      "expectedPrimary": "raspall"
+    },
+    {
+      "query": "刷",
+      "expectedLemma": "raspall"
+    },
+    {
+      "query": "梳子",
+      "expectedLemma": "pinta",
+      "expectedPrimary": "pinta"
+    },
+    {
+      "query": "梳",
+      "expectedLemma": "pinta"
+    },
+    {
+      "query": "扫帚",
+      "expectedLemma": "escombra",
+      "expectedPrimary": "escombra"
+    },
+    {
+      "query": "笤帚",
+      "expectedLemma": "escombra",
+      "expectedPrimary": "escombra"
+    },
+    {
+      "query": "袋子",
+      "expectedLemma": "bossa",
+      "expectedPrimary": "bossa"
+    },
+    {
+      "query": "袋",
+      "expectedLemma": "bossa"
+    },
+    {
+      "query": "行李箱",
+      "expectedLemma": "maleta",
+      "expectedPrimary": "maleta"
+    },
+    {
+      "query": "旅行箱",
+      "expectedLemma": "maleta",
+      "expectedPrimary": "maleta"
+    },
+    {
+      "query": "皮箱",
+      "expectedLemma": "maleta",
+      "expectedPrimary": "maleta"
+    },
+    {
+      "query": "背包",
+      "expectedLemma": "motxilla",
+      "expectedPrimary": "motxilla"
+    },
+    {
+      "query": "双肩包",
+      "expectedLemma": "motxilla",
+      "expectedPrimary": "motxilla"
+    },
+    {
+      "query": "钱包",
+      "expectedLemma": "cartera",
+      "expectedPrimary": "cartera"
+    },
+    {
+      "query": "钱夹",
+      "expectedLemma": "cartera",
+      "expectedPrimary": "cartera"
+    },
+    {
+      "query": "雨伞",
+      "expectedLemma": "paraigua",
+      "expectedPrimary": "paraigua"
+    },
+    {
+      "query": "伞",
+      "expectedLemma": "paraigua"
+    },
+    {
+      "query": "钥匙",
+      "expectedLemma": "clau",
+      "expectedPrimary": "clau"
+    },
+    {
+      "query": "锁",
+      "expectedLemma": "pany"
+    },
+    {
+      "query": "门锁",
+      "expectedLemma": "pany",
+      "expectedPrimary": "pany"
+    },
+    {
+      "query": "时钟",
+      "expectedLemma": "rellotge",
+      "expectedPrimary": "rellotge"
+    },
+    {
+      "query": "钟表",
+      "expectedLemma": "rellotge",
+      "expectedPrimary": "rellotge"
+    },
+    {
+      "query": "手表",
+      "expectedLemma": "rellotge",
+      "expectedPrimary": "rellotge"
+    },
+    {
+      "query": "眼镜",
+      "expectedLemma": "ulleres",
+      "expectedPrimary": "ulleres"
+    },
+    {
+      "query": "戒指",
+      "expectedLemma": "anell",
+      "expectedPrimary": "anell"
+    },
+    {
+      "query": "指环",
+      "expectedLemma": "anell",
+      "expectedPrimary": "anell"
+    },
+    {
+      "query": "袜子",
+      "expectedLemma": "mitjó",
+      "expectedPrimary": "mitjó"
+    },
+    {
+      "query": "短袜",
+      "expectedLemma": "mitjó",
+      "expectedPrimary": "mitjó"
+    },
+    {
+      "query": "裤子",
+      "expectedLemma": "pantaló",
+      "expectedPrimary": "pantaló"
+    },
+    {
+      "query": "长裤",
+      "expectedLemma": "pantaló",
+      "expectedPrimary": "pantaló"
+    },
+    {
+      "query": "衬衫",
+      "expectedLemma": "camisa",
+      "expectedPrimary": "camisa"
+    },
+    {
+      "query": "衬衣",
+      "expectedLemma": "camisa",
+      "expectedPrimary": "camisa"
+    },
+    {
+      "query": "T恤",
+      "expectedLemma": "samarreta",
+      "expectedPrimary": "samarreta"
+    },
+    {
+      "query": "裙子",
+      "expectedLemma": "faldilla",
+      "expectedPrimary": "faldilla"
+    },
+    {
+      "query": "半身裙",
+      "expectedLemma": "faldilla",
+      "expectedPrimary": "faldilla"
+    },
+    {
+      "query": "连衣裙",
+      "expectedLemma": "vestit",
+      "expectedPrimary": "vestit"
+    },
+    {
+      "query": "大衣",
+      "expectedLemma": "abric",
+      "expectedPrimary": "abric"
+    },
+    {
+      "query": "夹克",
+      "expectedLemma": "jaqueta",
+      "expectedPrimary": "jaqueta"
+    },
+    {
+      "query": "夹克衫",
+      "expectedLemma": "jaqueta",
+      "expectedPrimary": "jaqueta"
+    },
+    {
+      "query": "帽子",
+      "expectedLemma": "barret",
+      "expectedPrimary": "barret"
+    },
+    {
+      "query": "手套",
+      "expectedLemma": "guant",
+      "expectedPrimary": "guant"
+    },
+    {
+      "query": "围巾",
+      "expectedLemma": "bufanda",
+      "expectedPrimary": "bufanda"
+    },
+    {
+      "query": "腰带",
+      "expectedLemma": "cinturó",
+      "expectedPrimary": "cinturó"
+    },
+    {
+      "query": "皮带",
+      "expectedLemma": "cinturó",
+      "expectedPrimary": "cinturó"
+    },
+    {
+      "query": "汽车",
+      "expectedLemma": "cotxe",
+      "expectedPrimary": "cotxe"
+    },
+    {
+      "query": "轿车",
+      "expectedLemma": "cotxe",
+      "expectedPrimary": "cotxe"
+    },
+    {
+      "query": "小汽车",
+      "expectedLemma": "cotxe",
+      "expectedPrimary": "cotxe"
+    },
+    {
+      "query": "自行车",
+      "expectedLemma": "bicicleta",
+      "expectedPrimary": "bicicleta"
+    },
+    {
+      "query": "脚踏车",
+      "expectedLemma": "bicicleta",
+      "expectedPrimary": "bicicleta"
+    },
+    {
+      "query": "单车",
+      "expectedLemma": "bicicleta",
+      "expectedPrimary": "bicicleta"
+    },
+    {
+      "query": "摩托车",
+      "expectedLemma": "motocicleta",
+      "expectedPrimary": "motocicleta"
+    },
+    {
+      "query": "出租车",
+      "expectedLemma": "taxi",
+      "expectedPrimary": "taxi"
+    },
+    {
+      "query": "的士",
+      "expectedLemma": "taxi",
+      "expectedPrimary": "taxi"
+    },
+    {
+      "query": "计程车",
+      "expectedLemma": "taxi",
+      "expectedPrimary": "taxi"
+    },
+    {
+      "query": "地铁",
+      "expectedLemma": "metro",
+      "expectedPrimary": "metro"
+    },
+    {
+      "query": "地下铁",
+      "expectedLemma": "metro",
+      "expectedPrimary": "metro"
+    },
+    {
+      "query": "电车",
+      "expectedLemma": "tramvia",
+      "expectedPrimary": "tramvia"
+    },
+    {
+      "query": "有轨电车",
+      "expectedLemma": "tramvia",
+      "expectedPrimary": "tramvia"
+    },
+    {
+      "query": "船",
+      "expectedLemma": "vaixell"
+    },
+    {
+      "query": "船只",
+      "expectedLemma": "vaixell",
+      "expectedPrimary": "vaixell"
+    },
+    {
+      "query": "船舶",
+      "expectedLemma": "vaixell",
+      "expectedPrimary": "vaixell"
+    },
+    {
+      "query": "小船",
+      "expectedLemma": "barca",
+      "expectedPrimary": "barca"
+    },
+    {
+      "query": "小舟",
+      "expectedLemma": "barca",
+      "expectedPrimary": "barca"
+    },
+    {
+      "query": "车票",
+      "expectedLemma": "bitllet",
+      "expectedPrimary": "bitllet"
+    },
+    {
+      "query": "船票",
+      "expectedLemma": "bitllet",
+      "expectedPrimary": "bitllet"
+    },
+    {
+      "query": "机票",
+      "expectedLemma": "bitllet",
+      "expectedPrimary": "bitllet"
+    },
+    {
+      "query": "门票",
+      "expectedLemma": "entrada",
+      "expectedPrimary": "entrada"
+    },
+    {
+      "query": "入场券",
+      "expectedLemma": "entrada",
+      "expectedPrimary": "entrada"
+    },
+    {
+      "query": "公路",
+      "expectedLemma": "carretera",
+      "expectedPrimary": "carretera"
+    },
+    {
+      "query": "马路",
+      "expectedLemma": "carretera",
+      "expectedPrimary": "carretera"
+    },
+    {
+      "query": "街道",
+      "expectedLemma": "carrer",
+      "expectedPrimary": "carrer"
+    },
+    {
+      "query": "街",
+      "expectedLemma": "carrer"
+    },
+    {
+      "query": "街路",
+      "expectedLemma": "carrer",
+      "expectedPrimary": "carrer"
+    },
+    {
+      "query": "道路",
+      "expectedLemma": "camí",
+      "expectedPrimary": "camí"
+    },
+    {
+      "query": "路径",
+      "expectedLemma": "camí",
+      "expectedPrimary": "camí"
+    },
+    {
+      "query": "小路",
+      "expectedLemma": "camí",
+      "expectedPrimary": "camí"
+    },
+    {
+      "query": "高速公路",
+      "expectedLemma": "autopista",
+      "expectedPrimary": "autopista"
+    },
+    {
+      "query": "高速路",
+      "expectedLemma": "autopista",
+      "expectedPrimary": "autopista"
+    },
+    {
+      "query": "桥",
+      "expectedLemma": "pont"
+    },
+    {
+      "query": "桥梁",
+      "expectedLemma": "pont",
+      "expectedPrimary": "pont"
+    },
+    {
+      "query": "红绿灯",
+      "expectedLemma": "semàfor",
+      "expectedPrimary": "semàfor"
+    },
+    {
+      "query": "交通灯",
+      "expectedLemma": "semàfor",
+      "expectedPrimary": "semàfor"
+    },
+    {
+      "query": "人行道",
+      "expectedLemma": "vorera",
+      "expectedPrimary": "vorera"
+    },
+    {
+      "query": "行人道",
+      "expectedLemma": "vorera",
+      "expectedPrimary": "vorera"
+    },
+    {
+      "query": "十字路口",
+      "expectedLemma": "cruïlla",
+      "expectedPrimary": "cruïlla"
+    },
+    {
+      "query": "交叉路口",
+      "expectedLemma": "cruïlla",
+      "expectedPrimary": "cruïlla"
+    },
+    {
+      "query": "停车场",
+      "expectedLemma": "aparcament",
+      "expectedPrimary": "aparcament"
+    },
+    {
+      "query": "停车库",
+      "expectedLemma": "aparcament",
+      "expectedPrimary": "aparcament"
+    },
+    {
+      "query": "汽油",
+      "expectedLemma": "gasolina",
+      "expectedPrimary": "gasolina"
+    },
+    {
+      "query": "车轮",
+      "expectedLemma": "roda",
+      "expectedPrimary": "roda"
+    },
+    {
+      "query": "轮子",
+      "expectedLemma": "roda",
+      "expectedPrimary": "roda"
+    },
+    {
+      "query": "轮",
+      "expectedLemma": "roda"
+    },
+    {
+      "query": "方向盘",
+      "expectedLemma": "volant",
+      "expectedPrimary": "volant"
+    },
+    {
+      "query": "刹车",
+      "expectedLemma": "fre",
+      "expectedPrimary": "fre"
+    },
+    {
+      "query": "制动器",
+      "expectedLemma": "fre",
+      "expectedPrimary": "fre"
+    },
+    {
+      "query": "司机",
+      "expectedLemma": "conductor",
+      "expectedPrimary": "conductor"
+    },
+    {
+      "query": "驾驶员",
+      "expectedLemma": "conductor",
+      "expectedPrimary": "conductor"
+    },
+    {
+      "query": "乘客",
+      "expectedLemma": "passatger",
+      "expectedPrimary": "passatger"
+    },
+    {
+      "query": "旅客",
+      "expectedLemma": "passatger",
+      "expectedPrimary": "passatger"
+    },
+    {
+      "query": "旅程",
+      "expectedLemma": "viatge",
+      "expectedPrimary": "viatge"
+    },
+    {
+      "query": "旅途",
+      "expectedLemma": "viatge",
+      "expectedPrimary": "viatge"
+    },
+    {
+      "query": "行李",
+      "expectedLemma": "equipatge",
+      "expectedPrimary": "equipatge"
+    },
+    {
+      "query": "护照",
+      "expectedLemma": "passaport",
+      "expectedPrimary": "passaport"
+    },
+    {
+      "query": "海关",
+      "expectedLemma": "duana",
+      "expectedPrimary": "duana"
+    },
+    {
+      "query": "边境",
+      "expectedLemma": "frontera",
+      "expectedPrimary": "frontera"
+    },
+    {
+      "query": "国界",
+      "expectedLemma": "frontera",
+      "expectedPrimary": "frontera"
+    },
+    {
+      "query": "疆界",
+      "expectedLemma": "frontera",
+      "expectedPrimary": "frontera"
+    },
+    {
+      "query": "地图",
+      "expectedLemma": "mapa",
+      "expectedPrimary": "mapa"
+    },
+    {
+      "query": "地址",
+      "expectedLemma": "adreça",
+      "expectedPrimary": "adreça"
+    },
+    {
+      "query": "住址",
+      "expectedLemma": "adreça",
+      "expectedPrimary": "adreça"
+    },
+    {
+      "query": "村庄",
+      "expectedLemma": "poble",
+      "expectedPrimary": "poble"
+    },
+    {
+      "query": "村落",
+      "expectedLemma": "poble",
+      "expectedPrimary": "poble"
+    },
+    {
+      "query": "村子",
+      "expectedLemma": "poble",
+      "expectedPrimary": "poble"
+    },
+    {
+      "query": "城市",
+      "expectedLemma": "ciutat",
+      "expectedPrimary": "ciutat"
+    },
+    {
+      "query": "都市",
+      "expectedLemma": "ciutat",
+      "expectedPrimary": "ciutat"
+    },
+    {
+      "query": "首都",
+      "expectedLemma": "capital",
+      "expectedPrimary": "capital"
+    },
+    {
+      "query": "国家",
+      "expectedLemma": "país",
+      "expectedPrimary": "país"
+    },
+    {
+      "query": "国",
+      "expectedLemma": "país"
+    },
+    {
+      "query": "医院",
+      "expectedLemma": "hospital",
+      "expectedPrimary": "hospital"
+    },
+    {
+      "query": "诊所",
+      "expectedLemma": "clínica",
+      "expectedPrimary": "clínica"
+    },
+    {
+      "query": "护士",
+      "expectedLemma": "infermer",
+      "expectedPrimary": "infermer"
+    },
+    {
+      "query": "护理员",
+      "expectedLemma": "cuidador",
+      "expectedPrimary": "cuidador"
+    },
+    {
+      "query": "牙医",
+      "expectedLemma": "dentista",
+      "expectedPrimary": "dentista"
+    },
+    {
+      "query": "牙科医生",
+      "expectedLemma": "dentista",
+      "expectedPrimary": "dentista"
+    },
+    {
+      "query": "警员",
+      "expectedLemma": "policia",
+      "expectedPrimary": "policia"
+    },
+    {
+      "query": "警察",
+      "expectedLemma": "policia",
+      "expectedPrimary": "policia"
+    },
+    {
+      "query": "银行",
+      "expectedLemma": "banc",
+      "expectedPrimary": "banc"
+    },
+    {
+      "query": "超市",
+      "expectedLemma": "supermercat",
+      "expectedPrimary": "supermercat"
+    },
+    {
+      "query": "超级市场",
+      "expectedLemma": "supermercat",
+      "expectedPrimary": "supermercat"
+    },
+    {
+      "query": "市场",
+      "expectedLemma": "mercat",
+      "expectedPrimary": "mercat"
+    },
+    {
+      "query": "集市",
+      "expectedLemma": "mercat",
+      "expectedPrimary": "mercat"
+    },
+    {
+      "query": "书店",
+      "expectedLemma": "llibreria",
+      "expectedPrimary": "llibreria"
+    },
+    {
+      "query": "书铺",
+      "expectedLemma": "llibreria",
+      "expectedPrimary": "llibreria"
+    },
+    {
+      "query": "办公室",
+      "expectedLemma": "oficina",
+      "expectedPrimary": "oficina"
+    },
+    {
+      "query": "办公间",
+      "expectedLemma": "oficina",
+      "expectedPrimary": "oficina"
+    },
+    {
+      "query": "大学",
+      "expectedLemma": "universitat",
+      "expectedPrimary": "universitat"
+    },
+    {
+      "query": "学生",
+      "expectedLemma": "estudiant",
+      "expectedPrimary": "estudiant"
+    },
+    {
+      "query": "学子",
+      "expectedLemma": "estudiant",
+      "expectedPrimary": "estudiant"
+    },
+    {
+      "query": "学员",
+      "expectedLemma": "alumne",
+      "expectedPrimary": "alumne"
+    },
+    {
+      "query": "考试",
+      "expectedLemma": "examen",
+      "expectedPrimary": "examen"
+    },
+    {
+      "query": "测验",
+      "expectedLemma": "examen",
+      "expectedPrimary": "examen"
+    },
+    {
+      "query": "提问",
+      "expectedLemma": "pregunta",
+      "expectedPrimary": "pregunta"
+    },
+    {
+      "query": "问题",
+      "expectedLemma": "pregunta",
+      "expectedPrimary": "pregunta"
+    },
+    {
+      "query": "答案",
+      "expectedLemma": "resposta",
+      "expectedPrimary": "resposta"
+    },
+    {
+      "query": "回答",
+      "expectedLemma": "resposta",
+      "expectedPrimary": "respondre"
+    },
+    {
+      "query": "答复",
+      "expectedLemma": "resposta",
+      "expectedPrimary": "respondre"
+    },
+    {
+      "query": "课",
+      "expectedLemma": "lliçó"
+    },
+    {
+      "query": "课业",
+      "expectedLemma": "lliçó",
+      "expectedPrimary": "lliçó"
+    },
+    {
+      "query": "科目",
+      "expectedLemma": "assignatura",
+      "expectedPrimary": "assignatura"
+    },
+    {
+      "query": "学科",
+      "expectedLemma": "assignatura",
+      "expectedPrimary": "assignatura"
+    },
+    {
+      "query": "铅笔",
+      "expectedLemma": "llapis",
+      "expectedPrimary": "llapis"
+    },
+    {
+      "query": "橡皮擦",
+      "expectedLemma": "goma",
+      "expectedPrimary": "goma"
+    },
+    {
+      "query": "橡皮",
+      "expectedLemma": "goma",
+      "expectedPrimary": "goma"
+    },
+    {
+      "query": "纸",
+      "expectedLemma": "paper"
+    },
+    {
+      "query": "纸张",
+      "expectedLemma": "paper",
+      "expectedPrimary": "paper"
+    },
+    {
+      "query": "词典",
+      "expectedLemma": "diccionari",
+      "expectedPrimary": "diccionari"
+    },
+    {
+      "query": "字典",
+      "expectedLemma": "diccionari",
+      "expectedPrimary": "diccionari"
+    },
+    {
+      "query": "辞典",
+      "expectedLemma": "diccionari",
+      "expectedPrimary": "diccionari"
+    },
+    {
+      "query": "电脑",
+      "expectedLemma": "ordinador",
+      "expectedPrimary": "ordinador"
+    },
+    {
+      "query": "计算机",
+      "expectedLemma": "ordinador",
+      "expectedPrimary": "ordinador"
+    },
+    {
+      "query": "电子计算机",
+      "expectedLemma": "ordinador",
+      "expectedPrimary": "ordinador"
+    },
+    {
+      "query": "屏幕",
+      "expectedLemma": "pantalla",
+      "expectedPrimary": "pantalla"
+    },
+    {
+      "query": "显示屏",
+      "expectedLemma": "pantalla",
+      "expectedPrimary": "pantalla"
+    },
+    {
+      "query": "荧幕",
+      "expectedLemma": "pantalla",
+      "expectedPrimary": "pantalla"
+    },
+    {
+      "query": "显示器",
+      "expectedLemma": "pantalla",
+      "expectedPrimary": "pantalla"
+    },
+    {
+      "query": "键盘",
+      "expectedLemma": "teclat",
+      "expectedPrimary": "teclat"
+    },
+    {
+      "query": "鼠标",
+      "expectedLemma": "ratolí",
+      "expectedPrimary": "ratolí"
+    },
+    {
+      "query": "滑鼠",
+      "expectedLemma": "ratolí",
+      "expectedPrimary": "ratolí"
+    },
+    {
+      "query": "打印机",
+      "expectedLemma": "impressora",
+      "expectedPrimary": "impressora"
+    },
+    {
+      "query": "印表机",
+      "expectedLemma": "impressora",
+      "expectedPrimary": "impressora"
+    },
+    {
+      "query": "手机",
+      "expectedLemma": "mòbil",
+      "expectedPrimary": "telèfon mòbil"
+    },
+    {
+      "query": "移动电话",
+      "expectedLemma": "mòbil",
+      "expectedPrimary": "telèfon mòbil"
+    },
+    {
+      "query": "手提电话",
+      "expectedLemma": "mòbil",
+      "expectedPrimary": "telèfon mòbil"
+    },
+    {
+      "query": "相机",
+      "expectedLemma": "càmera",
+      "expectedPrimary": "càmera"
+    },
+    {
+      "query": "照相机",
+      "expectedLemma": "càmera",
+      "expectedPrimary": "càmera"
+    },
+    {
+      "query": "照片",
+      "expectedLemma": "foto",
+      "expectedPrimary": "foto"
+    },
+    {
+      "query": "相片",
+      "expectedLemma": "foto",
+      "expectedPrimary": "foto"
+    },
+    {
+      "query": "互联网",
+      "expectedLemma": "internet",
+      "expectedPrimary": "internet"
+    },
+    {
+      "query": "因特网",
+      "expectedLemma": "internet",
+      "expectedPrimary": "internet"
+    },
+    {
+      "query": "网际网路",
+      "expectedLemma": "internet",
+      "expectedPrimary": "internet"
+    },
+    {
+      "query": "密码",
+      "expectedLemma": "contrasenya",
+      "expectedPrimary": "contrasenya"
+    },
+    {
+      "query": "口令",
+      "expectedLemma": "contrasenya",
+      "expectedPrimary": "contrasenya"
+    },
+    {
+      "query": "文件",
+      "expectedLemma": "fitxer",
+      "expectedPrimary": "fitxer"
+    },
+    {
+      "query": "档案",
+      "expectedLemma": "fitxer"
+    },
+    {
+      "query": "文件夹",
+      "expectedLemma": "carpeta",
+      "expectedPrimary": "carpeta"
+    },
+    {
+      "query": "资料夹",
+      "expectedLemma": "carpeta",
+      "expectedPrimary": "carpeta"
+    },
+    {
+      "query": "目录",
+      "expectedLemma": "carpeta"
+    },
+    {
+      "query": "邮件",
+      "expectedLemma": "correu",
+      "expectedPrimary": "correu"
+    },
+    {
+      "query": "电子邮件",
+      "expectedLemma": "correu",
+      "expectedPrimary": "correu"
+    },
+    {
+      "query": "电邮",
+      "expectedLemma": "correu",
+      "expectedPrimary": "correu"
+    },
+    {
+      "query": "讯息",
+      "expectedLemma": "missatge",
+      "expectedPrimary": "missatge"
+    },
+    {
+      "query": "信息",
+      "expectedLemma": "missatge"
+    },
+    {
+      "query": "消息",
+      "expectedLemma": "missatge"
+    },
+    {
+      "query": "应用程序",
+      "expectedLemma": "aplicació",
+      "expectedPrimary": "aplicació"
+    },
+    {
+      "query": "应用程式",
+      "expectedLemma": "aplicació",
+      "expectedPrimary": "aplicació"
+    },
+    {
+      "query": "电脑程序",
+      "expectedLemma": "programa",
+      "expectedPrimary": "programa"
+    },
+    {
+      "query": "计算机程序",
+      "expectedLemma": "programa",
+      "expectedPrimary": "programa"
+    },
+    {
+      "query": "狗",
+      "expectedLemma": "gos"
+    },
+    {
+      "query": "犬",
+      "expectedLemma": "gos"
+    },
+    {
+      "query": "猫",
+      "expectedLemma": "gat"
+    },
+    {
+      "query": "鸟",
+      "expectedLemma": "ocell"
+    },
+    {
+      "query": "鸟儿",
+      "expectedLemma": "ocell",
+      "expectedPrimary": "ocell"
+    },
+    {
+      "query": "鱼",
+      "expectedLemma": "peix"
+    },
+    {
+      "query": "马",
+      "expectedLemma": "cavall"
+    },
+    {
+      "query": "马匹",
+      "expectedLemma": "cavall",
+      "expectedPrimary": "cavall"
+    },
+    {
+      "query": "母牛",
+      "expectedLemma": "vaca",
+      "expectedPrimary": "vaca"
+    },
+    {
+      "query": "奶牛",
+      "expectedLemma": "vaca",
+      "expectedPrimary": "vaca"
+    },
+    {
+      "query": "猪",
+      "expectedLemma": "porc"
+    },
+    {
+      "query": "母鸡",
+      "expectedLemma": "gallina",
+      "expectedPrimary": "gallina"
+    },
+    {
+      "query": "鸡肉",
+      "expectedLemma": "pollastre",
+      "expectedPrimary": "pollastre"
+    },
+    {
+      "query": "肉",
+      "expectedLemma": "carn"
+    },
+    {
+      "query": "肉类",
+      "expectedLemma": "carn",
+      "expectedPrimary": "carn"
+    },
+    {
+      "query": "小牛肉",
+      "expectedLemma": "vedella",
+      "expectedPrimary": "vedella"
+    },
+    {
+      "query": "犊牛肉",
+      "expectedLemma": "vedella",
+      "expectedPrimary": "vedella"
+    },
+    {
+      "query": "羔羊",
+      "expectedLemma": "xai",
+      "expectedPrimary": "xai"
+    },
+    {
+      "query": "小羊",
+      "expectedLemma": "xai",
+      "expectedPrimary": "xai"
+    },
+    {
+      "query": "面包",
+      "expectedLemma": "pa",
+      "expectedPrimary": "pa"
+    },
+    {
+      "query": "面条",
+      "expectedLemma": "fideu",
+      "expectedPrimary": "fideu"
+    },
+    {
+      "query": "面粉",
+      "expectedLemma": "farina",
+      "expectedPrimary": "farina"
+    },
+    {
+      "query": "糖",
+      "expectedLemma": "sucre"
+    },
+    {
+      "query": "食糖",
+      "expectedLemma": "sucre",
+      "expectedPrimary": "sucre"
+    },
+    {
+      "query": "盐",
+      "expectedLemma": "sal"
+    },
+    {
+      "query": "食盐",
+      "expectedLemma": "sal",
+      "expectedPrimary": "sal"
+    },
+    {
+      "query": "油",
+      "expectedLemma": "oli"
+    },
+    {
+      "query": "黄油",
+      "expectedLemma": "mantega",
+      "expectedPrimary": "mantega"
+    },
+    {
+      "query": "牛油",
+      "expectedLemma": "mantega",
+      "expectedPrimary": "mantega"
+    },
+    {
+      "query": "奶酪",
+      "expectedLemma": "formatge",
+      "expectedPrimary": "formatge"
+    },
+    {
+      "query": "干酪",
+      "expectedLemma": "formatge",
+      "expectedPrimary": "formatge"
+    },
+    {
+      "query": "乳酪",
+      "expectedLemma": "formatge",
+      "expectedPrimary": "formatge"
+    },
+    {
+      "query": "芝士",
+      "expectedLemma": "formatge",
+      "expectedPrimary": "formatge"
+    },
+    {
+      "query": "起司",
+      "expectedLemma": "formatge",
+      "expectedPrimary": "formatge"
+    },
+    {
+      "query": "酸奶",
+      "expectedLemma": "iogurt",
+      "expectedPrimary": "iogurt"
+    },
+    {
+      "query": "酸乳",
+      "expectedLemma": "iogurt",
+      "expectedPrimary": "iogurt"
+    },
+    {
+      "query": "优格",
+      "expectedLemma": "iogurt",
+      "expectedPrimary": "iogurt"
+    },
+    {
+      "query": "水",
+      "expectedLemma": "aigua"
+    },
+    {
+      "query": "咖啡",
+      "expectedLemma": "cafè",
+      "expectedPrimary": "cafè"
+    },
+    {
+      "query": "果汁",
+      "expectedLemma": "suc",
+      "expectedPrimary": "suc"
+    },
+    {
+      "query": "汁液",
+      "expectedLemma": "suc",
+      "expectedPrimary": "suc"
+    },
+    {
+      "query": "啤酒",
+      "expectedLemma": "cervesa",
+      "expectedPrimary": "cervesa"
+    },
+    {
+      "query": "葡萄酒",
+      "expectedLemma": "vi",
+      "expectedPrimary": "vi"
+    },
+    {
+      "query": "水果",
+      "expectedLemma": "fruita",
+      "expectedPrimary": "fruita"
+    },
+    {
+      "query": "果品",
+      "expectedLemma": "fruita",
+      "expectedPrimary": "fruita"
+    },
+    {
+      "query": "桃",
+      "expectedLemma": "préssec"
+    },
+    {
+      "query": "桃子",
+      "expectedLemma": "préssec",
+      "expectedPrimary": "préssec"
+    },
+    {
+      "query": "葡萄",
+      "expectedLemma": "raïm",
+      "expectedPrimary": "raïm"
+    },
+    {
+      "query": "草莓",
+      "expectedLemma": "maduixa",
+      "expectedPrimary": "maduixa"
+    },
+    {
+      "query": "柠檬",
+      "expectedLemma": "llimona",
+      "expectedPrimary": "llimona"
+    },
+    {
+      "query": "西瓜",
+      "expectedLemma": "síndria",
+      "expectedPrimary": "síndria"
+    },
+    {
+      "query": "甜瓜",
+      "expectedLemma": "meló",
+      "expectedPrimary": "meló"
+    },
+    {
+      "query": "香瓜",
+      "expectedLemma": "meló",
+      "expectedPrimary": "meló"
+    },
+    {
+      "query": "番茄",
+      "expectedLemma": "tomàquet",
+      "expectedPrimary": "tomàquet"
+    },
+    {
+      "query": "西红柿",
+      "expectedLemma": "tomàquet",
+      "expectedPrimary": "tomàquet"
+    },
+    {
+      "query": "土豆",
+      "expectedLemma": "patata",
+      "expectedPrimary": "patata"
+    },
+    {
+      "query": "马铃薯",
+      "expectedLemma": "patata",
+      "expectedPrimary": "patata"
+    },
+    {
+      "query": "洋芋",
+      "expectedLemma": "patata",
+      "expectedPrimary": "patata"
+    },
+    {
+      "query": "洋葱",
+      "expectedLemma": "ceba",
+      "expectedPrimary": "ceba"
+    },
+    {
+      "query": "葱头",
+      "expectedLemma": "ceba",
+      "expectedPrimary": "ceba"
+    },
+    {
+      "query": "大蒜",
+      "expectedLemma": "all",
+      "expectedPrimary": "all"
+    },
+    {
+      "query": "蒜",
+      "expectedLemma": "all"
+    },
+    {
+      "query": "胡萝卜",
+      "expectedLemma": "pastanaga",
+      "expectedPrimary": "pastanaga"
+    },
+    {
+      "query": "红萝卜",
+      "expectedLemma": "pastanaga",
+      "expectedPrimary": "pastanaga"
+    },
+    {
+      "query": "生菜",
+      "expectedLemma": "enciam",
+      "expectedPrimary": "enciam"
+    },
+    {
+      "query": "莴苣",
+      "expectedLemma": "enciam",
+      "expectedPrimary": "enciam"
+    },
+    {
+      "query": "黄瓜",
+      "expectedLemma": "cogombre",
+      "expectedPrimary": "cogombre"
+    },
+    {
+      "query": "青瓜",
+      "expectedLemma": "cogombre",
+      "expectedPrimary": "cogombre"
+    },
+    {
+      "query": "胡瓜",
+      "expectedLemma": "cogombre",
+      "expectedPrimary": "cogombre"
+    },
+    {
+      "query": "菠菜",
+      "expectedLemma": "espinac",
+      "expectedPrimary": "espinac"
+    },
+    {
+      "query": "卷心菜",
+      "expectedLemma": "col",
+      "expectedPrimary": "col"
+    },
+    {
+      "query": "包菜",
+      "expectedLemma": "col",
+      "expectedPrimary": "col"
+    },
+    {
+      "query": "洋白菜",
+      "expectedLemma": "col",
+      "expectedPrimary": "col"
+    },
+    {
+      "query": "圆白菜",
+      "expectedLemma": "col",
+      "expectedPrimary": "col"
+    },
+    {
+      "query": "高丽菜",
+      "expectedLemma": "col",
+      "expectedPrimary": "col"
+    },
+    {
+      "query": "蘑菇",
+      "expectedLemma": "bolet",
+      "expectedPrimary": "bolet"
+    },
+    {
+      "query": "菌菇",
+      "expectedLemma": "bolet",
+      "expectedPrimary": "bolet"
+    },
+    {
+      "query": "菜豆",
+      "expectedLemma": "mongeta",
+      "expectedPrimary": "mongeta"
+    },
+    {
+      "query": "四季豆",
+      "expectedLemma": "mongeta",
+      "expectedPrimary": "mongeta"
+    },
+    {
+      "query": "豌豆",
+      "expectedLemma": "pèsol",
+      "expectedPrimary": "pèsol"
+    },
+    {
+      "query": "小麦",
+      "expectedLemma": "blat",
+      "expectedPrimary": "blat"
+    },
+    {
+      "query": "甜椒",
+      "expectedLemma": "pebrot",
+      "expectedPrimary": "pebrot"
+    },
+    {
+      "query": "柿子椒",
+      "expectedLemma": "pebrot",
+      "expectedPrimary": "pebrot"
+    },
+    {
+      "query": "青椒",
+      "expectedLemma": "pebrot",
+      "expectedPrimary": "pebrot"
+    },
+    {
+      "query": "沙拉",
+      "expectedLemma": "amanida",
+      "expectedPrimary": "amanida"
+    },
+    {
+      "query": "色拉",
+      "expectedLemma": "amanida",
+      "expectedPrimary": "amanida"
+    },
+    {
+      "query": "汤",
+      "expectedLemma": "sopa"
+    },
+    {
+      "query": "三明治",
+      "expectedLemma": "entrepà",
+      "expectedPrimary": "entrepà"
+    },
+    {
+      "query": "午餐",
+      "expectedLemma": "dinar",
+      "expectedPrimary": "dinar"
+    },
+    {
+      "query": "午饭",
+      "expectedLemma": "dinar",
+      "expectedPrimary": "dinar"
+    },
+    {
+      "query": "中饭",
+      "expectedLemma": "dinar",
+      "expectedPrimary": "dinar"
+    },
+    {
+      "query": "晚餐",
+      "expectedLemma": "sopar",
+      "expectedPrimary": "sopar"
+    },
+    {
+      "query": "晚饭",
+      "expectedLemma": "sopar",
+      "expectedPrimary": "sopar"
+    },
+    {
+      "query": "甜点",
+      "expectedLemma": "postres",
+      "expectedPrimary": "postres"
+    },
+    {
+      "query": "甜品",
+      "expectedLemma": "postres",
+      "expectedPrimary": "postres"
+    },
+    {
+      "query": "餐后甜点",
+      "expectedLemma": "postres",
+      "expectedPrimary": "postres"
+    },
+    {
+      "query": "食品",
+      "expectedLemma": "aliment",
+      "expectedPrimary": "aliment"
+    },
+    {
+      "query": "饮料",
+      "expectedLemma": "beguda",
+      "expectedPrimary": "beguda"
+    },
+    {
+      "query": "饮品",
+      "expectedLemma": "beguda",
+      "expectedPrimary": "beguda"
+    },
+    {
+      "query": "饥饿",
+      "expectedLemma": "gana",
+      "expectedPrimary": "gana"
+    },
+    {
+      "query": "饥饿感",
+      "expectedLemma": "gana",
+      "expectedPrimary": "gana"
+    },
+    {
+      "query": "口渴",
+      "expectedLemma": "set",
+      "expectedPrimary": "assedegat"
+    },
+    {
+      "query": "兄弟",
+      "expectedLemma": "germà",
+      "expectedPrimary": "germà"
+    },
+    {
+      "query": "哥哥",
+      "expectedLemma": "germà",
+      "expectedPrimary": "germà"
+    },
+    {
+      "query": "弟弟",
+      "expectedLemma": "germà",
+      "expectedPrimary": "germà"
+    },
+    {
+      "query": "姐妹",
+      "expectedLemma": "germana",
+      "expectedPrimary": "germana"
+    },
+    {
+      "query": "姐姐",
+      "expectedLemma": "germana",
+      "expectedPrimary": "germana"
+    },
+    {
+      "query": "妹妹",
+      "expectedLemma": "germana",
+      "expectedPrimary": "germana"
+    },
+    {
+      "query": "儿子",
+      "expectedLemma": "fill",
+      "expectedPrimary": "fill"
+    },
+    {
+      "query": "女儿",
+      "expectedLemma": "filla",
+      "expectedPrimary": "filla"
+    },
+    {
+      "query": "祖父",
+      "expectedLemma": "avi",
+      "expectedPrimary": "avi"
+    },
+    {
+      "query": "爷爷",
+      "expectedLemma": "avi",
+      "expectedPrimary": "avi"
+    },
+    {
+      "query": "外公",
+      "expectedLemma": "avi",
+      "expectedPrimary": "avi"
+    },
+    {
+      "query": "姥爷",
+      "expectedLemma": "avi",
+      "expectedPrimary": "avi"
+    },
+    {
+      "query": "外祖父",
+      "expectedLemma": "avi",
+      "expectedPrimary": "avi"
+    },
+    {
+      "query": "祖母",
+      "expectedLemma": "àvia",
+      "expectedPrimary": "àvia"
+    },
+    {
+      "query": "奶奶",
+      "expectedLemma": "àvia",
+      "expectedPrimary": "àvia"
+    },
+    {
+      "query": "外婆",
+      "expectedLemma": "àvia",
+      "expectedPrimary": "àvia"
+    },
+    {
+      "query": "姥姥",
+      "expectedLemma": "àvia",
+      "expectedPrimary": "àvia"
+    },
+    {
+      "query": "外祖母",
+      "expectedLemma": "àvia",
+      "expectedPrimary": "àvia"
+    },
+    {
+      "query": "新生儿",
+      "expectedLemma": "nadó",
+      "expectedPrimary": "nadó"
+    },
+    {
+      "query": "男人",
+      "expectedLemma": "home",
+      "expectedPrimary": "home"
+    },
+    {
+      "query": "男子",
+      "expectedLemma": "home",
+      "expectedPrimary": "home"
+    },
+    {
+      "query": "男性",
+      "expectedLemma": "home",
+      "expectedPrimary": "home"
+    },
+    {
+      "query": "丈夫",
+      "expectedLemma": "marit",
+      "expectedPrimary": "marit"
+    },
+    {
+      "query": "老公",
+      "expectedLemma": "marit",
+      "expectedPrimary": "marit"
+    },
+    {
+      "query": "夫婿",
+      "expectedLemma": "marit",
+      "expectedPrimary": "marit"
+    },
+    {
+      "query": "妻子",
+      "expectedLemma": "esposa",
+      "expectedPrimary": "esposa"
+    },
+    {
+      "query": "老婆",
+      "expectedLemma": "esposa",
+      "expectedPrimary": "esposa"
+    },
+    {
+      "query": "太太",
+      "expectedLemma": "esposa",
+      "expectedPrimary": "esposa"
+    },
+    {
+      "query": "伴侣",
+      "expectedLemma": "parella",
+      "expectedPrimary": "parella"
+    },
+    {
+      "query": "对象",
+      "expectedLemma": "parella"
+    },
+    {
+      "query": "邻居",
+      "expectedLemma": "veí",
+      "expectedPrimary": "veí"
+    },
+    {
+      "query": "邻人",
+      "expectedLemma": "veí",
+      "expectedPrimary": "veí"
+    },
+    {
+      "query": "同伴",
+      "expectedLemma": "company",
+      "expectedPrimary": "company"
+    },
+    {
+      "query": "同事",
+      "expectedLemma": "company",
+      "expectedPrimary": "company"
+    },
+    {
+      "query": "头",
+      "expectedLemma": "cap"
+    },
+    {
+      "query": "脑袋",
+      "expectedLemma": "cap",
+      "expectedPrimary": "cap"
+    },
+    {
+      "query": "头部",
+      "expectedLemma": "cap",
+      "expectedPrimary": "cap"
+    },
+    {
+      "query": "头发",
+      "expectedLemma": "cabell",
+      "expectedPrimary": "cabell"
+    },
+    {
+      "query": "发丝",
+      "expectedLemma": "cabell",
+      "expectedPrimary": "cabell"
+    },
+    {
+      "query": "脸",
+      "expectedLemma": "cara"
+    },
+    {
+      "query": "脸部",
+      "expectedLemma": "cara",
+      "expectedPrimary": "cara"
+    },
+    {
+      "query": "面孔",
+      "expectedLemma": "cara",
+      "expectedPrimary": "cara"
+    },
+    {
+      "query": "眼睛",
+      "expectedLemma": "ull",
+      "expectedPrimary": "ull"
+    },
+    {
+      "query": "眼",
+      "expectedLemma": "ull"
+    },
+    {
+      "query": "耳朵",
+      "expectedLemma": "orella",
+      "expectedPrimary": "orella"
+    },
+    {
+      "query": "耳",
+      "expectedLemma": "orella"
+    },
+    {
+      "query": "鼻子",
+      "expectedLemma": "nas",
+      "expectedPrimary": "nas"
+    },
+    {
+      "query": "鼻",
+      "expectedLemma": "nas"
+    },
+    {
+      "query": "嘴",
+      "expectedLemma": "boca"
+    },
+    {
+      "query": "嘴巴",
+      "expectedLemma": "boca",
+      "expectedPrimary": "boca"
+    },
+    {
+      "query": "口",
+      "expectedLemma": "boca"
+    },
+    {
+      "query": "牙",
+      "expectedLemma": "dent"
+    },
+    {
+      "query": "牙齿",
+      "expectedLemma": "dent",
+      "expectedPrimary": "dent"
+    },
+    {
+      "query": "舌头",
+      "expectedLemma": "llengua",
+      "expectedPrimary": "llengua"
+    },
+    {
+      "query": "舌",
+      "expectedLemma": "llengua"
+    },
+    {
+      "query": "手",
+      "expectedLemma": "mà"
+    },
+    {
+      "query": "手指",
+      "expectedLemma": "dit",
+      "expectedPrimary": "dit"
+    },
+    {
+      "query": "脚趾",
+      "expectedLemma": "dit",
+      "expectedPrimary": "dit"
+    },
+    {
+      "query": "指头",
+      "expectedLemma": "dit",
+      "expectedPrimary": "dit"
+    },
+    {
+      "query": "手臂",
+      "expectedLemma": "braç",
+      "expectedPrimary": "braç"
+    },
+    {
+      "query": "胳膊",
+      "expectedLemma": "braç",
+      "expectedPrimary": "braç"
+    },
+    {
+      "query": "臂",
+      "expectedLemma": "braç"
+    },
+    {
+      "query": "腿",
+      "expectedLemma": "cama"
+    },
+    {
+      "query": "脚",
+      "expectedLemma": "peu"
+    },
+    {
+      "query": "足",
+      "expectedLemma": "peu"
+    },
+    {
+      "query": "背",
+      "expectedLemma": "esquena"
+    },
+    {
+      "query": "背部",
+      "expectedLemma": "esquena",
+      "expectedPrimary": "esquena"
+    },
+    {
+      "query": "后背",
+      "expectedLemma": "esquena",
+      "expectedPrimary": "esquena"
+    },
+    {
+      "query": "肚子",
+      "expectedLemma": "panxa",
+      "expectedPrimary": "panxa"
+    },
+    {
+      "query": "腹部",
+      "expectedLemma": "panxa",
+      "expectedPrimary": "panxa"
+    },
+    {
+      "query": "腹",
+      "expectedLemma": "panxa"
+    },
+    {
+      "query": "心脏",
+      "expectedLemma": "cor",
+      "expectedPrimary": "cor"
+    },
+    {
+      "query": "心",
+      "expectedLemma": "cor"
+    },
+    {
+      "query": "血",
+      "expectedLemma": "sang"
+    },
+    {
+      "query": "血液",
+      "expectedLemma": "sang",
+      "expectedPrimary": "sang"
+    },
+    {
+      "query": "皮肤",
+      "expectedLemma": "pell",
+      "expectedPrimary": "pell"
+    },
+    {
+      "query": "肌肤",
+      "expectedLemma": "pell",
+      "expectedPrimary": "pell"
+    },
+    {
+      "query": "骨头",
+      "expectedLemma": "os",
+      "expectedPrimary": "os"
+    },
+    {
+      "query": "骨骼",
+      "expectedLemma": "esquelet",
+      "expectedPrimary": "esquelet"
+    },
+    {
+      "query": "骨",
+      "expectedLemma": "os"
+    },
+    {
+      "query": "大脑",
+      "expectedLemma": "cervell",
+      "expectedPrimary": "cervell"
+    },
+    {
+      "query": "脑",
+      "expectedLemma": "cervell"
+    },
+    {
+      "query": "脖子",
+      "expectedLemma": "coll",
+      "expectedPrimary": "coll"
+    },
+    {
+      "query": "颈",
+      "expectedLemma": "coll"
+    },
+    {
+      "query": "颈部",
+      "expectedLemma": "coll",
+      "expectedPrimary": "coll"
+    },
+    {
+      "query": "膝盖",
+      "expectedLemma": "genoll",
+      "expectedPrimary": "genoll"
+    },
+    {
+      "query": "膝",
+      "expectedLemma": "genoll"
+    },
+    {
+      "query": "肩膀",
+      "expectedLemma": "espatlla",
+      "expectedPrimary": "espatlla"
+    },
+    {
+      "query": "肩",
+      "expectedLemma": "espatlla"
+    },
+    {
+      "query": "肩部",
+      "expectedLemma": "espatlla",
+      "expectedPrimary": "espatlla"
+    },
+    {
+      "query": "咳嗽",
+      "expectedLemma": "tos",
+      "expectedPrimary": "tos"
+    },
+    {
+      "query": "疾病",
+      "expectedLemma": "malaltia",
+      "expectedPrimary": "malaltia"
+    },
+    {
+      "query": "病",
+      "expectedLemma": "malaltia"
+    },
+    {
+      "query": "疾患",
+      "expectedLemma": "malaltia",
+      "expectedPrimary": "malaltia"
+    },
+    {
+      "query": "健康",
+      "expectedLemma": "salut",
+      "expectedPrimary": "sa"
+    },
+    {
+      "query": "药",
+      "expectedLemma": "medicament"
+    },
+    {
+      "query": "药物",
+      "expectedLemma": "medicament",
+      "expectedPrimary": "medicament"
+    },
+    {
+      "query": "药品",
+      "expectedLemma": "medicament",
+      "expectedPrimary": "medicament"
+    },
+    {
+      "query": "钱",
+      "expectedLemma": "diners"
+    },
+    {
+      "query": "钱财",
+      "expectedLemma": "diners",
+      "expectedPrimary": "diners"
+    },
+    {
+      "query": "金钱",
+      "expectedLemma": "diners",
+      "expectedPrimary": "diners"
+    },
+    {
+      "query": "价格",
+      "expectedLemma": "preu",
+      "expectedPrimary": "preu"
+    },
+    {
+      "query": "价钱",
+      "expectedLemma": "preu",
+      "expectedPrimary": "preu"
+    },
+    {
+      "query": "售价",
+      "expectedLemma": "preu",
+      "expectedPrimary": "preu"
+    },
+    {
+      "query": "成本",
+      "expectedLemma": "cost",
+      "expectedPrimary": "cost"
+    },
+    {
+      "query": "费用",
+      "expectedLemma": "cost"
+    },
+    {
+      "query": "花费",
+      "expectedLemma": "cost"
+    },
+    {
+      "query": "账户",
+      "expectedLemma": "compte",
+      "expectedPrimary": "compte"
+    },
+    {
+      "query": "帐户",
+      "expectedLemma": "compte",
+      "expectedPrimary": "compte"
+    },
+    {
+      "query": "账单",
+      "expectedLemma": "factura",
+      "expectedPrimary": "factura"
+    },
+    {
+      "query": "发票",
+      "expectedLemma": "factura",
+      "expectedPrimary": "factura"
+    },
+    {
+      "query": "收据",
+      "expectedLemma": "rebut",
+      "expectedPrimary": "rebut"
+    },
+    {
+      "query": "收条",
+      "expectedLemma": "rebut",
+      "expectedPrimary": "rebut"
+    },
+    {
+      "query": "折扣",
+      "expectedLemma": "descompte",
+      "expectedPrimary": "descompte"
+    },
+    {
+      "query": "打折",
+      "expectedLemma": "descompte",
+      "expectedPrimary": "descompte"
+    },
+    {
+      "query": "现金",
+      "expectedLemma": "efectiu",
+      "expectedPrimary": "efectiu"
+    },
+    {
+      "query": "现钞",
+      "expectedLemma": "efectiu",
+      "expectedPrimary": "efectiu"
+    },
+    {
+      "query": "卡",
+      "expectedLemma": "targeta"
+    },
+    {
+      "query": "卡片",
+      "expectedLemma": "targeta",
+      "expectedPrimary": "targeta"
+    },
+    {
+      "query": "工资",
+      "expectedLemma": "sou",
+      "expectedPrimary": "sou"
+    },
+    {
+      "query": "薪水",
+      "expectedLemma": "sou",
+      "expectedPrimary": "sou"
+    },
+    {
+      "query": "薪资",
+      "expectedLemma": "sou",
+      "expectedPrimary": "sou"
+    },
+    {
+      "query": "薪酬",
+      "expectedLemma": "sou",
+      "expectedPrimary": "sou"
+    },
+    {
+      "query": "任务",
+      "expectedLemma": "treball"
+    },
+    {
+      "query": "工作任务",
+      "expectedLemma": "treball",
+      "expectedPrimary": "treball"
+    },
+    {
+      "query": "帮助",
+      "expectedLemma": "ajuda",
+      "expectedPrimary": "ajudar"
+    },
+    {
+      "query": "援助",
+      "expectedLemma": "ajuda",
+      "expectedPrimary": "ajudar"
+    },
+    {
+      "query": "许可",
+      "expectedLemma": "permís",
+      "expectedPrimary": "permís"
+    },
+    {
+      "query": "准许",
+      "expectedLemma": "permís",
+      "expectedPrimary": "permís"
+    },
+    {
+      "query": "允许",
+      "expectedLemma": "permís",
+      "expectedPrimary": "permís"
+    },
+    {
+      "query": "会议",
+      "expectedLemma": "reunió",
+      "expectedPrimary": "reunió"
+    },
+    {
+      "query": "聚会",
+      "expectedLemma": "reunió",
+      "expectedPrimary": "reunió"
+    },
+    {
+      "query": "集会",
+      "expectedLemma": "reunió",
+      "expectedPrimary": "reunió"
+    },
+    {
+      "query": "预约",
+      "expectedLemma": "cita",
+      "expectedPrimary": "reservar"
+    },
+    {
+      "query": "约定",
+      "expectedLemma": "cita",
+      "expectedPrimary": "cita"
+    },
+    {
+      "query": "时刻表",
+      "expectedLemma": "horari",
+      "expectedPrimary": "horari"
+    },
+    {
+      "query": "时间表",
+      "expectedLemma": "horari",
+      "expectedPrimary": "horari"
+    },
+    {
+      "query": "日程表",
+      "expectedLemma": "horari",
+      "expectedPrimary": "horari"
+    },
+    {
+      "query": "时间",
+      "expectedLemma": "temps",
+      "expectedPrimary": "temps"
+    },
+    {
+      "query": "时光",
+      "expectedLemma": "temps",
+      "expectedPrimary": "temps"
+    },
+    {
+      "query": "光阴",
+      "expectedLemma": "temps",
+      "expectedPrimary": "temps"
+    },
+    {
+      "query": "小时",
+      "expectedLemma": "hora",
+      "expectedPrimary": "hora"
+    },
+    {
+      "query": "钟头",
+      "expectedLemma": "hora",
+      "expectedPrimary": "hora"
+    },
+    {
+      "query": "分钟",
+      "expectedLemma": "minut",
+      "expectedPrimary": "minut"
+    },
+    {
+      "query": "日",
+      "expectedLemma": "dia"
+    },
+    {
+      "query": "天",
+      "expectedLemma": "dia"
+    },
+    {
+      "query": "一天",
+      "expectedLemma": "dia",
+      "expectedPrimary": "dia"
+    },
+    {
+      "query": "星期",
+      "expectedLemma": "setmana",
+      "expectedPrimary": "setmana"
+    },
+    {
+      "query": "周",
+      "expectedLemma": "setmana"
+    },
+    {
+      "query": "礼拜",
+      "expectedLemma": "setmana",
+      "expectedPrimary": "setmana"
+    },
+    {
+      "query": "月份",
+      "expectedLemma": "mes",
+      "expectedPrimary": "mes"
+    },
+    {
+      "query": "月",
+      "expectedLemma": "mes"
+    },
+    {
+      "query": "年",
+      "expectedLemma": "any"
+    },
+    {
+      "query": "年份",
+      "expectedLemma": "any",
+      "expectedPrimary": "any"
+    },
+    {
+      "query": "年度",
+      "expectedLemma": "any",
+      "expectedPrimary": "any"
+    },
+    {
+      "query": "明天",
+      "expectedLemma": "demà",
+      "expectedPrimary": "demà"
+    },
+    {
+      "query": "明日",
+      "expectedLemma": "demà",
+      "expectedPrimary": "demà"
+    },
+    {
+      "query": "今天",
+      "expectedLemma": "avui",
+      "expectedPrimary": "avui"
+    },
+    {
+      "query": "今日",
+      "expectedLemma": "avui",
+      "expectedPrimary": "avui"
+    },
+    {
+      "query": "下午",
+      "expectedLemma": "tarda",
+      "expectedPrimary": "tarda"
+    },
+    {
+      "query": "傍晚",
+      "expectedLemma": "vespre",
+      "expectedPrimary": "vespre"
+    },
+    {
+      "query": "夜晚",
+      "expectedLemma": "nit",
+      "expectedPrimary": "nit"
+    },
+    {
+      "query": "夜间",
+      "expectedLemma": "nit",
+      "expectedPrimary": "nit"
+    },
+    {
+      "query": "晚上",
+      "expectedLemma": "nit",
+      "expectedPrimary": "nit"
+    },
+    {
+      "query": "春天",
+      "expectedLemma": "primavera",
+      "expectedPrimary": "primavera"
+    },
+    {
+      "query": "春季",
+      "expectedLemma": "primavera",
+      "expectedPrimary": "primavera"
+    },
+    {
+      "query": "春",
+      "expectedLemma": "primavera"
+    },
+    {
+      "query": "夏天",
+      "expectedLemma": "estiu",
+      "expectedPrimary": "estiu"
+    },
+    {
+      "query": "夏季",
+      "expectedLemma": "estiu",
+      "expectedPrimary": "estiu"
+    },
+    {
+      "query": "夏",
+      "expectedLemma": "estiu"
+    },
+    {
+      "query": "秋天",
+      "expectedLemma": "tardor",
+      "expectedPrimary": "tardor"
+    },
+    {
+      "query": "秋季",
+      "expectedLemma": "tardor",
+      "expectedPrimary": "tardor"
+    },
+    {
+      "query": "秋",
+      "expectedLemma": "tardor"
+    },
+    {
+      "query": "冬天",
+      "expectedLemma": "hivern",
+      "expectedPrimary": "hivern"
+    },
+    {
+      "query": "冬季",
+      "expectedLemma": "hivern",
+      "expectedPrimary": "hivern"
+    },
+    {
+      "query": "冬",
+      "expectedLemma": "hivern"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "浴缸",
+      "excludedLemma": "lavabo"
+    },
+    {
+      "query": "饭厅",
+      "excludedLemma": "restaurant"
+    },
+    {
+      "query": "书店",
+      "excludedLemma": "biblioteca"
+    },
+    {
+      "query": "图书馆",
+      "excludedLemma": "llibreria"
+    },
+    {
+      "query": "文件夹",
+      "excludedLemma": "fitxer"
+    },
+    {
+      "query": "铅笔",
+      "excludedLemma": "bolígraf"
+    },
+    {
+      "query": "黄油",
+      "excludedLemma": "formatge"
+    },
+    {
+      "query": "小牛肉",
+      "excludedLemma": "porc"
+    },
+    {
+      "query": "母鸡",
+      "excludedLemma": "pollastre"
+    },
+    {
+      "query": "枕头",
+      "excludedLemma": "llençol"
+    },
+    {
+      "query": "床单",
+      "excludedLemma": "manta"
+    },
+    {
+      "query": "糖",
+      "excludedLemma": "sal"
+    },
+    {
+      "query": "午饭",
+      "excludedLemma": "sopar"
+    },
+    {
+      "query": "晚饭",
+      "excludedLemma": "dinar"
+    }
+  ],
+  "unmatched": [
+    "非药品",
+    "假牙医",
+    "未过海关",
+    "不坐电梯",
+    "非现金",
+    "三只手套",
+    "七个钱包",
+    "药品的价格",
+    "学校的电梯"
+  ]
+}

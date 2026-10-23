@@ -286,6 +286,16 @@
     "aliasesZh": []
   },
   {
+    "jobId": "00f97299635eb0b0a62a32b87cb112081f8228e4b9ca17bcc16f021c5748a40f",
+    "sourceHash": "da2cbd51fc51bbd89290d492a0c78750eaf335bb23c4cb3a30600701a9fc55a1",
+    "translationZh": "在道路交通方面",
+    "reason": "Source-compared morphological interpretation of the committed Spanish adverb vialmente, based on vial (relating to roads). The primary reference identifies the base word, not a separately attested dictionary entry for this adverb. Keep a qualified adverbial explanation and no standalone search aliases. The previous Chinese meaning 正确地 was unrelated. Chinese wording is project-authored; machine-assisted status and exact source identity are retained.",
+    "evidence": [
+      "https://dle.rae.es/vial"
+    ],
+    "aliasesZh": []
+  },
+  {
     "jobId": "01006eda6f220434d968c6c6de61420e514363ec0005e26f9b3430b8966bc687",
     "sourceHash": "ec305fc51e7656733b007e4791880ff8f42916987b42875a6e04eaddd4daf9c9",
     "translationZh": "参见「trípode」：三条腿的物体，可作为桌子、座椅等。；三脚架结构，用于放置或支撑照相机、测绘仪器等。；有两条腿或两个脚的。",
@@ -29063,6 +29073,16 @@
     "evidence": [
       "data/translations/bulk/sources/chinese-references.json#miolar"
     ]
+  },
+  {
+    "jobId": "64f4c38f0ff60b53c8a641c860af0a4d8fc669be76bb3a41a3bbd1b8c6cff90b",
+    "sourceHash": "96513c16f061b530ed97c0e6822a7028d3ea4c8ffe419f33648e97f50952c875",
+    "translationZh": "在道路交通方面",
+    "reason": "Source-compared morphological interpretation of the committed Spanish adverb viariamente, based on viario (relating to roads). The primary reference identifies the base word, not a separately attested dictionary entry for this adverb. Keep a qualified adverbial explanation and no standalone search aliases. The previous Chinese meaning 正确地 was unrelated. Chinese wording is project-authored; machine-assisted status and exact source identity are retained.",
+    "evidence": [
+      "https://dle.rae.es/viario"
+    ],
+    "aliasesZh": []
   },
   {
     "jobId": "64fd24bc7f3f764cfda5e5c66a6e8c6141f565aaa4c73a641ece8e899d93b3f9",
@@ -61142,6 +61162,16 @@
     "evidence": [
       "data/translations/bulk/sources/chinese-references.json#damnificar"
     ]
+  },
+  {
+    "jobId": "d8111fdb0151fe1b933dad59965b77e0b49884a4cde3da6a6bcb3024a7dec729",
+    "sourceHash": "9371b72dfea5cc55074bb20514ab96dd44d5e749cd5b6fdef85ab0d381c2c8c2",
+    "translationZh": "在书商业务方面",
+    "reason": "Source-compared morphological interpretation of the committed Spanish adverb libreramente, based on librero (a bookseller). The primary reference identifies the base word, not a separately attested dictionary entry for this adverb. Keep a qualified adverbial explanation and no standalone search aliases. The previous Chinese meaning 自由地 was unrelated. Chinese wording is project-authored; machine-assisted status and exact source identity are retained.",
+    "evidence": [
+      "https://dle.rae.es/librero"
+    ],
+    "aliasesZh": []
   },
   {
     "jobId": "d815f46612b29220809d0fe8b02f6293d0c023ed33d9966162050340dcb2c9f1",

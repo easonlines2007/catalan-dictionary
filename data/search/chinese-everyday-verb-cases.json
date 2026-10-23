@@ -1,0 +1,1409 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared correctly spelled everyday verbs. Preserve established primary senses while adding source-bound alternatives.",
+  "cases": [
+    {
+      "query": "接受",
+      "expectedLemma": "acceptar",
+      "expectedPrimary": "acceptar"
+    },
+    {
+      "query": "接纳",
+      "expectedLemma": "acceptar",
+      "expectedPrimary": "acceptar"
+    },
+    {
+      "query": "拒绝",
+      "expectedLemma": "rebutjar",
+      "expectedPrimary": "rebutjar"
+    },
+    {
+      "query": "回绝",
+      "expectedLemma": "rebutjar",
+      "expectedPrimary": "rebutjar"
+    },
+    {
+      "query": "拒收",
+      "expectedLemma": "rebutjar",
+      "expectedPrimary": "rebutjar"
+    },
+    {
+      "query": "商定",
+      "expectedLemma": "acordar",
+      "expectedPrimary": "acordar"
+    },
+    {
+      "query": "议定",
+      "expectedLemma": "acordar",
+      "expectedPrimary": "acordar"
+    },
+    {
+      "query": "应允",
+      "expectedLemma": "consentir",
+      "expectedPrimary": "consentir"
+    },
+    {
+      "query": "准许",
+      "expectedLemma": "consentir",
+      "expectedPrimary": "permís"
+    },
+    {
+      "query": "否认",
+      "expectedLemma": "negar",
+      "expectedPrimary": "negar"
+    },
+    {
+      "query": "偏爱",
+      "expectedLemma": "preferir",
+      "expectedPrimary": "preferir"
+    },
+    {
+      "query": "解释",
+      "expectedLemma": "explicar",
+      "expectedPrimary": "explicar"
+    },
+    {
+      "query": "讲解",
+      "expectedLemma": "explicar",
+      "expectedPrimary": "explicar"
+    },
+    {
+      "query": "解说",
+      "expectedLemma": "explicar",
+      "expectedPrimary": "explicar"
+    },
+    {
+      "query": "展示",
+      "expectedLemma": "mostrar",
+      "expectedPrimary": "mostrar"
+    },
+    {
+      "query": "出示",
+      "expectedLemma": "mostrar",
+      "expectedPrimary": "mostrar"
+    },
+    {
+      "query": "展现",
+      "expectedLemma": "mostrar",
+      "expectedPrimary": "mostrar"
+    },
+    {
+      "query": "证明",
+      "expectedLemma": "demostrar",
+      "expectedPrimary": "demostrar"
+    },
+    {
+      "query": "证实",
+      "expectedLemma": "demostrar",
+      "expectedPrimary": "demostrar"
+    },
+    {
+      "query": "练习",
+      "expectedLemma": "practicar",
+      "expectedPrimary": "practicar"
+    },
+    {
+      "query": "操练",
+      "expectedLemma": "practicar",
+      "expectedPrimary": "practicar"
+    },
+    {
+      "query": "调查",
+      "expectedLemma": "investigar",
+      "expectedPrimary": "investigar"
+    },
+    {
+      "query": "查究",
+      "expectedLemma": "investigar",
+      "expectedPrimary": "investigar"
+    },
+    {
+      "query": "核查",
+      "expectedLemma": "comprovar",
+      "expectedPrimary": "comprovar"
+    },
+    {
+      "query": "核实",
+      "expectedLemma": "comprovar",
+      "expectedPrimary": "comprovar"
+    },
+    {
+      "query": "查证",
+      "expectedLemma": "comprovar",
+      "expectedPrimary": "comprovar"
+    },
+    {
+      "query": "验证",
+      "expectedLemma": "verificar",
+      "expectedPrimary": "verificar"
+    },
+    {
+      "query": "确认",
+      "expectedLemma": "confirmar",
+      "expectedPrimary": "confirmar"
+    },
+    {
+      "query": "确证",
+      "expectedLemma": "confirmar",
+      "expectedPrimary": "confirmar"
+    },
+    {
+      "query": "怀疑",
+      "expectedLemma": "dubtar",
+      "expectedPrimary": "dubtar"
+    },
+    {
+      "query": "质疑",
+      "expectedLemma": "dubtar",
+      "expectedPrimary": "dubtar"
+    },
+    {
+      "query": "承诺",
+      "expectedLemma": "prometre",
+      "expectedPrimary": "prometre"
+    },
+    {
+      "query": "许诺",
+      "expectedLemma": "prometre",
+      "expectedPrimary": "prometre"
+    },
+    {
+      "query": "答应",
+      "expectedLemma": "prometre",
+      "expectedPrimary": "prometre"
+    },
+    {
+      "query": "渴望",
+      "expectedLemma": "desitjar",
+      "expectedPrimary": "desitjar"
+    },
+    {
+      "query": "盼望",
+      "expectedLemma": "desitjar",
+      "expectedPrimary": "desitjar"
+    },
+    {
+      "query": "希望",
+      "expectedLemma": "esperar",
+      "expectedPrimary": "esperar"
+    },
+    {
+      "query": "期望",
+      "expectedLemma": "esperar",
+      "expectedPrimary": "esperar"
+    },
+    {
+      "query": "允许",
+      "expectedLemma": "permetre",
+      "expectedPrimary": "permís"
+    },
+    {
+      "query": "容许",
+      "expectedLemma": "permetre",
+      "expectedPrimary": "permetre"
+    },
+    {
+      "query": "许可",
+      "expectedLemma": "permetre",
+      "expectedPrimary": "permís"
+    },
+    {
+      "query": "禁止",
+      "expectedLemma": "prohibir",
+      "expectedPrimary": "prohibir"
+    },
+    {
+      "query": "严禁",
+      "expectedLemma": "prohibir",
+      "expectedPrimary": "prohibir"
+    },
+    {
+      "query": "避免",
+      "expectedLemma": "evitar",
+      "expectedPrimary": "evitar"
+    },
+    {
+      "query": "避开",
+      "expectedLemma": "evitar",
+      "expectedPrimary": "evitar"
+    },
+    {
+      "query": "阻止",
+      "expectedLemma": "impedir",
+      "expectedPrimary": "impedir"
+    },
+    {
+      "query": "阻碍",
+      "expectedLemma": "impedir",
+      "expectedPrimary": "impedir"
+    },
+    {
+      "query": "妨碍",
+      "expectedLemma": "impedir",
+      "expectedPrimary": "impedir"
+    },
+    {
+      "query": "保护",
+      "expectedLemma": "protegir",
+      "expectedPrimary": "protegir"
+    },
+    {
+      "query": "拯救",
+      "expectedLemma": "salvar",
+      "expectedPrimary": "salvar"
+    },
+    {
+      "query": "救助",
+      "expectedLemma": "salvar",
+      "expectedPrimary": "salvar"
+    },
+    {
+      "query": "营救",
+      "expectedLemma": "rescatar",
+      "expectedPrimary": "rescatar"
+    },
+    {
+      "query": "救援",
+      "expectedLemma": "rescatar",
+      "expectedPrimary": "rescatar"
+    },
+    {
+      "query": "照顾",
+      "expectedLemma": "cuidar",
+      "expectedPrimary": "cuidar"
+    },
+    {
+      "query": "照料",
+      "expectedLemma": "cuidar",
+      "expectedPrimary": "cuidar"
+    },
+    {
+      "query": "照看",
+      "expectedLemma": "cuidar",
+      "expectedPrimary": "cuidar"
+    },
+    {
+      "query": "治愈",
+      "expectedLemma": "curar",
+      "expectedPrimary": "curar"
+    },
+    {
+      "query": "医治",
+      "expectedLemma": "curar",
+      "expectedPrimary": "curar"
+    },
+    {
+      "query": "携带",
+      "expectedLemma": "portar",
+      "expectedPrimary": "portar"
+    },
+    {
+      "query": "推动",
+      "expectedLemma": "empènyer",
+      "expectedPrimary": "empènyer"
+    },
+    {
+      "query": "推搡",
+      "expectedLemma": "empènyer",
+      "expectedPrimary": "empènyer"
+    },
+    {
+      "query": "拉动",
+      "expectedLemma": "estirar",
+      "expectedPrimary": "estirar"
+    },
+    {
+      "query": "拖动",
+      "expectedLemma": "arrossegar",
+      "expectedPrimary": "arrossegar"
+    },
+    {
+      "query": "拖拽",
+      "expectedLemma": "arrossegar",
+      "expectedPrimary": "arrossegar"
+    },
+    {
+      "query": "举起",
+      "expectedLemma": "aixecar",
+      "expectedPrimary": "aixecar"
+    },
+    {
+      "query": "抬起",
+      "expectedLemma": "aixecar",
+      "expectedPrimary": "aixecar"
+    },
+    {
+      "query": "提起",
+      "expectedLemma": "aixecar",
+      "expectedPrimary": "aixecar"
+    },
+    {
+      "query": "下降",
+      "expectedLemma": "baixar",
+      "expectedPrimary": "baixar"
+    },
+    {
+      "query": "降低",
+      "expectedLemma": "baixar",
+      "expectedPrimary": "baixar"
+    },
+    {
+      "query": "跌落",
+      "expectedLemma": "caure",
+      "expectedPrimary": "caure"
+    },
+    {
+      "query": "坠落",
+      "expectedLemma": "caure",
+      "expectedPrimary": "caure"
+    },
+    {
+      "query": "落下",
+      "expectedLemma": "caure",
+      "expectedPrimary": "caure"
+    },
+    {
+      "query": "跳跃",
+      "expectedLemma": "saltar",
+      "expectedPrimary": "saltar"
+    },
+    {
+      "query": "跳动",
+      "expectedLemma": "saltar",
+      "expectedPrimary": "saltar"
+    },
+    {
+      "query": "游泳",
+      "expectedLemma": "nedar",
+      "expectedPrimary": "nedar"
+    },
+    {
+      "query": "泅泳",
+      "expectedLemma": "nedar",
+      "expectedPrimary": "nedar"
+    },
+    {
+      "query": "飞翔",
+      "expectedLemma": "volar",
+      "expectedPrimary": "volar"
+    },
+    {
+      "query": "飞行",
+      "expectedLemma": "volar",
+      "expectedPrimary": "volar"
+    },
+    {
+      "query": "驾驶",
+      "expectedLemma": "conduir",
+      "expectedPrimary": "conduir"
+    },
+    {
+      "query": "开车",
+      "expectedLemma": "conduir",
+      "expectedPrimary": "conduir"
+    },
+    {
+      "query": "停车",
+      "expectedLemma": "aparcar",
+      "expectedPrimary": "aparcar"
+    },
+    {
+      "query": "停放",
+      "expectedLemma": "aparcar",
+      "expectedPrimary": "aparcar"
+    },
+    {
+      "query": "停止",
+      "expectedLemma": "aturar",
+      "expectedPrimary": "aturar"
+    },
+    {
+      "query": "停下",
+      "expectedLemma": "aturar",
+      "expectedPrimary": "aturar"
+    },
+    {
+      "query": "转动",
+      "expectedLemma": "girar",
+      "expectedPrimary": "girar"
+    },
+    {
+      "query": "转向",
+      "expectedLemma": "girar",
+      "expectedPrimary": "girar"
+    },
+    {
+      "query": "归还",
+      "expectedLemma": "tornar",
+      "expectedPrimary": "tornar"
+    },
+    {
+      "query": "还回",
+      "expectedLemma": "tornar",
+      "expectedPrimary": "tornar"
+    },
+    {
+      "query": "返回",
+      "expectedLemma": "retornar",
+      "expectedPrimary": "retornar"
+    },
+    {
+      "query": "回来",
+      "expectedLemma": "retornar",
+      "expectedPrimary": "retornar"
+    },
+    {
+      "query": "回去",
+      "expectedLemma": "retornar",
+      "expectedPrimary": "retornar"
+    },
+    {
+      "query": "发送",
+      "expectedLemma": "enviar",
+      "expectedPrimary": "enviar"
+    },
+    {
+      "query": "寄送",
+      "expectedLemma": "enviar",
+      "expectedPrimary": "enviar"
+    },
+    {
+      "query": "寄出",
+      "expectedLemma": "enviar",
+      "expectedPrimary": "enviar"
+    },
+    {
+      "query": "接收",
+      "expectedLemma": "rebre",
+      "expectedPrimary": "rebre"
+    },
+    {
+      "query": "收到",
+      "expectedLemma": "rebre",
+      "expectedPrimary": "rebre"
+    },
+    {
+      "query": "接到",
+      "expectedLemma": "rebre",
+      "expectedPrimary": "rebre"
+    },
+    {
+      "query": "交付",
+      "expectedLemma": "lliurar",
+      "expectedPrimary": "lliurar"
+    },
+    {
+      "query": "递交",
+      "expectedLemma": "lliurar",
+      "expectedPrimary": "lliurar"
+    },
+    {
+      "query": "交出",
+      "expectedLemma": "lliurar",
+      "expectedPrimary": "lliurar"
+    },
+    {
+      "query": "给予",
+      "expectedLemma": "donar",
+      "expectedPrimary": "donar"
+    },
+    {
+      "query": "提供",
+      "expectedLemma": "oferir",
+      "expectedPrimary": "oferir"
+    },
+    {
+      "query": "请求",
+      "expectedLemma": "demanar",
+      "expectedPrimary": "demanar"
+    },
+    {
+      "query": "要求",
+      "expectedLemma": "demanar",
+      "expectedPrimary": "demanar"
+    },
+    {
+      "query": "申请",
+      "expectedLemma": "sol·licitar",
+      "expectedPrimary": "sol·licitar"
+    },
+    {
+      "query": "申领",
+      "expectedLemma": "sol·licitar",
+      "expectedPrimary": "sol·licitar"
+    },
+    {
+      "query": "租赁",
+      "expectedLemma": "llogar",
+      "expectedPrimary": "llogar"
+    },
+    {
+      "query": "租用",
+      "expectedLemma": "llogar",
+      "expectedPrimary": "llogar"
+    },
+    {
+      "query": "花费",
+      "expectedLemma": "gastar"
+    },
+    {
+      "query": "耗费",
+      "expectedLemma": "gastar",
+      "expectedPrimary": "gastar"
+    },
+    {
+      "query": "消耗",
+      "expectedLemma": "gastar",
+      "expectedPrimary": "gastar"
+    },
+    {
+      "query": "赚钱",
+      "expectedLemma": "guanyar",
+      "expectedPrimary": "guanyar"
+    },
+    {
+      "query": "挣钱",
+      "expectedLemma": "guanyar",
+      "expectedPrimary": "guanyar"
+    },
+    {
+      "query": "挣得",
+      "expectedLemma": "guanyar",
+      "expectedPrimary": "guanyar"
+    },
+    {
+      "query": "失去",
+      "expectedLemma": "perdre",
+      "expectedPrimary": "perdre"
+    },
+    {
+      "query": "遗失",
+      "expectedLemma": "perdre",
+      "expectedPrimary": "perdre"
+    },
+    {
+      "query": "丢失",
+      "expectedLemma": "perdre",
+      "expectedPrimary": "perdre"
+    },
+    {
+      "query": "交换",
+      "expectedLemma": "intercanviar",
+      "expectedPrimary": "intercanviar"
+    },
+    {
+      "query": "互换",
+      "expectedLemma": "intercanviar",
+      "expectedPrimary": "intercanviar"
+    },
+    {
+      "query": "分享",
+      "expectedLemma": "compartir",
+      "expectedPrimary": "compartir"
+    },
+    {
+      "query": "共享",
+      "expectedLemma": "compartir",
+      "expectedPrimary": "compartir"
+    },
+    {
+      "query": "分发",
+      "expectedLemma": "repartir",
+      "expectedPrimary": "repartir"
+    },
+    {
+      "query": "发放",
+      "expectedLemma": "repartir",
+      "expectedPrimary": "repartir"
+    },
+    {
+      "query": "划分",
+      "expectedLemma": "dividir",
+      "expectedPrimary": "dividir"
+    },
+    {
+      "query": "分割",
+      "expectedLemma": "dividir",
+      "expectedPrimary": "dividir"
+    },
+    {
+      "query": "联合",
+      "expectedLemma": "unir",
+      "expectedPrimary": "unir"
+    },
+    {
+      "query": "结合",
+      "expectedLemma": "unir",
+      "expectedPrimary": "unir"
+    },
+    {
+      "query": "分开",
+      "expectedLemma": "separar",
+      "expectedPrimary": "separar"
+    },
+    {
+      "query": "分离",
+      "expectedLemma": "separar",
+      "expectedPrimary": "separar"
+    },
+    {
+      "query": "折断",
+      "expectedLemma": "trencar",
+      "expectedPrimary": "trencar"
+    },
+    {
+      "query": "断裂",
+      "expectedLemma": "trencar",
+      "expectedPrimary": "trencar"
+    },
+    {
+      "query": "切割",
+      "expectedLemma": "tallar",
+      "expectedPrimary": "tallar"
+    },
+    {
+      "query": "剪切",
+      "expectedLemma": "tallar",
+      "expectedPrimary": "tallar"
+    },
+    {
+      "query": "粘贴",
+      "expectedLemma": "enganxar",
+      "expectedPrimary": "enganxar"
+    },
+    {
+      "query": "粘合",
+      "expectedLemma": "enganxar",
+      "expectedPrimary": "enganxar"
+    },
+    {
+      "query": "添加",
+      "expectedLemma": "afegir",
+      "expectedPrimary": "afegir"
+    },
+    {
+      "query": "加入",
+      "expectedLemma": "afegir",
+      "expectedPrimary": "afegir"
+    },
+    {
+      "query": "增添",
+      "expectedLemma": "afegir",
+      "expectedPrimary": "afegir"
+    },
+    {
+      "query": "移除",
+      "expectedLemma": "treure",
+      "expectedPrimary": "treure"
+    },
+    {
+      "query": "去除",
+      "expectedLemma": "treure",
+      "expectedPrimary": "treure"
+    },
+    {
+      "query": "填满",
+      "expectedLemma": "omplir",
+      "expectedPrimary": "omplir"
+    },
+    {
+      "query": "装满",
+      "expectedLemma": "omplir",
+      "expectedPrimary": "omplir"
+    },
+    {
+      "query": "清空",
+      "expectedLemma": "buidar",
+      "expectedPrimary": "buidar"
+    },
+    {
+      "query": "倒空",
+      "expectedLemma": "buidar",
+      "expectedPrimary": "buidar"
+    },
+    {
+      "query": "清洁",
+      "expectedLemma": "netejar",
+      "expectedPrimary": "net"
+    },
+    {
+      "query": "打扫",
+      "expectedLemma": "netejar",
+      "expectedPrimary": "netejar"
+    },
+    {
+      "query": "清扫",
+      "expectedLemma": "netejar",
+      "expectedPrimary": "netejar"
+    },
+    {
+      "query": "擦干",
+      "expectedLemma": "eixugar",
+      "expectedPrimary": "eixugar"
+    },
+    {
+      "query": "干燥",
+      "expectedLemma": "assecar",
+      "expectedPrimary": "sec"
+    },
+    {
+      "query": "弄干",
+      "expectedLemma": "assecar",
+      "expectedPrimary": "assecar"
+    },
+    {
+      "query": "煮沸",
+      "expectedLemma": "bullir",
+      "expectedPrimary": "bullir"
+    },
+    {
+      "query": "烧开",
+      "expectedLemma": "bullir",
+      "expectedPrimary": "bullir"
+    },
+    {
+      "query": "加热",
+      "expectedLemma": "escalfar",
+      "expectedPrimary": "escalfar"
+    },
+    {
+      "query": "冷却",
+      "expectedLemma": "refredar",
+      "expectedPrimary": "refredar"
+    },
+    {
+      "query": "降温",
+      "expectedLemma": "refredar",
+      "expectedPrimary": "refredar"
+    },
+    {
+      "query": "冷冻",
+      "expectedLemma": "congelar",
+      "expectedPrimary": "congelar"
+    },
+    {
+      "query": "冻结",
+      "expectedLemma": "congelar",
+      "expectedPrimary": "congelar"
+    },
+    {
+      "query": "点燃",
+      "expectedLemma": "encendre",
+      "expectedPrimary": "encendre"
+    },
+    {
+      "query": "点火",
+      "expectedLemma": "encendre",
+      "expectedPrimary": "encendre"
+    },
+    {
+      "query": "熄灭",
+      "expectedLemma": "apagar",
+      "expectedPrimary": "apagar"
+    },
+    {
+      "query": "灭火",
+      "expectedLemma": "apagar",
+      "expectedPrimary": "apagar"
+    },
+    {
+      "query": "连接",
+      "expectedLemma": "connectar",
+      "expectedPrimary": "connectar"
+    },
+    {
+      "query": "联接",
+      "expectedLemma": "connectar",
+      "expectedPrimary": "connectar"
+    },
+    {
+      "query": "断开",
+      "expectedLemma": "desconnectar",
+      "expectedPrimary": "desconnectar"
+    },
+    {
+      "query": "断连",
+      "expectedLemma": "desconnectar",
+      "expectedPrimary": "desconnectar"
+    },
+    {
+      "query": "按压",
+      "expectedLemma": "prémer",
+      "expectedPrimary": "prémer"
+    },
+    {
+      "query": "挤压",
+      "expectedLemma": "prémer",
+      "expectedPrimary": "prémer"
+    },
+    {
+      "query": "触摸",
+      "expectedLemma": "tocar",
+      "expectedPrimary": "tocar"
+    },
+    {
+      "query": "触碰",
+      "expectedLemma": "tocar",
+      "expectedPrimary": "tocar"
+    },
+    {
+      "query": "碰触",
+      "expectedLemma": "tocar",
+      "expectedPrimary": "tocar"
+    },
+    {
+      "query": "拥抱",
+      "expectedLemma": "abraçar",
+      "expectedPrimary": "abraçar"
+    },
+    {
+      "query": "搂抱",
+      "expectedLemma": "abraçar",
+      "expectedPrimary": "abraçar"
+    },
+    {
+      "query": "亲吻",
+      "expectedLemma": "besar",
+      "expectedPrimary": "besar"
+    },
+    {
+      "query": "接吻",
+      "expectedLemma": "besar",
+      "expectedPrimary": "besar"
+    },
+    {
+      "query": "微笑",
+      "expectedLemma": "somriure",
+      "expectedPrimary": "somriure"
+    },
+    {
+      "query": "发笑",
+      "expectedLemma": "riure",
+      "expectedPrimary": "riure"
+    },
+    {
+      "query": "欢笑",
+      "expectedLemma": "riure",
+      "expectedPrimary": "riure"
+    },
+    {
+      "query": "哭泣",
+      "expectedLemma": "plorar",
+      "expectedPrimary": "plorar"
+    },
+    {
+      "query": "流泪",
+      "expectedLemma": "plorar",
+      "expectedPrimary": "plorar"
+    },
+    {
+      "query": "啼哭",
+      "expectedLemma": "plorar",
+      "expectedPrimary": "plorar"
+    },
+    {
+      "query": "喊叫",
+      "expectedLemma": "cridar",
+      "expectedPrimary": "cridar"
+    },
+    {
+      "query": "叫喊",
+      "expectedLemma": "cridar",
+      "expectedPrimary": "cridar"
+    },
+    {
+      "query": "大喊",
+      "expectedLemma": "cridar",
+      "expectedPrimary": "cridar"
+    },
+    {
+      "query": "低语",
+      "expectedLemma": "xiuxiuejar",
+      "expectedPrimary": "xiuxiuejar"
+    },
+    {
+      "query": "耳语",
+      "expectedLemma": "xiuxiuejar",
+      "expectedPrimary": "xiuxiuejar"
+    },
+    {
+      "query": "原谅",
+      "expectedLemma": "perdonar",
+      "expectedPrimary": "perdonar"
+    },
+    {
+      "query": "宽恕",
+      "expectedLemma": "perdonar",
+      "expectedPrimary": "perdonar"
+    },
+    {
+      "query": "饶恕",
+      "expectedLemma": "perdonar",
+      "expectedPrimary": "perdonar"
+    },
+    {
+      "query": "感谢",
+      "expectedLemma": "agrair",
+      "expectedPrimary": "agrair"
+    },
+    {
+      "query": "道谢",
+      "expectedLemma": "agrair",
+      "expectedPrimary": "agrair"
+    },
+    {
+      "query": "致谢",
+      "expectedLemma": "agrair",
+      "expectedPrimary": "agrair"
+    },
+    {
+      "query": "祝贺",
+      "expectedLemma": "felicitar",
+      "expectedPrimary": "felicitar"
+    },
+    {
+      "query": "道贺",
+      "expectedLemma": "felicitar",
+      "expectedPrimary": "felicitar"
+    },
+    {
+      "query": "邀请",
+      "expectedLemma": "convidar",
+      "expectedPrimary": "convidar"
+    },
+    {
+      "query": "邀约",
+      "expectedLemma": "convidar",
+      "expectedPrimary": "convidar"
+    },
+    {
+      "query": "拜访",
+      "expectedLemma": "visitar",
+      "expectedPrimary": "visitar"
+    },
+    {
+      "query": "探访",
+      "expectedLemma": "visitar",
+      "expectedPrimary": "visitar"
+    },
+    {
+      "query": "访问",
+      "expectedLemma": "visitar",
+      "expectedPrimary": "visitar"
+    },
+    {
+      "query": "陪伴",
+      "expectedLemma": "acompanyar",
+      "expectedPrimary": "acompanyar"
+    },
+    {
+      "query": "陪同",
+      "expectedLemma": "acompanyar",
+      "expectedPrimary": "acompanyar"
+    },
+    {
+      "query": "跟随",
+      "expectedLemma": "seguir",
+      "expectedPrimary": "seguir"
+    },
+    {
+      "query": "跟从",
+      "expectedLemma": "seguir",
+      "expectedPrimary": "seguir"
+    },
+    {
+      "query": "追赶",
+      "expectedLemma": "perseguir",
+      "expectedPrimary": "perseguir"
+    },
+    {
+      "query": "追逐",
+      "expectedLemma": "perseguir",
+      "expectedPrimary": "perseguir"
+    },
+    {
+      "query": "抛弃",
+      "expectedLemma": "abandonar",
+      "expectedPrimary": "abandonar"
+    },
+    {
+      "query": "遗弃",
+      "expectedLemma": "abandonar",
+      "expectedPrimary": "abandonar"
+    },
+    {
+      "query": "放弃",
+      "expectedLemma": "renunciar",
+      "expectedPrimary": "renunciar"
+    },
+    {
+      "query": "继续",
+      "expectedLemma": "continuar",
+      "expectedPrimary": "continuar"
+    },
+    {
+      "query": "持续",
+      "expectedLemma": "continuar",
+      "expectedPrimary": "continuar"
+    },
+    {
+      "query": "重复",
+      "expectedLemma": "repetir",
+      "expectedPrimary": "repetir"
+    },
+    {
+      "query": "重做",
+      "expectedLemma": "repetir",
+      "expectedPrimary": "repetir"
+    },
+    {
+      "query": "比较",
+      "expectedLemma": "comparar",
+      "expectedPrimary": "comparar"
+    },
+    {
+      "query": "对比",
+      "expectedLemma": "comparar",
+      "expectedPrimary": "comparar"
+    },
+    {
+      "query": "比对",
+      "expectedLemma": "comparar",
+      "expectedPrimary": "comparar"
+    },
+    {
+      "query": "整理",
+      "expectedLemma": "ordenar",
+      "expectedPrimary": "ordenar"
+    },
+    {
+      "query": "排序",
+      "expectedLemma": "ordenar",
+      "expectedPrimary": "ordenar"
+    },
+    {
+      "query": "组织",
+      "expectedLemma": "organitzar",
+      "expectedPrimary": "organitzar"
+    },
+    {
+      "query": "筹办",
+      "expectedLemma": "organitzar",
+      "expectedPrimary": "organitzar"
+    },
+    {
+      "query": "准备",
+      "expectedLemma": "preparar",
+      "expectedPrimary": "preparar"
+    },
+    {
+      "query": "预备",
+      "expectedLemma": "preparar",
+      "expectedPrimary": "preparar"
+    },
+    {
+      "query": "建造",
+      "expectedLemma": "construir",
+      "expectedPrimary": "construir"
+    },
+    {
+      "query": "建设",
+      "expectedLemma": "construir",
+      "expectedPrimary": "construir"
+    },
+    {
+      "query": "修建",
+      "expectedLemma": "construir",
+      "expectedPrimary": "construir"
+    },
+    {
+      "query": "摧毁",
+      "expectedLemma": "destruir",
+      "expectedPrimary": "destruir"
+    },
+    {
+      "query": "毁灭",
+      "expectedLemma": "destruir",
+      "expectedPrimary": "destruir"
+    },
+    {
+      "query": "生产",
+      "expectedLemma": "produir",
+      "expectedPrimary": "produir"
+    },
+    {
+      "query": "产出",
+      "expectedLemma": "produir",
+      "expectedPrimary": "produir"
+    },
+    {
+      "query": "制造",
+      "expectedLemma": "fabricar",
+      "expectedPrimary": "fabricar"
+    },
+    {
+      "query": "制作",
+      "expectedLemma": "fabricar",
+      "expectedPrimary": "fabricar"
+    },
+    {
+      "query": "创造",
+      "expectedLemma": "crear",
+      "expectedPrimary": "crear"
+    },
+    {
+      "query": "创建",
+      "expectedLemma": "crear",
+      "expectedPrimary": "crear"
+    },
+    {
+      "query": "绘画",
+      "expectedLemma": "dibuixar",
+      "expectedPrimary": "dibuixar"
+    },
+    {
+      "query": "画图",
+      "expectedLemma": "dibuixar",
+      "expectedPrimary": "dibuixar"
+    },
+    {
+      "query": "描画",
+      "expectedLemma": "dibuixar",
+      "expectedPrimary": "dibuixar"
+    },
+    {
+      "query": "涂刷",
+      "expectedLemma": "pintar",
+      "expectedPrimary": "pintar"
+    },
+    {
+      "query": "涂漆",
+      "expectedLemma": "pintar",
+      "expectedPrimary": "pintar"
+    },
+    {
+      "query": "书写",
+      "expectedLemma": "escriure",
+      "expectedPrimary": "escriure"
+    },
+    {
+      "query": "写作",
+      "expectedLemma": "escriure",
+      "expectedPrimary": "escriure"
+    },
+    {
+      "query": "签名",
+      "expectedLemma": "signar",
+      "expectedPrimary": "signar"
+    },
+    {
+      "query": "签字",
+      "expectedLemma": "signar",
+      "expectedPrimary": "signar"
+    },
+    {
+      "query": "签署",
+      "expectedLemma": "signar",
+      "expectedPrimary": "signar"
+    },
+    {
+      "query": "打印",
+      "expectedLemma": "imprimir",
+      "expectedPrimary": "imprimir"
+    },
+    {
+      "query": "印刷",
+      "expectedLemma": "imprimir",
+      "expectedPrimary": "imprimir"
+    },
+    {
+      "query": "擦除",
+      "expectedLemma": "esborrar",
+      "expectedPrimary": "esborrar"
+    },
+    {
+      "query": "抹除",
+      "expectedLemma": "esborrar",
+      "expectedPrimary": "esborrar"
+    },
+    {
+      "query": "保存",
+      "expectedLemma": "desar",
+      "expectedPrimary": "desar"
+    },
+    {
+      "query": "存储",
+      "expectedLemma": "desar",
+      "expectedPrimary": "desar"
+    },
+    {
+      "query": "撤销",
+      "expectedLemma": "desfer",
+      "expectedPrimary": "cancel·lar"
+    },
+    {
+      "query": "撤回",
+      "expectedLemma": "desfer",
+      "expectedPrimary": "desfer"
+    },
+    {
+      "query": "修好",
+      "expectedLemma": "arreglar",
+      "expectedPrimary": "arreglar"
+    },
+    {
+      "query": "修整",
+      "expectedLemma": "arreglar",
+      "expectedPrimary": "arreglar"
+    },
+    {
+      "query": "改善",
+      "expectedLemma": "millorar",
+      "expectedPrimary": "millorar"
+    },
+    {
+      "query": "改进",
+      "expectedLemma": "millorar",
+      "expectedPrimary": "millorar"
+    },
+    {
+      "query": "恶化",
+      "expectedLemma": "empitjorar",
+      "expectedPrimary": "empitjorar"
+    },
+    {
+      "query": "变坏",
+      "expectedLemma": "empitjorar",
+      "expectedPrimary": "empitjorar"
+    },
+    {
+      "query": "增加",
+      "expectedLemma": "augmentar",
+      "expectedPrimary": "augmentar"
+    },
+    {
+      "query": "增多",
+      "expectedLemma": "augmentar",
+      "expectedPrimary": "augmentar"
+    },
+    {
+      "query": "增大",
+      "expectedLemma": "augmentar",
+      "expectedPrimary": "augmentar"
+    },
+    {
+      "query": "减少",
+      "expectedLemma": "disminuir",
+      "expectedPrimary": "disminuir"
+    },
+    {
+      "query": "减小",
+      "expectedLemma": "disminuir",
+      "expectedPrimary": "disminuir"
+    },
+    {
+      "query": "缩减",
+      "expectedLemma": "reduir",
+      "expectedPrimary": "reduir"
+    },
+    {
+      "query": "削减",
+      "expectedLemma": "reduir",
+      "expectedPrimary": "reduir"
+    },
+    {
+      "query": "成长",
+      "expectedLemma": "créixer",
+      "expectedPrimary": "créixer"
+    },
+    {
+      "query": "生长",
+      "expectedLemma": "créixer",
+      "expectedPrimary": "créixer"
+    },
+    {
+      "query": "出生",
+      "expectedLemma": "néixer",
+      "expectedPrimary": "néixer"
+    },
+    {
+      "query": "诞生",
+      "expectedLemma": "néixer",
+      "expectedPrimary": "néixer"
+    },
+    {
+      "query": "死亡",
+      "expectedLemma": "morir",
+      "expectedPrimary": "morir"
+    },
+    {
+      "query": "去世",
+      "expectedLemma": "morir",
+      "expectedPrimary": "morir"
+    },
+    {
+      "query": "居住",
+      "expectedLemma": "viure",
+      "expectedPrimary": "viure"
+    },
+    {
+      "query": "居留",
+      "expectedLemma": "viure",
+      "expectedPrimary": "viure"
+    },
+    {
+      "query": "存在",
+      "expectedLemma": "existir",
+      "expectedPrimary": "existir"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "发送",
+      "excludedLemma": "rebre"
+    },
+    {
+      "query": "接收",
+      "excludedLemma": "enviar"
+    },
+    {
+      "query": "点燃",
+      "excludedLemma": "apagar"
+    },
+    {
+      "query": "熄灭",
+      "excludedLemma": "encendre"
+    },
+    {
+      "query": "增加",
+      "excludedLemma": "disminuir"
+    },
+    {
+      "query": "减少",
+      "excludedLemma": "augmentar"
+    },
+    {
+      "query": "建造",
+      "excludedLemma": "destruir"
+    },
+    {
+      "query": "摧毁",
+      "excludedLemma": "construir"
+    },
+    {
+      "query": "邀请",
+      "excludedLemma": "visitar"
+    },
+    {
+      "query": "拜访",
+      "excludedLemma": "convidar"
+    }
+  ],
+  "unmatched": [
+    "不接纳",
+    "未递交",
+    "禁止开车的司机",
+    "没有打算归还",
+    "两次低语"
+  ]
+}

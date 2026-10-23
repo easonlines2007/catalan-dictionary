@@ -33,6 +33,27 @@ test("ordinary phrases, other target languages and nested questions stay untouch
     `${"学".repeat(25)}怎么说`]) assert.equal(extractChineseSearchTerm(query), undefined, query);
 });
 
+test("lookup prompts, language shorthand and common speaking requests preserve their full payload", () => {
+  for (const [query, expected] of [
+    ["查一下学校", "学校"], ["帮我查一下学校", "学校"], ["請幫我查一下學校", "学校"],
+    ["请问一下，查一下學校？", "学校"], ["查询：火车站", "火车站"], ["搜索：电话", "电话"],
+    ["帮忙搜一下公交车", "公交车"], ["查词：牛奶", "牛奶"],
+    ["学校的加泰语", "学校"], ["學校的加泰羅尼亞文", "学校"],
+    ["加泰语：学校", "学校"], ["加泰文：學校", "学校"], ["Catalan：学校", "学校"],
+    ["學校用加泰文怎麼講？", "学校"], ["学校用 Catalan 怎么说", "学校"],
+    ["學校的加泰隆尼亞語怎樣說？", "学校"], ["加泰语里学校怎么说", "学校"],
+    ["不可以怎么表达", "不可以"], ["加泰语如何表达：不用付钱", "不用付钱"],
+    ["查一下价格不高", "价格不高"], ["查一下二月", "二月"], ["查一下向别人借东西", "向别人借东西"],
+  ]) assert.equal(extractChineseSearchTerm(query), expected, query);
+  assert.deepEqual(extractChineseSearchIntent("帮我查一下表示高兴的名词"), { term: "高兴", preferredPartOfSpeech: "noun" });
+  assert.deepEqual(extractChineseSearchIntent("查一下形容不开心的词"), { term: "不开心", preferredPartOfSpeech: "adjective" });
+  for (const query of ["查询", "查一下", "帮我查一下", "搜寻", "查阅", "搜索引擎", "查询结果",
+    "加泰语：", "学校的英语", "学校用 English 怎么说",
+    "学校用 Spanish 怎么讲", "查询学校用西班牙语怎么说", "查询学校，电话", "查一下学校怎么说怎么说",
+    "查一下表示难过的英语词", `查一下${"学".repeat(25)}`])
+    assert.equal(extractChineseSearchTerm(query), undefined, query);
+});
+
 test("explicit meaning requests retain the entire description, including negation and quantity", () => {
   for (const [query, expected] of [
     ["表示价格不高的词", "价格不高"], ["形容有点难过的加泰语单词", "有点难过"],

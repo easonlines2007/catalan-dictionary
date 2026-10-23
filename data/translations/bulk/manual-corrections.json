@@ -12217,5 +12217,35 @@
     "evidence": [
       "https://dcvb.iec.cat/results.asp?word=inverecund"
     ]
+  },
+  {
+    "normalizedLemma": "llibreterament",
+    "sourceText": "libreramente",
+    "translationZh": "在书商业务方面",
+    "aliasesZh": [],
+    "reason": "Source-compared morphological interpretation of the committed Spanish adverb libreramente, based on librero (a bookseller). The primary reference identifies the base word, not a separately attested dictionary entry for this adverb. Keep a qualified adverbial explanation and no standalone search aliases. The previous Chinese meaning 自由地 was unrelated. Chinese wording is project-authored; machine-assisted status and exact source identity are retained.",
+    "evidence": [
+      "https://dle.rae.es/librero"
+    ]
+  },
+  {
+    "normalizedLemma": "vialment",
+    "sourceText": "vialmente",
+    "translationZh": "在道路交通方面",
+    "aliasesZh": [],
+    "reason": "Source-compared morphological interpretation of the committed Spanish adverb vialmente, based on vial (relating to roads). The primary reference identifies the base word, not a separately attested dictionary entry for this adverb. Keep a qualified adverbial explanation and no standalone search aliases. The previous Chinese meaning 正确地 was unrelated. Chinese wording is project-authored; machine-assisted status and exact source identity are retained.",
+    "evidence": [
+      "https://dle.rae.es/vial"
+    ]
+  },
+  {
+    "normalizedLemma": "viàriament",
+    "sourceText": "viariamente",
+    "translationZh": "在道路交通方面",
+    "aliasesZh": [],
+    "reason": "Source-compared morphological interpretation of the committed Spanish adverb viariamente, based on viario (relating to roads). The primary reference identifies the base word, not a separately attested dictionary entry for this adverb. Keep a qualified adverbial explanation and no standalone search aliases. The previous Chinese meaning 正确地 was unrelated. Chinese wording is project-authored; machine-assisted status and exact source identity are retained.",
+    "evidence": [
+      "https://dle.rae.es/viario"
+    ]
   }
 ]

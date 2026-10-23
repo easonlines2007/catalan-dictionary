@@ -1,0 +1,237 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Mixed comma/list clauses remain intact. Verify valid source-bound terms without unrelated example/object candidates.",
+  "cases": [
+    {
+      "query": "原则",
+      "expectedLemma": "principi",
+      "expectedPrimary": "principi"
+    },
+    {
+      "query": "原理",
+      "expectedLemma": "principi",
+      "expectedPrimary": "principi"
+    },
+    {
+      "query": "规范",
+      "expectedLemma": "norma",
+      "expectedPrimary": "norma"
+    },
+    {
+      "query": "准则",
+      "expectedLemma": "norma",
+      "expectedPrimary": "norma"
+    },
+    {
+      "query": "规章",
+      "expectedLemma": "norma",
+      "expectedPrimary": "norma"
+    },
+    {
+      "query": "岛",
+      "expectedLemma": "illa"
+    },
+    {
+      "query": "岛屿",
+      "expectedLemma": "illa",
+      "expectedPrimary": "illa"
+    },
+    {
+      "query": "爱好者",
+      "expectedLemma": "aficionat",
+      "expectedPrimary": "aficionat"
+    },
+    {
+      "query": "粉丝",
+      "expectedLemma": "aficionat",
+      "expectedPrimary": "aficionat"
+    },
+    {
+      "query": "球迷",
+      "expectedLemma": "aficionat",
+      "expectedPrimary": "aficionat"
+    },
+    {
+      "query": "处理",
+      "expectedLemma": "tractar",
+      "expectedPrimary": "tractar"
+    },
+    {
+      "query": "操作",
+      "expectedLemma": "manejar",
+      "expectedPrimary": "manejar"
+    },
+    {
+      "query": "操纵",
+      "expectedLemma": "manejar",
+      "expectedPrimary": "manejar"
+    },
+    {
+      "query": "管理",
+      "expectedLemma": "gestionar",
+      "expectedPrimary": "gestionar"
+    },
+    {
+      "query": "沮丧",
+      "expectedLemma": "moix",
+      "expectedPrimary": "moix"
+    },
+    {
+      "query": "悲伤",
+      "expectedLemma": "moix",
+      "expectedPrimary": "trist"
+    },
+    {
+      "query": "绷紧",
+      "expectedLemma": "tes",
+      "expectedPrimary": "tes"
+    },
+    {
+      "query": "紧绷",
+      "expectedLemma": "tes",
+      "expectedPrimary": "tes"
+    },
+    {
+      "query": "阴郁",
+      "expectedLemma": "fúnebre",
+      "expectedPrimary": "fúnebre"
+    },
+    {
+      "query": "虐待",
+      "expectedLemma": "malmenar",
+      "expectedPrimary": "malmenar"
+    },
+    {
+      "query": "糟蹋",
+      "expectedLemma": "malmenar",
+      "expectedPrimary": "malmenar"
+    },
+    {
+      "query": "遵从",
+      "expectedLemma": "conformar",
+      "expectedPrimary": "conformar"
+    },
+    {
+      "query": "遵守",
+      "expectedLemma": "conformar",
+      "expectedPrimary": "conformar"
+    },
+    {
+      "query": "符合",
+      "expectedLemma": "conformar",
+      "expectedPrimary": "conformar"
+    },
+    {
+      "query": "城市化",
+      "expectedLemma": "urbanitzar",
+      "expectedPrimary": "urbanitzar"
+    },
+    {
+      "query": "城镇化",
+      "expectedLemma": "urbanitzar",
+      "expectedPrimary": "urbanitzar"
+    },
+    {
+      "query": "都市化",
+      "expectedLemma": "urbanitzar",
+      "expectedPrimary": "urbanitzar"
+    },
+    {
+      "query": "处理",
+      "expectedLemma": "processar",
+      "expectedPrimary": "tractar"
+    },
+    {
+      "query": "加工",
+      "expectedLemma": "processar",
+      "expectedPrimary": "processar"
+    },
+    {
+      "query": "巴萨球迷",
+      "expectedLemma": "culer",
+      "expectedPrimary": "culer"
+    },
+    {
+      "query": "巴萨球迷",
+      "expectedLemma": "barcelonista",
+      "expectedPrimary": "culer"
+    },
+    {
+      "query": "足球运动员",
+      "expectedLemma": "futbolista",
+      "expectedPrimary": "futbolista"
+    },
+    {
+      "query": "足球选手",
+      "expectedLemma": "futbolista",
+      "expectedPrimary": "futbolista"
+    },
+    {
+      "query": "教练",
+      "expectedLemma": "entrenador",
+      "expectedPrimary": "entrenador"
+    },
+    {
+      "query": "渡鸦",
+      "expectedLemma": "corb",
+      "expectedPrimary": "corb"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "习俗",
+      "excludedLemma": "conformar",
+      "excludeCandidate": true
+    },
+    {
+      "query": "原则",
+      "excludedLemma": "conformar",
+      "excludeCandidate": true
+    },
+    {
+      "query": "规范",
+      "excludedLemma": "conformar",
+      "excludeCandidate": true
+    },
+    {
+      "query": "球迷",
+      "excludedLemma": "barcelonista",
+      "excludeCandidate": true
+    },
+    {
+      "query": "球迷",
+      "excludedLemma": "culer",
+      "excludeCandidate": true
+    },
+    {
+      "query": "岛屿",
+      "excludedLemma": "circumnavegar",
+      "excludeCandidate": true
+    },
+    {
+      "query": "肉",
+      "excludedLemma": "croqueta",
+      "excludeCandidate": true
+    },
+    {
+      "query": "渡鸦",
+      "excludedLemma": "cuclejar",
+      "excludeCandidate": true
+    },
+    {
+      "query": "处理",
+      "excludedLemma": "malmenar",
+      "excludeCandidate": true
+    },
+    {
+      "query": "操作",
+      "excludedLemma": "malmenar",
+      "excludeCandidate": true
+    }
+  ],
+  "unmatched": [
+    "三位球迷的教练",
+    "不肯遵从规范",
+    "不是渡鸦的叫声"
+  ]
+}

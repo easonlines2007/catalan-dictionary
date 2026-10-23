@@ -6,6 +6,50 @@ import test from "node:test";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
+test("alias priority belongs to the selected Chinese term and keeps alternative senses available", () => {
+  const script = `
+import sys,json,tempfile,pathlib
+sys.path.insert(0,sys.argv[1])
+from build_search import search_aliases,preferred_alias_terms,build_indexes
+records={'reply':[('wiktionary',{'d':{'en':['to reply']}})],'answer':[('wiktionary',{'d':{'en':['an answer']}})]}
+entries={'reply':{'r':1},'answer':{'r':2}}
+data={'baseDataVersion':'base','records':[
+ {'lemma':'reply','terms':['回答'],'preferred':True,'evidence':[{'layer':'wiktionary','field':'d.en','text':'to reply'}]},
+ {'lemma':'answer','terms':['答案','回答'],'preferredTerms':['答案'],'evidence':[{'layer':'wiktionary','field':'d.en','text':'an answer'}]}
+]}
+with tempfile.TemporaryDirectory() as directory:
+ p=pathlib.Path(directory)/'aliases.json'
+ p.write_text(json.dumps(data))
+ aliases=search_aliases(p,records,'base')
+ preferred={(r['lemma'],term) for r in data['records'] for term in preferred_alias_terms(r)}
+ indexes,_=build_indexes(records,entries,{},lambda x:x,lambda x:x,aliases,preferred)
+ reverse=dict(indexes['zh'])
+ assert reverse['回答'][0][0]=='reply'
+ assert reverse['答案'][0][0]=='answer'
+ assert reverse['答案'][0][3]==1
+ assert any(row[0]=='answer' and len(row)==3 for row in reverse['回答'])
+ for value in ('答案',None,['不存在'],['答案','答案'],[7]):
+  invalid=json.loads(json.dumps(data));invalid['records'][1]['preferredTerms']=value
+  p.write_text(json.dumps(invalid))
+  try: search_aliases(p,records,'base')
+  except ValueError: pass
+  else: raise AssertionError('Invalid term priority accepted: '+str(value))
+ invalid=json.loads(json.dumps(data));invalid['records'][1]['preferred']=True
+ p.write_text(json.dumps(invalid))
+ try: search_aliases(p,records,'base')
+ except ValueError: pass
+ else: raise AssertionError('Conflicting whole-lemma and term preference accepted')
+ for value in ('true',1,[],None):
+  invalid=json.loads(json.dumps(data));invalid['records'][1]['core']=value
+  p.write_text(json.dumps(invalid))
+  try: search_aliases(p,records,'base')
+  except ValueError: pass
+  else: raise AssertionError('Invalid core selection accepted: '+str(value))
+`;
+  const result = spawnSync("python3", ["-c", script, resolve(root, "scripts/dictionary")], { encoding: "utf8" });
+  assert.equal(result.status, 0, result.stderr);
+});
+
 test("Chinese reverse indexing preserves short synonyms without promoting contextual examples", () => {
   const script = `
 import sys
@@ -20,6 +64,22 @@ assert list(terms('由红色、黄色组成')) == ['由红色、黄色组成']
 assert list(terms('细微差别\\n修饰')) == ['细微差别','修饰']
 assert list(terms('你好！')) == ['你好']
 assert list(terms('注意：这是长句中的举例、说明。')) == []
+assert list(terms('使符合，遵守，符合某法律、原则、规范、习俗。')) == ['使符合，遵守，符合某法律、原则、规范、习俗']
+assert list(terms('与球队有关，作为球员、球迷、教练等。')) == ['与球队有关，作为球员、球迷、教练等']
+assert list(terms('，作为球员、球迷、教练等。')) == ['作为球员、球迷、教练等']
+assert list(terms('肉、鱼或豆类制成的面团球，裹上面粉后煎炸。')) == ['肉、鱼或豆类制成的面团球，裹上面粉后煎炸']
+assert list(terms('叫声,如乌鸦、渡鸦。')) == ['叫声,如乌鸦、渡鸦']
+assert list(terms('软（细腻，柔滑）、柔软')) == ['软（细腻，柔滑）','柔软']
+assert list(terms('颗粒，含盐、糖；糖果、甜食')) == ['颗粒，含盐、糖','糖果','甜食']
+assert list(terms('逐渐、快速且令人警觉的增加。')) == ['逐渐、快速且令人警觉的增加']
+assert list(terms('狼、狗及类似动物发出的带音调变化的哀鸣。')) == ['狼、狗及类似动物发出的带音调变化的哀鸣']
+assert list(terms('谷歌、苹果、脸书、亚马逊和微软五家科技公司的合称')) == ['谷歌、苹果、脸书、亚马逊和微软五家科技公司的合称']
+assert list(terms('柔软、温和的')) == ['柔软','温和的']
+assert list(terms('柔软、温和的（形容状态）')) == ['柔软','温和的（形容状态）']
+assert list(terms('精通型、magistral（大师或精通者的特征）')) == ['精通型','magistral（大师或精通者的特征）']
+assert list(terms('柔软、温和的〔说明〕')) == ['柔软','温和的〔说明〕']
+assert list(terms('温和、柔和的（方式（或其他语境）的说明）')) == ['温和','柔和的（方式（或其他语境）的说明）']
+assert list(terms('声音；狼、狗及类似动物发出的哀鸣')) == ['声音','狼、狗及类似动物发出的哀鸣']
 `;
   const result = spawnSync("python3", ["-c", script, resolve(root, "scripts/dictionary")], { encoding: "utf8" });
   assert.equal(result.status, 0, result.stderr);

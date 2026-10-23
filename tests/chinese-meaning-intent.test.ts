@@ -31,6 +31,15 @@ test("meaning requests retrieve real Catalan entries and suggestions with full p
       ["加泰语中形容体积小的单词", "体积小", "petit"],
       ["形容非常害羞的词", "非常害羞", "tímid"],
       ["表示二月的加泰语说法", "二月", "febrer"],
+      ["帮我查一下学校", "学校", "escola"],
+      ["学校的加泰语", "学校", "escola"],
+      ["加泰语：学校", "学校", "escola"],
+      ["學校用加泰文怎麼講？", "学校", "escola"],
+      ["学校用 Catalan 怎么说", "学校", "escola"],
+      ["查一下价格不高", "价格不高", "barat"],
+      ["查一下二月", "二月", "febrer"],
+      ["查一下向别人借东西", "向别人借东西", "manllevar"],
+      ["请帮我查询火车站", "火车站", "estació de tren"],
     ]) {
       for (const mode of ["auto", "zh"] as const) {
         const found = await lookupWord(query, mode);
@@ -47,7 +56,8 @@ test("meaning requests retrieve real Catalan entries and suggestions with full p
       }
     }
     for (const [query, payload] of [["表示不是很开心的词", "不是很开心"],
-      ["表示没有说不安全的词", "没有说不安全"], ["表示三十五个人的词", "三十五个人"]]) {
+      ["表示没有说不安全的词", "没有说不安全"], ["表示三十五个人的词", "三十五个人"],
+      ["查一下不是很开心", "不是很开心"], ["查一下三十五个人", "三十五个人"]]) {
       const found = await lookupWord(query, "auto");
       assert.equal(found.extractedQuery, payload);
       assert.equal(found.status, "not-found", query);

@@ -39,6 +39,14 @@ test("Spanish accents fold while ñ remains a spelling distinction", async () =>
   assert.equal((await matchSuggestions(rows, "nino", "es"))[0]?.kind, "fuzzy");
 });
 
+test("traditional-only catalogues still offer simplified previews for simplified input", async () => {
+  const rows: SuggestionRow[] = [["學校", "學校", "escola", 10], ["哀傷", "哀傷", "trist", 20]];
+  assert.equal((await matchSuggestions(rows, "学校", "zh"))[0]?.term, "学校");
+  assert.equal((await matchSuggestions(rows, "哀伤", "zh"))[0]?.term, "哀伤");
+  assert.equal((await matchSuggestions(rows, "學校", "zh"))[0]?.term, "學校");
+  assert.equal((await matchSuggestions(rows, "哀傷", "zh"))[0]?.term, "哀傷");
+});
+
 test("Chinese matching joins mixed scripts, accidental Han spaces and edge punctuation", async () => {
   assert.equal(chineseMatchingKey("「基礎设施？」"), "基础设施");
   assert.equal(chineseMatchingKey("图形 用戶界面"), "图形用户界面");

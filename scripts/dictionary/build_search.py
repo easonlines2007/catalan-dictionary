@@ -193,12 +193,14 @@ class ChineseConverter:
         return "".join(result)
 
 
+CHINESE_BRACKET_PAIRS = {"（": "）", "(": ")", "[": "]", "【": "】", "〔": "〕", "「": "」", "『": "』", "《": "》", "“": "”", "‘": "’"}
+
+
 def split_chinese_equivalents(text, separators):
-    pairs = {"（": "）", "(": ")", "[": "]", "【": "】", "「": "」", "『": "』", "《": "》", "“": "”", "‘": "’"}
     stack, current = [], []
     for char in text:
-        if char in pairs:
-            stack.append(pairs[char])
+        if char in CHINESE_BRACKET_PAIRS:
+            stack.append(CHINESE_BRACKET_PAIRS[char])
         elif stack and char == stack[-1]:
             stack.pop()
         if char in separators and not stack:
@@ -209,16 +211,41 @@ def split_chinese_equivalents(text, separators):
     yield "".join(current)
 
 
+def chinese_top_level_text(text):
+    """Mask parenthetical notes before detecting shared clause qualifiers."""
+    stack, result = [], []
+    for char in text:
+        if char in CHINESE_BRACKET_PAIRS:
+            stack.append(CHINESE_BRACKET_PAIRS[char])
+            result.append(" ")
+        elif stack:
+            if char == stack[-1]:
+                stack.pop()
+            result.append(" ")
+        else:
+            result.append(char)
+    return "".join(result)
+
+
 def short_chinese_terms(text):
     # Assess the complete clause BEFORE splitting list punctuation. A long
     # definition can enumerate examples (languages, vehicles, ingredients),
     # which are not independently valid translations of its headword.
     for value in split_chinese_equivalents(text, {"；", ";", "\n"}):
         value = re.sub(r"^[（(][^）)]{1,24}[）)]\s*", "", value.strip())
+        comma_clause = len(list(split_chinese_equivalents(value, {"，", ","}))) > 1
         value = value.strip(" ,，。.；;、！!？?")
         if not value or len(value) > 24 or not HAN.search(value) or re.search(r"[。！？!?：:]", value):
             continue
-        context = re.search(r"一种|用于|用来|例如|包括|包含|主要|基于|由.+组成|指的是|如.+等", value)
+        # A comma can introduce a qualification or a list of examples/objects.
+        # Splitting its later 、 items can turn "符合某法律、原则、习俗" into
+        # unrelated headwords. Parenthesized commas do not create this boundary.
+        # "逐渐、快速且令人警觉的增加" describes an increase, not the
+        # standalone adverb 逐渐. Likewise, lists of animals before "的叫声"
+        # describe a sound rather than naming each animal. Keep such ambiguous
+        # coordinated clauses whole; explicit aliases supply their headwords.
+        shared_qualifier = re.search(r"、[^、]*[且和与或及][^、]*的[^、]+$", chinese_top_level_text(value).rstrip())
+        context = comma_clause or shared_qualifier or re.search(r"一种|用于|用来|例如|包括|包含|主要|基于|由.+组成|指的是|如.+等", value)
         terms = [value] if context else split_chinese_equivalents(value, {"、"})
         for term in terms:
             term = term.strip(" ,，。.；;、")
@@ -402,6 +429,19 @@ def machine_overlays(path, records, entries, existing_overlays):
     return overlays, aliases, dict(counts)
 
 
+def preferred_alias_terms(item):
+    """Promote only the reviewed spelling/sense, not every alias of a lemma."""
+    if "preferredTerms" not in item:
+        return item["terms"] if item.get("preferred") is True else []
+    terms = item["preferredTerms"]
+    if (item.get("preferred") is True or not isinstance(terms, list)
+            or any(not isinstance(term, str) for term in terms)
+            or len(terms) != len(set(terms))
+            or not set(terms) <= set(item["terms"])):
+        raise ValueError(f"Chinese search aliases: invalid term preferences {item['lemma']}")
+    return terms
+
+
 def search_aliases(path, records, base_version):
     data = json.loads(path.read_text())
     if data["baseDataVersion"] != base_version:
@@ -411,6 +451,8 @@ def search_aliases(path, records, base_version):
         lemma = item["lemma"]
         if "preferred" in item and not isinstance(item["preferred"], bool):
             raise ValueError(f"Chinese search aliases: invalid preference {lemma}")
+        if "core" in item and not isinstance(item["core"], bool):
+            raise ValueError(f"Chinese search aliases: invalid core selection {lemma}")
         if lemma not in records or lemma in aliases or not item["evidence"]:
             raise ValueError(f"Chinese search aliases: invalid lemma/evidence {lemma}")
         for evidence in item["evidence"]:
@@ -427,8 +469,10 @@ def search_aliases(path, records, base_version):
                         values.append(value)
             if evidence["text"] not in values:
                 raise ValueError(f"Chinese search alias evidence differs from source packs: {lemma}")
-        if any(not isinstance(term, str) or not HAN.search(term) or len(term) > 24 for term in item["terms"]):
+        if (not isinstance(item["terms"], list) or not item["terms"]
+                or any(not isinstance(term, str) or not HAN.search(term) or len(term) > 24 for term in item["terms"])):
             raise ValueError(f"Chinese search aliases: invalid terms {lemma}")
+        preferred_alias_terms(item)
         aliases[lemma] = item["terms"]
     return aliases
 
@@ -613,9 +657,14 @@ def build(args):
     traditionalizer = ChineseConverter(args.root / "scripts/dictionary/vendor/opencc", "s2t")
     alias_path = args.root / "data/search/chinese-aliases.json"
     extra_aliases = search_aliases(alias_path, records, manifest["dataVersion"])
+    alias_records = json.loads(alias_path.read_text())["records"]
+    # Common phrases and pronoun forms can be absent from the base lemma-only
+    # frequency list. Include explicitly source-checked selections with their
+    # complete merged definitions and provenance in every core search asset.
+    core_lemmas.update(item["lemma"] for item in alias_records if item.get("core"))
     preferred_aliases = {(item["lemma"], chinese_key(simplifier(term)))
-                         for item in json.loads(alias_path.read_text())["records"] if item.get("preferred") is True
-                         for term in item["terms"]}
+                         for item in alias_records
+                         for term in preferred_alias_terms(item)}
     indexes, exclusions = build_indexes(records, entries, aliases, simplifier, traditionalizer, extra_aliases, preferred_aliases)
     semantic_rows, semantic_stats, semantic_signature = build_semantic(
         args.root / "data/search/chinese-semantic.json", records, entries,

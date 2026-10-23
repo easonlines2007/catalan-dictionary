@@ -1,0 +1,339 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Temporal adverbs and single-word synonyms. Match just now separately from merely, simultaneity from togetherness, and frequency adverbs before their adjective alternatives.",
+  "cases": [
+    {
+      "query": "最近",
+      "expectedLemma": "recentment",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "近日",
+      "expectedLemma": "recentment",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "近来",
+      "expectedLemma": "recentment",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "新近",
+      "expectedLemma": "recentment",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "最近",
+      "expectedLemma": "darrerament",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "近日",
+      "expectedLemma": "darrerament",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "近来",
+      "expectedLemma": "darrerament",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "最近",
+      "expectedLemma": "últimament",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "近日",
+      "expectedLemma": "últimament",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "近来",
+      "expectedLemma": "últimament",
+      "expectedPrimary": "recentment"
+    },
+    {
+      "query": "刚刚",
+      "expectedLemma": "ara mateix",
+      "expectedPrimary": "ara mateix"
+    },
+    {
+      "query": "刚才",
+      "expectedLemma": "ara mateix",
+      "expectedPrimary": "ara mateix"
+    },
+    {
+      "query": "方才",
+      "expectedLemma": "ara mateix",
+      "expectedPrimary": "ara mateix"
+    },
+    {
+      "query": "现在",
+      "expectedLemma": "ara mateix",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "此刻",
+      "expectedLemma": "ara mateix",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "同时",
+      "expectedLemma": "alhora",
+      "expectedPrimary": "alhora"
+    },
+    {
+      "query": "一齐",
+      "expectedLemma": "alhora",
+      "expectedPrimary": "alhora"
+    },
+    {
+      "query": "同时",
+      "expectedLemma": "simultàniament",
+      "expectedPrimary": "alhora"
+    },
+    {
+      "query": "同时地",
+      "expectedLemma": "simultàniament",
+      "expectedPrimary": "simultàniament"
+    },
+    {
+      "query": "同时",
+      "expectedLemma": "al mateix temps",
+      "expectedPrimary": "alhora"
+    },
+    {
+      "query": "同时",
+      "expectedLemma": "a la vegada",
+      "expectedPrimary": "alhora"
+    },
+    {
+      "query": "同时",
+      "expectedLemma": "ensems",
+      "expectedPrimary": "alhora"
+    },
+    {
+      "query": "往日",
+      "expectedLemma": "antany",
+      "expectedPrimary": "antany"
+    },
+    {
+      "query": "昔日",
+      "expectedLemma": "antany",
+      "expectedPrimary": "antany"
+    },
+    {
+      "query": "往昔",
+      "expectedLemma": "antany",
+      "expectedPrimary": "passat"
+    },
+    {
+      "query": "从前",
+      "expectedLemma": "antany",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "从前",
+      "expectedLemma": "antigament",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "往昔",
+      "expectedLemma": "antigament",
+      "expectedPrimary": "passat"
+    },
+    {
+      "query": "昔日",
+      "expectedLemma": "antigament",
+      "expectedPrimary": "antany"
+    },
+    {
+      "query": "今后",
+      "expectedLemma": "d'ara endavant",
+      "expectedPrimary": "d'ara endavant"
+    },
+    {
+      "query": "从今以后",
+      "expectedLemma": "d'ara endavant",
+      "expectedPrimary": "d'ara endavant"
+    },
+    {
+      "query": "从今往后",
+      "expectedLemma": "d'ara endavant",
+      "expectedPrimary": "d'ara endavant"
+    },
+    {
+      "query": "从此",
+      "expectedLemma": "des de llavors",
+      "expectedPrimary": "des de llavors"
+    },
+    {
+      "query": "自此",
+      "expectedLemma": "des de llavors",
+      "expectedPrimary": "des de llavors"
+    },
+    {
+      "query": "从那以后",
+      "expectedLemma": "des de llavors",
+      "expectedPrimary": "des de llavors"
+    },
+    {
+      "query": "每年",
+      "expectedLemma": "anualment",
+      "expectedPrimary": "anualment"
+    },
+    {
+      "query": "每月",
+      "expectedLemma": "mensualment",
+      "expectedPrimary": "mensualment"
+    },
+    {
+      "query": "按月",
+      "expectedLemma": "mensualment",
+      "expectedPrimary": "mensualment"
+    },
+    {
+      "query": "每周",
+      "expectedLemma": "setmanalment",
+      "expectedPrimary": "setmanalment"
+    },
+    {
+      "query": "按周",
+      "expectedLemma": "setmanalment",
+      "expectedPrimary": "setmanalment"
+    },
+    {
+      "query": "每日",
+      "expectedLemma": "diàriament",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "每天",
+      "expectedLemma": "diàriament",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "天天",
+      "expectedLemma": "diàriament",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "每日",
+      "expectedLemma": "quotidianament",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "每天",
+      "expectedLemma": "quotidianament",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "天天",
+      "expectedLemma": "quotidianament",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "前天",
+      "expectedLemma": "abans-d'ahir",
+      "expectedPrimary": "abans-d'ahir"
+    },
+    {
+      "query": "前日",
+      "expectedLemma": "abans-d'ahir",
+      "expectedPrimary": "abans-d'ahir"
+    },
+    {
+      "query": "今年",
+      "expectedLemma": "enguany",
+      "expectedPrimary": "enguany"
+    },
+    {
+      "query": "本年",
+      "expectedLemma": "enguany",
+      "expectedPrimary": "enguany"
+    },
+    {
+      "query": "与此同时",
+      "expectedLemma": "mentrestant",
+      "expectedPrimary": "mentrestant"
+    },
+    {
+      "query": "在此期间",
+      "expectedLemma": "mentrestant",
+      "expectedPrimary": "mentrestant"
+    },
+    {
+      "query": "随即",
+      "expectedLemma": "tot seguit",
+      "expectedPrimary": "tot seguit"
+    },
+    {
+      "query": "接着",
+      "expectedLemma": "tot seguit",
+      "expectedPrimary": "tot seguit"
+    },
+    {
+      "query": "立即",
+      "expectedLemma": "tot seguit",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "马上",
+      "expectedLemma": "tot seguit",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "始终",
+      "expectedLemma": "tothora",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "总是",
+      "expectedLemma": "tothora",
+      "expectedPrimary": "sempre"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "刚刚",
+      "excludedLemma": "simplement"
+    },
+    {
+      "query": "同时",
+      "excludedLemma": "junt"
+    },
+    {
+      "query": "每年",
+      "excludedLemma": "anual"
+    },
+    {
+      "query": "每月",
+      "excludedLemma": "mensual"
+    },
+    {
+      "query": "每周",
+      "excludedLemma": "setmanal"
+    },
+    {
+      "query": "每日",
+      "excludedLemma": "diari"
+    },
+    {
+      "query": "每天",
+      "excludedLemma": "diari"
+    },
+    {
+      "query": "随即",
+      "excludedLemma": "consegüentment"
+    },
+    {
+      "query": "往日",
+      "excludedLemma": "futur"
+    }
+  ],
+  "unmatched": [
+    "不是刚刚",
+    "并非同时",
+    "不是每月"
+  ]
+}

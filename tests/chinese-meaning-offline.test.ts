@@ -31,6 +31,14 @@ test("installed core meanings remain usable when the browser reports online but 
         ["体积小", "zh", "petit"], ["表示体积小的词", "auto", "petit"],
         ["形容不用付钱的词", "zh", "gratuït"],
         ["表示强壮的名词", "auto", "força"],
+        ["帮我查一下学校", "auto", "escola"], ["加泰文：學校", "zh", "escola"],
+        ["查一下表示强壮的名词", "auto", "força"],
+        ["为什么", "zh", "per què"], ["為什麼", "auto", "per què"],
+        ["因为", "zh", "perquè"], ["刚刚", "zh", "ara mateix"],
+        ["她", "zh", "ella"], ["她们", "zh", "elles"], ["他们", "zh", "ells"],
+        ["您", "zh", "vostè"], ["你们", "zh", "vosaltres"], ["别人", "zh", "altri"],
+        ["每月", "zh", "mensualment"], ["每周", "zh", "setmanalment"],
+        ["每天", "zh", "diàriament"], ["从此", "zh", "des de llavors"],
       ] as const) {
         const found = await lookupWord(query, language);
         assert.equal(found.status, "found", `${mode}: ${query}`);

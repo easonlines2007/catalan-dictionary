@@ -1,0 +1,1277 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared single-word adverbs and conjunctions. Preserve adjective and verb alternatives; separate occasional frequency from accidental occurrence and just-now from merely.",
+  "cases": [
+    {
+      "query": "通常",
+      "expectedLemma": "normalment",
+      "expectedPrimary": "normalment"
+    },
+    {
+      "query": "通常地",
+      "expectedLemma": "normalment",
+      "expectedPrimary": "normalment"
+    },
+    {
+      "query": "惯常",
+      "expectedLemma": "habitualment",
+      "expectedPrimary": "habitualment"
+    },
+    {
+      "query": "习惯性地",
+      "expectedLemma": "habitualment",
+      "expectedPrimary": "habitualment"
+    },
+    {
+      "query": "通常",
+      "expectedLemma": "usualment",
+      "expectedPrimary": "normalment"
+    },
+    {
+      "query": "通常地",
+      "expectedLemma": "usualment",
+      "expectedPrimary": "normalment"
+    },
+    {
+      "query": "经常",
+      "expectedLemma": "sovint",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "常常",
+      "expectedLemma": "sovint",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "时常",
+      "expectedLemma": "sovint",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "常",
+      "expectedLemma": "sovint"
+    },
+    {
+      "query": "频繁",
+      "expectedLemma": "freqüentment",
+      "expectedPrimary": "freqüentment"
+    },
+    {
+      "query": "频频",
+      "expectedLemma": "freqüentment",
+      "expectedPrimary": "freqüentment"
+    },
+    {
+      "query": "经常",
+      "expectedLemma": "freqüentment",
+      "expectedPrimary": "sovint"
+    },
+    {
+      "query": "定期",
+      "expectedLemma": "regularment",
+      "expectedPrimary": "regularment"
+    },
+    {
+      "query": "罕有",
+      "expectedLemma": "rarament",
+      "expectedPrimary": "rarament"
+    },
+    {
+      "query": "甚少",
+      "expectedLemma": "rarament",
+      "expectedPrimary": "rarament"
+    },
+    {
+      "query": "鲜少",
+      "expectedLemma": "rarament",
+      "expectedPrimary": "rarament"
+    },
+    {
+      "query": "偶尔",
+      "expectedLemma": "ocasionalment",
+      "expectedPrimary": "ocasionalment"
+    },
+    {
+      "query": "偶然",
+      "expectedLemma": "ocasionalment",
+      "expectedPrimary": "accidentalment"
+    },
+    {
+      "query": "定期",
+      "expectedLemma": "periòdicament",
+      "expectedPrimary": "regularment"
+    },
+    {
+      "query": "周期性地",
+      "expectedLemma": "periòdicament",
+      "expectedPrimary": "periòdicament"
+    },
+    {
+      "query": "不断",
+      "expectedLemma": "constantment",
+      "expectedPrimary": "constantment"
+    },
+    {
+      "query": "不停",
+      "expectedLemma": "constantment",
+      "expectedPrimary": "constantment"
+    },
+    {
+      "query": "连续",
+      "expectedLemma": "contínuament",
+      "expectedPrimary": "contínuament"
+    },
+    {
+      "query": "持续",
+      "expectedLemma": "contínuament",
+      "expectedPrimary": "continuar"
+    },
+    {
+      "query": "接连",
+      "expectedLemma": "contínuament",
+      "expectedPrimary": "contínuament"
+    },
+    {
+      "query": "一直",
+      "expectedLemma": "sempre",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "始终",
+      "expectedLemma": "sempre",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "总是",
+      "expectedLemma": "sempre",
+      "expectedPrimary": "sempre"
+    },
+    {
+      "query": "仍然",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "依然",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "仍旧",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "仍",
+      "expectedLemma": "encara"
+    },
+    {
+      "query": "还",
+      "expectedLemma": "encara"
+    },
+    {
+      "query": "立即",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "立刻",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "即刻",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "马上",
+      "expectedLemma": "immediatament",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "突然",
+      "expectedLemma": "sobtadament",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "忽然",
+      "expectedLemma": "sobtadament",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "骤然",
+      "expectedLemma": "sobtadament",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "猛然",
+      "expectedLemma": "sobtadament",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "意外地",
+      "expectedLemma": "inesperadament",
+      "expectedPrimary": "inesperadament"
+    },
+    {
+      "query": "出乎意料",
+      "expectedLemma": "inesperadament",
+      "expectedPrimary": "inesperadament"
+    },
+    {
+      "query": "很可能",
+      "expectedLemma": "probablement",
+      "expectedPrimary": "probable"
+    },
+    {
+      "query": "可能",
+      "expectedLemma": "possiblement",
+      "expectedPrimary": "possible"
+    },
+    {
+      "query": "或许",
+      "expectedLemma": "possiblement",
+      "expectedPrimary": "potser"
+    },
+    {
+      "query": "或许",
+      "expectedLemma": "potser",
+      "expectedPrimary": "potser"
+    },
+    {
+      "query": "也许",
+      "expectedLemma": "potser",
+      "expectedPrimary": "potser"
+    },
+    {
+      "query": "兴许",
+      "expectedLemma": "potser",
+      "expectedPrimary": "potser"
+    },
+    {
+      "query": "确实",
+      "expectedLemma": "realment",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "真的",
+      "expectedLemma": "realment",
+      "expectedPrimary": "real"
+    },
+    {
+      "query": "真正地",
+      "expectedLemma": "veritablement",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "确实",
+      "expectedLemma": "veritablement",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "确实",
+      "expectedLemma": "certament",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "的确",
+      "expectedLemma": "certament",
+      "expectedPrimary": "certament"
+    },
+    {
+      "query": "实际上",
+      "expectedLemma": "efectivament",
+      "expectedPrimary": "efectivament"
+    },
+    {
+      "query": "事实上",
+      "expectedLemma": "efectivament",
+      "expectedPrimary": "efectivament"
+    },
+    {
+      "query": "的确",
+      "expectedLemma": "efectivament",
+      "expectedPrimary": "certament"
+    },
+    {
+      "query": "确实",
+      "expectedLemma": "efectivament",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "肯定",
+      "expectedLemma": "segurament",
+      "expectedPrimary": "segur"
+    },
+    {
+      "query": "确实",
+      "expectedLemma": "segurament",
+      "expectedPrimary": "realment"
+    },
+    {
+      "query": "必然",
+      "expectedLemma": "necessàriament",
+      "expectedPrimary": "necessàriament"
+    },
+    {
+      "query": "强制性地",
+      "expectedLemma": "obligatòriament",
+      "expectedPrimary": "obligatòriament"
+    },
+    {
+      "query": "强制地",
+      "expectedLemma": "obligatòriament",
+      "expectedPrimary": "obligatòriament"
+    },
+    {
+      "query": "自愿",
+      "expectedLemma": "voluntàriament",
+      "expectedPrimary": "voluntàriament"
+    },
+    {
+      "query": "偶然",
+      "expectedLemma": "accidentalment",
+      "expectedPrimary": "accidentalment"
+    },
+    {
+      "query": "无意中",
+      "expectedLemma": "accidentalment",
+      "expectedPrimary": "accidentalment"
+    },
+    {
+      "query": "意外地",
+      "expectedLemma": "accidentalment",
+      "expectedPrimary": "inesperadament"
+    },
+    {
+      "query": "故意",
+      "expectedLemma": "expressament",
+      "expectedPrimary": "expressament"
+    },
+    {
+      "query": "特意",
+      "expectedLemma": "expressament",
+      "expectedPrimary": "expressament"
+    },
+    {
+      "query": "有意",
+      "expectedLemma": "expressament",
+      "expectedPrimary": "expressament"
+    },
+    {
+      "query": "明确地",
+      "expectedLemma": "expressament",
+      "expectedPrimary": "expressament"
+    },
+    {
+      "query": "故意",
+      "expectedLemma": "deliberadament",
+      "expectedPrimary": "expressament"
+    },
+    {
+      "query": "刻意",
+      "expectedLemma": "deliberadament",
+      "expectedPrimary": "deliberadament"
+    },
+    {
+      "query": "蓄意",
+      "expectedLemma": "deliberadament",
+      "expectedPrimary": "deliberadament"
+    },
+    {
+      "query": "尤其",
+      "expectedLemma": "especialment",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "格外",
+      "expectedLemma": "especialment",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "特别",
+      "expectedLemma": "especialment",
+      "expectedPrimary": "especial"
+    },
+    {
+      "query": "尤其",
+      "expectedLemma": "particularment",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "特别",
+      "expectedLemma": "particularment",
+      "expectedPrimary": "especial"
+    },
+    {
+      "query": "主要",
+      "expectedLemma": "principalment",
+      "expectedPrimary": "principal"
+    },
+    {
+      "query": "主要地",
+      "expectedLemma": "principalment",
+      "expectedPrimary": "principalment"
+    },
+    {
+      "query": "大多",
+      "expectedLemma": "principalment",
+      "expectedPrimary": "principalment"
+    },
+    {
+      "query": "大部分",
+      "expectedLemma": "principalment",
+      "expectedPrimary": "principalment"
+    },
+    {
+      "query": "主要",
+      "expectedLemma": "majoritàriament",
+      "expectedPrimary": "principal"
+    },
+    {
+      "query": "大多",
+      "expectedLemma": "majoritàriament",
+      "expectedPrimary": "principalment"
+    },
+    {
+      "query": "大部分",
+      "expectedLemma": "majoritàriament",
+      "expectedPrimary": "principalment"
+    },
+    {
+      "query": "基本上",
+      "expectedLemma": "bàsicament",
+      "expectedPrimary": "bàsicament"
+    },
+    {
+      "query": "大体上",
+      "expectedLemma": "bàsicament",
+      "expectedPrimary": "bàsicament"
+    },
+    {
+      "query": "根本上",
+      "expectedLemma": "fonamentalment",
+      "expectedPrimary": "fonamentalment"
+    },
+    {
+      "query": "基本上",
+      "expectedLemma": "fonamentalment",
+      "expectedPrimary": "bàsicament"
+    },
+    {
+      "query": "基本上",
+      "expectedLemma": "essencialment",
+      "expectedPrimary": "bàsicament"
+    },
+    {
+      "query": "大体上",
+      "expectedLemma": "essencialment",
+      "expectedPrimary": "bàsicament"
+    },
+    {
+      "query": "几乎",
+      "expectedLemma": "gairebé",
+      "expectedPrimary": "gairebé"
+    },
+    {
+      "query": "差点",
+      "expectedLemma": "gairebé",
+      "expectedPrimary": "gairebé"
+    },
+    {
+      "query": "将近",
+      "expectedLemma": "gairebé",
+      "expectedPrimary": "gairebé"
+    },
+    {
+      "query": "大约",
+      "expectedLemma": "aproximadament",
+      "expectedPrimary": "aproximadament"
+    },
+    {
+      "query": "大概",
+      "expectedLemma": "aproximadament",
+      "expectedPrimary": "aproximadament"
+    },
+    {
+      "query": "约莫",
+      "expectedLemma": "aproximadament",
+      "expectedPrimary": "aproximadament"
+    },
+    {
+      "query": "完全",
+      "expectedLemma": "completament",
+      "expectedPrimary": "completament"
+    },
+    {
+      "query": "全然",
+      "expectedLemma": "completament",
+      "expectedPrimary": "completament"
+    },
+    {
+      "query": "彻底",
+      "expectedLemma": "completament",
+      "expectedPrimary": "completament"
+    },
+    {
+      "query": "完全",
+      "expectedLemma": "totalment",
+      "expectedPrimary": "completament"
+    },
+    {
+      "query": "全然",
+      "expectedLemma": "totalment",
+      "expectedPrimary": "completament"
+    },
+    {
+      "query": "绝对",
+      "expectedLemma": "absolutament",
+      "expectedPrimary": "absolutament"
+    },
+    {
+      "query": "完全",
+      "expectedLemma": "absolutament",
+      "expectedPrimary": "completament"
+    },
+    {
+      "query": "部分地",
+      "expectedLemma": "parcialment",
+      "expectedPrimary": "parcialment"
+    },
+    {
+      "query": "局部地",
+      "expectedLemma": "parcialment",
+      "expectedPrimary": "parcialment"
+    },
+    {
+      "query": "相对",
+      "expectedLemma": "relativament",
+      "expectedPrimary": "relativament"
+    },
+    {
+      "query": "相对地",
+      "expectedLemma": "relativament",
+      "expectedPrimary": "relativament"
+    },
+    {
+      "query": "共同",
+      "expectedLemma": "conjuntament",
+      "expectedPrimary": "conjuntament"
+    },
+    {
+      "query": "联合地",
+      "expectedLemma": "conjuntament",
+      "expectedPrimary": "conjuntament"
+    },
+    {
+      "query": "分别",
+      "expectedLemma": "respectivament",
+      "expectedPrimary": "respectivament"
+    },
+    {
+      "query": "分别",
+      "expectedLemma": "separadament",
+      "expectedPrimary": "respectivament"
+    },
+    {
+      "query": "单独",
+      "expectedLemma": "separadament",
+      "expectedPrimary": "sol"
+    },
+    {
+      "query": "同样",
+      "expectedLemma": "igualment",
+      "expectedPrimary": "igualment"
+    },
+    {
+      "query": "一样",
+      "expectedLemma": "igualment",
+      "expectedPrimary": "igual"
+    },
+    {
+      "query": "也",
+      "expectedLemma": "també"
+    },
+    {
+      "query": "亦",
+      "expectedLemma": "també"
+    },
+    {
+      "query": "还",
+      "expectedLemma": "també"
+    },
+    {
+      "query": "仅仅",
+      "expectedLemma": "únicament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "只是",
+      "expectedLemma": "únicament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "唯独",
+      "expectedLemma": "únicament",
+      "expectedPrimary": "únicament"
+    },
+    {
+      "query": "仅仅",
+      "expectedLemma": "solament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "只是",
+      "expectedLemma": "solament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "只有",
+      "expectedLemma": "solament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "仅仅",
+      "expectedLemma": "només",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "只是",
+      "expectedLemma": "només",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "只有",
+      "expectedLemma": "només",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "仅",
+      "expectedLemma": "només"
+    },
+    {
+      "query": "只是",
+      "expectedLemma": "simplement",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "仅仅",
+      "expectedLemma": "simplement",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "仅仅",
+      "expectedLemma": "merament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "只是",
+      "expectedLemma": "merament",
+      "expectedPrimary": "només"
+    },
+    {
+      "query": "恰恰",
+      "expectedLemma": "precisament",
+      "expectedPrimary": "precisament"
+    },
+    {
+      "query": "恰好",
+      "expectedLemma": "precisament",
+      "expectedPrimary": "exactament"
+    },
+    {
+      "query": "正好",
+      "expectedLemma": "precisament",
+      "expectedPrimary": "precisament"
+    },
+    {
+      "query": "正好",
+      "expectedLemma": "justament",
+      "expectedPrimary": "precisament"
+    },
+    {
+      "query": "恰好",
+      "expectedLemma": "justament",
+      "expectedPrimary": "exactament"
+    },
+    {
+      "query": "恰恰",
+      "expectedLemma": "justament",
+      "expectedPrimary": "precisament"
+    },
+    {
+      "query": "直接",
+      "expectedLemma": "directament",
+      "expectedPrimary": "directament"
+    },
+    {
+      "query": "径直",
+      "expectedLemma": "directament",
+      "expectedPrimary": "directament"
+    },
+    {
+      "query": "间接",
+      "expectedLemma": "indirectament",
+      "expectedPrimary": "indirectament"
+    },
+    {
+      "query": "间接地",
+      "expectedLemma": "indirectament",
+      "expectedPrimary": "indirectament"
+    },
+    {
+      "query": "终于",
+      "expectedLemma": "finalment",
+      "expectedPrimary": "finalment"
+    },
+    {
+      "query": "最终",
+      "expectedLemma": "finalment",
+      "expectedPrimary": "finalment"
+    },
+    {
+      "query": "终究",
+      "expectedLemma": "finalment",
+      "expectedPrimary": "finalment"
+    },
+    {
+      "query": "逐渐",
+      "expectedLemma": "gradualment",
+      "expectedPrimary": "gradualment"
+    },
+    {
+      "query": "渐渐",
+      "expectedLemma": "gradualment",
+      "expectedPrimary": "gradualment"
+    },
+    {
+      "query": "渐次",
+      "expectedLemma": "gradualment",
+      "expectedPrimary": "gradualment"
+    },
+    {
+      "query": "逐步",
+      "expectedLemma": "progressivament",
+      "expectedPrimary": "progressivament"
+    },
+    {
+      "query": "渐进地",
+      "expectedLemma": "progressivament",
+      "expectedPrimary": "progressivament"
+    },
+    {
+      "query": "慢慢",
+      "expectedLemma": "lentament",
+      "expectedPrimary": "lentament"
+    },
+    {
+      "query": "缓慢",
+      "expectedLemma": "lentament",
+      "expectedPrimary": "lent"
+    },
+    {
+      "query": "缓缓",
+      "expectedLemma": "lentament",
+      "expectedPrimary": "lentament"
+    },
+    {
+      "query": "迅速",
+      "expectedLemma": "ràpidament",
+      "expectedPrimary": "ràpid"
+    },
+    {
+      "query": "快速",
+      "expectedLemma": "ràpidament",
+      "expectedPrimary": "ràpid"
+    },
+    {
+      "query": "飞快",
+      "expectedLemma": "ràpidament",
+      "expectedPrimary": "ràpid"
+    },
+    {
+      "query": "轻易",
+      "expectedLemma": "fàcilment",
+      "expectedPrimary": "fàcil"
+    },
+    {
+      "query": "容易地",
+      "expectedLemma": "fàcilment",
+      "expectedPrimary": "fàcilment"
+    },
+    {
+      "query": "轻松地",
+      "expectedLemma": "fàcilment",
+      "expectedPrimary": "fàcilment"
+    },
+    {
+      "query": "艰难地",
+      "expectedLemma": "difícilment",
+      "expectedPrimary": "difícilment"
+    },
+    {
+      "query": "困难地",
+      "expectedLemma": "difícilment",
+      "expectedPrimary": "difícilment"
+    },
+    {
+      "query": "自由地",
+      "expectedLemma": "lliurement",
+      "expectedPrimary": "lliurement"
+    },
+    {
+      "query": "自在地",
+      "expectedLemma": "lliurement",
+      "expectedPrimary": "lliurement"
+    },
+    {
+      "query": "无声地",
+      "expectedLemma": "silenciosament",
+      "expectedPrimary": "silenciosament"
+    },
+    {
+      "query": "静悄悄",
+      "expectedLemma": "silenciosament",
+      "expectedPrimary": "silenciós"
+    },
+    {
+      "query": "平静地",
+      "expectedLemma": "tranquil·lament",
+      "expectedPrimary": "tranquil·lament"
+    },
+    {
+      "query": "镇定地",
+      "expectedLemma": "tranquil·lament",
+      "expectedPrimary": "tranquil·lament"
+    },
+    {
+      "query": "安静地",
+      "expectedLemma": "tranquil·lament",
+      "expectedPrimary": "tranquil·lament"
+    },
+    {
+      "query": "专心地",
+      "expectedLemma": "atentament",
+      "expectedPrimary": "atentament"
+    },
+    {
+      "query": "专注地",
+      "expectedLemma": "atentament",
+      "expectedPrimary": "atentament"
+    },
+    {
+      "query": "留心地",
+      "expectedLemma": "atentament",
+      "expectedPrimary": "atentament"
+    },
+    {
+      "query": "清晰地",
+      "expectedLemma": "clarament",
+      "expectedPrimary": "clarament"
+    },
+    {
+      "query": "清楚地",
+      "expectedLemma": "clarament",
+      "expectedPrimary": "clarament"
+    },
+    {
+      "query": "明确地",
+      "expectedLemma": "clarament",
+      "expectedPrimary": "expressament"
+    },
+    {
+      "query": "正确地",
+      "expectedLemma": "correctament",
+      "expectedPrimary": "correctament"
+    },
+    {
+      "query": "准确地",
+      "expectedLemma": "correctament",
+      "expectedPrimary": "exactament"
+    },
+    {
+      "query": "错误地",
+      "expectedLemma": "erròniament",
+      "expectedPrimary": "erròniament"
+    },
+    {
+      "query": "不正确地",
+      "expectedLemma": "erròniament",
+      "expectedPrimary": "erròniament"
+    },
+    {
+      "query": "随机",
+      "expectedLemma": "aleatòriament",
+      "expectedPrimary": "aleatòriament"
+    },
+    {
+      "query": "随机地",
+      "expectedLemma": "aleatòriament",
+      "expectedPrimary": "aleatòriament"
+    },
+    {
+      "query": "手动",
+      "expectedLemma": "manualment",
+      "expectedPrimary": "manualment"
+    },
+    {
+      "query": "人工地",
+      "expectedLemma": "manualment",
+      "expectedPrimary": "manualment"
+    },
+    {
+      "query": "自动",
+      "expectedLemma": "automàticament",
+      "expectedPrimary": "automàticament"
+    },
+    {
+      "query": "自动地",
+      "expectedLemma": "automàticament",
+      "expectedPrimary": "automàticament"
+    },
+    {
+      "query": "目前",
+      "expectedLemma": "actualment",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "当前",
+      "expectedLemma": "actualment",
+      "expectedPrimary": "present"
+    },
+    {
+      "query": "现今",
+      "expectedLemma": "actualment",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "事先",
+      "expectedLemma": "prèviament",
+      "expectedPrimary": "prèviament"
+    },
+    {
+      "query": "预先",
+      "expectedLemma": "prèviament",
+      "expectedPrimary": "prèviament"
+    },
+    {
+      "query": "先前",
+      "expectedLemma": "prèviament",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "随后",
+      "expectedLemma": "posteriorment",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "后来",
+      "expectedLemma": "posteriorment",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "接连",
+      "expectedLemma": "successivament",
+      "expectedPrimary": "contínuament"
+    },
+    {
+      "query": "相继",
+      "expectedLemma": "successivament",
+      "expectedPrimary": "successivament"
+    },
+    {
+      "query": "先后",
+      "expectedLemma": "successivament",
+      "expectedPrimary": "successivament"
+    },
+    {
+      "query": "所以",
+      "expectedLemma": "doncs",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "因而",
+      "expectedLemma": "doncs",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "因此",
+      "expectedLemma": "doncs",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "然而",
+      "expectedLemma": "tanmateix",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "不过",
+      "expectedLemma": "tanmateix",
+      "expectedPrimary": "tanmateix"
+    },
+    {
+      "query": "可是",
+      "expectedLemma": "tanmateix",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "尽管",
+      "expectedLemma": "malgrat",
+      "expectedPrimary": "malgrat"
+    },
+    {
+      "query": "虽然",
+      "expectedLemma": "malgrat",
+      "expectedPrimary": "malgrat"
+    },
+    {
+      "query": "突然",
+      "expectedLemma": "de sobte",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "忽然",
+      "expectedLemma": "de sobte",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "猛然",
+      "expectedLemma": "de sobte",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "骤然",
+      "expectedLemma": "de sobte",
+      "expectedPrimary": "sobtadament"
+    },
+    {
+      "query": "立刻",
+      "expectedLemma": "de seguida",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "立即",
+      "expectedLemma": "de seguida",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "即刻",
+      "expectedLemma": "de seguida",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "马上",
+      "expectedLemma": "de seguida",
+      "expectedPrimary": "immediatament"
+    },
+    {
+      "query": "再次",
+      "expectedLemma": "de nou",
+      "expectedPrimary": "de nou"
+    },
+    {
+      "query": "重新",
+      "expectedLemma": "de nou",
+      "expectedPrimary": "de nou"
+    },
+    {
+      "query": "又",
+      "expectedLemma": "de nou"
+    },
+    {
+      "query": "再",
+      "expectedLemma": "de nou"
+    },
+    {
+      "query": "逐渐",
+      "expectedLemma": "a poc a poc",
+      "expectedPrimary": "gradualment"
+    },
+    {
+      "query": "逐步",
+      "expectedLemma": "a poc a poc",
+      "expectedPrimary": "progressivament"
+    },
+    {
+      "query": "然而",
+      "expectedLemma": "en canvi",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "不过",
+      "expectedLemma": "en canvi",
+      "expectedPrimary": "tanmateix"
+    },
+    {
+      "query": "反而",
+      "expectedLemma": "en canvi",
+      "expectedPrimary": "en canvi"
+    },
+    {
+      "query": "此外",
+      "expectedLemma": "a més",
+      "expectedPrimary": "a més"
+    },
+    {
+      "query": "而且",
+      "expectedLemma": "a més",
+      "expectedPrimary": "a més"
+    },
+    {
+      "query": "另外",
+      "expectedLemma": "a més",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "况且",
+      "expectedLemma": "a més",
+      "expectedPrimary": "a més"
+    },
+    {
+      "query": "再者",
+      "expectedLemma": "a més",
+      "expectedPrimary": "a més"
+    },
+    {
+      "query": "其实",
+      "expectedLemma": "en realitat",
+      "expectedPrimary": "en realitat"
+    },
+    {
+      "query": "事实上",
+      "expectedLemma": "en realitat",
+      "expectedPrimary": "efectivament"
+    },
+    {
+      "query": "实际上",
+      "expectedLemma": "en realitat",
+      "expectedPrimary": "efectivament"
+    },
+    {
+      "query": "因此",
+      "expectedLemma": "per tant",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "因而",
+      "expectedLemma": "per tant",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "所以",
+      "expectedLemma": "per tant",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "即便如此",
+      "expectedLemma": "tot i així",
+      "expectedPrimary": "tot i així"
+    },
+    {
+      "query": "即使如此",
+      "expectedLemma": "tot i així",
+      "expectedPrimary": "tot i així"
+    },
+    {
+      "query": "至少",
+      "expectedLemma": "com a mínim",
+      "expectedPrimary": "almenys"
+    },
+    {
+      "query": "起码",
+      "expectedLemma": "com a mínim",
+      "expectedPrimary": "almenys"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "偶尔",
+      "excludedLemma": "accidentalment"
+    },
+    {
+      "query": "偶然",
+      "excludedLemma": "ocasionalment"
+    },
+    {
+      "query": "故意",
+      "excludedLemma": "accidentalment"
+    },
+    {
+      "query": "无意中",
+      "excludedLemma": "deliberadament"
+    },
+    {
+      "query": "只是",
+      "excludedLemma": "ara mateix"
+    },
+    {
+      "query": "逐渐",
+      "excludedLemma": "escalada",
+      "excludeCandidate": true
+    },
+    {
+      "query": "正确地",
+      "excludedLemma": "vialment",
+      "excludeCandidate": true
+    },
+    {
+      "query": "正确地",
+      "excludedLemma": "viàriament",
+      "excludeCandidate": true
+    },
+    {
+      "query": "自由地",
+      "excludedLemma": "llibreterament",
+      "excludeCandidate": true
+    },
+    {
+      "query": "直接",
+      "excludedLemma": "indirectament"
+    },
+    {
+      "query": "间接",
+      "excludedLemma": "directament"
+    },
+    {
+      "query": "再次",
+      "excludedLemma": "tornar"
+    },
+    {
+      "query": "苹果",
+      "excludedLemma": "gafam",
+      "excludeCandidate": true
+    },
+    {
+      "query": "狼",
+      "excludedLemma": "udol",
+      "excludeCandidate": true
+    },
+    {
+      "query": "狼",
+      "excludedLemma": "aú",
+      "excludeCandidate": true
+    },
+    {
+      "query": "狗",
+      "excludedLemma": "udol",
+      "excludeCandidate": true
+    },
+    {
+      "query": "老鼠",
+      "excludedLemma": "cri",
+      "excludeCandidate": true
+    },
+    {
+      "query": "鸽子",
+      "excludedLemma": "parrup",
+      "excludeCandidate": true
+    }
+  ],
+  "unmatched": [
+    "不是偶尔",
+    "并非故意",
+    "不太轻易",
+    "两次不断"
+  ]
+}

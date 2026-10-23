@@ -1,0 +1,601 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Interrogatives and pronouns with source-verified lexical synonyms; distinguish per què questions from perquè causality, people from objects and formal from ordinary second-person pronouns.",
+  "cases": [
+    {
+      "query": "谁",
+      "expectedLemma": "qui",
+      "expectedPrimary": "qui"
+    },
+    {
+      "query": "哪位",
+      "expectedLemma": "qui",
+      "expectedPrimary": "qui"
+    },
+    {
+      "query": "何人",
+      "expectedLemma": "qui",
+      "expectedPrimary": "qui"
+    },
+    {
+      "query": "什么",
+      "expectedLemma": "què",
+      "expectedPrimary": "què"
+    },
+    {
+      "query": "啥",
+      "expectedLemma": "què",
+      "expectedPrimary": "què"
+    },
+    {
+      "query": "何物",
+      "expectedLemma": "què",
+      "expectedPrimary": "què"
+    },
+    {
+      "query": "怎么",
+      "expectedLemma": "com",
+      "expectedPrimary": "com"
+    },
+    {
+      "query": "怎样",
+      "expectedLemma": "com",
+      "expectedPrimary": "com"
+    },
+    {
+      "query": "如何",
+      "expectedLemma": "com",
+      "expectedPrimary": "com"
+    },
+    {
+      "query": "咋",
+      "expectedLemma": "com",
+      "expectedPrimary": "com"
+    },
+    {
+      "query": "怎么样",
+      "expectedLemma": "com",
+      "expectedPrimary": "com"
+    },
+    {
+      "query": "何时",
+      "expectedLemma": "quan",
+      "expectedPrimary": "quan"
+    },
+    {
+      "query": "什么时候",
+      "expectedLemma": "quan",
+      "expectedPrimary": "quan"
+    },
+    {
+      "query": "几时",
+      "expectedLemma": "quan",
+      "expectedPrimary": "quan"
+    },
+    {
+      "query": "哪里",
+      "expectedLemma": "on",
+      "expectedPrimary": "on"
+    },
+    {
+      "query": "哪儿",
+      "expectedLemma": "on",
+      "expectedPrimary": "on"
+    },
+    {
+      "query": "何处",
+      "expectedLemma": "on",
+      "expectedPrimary": "on"
+    },
+    {
+      "query": "多少",
+      "expectedLemma": "quant",
+      "expectedPrimary": "quant"
+    },
+    {
+      "query": "几个",
+      "expectedLemma": "quant",
+      "expectedPrimary": "quant"
+    },
+    {
+      "query": "哪个",
+      "expectedLemma": "quin",
+      "expectedPrimary": "quin"
+    },
+    {
+      "query": "哪一个",
+      "expectedLemma": "quin",
+      "expectedPrimary": "quin"
+    },
+    {
+      "query": "为什么",
+      "expectedLemma": "per què",
+      "expectedPrimary": "per què"
+    },
+    {
+      "query": "为何",
+      "expectedLemma": "per què",
+      "expectedPrimary": "per què"
+    },
+    {
+      "query": "为啥",
+      "expectedLemma": "per què",
+      "expectedPrimary": "per què"
+    },
+    {
+      "query": "因为",
+      "expectedLemma": "perquè",
+      "expectedPrimary": "perquè"
+    },
+    {
+      "query": "有人",
+      "expectedLemma": "algú",
+      "expectedPrimary": "algú"
+    },
+    {
+      "query": "某人",
+      "expectedLemma": "algú",
+      "expectedPrimary": "algú"
+    },
+    {
+      "query": "无人",
+      "expectedLemma": "ningú",
+      "expectedPrimary": "ningú"
+    },
+    {
+      "query": "没人",
+      "expectedLemma": "ningú",
+      "expectedPrimary": "ningú"
+    },
+    {
+      "query": "没有人",
+      "expectedLemma": "ningú",
+      "expectedPrimary": "ningú"
+    },
+    {
+      "query": "无一人",
+      "expectedLemma": "ningú",
+      "expectedPrimary": "ningú"
+    },
+    {
+      "query": "大家",
+      "expectedLemma": "tothom",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "人人",
+      "expectedLemma": "tothom",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "每个人",
+      "expectedLemma": "tothom",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "每人",
+      "expectedLemma": "cadascú",
+      "expectedPrimary": "cadascú"
+    },
+    {
+      "query": "各人",
+      "expectedLemma": "cadascú",
+      "expectedPrimary": "cadascú"
+    },
+    {
+      "query": "每个人",
+      "expectedLemma": "cadascú",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "每个",
+      "expectedLemma": "cadascun",
+      "expectedPrimary": "cadascun"
+    },
+    {
+      "query": "各个",
+      "expectedLemma": "cadascun",
+      "expectedPrimary": "cadascun"
+    },
+    {
+      "query": "任何人",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol"
+    },
+    {
+      "query": "无论谁",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol"
+    },
+    {
+      "query": "任何东西",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol cosa"
+    },
+    {
+      "query": "任何",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol"
+    },
+    {
+      "query": "任意",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol"
+    },
+    {
+      "query": "一些",
+      "expectedLemma": "algun",
+      "expectedPrimary": "algun"
+    },
+    {
+      "query": "某个",
+      "expectedLemma": "algun",
+      "expectedPrimary": "algun"
+    },
+    {
+      "query": "没什么",
+      "expectedLemma": "res",
+      "expectedPrimary": "res"
+    },
+    {
+      "query": "什么也没有",
+      "expectedLemma": "res",
+      "expectedPrimary": "res"
+    },
+    {
+      "query": "一切",
+      "expectedLemma": "tot",
+      "expectedPrimary": "tot"
+    },
+    {
+      "query": "全部",
+      "expectedLemma": "tot",
+      "expectedPrimary": "tot"
+    },
+    {
+      "query": "所有",
+      "expectedLemma": "tot",
+      "expectedPrimary": "tot"
+    },
+    {
+      "query": "某物",
+      "expectedLemma": "alguna cosa",
+      "expectedPrimary": "alguna cosa"
+    },
+    {
+      "query": "某事",
+      "expectedLemma": "alguna cosa",
+      "expectedPrimary": "alguna cosa"
+    },
+    {
+      "query": "某样东西",
+      "expectedLemma": "alguna cosa",
+      "expectedPrimary": "alguna cosa"
+    },
+    {
+      "query": "任何东西",
+      "expectedLemma": "qualsevol cosa",
+      "expectedPrimary": "qualsevol cosa"
+    },
+    {
+      "query": "任何事物",
+      "expectedLemma": "qualsevol cosa",
+      "expectedPrimary": "qualsevol cosa"
+    },
+    {
+      "query": "其他",
+      "expectedLemma": "altre",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "别的",
+      "expectedLemma": "altre",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "另外",
+      "expectedLemma": "altre",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "别人",
+      "expectedLemma": "altri",
+      "expectedPrimary": "altri"
+    },
+    {
+      "query": "他人",
+      "expectedLemma": "altri",
+      "expectedPrimary": "altri"
+    },
+    {
+      "query": "旁人",
+      "expectedLemma": "altri",
+      "expectedPrimary": "altri"
+    },
+    {
+      "query": "我",
+      "expectedLemma": "jo",
+      "expectedPrimary": "jo"
+    },
+    {
+      "query": "你",
+      "expectedLemma": "tu",
+      "expectedPrimary": "tu"
+    },
+    {
+      "query": "他",
+      "expectedLemma": "ell",
+      "expectedPrimary": "ell"
+    },
+    {
+      "query": "她",
+      "expectedLemma": "ella",
+      "expectedPrimary": "ella"
+    },
+    {
+      "query": "我们",
+      "expectedLemma": "nosaltres",
+      "expectedPrimary": "nosaltres"
+    },
+    {
+      "query": "咱们",
+      "expectedLemma": "nosaltres",
+      "expectedPrimary": "nosaltres"
+    },
+    {
+      "query": "你们",
+      "expectedLemma": "vosaltres",
+      "expectedPrimary": "vosaltres"
+    },
+    {
+      "query": "他们",
+      "expectedLemma": "ells",
+      "expectedPrimary": "ells"
+    },
+    {
+      "query": "她们",
+      "expectedLemma": "elles",
+      "expectedPrimary": "elles"
+    },
+    {
+      "query": "您",
+      "expectedLemma": "vostè",
+      "expectedPrimary": "vostè"
+    },
+    {
+      "query": "您们",
+      "expectedLemma": "vostès",
+      "expectedPrimary": "vostès"
+    },
+    {
+      "query": "自己",
+      "expectedLemma": "mateix",
+      "expectedPrimary": "mateix"
+    },
+    {
+      "query": "自身",
+      "expectedLemma": "mateix",
+      "expectedPrimary": "mateix"
+    },
+    {
+      "query": "本身",
+      "expectedLemma": "mateix",
+      "expectedPrimary": "mateix"
+    },
+    {
+      "query": "自己的",
+      "expectedLemma": "propi",
+      "expectedPrimary": "propi"
+    },
+    {
+      "query": "自己所有的",
+      "expectedLemma": "propi",
+      "expectedPrimary": "propi"
+    },
+    {
+      "query": "这个",
+      "expectedLemma": "aquest",
+      "expectedPrimary": "aquest"
+    },
+    {
+      "query": "这",
+      "expectedLemma": "aquest",
+      "expectedPrimary": "aquest"
+    },
+    {
+      "query": "那个",
+      "expectedLemma": "aquell",
+      "expectedPrimary": "aquell"
+    },
+    {
+      "query": "那",
+      "expectedLemma": "aquell",
+      "expectedPrimary": "aquell"
+    },
+    {
+      "query": "这个",
+      "expectedLemma": "això",
+      "expectedPrimary": "aquest"
+    },
+    {
+      "query": "这",
+      "expectedLemma": "això",
+      "expectedPrimary": "aquest"
+    },
+    {
+      "query": "那个",
+      "expectedLemma": "allò",
+      "expectedPrimary": "aquell"
+    },
+    {
+      "query": "那",
+      "expectedLemma": "allò",
+      "expectedPrimary": "aquell"
+    },
+    {
+      "query": "两者",
+      "expectedLemma": "ambdós",
+      "expectedPrimary": "ambdós"
+    },
+    {
+      "query": "双方",
+      "expectedLemma": "ambdós",
+      "expectedPrimary": "ambdós"
+    },
+    {
+      "query": "两个都",
+      "expectedLemma": "ambdós",
+      "expectedPrimary": "ambdós"
+    },
+    {
+      "query": "许多",
+      "expectedLemma": "molt",
+      "expectedPrimary": "molt"
+    },
+    {
+      "query": "很多",
+      "expectedLemma": "molt",
+      "expectedPrimary": "molt"
+    },
+    {
+      "query": "少数",
+      "expectedLemma": "poc"
+    },
+    {
+      "query": "几个",
+      "expectedLemma": "poc",
+      "expectedPrimary": "quant"
+    },
+    {
+      "query": "例如",
+      "expectedLemma": "com ara",
+      "expectedPrimary": "com ara"
+    },
+    {
+      "query": "比如",
+      "expectedLemma": "com ara",
+      "expectedPrimary": "com ara"
+    },
+    {
+      "query": "譬如",
+      "expectedLemma": "com ara",
+      "expectedPrimary": "com ara"
+    },
+    {
+      "query": "如果",
+      "expectedLemma": "si",
+      "expectedPrimary": "si"
+    },
+    {
+      "query": "若",
+      "expectedLemma": "si",
+      "expectedPrimary": "si"
+    },
+    {
+      "query": "假如",
+      "expectedLemma": "si",
+      "expectedPrimary": "si"
+    },
+    {
+      "query": "假若",
+      "expectedLemma": "si",
+      "expectedPrimary": "si"
+    },
+    {
+      "query": "倘若",
+      "expectedLemma": "si",
+      "expectedPrimary": "si"
+    },
+    {
+      "query": "而是",
+      "expectedLemma": "sinó",
+      "expectedPrimary": "sinó"
+    },
+    {
+      "query": "否则",
+      "expectedLemma": "altrament",
+      "expectedPrimary": "altrament"
+    },
+    {
+      "query": "要不然",
+      "expectedLemma": "altrament",
+      "expectedPrimary": "altrament"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "为什么",
+      "excludedLemma": "perquè"
+    },
+    {
+      "query": "为何",
+      "excludedLemma": "perquè"
+    },
+    {
+      "query": "因为",
+      "excludedLemma": "per què"
+    },
+    {
+      "query": "您",
+      "excludedLemma": "seu"
+    },
+    {
+      "query": "您们",
+      "excludedLemma": "seu"
+    },
+    {
+      "query": "什么",
+      "excludedLemma": "qui"
+    },
+    {
+      "query": "谁",
+      "excludedLemma": "què"
+    },
+    {
+      "query": "何时",
+      "excludedLemma": "on"
+    },
+    {
+      "query": "何处",
+      "excludedLemma": "quan"
+    },
+    {
+      "query": "任何人",
+      "excludedLemma": "res"
+    },
+    {
+      "query": "没人",
+      "excludedLemma": "algú"
+    },
+    {
+      "query": "她们",
+      "excludedLemma": "ells"
+    },
+    {
+      "query": "他们",
+      "excludedLemma": "elles"
+    },
+    {
+      "query": "如果",
+      "excludedLemma": "mentre"
+    },
+    {
+      "query": "几个",
+      "excludedLemma": "parell"
+    },
+    {
+      "query": "这个",
+      "excludedLemma": "aquell"
+    },
+    {
+      "query": "那个",
+      "excludedLemma": "aquest"
+    }
+  ],
+  "unmatched": [
+    "不是何时",
+    "谁都不是",
+    "并非任何人",
+    "不知为何"
+  ]
+}

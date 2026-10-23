@@ -3,7 +3,7 @@
 The published snapshot adds Chinese meanings or explicit term references for
 83,805 previously uncovered lemmas (95,319 selected source senses). Together
 with original, reviewed and Wordnet Chinese, 97,668 of 97,675 entries have
-Chinese, including all 5,005 core entries. Seven source-insufficient records
+Chinese, including all 5,027 core entries. Seven source-insufficient records
 remain documented in `bulk/source-gaps.json`; they are not filled with generic
 text or counted as translated. This is 99.99% presence, not a lexical accuracy
 estimate, human approval or exhaustive coverage of every sense.
@@ -133,3 +133,12 @@ All translations retain the attribution and licenses of their lexical sources;
 Wikidata facts are CC0. “Has Chinese” measures presence of a meaning or term
 reference, not complete sense coverage, human approval, or a corpus accuracy
 estimate. The old Argos raw output remains excluded.
+
+The 2026-10-23 adverb audit corrects three unrelated short machine equivalents:
+`vialment`/`viàriament` previously read 正确地, and `llibreterament` read 自由地.
+Their exact Spanish source forms are preserved. Qualified Chinese explanations
+use the source morphology and primary references for the base words; the review
+notes explicitly distinguish this interpretation from an attested dictionary
+entry for each derived adverb. Empty explicit alias arrays prevent these narrow
+explanations from creating unrelated generic search terms. Machine-assisted
+labels, provenance, source identities and presence coverage are unchanged.

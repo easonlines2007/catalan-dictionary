@@ -1,0 +1,1349 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared single-word time, position and quantity vocabulary; retain temporal/spatial and directional distinctions.",
+  "cases": [
+    {
+      "query": "现在",
+      "expectedLemma": "ara",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "此刻",
+      "expectedLemma": "ara",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "如今",
+      "expectedLemma": "ara",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "当时",
+      "expectedLemma": "llavors",
+      "expectedPrimary": "llavors"
+    },
+    {
+      "query": "那时",
+      "expectedLemma": "llavors",
+      "expectedPrimary": "llavors"
+    },
+    {
+      "query": "当时",
+      "expectedLemma": "aleshores",
+      "expectedPrimary": "llavors"
+    },
+    {
+      "query": "那时",
+      "expectedLemma": "aleshores",
+      "expectedPrimary": "llavors"
+    },
+    {
+      "query": "以前",
+      "expectedLemma": "abans",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "之前",
+      "expectedLemma": "abans",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "从前",
+      "expectedLemma": "abans",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "先前",
+      "expectedLemma": "abans",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "以后",
+      "expectedLemma": "després",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "后来",
+      "expectedLemma": "després",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "之后",
+      "expectedLemma": "després",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "随后",
+      "expectedLemma": "després",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "事后",
+      "expectedLemma": "després",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "已经",
+      "expectedLemma": "ja",
+      "expectedPrimary": "ja"
+    },
+    {
+      "query": "早已",
+      "expectedLemma": "ja",
+      "expectedPrimary": "ja"
+    },
+    {
+      "query": "仍然",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "依然",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "仍旧",
+      "expectedLemma": "encara",
+      "expectedPrimary": "encara"
+    },
+    {
+      "query": "不久",
+      "expectedLemma": "aviat",
+      "expectedPrimary": "aviat"
+    },
+    {
+      "query": "很快",
+      "expectedLemma": "aviat",
+      "expectedPrimary": "aviat"
+    },
+    {
+      "query": "迟",
+      "expectedLemma": "tard"
+    },
+    {
+      "query": "晚",
+      "expectedLemma": "tard",
+      "expectedPrimary": "tard"
+    },
+    {
+      "query": "迟的",
+      "expectedLemma": "tard",
+      "expectedPrimary": "tard"
+    },
+    {
+      "query": "早",
+      "expectedLemma": "d'hora"
+    },
+    {
+      "query": "早的",
+      "expectedLemma": "d'hora",
+      "expectedPrimary": "d'hora"
+    },
+    {
+      "query": "昨天",
+      "expectedLemma": "ahir",
+      "expectedPrimary": "ahir"
+    },
+    {
+      "query": "昨日",
+      "expectedLemma": "ahir",
+      "expectedPrimary": "ahir"
+    },
+    {
+      "query": "明天",
+      "expectedLemma": "demà",
+      "expectedPrimary": "demà"
+    },
+    {
+      "query": "明日",
+      "expectedLemma": "demà",
+      "expectedPrimary": "demà"
+    },
+    {
+      "query": "后天",
+      "expectedLemma": "demà passat",
+      "expectedPrimary": "demà passat"
+    },
+    {
+      "query": "今天",
+      "expectedLemma": "avui",
+      "expectedPrimary": "avui"
+    },
+    {
+      "query": "今日",
+      "expectedLemma": "avui",
+      "expectedPrimary": "avui"
+    },
+    {
+      "query": "如今",
+      "expectedLemma": "avui",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "现今",
+      "expectedLemma": "avui",
+      "expectedPrimary": "ara"
+    },
+    {
+      "query": "很少",
+      "expectedLemma": "rarament",
+      "expectedPrimary": "rarament"
+    },
+    {
+      "query": "甚少",
+      "expectedLemma": "rarament",
+      "expectedPrimary": "rarament"
+    },
+    {
+      "query": "偶尔",
+      "expectedLemma": "ocasionalment",
+      "expectedPrimary": "ocasionalment"
+    },
+    {
+      "query": "有时",
+      "expectedLemma": "de vegades",
+      "expectedPrimary": "de vegades"
+    },
+    {
+      "query": "有时候",
+      "expectedLemma": "de vegades",
+      "expectedPrimary": "de vegades"
+    },
+    {
+      "query": "有时",
+      "expectedLemma": "a vegades",
+      "expectedPrimary": "de vegades"
+    },
+    {
+      "query": "有时候",
+      "expectedLemma": "a vegades",
+      "expectedPrimary": "de vegades"
+    },
+    {
+      "query": "早晨",
+      "expectedLemma": "matí",
+      "expectedPrimary": "matí"
+    },
+    {
+      "query": "上午",
+      "expectedLemma": "matí",
+      "expectedPrimary": "matí"
+    },
+    {
+      "query": "早上",
+      "expectedLemma": "matí",
+      "expectedPrimary": "matí"
+    },
+    {
+      "query": "中午",
+      "expectedLemma": "migdia",
+      "expectedPrimary": "migdia"
+    },
+    {
+      "query": "正午",
+      "expectedLemma": "migdia",
+      "expectedPrimary": "migdia"
+    },
+    {
+      "query": "午夜",
+      "expectedLemma": "mitjanit",
+      "expectedPrimary": "mitjanit"
+    },
+    {
+      "query": "半夜",
+      "expectedLemma": "mitjanit",
+      "expectedPrimary": "mitjanit"
+    },
+    {
+      "query": "清晨",
+      "expectedLemma": "matinada",
+      "expectedPrimary": "matí"
+    },
+    {
+      "query": "凌晨",
+      "expectedLemma": "matinada",
+      "expectedPrimary": "matinada"
+    },
+    {
+      "query": "下午",
+      "expectedLemma": "tarda",
+      "expectedPrimary": "tarda"
+    },
+    {
+      "query": "傍晚",
+      "expectedLemma": "vespre",
+      "expectedPrimary": "vespre"
+    },
+    {
+      "query": "夜晚",
+      "expectedLemma": "nit",
+      "expectedPrimary": "nit"
+    },
+    {
+      "query": "夜间",
+      "expectedLemma": "nit",
+      "expectedPrimary": "nit"
+    },
+    {
+      "query": "晚上",
+      "expectedLemma": "nit",
+      "expectedPrimary": "nit"
+    },
+    {
+      "query": "星期",
+      "expectedLemma": "setmana",
+      "expectedPrimary": "setmana"
+    },
+    {
+      "query": "周",
+      "expectedLemma": "setmana"
+    },
+    {
+      "query": "礼拜",
+      "expectedLemma": "setmana",
+      "expectedPrimary": "setmana"
+    },
+    {
+      "query": "月份",
+      "expectedLemma": "mes",
+      "expectedPrimary": "mes"
+    },
+    {
+      "query": "月",
+      "expectedLemma": "mes"
+    },
+    {
+      "query": "年",
+      "expectedLemma": "any",
+      "expectedPrimary": "any"
+    },
+    {
+      "query": "年份",
+      "expectedLemma": "any",
+      "expectedPrimary": "any"
+    },
+    {
+      "query": "今年",
+      "expectedLemma": "enguany",
+      "expectedPrimary": "enguany"
+    },
+    {
+      "query": "本年",
+      "expectedLemma": "enguany",
+      "expectedPrimary": "enguany"
+    },
+    {
+      "query": "星期六",
+      "expectedLemma": "dissabte",
+      "expectedPrimary": "dissabte"
+    },
+    {
+      "query": "周六",
+      "expectedLemma": "dissabte",
+      "expectedPrimary": "dissabte"
+    },
+    {
+      "query": "礼拜六",
+      "expectedLemma": "dissabte",
+      "expectedPrimary": "dissabte"
+    },
+    {
+      "query": "星期日",
+      "expectedLemma": "diumenge",
+      "expectedPrimary": "diumenge"
+    },
+    {
+      "query": "星期天",
+      "expectedLemma": "diumenge",
+      "expectedPrimary": "diumenge"
+    },
+    {
+      "query": "周日",
+      "expectedLemma": "diumenge",
+      "expectedPrimary": "diumenge"
+    },
+    {
+      "query": "周天",
+      "expectedLemma": "diumenge",
+      "expectedPrimary": "diumenge"
+    },
+    {
+      "query": "礼拜天",
+      "expectedLemma": "diumenge",
+      "expectedPrimary": "diumenge"
+    },
+    {
+      "query": "星期一",
+      "expectedLemma": "dilluns",
+      "expectedPrimary": "dilluns"
+    },
+    {
+      "query": "周一",
+      "expectedLemma": "dilluns",
+      "expectedPrimary": "dilluns"
+    },
+    {
+      "query": "礼拜一",
+      "expectedLemma": "dilluns",
+      "expectedPrimary": "dilluns"
+    },
+    {
+      "query": "星期二",
+      "expectedLemma": "dimarts",
+      "expectedPrimary": "dimarts"
+    },
+    {
+      "query": "周二",
+      "expectedLemma": "dimarts",
+      "expectedPrimary": "dimarts"
+    },
+    {
+      "query": "礼拜二",
+      "expectedLemma": "dimarts",
+      "expectedPrimary": "dimarts"
+    },
+    {
+      "query": "星期三",
+      "expectedLemma": "dimecres",
+      "expectedPrimary": "dimecres"
+    },
+    {
+      "query": "周三",
+      "expectedLemma": "dimecres",
+      "expectedPrimary": "dimecres"
+    },
+    {
+      "query": "礼拜三",
+      "expectedLemma": "dimecres",
+      "expectedPrimary": "dimecres"
+    },
+    {
+      "query": "星期四",
+      "expectedLemma": "dijous",
+      "expectedPrimary": "dijous"
+    },
+    {
+      "query": "周四",
+      "expectedLemma": "dijous",
+      "expectedPrimary": "dijous"
+    },
+    {
+      "query": "礼拜四",
+      "expectedLemma": "dijous",
+      "expectedPrimary": "dijous"
+    },
+    {
+      "query": "星期五",
+      "expectedLemma": "divendres",
+      "expectedPrimary": "divendres"
+    },
+    {
+      "query": "周五",
+      "expectedLemma": "divendres",
+      "expectedPrimary": "divendres"
+    },
+    {
+      "query": "礼拜五",
+      "expectedLemma": "divendres",
+      "expectedPrimary": "divendres"
+    },
+    {
+      "query": "周末",
+      "expectedLemma": "cap de setmana",
+      "expectedPrimary": "cap de setmana"
+    },
+    {
+      "query": "瞬间",
+      "expectedLemma": "instant",
+      "expectedPrimary": "instant"
+    },
+    {
+      "query": "刹那",
+      "expectedLemma": "instant",
+      "expectedPrimary": "instant"
+    },
+    {
+      "query": "顷刻",
+      "expectedLemma": "instant",
+      "expectedPrimary": "instant"
+    },
+    {
+      "query": "时刻",
+      "expectedLemma": "moment",
+      "expectedPrimary": "moment"
+    },
+    {
+      "query": "世纪",
+      "expectedLemma": "segle",
+      "expectedPrimary": "segle"
+    },
+    {
+      "query": "十年",
+      "expectedLemma": "dècada",
+      "expectedPrimary": "dècada"
+    },
+    {
+      "query": "年度",
+      "expectedLemma": "anual",
+      "expectedPrimary": "any"
+    },
+    {
+      "query": "每年",
+      "expectedLemma": "anual",
+      "expectedPrimary": "anualment"
+    },
+    {
+      "query": "每月",
+      "expectedLemma": "mensual",
+      "expectedPrimary": "mensualment"
+    },
+    {
+      "query": "每周",
+      "expectedLemma": "setmanal",
+      "expectedPrimary": "setmanalment"
+    },
+    {
+      "query": "每日",
+      "expectedLemma": "diari",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "每天",
+      "expectedLemma": "diari",
+      "expectedPrimary": "diàriament"
+    },
+    {
+      "query": "下一个",
+      "expectedLemma": "pròxim",
+      "expectedPrimary": "pròxim"
+    },
+    {
+      "query": "下一个",
+      "expectedLemma": "proper",
+      "expectedPrimary": "pròxim"
+    },
+    {
+      "query": "未来",
+      "expectedLemma": "futur",
+      "expectedPrimary": "futur"
+    },
+    {
+      "query": "将来",
+      "expectedLemma": "futur",
+      "expectedPrimary": "futur"
+    },
+    {
+      "query": "过去",
+      "expectedLemma": "passat",
+      "expectedPrimary": "passat"
+    },
+    {
+      "query": "往昔",
+      "expectedLemma": "passat",
+      "expectedPrimary": "passat"
+    },
+    {
+      "query": "当下",
+      "expectedLemma": "present",
+      "expectedPrimary": "present"
+    },
+    {
+      "query": "当前",
+      "expectedLemma": "present",
+      "expectedPrimary": "present"
+    },
+    {
+      "query": "先前的",
+      "expectedLemma": "anterior",
+      "expectedPrimary": "anterior"
+    },
+    {
+      "query": "之前的",
+      "expectedLemma": "anterior",
+      "expectedPrimary": "anterior"
+    },
+    {
+      "query": "随后的",
+      "expectedLemma": "posterior",
+      "expectedPrimary": "posterior"
+    },
+    {
+      "query": "后来的",
+      "expectedLemma": "posterior",
+      "expectedPrimary": "posterior"
+    },
+    {
+      "query": "起初",
+      "expectedLemma": "inicialment",
+      "expectedPrimary": "inicialment"
+    },
+    {
+      "query": "最初",
+      "expectedLemma": "inicialment",
+      "expectedPrimary": "inicialment"
+    },
+    {
+      "query": "先前",
+      "expectedLemma": "anteriorment",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "以前",
+      "expectedLemma": "anteriorment",
+      "expectedPrimary": "abans"
+    },
+    {
+      "query": "随后",
+      "expectedLemma": "posteriorment",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "之后",
+      "expectedLemma": "posteriorment",
+      "expectedPrimary": "després"
+    },
+    {
+      "query": "向前",
+      "expectedLemma": "endavant",
+      "expectedPrimary": "endavant"
+    },
+    {
+      "query": "往前",
+      "expectedLemma": "endavant",
+      "expectedPrimary": "endavant"
+    },
+    {
+      "query": "向后",
+      "expectedLemma": "enrere",
+      "expectedPrimary": "enrere"
+    },
+    {
+      "query": "往后",
+      "expectedLemma": "enrere",
+      "expectedPrimary": "enrere"
+    },
+    {
+      "query": "前面",
+      "expectedLemma": "davant",
+      "expectedPrimary": "davant"
+    },
+    {
+      "query": "前方",
+      "expectedLemma": "davant",
+      "expectedPrimary": "davant"
+    },
+    {
+      "query": "后面",
+      "expectedLemma": "darrere",
+      "expectedPrimary": "darrere"
+    },
+    {
+      "query": "后方",
+      "expectedLemma": "darrere",
+      "expectedPrimary": "darrere"
+    },
+    {
+      "query": "上面",
+      "expectedLemma": "sobre",
+      "expectedPrimary": "sobre"
+    },
+    {
+      "query": "上方",
+      "expectedLemma": "sobre",
+      "expectedPrimary": "sobre"
+    },
+    {
+      "query": "下面",
+      "expectedLemma": "sota",
+      "expectedPrimary": "sota"
+    },
+    {
+      "query": "下方",
+      "expectedLemma": "sota",
+      "expectedPrimary": "sota"
+    },
+    {
+      "query": "底下",
+      "expectedLemma": "sota",
+      "expectedPrimary": "sota"
+    },
+    {
+      "query": "上面",
+      "expectedLemma": "damunt",
+      "expectedPrimary": "sobre"
+    },
+    {
+      "query": "顶上",
+      "expectedLemma": "damunt",
+      "expectedPrimary": "damunt"
+    },
+    {
+      "query": "下面",
+      "expectedLemma": "davall",
+      "expectedPrimary": "sota"
+    },
+    {
+      "query": "底下",
+      "expectedLemma": "davall",
+      "expectedPrimary": "sota"
+    },
+    {
+      "query": "里面",
+      "expectedLemma": "dins",
+      "expectedPrimary": "dins"
+    },
+    {
+      "query": "里头",
+      "expectedLemma": "dins",
+      "expectedPrimary": "dins"
+    },
+    {
+      "query": "外面",
+      "expectedLemma": "fora",
+      "expectedPrimary": "fora"
+    },
+    {
+      "query": "外头",
+      "expectedLemma": "fora",
+      "expectedPrimary": "fora"
+    },
+    {
+      "query": "内部",
+      "expectedLemma": "interior",
+      "expectedPrimary": "interior"
+    },
+    {
+      "query": "外部",
+      "expectedLemma": "exterior",
+      "expectedPrimary": "exterior"
+    },
+    {
+      "query": "左边",
+      "expectedLemma": "esquerra",
+      "expectedPrimary": "esquerra"
+    },
+    {
+      "query": "左侧",
+      "expectedLemma": "esquerra",
+      "expectedPrimary": "esquerra"
+    },
+    {
+      "query": "左方",
+      "expectedLemma": "esquerra",
+      "expectedPrimary": "esquerra"
+    },
+    {
+      "query": "右边",
+      "expectedLemma": "dreta",
+      "expectedPrimary": "dreta"
+    },
+    {
+      "query": "右侧",
+      "expectedLemma": "dreta",
+      "expectedPrimary": "dreta"
+    },
+    {
+      "query": "右方",
+      "expectedLemma": "dreta",
+      "expectedPrimary": "dreta"
+    },
+    {
+      "query": "北",
+      "expectedLemma": "nord"
+    },
+    {
+      "query": "北方",
+      "expectedLemma": "nord",
+      "expectedPrimary": "nord"
+    },
+    {
+      "query": "北面",
+      "expectedLemma": "nord",
+      "expectedPrimary": "nord"
+    },
+    {
+      "query": "南",
+      "expectedLemma": "sud"
+    },
+    {
+      "query": "南方",
+      "expectedLemma": "sud",
+      "expectedPrimary": "sud"
+    },
+    {
+      "query": "南面",
+      "expectedLemma": "sud",
+      "expectedPrimary": "sud"
+    },
+    {
+      "query": "东",
+      "expectedLemma": "est"
+    },
+    {
+      "query": "东方",
+      "expectedLemma": "est",
+      "expectedPrimary": "est"
+    },
+    {
+      "query": "东面",
+      "expectedLemma": "est",
+      "expectedPrimary": "est"
+    },
+    {
+      "query": "西",
+      "expectedLemma": "oest"
+    },
+    {
+      "query": "西方",
+      "expectedLemma": "oest",
+      "expectedPrimary": "oest"
+    },
+    {
+      "query": "西面",
+      "expectedLemma": "oest",
+      "expectedPrimary": "oest"
+    },
+    {
+      "query": "这里",
+      "expectedLemma": "aquí",
+      "expectedPrimary": "aquí"
+    },
+    {
+      "query": "这儿",
+      "expectedLemma": "aquí",
+      "expectedPrimary": "aquí"
+    },
+    {
+      "query": "此处",
+      "expectedLemma": "aquí",
+      "expectedPrimary": "aquí"
+    },
+    {
+      "query": "那里",
+      "expectedLemma": "allà",
+      "expectedPrimary": "allà"
+    },
+    {
+      "query": "那儿",
+      "expectedLemma": "allà",
+      "expectedPrimary": "allà"
+    },
+    {
+      "query": "那边",
+      "expectedLemma": "allà",
+      "expectedPrimary": "allà"
+    },
+    {
+      "query": "那里",
+      "expectedLemma": "allí",
+      "expectedPrimary": "allà"
+    },
+    {
+      "query": "那儿",
+      "expectedLemma": "allí",
+      "expectedPrimary": "allà"
+    },
+    {
+      "query": "到处",
+      "expectedLemma": "arreu",
+      "expectedPrimary": "arreu"
+    },
+    {
+      "query": "处处",
+      "expectedLemma": "arreu",
+      "expectedPrimary": "arreu"
+    },
+    {
+      "query": "各处",
+      "expectedLemma": "arreu",
+      "expectedPrimary": "arreu"
+    },
+    {
+      "query": "到处",
+      "expectedLemma": "pertot",
+      "expectedPrimary": "arreu"
+    },
+    {
+      "query": "处处",
+      "expectedLemma": "pertot",
+      "expectedPrimary": "arreu"
+    },
+    {
+      "query": "向上",
+      "expectedLemma": "amunt",
+      "expectedPrimary": "amunt"
+    },
+    {
+      "query": "往上",
+      "expectedLemma": "amunt",
+      "expectedPrimary": "amunt"
+    },
+    {
+      "query": "向下",
+      "expectedLemma": "avall",
+      "expectedPrimary": "avall"
+    },
+    {
+      "query": "往下",
+      "expectedLemma": "avall",
+      "expectedPrimary": "avall"
+    },
+    {
+      "query": "附近",
+      "expectedLemma": "prop",
+      "expectedPrimary": "prop"
+    },
+    {
+      "query": "近处",
+      "expectedLemma": "prop",
+      "expectedPrimary": "prop"
+    },
+    {
+      "query": "远",
+      "expectedLemma": "lluny",
+      "expectedPrimary": "lluny"
+    },
+    {
+      "query": "远处",
+      "expectedLemma": "lluny",
+      "expectedPrimary": "lluny"
+    },
+    {
+      "query": "遥远",
+      "expectedLemma": "llunyà",
+      "expectedPrimary": "lluny"
+    },
+    {
+      "query": "偏远",
+      "expectedLemma": "llunyà",
+      "expectedPrimary": "llunyà"
+    },
+    {
+      "query": "周围",
+      "expectedLemma": "voltant",
+      "expectedPrimary": "voltant"
+    },
+    {
+      "query": "四周",
+      "expectedLemma": "voltant",
+      "expectedPrimary": "voltant"
+    },
+    {
+      "query": "环境",
+      "expectedLemma": "entorn",
+      "expectedPrimary": "entorn"
+    },
+    {
+      "query": "旁边",
+      "expectedLemma": "costat",
+      "expectedPrimary": "costat"
+    },
+    {
+      "query": "侧边",
+      "expectedLemma": "costat",
+      "expectedPrimary": "costat"
+    },
+    {
+      "query": "之间",
+      "expectedLemma": "entre",
+      "expectedPrimary": "entre"
+    },
+    {
+      "query": "关于",
+      "expectedLemma": "sobre",
+      "expectedPrimary": "sobre"
+    },
+    {
+      "query": "直到",
+      "expectedLemma": "fins",
+      "expectedPrimary": "fins"
+    },
+    {
+      "query": "直至",
+      "expectedLemma": "fins",
+      "expectedPrimary": "fins"
+    },
+    {
+      "query": "因为",
+      "expectedLemma": "perquè",
+      "expectedPrimary": "perquè"
+    },
+    {
+      "query": "为何",
+      "expectedLemma": "perquè",
+      "expectedPrimary": "per què"
+    },
+    {
+      "query": "为什么",
+      "expectedLemma": "perquè",
+      "expectedPrimary": "per què"
+    },
+    {
+      "query": "所以",
+      "expectedLemma": "doncs",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "因此",
+      "expectedLemma": "doncs",
+      "expectedPrimary": "doncs"
+    },
+    {
+      "query": "这样",
+      "expectedLemma": "així",
+      "expectedPrimary": "així"
+    },
+    {
+      "query": "如此",
+      "expectedLemma": "així",
+      "expectedPrimary": "així"
+    },
+    {
+      "query": "但是",
+      "expectedLemma": "però",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "可是",
+      "expectedLemma": "però",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "然而",
+      "expectedLemma": "però",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "不过",
+      "expectedLemma": "tanmateix",
+      "expectedPrimary": "tanmateix"
+    },
+    {
+      "query": "然而",
+      "expectedLemma": "tanmateix",
+      "expectedPrimary": "però"
+    },
+    {
+      "query": "也不",
+      "expectedLemma": "tampoc",
+      "expectedPrimary": "tampoc"
+    },
+    {
+      "query": "甚至",
+      "expectedLemma": "inclús",
+      "expectedPrimary": "inclús"
+    },
+    {
+      "query": "甚至",
+      "expectedLemma": "fins i tot",
+      "expectedPrimary": "inclús"
+    },
+    {
+      "query": "大约",
+      "expectedLemma": "aproximadament",
+      "expectedPrimary": "aproximadament"
+    },
+    {
+      "query": "大概",
+      "expectedLemma": "aproximadament",
+      "expectedPrimary": "aproximadament"
+    },
+    {
+      "query": "约莫",
+      "expectedLemma": "aproximadament",
+      "expectedPrimary": "aproximadament"
+    },
+    {
+      "query": "恰好",
+      "expectedLemma": "exactament",
+      "expectedPrimary": "exactament"
+    },
+    {
+      "query": "准确地",
+      "expectedLemma": "exactament",
+      "expectedPrimary": "exactament"
+    },
+    {
+      "query": "尤其",
+      "expectedLemma": "especialment",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "格外",
+      "expectedLemma": "especialment",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "尤其",
+      "expectedLemma": "sobretot",
+      "expectedPrimary": "especialment"
+    },
+    {
+      "query": "至少",
+      "expectedLemma": "almenys",
+      "expectedPrimary": "almenys"
+    },
+    {
+      "query": "起码",
+      "expectedLemma": "almenys",
+      "expectedPrimary": "almenys"
+    },
+    {
+      "query": "更多",
+      "expectedLemma": "més",
+      "expectedPrimary": "més"
+    },
+    {
+      "query": "更少",
+      "expectedLemma": "menys",
+      "expectedPrimary": "menys"
+    },
+    {
+      "query": "太多",
+      "expectedLemma": "massa",
+      "expectedPrimary": "massa"
+    },
+    {
+      "query": "过多",
+      "expectedLemma": "massa",
+      "expectedPrimary": "massa"
+    },
+    {
+      "query": "过分",
+      "expectedLemma": "massa",
+      "expectedPrimary": "massa"
+    },
+    {
+      "query": "过度",
+      "expectedLemma": "massa",
+      "expectedPrimary": "massa"
+    },
+    {
+      "query": "足够",
+      "expectedLemma": "prou",
+      "expectedPrimary": "suficient"
+    },
+    {
+      "query": "够了",
+      "expectedLemma": "prou",
+      "expectedPrimary": "prou"
+    },
+    {
+      "query": "非常",
+      "expectedLemma": "molt",
+      "expectedPrimary": "molt"
+    },
+    {
+      "query": "很",
+      "expectedLemma": "molt"
+    },
+    {
+      "query": "十分",
+      "expectedLemma": "molt",
+      "expectedPrimary": "molt"
+    },
+    {
+      "query": "少量",
+      "expectedLemma": "poc",
+      "expectedPrimary": "poc"
+    },
+    {
+      "query": "不多",
+      "expectedLemma": "poc",
+      "expectedPrimary": "poc"
+    },
+    {
+      "query": "任何",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol"
+    },
+    {
+      "query": "任意",
+      "expectedLemma": "qualsevol",
+      "expectedPrimary": "qualsevol"
+    },
+    {
+      "query": "每人",
+      "expectedLemma": "cadascú",
+      "expectedPrimary": "cadascú"
+    },
+    {
+      "query": "各人",
+      "expectedLemma": "cadascú",
+      "expectedPrimary": "cadascú"
+    },
+    {
+      "query": "大家",
+      "expectedLemma": "tothom",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "人人",
+      "expectedLemma": "tothom",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "所有人",
+      "expectedLemma": "tothom",
+      "expectedPrimary": "tothom"
+    },
+    {
+      "query": "某人",
+      "expectedLemma": "algú",
+      "expectedPrimary": "algú"
+    },
+    {
+      "query": "有人",
+      "expectedLemma": "algú",
+      "expectedPrimary": "algú"
+    },
+    {
+      "query": "每个",
+      "expectedLemma": "cadascun",
+      "expectedPrimary": "cadascun"
+    },
+    {
+      "query": "各个",
+      "expectedLemma": "cadascun",
+      "expectedPrimary": "cadascun"
+    },
+    {
+      "query": "分开的",
+      "expectedLemma": "separat",
+      "expectedPrimary": "separat"
+    },
+    {
+      "query": "独自",
+      "expectedLemma": "sol",
+      "expectedPrimary": "sol"
+    },
+    {
+      "query": "单独",
+      "expectedLemma": "sol",
+      "expectedPrimary": "sol"
+    },
+    {
+      "query": "其他",
+      "expectedLemma": "altre",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "别的",
+      "expectedLemma": "altre",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "另外",
+      "expectedLemma": "altre",
+      "expectedPrimary": "altre"
+    },
+    {
+      "query": "同一个",
+      "expectedLemma": "mateix",
+      "expectedPrimary": "mateix"
+    },
+    {
+      "query": "同一",
+      "expectedLemma": "mateix",
+      "expectedPrimary": "mateix"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "以前",
+      "excludedLemma": "davant"
+    },
+    {
+      "query": "前面",
+      "excludedLemma": "abans"
+    },
+    {
+      "query": "之后",
+      "excludedLemma": "darrere"
+    },
+    {
+      "query": "后面",
+      "excludedLemma": "després"
+    },
+    {
+      "query": "向前",
+      "excludedLemma": "enrere"
+    },
+    {
+      "query": "向后",
+      "excludedLemma": "endavant"
+    },
+    {
+      "query": "向上",
+      "excludedLemma": "avall"
+    },
+    {
+      "query": "向下",
+      "excludedLemma": "amunt"
+    },
+    {
+      "query": "上面",
+      "excludedLemma": "sota"
+    },
+    {
+      "query": "下面",
+      "excludedLemma": "sobre"
+    },
+    {
+      "query": "左边",
+      "excludedLemma": "dreta"
+    },
+    {
+      "query": "右边",
+      "excludedLemma": "esquerra"
+    },
+    {
+      "query": "这里",
+      "excludedLemma": "allà"
+    },
+    {
+      "query": "那里",
+      "excludedLemma": "aquí"
+    },
+    {
+      "query": "北方",
+      "excludedLemma": "sud"
+    },
+    {
+      "query": "南方",
+      "excludedLemma": "nord"
+    },
+    {
+      "query": "东方",
+      "excludedLemma": "oest"
+    },
+    {
+      "query": "西方",
+      "excludedLemma": "est"
+    },
+    {
+      "query": "星期三",
+      "excludedLemma": "dijous"
+    },
+    {
+      "query": "星期四",
+      "excludedLemma": "dimecres"
+    },
+    {
+      "query": "周末",
+      "excludedLemma": "setmana"
+    },
+    {
+      "query": "后天",
+      "excludedLemma": "demà"
+    }
+  ],
+  "unmatched": [
+    "不在左边",
+    "并非现在",
+    "不是星期三",
+    "没有往后",
+    "三次半夜"
+  ]
+}

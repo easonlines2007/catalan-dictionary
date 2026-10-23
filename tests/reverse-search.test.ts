@@ -144,7 +144,10 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       const now = await lookupWord("ara", "ca");
       if (now.status === "found") assert.ok(!primaryChinese(now.entry).includes("星座"));
       const school = await lookupWord("学校", "zh");
-      if (school.status === "found") assert.equal(primaryChinese(school.entry), "学校；學校");
+      if (school.status === "found") {
+        assert.equal(primaryChinese(school.entry), "学校");
+        assert.ok(school.entry.chinese?.some((text) => text.includes("學校")), "The source spelling remains available as evidence");
+      }
       const mother = await lookupWord("母亲", "zh");
       assert.equal(mother.status, "found");
       if (mother.status === "found") {
@@ -302,6 +305,20 @@ test("trilingual lookup resolves real static dictionary assets online and in cor
       const matisacio = await lookupWord("matisació", "ca");
       assert.equal(matisacio.status, "found");
       if (matisacio.status === "found") assert.ok(!primaryChinese(matisacio.entry).includes("早上好"));
+      for (const [lemma, meaning, excluded] of [
+        ["llibreterament", "在书商业务方面", "自由地"],
+        ["vialment", "在道路交通方面", "正确地"],
+        ["viàriament", "在道路交通方面", "正确地"],
+      ]) {
+        const corrected = await lookupWord(lemma, "ca");
+        assert.equal(corrected.status, "found", lemma);
+        if (corrected.status === "found") {
+          assert.equal(primaryChinese(corrected.entry), meaning, lemma);
+          assert.equal(corrected.entry.chineseMachine, true, lemma);
+          assert.ok(corrected.entry.provenance?.some(item => item.sourceId === "bulk-zh-ms-20261012"), lemma);
+          assert.ok(!primaryChinese(corrected.entry).includes(excluded), lemma);
+        }
+      }
     });
 
     await t.test("source-compared everyday cases open the intended common Catalan word", async () => {
@@ -496,7 +513,7 @@ records={'menjar':[('seed',{'zh':['吃']}),('lex',{'es':['comer']}),('wiktionary
 with tempfile.TemporaryDirectory() as directory:
  p=Path(directory)/'aliases.json'
  p.write_text(json.dumps(data))
- assert b.search_aliases(p,records,data['baseDataVersion'])=={'menjar':['吃饭']}
+ assert b.search_aliases(p,records,data['baseDataVersion'])=={'menjar':['吃饭','进食','用餐']}
  for mode in ('evidence','base'):
   changed=json.loads(json.dumps(data))
   if mode=='evidence': changed['records'][0]['evidence'][0]['text']='unrelated'

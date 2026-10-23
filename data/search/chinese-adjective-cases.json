@@ -1,0 +1,1810 @@
+{
+  "baseDataVersion": "4b1a025bc29c18a5",
+  "note": "Source-compared adjectives, state/action contrasts and preservation of established primary meanings. Exact aliases only; no typo expansion.",
+  "cases": [
+    {
+      "query": "干燥",
+      "expectedLemma": "sec",
+      "expectedPrimary": "sec"
+    },
+    {
+      "query": "干的",
+      "expectedLemma": "sec",
+      "expectedPrimary": "sec"
+    },
+    {
+      "query": "潮湿",
+      "expectedLemma": "humit",
+      "expectedPrimary": "humit"
+    },
+    {
+      "query": "湿润",
+      "expectedLemma": "humit",
+      "expectedPrimary": "humit"
+    },
+    {
+      "query": "湿",
+      "expectedLemma": "moll"
+    },
+    {
+      "query": "湿的",
+      "expectedLemma": "moll",
+      "expectedPrimary": "moll"
+    },
+    {
+      "query": "温暖",
+      "expectedLemma": "càlid",
+      "expectedPrimary": "càlid"
+    },
+    {
+      "query": "暖和",
+      "expectedLemma": "càlid",
+      "expectedPrimary": "càlid"
+    },
+    {
+      "query": "新鲜",
+      "expectedLemma": "fresc",
+      "expectedPrimary": "fresc"
+    },
+    {
+      "query": "鲜的",
+      "expectedLemma": "fresc",
+      "expectedPrimary": "fresc"
+    },
+    {
+      "query": "凉爽",
+      "expectedLemma": "fresc",
+      "expectedPrimary": "fresc"
+    },
+    {
+      "query": "清凉",
+      "expectedLemma": "fresc",
+      "expectedPrimary": "fresc"
+    },
+    {
+      "query": "凉快",
+      "expectedLemma": "fresc",
+      "expectedPrimary": "fresc"
+    },
+    {
+      "query": "寒冷",
+      "expectedLemma": "fred",
+      "expectedPrimary": "fred"
+    },
+    {
+      "query": "冰冷",
+      "expectedLemma": "fred",
+      "expectedPrimary": "fred"
+    },
+    {
+      "query": "冷的",
+      "expectedLemma": "fred",
+      "expectedPrimary": "fred"
+    },
+    {
+      "query": "热的",
+      "expectedLemma": "calent",
+      "expectedPrimary": "calent"
+    },
+    {
+      "query": "干净",
+      "expectedLemma": "net",
+      "expectedPrimary": "net"
+    },
+    {
+      "query": "洁净",
+      "expectedLemma": "net",
+      "expectedPrimary": "net"
+    },
+    {
+      "query": "肮脏",
+      "expectedLemma": "brut",
+      "expectedPrimary": "brut"
+    },
+    {
+      "query": "污脏",
+      "expectedLemma": "brut",
+      "expectedPrimary": "brut"
+    },
+    {
+      "query": "污秽",
+      "expectedLemma": "brut",
+      "expectedPrimary": "brut"
+    },
+    {
+      "query": "满",
+      "expectedLemma": "ple"
+    },
+    {
+      "query": "满的",
+      "expectedLemma": "ple",
+      "expectedPrimary": "ple"
+    },
+    {
+      "query": "空",
+      "expectedLemma": "buit",
+      "expectedPrimary": "buit"
+    },
+    {
+      "query": "空的",
+      "expectedLemma": "buit",
+      "expectedPrimary": "buit"
+    },
+    {
+      "query": "空荡荡",
+      "expectedLemma": "buit",
+      "expectedPrimary": "buit"
+    },
+    {
+      "query": "宽阔",
+      "expectedLemma": "ample",
+      "expectedPrimary": "ample"
+    },
+    {
+      "query": "宽广",
+      "expectedLemma": "ample",
+      "expectedPrimary": "ample"
+    },
+    {
+      "query": "宽敞",
+      "expectedLemma": "ample",
+      "expectedPrimary": "ample"
+    },
+    {
+      "query": "狭窄",
+      "expectedLemma": "estret",
+      "expectedPrimary": "estret"
+    },
+    {
+      "query": "窄",
+      "expectedLemma": "estret",
+      "expectedPrimary": "estret"
+    },
+    {
+      "query": "窄的",
+      "expectedLemma": "estret",
+      "expectedPrimary": "estret"
+    },
+    {
+      "query": "长",
+      "expectedLemma": "llarg",
+      "expectedPrimary": "llarg"
+    },
+    {
+      "query": "长的",
+      "expectedLemma": "llarg",
+      "expectedPrimary": "llarg"
+    },
+    {
+      "query": "短",
+      "expectedLemma": "curt",
+      "expectedPrimary": "curt"
+    },
+    {
+      "query": "短的",
+      "expectedLemma": "curt",
+      "expectedPrimary": "curt"
+    },
+    {
+      "query": "高大",
+      "expectedLemma": "alt",
+      "expectedPrimary": "alt"
+    },
+    {
+      "query": "矮",
+      "expectedLemma": "baix"
+    },
+    {
+      "query": "矮小",
+      "expectedLemma": "baix",
+      "expectedPrimary": "baix"
+    },
+    {
+      "query": "深",
+      "expectedLemma": "profund",
+      "expectedPrimary": "profund"
+    },
+    {
+      "query": "深的",
+      "expectedLemma": "profund",
+      "expectedPrimary": "profund"
+    },
+    {
+      "query": "肤浅",
+      "expectedLemma": "superficial",
+      "expectedPrimary": "superficial"
+    },
+    {
+      "query": "表面的",
+      "expectedLemma": "superficial",
+      "expectedPrimary": "superficial"
+    },
+    {
+      "query": "厚",
+      "expectedLemma": "gruixut"
+    },
+    {
+      "query": "厚的",
+      "expectedLemma": "gruixut",
+      "expectedPrimary": "gruixut"
+    },
+    {
+      "query": "厚实",
+      "expectedLemma": "gruixut",
+      "expectedPrimary": "gruixut"
+    },
+    {
+      "query": "瘦",
+      "expectedLemma": "prim"
+    },
+    {
+      "query": "瘦的",
+      "expectedLemma": "prim",
+      "expectedPrimary": "prim"
+    },
+    {
+      "query": "瘦削",
+      "expectedLemma": "prim",
+      "expectedPrimary": "prim"
+    },
+    {
+      "query": "清瘦",
+      "expectedLemma": "prim",
+      "expectedPrimary": "prim"
+    },
+    {
+      "query": "小",
+      "expectedLemma": "petit"
+    },
+    {
+      "query": "小的",
+      "expectedLemma": "petit",
+      "expectedPrimary": "petit"
+    },
+    {
+      "query": "巨大",
+      "expectedLemma": "enorme",
+      "expectedPrimary": "gran"
+    },
+    {
+      "query": "庞大",
+      "expectedLemma": "enorme",
+      "expectedPrimary": "gran"
+    },
+    {
+      "query": "硕大",
+      "expectedLemma": "enorme",
+      "expectedPrimary": "gran"
+    },
+    {
+      "query": "微小",
+      "expectedLemma": "minúscul",
+      "expectedPrimary": "petit"
+    },
+    {
+      "query": "细小",
+      "expectedLemma": "minúscul",
+      "expectedPrimary": "petit"
+    },
+    {
+      "query": "轻盈",
+      "expectedLemma": "lleuger",
+      "expectedPrimary": "lleuger"
+    },
+    {
+      "query": "轻的",
+      "expectedLemma": "lleuger",
+      "expectedPrimary": "lleuger"
+    },
+    {
+      "query": "沉重",
+      "expectedLemma": "pesant",
+      "expectedPrimary": "pesant"
+    },
+    {
+      "query": "重的",
+      "expectedLemma": "pesant",
+      "expectedPrimary": "pesant"
+    },
+    {
+      "query": "坚硬",
+      "expectedLemma": "dur",
+      "expectedPrimary": "dur"
+    },
+    {
+      "query": "硬的",
+      "expectedLemma": "dur",
+      "expectedPrimary": "dur"
+    },
+    {
+      "query": "柔软",
+      "expectedLemma": "tou",
+      "expectedPrimary": "tou"
+    },
+    {
+      "query": "软的",
+      "expectedLemma": "tou",
+      "expectedPrimary": "tou"
+    },
+    {
+      "query": "柔和",
+      "expectedLemma": "suau",
+      "expectedPrimary": "suau"
+    },
+    {
+      "query": "温和",
+      "expectedLemma": "suau",
+      "expectedPrimary": "suau"
+    },
+    {
+      "query": "柔滑",
+      "expectedLemma": "suau",
+      "expectedPrimary": "suau"
+    },
+    {
+      "query": "粗糙",
+      "expectedLemma": "aspre",
+      "expectedPrimary": "aspre"
+    },
+    {
+      "query": "毛糙",
+      "expectedLemma": "aspre",
+      "expectedPrimary": "aspre"
+    },
+    {
+      "query": "光滑",
+      "expectedLemma": "llis",
+      "expectedPrimary": "llis"
+    },
+    {
+      "query": "平滑",
+      "expectedLemma": "llis",
+      "expectedPrimary": "llis"
+    },
+    {
+      "query": "粗糙",
+      "expectedLemma": "rugós",
+      "expectedPrimary": "aspre"
+    },
+    {
+      "query": "圆",
+      "expectedLemma": "rodó"
+    },
+    {
+      "query": "圆形",
+      "expectedLemma": "rodó",
+      "expectedPrimary": "rodó"
+    },
+    {
+      "query": "圆的",
+      "expectedLemma": "rodó",
+      "expectedPrimary": "rodó"
+    },
+    {
+      "query": "方形",
+      "expectedLemma": "quadrat",
+      "expectedPrimary": "quadrat"
+    },
+    {
+      "query": "正方形",
+      "expectedLemma": "quadrat",
+      "expectedPrimary": "quadrat"
+    },
+    {
+      "query": "笔直",
+      "expectedLemma": "recte",
+      "expectedPrimary": "recte"
+    },
+    {
+      "query": "挺直",
+      "expectedLemma": "recte",
+      "expectedPrimary": "recte"
+    },
+    {
+      "query": "歪",
+      "expectedLemma": "tort"
+    },
+    {
+      "query": "歪斜",
+      "expectedLemma": "tort",
+      "expectedPrimary": "tort"
+    },
+    {
+      "query": "弯曲",
+      "expectedLemma": "tort",
+      "expectedPrimary": "tort"
+    },
+    {
+      "query": "平坦",
+      "expectedLemma": "pla",
+      "expectedPrimary": "pla"
+    },
+    {
+      "query": "平整",
+      "expectedLemma": "pla",
+      "expectedPrimary": "pla"
+    },
+    {
+      "query": "倾斜",
+      "expectedLemma": "inclinat",
+      "expectedPrimary": "inclinat"
+    },
+    {
+      "query": "敞开",
+      "expectedLemma": "obert",
+      "expectedPrimary": "obert"
+    },
+    {
+      "query": "开着",
+      "expectedLemma": "obert",
+      "expectedPrimary": "obert"
+    },
+    {
+      "query": "关着",
+      "expectedLemma": "tancat",
+      "expectedPrimary": "tancat"
+    },
+    {
+      "query": "关闭的",
+      "expectedLemma": "tancat",
+      "expectedPrimary": "tancat"
+    },
+    {
+      "query": "强大",
+      "expectedLemma": "fort",
+      "expectedPrimary": "fort"
+    },
+    {
+      "query": "强劲",
+      "expectedLemma": "fort",
+      "expectedPrimary": "fort"
+    },
+    {
+      "query": "强健",
+      "expectedLemma": "robust",
+      "expectedPrimary": "fort"
+    },
+    {
+      "query": "健壮",
+      "expectedLemma": "robust",
+      "expectedPrimary": "fort"
+    },
+    {
+      "query": "虚弱",
+      "expectedLemma": "feble",
+      "expectedPrimary": "feble"
+    },
+    {
+      "query": "孱弱",
+      "expectedLemma": "feble",
+      "expectedPrimary": "feble"
+    },
+    {
+      "query": "易碎",
+      "expectedLemma": "fràgil",
+      "expectedPrimary": "fràgil"
+    },
+    {
+      "query": "脆弱",
+      "expectedLemma": "fràgil",
+      "expectedPrimary": "fràgil"
+    },
+    {
+      "query": "健康",
+      "expectedLemma": "sa",
+      "expectedPrimary": "sa"
+    },
+    {
+      "query": "健康的",
+      "expectedLemma": "sa",
+      "expectedPrimary": "sa"
+    },
+    {
+      "query": "生病",
+      "expectedLemma": "malalt",
+      "expectedPrimary": "emmalaltir"
+    },
+    {
+      "query": "患病",
+      "expectedLemma": "malalt",
+      "expectedPrimary": "emmalaltir"
+    },
+    {
+      "query": "活着",
+      "expectedLemma": "viu",
+      "expectedPrimary": "viu"
+    },
+    {
+      "query": "活的",
+      "expectedLemma": "viu",
+      "expectedPrimary": "viu"
+    },
+    {
+      "query": "死的",
+      "expectedLemma": "mort",
+      "expectedPrimary": "mort"
+    },
+    {
+      "query": "年轻",
+      "expectedLemma": "jove",
+      "expectedPrimary": "jove"
+    },
+    {
+      "query": "年少",
+      "expectedLemma": "jove",
+      "expectedPrimary": "jove"
+    },
+    {
+      "query": "年老",
+      "expectedLemma": "vell",
+      "expectedPrimary": "vell"
+    },
+    {
+      "query": "老旧",
+      "expectedLemma": "vell",
+      "expectedPrimary": "vell"
+    },
+    {
+      "query": "新的",
+      "expectedLemma": "nou",
+      "expectedPrimary": "nou"
+    },
+    {
+      "query": "崭新",
+      "expectedLemma": "nou",
+      "expectedPrimary": "nou"
+    },
+    {
+      "query": "古老",
+      "expectedLemma": "antic",
+      "expectedPrimary": "antic"
+    },
+    {
+      "query": "现代",
+      "expectedLemma": "modern",
+      "expectedPrimary": "modern"
+    },
+    {
+      "query": "现代的",
+      "expectedLemma": "modern",
+      "expectedPrimary": "modern"
+    },
+    {
+      "query": "近期",
+      "expectedLemma": "recent",
+      "expectedPrimary": "recent"
+    },
+    {
+      "query": "最近的",
+      "expectedLemma": "recent",
+      "expectedPrimary": "recent"
+    },
+    {
+      "query": "快速",
+      "expectedLemma": "ràpid",
+      "expectedPrimary": "ràpid"
+    },
+    {
+      "query": "迅速",
+      "expectedLemma": "ràpid",
+      "expectedPrimary": "ràpid"
+    },
+    {
+      "query": "飞快",
+      "expectedLemma": "ràpid",
+      "expectedPrimary": "ràpid"
+    },
+    {
+      "query": "缓慢",
+      "expectedLemma": "lent",
+      "expectedPrimary": "lent"
+    },
+    {
+      "query": "慢的",
+      "expectedLemma": "lent",
+      "expectedPrimary": "lent"
+    },
+    {
+      "query": "容易",
+      "expectedLemma": "fàcil",
+      "expectedPrimary": "fàcil"
+    },
+    {
+      "query": "轻易",
+      "expectedLemma": "fàcil",
+      "expectedPrimary": "fàcil"
+    },
+    {
+      "query": "困难",
+      "expectedLemma": "difícil",
+      "expectedPrimary": "difícil"
+    },
+    {
+      "query": "艰难",
+      "expectedLemma": "difícil",
+      "expectedPrimary": "difícil"
+    },
+    {
+      "query": "简单",
+      "expectedLemma": "simple",
+      "expectedPrimary": "fàcil"
+    },
+    {
+      "query": "简易",
+      "expectedLemma": "simple",
+      "expectedPrimary": "fàcil"
+    },
+    {
+      "query": "复杂",
+      "expectedLemma": "complicat",
+      "expectedPrimary": "complicat"
+    },
+    {
+      "query": "繁杂",
+      "expectedLemma": "complicat",
+      "expectedPrimary": "complicat"
+    },
+    {
+      "query": "复杂",
+      "expectedLemma": "complex",
+      "expectedPrimary": "complicat"
+    },
+    {
+      "query": "明亮",
+      "expectedLemma": "clar",
+      "expectedPrimary": "clar"
+    },
+    {
+      "query": "亮堂",
+      "expectedLemma": "clar",
+      "expectedPrimary": "clar"
+    },
+    {
+      "query": "清楚",
+      "expectedLemma": "clar",
+      "expectedPrimary": "clar"
+    },
+    {
+      "query": "明白",
+      "expectedLemma": "clar",
+      "expectedPrimary": "entendre"
+    },
+    {
+      "query": "黑暗",
+      "expectedLemma": "fosc",
+      "expectedPrimary": "fosc"
+    },
+    {
+      "query": "昏暗",
+      "expectedLemma": "fosc",
+      "expectedPrimary": "fosc"
+    },
+    {
+      "query": "暗的",
+      "expectedLemma": "fosc",
+      "expectedPrimary": "fosc"
+    },
+    {
+      "query": "闪亮",
+      "expectedLemma": "brillant",
+      "expectedPrimary": "brillant"
+    },
+    {
+      "query": "发亮",
+      "expectedLemma": "brillant",
+      "expectedPrimary": "brillant"
+    },
+    {
+      "query": "不透明",
+      "expectedLemma": "opac",
+      "expectedPrimary": "opac"
+    },
+    {
+      "query": "透明",
+      "expectedLemma": "transparent",
+      "expectedPrimary": "transparent"
+    },
+    {
+      "query": "甜",
+      "expectedLemma": "dolç",
+      "expectedPrimary": "dolç"
+    },
+    {
+      "query": "甜的",
+      "expectedLemma": "dolç",
+      "expectedPrimary": "dolç"
+    },
+    {
+      "query": "咸",
+      "expectedLemma": "salat",
+      "expectedPrimary": "salat"
+    },
+    {
+      "query": "咸的",
+      "expectedLemma": "salat",
+      "expectedPrimary": "salat"
+    },
+    {
+      "query": "苦",
+      "expectedLemma": "amarg",
+      "expectedPrimary": "amarg"
+    },
+    {
+      "query": "苦的",
+      "expectedLemma": "amarg",
+      "expectedPrimary": "amarg"
+    },
+    {
+      "query": "酸",
+      "expectedLemma": "àcid",
+      "expectedPrimary": "agre"
+    },
+    {
+      "query": "酸的",
+      "expectedLemma": "àcid",
+      "expectedPrimary": "agre"
+    },
+    {
+      "query": "酸",
+      "expectedLemma": "agre",
+      "expectedPrimary": "agre"
+    },
+    {
+      "query": "辣",
+      "expectedLemma": "picant",
+      "expectedPrimary": "picant"
+    },
+    {
+      "query": "辛辣",
+      "expectedLemma": "picant",
+      "expectedPrimary": "picant"
+    },
+    {
+      "query": "美味",
+      "expectedLemma": "deliciós",
+      "expectedPrimary": "deliciós"
+    },
+    {
+      "query": "可口",
+      "expectedLemma": "deliciós",
+      "expectedPrimary": "deliciós"
+    },
+    {
+      "query": "好吃",
+      "expectedLemma": "deliciós",
+      "expectedPrimary": "deliciós"
+    },
+    {
+      "query": "美味",
+      "expectedLemma": "saborós",
+      "expectedPrimary": "deliciós"
+    },
+    {
+      "query": "鲜美",
+      "expectedLemma": "saborós",
+      "expectedPrimary": "saborós"
+    },
+    {
+      "query": "生的",
+      "expectedLemma": "cru",
+      "expectedPrimary": "cru"
+    },
+    {
+      "query": "未煮熟",
+      "expectedLemma": "cru",
+      "expectedPrimary": "cru"
+    },
+    {
+      "query": "腐烂",
+      "expectedLemma": "podrit",
+      "expectedPrimary": "podrit"
+    },
+    {
+      "query": "腐坏",
+      "expectedLemma": "podrit",
+      "expectedPrimary": "podrit"
+    },
+    {
+      "query": "成熟",
+      "expectedLemma": "madur",
+      "expectedPrimary": "madur"
+    },
+    {
+      "query": "熟的",
+      "expectedLemma": "madur",
+      "expectedPrimary": "madur"
+    },
+    {
+      "query": "丰富",
+      "expectedLemma": "ric",
+      "expectedPrimary": "ric"
+    },
+    {
+      "query": "丰厚",
+      "expectedLemma": "ric",
+      "expectedPrimary": "ric"
+    },
+    {
+      "query": "贫穷",
+      "expectedLemma": "pobre",
+      "expectedPrimary": "pobre"
+    },
+    {
+      "query": "穷困",
+      "expectedLemma": "pobre",
+      "expectedPrimary": "pobre"
+    },
+    {
+      "query": "贫困",
+      "expectedLemma": "pobre",
+      "expectedPrimary": "pobre"
+    },
+    {
+      "query": "昂贵",
+      "expectedLemma": "car",
+      "expectedPrimary": "car"
+    },
+    {
+      "query": "贵的",
+      "expectedLemma": "car",
+      "expectedPrimary": "car"
+    },
+    {
+      "query": "便宜",
+      "expectedLemma": "barat",
+      "expectedPrimary": "barat"
+    },
+    {
+      "query": "廉价",
+      "expectedLemma": "barat",
+      "expectedPrimary": "barat"
+    },
+    {
+      "query": "免费",
+      "expectedLemma": "gratuït",
+      "expectedPrimary": "gratuït"
+    },
+    {
+      "query": "无偿",
+      "expectedLemma": "gratuït",
+      "expectedPrimary": "gratuït"
+    },
+    {
+      "query": "宝贵",
+      "expectedLemma": "valuós",
+      "expectedPrimary": "valuós"
+    },
+    {
+      "query": "有价值",
+      "expectedLemma": "valuós",
+      "expectedPrimary": "valuós"
+    },
+    {
+      "query": "有用",
+      "expectedLemma": "útil",
+      "expectedPrimary": "útil"
+    },
+    {
+      "query": "实用",
+      "expectedLemma": "útil",
+      "expectedPrimary": "útil"
+    },
+    {
+      "query": "无用",
+      "expectedLemma": "inútil",
+      "expectedPrimary": "inútil"
+    },
+    {
+      "query": "没用",
+      "expectedLemma": "inútil",
+      "expectedPrimary": "inútil"
+    },
+    {
+      "query": "必要",
+      "expectedLemma": "necessari",
+      "expectedPrimary": "necessari"
+    },
+    {
+      "query": "必需",
+      "expectedLemma": "necessari",
+      "expectedPrimary": "necessari"
+    },
+    {
+      "query": "不必要",
+      "expectedLemma": "innecessari",
+      "expectedPrimary": "innecessari"
+    },
+    {
+      "query": "重要",
+      "expectedLemma": "important",
+      "expectedPrimary": "important"
+    },
+    {
+      "query": "要紧",
+      "expectedLemma": "important",
+      "expectedPrimary": "important"
+    },
+    {
+      "query": "紧急",
+      "expectedLemma": "urgent",
+      "expectedPrimary": "urgent"
+    },
+    {
+      "query": "急迫",
+      "expectedLemma": "urgent",
+      "expectedPrimary": "urgent"
+    },
+    {
+      "query": "紧迫",
+      "expectedLemma": "urgent",
+      "expectedPrimary": "urgent"
+    },
+    {
+      "query": "可用",
+      "expectedLemma": "disponible",
+      "expectedPrimary": "disponible"
+    },
+    {
+      "query": "可获得",
+      "expectedLemma": "disponible",
+      "expectedPrimary": "disponible"
+    },
+    {
+      "query": "自由",
+      "expectedLemma": "lliure",
+      "expectedPrimary": "llibertat"
+    },
+    {
+      "query": "自在",
+      "expectedLemma": "lliure",
+      "expectedPrimary": "lliure"
+    },
+    {
+      "query": "安全",
+      "expectedLemma": "segur",
+      "expectedPrimary": "segur"
+    },
+    {
+      "query": "确定",
+      "expectedLemma": "segur",
+      "expectedPrimary": "segur"
+    },
+    {
+      "query": "肯定",
+      "expectedLemma": "segur",
+      "expectedPrimary": "segur"
+    },
+    {
+      "query": "危险",
+      "expectedLemma": "perillós",
+      "expectedPrimary": "perillós"
+    },
+    {
+      "query": "凶险",
+      "expectedLemma": "perillós",
+      "expectedPrimary": "perillós"
+    },
+    {
+      "query": "真实",
+      "expectedLemma": "cert",
+      "expectedPrimary": "cert"
+    },
+    {
+      "query": "真的",
+      "expectedLemma": "cert",
+      "expectedPrimary": "real"
+    },
+    {
+      "query": "虚假",
+      "expectedLemma": "fals",
+      "expectedPrimary": "fals"
+    },
+    {
+      "query": "不实",
+      "expectedLemma": "fals",
+      "expectedPrimary": "fals"
+    },
+    {
+      "query": "真正",
+      "expectedLemma": "veritable",
+      "expectedPrimary": "veritable"
+    },
+    {
+      "query": "真实",
+      "expectedLemma": "veritable",
+      "expectedPrimary": "cert"
+    },
+    {
+      "query": "正确",
+      "expectedLemma": "correcte",
+      "expectedPrimary": "correcte"
+    },
+    {
+      "query": "对的",
+      "expectedLemma": "correcte",
+      "expectedPrimary": "correcte"
+    },
+    {
+      "query": "不正确",
+      "expectedLemma": "incorrecte",
+      "expectedPrimary": "incorrecte"
+    },
+    {
+      "query": "错的",
+      "expectedLemma": "incorrecte",
+      "expectedPrimary": "incorrecte"
+    },
+    {
+      "query": "准确",
+      "expectedLemma": "exacte",
+      "expectedPrimary": "exacte"
+    },
+    {
+      "query": "精确",
+      "expectedLemma": "exacte",
+      "expectedPrimary": "exacte"
+    },
+    {
+      "query": "精准",
+      "expectedLemma": "precís",
+      "expectedPrimary": "precís"
+    },
+    {
+      "query": "精确",
+      "expectedLemma": "precís",
+      "expectedPrimary": "exacte"
+    },
+    {
+      "query": "相同",
+      "expectedLemma": "igual",
+      "expectedPrimary": "igual"
+    },
+    {
+      "query": "一样",
+      "expectedLemma": "igual",
+      "expectedPrimary": "igual"
+    },
+    {
+      "query": "不同",
+      "expectedLemma": "diferent",
+      "expectedPrimary": "diferent"
+    },
+    {
+      "query": "不一样",
+      "expectedLemma": "diferent",
+      "expectedPrimary": "diferent"
+    },
+    {
+      "query": "相像",
+      "expectedLemma": "semblant",
+      "expectedPrimary": "semblant"
+    },
+    {
+      "query": "相仿",
+      "expectedLemma": "semblant",
+      "expectedPrimary": "semblant"
+    },
+    {
+      "query": "类似",
+      "expectedLemma": "semblant",
+      "expectedPrimary": "semblant"
+    },
+    {
+      "query": "奇怪",
+      "expectedLemma": "estrany",
+      "expectedPrimary": "estrany"
+    },
+    {
+      "query": "古怪",
+      "expectedLemma": "estrany",
+      "expectedPrimary": "estrany"
+    },
+    {
+      "query": "怪异",
+      "expectedLemma": "estrany",
+      "expectedPrimary": "estrany"
+    },
+    {
+      "query": "正常",
+      "expectedLemma": "normal",
+      "expectedPrimary": "normal"
+    },
+    {
+      "query": "常见",
+      "expectedLemma": "comú",
+      "expectedPrimary": "comú"
+    },
+    {
+      "query": "普遍",
+      "expectedLemma": "comú",
+      "expectedPrimary": "comú"
+    },
+    {
+      "query": "平常",
+      "expectedLemma": "habitual",
+      "expectedPrimary": "habitual"
+    },
+    {
+      "query": "罕见",
+      "expectedLemma": "rar",
+      "expectedPrimary": "rar"
+    },
+    {
+      "query": "稀少",
+      "expectedLemma": "rar",
+      "expectedPrimary": "rar"
+    },
+    {
+      "query": "少见",
+      "expectedLemma": "rar",
+      "expectedPrimary": "rar"
+    },
+    {
+      "query": "特别",
+      "expectedLemma": "especial",
+      "expectedPrimary": "especial"
+    },
+    {
+      "query": "特殊",
+      "expectedLemma": "especial",
+      "expectedPrimary": "especial"
+    },
+    {
+      "query": "主要",
+      "expectedLemma": "principal",
+      "expectedPrimary": "principal"
+    },
+    {
+      "query": "首要",
+      "expectedLemma": "principal",
+      "expectedPrimary": "principal"
+    },
+    {
+      "query": "公共",
+      "expectedLemma": "públic",
+      "expectedPrimary": "públic"
+    },
+    {
+      "query": "公开",
+      "expectedLemma": "públic",
+      "expectedPrimary": "públic"
+    },
+    {
+      "query": "私人的",
+      "expectedLemma": "privat",
+      "expectedPrimary": "privat"
+    },
+    {
+      "query": "私有",
+      "expectedLemma": "privat",
+      "expectedPrimary": "privat"
+    },
+    {
+      "query": "本地",
+      "expectedLemma": "local",
+      "expectedPrimary": "local"
+    },
+    {
+      "query": "当地",
+      "expectedLemma": "local",
+      "expectedPrimary": "local"
+    },
+    {
+      "query": "国际",
+      "expectedLemma": "internacional",
+      "expectedPrimary": "internacional"
+    },
+    {
+      "query": "国际的",
+      "expectedLemma": "internacional",
+      "expectedPrimary": "internacional"
+    },
+    {
+      "query": "天然",
+      "expectedLemma": "natural",
+      "expectedPrimary": "natural"
+    },
+    {
+      "query": "自然",
+      "expectedLemma": "natural",
+      "expectedPrimary": "natural"
+    },
+    {
+      "query": "人造",
+      "expectedLemma": "artificial",
+      "expectedPrimary": "artificial"
+    },
+    {
+      "query": "人工",
+      "expectedLemma": "artificial",
+      "expectedPrimary": "artificial"
+    },
+    {
+      "query": "合法",
+      "expectedLemma": "legal",
+      "expectedPrimary": "legal"
+    },
+    {
+      "query": "非法",
+      "expectedLemma": "il·legal",
+      "expectedPrimary": "il·legal"
+    },
+    {
+      "query": "不合法",
+      "expectedLemma": "il·legal",
+      "expectedPrimary": "il·legal"
+    },
+    {
+      "query": "可能",
+      "expectedLemma": "possible",
+      "expectedPrimary": "possible"
+    },
+    {
+      "query": "可能的",
+      "expectedLemma": "possible",
+      "expectedPrimary": "possible"
+    },
+    {
+      "query": "不可能",
+      "expectedLemma": "impossible",
+      "expectedPrimary": "impossible"
+    },
+    {
+      "query": "很可能",
+      "expectedLemma": "probable",
+      "expectedPrimary": "probable"
+    },
+    {
+      "query": "不大可能",
+      "expectedLemma": "improbable",
+      "expectedPrimary": "improbable"
+    },
+    {
+      "query": "足够",
+      "expectedLemma": "suficient",
+      "expectedPrimary": "suficient"
+    },
+    {
+      "query": "充足",
+      "expectedLemma": "suficient",
+      "expectedPrimary": "suficient"
+    },
+    {
+      "query": "不足",
+      "expectedLemma": "insuficient",
+      "expectedPrimary": "insuficient"
+    },
+    {
+      "query": "不够",
+      "expectedLemma": "insuficient",
+      "expectedPrimary": "insuficient"
+    },
+    {
+      "query": "完整",
+      "expectedLemma": "complet",
+      "expectedPrimary": "complet"
+    },
+    {
+      "query": "齐全",
+      "expectedLemma": "complet",
+      "expectedPrimary": "complet"
+    },
+    {
+      "query": "不完整",
+      "expectedLemma": "incomplet",
+      "expectedPrimary": "incomplet"
+    },
+    {
+      "query": "残缺",
+      "expectedLemma": "incomplet",
+      "expectedPrimary": "incomplet"
+    },
+    {
+      "query": "完美",
+      "expectedLemma": "perfecte",
+      "expectedPrimary": "perfecte"
+    },
+    {
+      "query": "完善",
+      "expectedLemma": "perfecte",
+      "expectedPrimary": "perfecte"
+    },
+    {
+      "query": "有缺陷",
+      "expectedLemma": "defectuós",
+      "expectedPrimary": "defectuós"
+    },
+    {
+      "query": "有毛病",
+      "expectedLemma": "defectuós",
+      "expectedPrimary": "defectuós"
+    },
+    {
+      "query": "合适",
+      "expectedLemma": "adequat",
+      "expectedPrimary": "adequat"
+    },
+    {
+      "query": "适当",
+      "expectedLemma": "adequat",
+      "expectedPrimary": "adequat"
+    },
+    {
+      "query": "适宜",
+      "expectedLemma": "adequat",
+      "expectedPrimary": "adequat"
+    },
+    {
+      "query": "不充分",
+      "expectedLemma": "inadequat",
+      "expectedPrimary": "inadequat"
+    },
+    {
+      "query": "方便",
+      "expectedLemma": "convenient",
+      "expectedPrimary": "convenient"
+    },
+    {
+      "query": "便利",
+      "expectedLemma": "convenient",
+      "expectedPrimary": "convenient"
+    },
+    {
+      "query": "不便",
+      "expectedLemma": "inconvenient",
+      "expectedPrimary": "inconvenient"
+    },
+    {
+      "query": "不方便",
+      "expectedLemma": "inconvenient",
+      "expectedPrimary": "inconvenient"
+    },
+    {
+      "query": "舒适",
+      "expectedLemma": "còmode",
+      "expectedPrimary": "còmode"
+    },
+    {
+      "query": "舒服",
+      "expectedLemma": "còmode",
+      "expectedPrimary": "còmode"
+    },
+    {
+      "query": "不舒服",
+      "expectedLemma": "incòmode",
+      "expectedPrimary": "incòmode"
+    },
+    {
+      "query": "不舒适",
+      "expectedLemma": "incòmode",
+      "expectedPrimary": "incòmode"
+    },
+    {
+      "query": "平静",
+      "expectedLemma": "tranquil",
+      "expectedPrimary": "tranquil"
+    },
+    {
+      "query": "镇静",
+      "expectedLemma": "tranquil",
+      "expectedPrimary": "tranquil"
+    },
+    {
+      "query": "宁静",
+      "expectedLemma": "tranquil",
+      "expectedPrimary": "tranquil"
+    },
+    {
+      "query": "安静",
+      "expectedLemma": "tranquil",
+      "expectedPrimary": "tranquil"
+    },
+    {
+      "query": "紧张",
+      "expectedLemma": "nerviós",
+      "expectedPrimary": "nerviós"
+    },
+    {
+      "query": "友善",
+      "expectedLemma": "amable",
+      "expectedPrimary": "amable"
+    },
+    {
+      "query": "和善",
+      "expectedLemma": "amable",
+      "expectedPrimary": "amable"
+    },
+    {
+      "query": "亲切",
+      "expectedLemma": "amable",
+      "expectedPrimary": "amable"
+    },
+    {
+      "query": "友好",
+      "expectedLemma": "simpàtic",
+      "expectedPrimary": "amable"
+    },
+    {
+      "query": "耐心",
+      "expectedLemma": "pacient",
+      "expectedPrimary": "pacient"
+    },
+    {
+      "query": "有耐心",
+      "expectedLemma": "pacient",
+      "expectedPrimary": "pacient"
+    },
+    {
+      "query": "不耐烦",
+      "expectedLemma": "impacient",
+      "expectedPrimary": "impacient"
+    },
+    {
+      "query": "急躁",
+      "expectedLemma": "impacient",
+      "expectedPrimary": "impacient"
+    },
+    {
+      "query": "真诚",
+      "expectedLemma": "sincer",
+      "expectedPrimary": "sincer"
+    },
+    {
+      "query": "诚恳",
+      "expectedLemma": "sincer",
+      "expectedPrimary": "sincer"
+    },
+    {
+      "query": "诚挚",
+      "expectedLemma": "sincer",
+      "expectedPrimary": "sincer"
+    },
+    {
+      "query": "正直",
+      "expectedLemma": "honest",
+      "expectedPrimary": "honest"
+    },
+    {
+      "query": "正派",
+      "expectedLemma": "honest",
+      "expectedPrimary": "honest"
+    },
+    {
+      "query": "不诚实",
+      "expectedLemma": "deshonest",
+      "expectedPrimary": "deshonest"
+    },
+    {
+      "query": "忠实",
+      "expectedLemma": "fidel",
+      "expectedPrimary": "fidel"
+    },
+    {
+      "query": "忠诚",
+      "expectedLemma": "lleial",
+      "expectedPrimary": "fidel"
+    },
+    {
+      "query": "忠心",
+      "expectedLemma": "lleial",
+      "expectedPrimary": "lleial"
+    },
+    {
+      "query": "慷慨",
+      "expectedLemma": "generós",
+      "expectedPrimary": "generós"
+    },
+    {
+      "query": "大方",
+      "expectedLemma": "generós",
+      "expectedPrimary": "generós"
+    },
+    {
+      "query": "自私",
+      "expectedLemma": "egoista",
+      "expectedPrimary": "egoista"
+    },
+    {
+      "query": "勇敢",
+      "expectedLemma": "valent",
+      "expectedPrimary": "valent"
+    },
+    {
+      "query": "英勇",
+      "expectedLemma": "valent",
+      "expectedPrimary": "valent"
+    },
+    {
+      "query": "胆大",
+      "expectedLemma": "valent",
+      "expectedPrimary": "valent"
+    },
+    {
+      "query": "胆怯",
+      "expectedLemma": "covard",
+      "expectedPrimary": "covard"
+    },
+    {
+      "query": "懦弱",
+      "expectedLemma": "covard",
+      "expectedPrimary": "covard"
+    },
+    {
+      "query": "谨慎",
+      "expectedLemma": "prudent",
+      "expectedPrimary": "prudent"
+    },
+    {
+      "query": "审慎",
+      "expectedLemma": "prudent",
+      "expectedPrimary": "prudent"
+    },
+    {
+      "query": "轻率",
+      "expectedLemma": "imprudent",
+      "expectedPrimary": "imprudent"
+    },
+    {
+      "query": "莽撞",
+      "expectedLemma": "imprudent",
+      "expectedPrimary": "imprudent"
+    },
+    {
+      "query": "谦虚",
+      "expectedLemma": "modest",
+      "expectedPrimary": "humil"
+    },
+    {
+      "query": "谦逊",
+      "expectedLemma": "modest",
+      "expectedPrimary": "humil"
+    },
+    {
+      "query": "傲慢",
+      "expectedLemma": "arrogant",
+      "expectedPrimary": "arrogant"
+    },
+    {
+      "query": "自大",
+      "expectedLemma": "arrogant",
+      "expectedPrimary": "arrogant"
+    },
+    {
+      "query": "谦卑",
+      "expectedLemma": "humil",
+      "expectedPrimary": "humil"
+    },
+    {
+      "query": "骄傲",
+      "expectedLemma": "orgullós",
+      "expectedPrimary": "orgullós"
+    },
+    {
+      "query": "自豪",
+      "expectedLemma": "orgullós",
+      "expectedPrimary": "orgullós"
+    },
+    {
+      "query": "乐观",
+      "expectedLemma": "optimista",
+      "expectedPrimary": "optimista"
+    },
+    {
+      "query": "悲观",
+      "expectedLemma": "pessimista",
+      "expectedPrimary": "pessimista"
+    },
+    {
+      "query": "好奇",
+      "expectedLemma": "curiós",
+      "expectedPrimary": "curiós"
+    },
+    {
+      "query": "无聊",
+      "expectedLemma": "avorrit",
+      "expectedPrimary": "avorrit"
+    },
+    {
+      "query": "乏味",
+      "expectedLemma": "avorrit",
+      "expectedPrimary": "avorrit"
+    },
+    {
+      "query": "有趣",
+      "expectedLemma": "interessant",
+      "expectedPrimary": "divertit"
+    },
+    {
+      "query": "好玩",
+      "expectedLemma": "divertit",
+      "expectedPrimary": "divertit"
+    },
+    {
+      "query": "逗趣",
+      "expectedLemma": "divertit",
+      "expectedPrimary": "divertit"
+    },
+    {
+      "query": "惊人",
+      "expectedLemma": "sorprenent",
+      "expectedPrimary": "sorprenent"
+    },
+    {
+      "query": "出人意料",
+      "expectedLemma": "sorprenent",
+      "expectedPrimary": "sorprenent"
+    },
+    {
+      "query": "醒着",
+      "expectedLemma": "despert",
+      "expectedPrimary": "despert"
+    },
+    {
+      "query": "清醒",
+      "expectedLemma": "despert",
+      "expectedPrimary": "despert"
+    },
+    {
+      "query": "睡着",
+      "expectedLemma": "adormit",
+      "expectedPrimary": "adormit"
+    },
+    {
+      "query": "睡着的",
+      "expectedLemma": "adormit",
+      "expectedPrimary": "adormit"
+    },
+    {
+      "query": "孤独",
+      "expectedLemma": "solitari",
+      "expectedPrimary": "solitari"
+    },
+    {
+      "query": "孤单",
+      "expectedLemma": "solitari",
+      "expectedPrimary": "solitari"
+    },
+    {
+      "query": "饥饿",
+      "expectedLemma": "afamat",
+      "expectedPrimary": "gana"
+    },
+    {
+      "query": "饿的",
+      "expectedLemma": "afamat",
+      "expectedPrimary": "afamat"
+    },
+    {
+      "query": "口渴",
+      "expectedLemma": "assedegat",
+      "expectedPrimary": "assedegat"
+    },
+    {
+      "query": "渴的",
+      "expectedLemma": "assedegat",
+      "expectedPrimary": "assedegat"
+    },
+    {
+      "query": "满意",
+      "expectedLemma": "satisfet",
+      "expectedPrimary": "content"
+    },
+    {
+      "query": "满足",
+      "expectedLemma": "satisfet",
+      "expectedPrimary": "content"
+    },
+    {
+      "query": "羞愧",
+      "expectedLemma": "avergonyit",
+      "expectedPrimary": "avergonyit"
+    },
+    {
+      "query": "惭愧",
+      "expectedLemma": "avergonyit",
+      "expectedPrimary": "avergonyit"
+    },
+    {
+      "query": "加湿",
+      "expectedLemma": "humitejar",
+      "expectedPrimary": "humitejar"
+    },
+    {
+      "query": "润湿",
+      "expectedLemma": "humitejar",
+      "expectedPrimary": "humitejar"
+    },
+    {
+      "query": "弄湿",
+      "expectedLemma": "mullar",
+      "expectedPrimary": "mullar"
+    },
+    {
+      "query": "打湿",
+      "expectedLemma": "mullar",
+      "expectedPrimary": "mullar"
+    }
+  ],
+  "contrasts": [
+    {
+      "query": "干燥",
+      "excludedLemma": "assecar"
+    },
+    {
+      "query": "湿润",
+      "excludedLemma": "humitejar"
+    },
+    {
+      "query": "润湿",
+      "excludedLemma": "humit"
+    },
+    {
+      "query": "潮湿",
+      "excludedLemma": "sec"
+    },
+    {
+      "query": "温暖",
+      "excludedLemma": "escalfar"
+    },
+    {
+      "query": "凉爽",
+      "excludedLemma": "refredar"
+    },
+    {
+      "query": "虚弱",
+      "excludedLemma": "fort"
+    },
+    {
+      "query": "不透明",
+      "excludedLemma": "transparent"
+    },
+    {
+      "query": "不可能",
+      "excludedLemma": "possible"
+    },
+    {
+      "query": "不合法",
+      "excludedLemma": "legal"
+    },
+    {
+      "query": "不诚实",
+      "excludedLemma": "honest"
+    },
+    {
+      "query": "不正确",
+      "excludedLemma": "correcte"
+    },
+    {
+      "query": "不方便",
+      "excludedLemma": "convenient"
+    },
+    {
+      "query": "不舒服",
+      "excludedLemma": "còmode"
+    },
+    {
+      "query": "不同",
+      "excludedLemma": "igual"
+    },
+    {
+      "query": "粗糙",
+      "excludedLemma": "llis"
+    },
+    {
+      "query": "贫穷",
+      "excludedLemma": "ric"
+    },
+    {
+      "query": "慷慨",
+      "excludedLemma": "egoista"
+    }
+  ],
+  "unmatched": [
+    "不肯加湿",
+    "三块潮湿",
+    "没有变干燥",
+    "并非很友善",
+    "尚未弄湿",
+    "不是不透明"
+  ]
+}
